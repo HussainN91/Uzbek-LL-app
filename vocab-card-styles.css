@@ -1,0 +1,995 @@
+/* ════════════════════════════════════════════════════════════════
+   VOCAB CARD MODAL - Extracted Styles
+   Replaces inline styles from vocab-card-renderer.js
+   Load AFTER styles-enhancements.css
+   ════════════════════════════════════════════════════════════════ */
+
+/* --- Modal Overlay --- */
+#vocab-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* --- Modal Card Container --- */
+#vocab-card-modal {
+  background: #f8f9fa;
+  border-radius: 20px;
+  max-width: 560px;
+  width: 95%;
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: vcModalSlideIn 0.3s ease-out;
+  overflow: hidden;
+}
+
+/* --- Header --- */
+.vc-header {
+  background: #4a5568;
+  color: white;
+  padding: 18px 22px 14px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.vc-header-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.vc-word {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.vc-translation {
+  font-size: 14px;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.vc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+.vc-tag {
+  background: rgba(255,255,255,0.15);
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+.vc-tag--done {
+  background: rgba(76,175,80,0.3);
+}
+
+/* --- Close Button --- */
+.vc-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  transition: background 0.2s;
+  box-shadow: none;
+}
+
+.vc-close-btn:hover {
+  background: rgba(255,255,255,0.3) !important;
+  transform: none;
+  box-shadow: none;
+}
+
+/* --- Stage Progress Bar --- */
+#stage-progress {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 22px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  flex-shrink: 0;
+}
+
+.stage-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.stage-dot--active {
+  background: #5a67d8;
+  box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.25);
+  transform: scale(1.15);
+}
+
+.stage-dot--completed {
+  background: #48bb78;
+}
+
+.stage-connector {
+  flex: 1;
+  height: 3px;
+  background: #e0e0e0;
+  border-radius: 2px;
+}
+
+/* --- Stage Label --- */
+#stage-label {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: #718096;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 8px 22px 0;
+  flex-shrink: 0;
+}
+
+/* --- Stage Content Area --- */
+#stage-content {
+  flex: 1;
+  padding: 16px 22px 20px;
+  overflow-y: auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Navigation Footer --- */
+.vc-nav-footer {
+  padding: 14px 22px;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+  background: white;
+  border-radius: 0 0 20px 20px;
+}
+
+/* --- Nav Buttons --- */
+#btn-back {
+  padding: 10px 18px;
+  background: #f0f0f0;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  gap: 4px;
+  transition: background 0.15s;
+  min-width: auto;
+  margin: 0;
+  box-shadow: none;
+}
+
+#btn-back:hover {
+  background: #e4e4e4;
+  transform: none;
+  box-shadow: none;
+}
+
+#btn-next {
+  flex: 1;
+  padding: 10px 12px;
+  background: #5a67d8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 2px 8px rgba(90, 103, 216, 0.3);
+  transition: background 0.15s, box-shadow 0.15s;
+  min-width: auto;
+  margin: 0;
+}
+
+#btn-next:hover {
+  background: #4c51bf;
+  box-shadow: 0 4px 12px rgba(90, 103, 216, 0.4);
+  transform: none;
+}
+
+#btn-complete {
+  flex: 1;
+  padding: 10px 12px;
+  background: #38a169;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 2px 8px rgba(56, 161, 105, 0.3);
+  transition: background 0.15s;
+  min-width: auto;
+  margin: 0;
+}
+
+#btn-complete:hover {
+  background: #2f855a;
+  transform: none;
+  box-shadow: 0 4px 12px rgba(56, 161, 105, 0.4);
+}
+
+/* --- Carousel Progress --- */
+.vc-carousel-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.vc-carousel-badge {
+  background: #5a67d8;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.vc-carousel-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.vc-carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.vc-carousel-dot--done { background: #48bb78; }
+.vc-carousel-dot--active { background: #5a67d8; }
+.vc-carousel-dot--future { background: #e0e0e0; }
+
+/* --- Stage Content Common Patterns --- */
+.vc-stage-label {
+  font-size: 12px;
+  color: #a0aec0;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.vc-instruction {
+  background: #f7fafc;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #718096;
+  text-align: center;
+  margin-bottom: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.vc-sentence-display {
+  background: #ebf4ff;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 14px;
+  border: 1px solid #bee3f8;
+}
+
+/* --- Flip Card --- */
+.vc-flip-container {
+  perspective: 1000px;
+  width: 100%;
+  min-height: 130px;
+}
+
+.vc-flip-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  min-height: 130px;
+}
+
+.vc-flip-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.vc-flip-front,
+.vc-flip-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 130px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.vc-flip-front {
+  background: #fffbeb;
+  border: 2px solid #fbd38d;
+  box-shadow: 0 2px 8px rgba(251, 211, 141, 0.3);
+}
+
+.vc-flip-back {
+  background: #f0fff4;
+  border: 2px solid #9ae6b4;
+  box-shadow: 0 2px 8px rgba(154, 230, 180, 0.3);
+  transform: rotateY(180deg);
+}
+
+.vc-flip-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.vc-flip-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.vc-flip-hint {
+  font-size: 11px;
+  color: #a0aec0;
+  margin-top: 6px;
+}
+
+/* --- Feedback --- */
+.vc-feedback--correct {
+  background: #f0fff4;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #276749;
+  font-weight: 600;
+  border: 1px solid #c6f6d5;
+}
+
+.vc-feedback--incorrect {
+  background: #fff5f5;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #9b2c2c;
+  border: 1px solid #fed7d7;
+}
+
+/* --- Options --- */
+.vc-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vc-option-btn {
+  width: 100%;
+  padding: 12px 16px;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s, background 0.15s;
+  min-width: auto;
+  margin: 0;
+  box-shadow: none;
+}
+
+.vc-option-btn:hover {
+  border-color: #a0aec0;
+  background: #f7fafc;
+  transform: none;
+  box-shadow: none;
+}
+
+.vc-option-btn--correct {
+  background: #f0fff4;
+  border-color: #48bb78;
+  pointer-events: none;
+}
+
+.vc-option-btn--incorrect {
+  background: #fff5f5;
+  border-color: #fc8181;
+  pointer-events: none;
+}
+
+/* --- Polar Q&A (Presentation) --- */
+.vc-polar-question {
+  background: #fffbeb;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border-left: 4px solid #ed8936;
+}
+
+.vc-polar-answer {
+  background: #f0fff4;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border-left: 4px solid #48bb78;
+  font-weight: 600;
+}
+
+/* --- Personalization Input --- */
+.vc-text-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.vc-text-input:focus {
+  border-color: #5a67d8;
+  box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.1);
+}
+
+.vc-check-btn {
+  width: 100%;
+  padding: 12px;
+  background: #5a67d8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.15s;
+  min-width: auto;
+}
+
+.vc-check-btn:hover {
+  background: #4c51bf;
+  transform: none;
+  box-shadow: none;
+}
+
+/* --- Production Stage --- */
+.vc-prompt-card {
+  background: #ebf8ff;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #bee3f8;
+}
+
+.vc-prompt-label {
+  font-size: 12px;
+  color: #718096;
+  margin-bottom: 4px;
+}
+
+.vc-prompt-text {
+  font-size: 17px;
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.vc-reveal-box {
+  background: #f7fafc;
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+/* --- Dialogue Viewer --- */
+.vc-dialogue-toggle {
+  width: 100%;
+  padding: 10px 16px;
+  background: #4a5568;
+  color: white;
+  border: 1px solid #2d3748;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px 0;
+  min-width: auto;
+  box-shadow: none;
+}
+
+.vc-dialogue-toggle:hover {
+  background: #2d3748;
+  transform: none;
+  box-shadow: none;
+}
+
+.vc-dialogue-lines {
+  display: none;
+  padding: 12px;
+  background: #f7fafc;
+  border-radius: 10px;
+  max-height: 260px;
+  overflow-y: auto;
+  border: 1px solid #e2e8f0;
+}
+
+.vc-dialogue-line {
+  display: flex;
+  gap: 8px;
+  padding: 6px 0;
+}
+
+.vc-dialogue-line--reverse {
+  flex-direction: row-reverse;
+}
+
+.vc-speaker-name {
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.vc-dialogue-bubble {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #edf2f7;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.vc-dialogue-bubble--target {
+  border: 2px solid #5a67d8;
+  background: #ebf4ff;
+}
+
+.vc-dialogue-bubble--locked {
+  filter: blur(4px);
+  opacity: 0.5;
+}
+
+.vc-dialogue-uz {
+  font-size: 11px;
+  font-style: italic;
+  color: #a0aec0;
+  margin-top: 2px;
+}
+
+/* --- Word Highlight --- */
+.vc-word-highlight {
+  background: #fefcbf;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-weight: 600;
+  color: #744210;
+}
+
+/* --- Audio Button --- */
+.vc-audio-section {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.vc-audio-btn {
+  padding: 8px 20px;
+  background: #ebf8ff;
+  color: #2b6cb0;
+  border: 1px solid #90cdf4;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  min-width: auto;
+  margin: 0;
+  box-shadow: none;
+}
+
+.vc-audio-btn:hover {
+  background: #bee3f8;
+  transform: none;
+  box-shadow: none;
+}
+
+/* --- Practice Examples --- */
+.vc-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vc-example-card {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: white;
+}
+
+.vc-example-card--anchor {
+  background: #f0fff4;
+  border-color: #9ae6b4;
+}
+
+.vc-example-label {
+  font-size: 11px;
+  color: #a0aec0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.vc-example-sentence {
+  font-size: 15px;
+  color: #2d3748;
+  line-height: 1.4;
+}
+
+.vc-example-uz {
+  font-size: 12px;
+  color: #a0aec0;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+/* --- Jumble Exercise --- */
+.vc-jumble-zone {
+  min-height: 56px;
+  border: 2px dashed #cbd5e0;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  margin-bottom: 14px;
+  background: #f7fafc;
+}
+
+.vc-jumble-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.vc-jumble-chip {
+  padding: 8px 16px;
+  background: #5a67d8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  min-width: auto;
+  margin: 0;
+  box-shadow: none;
+}
+
+.vc-jumble-chip:hover {
+  opacity: 0.85;
+  transform: none;
+  box-shadow: none;
+}
+
+.vc-jumble-selected {
+  padding: 6px 12px;
+  background: #ebf4ff;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #2b6cb0;
+  border: 1px solid #90cdf4;
+}
+
+/* --- Scratch/Chunk Exercise --- */
+.chunk-highlight {
+  color: #5a67d8;
+  font-weight: 700;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.scratch-hide {
+  filter: blur(7px);
+  background: rgba(0,0,0,0.06);
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: filter 0.3s, background 0.3s;
+  display: inline-block;
+}
+
+.scratch-revealed {
+  filter: none;
+  background: #c6f6d5;
+}
+
+/* --- Grammar Table --- */
+.vc-grammar-wrapper {
+  margin-top: 12px;
+  background: #f7fafc;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.vc-grammar-label {
+  font-size: 12px;
+  color: #a0aec0;
+  padding: 8px 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.vc-grammar-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.vc-grammar-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+/* --- Syntax Scaffold --- */
+.vc-scaffold {
+  background: #ebf4ff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border-left: 4px solid #5a67d8;
+}
+
+.vc-scaffold-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #4a5568;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.vc-scaffold-text {
+  font-size: 15px;
+  color: #2d3748;
+  line-height: 1.5;
+}
+
+/* --- Dialogue Takeover View --- */
+.vc-takeover-card {
+  background: #f8f9fa;
+  border-radius: 18px;
+  max-width: 560px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);
+  max-height: 85vh;
+  overflow: hidden;
+}
+
+.vc-takeover-header {
+  background: #4a5568;
+  color: white;
+  padding: 16px 22px;
+}
+
+.vc-takeover-lines {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.vc-takeover-footer {
+  padding: 14px 22px;
+  border-top: 1px solid #eee;
+  background: white;
+  border-radius: 0 0 18px 18px;
+}
+
+.vc-takeover-close {
+  width: 100%;
+  padding: 10px;
+  background: #4a5568;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: auto;
+  margin: 0;
+  box-shadow: none;
+}
+
+.vc-takeover-close:hover {
+  background: #2d3748;
+  transform: none;
+  box-shadow: none;
+}
+
+.vc-speaker-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  flex-shrink: 0;
+}
+
+/* --- Complete/Next nav buttons in carousel --- */
+.vc-nav-complete {
+  width: 100%;
+  padding: 12px;
+  background: #38a169;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: auto;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(56, 161, 105, 0.3);
+}
+
+.vc-nav-complete:hover {
+  background: #2f855a;
+  transform: none;
+}
+
+.vc-nav-next {
+  width: 100%;
+  padding: 12px;
+  background: #5a67d8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: auto;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(90, 103, 216, 0.3);
+}
+
+.vc-nav-next:hover {
+  background: #4c51bf;
+  transform: none;
+}
+
+/* --- Animations (canonical definitions) --- */
+@keyframes vcModalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes vcPulseGlow {
+  0%, 100% {
+    box-shadow: 0 2px 12px rgba(56, 161, 105, 0.3);
+  }
+  50% {
+    box-shadow: 0 2px 20px rgba(56, 161, 105, 0.5);
+  }
+}
+
+/* --- Legacy tab system (kept for backward compat) --- */
+.vocab-tab:hover {
+  background: #f0f0f0;
+}
+
+.vocab-tab.active {
+  color: #5a67d8;
+  border-bottom-color: #5a67d8 !important;
+  background: white;
+}
+
+.vocab-tab-content.active {
+  display: block !important;
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+  #vocab-card-modal {
+    max-width: 100%;
+    width: 100%;
+    max-height: 95vh;
+    border-radius: 14px;
+  }
+
+  .vc-header {
+    padding: 14px 16px 10px;
+  }
+
+  .vc-word {
+    font-size: 20px;
+  }
+
+  #stage-progress {
+    padding: 10px 16px;
+  }
+
+  .stage-dot {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  #stage-content {
+    padding: 12px 16px 16px;
+  }
+
+  .vc-nav-footer {
+    padding: 10px 16px;
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#2196F3" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <title>Learn English – A1 Language App</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="vocab_gap_hover.css" />
+  <!-- Professional UI Redesign -->
+  <link rel="stylesheet" href="styles-redesign.css" />
+  <!-- Premium CSS Enhancements -->
+  <link rel="stylesheet" href="styles-enhancements.css" />
+  <!-- Vocab Card Modal -->
+  <link rel="stylesheet" href="vocab-card-styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- TOP NAVIGATION BAR -->
+    <header class="top-bar">
+      <div class="top-bar-left">
+        <span class="flag-icon">🇺🇿</span>
+        <h1 class="app-title">Learn English</h1>
+      </div>
+      <div class="top-bar-center">
+        <div id="lesson-meta"></div>
+        <div id="score-display" style="margin-top: 4px; font-size: 14px; color: #666;">
+          Score: <span id="sessionScoreDisplay">0 / 0 (0%)</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <button class="icon-btn teacher-mode-btn" id="teacher-toggle-btn" title="Teacher Mode">👨‍🏫</button>
+        <button class="icon-btn profile-btn" title="Profile">👤</button>
+        <button class="icon-btn lives-btn" title="Lives">❤️</button>
+        <button class="icon-btn settings-btn" title="Settings">⚙️</button>
+      </div>
+    </header>
+
+    <!-- UNIT & LESSON SELECTORS -->
+    <div class="selector-bar">
+      <div id="unit-selector"></div>
+      <div id="lesson-selector"></div>
+    </div>
+
+    <!-- TEACHER MODE CONTROL PANEL (hidden by default, appears as fixed header bar) -->
+    <div id="teacher-panel" class="teacher-control-panel">
+      <div class="teacher-panel-bar">
+        <div class="teacher-panel-left">
+          <span class="teacher-badge">👨‍🏫 Teacher Mode</span>
+        </div>
+        <div class="teacher-panel-center">
+          <div class="teacher-nav-item">
+            <label>Unit:</label>
+            <select id="teacher-unit-select" class="teacher-select-inline">
+              <option value="">Loading...</option>
+            </select>
+          </div>
+          <div class="teacher-nav-item">
+            <label>Lesson:</label>
+            <select id="teacher-lesson-select" class="teacher-select-inline">
+              <option value="">Select unit first...</option>
+            </select>
+          </div>
+          <div class="teacher-nav-item">
+            <label>Tile:</label>
+            <select id="teacher-tile-select" class="teacher-select-inline">
+              <option value="">Select lesson first...</option>
+            </select>
+          </div>
+        </div>
+        <div class="teacher-panel-right">
+          <span class="teacher-status-mini" id="teacher-status-display">—</span>
+          <button id="teacher-close-btn" class="teacher-close-inline" title="Close Teacher Mode">✕</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN TILE AREA -->
+    <main>
+      <section id="tile-container">
+        <!-- Tiles render here -->
+      </section>
+    </main>
+
+    <!-- DEBUG FOOTER (hidden in production) -->
+    <footer class="debug-footer">
+      <div id="state-debug"></div>
+    </footer>
+  </div>
+
+  <!-- ============================================
+       BUNDLED ENTRY POINT (Vite)
+       Using modular architecture (app.js removed)
+       ============================================ -->
+  <script type="module" src="main-modular.js"></script>
+  
+  <!-- ui-redesign.js is now an ES module loaded via app-main.js -->
+</body>
+</html>

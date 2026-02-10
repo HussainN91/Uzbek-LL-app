@@ -1,0 +1,33 @@
+{
+  "name": "learn-english-a1-app",
+  "version": "1.0.0",
+  "description": "A1 Level English Learning Web Application",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "serve:legacy": "npx http-server -p 8000"
+  },
+  "keywords": [
+    "english",
+    "learning",
+    "uzbek",
+    "a1",
+    "education"
+  ],
+  "author": "Learn English",
+  "license": "MIT",
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@types/node": "^25.0.10",
+    "jsdom": "^27.4.0",
+    "terser": "^5.46.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vitest": "^4.0.18"
+  }
+}

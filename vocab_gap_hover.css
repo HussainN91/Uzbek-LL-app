@@ -1,0 +1,99 @@
+
+/* VOCABULARY GAP HOVER STYLING - Warning amber for untaught words */
+.vocab-gap-word {
+  color: #ff9800;
+  font-weight: 600;
+  text-decoration: underline solid #ff9800;
+  cursor: help;
+  transition: all 0.2s ease;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+.vocab-gap-word:hover {
+  background-color: rgba(255, 152, 0, 0.12);
+  text-decoration: underline solid #fb8c00;
+  transform: translateY(-1px);
+}
+
+/* Legacy priority classes - all warning-amber now */
+.vocab-gap-word.high-priority,
+.vocab-gap-word.medium-priority,
+.vocab-gap-word.low-priority {
+  color: #ff9800;
+  text-decoration: underline solid #ff9800;
+  font-weight: 600;
+}
+
+.vocab-gap-word.high-priority:hover,
+.vocab-gap-word.medium-priority:hover,
+.vocab-gap-word.low-priority:hover {
+  background-color: rgba(255, 152, 0, 0.12);
+  transform: translateY(-1px);
+}
+
+/* VOCAB GAP HOVER TOOLTIP - Warning amber theme */
+.vocab-gap-tooltip {
+  position: absolute;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 10000;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  max-width: 280px;
+  line-height: 1.4;
+  border-left: 4px solid #ff9800;
+  animation: fadeInTooltip 0.2s ease-in-out;
+}
+
+.vocab-gap-tooltip.high-priority {
+  border-left-color: #d32f2f;
+}
+
+.vocab-gap-tooltip.medium-priority {
+  border-left-color: #f57c00;
+}
+
+.vocab-gap-tooltip .tooltip-word {
+  font-weight: 600;
+  color: #0099b4;
+  margin-bottom: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.vocab-gap-tooltip .tooltip-uzbek {
+  font-size: 14px;
+  color: #64b5f6;
+  font-weight: 500;
+}
+
+.vocab-gap-tooltip .tooltip-meta {
+  font-size: 11px;
+  color: #aaaaaa;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid #333333;
+}
+
+@keyframes fadeInTooltip {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* In both teacher and normal modes */
+.mode-normal .vocab-gap-word,
+.mode-teacher .vocab-gap-word {
+  display: inline-block;
+}

@@ -1,0 +1,28 @@
+{
+  "security.workspace.trust.enabled": false,
+  "security.workspace.trust.startupPrompt": "never",
+  "security.workspace.trust.untrustedFiles": "open",
+  "[powershell]": {
+    "files.defaultLanguage": "powershell",
+    "editor.defaultFormatter": "ms-vscode.powershell"
+  },
+  "powershell.executionPolicy": "Bypass",
+  "powershell.scriptAnalysis.enable": false,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "args": ["-NoProfile", "-NoExit"]
+    }
+  },
+  "debug.confirmOnExit": "never",
+  "extensions.autoUpdate": true,
+  "extensions.autoCheckUpdates": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000
+}
