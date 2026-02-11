@@ -145,18 +145,37 @@ def parse_js_file(filepath: Path) -> dict:
     # Pattern: en_canonical: "Some sentence."
     card_id_pattern = re.compile(r'id\s*:\s*"([^"]+)"')
     en_canonical_pattern = re.compile(r'en_canonical\s*:\s*"([^"]+)"')
+    # Fallback for U10+ format: act_3_drill.anchor.translation
+    anchor_translation_pattern = re.compile(r'anchor\s*:\s*\{[^}]*translation\s*:\s*"([^"]+)"')
     
     # Find card blocks — each card starts with { id: "..." and has en_canonical
     # We need to pair card IDs with their en_canonical
     card_blocks = re.split(r'(?=\{\s*id\s*:\s*")', content)
     for block in card_blocks:
         id_match = card_id_pattern.search(block)
+        if not id_match:
+            continue
+        card_id = id_match.group(1)
+        # Skip non-vocab IDs (dialogue IDs etc.)
+        if not card_id.startswith("V_"):
+            continue
+        
         en_match = en_canonical_pattern.search(block)
-        if id_match and en_match:
-            result["vocab_cards"].append({
-                "id": id_match.group(1),
-                "en_canonical": en_match.group(1),
-            })
+        if en_match:
+            en_text = en_match.group(1)
+        else:
+            # Fallback: use act_3_drill anchor translation (U10 format)
+            anchor_match = anchor_translation_pattern.search(block)
+            if anchor_match:
+                # Strip markdown bold markers
+                en_text = anchor_match.group(1).replace("**", "")
+            else:
+                continue
+        
+        result["vocab_cards"].append({
+            "id": card_id,
+            "en_canonical": en_text,
+        })
     
     return result
 
