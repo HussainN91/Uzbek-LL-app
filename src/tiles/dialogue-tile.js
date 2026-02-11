@@ -572,18 +572,26 @@ export function renderLessonDialogueTile(lesson) {
 
   // Helper function to play dialogue audio
   async function playDialogueAudio(audioId, fallbackText) {
-    const CURRENT_UNIT_ID = getCurrentUnitId();
+    const CURRENT_UNIT_ID = typeof getCurrentUnitId === 'function' ? getCurrentUnitId() : 'U01';
     return new Promise((resolve) => {
+      // Use absolute path for reliability
       const unitFolder = 'unit_' + CURRENT_UNIT_ID.toLowerCase().slice(1);
-      const audioPath = `./audio_assets/${unitFolder}/lesson_dialogues/${audioId}.mp3`;
+      const audioPath = `/audio_assets/${unitFolder}/lesson_dialogues/${audioId}.mp3`;
+      console.log('Playing dialogue audio (helper):', audioPath);
+      
       const audio = new Audio(audioPath);
       
       audio.addEventListener("ended", resolve);
-      audio.addEventListener("error", () => {
-        const altPath = `./audio_assets/${unitFolder}/${audioId}.mp3`;
+      audio.addEventListener("error", (e) => {
+        console.warn('Audio load failed:', audioPath, e);
+        // Fallback: try relative path just in case
+        const altPath = `./audio_assets/${unitFolder}/lesson_dialogues/${audioId}.mp3`;
+        console.log('Trying fallback path:', altPath);
+        
         const altAudio = new Audio(altPath);
         altAudio.addEventListener("ended", resolve);
         altAudio.addEventListener("error", () => {
+          console.error('All audio paths failed. Using TTS fallback.');
           if (window.playExerciseAudio) {
             window.playExerciseAudio(fallbackText, "neutral_female_slow");
           }
@@ -592,7 +600,8 @@ export function renderLessonDialogueTile(lesson) {
         altAudio.play().catch(() => setTimeout(resolve, 1500));
       });
       
-      audio.play().catch(() => {
+      audio.play().catch((e) => {
+        console.warn('Audio play failed:', e);
         if (window.playExerciseAudio) {
           window.playExerciseAudio(fallbackText, "neutral_female_slow");
         }
@@ -741,19 +750,31 @@ export function renderLessonDialogueTile(lesson) {
             dialogueBox.querySelectorAll('.dlg-audio-btn').forEach(b => b.classList.remove('is-playing', 'is-loading'));
             
             audioBtn.classList.add('is-loading');
+            const CURRENT_UNIT_ID = typeof getCurrentUnitId === 'function' ? getCurrentUnitId() : 'U01';
             const unitFolder = 'unit_' + CURRENT_UNIT_ID.toLowerCase().slice(1);
-            const audioPath = `./audio_assets/${unitFolder}/lesson_dialogues/${turn.audio_id}.mp3`;
+            // Use absolute path /audio_assets/
+            const audioPath = `/audio_assets/${unitFolder}/lesson_dialogues/${turn.audio_id}.mp3`;
+            console.log('Playing button audio:', audioPath);
             
             if (window.dialogueAudioPlayer) {
               window.dialogueAudioPlayer.play(audioPath, audioBtn).then(() => {
                 audioBtn.classList.remove('is-playing');
-              }).catch(() => {
+              }).catch((e) => {
+                console.error('Button audio failed:', e);
+                audioBtn.classList.remove('is-loading');
+                // Fallback to TTS?
                 if (window.playExerciseAudio) window.playExerciseAudio(turnTextForAudio, "neutral_female_slow");
-                audioBtn.classList.remove('is-loading', 'is-playing');
               });
-              // Mark as playing once audio starts
-              audioBtn.classList.remove('is-loading');
+            } else {
+              // Fallback to simple audio if player not found
+              const audio = new Audio(audioPath);
+              audio.onended = () => { audioBtn.classList.remove('is-playing', 'is-loading'); };
+              audio.play().catch(e => {
+                console.error('Simple audio failed:', e);
+                audioBtn.classList.remove('is-playing', 'is-loading');
+              });
               audioBtn.classList.add('is-playing');
+              audioBtn.classList.remove('is-loading');
             }
           });
           
@@ -1210,10 +1231,13 @@ async function startThinkingPressure(turnElements) {
     // Play audio if available
     if (turn.audio_id && window.dialogueAudioPlayer) {
       const unitFolder = 'unit_' + (typeof getCurrentUnitId === 'function' ? getCurrentUnitId() : 'U01').toLowerCase().slice(1);
-      const audioPath = `./audio_assets/${unitFolder}/lesson_dialogues/${turn.audio_id}.mp3`;
+      // Use absolute path
+      const audioPath = `/audio_assets/${unitFolder}/lesson_dialogues/${turn.audio_id}.mp3`;
+      console.log('Thinking Pressure Audio:', audioPath);
+      
       try { 
         window.dialogueAudioPlayer.play(audioPath, /** @type {HTMLButtonElement} */ (turnEl.querySelector('.dlg-audio-btn') || document.createElement('button'))); 
-      } catch (e) { /* fallback */ }
+      } catch (e) { console.warn('Pressure audio error:', e); }
     }
     
     // Vanish text after 800ms

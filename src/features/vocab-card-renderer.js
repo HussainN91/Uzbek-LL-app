@@ -702,7 +702,12 @@
   // ═══════════════════════════════════════════════════════════════
 
   function renderAudioButton(slide) {
-    const audioSrc = slide?.audio;
+    let audioSrc = slide?.audio;
+    // Fix relative paths for Vite/Web Server compatibility
+    if (audioSrc && audioSrc.startsWith('./')) {
+      audioSrc = audioSrc.substring(1); // ./audio -> /audio
+    }
+
     const enText = slide?.en_canonical || slide?.reproduction?.en_canonical || '';
     if (!audioSrc && !enText) return '';
 
