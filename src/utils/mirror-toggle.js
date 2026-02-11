@@ -1,4 +1,4 @@
-/**
+  /**
  * Mirror Toggle Utility
  * =====================
  * Shared three-state sentence rendering (UZ / Mirror / EN) for vocab-tile
@@ -22,10 +22,12 @@ export const LANG_STATES = {
 };
 
 /** Button configurations */
+const MIRROR_SVG = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px"><path d="M12 3v18"/><path d="M18 6l-3 3 3 3"/><path d="M6 6l3 3-3 3"/></svg>';
+
 const LANG_BUTTONS = [
-  { id: LANG_STATES.UZ,     label: '\u{1F1FA}\u{1F1FF} UZ',      title: 'Natural Uzbek (SOV)' },
-  { id: LANG_STATES.MIRROR,  label: '\u{1FA9E}',                  title: 'Mirror — Uzbek words in English order' },
-  { id: LANG_STATES.EN,      label: '\u{1F1EC}\u{1F1E7} EN',      title: 'Full English (SVO)' }
+  { id: LANG_STATES.UZ,     label: '\u{1F1FA}\u{1F1FF} UZ',      title: 'Natural Uzbek (SOV)',                   isHtml: false },
+  { id: LANG_STATES.MIRROR,  label: MIRROR_SVG + ' Mirror',       title: 'Mirror — Uzbek words in English order', isHtml: true },
+  { id: LANG_STATES.EN,      label: '\u{1F1EC}\u{1F1E7} EN',      title: 'Full English (SVO)',                    isHtml: false }
 ];
 
 // ============================
@@ -123,7 +125,27 @@ export function buildMirrorHtml({ target, syntax_scaffold, text_uz, text_en }) {
     return parts.join(' ');
   }
 
-  // Path 2: syntax_scaffold string (may contain [brackets] and **bold**)
+  // Path 2: syntax_scaffold — object format (U07+): { en_structure, uz_gloss, tokens: [{ word, role, color }] }
+  if (syntax_scaffold != null && typeof syntax_scaffold === 'object' && /** @type {any} */ (syntax_scaffold).tokens) {
+    // Show Uzbek words in English sentence order with role coloring
+    const scaffoldObj = /** @type {any} */ (syntax_scaffold);
+    const roleColors = {
+      subject: '#1565c0',
+      verb: '#c62828',
+      irregular_past: '#c62828',
+      object: '#2e7d32',
+      destination: '#6a1b9a',
+      time: '#e65100',
+      adjective: '#00838f',
+      default: '#333'
+    };
+    return scaffoldObj.tokens.map(t => {
+      const color = t.color || roleColors[t.role] || roleColors.default;
+      return `<span style="color:${color};font-weight:600;">${escapeHtml(t.word || '')}</span>`;
+    }).join(' ');
+  }
+
+  // Path 2b: syntax_scaffold string (may contain [brackets] and **bold**)
   if (syntax_scaffold && typeof syntax_scaffold === 'string') {
     let html = escapeHtml(syntax_scaffold);
     // Convert [brackets] to mirror-bracket spans
@@ -204,7 +226,11 @@ export function createLineMirrorToggle({ initialState = LANG_STATES.UZ, mirrorEn
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = `line-mirror-btn ${cfg.id === current ? 'active' : ''} ${cfg.id === LANG_STATES.MIRROR && !mirrorEnabled ? 'disabled' : ''}`;
-    btn.textContent = cfg.label;
+    if (cfg.isHtml) {
+      btn.innerHTML = cfg.label;
+    } else {
+      btn.textContent = cfg.label;
+    }
     btn.title = cfg.title;
     btn.dataset.lang = cfg.id;
 
@@ -215,7 +241,7 @@ export function createLineMirrorToggle({ initialState = LANG_STATES.UZ, mirrorEn
       current = cfg.id;
 
       row.querySelectorAll('.line-mirror-btn').forEach(b => {
-        b.classList.toggle('active', b.dataset.lang === current);
+        b.classList.toggle('active', /** @type {HTMLElement} */ (b).dataset.lang === current);
       });
 
       if (typeof onChange === 'function') onChange(current);
@@ -268,7 +294,11 @@ export function createGlobalMirrorToggle({ initialState = LANG_STATES.EN, mirror
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = `lang-toggle-btn ${cfg.id === current ? 'active' : ''} ${cfg.id === LANG_STATES.MIRROR && !mirrorEnabled ? 'disabled' : ''}`;
-    btn.textContent = cfg.label;
+    if (cfg.isHtml) {
+      btn.innerHTML = cfg.label;
+    } else {
+      btn.textContent = cfg.label;
+    }
     btn.title = cfg.title;
     btn.dataset.lang = cfg.id;
     btn.style.cssText = `padding: 6px 14px; border: 2px solid ${cfg.id === current ? '#5a67d8' : '#e0e0e0'}; border-radius: 20px; background: ${cfg.id === current ? '#5a67d8' : 'white'}; color: ${cfg.id === current ? 'white' : '#555'}; font-size: 13px; cursor: pointer; transition: all 0.2s;`;

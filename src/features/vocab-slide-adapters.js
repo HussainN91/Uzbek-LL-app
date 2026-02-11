@@ -132,14 +132,21 @@ export function adapt4ActFormat(rawCard) {
   }
 
   const presentationSlide = slides.find(s => s.phase === 'presentation') || firstSlide;
-  const conceptCheckSlide = slides.find(s => s.type === 'concept_check');
-  const discoverySlide = slides.find(s => s.type === 'discovery');
-  const drillListSlide = slides.find(s => s.type === 'drill_list');
+  // Match by BOTH type and phase — U07+ uses phase directly, older formats use type
+  const conceptCheckSlide = slides.find(s => s.type === 'concept_check' || s.phase === 'concept_check');
+  const discoverySlide = slides.find(s => s.type === 'discovery' || s.phase === 'discovery');
+  const drillListSlide = slides.find(s => s.type === 'drill_list' || (s.phase === 'practice' && s.type === 'drill_list'));
   const productionSlides = slides.filter(s => s.phase === 'production');
-  const productionSlide = productionSlides.find(s => s.type !== 'personalization') || productionSlides[0];
-  const personalizationSlide = slides.find(s => s.type === 'personalization');
+  const productionSlide = productionSlides.find(s => s.type !== 'personalization' && s.phase !== 'personalization') || productionSlides[0];
+  const personalizationSlide = slides.find(s => s.type === 'personalization' || s.phase === 'personalization');
 
   // ─── Slide 1: PRESENTATION ───────────────────────────────────
+  // Handle syntax_scaffold as both string (legacy) and object (U07+)
+  const rawScaffold = presentationSlide?.syntax_scaffold || null;
+  const scaffoldValue = (rawScaffold && typeof rawScaffold === 'object')
+    ? rawScaffold  // Keep as object for the renderer to parse
+    : rawScaffold; // String or null
+
   const slidePresentation = {
     phase: 'presentation',
     presentation: {
@@ -151,33 +158,68 @@ export function adapt4ActFormat(rawCard) {
     reproduction: { en_canonical: presentationSlide?.en_canonical || '' },
     audio: presentationSlide?.audio || null,
     grammar_visual: presentationSlide?.grammar_visual || null,
-    syntax_scaffold: presentationSlide?.syntax_scaffold || null
+    syntax_scaffold: scaffoldValue
   };
 
   // ─── Slide 2: CONCEPT CHECK ──────────────────────────────────
+  // U07+ format: { phase: "concept_check", question_uz, choices: [{text, correct}] }
+  // Legacy format: { type: "concept_check", exercise: { type: "function_sort", ... } }
+  let conceptExercise = null;
+  if (conceptCheckSlide) {
+    if (conceptCheckSlide.exercise) {
+      // Legacy format with exercise sub-object
+      conceptExercise = {
+        type: conceptCheckSlide.exercise.type,
+        data: conceptCheckSlide.exercise,
+        instruction: conceptCheckSlide.instruction || ''
+      };
+    } else if (conceptCheckSlide.choices || conceptCheckSlide.question_uz) {
+      // U07+ format: convert question_uz + choices to function_sort exercise
+      conceptExercise = {
+        type: 'function_sort',
+        data: {
+          sentence: conceptCheckSlide.question_uz || '',
+          options: (conceptCheckSlide.choices || []).map(c => ({
+            label: c.text || '',
+            value: c.text || '',
+            correct: !!c.correct
+          })),
+          success_msg: conceptCheckSlide.success_msg || '',
+          fail_msg: conceptCheckSlide.fail_msg || ''
+        },
+        instruction: conceptCheckSlide.question_uz || ''
+      };
+    }
+  }
+
   const slideConceptCheck = {
     phase: 'practice',
     type: 'concept_check',
     practice: {
       en_examples: [],
-      exercise: conceptCheckSlide?.exercise ? {
-        type: conceptCheckSlide.exercise.type,
-        data: conceptCheckSlide.exercise,
-        instruction: conceptCheckSlide.instruction || ''
-      } : null
+      exercise: conceptExercise
     }
   };
 
   // ─── Slide 3: DISCOVERY ──────────────────────────────────────
+  // U07+ format: { phase: "discovery", grammar_token, form_focus, why_prompt, explanation_uz, mini_rule }
+  // Legacy format: { type: "discovery", sentence, highlight_tokens[], options[] }
   const slideDiscovery = {
     phase: 'practice',
     type: 'discovery',
-    instruction: discoverySlide?.instruction || '',
+    // Legacy fields
+    instruction: discoverySlide?.instruction || discoverySlide?.why_prompt || '',
     sentence: discoverySlide?.sentence || '',
     highlight_tokens: discoverySlide?.highlight_tokens || [],
     options: discoverySlide?.options || [],
     success_msg: discoverySlide?.success_msg || '',
-    fail_msg: discoverySlide?.fail_msg || ''
+    fail_msg: discoverySlide?.fail_msg || '',
+    // U07+ grammar pattern fields
+    grammar_token: discoverySlide?.grammar_token || '',
+    form_focus: discoverySlide?.form_focus || '',
+    why_prompt: discoverySlide?.why_prompt || '',
+    explanation_uz: discoverySlide?.explanation_uz || '',
+    mini_rule: discoverySlide?.mini_rule || ''
   };
 
   // ─── Slide 4: DRILL LIST ─────────────────────────────────────
@@ -200,28 +242,33 @@ export function adapt4ActFormat(rawCard) {
   };
 
   // ─── Slide 5: PRODUCTION ─────────────────────────────────────
+  // U07+ uses prompt_uz/model_sentence, legacy uses uz_prompt/model_answer
   const slideProduction = {
     phase: 'production',
     production: {
-      uz_prompt: productionSlide?.uz_prompt || '',
-      en_target: productionSlide?.model_answer || '',
-      model_answer: productionSlide?.model_answer || '',
+      uz_prompt: productionSlide?.uz_prompt || productionSlide?.prompt_uz || '',
+      en_target: productionSlide?.model_answer || productionSlide?.model_sentence || '',
+      model_answer: productionSlide?.model_answer || productionSlide?.model_sentence || '',
       accepted_answers: productionSlide?.accepted_answers || [],
+      hints: productionSlide?.hints || [],
       trap: productionSlide?.trap || null,
       on_success: productionSlide?.on_success || null
     }
   };
 
   // ─── Slide 6: PERSONALIZATION ────────────────────────────────
+  // U07+ uses prompt_uz/model_frame/flexibleCheck, legacy uses uz_prompt/focus_pattern
   const slidePersonalization = {
     phase: 'production',
     type: 'personalization',
-    uz_prompt: personalizationSlide?.uz_prompt || '',
-    focus_pattern: personalizationSlide?.focus_pattern || '',
-    accepted_patterns: personalizationSlide?.accepted_patterns || [],
+    uz_prompt: personalizationSlide?.uz_prompt || personalizationSlide?.prompt_uz || '',
+    focus_pattern: personalizationSlide?.focus_pattern || personalizationSlide?.model_frame || '',
+    accepted_patterns: personalizationSlide?.accepted_patterns || personalizationSlide?.tags || [],
     on_success: personalizationSlide?.on_success || null,
     success_msg: personalizationSlide?.on_success?.message || 'Well done!',
-    fail_msg: 'Try using the target pattern in your answer.'
+    fail_msg: 'Try using the target pattern in your answer.',
+    flexibleCheck: personalizationSlide?.flexibleCheck || false,
+    model_frame: personalizationSlide?.model_frame || ''
   };
 
   return {

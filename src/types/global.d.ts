@@ -222,6 +222,24 @@ declare global {
     };
     speakText?: (text: string, langOrOptions?: string | Record<string, any>) => void;
     
+    /** Tile registry (backward compat bridge) */
+    TileRegistry?: {
+      register: (...args: any[]) => void;
+      registerSimple: (...args: any[]) => void;
+      mount: (...args: any[]) => any;
+      unmount: () => void;
+      has: (name: string) => boolean;
+      list: () => string[];
+    };
+
+    /** Mission & grammar helpers (set by curriculum loader / vocab data) */
+    getMissionStageForLesson?: (lessonId: string) => any;
+    getGrammarFocus?: () => string;
+    getContrastiveTurnsForLesson?: (lessonId: string) => any[];
+
+    /** Dialogue tile render (backward compat bridge) */
+    renderLessonDialogueTile?: (...args: any[]) => any;
+
     /** Vocab gap system */
     vocabGapSystem?: {
       process(): void;

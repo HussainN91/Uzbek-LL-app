@@ -1094,7 +1094,7 @@ async function startThinkingPressure(turnElements) {
     if (turn.audio_id && window.dialogueAudioPlayer) {
       const unitFolder = 'unit_' + (typeof getCurrentUnitId === 'function' ? getCurrentUnitId() : 'U01').toLowerCase().slice(1);
       const audioPath = `./audio_assets/${unitFolder}/lesson_dialogues/${turn.audio_id}.mp3`;
-      try { window.dialogueAudioPlayer.play(audioPath); } catch (e) { /* fallback */ }
+      try { window.dialogueAudioPlayer.play(audioPath, /** @type {HTMLButtonElement} */ (turnEl.querySelector('button') || document.createElement('button'))); } catch (e) { /* fallback */ }
     }
     
     // Vanish text after 800ms

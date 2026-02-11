@@ -1,100 +1,110 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "🚀 Recycling Preflight Check",
-            "type": "shell",
-            "command": "python",
-            "args": [
-                "${workspaceFolder}/recycling_analyzer.py",
-                "preflight",
-                "${input:unitNumber}"
-            ],
-            "problemMatcher": [],
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": true,
-                "panel": "shared"
-            },
-            "group": "none"
-        },
-        {
-            "label": "🔍 Validate Vocab Cards JS",
-            "type": "shell",
-            "command": "python",
-            "args": [
-                "${workspaceFolder}/recycling_analyzer.py",
-                "validate",
-                "${input:unitNumber}"
-            ],
-            "problemMatcher": [],
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": true,
-                "panel": "shared"
-            },
-            "group": "none"
-        },
-        {
-            "label": "📊 Recycling Status",
-            "type": "shell",
-            "command": "python",
-            "args": [
-                "${workspaceFolder}/recycling_analyzer.py",
-                "status"
-            ],
-            "problemMatcher": [],
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": true,
-                "panel": "shared"
-            },
-            "group": "none"
-        },
-        {
-            "label": "📁 JS Files Status",
-            "type": "shell",
-            "command": "python",
-            "args": [
-                "${workspaceFolder}/recycling_analyzer.py",
-                "js"
-            ],
-            "problemMatcher": [],
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": true,
-                "panel": "shared"
-            },
-            "group": "none"
-        },
-        {
-            "label": "🔄 What Needs Recycling",
-            "type": "shell",
-            "command": "python",
-            "args": [
-                "${workspaceFolder}/recycling_analyzer.py",
-                "needs",
-                "${input:unitNumber}"
-            ],
-            "problemMatcher": [],
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": true,
-                "panel": "shared"
-            },
-            "group": "none"
-        }
-    ],
-    "inputs": [
-        {
-            "id": "unitNumber",
-            "type": "promptString",
-            "description": "Enter unit number (e.g., U05 or 5)"
-        }
-    ]
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "🚀 Recycling Preflight Check",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"${workspaceFolder}/recycling_analyzer.py",
+				"preflight",
+				"${input:unitNumber}"
+			],
+			"problemMatcher": [],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "shared"
+			},
+			"group": "none"
+		},
+		{
+			"label": "🔍 Validate Vocab Cards JS",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"${workspaceFolder}/recycling_analyzer.py",
+				"validate",
+				"${input:unitNumber}"
+			],
+			"problemMatcher": [],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "shared"
+			},
+			"group": "none"
+		},
+		{
+			"label": "📊 Recycling Status",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"${workspaceFolder}/recycling_analyzer.py",
+				"status"
+			],
+			"problemMatcher": [],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "shared"
+			},
+			"group": "none"
+		},
+		{
+			"label": "📁 JS Files Status",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"${workspaceFolder}/recycling_analyzer.py",
+				"js"
+			],
+			"problemMatcher": [],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "shared"
+			},
+			"group": "none"
+		},
+		{
+			"label": "🔄 What Needs Recycling",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"${workspaceFolder}/recycling_analyzer.py",
+				"needs",
+				"${input:unitNumber}"
+			],
+			"problemMatcher": [],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "shared"
+			},
+			"group": "none"
+		},
+		{
+			"label": "Run fix_qmarks",
+			"type": "shell",
+			"command": "cmd /c \"D:\\New folder\\run_fix.bat\""
+		},
+		{
+			"label": "Run fix_qmarks v2",
+			"type": "shell",
+			"command": "cmd /c run_fix.bat"
+		}
+	],
+	"inputs": [
+		{
+			"id": "unitNumber",
+			"type": "promptString",
+			"description": "Enter unit number (e.g., U05 or 5)"
+		}
+	]
 }

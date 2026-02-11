@@ -483,6 +483,7 @@
   font-size: 15px;
   outline: none;
   transition: border-color 0.15s;
+  box-sizing: border-box;
 }
 
 .vc-text-input:focus {

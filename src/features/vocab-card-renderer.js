@@ -13,10 +13,10 @@
  *   - vocab-exercises.js  (jumble, trap, scratch exercise renderers)
  * 
  * 6-STAGE FLOW (4+2 Act):
- *   ?— Presentation — ?— Concept Check — ?— Discovery — ?— Drill — ?— Production — ?— Personalization
+ *   📖 Presentation → 🧠 Concept Check → 🔍 Discovery → 🏋 Drill → ✍ Production → 🎯 Personalization
  * 
  * @module src/features/vocab-card-renderer
- * @version 3.2.0 - Modularized (State + Adapters + Exercises extracted)
+ * @version 4.0.0 - Dead code removed, CSS migration, bug fixes
  */
 
 'use strict';
@@ -46,23 +46,6 @@
   // (they are live bindings from ES module exports)
 
   // (carousel state imported from vocab-card-state.js — see imports above)
-
-  // ═══════════════════════════════════════════════════════════════
-  // TAB NAVIGATION
-  // ═══════════════════════════════════════════════════════════════
-  
-  function activateTab(tabName) {
-    const modal = document.getElementById('vocab-modal');
-    if (!modal) return;
-
-    modal.querySelectorAll('.vocab-tab').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.tab === tabName);
-    });
-
-    modal.querySelectorAll('.vocab-tab-content').forEach(panel => {
-      panel.classList.toggle('active', panel.dataset.panel === tabName);
-    });
-  }
 
   // ═══════════════════════════════════════════════════════════════
   // EXERCISES + ADAPTERS — imported from extracted modules:
@@ -115,6 +98,16 @@
       modal.onclick = (e) => {
         if (e.target === modal) closeVocabModal();
       };
+    }
+
+    // Keyboard: Escape closes modal, arrow keys navigate stages
+    if (!modal._keyHandler) {
+      modal._keyHandler = (e) => {
+        if (e.key === 'Escape') closeVocabModal();
+        if (e.key === 'ArrowRight') goToNextStage();
+        if (e.key === 'ArrowLeft') goToPrevStage();
+      };
+      document.addEventListener('keydown', modal._keyHandler);
     }
 
     // Build modal with staged navigation structure
@@ -261,7 +254,21 @@
       }
     }
 
-    renderStageContent();
+    // Error boundary: catch render failures gracefully
+    try {
+      renderStageContent();
+    } catch (err) {
+      console.error(`Stage render error (${stageName}):`, err);
+      container.innerHTML = `
+        <div class="vc-stage-error">
+          <div style="text-align:center;padding:40px 20px;color:#c62828;">
+            <div style="font-size:32px;margin-bottom:12px;">⚠️</div>
+            <div style="font-size:16px;font-weight:600;margin-bottom:8px;">Stage failed to load</div>
+            <div style="font-size:13px;color:#999;">Try the next stage or close and reopen.</div>
+          </div>
+        </div>
+      `;
+    }
   }
 
   // ═══════════════════════════════════════════════════════════════
@@ -299,7 +306,7 @@
           font-size: 15px;
           color: #e65100;
           line-height: 1.45;
-        ">?? ${polarQ}</div>
+        ">❓ ${polarQ}</div>
         ` : ''}
 
         ${mirrorA ? `
@@ -318,60 +325,17 @@
         ` : ''}
 
         <!-- Flip Card: Hybrid — Full English -->
-        <div class="vocab-flip-container" style="
-          perspective: 1000px;
-          width: 100%;
-          min-height: 130px;
-          margin: 4px 0;
-        ">
-          <div class="vocab-flip-card" id="flip-card" onclick="this.classList.toggle('flipped')" style="
-            position: relative;
-            width: 100%;
-            min-height: 130px;
-            transform-style: preserve-3d;
-            transition: transform 0.5s ease;
-            cursor: pointer;
-          ">
-            <!-- FRONT: Hybrid -->
-            <div class="vocab-flip-front" style="
-              position: absolute;
-              width: 100%;
-              min-height: 130px;
-              backface-visibility: hidden;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              padding: 20px;
-              border-radius: 14px;
-              background: linear-gradient(135deg, #fff9c4, #fff59d);
-              box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-              text-align: center;
-            ">
-              <div style="font-size: 17px;color:#333;line-height:1.5;">${renderHybridAnswer(hybridA)}</div>
-              <div style="margin-top:14px;font-size:11px;color:#999;">?— Tap to see full English</div>
+        <div class="vc-flip-container">
+          <div class="vc-flip-card" id="flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="vc-flip-front">
+              <div class="vc-flip-label" style="color:#b8860b;">🔀 Hybrid Bridge</div>
+              <div class="vc-flip-text" style="color:#333;">${renderHybridAnswer(hybridA)}</div>
+              <div class="vc-flip-hint">↕ Tap to see full English</div>
             </div>
-            
-            <!-- BACK: Full English -->
-            <div class="vocab-flip-back" style="
-              position: absolute;
-              width: 100%;
-              min-height: 130px;
-              backface-visibility: hidden;
-              transform: rotateY(180deg);
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              padding: 20px;
-              border-radius: 14px;
-              background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
-              box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-              text-align: center;
-            ">
-              <div style="font-size:11px;color:#558b2f;margin-bottom:8px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Full English</div>
-              <div style="font-size:22px;font-weight:700;color:#2e7d32;line-height:1.35;">${enCanonical}</div>
-              <div style="margin-top:14px;font-size:11px;color:#999;">?— Tap to flip back</div>
+            <div class="vc-flip-back">
+              <div class="vc-flip-label" style="color:#558b2f;">Full English</div>
+              <div class="vc-flip-text" style="font-size:20px;font-weight:700;color:#2e7d32;">${enCanonical}</div>
+              <div class="vc-flip-hint">↕ Tap to flip back</div>
             </div>
           </div>
         </div>
@@ -433,7 +397,7 @@
 
     return `
       <div style="margin-top: 16px; background: #f5f5f5; border-radius: 12px; overflow: hidden;">
-        <div style="font-size: 13px; font-weight: 600; color: #666; padding: 10px 14px; border-bottom: 1px solid #e0e0e0;">?— Grammar Reference</div>
+        <div style="font-size: 13px; font-weight: 600; color: #666; padding: 10px 14px; border-bottom: 1px solid #e0e0e0;">📊 Grammar Reference</div>
         <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
           ${rows}
         </table>
@@ -500,7 +464,7 @@
             <div style="color: #333; ${isTarget ? 'font-weight: 600;' : ''}">${line.line}</div>
             ${isUnlocked || isTarget ? `<div style="font-size: 11px; color: #888; margin-top: 3px; font-style: italic;">${line.line_uz || ''}</div>` : ''}
           </div>
-          ${isTarget ? '<span style="font-size: 14px; padding-top: 6px;">????</span>' : (isUnlocked ? '<span style="font-size: 12px; padding-top: 6px; opacity: 0.5;">???</span>' : '<span style="font-size: 12px; padding-top: 6px; opacity: 0.3;">????</span>')}
+          ${isTarget ? '<span style="font-size: 14px; padding-top: 6px;">🎯</span>' : (isUnlocked ? '<span style="font-size: 12px; padding-top: 6px; opacity: 0.5;">✅</span>' : '<span style="font-size: 12px; padding-top: 6px; opacity: 0.3;">🔒</span>')}
         </div>
       `;
     }).join('');
@@ -510,8 +474,8 @@
         <button id="dialogue-toggle-btn" onclick="(function(){
           var v = document.getElementById('dialogue-lines');
           var b = document.getElementById('dialogue-toggle-btn');
-          if (v.style.display === 'none') { v.style.display = 'block'; b.textContent = '?— ${dialogue.title || 'Dialogue'} — Hide'; }
-          else { v.style.display = 'none'; b.textContent = '?— ${dialogue.title || 'Dialogue'} — Show'; }
+          if (v.style.display === 'none') { v.style.display = 'block'; b.textContent = '💬 ${dialogue.title || 'Dialogue'} — Hide'; }
+          else { v.style.display = 'none'; b.textContent = '💬 ${dialogue.title || 'Dialogue'} — Show'; }
         })()" style="
           width: 100%;
           padding: 10px 16px;
@@ -523,7 +487,7 @@
           color: #283593;
           cursor: pointer;
           text-align: left;
-        ">?— ${dialogue.title || 'Dialogue'} — Show</button>
+        ">💬 ${dialogue.title || 'Dialogue'} — Show</button>
         <div id="dialogue-lines" style="
           display: none;
           margin-top: 8px;
@@ -539,7 +503,7 @@
           </div>
           ${linesHTML}
           <div style="font-size: 11px; color: #999; text-align: center; margin-top: 8px;">
-            ?— Complete vocab cards to unlock more lines
+            🔒 Complete vocab cards to unlock more lines
           </div>
         </div>
       </div>
@@ -674,10 +638,10 @@
             align-items: center;
             justify-content: center;
             transition: background 0.2s;
-          " onmouseenter="this.style.background='rgba(255,255,255,0.35)'" onmouseleave="this.style.background='rgba(255,255,255,0.2)'">??</button>
+          " onmouseenter="this.style.background='rgba(255,255,255,0.35)'" onmouseleave="this.style.background='rgba(255,255,255,0.2)'">&times;</button>
           <div style="font-size: 13px; opacity: 0.9; margin-bottom: 4px;">In context</div>
           <div style="font-size: 20px; font-weight: 700; letter-spacing: -0.3px;">${dialogue.title || 'Dialogue'}</div>
-          ${(dialogue.setting || dialogue.characters?.length) ? `<div style="font-size: 12px; opacity: 0.85; margin-top: 6px;">${dialogue.setting || ''}${dialogue.setting && dialogue.characters?.length ? ' ? ' : ''}${(dialogue.characters || []).join(' & ')}</div>` : ''}
+          ${(dialogue.setting || dialogue.characters?.length) ? `<div style="font-size: 12px; opacity: 0.85; margin-top: 6px;">${dialogue.setting || ''}${dialogue.setting && dialogue.characters?.length ? ' • ' : ''}${(dialogue.characters || []).join(' & ')}</div>` : ''}
         </div>
         <div style="
           flex: 1;
@@ -748,7 +712,7 @@
           cursor: pointer;
           color: #1565c0;
           font-weight: 600;
-        ">?— Play Audio</button>
+        ">🔊 Play Audio</button>
       </div>
     `;
   }
@@ -767,6 +731,50 @@
     const scaffold = slide.syntax_scaffold || slide.presentation?.syntax_scaffold;
     if (!scaffold) return '';
 
+    // U07+ object format: { en_structure, uz_gloss, tokens: [{word, role, color}] }
+    if (typeof scaffold === 'object' && scaffold.tokens) {
+      const roleColors = {
+        subject: '#1565c0',
+        irregular_past: '#2e7d32',
+        regular_past: '#2e7d32',
+        auxiliary_past: '#2e7d32',
+        base_verb: '#6a1b9a',
+        negative_helper: '#c62828',
+        question_helper: '#e65100',
+        question_word: '#e65100',
+        object: '#6a1b9a',
+        destination: '#6a1b9a',
+        location: '#6a1b9a',
+        activity: '#6a1b9a',
+        beneficiary: '#e65100',
+        time_adverb: '#e65100',
+      };
+
+      const tokensHTML = scaffold.tokens.map(t => {
+        const color = roleColors[t.role] || t.color || '#333';
+        return `<span style="color:${color};font-weight:600;" title="${(t.role || '').replace(/_/g, ' ')}">${t.word}</span>`;
+      }).join(' ');
+
+      return `
+        <div style="
+          margin-top: 16px;
+          padding: 14px 18px;
+          background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%);
+          border-left: 4px solid #5c6bc0;
+          border-radius: 10px;
+        ">
+          <div style="font-size: 11px; font-weight: 700; color: #283593; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
+            🔀 Syntax Scaffold (Mirror Mode)
+          </div>
+          <div style="font-size: 15px; line-height: 1.5; margin-bottom: 6px;">
+            ${tokensHTML}
+          </div>
+          ${scaffold.uz_gloss ? `<div style="font-size: 13px; color: #555; font-style: italic;">${scaffold.uz_gloss}</div>` : ''}
+        </div>
+      `;
+    }
+
+    // Legacy string format
     return `
       <div style="
         margin-top: 16px;
@@ -776,7 +784,7 @@
         border-radius: 10px;
       ">
         <div style="font-size: 11px; font-weight: 700; color: #283593; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
-          ?— Syntax Scaffold (Mirror Mode)
+          🔀 Syntax Scaffold (Mirror Mode)
         </div>
         <div style="font-size: 15px; color: #1a237e; line-height: 1.5;">
           ${renderHybridAnswer(scaffold)}
@@ -789,8 +797,113 @@
   // STAGE: DISCOVERY (Grammar Noticing — After Concept Check)
   // Highlights grammar tokens, asks "Why this form?"
   // ═══════════════════════════════════════════════════════════════
-  
+
+  // U07+ Grammar Discovery — pattern-based (no MCQ, shows grammar_token + rule)
+  function renderGrammarDiscovery(container, slide) {
+    const token = slide.grammar_token || '';
+    const formFocus = slide.form_focus || '';
+    const whyPrompt = slide.why_prompt || '';
+    const explanationUz = slide.explanation_uz || '';
+    const miniRule = slide.mini_rule || '';
+
+    container.innerHTML = `
+      <div style="display:flex;flex-direction:column;height:100%;justify-content:center;">
+        <div style="font-size:14px;color:#888;margin-bottom:16px;font-weight:600;text-align:center;">
+          🔍 DISCOVERY
+        </div>
+
+        <!-- Grammar Token -->
+        <div style="
+          padding:24px;
+          background:linear-gradient(135deg,#e3f2fd 0%,#bbdefb 100%);
+          border-radius:16px;
+          margin-bottom:20px;
+          text-align:center;
+          box-shadow:0 4px 12px rgba(25,118,210,0.15);
+        ">
+          <div style="font-size:28px;font-weight:700;color:#1565c0;letter-spacing:-0.5px;">${token}</div>
+          ${formFocus ? `<div style="font-size:12px;color:#42a5f5;margin-top:6px;font-weight:500;text-transform:uppercase;letter-spacing:0.5px;">${formFocus.replace(/_/g, ' ')}</div>` : ''}
+        </div>
+
+        <!-- Why Prompt (Uzbek question) -->
+        ${whyPrompt ? `
+        <div style="
+          padding:16px 20px;
+          background:#fff3e0;
+          border-left:4px solid #ff9800;
+          border-radius:10px;
+          margin-bottom:16px;
+          font-size:15px;
+          color:#e65100;
+          font-weight:500;
+          line-height:1.5;
+        ">❓ ${whyPrompt}</div>
+        ` : ''}
+
+        <!-- Reveal Button + Explanation -->
+        <div id="grammar-reveal-area">
+          <button id="grammar-reveal-btn" style="
+            width:100%;
+            padding:14px 20px;
+            background:linear-gradient(135deg,#e8f5e9 0%,#c8e6c9 100%);
+            border:2px solid #66bb6a;
+            border-radius:12px;
+            font-size:15px;
+            cursor:pointer;
+            font-weight:600;
+            color:#2e7d32;
+            transition:all 0.2s;
+          ">👆 Tap to see the rule</button>
+        </div>
+
+        <div id="grammar-explanation" style="display:none;margin-top:16px;">
+          <!-- Mini Rule Card -->
+          ${miniRule ? `
+          <div style="
+            padding:16px 20px;
+            background:linear-gradient(135deg,#e8eaf6 0%,#c5cae9 100%);
+            border-left:4px solid #5c6bc0;
+            border-radius:10px;
+            margin-bottom:12px;
+          ">
+            <div style="font-size:11px;font-weight:700;color:#283593;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">📏 Rule</div>
+            <div style="font-size:16px;color:#1a237e;font-weight:600;line-height:1.5;">${miniRule}</div>
+          </div>
+          ` : ''}
+
+          <!-- Explanation in Uzbek -->
+          ${explanationUz ? `
+          <div style="
+            padding:14px 18px;
+            background:#f5f5f5;
+            border-radius:10px;
+            font-size:14px;
+            color:#555;
+            line-height:1.6;
+          ">${explanationUz}</div>
+          ` : ''}
+        </div>
+      </div>
+    `;
+
+    // Reveal button handler
+    const revealBtn = container.querySelector('#grammar-reveal-btn');
+    const explanationDiv = container.querySelector('#grammar-explanation');
+    if (revealBtn && explanationDiv) {
+      revealBtn.onclick = () => {
+        explanationDiv.style.display = 'block';
+        revealBtn.style.display = 'none';
+      };
+    }
+  }
+
   function renderDiscoveryStage(container, slide) {
+    // ── U07+ grammar pattern format (grammar_token, mini_rule, why_prompt) ──
+    if (slide.grammar_token || slide.mini_rule) {
+      return renderGrammarDiscovery(container, slide);
+    }
+
+    // ── Legacy format (sentence + highlight_tokens + MCQ options) ──
     const instruction = slide.instruction || 'Diqqat bilan qarang... (Look carefully...)';
     const sentence = slide.sentence || '';
     const highlightTokens = slide.highlight_tokens || [];
@@ -815,7 +928,7 @@
         justify-content: center;
       ">
         <div style="font-size: 14px; color: #888; margin-bottom: 16px; font-weight: 600; text-align: center;">
-          ?— DISCOVERY
+          🔍 DISCOVERY
         </div>
 
         <!-- Instruction -->
@@ -859,6 +972,7 @@
               border: 2px solid #ddd;
               border-radius: 12px;
               font-size: 15px;
+              color: #333;
               cursor: pointer;
               transition: all 0.2s;
               text-align: left;
@@ -928,7 +1042,7 @@
         text-align: center;
       ">
         <div style="font-size: 14px; color: #888; margin-bottom: 20px; font-weight: 600;">
-          ?— PERSONALIZATION
+          🎯 PERSONALIZATION
         </div>
 
         <!-- Uzbek Prompt -->
@@ -954,6 +1068,7 @@
             font-size: 16px;
             outline: none;
             transition: all 0.2s;
+            box-sizing: border-box;
           " />
         </div>
 
@@ -1082,7 +1197,7 @@
             border-radius:12px;
           ">
             <div style="font-size:11px;color:#2e7d32;margin-bottom:5px;font-weight:700;display:flex;align-items:center;gap:4px;">
-              <span>???</span> ANCHOR${ex.speaker ? ' — ' + ex.speaker : ''}
+              <span>⚓</span> ANCHOR${ex.speaker ? ' — ' + ex.speaker : ''}
             </div>
             <div style="font-size:16px;color:#1b5e20;line-height:1.4;">${sentence}</div>
             ${ex.sentence_uz ? `<div style="font-size:13px;color:#558b2f;margin-top:5px;font-style:italic;">${ex.sentence_uz}</div>` : ''}
@@ -1101,12 +1216,12 @@
           " onclick="window.flipPracticeCard('${uniqueId}')">
             <div class="uz-side">
               <div style="font-size:11px;color:#e65100;margin-bottom:5px;font-weight:700;display:flex;align-items:center;gap:4px;">
-                <span>????????</span> Tap to reveal English${ex.subject ? ` <span style="opacity:0.7">(${ex.subject})</span>` : ''}
+                <span>👆</span> Tap to reveal English${ex.subject ? ` <span style="opacity:0.7">(${ex.subject})</span>` : ''}
               </div>
               <div style="font-size:16px;color:#333;line-height:1.4;">${uzSentence || '...'}</div>
             </div>
             <div class="en-side" style="display:none;">
-              <div style="font-size:11px;color:#1565c0;margin-bottom:5px;font-weight:700;">?????— ENGLISH</div>
+              <div style="font-size:11px;color:#1565c0;margin-bottom:5px;font-weight:700;">🇬🇧 ENGLISH</div>
               <div style="font-size:16px;color:#0d47a1;line-height:1.4;">${sentence}</div>
               ${uzSentence ? `<div style="font-size:12px;color:#888;margin-top:4px;font-style:italic;">${uzSentence}</div>` : ''}
             </div>
@@ -1155,7 +1270,7 @@
     container.innerHTML = `
       <div style="height: 100%; display: flex; flex-direction: column;">
         <div style="font-size: 14px; color: #888; margin-bottom: 16px; font-weight: 600; text-align: center;">
-          ?— EXERCISE — ${exerciseLabel}
+          📝 EXERCISE — ${exerciseLabel}
         </div>
         
         <div id="exercise-area" style="flex: 1; display: flex; flex-direction: column; justify-content: center;"></div>
@@ -1230,6 +1345,7 @@
               border: 2px solid #ddd;
               border-radius: 12px;
               font-size: 15px;
+              color: #333;
               cursor: pointer;
               transition: all 0.2s;
               text-align: left;
@@ -1344,7 +1460,8 @@
     container.querySelectorAll('.jumble-chunk').forEach(btn => {
       btn.onclick = () => {
         const chunk = btn.dataset.chunk;
-        selectedChunks.push(chunk);
+        const idx = btn.dataset.index;
+        selectedChunks.push({ text: chunk, srcIndex: idx });
         btn.style.opacity = '0.3';
         btn.style.pointerEvents = 'none';
         
@@ -1356,7 +1473,7 @@
       const answerDiv = document.getElementById('jumble-answer');
       const feedbackDiv = document.getElementById('jumble-feedback');
       
-      answerDiv.innerHTML = selectedChunks.map((chunk, i) => `
+      answerDiv.innerHTML = selectedChunks.map((item, i) => `
         <span style="
           padding: 10px 16px;
           background: #e3f2fd;
@@ -1364,12 +1481,12 @@
           font-size: 16px;
           font-weight: 500;
           cursor: pointer;
-        " onclick="window.removeJumbleChunk(${i})">${chunk}</span>
+        " onclick="window.removeJumbleChunk(${i})">${item.text}</span>
       `).join('');
       
       // Check if complete
       if (selectedChunks.length === chunks.length) {
-        const userAnswer = selectedChunks.join(' ');
+        const userAnswer = selectedChunks.map(c => c.text).join(' ');
         const isCorrect = userAnswer.toLowerCase().replace(/[.,!?]/g, '') === 
                           correctAnswer.toLowerCase().replace(/[.,!?]/g, '');
         
@@ -1401,13 +1518,12 @@
     window.removeJumbleChunk = function(index) {
       const removed = selectedChunks.splice(index, 1)[0];
       
-      // Re-enable the button
-      container.querySelectorAll('.jumble-chunk').forEach(btn => {
-        if (btn.dataset.chunk === removed && btn.style.opacity === '0.3') {
-          btn.style.opacity = '1';
-          btn.style.pointerEvents = 'auto';
-        }
-      });
+      // Re-enable the source button by matching data-index (handles duplicate words)
+      const srcBtn = container.querySelector(`.jumble-chunk[data-index="${removed.srcIndex}"]`);
+      if (srcBtn) {
+        srcBtn.style.opacity = '1';
+        srcBtn.style.pointerEvents = 'auto';
+      }
       
       updateJumbleAnswer();
     };
@@ -1433,7 +1549,7 @@
         text-align: center;
       ">
         <div style="font-size: 14px; color: #888; margin-bottom: 20px; font-weight: 600;">
-          ?— PRODUCTION
+          ✏️ PRODUCTION
         </div>
         
         <!-- Uzbek Prompt -->
@@ -1459,6 +1575,7 @@
             font-size: 16px;
             outline: none;
             transition: all 0.2s;
+            box-sizing: border-box;
           " onfocus="this.style.borderColor='#667eea'" onblur="this.style.borderColor='#ddd'" />
         </div>
         
@@ -1519,7 +1636,7 @@
               color: #856404;
               text-align: left;
             ">
-              <strong>?— Trap Detected!</strong><br>
+              <strong>⚠️ Trap Detected!</strong><br>
               ${trap.message || 'Check your answer carefully.'}
             </div>
           `;
@@ -1559,7 +1676,7 @@
           const unlockNotice = document.createElement('div');
           unlockNotice.style.cssText = 'margin-top:12px;padding:12px 16px;background:linear-gradient(135deg,#e8f5e9 0%,#c8e6c9 100%);border-radius:10px;border-left:4px solid #4caf50;animation:modalSlideIn 0.3s ease-out;';
           unlockNotice.innerHTML = `
-            <div style="font-size:13px;font-weight:600;color:#2e7d32;">?— Dialogue Line Unlocked!</div>
+            <div style="font-size:13px;font-weight:600;color:#2e7d32;">🔓 Dialogue Line Unlocked!</div>
             <div style="font-size:12px;color:#558b2f;margin-top:4px;">${currentCard?.dialogue_ref?.speaker || ''}: "${currentCard?.dialogue_ref?.bubble_text || ''}"</div>
           `;
           feedbackDiv.after(unlockNotice);
@@ -1590,1015 +1707,6 @@
         checkBtn.click();
       }
     };
-  }
-
-  // triggerBubbleUnlock — imported from vocab-card-state.js (line 33)
-
-  // ═══════════════════════════════════════════════════════════════
-  // LEGACY MODAL CONTENT BUILDER (Keeping for backward compatibility)
-  // ═══════════════════════════════════════════════════════════════
-  
-  function renderModalContent(modal, card, vocabId, isCompleted, hasSlidesFormat) {
-    const productionPrompt = (card.slides && card.slides[0]?.practice?.context_question) || (card.production?.uz_prompt ?? '');
-
-    modal.innerHTML = `
-      <div style="
-        background: white;
-        border-radius: 16px;
-        max-width: 640px;
-        width: 100%;
-        max-height: 90vh;
-        overflow-y: auto;
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        animation: modalSlideIn 0.3s ease-out;
-      ">
-        <!-- Header -->
-        <div style="
-          background: #5a67d8;
-          color: white;
-          padding: 24px;
-          border-radius: 16px 16px 0 0;
-          position: relative;
-        ">
-          <button onclick="window.closeVocabModal()" style="
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            border: none;
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s;
-          " onmouseover="this.style.background='rgba(255,255,255,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'">??</button>
-          
-          <div style="font-size: 32px; font-weight: 700; margin-bottom: 8px;">${card.en}</div>
-          <div style="font-size: 14px; opacity: 0.9;">${card.id}${card.is_chunk ? ' <span style="background:rgba(255,255,255,0.2);padding:2px 8px;border-radius:12px;font-size:11px;margin-left:8px;">CHUNK</span>' : ''}</div>
-          ${isCompleted ? '<div style="margin-top: 12px; display: inline-block; padding: 6px 12px; background: rgba(255,255,255,0.2); border-radius: 20px; font-size: 13px;">— Completed</div>' : ''}
-        </div>
-
-        <!-- Tabs -->
-        <div style="
-          display: flex;
-          border-bottom: 2px solid #f0f0f0;
-          background: #fafafa;
-        ">
-          <button class="vocab-tab" data-tab="context" style="
-            flex: 1;
-            padding: 16px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 15px;
-            font-weight: 600;
-            color: #666;
-            border-bottom: 3px solid transparent;
-            transition: all 0.2s;
-          ">?— Context</button>
-          
-          <button class="vocab-tab" data-tab="practice" style="
-            flex: 1;
-            padding: 16px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 15px;
-            font-weight: 600;
-            color: #666;
-            border-bottom: 3px solid transparent;
-            transition: all 0.2s;
-          ">?— Practice</button>
-          
-          <button class="vocab-tab" data-tab="produce" style="
-            flex: 1;
-            padding: 16px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 15px;
-            font-weight: 600;
-            color: #666;
-            border-bottom: 3px solid transparent;
-            transition: all 0.2s;
-          ">?— Produce</button>
-        </div>
-
-        <!-- Tab Contents -->
-        <div style="padding: 24px;">
-          
-          <!-- —???????????????????????????— CONTEXT TAB —???????????????????????????— -->
-          <div class="vocab-tab-content" data-panel="context" style="display: none;">
-            ${card.image ? `
-              <div style="margin-bottom: 20px; text-align: center;">
-                <img src="${card.image}" style="
-                  max-width: 100%; 
-                  max-height: 240px; 
-                  border-radius: 12px; 
-                  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-                  object-fit: cover;
-                " alt="${card.en}">
-              </div>
-            ` : ''}
-            <div style="margin-bottom: 20px;">
-              <div style="font-size: 14px; color: #666; margin-bottom: 8px; font-weight: 600;">Uzbek Context</div>
-              <div id="context-uzbek" style="font-size: 16px; color: #333; line-height: 1.6;"></div>
-            </div>
-          </div>
-
-          <!-- —???????????????????????????— PRACTICE TAB (CAROUSEL) —???????????????????????????— -->
-          <div class="vocab-tab-content" data-panel="practice" style="display: none;">
-            <div id="carousel-container"></div>
-          </div>
-
-          <!-- —???????????????????????????— PRODUCE TAB —???????????????????????????— -->
-          <div class="vocab-tab-content" data-panel="produce" style="display: none;">
-            ${card.production ? `
-              <div style="margin-bottom: 24px;">
-                <div style="font-size: 14px; color: #666; margin-bottom: 8px; font-weight: 600;">Uzbek Prompt</div>
-                <div style="
-                  padding: 16px;
-                  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-                  border-radius: 8px;
-                  font-size: 16px;
-                  color: #333;
-                  margin-bottom: 16px;
-                ">${productionPrompt}</div>
-              </div>
-
-              <div>
-                <div style="font-size: 14px; color: #666; margin-bottom: 8px; font-weight: 600;">English Target</div>
-                <div id="production-reveal" style="
-                  padding: 16px;
-                  background: #e8f5e9;
-                  border-radius: 8px;
-                  font-size: 16px;
-                  color: #333;
-                  position: relative;
-                  overflow: hidden;
-                ">
-                  <div id="production-overlay" style="
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    background: rgba(0, 0, 0, 0.1);
-                    backdrop-filter: blur(8px);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    cursor: pointer;
-                    transition: all 0.3s;
-                  " onclick="this.style.opacity='0'; this.style.pointerEvents='none';">
-                    <span style="
-                      background: white;
-                      padding: 12px 24px;
-                      border-radius: 24px;
-                      font-size: 14px;
-                      font-weight: 600;
-                      color: #333;
-                      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-                    ">??— Click to reveal</span>
-                  </div>
-                  ${card.production.en_target}
-                </div>
-              </div>
-            ` : '<div style="color: #999; text-align: center; padding: 40px;">No production exercise available</div>'}
-          </div>
-        </div>
-
-        <!-- Footer -->
-        <div style="
-          padding: 20px 24px;
-          border-top: 2px solid #f0f0f0;
-          display: flex;
-          gap: 12px;
-        ">
-          <button onclick="window.markVocabComplete('${vocabId}')" style="
-            flex: 1;
-            padding: 14px;
-            background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
-            transition: all 0.2s;
-          ">${isCompleted ? '— Completed' : '— Mark Complete'}</button>
-          
-          <button onclick="window.closeVocabModal()" style="
-            padding: 14px 24px;
-            background: #f5f5f5;
-            color: #666;
-            border: none;
-            border-radius: 8px;
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s;
-          ">Close</button>
-        </div>
-      </div>
-    `;
-
-    // ═══════════════════════════════════════════════════════════════
-    // Event Listeners
-    // ═══════════════════════════════════════════════════════════════
-    
-    modal.querySelectorAll('.vocab-tab').forEach(btn => {
-      btn.onclick = () => activateTab(btn.dataset.tab);
-    });
-
-    // Render the carousel for the Practice tab
-    if (Array.isArray(card.slides) && card.slides.length > 0) {
-      renderCarouselSlide();
-    } else {
-      // Legacy fallback
-      renderLegacyPractice(card);
-    }
-
-    // Initial context tab content for slides[]
-    if (Array.isArray(card.slides) && card.slides.length > 0) {
-      updateContextTab();
-    }
-  }
-
-  // ═══════════════════════════════════════════════════════════════
-  // CAROUSEL SLIDE RENDERER — Handles both legacy and phase-based formats
-  // ═══════════════════════════════════════════════════════════════
-  
-  function renderCarouselSlide() {
-    const container = document.getElementById('carousel-container');
-    if (!container || !currentCard || !Array.isArray(currentCard.slides)) return;
-
-    const slides = currentCard.slides;
-    const slide = slides[currentSlideIndex];
-    const totalSlides = slides.length;
-    const isLastSlide = currentSlideIndex >= totalSlides - 1;
-
-    setExerciseCompleted(false);
-
-    // Detect format: phase-based (new) vs combined (legacy)
-    const isPhaseFormat = slide.phase !== undefined;
-
-    // Progress bar and indicator
-    let progressHTML = `
-      <div style="
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        margin-bottom: 20px;
-      ">
-        <div style="
-          background: #5a67d8;
-          color: white;
-          padding: 6px 16px;
-          border-radius: 20px;
-          font-size: 13px;
-          font-weight: 600;
-        ">${isPhaseFormat ? getPhaseLabel(slide.phase, slide) : `Part ${currentSlideIndex + 1}`} / ${totalSlides}</div>
-        <div style="display: flex; gap: 6px;">
-          ${slides.map((s, i) => `
-            <div style="
-              width: 10px;
-              height: 10px;
-              border-radius: 50%;
-              background: ${i < currentSlideIndex ? '#4caf50' : i === currentSlideIndex ? '#667eea' : '#ddd'};
-              transition: all 0.3s;
-            "></div>
-          `).join('')}
-        </div>
-      </div>
-    `;
-
-    // Render based on format
-    if (isPhaseFormat) {
-      renderPhaseBasedSlide(container, slide, progressHTML, isLastSlide);
-    } else {
-      renderLegacySlide(container, slide, progressHTML, isLastSlide);
-    }
-
-    // Update context tab
-    updateContextTab();
-  }
-
-  // Get friendly label for phase (and slide for 4-Act)
-  function getPhaseLabel(phase, slide) {
-    if (slide?.type === 'concept_check') return '?— Concept Check';
-    if (slide?.type === 'drill_list') return '?— Drill';
-    switch (phase) {
-      case 'presentation': return '?— Context';
-      case 'practice': return '?— Practice';
-      case 'exercise': return '?— Exercise';
-      case 'production': return '?— Produce';
-      case 'discovery': return '?— Discovery';
-      case 'personalization': return '?— Personalization';
-      default: return phase || 'Card';
-    }
-  }
-
-  // ═══════════════════════════════════════════════════════════════
-  // PHASE-BASED SLIDE RENDERER (New U04+ format)
-  // ═══════════════════════════════════════════════════════════════
-  
-  function renderPhaseBasedSlide(container, slide, progressHTML, isLastSlide) {
-    const phase = slide.phase;
-    const pres = slide.presentation || {};
-
-    if (phase === 'presentation') {
-      // PRESENTATION — Polarity (U04 4-Act) or uz_context list
-      const uzPolarQ = pres.uz_polar_question;
-      const uzMirror = pres.uz_mirror_answer;
-      const hybridAnswer = pres.hybrid_answer;
-      const enCanonical = slide.reproduction?.en_canonical || '';
-      const uzContext = pres.uz_context || [];
-
-      if (uzPolarQ || uzMirror) {
-        // 4-Act polarity + flip card (readable, visible)
-        container.innerHTML = `
-          ${progressHTML}
-          <div class="vocab-act vocab-act-presentation">
-            <div class="vocab-act-label">?— Context</div>
-            <div class="vocab-polar-question">?? ${uzPolarQ || ''}</div>
-            <div class="vocab-polar-answer">— ${uzMirror || ''}</div>
-            <div id="flip-card-container" class="vocab-flip-container">
-              <div id="flip-card" class="vocab-flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="vocab-flip-front">${renderChunks(hybridAnswer || '')}</div>
-                <div class="vocab-flip-back">${enCanonical || ''}</div>
-              </div>
-            </div>
-            <p class="vocab-act-hint">?— Tap the card to flip</p>
-          </div>
-          <div id="nav-button-area" style="text-align: center;"></div>
-        `;
-      } else if (uzContext.length > 0) {
-        container.innerHTML = `
-          ${progressHTML}
-          <div class="vocab-act vocab-act-presentation">
-            <div class="vocab-act-label">?— When & Why to Use</div>
-            <div class="vocab-context-list">
-              ${uzContext.map(ctx => `<div class="vocab-context-item">— ${ctx}</div>`).join('')}
-            </div>
-          </div>
-          <div id="nav-button-area" style="text-align: center;"></div>
-        `;
-      } else {
-        container.innerHTML = `${progressHTML}<div id="nav-button-area" style="text-align: center;"></div>`;
-      }
-      showNavigationButton(isLastSlide, true);
-
-    } else if (phase === 'practice') {
-      // PRACTICE — concept_check (exercise only) or drill_list (en_examples + optional exercise)
-      const practiceData = slide.practice || {};
-      const enExamples = practiceData.en_examples || [];
-      const exercise = practiceData.exercise;
-      const isConceptCheck = slide.type === 'concept_check';
-      const isDrillList = slide.type === 'drill_list';
-      const answer = exercise?.data?.answer || exercise?.answer || '';
-
-      const conceptInstruction = (exercise?.instruction || '').trim();
-      const conceptSentence = exercise?.data?.sentence || exercise?.sentence || '';
-
-      container.innerHTML = `
-        ${progressHTML}
-        ${isConceptCheck && (conceptInstruction || conceptSentence) ? `
-        <div class="vocab-act vocab-act-concept-check">
-          ${conceptInstruction ? `<div class="vocab-act-label">${conceptInstruction}</div>` : ''}
-          ${conceptSentence ? `<div class="vocab-concept-sentence">${conceptSentence}</div>` : ''}
-        </div>
-        ` : ''}
-        ${isDrillList && enExamples.length > 0 ? `
-        <div class="vocab-act vocab-act-drill">
-          <div class="vocab-act-label">?— Example Sentences</div>
-          ${enExamples.map((ex) => `
-            <div class="vocab-drill-item" onclick="this.querySelector('.vocab-drill-reveal').classList.add('visible')">
-              <div class="vocab-drill-en">${renderChunks(ex.sentence || '')}</div>
-              <div class="vocab-drill-reveal">— ${(ex.sentence_uz != null ? ex.sentence_uz : ex.sentence) || ''}</div>
-            </div>
-          `).join('')}
-          <p class="vocab-act-hint">?— Tap each row to reveal Uzbek / check</p>
-        </div>
-        ` : ''}
-        <div id="exercise-container" class="vocab-exercise-container"></div>
-        <div id="nav-button-area" style="text-align: center;"></div>
-      `;
-
-      if (exercise) {
-        renderPhaseExercise(exercise, answer, isLastSlide);
-      } else {
-        showNavigationButton(isLastSlide, true);
-      }
-
-    } else if (phase === 'production') {
-      // PRODUCTION — Prompt + model answer (4-Act Act 4)
-      const production = slide.production || {};
-      const modelAnswer = production.model_answer || production.en_target || '';
-
-      container.innerHTML = `
-        ${progressHTML}
-        <div class="vocab-act vocab-act-production">
-          <div class="vocab-act-label">?— Your Turn — Produce!</div>
-          <div class="vocab-production-prompt">${production.uz_prompt || ''}</div>
-          <div class="vocab-production-pattern"><strong>Pattern:</strong> ${production.en_target || ''}</div>
-          <div class="vocab-act-label">— Model Answer</div>
-          <div id="model-answer-reveal" class="vocab-model-reveal">
-            <div id="model-answer-overlay" class="vocab-model-overlay">
-              <span>??— Click to reveal model answer</span>
-            </div>
-            <div class="vocab-model-text">${modelAnswer}</div>
-          </div>
-        </div>
-        <div id="nav-button-area" style="text-align: center; margin-top: 20px;"></div>
-      `;
-
-      const overlay = document.getElementById('model-answer-overlay');
-      if (overlay) {
-        overlay.onclick = () => {
-          overlay.classList.add('revealed');
-          setExerciseCompleted(true);
-          showNavigationButton(isLastSlide, true);
-        };
-      }
-    } else if (phase === 'discovery') {
-      const sentence = slide.sentence || slide.grammar_sentence || '';
-      const grammarTokens = slide.grammar_tokens || slide.pattern ? [slide.pattern] : [];
-      const question = slide.question || 'Why did the speaker use this form here?';
-      const options = slide.options || [];
-      const correctOption = options.find(o => o.correct);
-      let sentenceHtml = escapeHtmlForSlide(sentence);
-      grammarTokens.forEach(tok => {
-        const esc = (tok || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        const re = new RegExp('\\b(' + esc + ')\\b', 'gi');
-        sentenceHtml = sentenceHtml.replace(re, '<span class="grammar-flood">$1</span>');
-      });
-      container.innerHTML = `
-        ${progressHTML}
-        <div class="vocab-act vocab-act-discovery">
-          <div class="vocab-act-label">?— Look closely</div>
-          <div class="vocab-discovery-sentence">${sentenceHtml}</div>
-          <div class="vocab-act-label" style="margin-top:16px;">${question}</div>
-          <div id="discovery-options" class="vocab-discovery-options"></div>
-          <div id="discovery-feedback" class="vocab-discovery-feedback"></div>
-        </div>
-        <div id="nav-button-area" style="text-align: center;"></div>
-      `;
-      const optionsEl = document.getElementById('discovery-options');
-      const feedbackEl = document.getElementById('discovery-feedback');
-      if (optionsEl && options.length > 0) {
-        options.forEach(opt => {
-          const btn = document.createElement('button');
-          btn.type = 'button';
-          btn.className = 'vocab-discovery-opt';
-          btn.textContent = opt.label || opt.value || '';
-          btn.dataset.value = opt.value || '';
-          btn.onclick = () => {
-            const correct = correctOption && opt.value === correctOption.value;
-            if (feedbackEl) {
-              feedbackEl.textContent = correct ? (slide.success_msg || 'Correct!') : (slide.fail_msg || 'Try again.');
-              feedbackEl.className = 'vocab-discovery-feedback ' + (correct ? 'correct' : 'incorrect');
-            }
-            optionsEl.querySelectorAll('button').forEach(b => { b.disabled = true; });
-            if (correct && typeof showNavigationButton === 'function') {
-              setExerciseCompleted(true);
-              showNavigationButton(isLastSlide, true);
-            }
-          };
-          optionsEl.appendChild(btn);
-        });
-      } else {
-        showNavigationButton(isLastSlide, true);
-      }
-    } else if (phase === 'personalization') {
-      const uzPrompt = slide.uz_prompt || slide.prompt || '';
-      const focusWord = slide.focus_word || '';
-      const focusPattern = slide.focus_pattern || slide.regex;
-      let pattern = focusPattern;
-      if (!pattern && focusWord) {
-        const esc = (focusWord + '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        pattern = new RegExp(esc.replace(/\s+/g, '\\s+'), 'i');
-      } else if (typeof pattern === 'string' && pattern.startsWith('/')) {
-        const match = pattern.match(/^\/(.*)\/(\w*)$/);
-        pattern = match ? new RegExp(match[1], match[2] || 'i') : null;
-      }
-      container.innerHTML = `
-        ${progressHTML}
-        <div class="vocab-act vocab-act-personalization">
-          <div class="vocab-act-label">?— Your turn</div>
-          <div class="vocab-personalization-prompt">${escapeHtmlForSlide(uzPrompt)}</div>
-          <input type="text" id="personalization-input" class="vocab-personalization-input" placeholder="Type in English..." style="width:100%;padding:12px;margin-top:12px;border-radius:8px;border:1px solid #ddd;font-size:15px;">
-          <div id="personalization-feedback" class="vocab-personalization-feedback"></div>
-          <button type="button" id="personalization-check" style="margin-top:12px;padding:10px 20px;border-radius:8px;background:#4caf50;color:white;border:none;cursor:pointer;">Check</button>
-        </div>
-        <div id="nav-button-area" style="text-align: center;"></div>
-      `;
-      const inputEl = document.getElementById('personalization-input');
-      const feedbackEl = document.getElementById('personalization-feedback');
-      const checkBtn = document.getElementById('personalization-check');
-      if (inputEl && checkBtn) {
-        const flexibleCheck = (text) => {
-          if (!pattern) return text.trim().length > 0;
-          if (pattern instanceof RegExp) return pattern.test((text || '').trim());
-          return false;
-        };
-        checkBtn.onclick = () => {
-          const text = (inputEl.value || '').trim();
-          const ok = flexibleCheck(text);
-          if (feedbackEl) {
-            feedbackEl.textContent = ok ? (slide.success_msg || 'Correct!') : (slide.fail_msg || 'Try again.');
-            feedbackEl.className = 'vocab-personalization-feedback ' + (ok ? 'correct' : 'incorrect');
-          }
-          if (ok) {
-            setExerciseCompleted(true);
-            showNavigationButton(isLastSlide, true);
-          }
-        };
-      } else {
-        showNavigationButton(isLastSlide, true);
-      }
-    }
-  }
-
-  function escapeHtmlForSlide(s) {
-    if (typeof s !== 'string') return '';
-    const div = document.createElement('div');
-    div.textContent = s;
-    return div.innerHTML;
-  }
-
-  // ═══════════════════════════════════════════════════════════════
-  // U02 SLOT-SUBSTITUTION PRACTICE RENDERER
-  // ═══════════════════════════════════════════════════════════════
-  
-  function renderSlotSubstitutionPractice(practice) {
-    if (!practice.en_examples || !Array.isArray(practice.en_examples)) return '';
-    
-    const examplesHTML = practice.en_examples.map((ex, idx) => {
-      // Render sentence with **highlighted** parts
-      const sentence = (ex.sentence || '').replace(/\*\*(.+?)\*\*/g, '<span style="background: #ffe082; padding: 2px 6px; border-radius: 4px; font-weight: 600;">$1</span>');
-      return `<div style="
-        padding: 10px 14px;
-        background: ${idx === 0 ? 'linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%)' : '#fff'};
-        border: 1px solid ${idx === 0 ? '#4caf50' : '#e0e0e0'};
-        border-radius: 8px;
-        margin-bottom: 8px;
-        font-size: 15px;
-        color: #333;
-      ">${sentence}</div>`;
-    }).join('');
-    
-    return `
-      <div style="margin-bottom: 20px;">
-        <div style="font-size: 13px; color: #888; margin-bottom: 8px;">
-          <span style="font-weight: 600;">?— Slot:</span> 
-          <span style="background: #e3f2fd; padding: 3px 8px; border-radius: 4px; font-weight: 500;">${practice.slot}</span>
-          <span style="margin-left: 10px; font-weight: 600;">Anchor:</span> 
-          <span style="color: #2196f3;">"${practice.anchor}"</span>
-        </div>
-        ${examplesHTML}
-      </div>
-    `;
-  }
-
-  // ═══════════════════════════════════════════════════════════════
-  // U02 TENSE TOGGLE PRACTICE RENDERER
-  // ═══════════════════════════════════════════════════════════════
-  
-  function renderTenseTogglePractice(practice) {
-    if (!practice.simple_form || !practice.continuous_form) return '';
-    
-    const examplesHTML = (practice.examples || []).map(ex => {
-      return `<div style="
-        display: flex;
-        gap: 10px;
-        padding: 8px 12px;
-        background: #fff;
-        border: 1px solid #e0e0e0;
-        border-radius: 6px;
-        margin-bottom: 6px;
-        font-size: 14px;
-      ">
-        <span style="background: #ffecb3; padding: 2px 8px; border-radius: 4px; font-weight: 500; min-width: 80px;">${ex.trigger || ex.sentence?.split(':')[0] || ''}</span>
-        <span style="color: #333;">${ex.response || ex.sentence?.split(':')[1] || ''}</span>
-      </div>`;
-    }).join('');
-    
-    return `
-      <div style="margin-bottom: 20px;">
-        <div style="font-size: 13px; color: #888; margin-bottom: 8px; font-weight: 600;">
-          — Tense Toggle: <span style="background: #ffeb3b; padding: 2px 8px; border-radius: 4px;">${practice.toggle_trigger}</span>
-        </div>
-        
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
-          <div style="
-            padding: 12px;
-            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-            border-radius: 8px;
-            text-align: center;
-          ">
-            <div style="font-size: 11px; color: #666; margin-bottom: 4px;">Simple</div>
-            <div style="font-size: 14px; font-weight: 600; color: #0d47a1;">${practice.simple_form}</div>
-          </div>
-          <div style="
-            padding: 12px;
-            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
-            border-radius: 8px;
-            text-align: center;
-          ">
-            <div style="font-size: 11px; color: #666; margin-bottom: 4px;">Continuous</div>
-            <div style="font-size: 14px; font-weight: 600; color: #e65100;">${practice.continuous_form}</div>
-          </div>
-        </div>
-        
-        ${examplesHTML}
-      </div>
-    `;
-  }
-
-  // ═══════════════════════════════════════════════════════════════
-  // LEGACY SLIDE RENDERER (Old U01-U03 format)
-  // ═══════════════════════════════════════════════════════════════
-  
-  function renderLegacySlide(container, slide, progressHTML, isLastSlide) {
-    // Detect U02 polarity format vs U04 context format
-    const isPolarity = slide.presentation?.uz_polar_question && slide.presentation?.uz_mirror_answer;
-    const hasSlotSubstitution = slide.practice?.anchor && slide.practice?.slot && slide.practice?.en_examples;
-    const hasTenseToggle = slide.practice?.toggle_trigger && slide.practice?.simple_form && slide.practice?.continuous_form;
-    
-    // U02 Polarity Format
-    if (isPolarity) {
-      container.innerHTML = `
-        ${progressHTML}
-
-        <!-- U02 Polarity Presentation -->
-        <div style="margin-bottom: 20px;">
-          <div style="font-size: 13px; color: #888; margin-bottom: 6px; font-weight: 600;">?— Polarity Question</div>
-          
-          <!-- Wrong assumption (polar question) -->
-          <div style="
-            padding: 14px 18px;
-            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
-            border-left: 4px solid #ef5350;
-            border-radius: 8px;
-            margin-bottom: 12px;
-            font-size: 16px;
-            color: #b71c1c;
-          ">?? ${slide.presentation.uz_polar_question}</div>
-          
-          <!-- Correction answer -->
-          <div style="
-            padding: 14px 18px;
-            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
-            border-left: 4px solid #4caf50;
-            border-radius: 8px;
-            font-size: 16px;
-            color: #1b5e20;
-            font-weight: 600;
-          ">— ${slide.presentation.uz_mirror_answer}</div>
-        </div>
-
-        ${hasSlotSubstitution ? renderSlotSubstitutionPractice(slide.practice) : ''}
-        ${hasTenseToggle ? renderTenseTogglePractice(slide.practice) : ''}
-
-        <!-- Exercise Area -->
-        <div id="exercise-container" style="
-          min-height: 180px;
-          padding: 20px;
-          background: #f9f9f9;
-          border-radius: 12px;
-          margin-bottom: 16px;
-        "></div>
-
-        <!-- Navigation Button Area -->
-        <div id="nav-button-area" style="text-align: center;"></div>
-      `;
-    } else {
-      // U04 Context Format (original)
-      container.innerHTML = `
-        ${progressHTML}
-
-        <!-- Uzbek Context for this slide -->
-        <div style="margin-bottom: 16px;">
-          <div style="font-size: 14px; color: #666; margin-bottom: 4px; font-weight: 600;">Uzbek Context</div>
-          <div style="font-size: 16px; color: #333; line-height: 1.6;">
-            ${(slide.presentation?.uz_context || []).map(ctx => `<div style="margin-bottom: 8px;">— ${ctx}</div>`).join('')}
-          </div>
-        </div>
-
-        <!-- Context Question -->
-        ${slide.practice?.context_question ? `
-          <div style="
-            padding: 14px;
-            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-            border-left: 4px solid #2196f3;
-            border-radius: 8px;
-            margin-bottom: 16px;
-            font-size: 15px;
-            color: #0d47a1;
-            font-weight: 600;
-          ">${slide.practice.context_question}</div>
-        ` : ''}
-
-        <!-- Hybrid Bridge (Flip Card) -->
-        <div id="flip-card-container" style="
-          perspective: 1000px;
-          min-height: 160px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 20px;
-        ">
-          <div id="flip-card" style="
-            position: relative;
-            width: 100%;
-            height: 160px;
-            transform-style: preserve-3d;
-            transition: transform 0.6s;
-            cursor: pointer;
-          " onclick="this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'">
-            <!-- Front: Hybrid Bridge -->
-            <div style="
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              backface-visibility: hidden;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              background: linear-gradient(135deg, #fff9c4 0%, #fff59d 100%);
-              border-radius: 12px;
-              padding: 24px;
-              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            ">
-              <div style="font-size: 18px; line-height: 1.6; text-align: center; color: #333;">
-                ${renderChunks(slide.practice?.hybrid_bridge || '')}
-              </div>
-            </div>
-            <!-- Back: English Canonical -->
-            <div style="
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              backface-visibility: hidden;
-              transform: rotateY(180deg);
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);
-              border-radius: 12px;
-              padding: 24px;
-              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            ">
-              <div style="font-size: 20px; font-weight: 600; text-align: center; color: #2e7d32;">
-                ${slide.practice?.en_canonical || ''}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Exercise Area -->
-        <div id="exercise-container" style="
-          min-height: 180px;
-        padding: 20px;
-        background: #f9f9f9;
-        border-radius: 12px;
-        margin-bottom: 16px;
-      "></div>
-
-      <!-- Navigation Button Area -->
-      <div id="nav-button-area" style="text-align: center;"></div>
-    `;
-    }
-
-    // Render the exercise for this slide (legacy format)
-    renderCarouselExercise(slide.practice || {}, isLastSlide);
-  }
-
-  // ═══════════════════════════════════════════════════════════════
-  // PHASE EXERCISE RENDERER (for new format)
-  // ═══════════════════════════════════════════════════════════════
-  
-  function renderPhaseExercise(exercise, correctAnswer, isLastSlide) {
-    const exerciseContainer = document.getElementById('exercise-container');
-    if (!exerciseContainer) return;
-
-    const onComplete = () => {
-      setExerciseCompleted(true);
-      showNavigationButton(isLastSlide, true);
-    };
-
-    const data = exercise.data || exercise;
-    switch (exercise.type) {
-      case 'jumble':
-        renderJumbleExercise(exerciseContainer, data, correctAnswer, onComplete);
-        break;
-      case 'trap':
-        renderTrapExercise(exerciseContainer, data, onComplete);
-        break;
-      case 'scratch':
-        renderScratchExercise(exerciseContainer, data, correctAnswer, onComplete);
-        break;
-      case 'function_sort':
-        renderFunctionSortExerciseLegacy(exerciseContainer, data, onComplete);
-        break;
-      default:
-        exerciseContainer.innerHTML = `<div class="vocab-exercise-unknown">Unknown exercise type: ${exercise.type}</div>`;
-        showNavigationButton(isLastSlide, true);
-    }
-  }
-
-  // Legacy carousel version of function_sort (does NOT shadow the staged modal version)
-  function renderFunctionSortExerciseLegacy(container, data, onComplete) {
-    const options = data.options || [];
-    const correctOption = options.find(o => o.correct);
-    const successMsg = data.success_msg || 'Correct!';
-    const failMsg = data.fail_msg || 'Try again.';
-
-    container.innerHTML = `
-      <div class="vocab-functionsort-options">
-        ${options.map(opt => `
-          <button type="button" class="vocab-functionsort-opt" data-value="${(opt.value || '').replace(/"/g, '&quot;')}">
-            ${opt.label || opt.value || ''}
-          </button>
-        `).join('')}
-      </div>
-      <div id="functionsort-feedback" class="vocab-functionsort-feedback"></div>
-    `;
-
-    const feedbackEl = document.getElementById('functionsort-feedback');
-    container.querySelectorAll('.vocab-functionsort-opt').forEach(btn => {
-      btn.onclick = () => {
-        const value = btn.dataset.value;
-        const isCorrect = correctOption && value === correctOption.value;
-        if (feedbackEl) {
-          feedbackEl.innerHTML = isCorrect
-            ? `<div class="vocab-feedback-correct">${successMsg}</div>`
-            : `<div class="vocab-feedback-incorrect">${failMsg}</div>`;
-          feedbackEl.classList.add('visible');
-        }
-        if (isCorrect && typeof onComplete === 'function') setTimeout(onComplete, 1200);
-      };
-    });
-  }
-
-  // Update the Context tab with the current slide's presentation
-  function updateContextTab() {
-    const contextDiv = document.getElementById('context-uzbek');
-    if (!contextDiv || !currentCard || !Array.isArray(currentCard.slides)) return;
-    const slide = currentCard.slides[currentSlideIndex];
-    
-    // Handle U02 polarity format
-    if (slide.presentation?.uz_polar_question && slide.presentation?.uz_mirror_answer) {
-      contextDiv.innerHTML = `
-        <div style="margin-bottom: 12px;">
-          <div style="font-size: 12px; color: #ef5350; margin-bottom: 4px;">?? Polar Question:</div>
-          <div style="margin-bottom: 8px; color: #333;">${slide.presentation.uz_polar_question}</div>
-        </div>
-        <div>
-          <div style="font-size: 12px; color: #4caf50; margin-bottom: 4px;">— Answer:</div>
-          <div style="color: #1b5e20; font-weight: 500;">${slide.presentation.uz_mirror_answer}</div>
-        </div>
-      `;
-    } else if (slide.phase === 'presentation' && slide.presentation?.uz_context) {
-      // Handle phase-based format
-      contextDiv.innerHTML = slide.presentation.uz_context.map(ctx => `<div style="margin-bottom: 8px;">— ${ctx}</div>`).join('');
-    } else if (slide.presentation?.uz_context) {
-      // Legacy format
-      contextDiv.innerHTML = slide.presentation.uz_context.map(ctx => `<div style="margin-bottom: 8px;">— ${ctx}</div>`).join('');
-    } else {
-      // Find presentation slide in the array for phase-based format
-      const presSlide = currentCard.slides.find(s => s.phase === 'presentation');
-      if (presSlide?.presentation?.uz_context) {
-        contextDiv.innerHTML = presSlide.presentation.uz_context.map(ctx => `<div style="margin-bottom: 8px;">— ${ctx}</div>`).join('');
-      } else if (presSlide?.presentation?.uz_polar_question) {
-        contextDiv.innerHTML = `
-          <div style="margin-bottom: 12px;">
-            <div style="font-size: 12px; color: #ef5350; margin-bottom: 4px;">?? Polar Question:</div>
-            <div style="margin-bottom: 8px; color: #333;">${presSlide.presentation.uz_polar_question}</div>
-          </div>
-          <div>
-            <div style="font-size: 12px; color: #4caf50; margin-bottom: 4px;">— Answer:</div>
-            <div style="color: #1b5e20; font-weight: 500;">${presSlide.presentation.uz_mirror_answer || ''}</div>
-          </div>
-        `;
-      }
-    }
-  }
-
-  // ═══════════════════════════════════════════════════════════════
-  // CAROUSEL EXERCISE RENDERER (Legacy format)
-  // ═══════════════════════════════════════════════════════════════
-  
-  function renderCarouselExercise(slideData, isLastSlide) {
-    const exerciseContainer = document.getElementById('exercise-container');
-    if (!exerciseContainer || !slideData.exercise) return;
-
-    const exercise = slideData.exercise;
-    const onComplete = () => {
-      setExerciseCompleted(true);
-      showNavigationButton(isLastSlide, true);
-    };
-
-    switch (exercise.type) {
-      case 'jumble':
-        renderJumbleExercise(exerciseContainer, exercise.data, slideData.en_canonical, onComplete);
-        break;
-      case 'trap':
-        renderTrapExercise(exerciseContainer, exercise.data, onComplete);
-        break;
-      case 'scratch':
-        renderScratchExercise(exerciseContainer, exercise.data, slideData.en_canonical, onComplete);
-        break;
-      default:
-        exerciseContainer.innerHTML = `<div style="color:#999; text-align:center;">Unknown exercise type: ${exercise.type}</div>`;
-    }
-  }
-
-  // ═══════════════════════════════════════════════════════════════
-  // NAVIGATION BUTTON HANDLER — Updated for both formats
-  // ═══════════════════════════════════════════════════════════════
-  
-  function showNavigationButton(isLastSlide, autoShow = false) {
-    const navArea = document.getElementById('nav-button-area');
-    if (!navArea) return;
-
-    // For phase-based format, check if this is the last slide (personalization or production phase)
-    const slidePhase = currentCard?.slides?.[currentSlideIndex]?.phase;
-    const isFinalPhase = slidePhase === 'personalization' || slidePhase === 'production';
-
-    if (isLastSlide || isFinalPhase) {
-      // Show "Complete —" button on last slide
-      navArea.innerHTML = `
-        <button id="btn-complete-card" style="
-          padding: 14px 32px;
-          background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
-          color: white;
-          border: none;
-          border-radius: 8px;
-          font-size: 16px;
-          font-weight: 700;
-          cursor: pointer;
-          box-shadow: 0 4px 16px rgba(76, 175, 80, 0.4);
-          transition: all 0.2s;
-          animation: pulseGlow 1.5s infinite;
-        ">— Complete Card</button>
-      `;
-      const btn = document.getElementById('btn-complete-card');
-      if (btn) {
-        btn.onclick = () => {
-          if (currentCard?.id) {
-            window.markVocabComplete(currentCard.id);
-          }
-        };
-      }
-    } else {
-      // Show "Next —" button
-      navArea.innerHTML = `
-        <button id="btn-next-slide" style="
-          padding: 14px 32px;
-          background: #5a67d8;
-          color: white;
-          border: none;
-          border-radius: 8px;
-          font-size: 16px;
-          font-weight: 700;
-          cursor: pointer;
-          box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
-          transition: all 0.2s;
-        ">Next —</button>
-      `;
-      const btn = document.getElementById('btn-next-slide');
-      if (btn) {
-        btn.onclick = () => {
-          setSlideIndex(currentSlideIndex + 1);
-          renderCarouselSlide();
-        };
-      }
-    }
-  }
-
-  // ═══════════════════════════════════════════════════════════════
-  // LEGACY PRACTICE RENDERER (for old data format)
-  // ═══════════════════════════════════════════════════════════════
-  
-  function renderLegacyPractice(card) {
-    const container = document.getElementById('carousel-container');
-    if (!container) return;
-
-    container.innerHTML = `
-      <div style="color: #666; text-align: center; padding: 20px;">
-        <p>This card uses the legacy format.</p>
-        <p>Data migration to carousel format pending.</p>
-      </div>
-    `;
   }
 
   // ═══════════════════════════════════════════════════════════════
@@ -2639,7 +1747,7 @@
         currentCard.dialogue_ref.dialogue_id,
         currentCard.dialogue_ref.line_index
       );
-      if (window.__DEV_AUDIT__) console.log('?— Auto-unlocked bubble on card complete:', currentCard.dialogue_ref);
+      if (window.__DEV_AUDIT__) console.log('🔓 Auto-unlocked bubble on card complete:', currentCard.dialogue_ref);
       // If Sandwich line queue has more cards for this line, open next
       if (Array.isArray(window._sandwichLineQueue) && window._sandwichLineQueueIndex != null) {
         window._sandwichLineQueueIndex++;

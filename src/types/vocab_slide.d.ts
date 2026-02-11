@@ -131,11 +131,20 @@ export interface VocabDrillListSlide {
   en_examples: any[]; // Kept loose for legacy compatibility
 }
 
+export interface VocabPracticeConceptCheckSlide {
+  phase: 'practice';
+  type: 'concept_check';
+  instruction?: string;
+  exercise?: any;
+  [key: string]: any;
+}
+
 export interface VocabProductionSlide {
   phase: 'production';
   prompt_uz: string; // Renamed from uz_prompt in some contexts, but let's support both or fix inconsistencies
   uz_prompt?: string;
   model_sentence?: string;
+  model_answer?: string;  // Legacy U01.5 format
   hints?: string[];
   input_type?: 'bubble' | 'full_sentence';
   // Bubble unlock props
@@ -159,6 +168,7 @@ export type PhaseBasedVocabSlide =
   | VocabConceptCheckSlide 
   | VocabDiscoverySlide 
   | VocabDrillListSlide 
+  | VocabPracticeConceptCheckSlide 
   | VocabProductionSlide 
   | VocabPersonalizationSlide;
 

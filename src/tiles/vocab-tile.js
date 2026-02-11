@@ -260,18 +260,15 @@ export function renderVocabTile(lesson) {
   if (hasDialogueData) {
     const gridWrapper = document.createElement('details');
     gridWrapper.className = 'vocab-grid-collapsible';
-    gridWrapper.style.cssText = 'margin-top: 12px; border: 1px solid #e0e0e0; border-radius: 10px; overflow: hidden;';
     const summary = document.createElement('summary');
-    summary.textContent = `📚 All Vocabulary Cards (${orderedVocab.length})`;
-    summary.style.cssText = 'padding: 12px 16px; background: #f7fafc; cursor: pointer; font-weight: 600; color: #4a5568; font-size: 14px; list-style: none; display: flex; align-items: center; gap: 6px;';
-    summary.innerHTML = `<span style="transition: transform 0.2s;">▶</span> 📚 All Vocabulary Cards (${orderedVocab.length})`;
+    summary.innerHTML = `<span style="transition: transform 0.2s; display: inline-block;">▸</span> \u{1F4DA} All Vocabulary Cards (${orderedVocab.length})`;
     gridWrapper.addEventListener('toggle', () => {
       const arrow = summary.querySelector('span');
       if (arrow) arrow.style.transform = gridWrapper.open ? 'rotate(90deg)' : '';
     });
     gridWrapper.appendChild(summary);
     const gridInner = document.createElement('div');
-    gridInner.style.cssText = 'padding: 12px;';
+    gridInner.className = 'vocab-grid-inner';
     gridInner.appendChild(list);
     gridWrapper.appendChild(gridInner);
     tileContainer.appendChild(gridWrapper);
@@ -377,24 +374,13 @@ function createDialogueBubble(dialogueRef, vocabCardsBundle, vocabId, targetWord
   const initial = speakerName.charAt(0).toUpperCase();
 
   bubble.innerHTML = `
-    <div class="bubble-avatar" style="
-      width:30px;height:30px;border-radius:50%;
-      background:${side === 'left' ? 'linear-gradient(135deg,#42a5f5,#1e88e5)' : 'linear-gradient(135deg,#ab47bc,#8e24aa)'};
-      color:white;font-size:13px;font-weight:700;
-      display:flex;align-items:center;justify-content:center;flex-shrink:0;
-    ">${initial}</div>
+    <div class="bubble-avatar dialogue-avatar ${side === 'left' ? 'speaker-a' : 'speaker-b'}">${initial}</div>
     <div class="bubble-body">
       <div class="bubble-speaker">${speakerName}</div>
       <div class="bubble-text-en">${displayText}</div>
       ${lineUz ? `<div class="bubble-text-uz">${lineUz}</div>` : ''}
     </div>
-    ${vocabId ? `<button class="bubble-reopen" title="Re-practice this card" style="
-      position:absolute;top:4px;${side === 'left' ? 'right' : 'left'}:4px;
-      width:22px;height:22px;border-radius:50%;border:none;
-      background:rgba(0,0,0,0.06);color:#888;font-size:12px;
-      cursor:pointer;display:flex;align-items:center;justify-content:center;
-      transition:all 0.2s;
-    " onmouseenter="this.style.background='rgba(0,0,0,0.12)'" onmouseleave="this.style.background='rgba(0,0,0,0.06)'">↩</button>` : ''}
+    ${vocabId ? `<button class="bubble-reopen" title="Re-practice this card">↩</button>` : ''}
   `;
 
   // Click the re-open arrow to re-practice the card
@@ -418,26 +404,12 @@ function createDialogueBubble(dialogueRef, vocabCardsBundle, vocabId, targetWord
 function createCompletedChip(v) {
   const chip = document.createElement("div");
   chip.className = "vocab-completed-chip";
-  chip.style.cssText = `
-    grid-column: 1 / -1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 14px;
-    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
-    border: 1px solid #81c784;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: all 0.2s;
-  `;
   const word = v.word || v.en || '';
   chip.innerHTML = `
-    <span style="font-weight: 600; color: #2e7d32;">✓ ${word}</span>
-    <span style="font-size: 12px; color: #558b2f;">Tap to review</span>
+    <span class="chip-word">\u2713 ${escapeHtml(word)}</span>
+    <span class="chip-hint">Tap to review</span>
   `;
   chip.onclick = () => VocabCardRenderer.open(v.id);
-  chip.onmouseenter = () => { chip.style.transform = 'translateY(-1px)'; chip.style.boxShadow = '0 2px 8px rgba(76,175,80,0.25)'; };
-  chip.onmouseleave = () => { chip.style.transform = ''; chip.style.boxShadow = ''; };
   return chip;
 }
 
@@ -926,12 +898,16 @@ export function renderSandwichDialogueTile(lesson) {
     const linesEl = document.createElement('div');
     linesEl.className = 'sandwich-dialogue-lines';
 
+    const sandwichSpeakerSet = new Set();
     dialogue.lines.forEach((line, idx) => {
       const unlockId = `${dialogueId}_${idx}`;
       const mastered = unlockedSet.has(unlockId);
       const cardsForLine = getCardsForLineByText(bundle, lessonId, line.line || '');
       const hasCards = cardsForLine.length > 0;
-      const isLeft = idx % 2 === 0;
+      const speaker = line.speaker || '?';
+      sandwichSpeakerSet.add(speaker);
+      const spkList = [...sandwichSpeakerSet];
+      const isLeft = spkList.indexOf(speaker) % 2 === 0;
 
       const lineDiv = document.createElement('div');
       lineDiv.className = 'sandwich-dialogue-line';
@@ -1023,6 +999,10 @@ function escapeHtml(s) {
 /**
  * Render dialogue lines in Uzbek-first format with per-line mirror toggles
  * and clickable vocabulary practice. Implements RULE E11 mirror mode.
+ * 
+ * REDESIGNED: Progressive disclosure — each dialogue is a collapsible card.
+ * Only the first incomplete dialogue opens by default. Completed dialogues
+ * show a green badge. Lines with vocab are clickable with a word-count badge.
  *
  * @param {Object} lesson - Full lesson object
  * @param {Object|null} vocabCardsBundle - VOCAB_CARDS_UXX bundle
@@ -1035,35 +1015,99 @@ function renderDialogueFirstSection(lesson, vocabCardsBundle, lessonId) {
 
   const section = document.createElement('div');
   section.className = 'vocab-dialogue-first';
-  section.style.cssText = 'margin-bottom: 20px;';
 
-  // Instruction
+  // Instruction banner
   const instr = document.createElement('div');
-  instr.textContent = "\u{1F4D6} Suhbatni o\u2018qing \u2014 so\u2018zlarni bosib o\u2018rganing:";
-  instr.dataset.translation = 'Read the dialogue \u2014 tap highlighted lines to learn vocabulary:';
-  instr.className = 'tl-uz';
-  instr.style.cssText = 'background: #e8f4f8; padding: 12px 16px; border-radius: 10px; margin-bottom: 16px; color: #2980b9; font-weight: 500; text-align: center; border-left: 4px solid #5a67d8;';
+  instr.className = 'vocab-dialogue-instruction tl-uz';
+  instr.textContent = "\u{1F4D6} Suhbatni o\u2018qing \u2014 so\u2018zlarni bosib o\u2018rganing";
+  instr.dataset.translation = 'Read the dialogue \u2014 tap highlighted lines to learn vocabulary';
   section.appendChild(instr);
+
+  // Track which is the first dialogue with unlearned words (auto-open it)
+  let firstIncompleteFound = false;
 
   dialogueData.dialogues.forEach((dialogue, dIdx) => {
     const dialogueId = dialogue.id || `${lessonId}_D${String(dIdx + 1).padStart(2, '0')}`;
+    const turns = dialogue.turns || dialogue.lines || [];
 
-    // Context
-    if (dialogue.context_uz || dialogue.context_en) {
-      const ctx = document.createElement('div');
-      ctx.innerHTML = `<span>\u{1F4CD}</span> ${escapeHtml(dialogue.context_uz || dialogue.context_en)}`;
-      if (dialogue.context_en) ctx.dataset.translation = dialogue.context_en;
-      ctx.className = 'tl-uz';
-      ctx.style.cssText = 'background: #f8f9fa; padding: 10px 14px; border-radius: 10px; margin-bottom: 12px; font-style: italic; color: #555; border-left: 4px solid #5a67d8; display: flex; align-items: center; gap: 8px;';
-      section.appendChild(ctx);
+    // Calculate progress for this dialogue
+    let totalVocabLines = 0;
+    let masteredLines = 0;
+    turns.forEach((turn) => {
+      const turnTextEn = turn.text || turn.text_en || turn.line || '';
+      const cardsForLine = vocabCardsBundle
+        ? getCardsForLineByText(vocabCardsBundle, lessonId, turnTextEn)
+        : [];
+      if (cardsForLine.length > 0) {
+        totalVocabLines++;
+        const allDone = cardsForLine.every(c => VocabCardRenderer.isCompleted(c.id));
+        if (allDone) masteredLines++;
+      }
+    });
+
+    const isDialogueComplete = totalVocabLines > 0 && masteredLines >= totalVocabLines;
+    const shouldAutoOpen = !firstIncompleteFound && !isDialogueComplete;
+    if (shouldAutoOpen) firstIncompleteFound = true;
+
+    // Build collapsible dialogue card
+    const details = document.createElement('details');
+    details.className = 'dialogue-stage-card';
+    if (shouldAutoOpen) details.open = true;
+
+    // Header (summary)
+    const summary = document.createElement('summary');
+    summary.className = 'dialogue-stage-header';
+
+    // Stage badge
+    const badge = document.createElement('span');
+    badge.className = 'dialogue-stage-badge' + (isDialogueComplete ? ' completed' : '');
+    badge.textContent = `${dIdx + 1}/${dialogueData.dialogues.length}`;
+    summary.appendChild(badge);
+
+    // Title
+    const titleSpan = document.createElement('span');
+    titleSpan.className = 'dialogue-stage-title';
+    titleSpan.textContent = dialogue.context_en || dialogue.title || dialogueId;
+    summary.appendChild(titleSpan);
+
+    // Progress indicator
+    if (totalVocabLines > 0) {
+      const prog = document.createElement('span');
+      prog.className = 'dialogue-stage-progress';
+      const pctVal = Math.round((masteredLines / totalVocabLines) * 100);
+      prog.innerHTML = `
+        <span class="dialogue-stage-progress-bar">
+          <span class="dialogue-stage-progress-fill" style="width:${pctVal}%"></span>
+        </span>
+        ${masteredLines}/${totalVocabLines}`;
+      summary.appendChild(prog);
     }
 
-    const turns = dialogue.turns || [];
+    details.appendChild(summary);
+
+    // Body — dialogue lines
+    const body = document.createElement('div');
+    body.className = 'dialogue-stage-body';
+
+    // Context line
+    if (dialogue.context_uz || dialogue.context_en) {
+      const ctx = document.createElement('div');
+      ctx.className = 'dialogue-context tl-uz';
+      ctx.innerHTML = `<span>\u{1F4CD}</span> <span>${escapeHtml(dialogue.context_uz || dialogue.context_en)}</span>`;
+      if (dialogue.context_en) ctx.dataset.translation = dialogue.context_en;
+      body.appendChild(ctx);
+    }
+
+    // Render each turn as a chat bubble
+    const speakerSet = new Set();
     turns.forEach((turn, tIdx) => {
-      const turnTextEn = turn.text || turn.text_en || '';
-      const turnTextUz = turn.text_uz || '';
+      const turnTextEn = turn.text || turn.text_en || turn.line || '';
+      const turnTextUz = turn.text_uz || turn.line_uz || '';
       const speaker = turn.speaker || '?';
-      const isLeft = tIdx % 2 === 0;
+      speakerSet.add(speaker);
+      const speakerList = [...speakerSet];
+      const speakerIndex = speakerList.indexOf(speaker);
+      const isLeft = speakerIndex % 2 === 0;
 
       // Match vocab cards to this line's English text
       const cardsForLine = vocabCardsBundle
@@ -1079,24 +1123,25 @@ function renderDialogueFirstSection(lesson, vocabCardsBundle, lessonId) {
         text_en: turnTextEn
       });
 
-      // Line container (chat-style)
+      // Line container
       const lineEl = document.createElement('div');
-      lineEl.style.cssText = `display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; flex-direction: ${isLeft ? 'row' : 'row-reverse'};`;
+      lineEl.className = 'dialogue-line-row' + (isLeft ? '' : ' line-right');
+      lineEl.style.animationDelay = `${tIdx * 0.05}s`;
 
       // Avatar
       const avatar = document.createElement('div');
+      avatar.className = 'dialogue-avatar ' + (isLeft ? 'speaker-a' : 'speaker-b');
       avatar.textContent = speaker.charAt(0).toUpperCase();
-      avatar.style.cssText = `width: 32px; height: 32px; border-radius: 50%; background: ${isLeft ? 'linear-gradient(135deg,#42a5f5,#1e88e5)' : 'linear-gradient(135deg,#ab47bc,#8e24aa)'}; color: white; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;`;
       lineEl.appendChild(avatar);
 
       // Speech bubble
       const bubble = document.createElement('div');
-      bubble.style.cssText = `flex: 1; padding: 12px 16px; border-radius: ${isLeft ? '4px 16px 16px 16px' : '16px 4px 16px 16px'}; background: ${isLeft ? '#edf2f7' : '#ebf8ff'}; ${hasCards ? 'cursor: pointer;' : ''} transition: all 0.2s;`;
+      bubble.className = 'dialogue-bubble' + (hasCards ? ' has-vocab' : '');
 
       // Speaker label
       const speakerEl = document.createElement('div');
+      speakerEl.className = 'dialogue-bubble-speaker';
       speakerEl.textContent = speaker;
-      speakerEl.style.cssText = `font-size: 11px; font-weight: 600; color: ${isLeft ? '#3182ce' : '#805ad5'}; margin-bottom: 4px;`;
       bubble.appendChild(speakerEl);
 
       // Three text layers: UZ (default visible) / Mirror / EN
@@ -1117,12 +1162,16 @@ function renderDialogueFirstSection(lesson, vocabCardsBundle, lessonId) {
       });
       bubble.appendChild(toggle);
 
-      // "N words" badge for clickable lines
+      // Word count badge for clickable lines
       if (hasCards) {
-        const badge = document.createElement('div');
-        badge.textContent = `\u{1F4DD} ${cardsForLine.length} word${cardsForLine.length > 1 ? 's' : ''} to learn`;
-        badge.style.cssText = 'margin-top: 6px; font-size: 11px; color: #5a67d8; font-weight: 500;';
-        bubble.appendChild(badge);
+        const allDone = cardsForLine.every(c => VocabCardRenderer.isCompleted(c.id));
+        const badge2 = document.createElement('div');
+        badge2.className = 'dialogue-vocab-badge';
+        badge2.textContent = allDone
+          ? `\u2705 ${cardsForLine.length} word${cardsForLine.length > 1 ? 's' : ''} learned`
+          : `\u{1F4DD} ${cardsForLine.length} word${cardsForLine.length > 1 ? 's' : ''} to learn`;
+        if (allDone) badge2.style.color = '#16a34a';
+        bubble.appendChild(badge2);
 
         // Click → open vocab card session for this line
         bubble.addEventListener('click', (e) => {
@@ -1132,27 +1181,14 @@ function renderDialogueFirstSection(lesson, vocabCardsBundle, lessonId) {
             VocabCardRenderer.startSessionForLine(dialogueId, tIdx, cardIds);
           }
         });
-
-        bubble.addEventListener('mouseenter', () => {
-          bubble.style.transform = 'translateY(-1px)';
-          bubble.style.boxShadow = '0 2px 8px rgba(90,103,216,0.2)';
-        });
-        bubble.addEventListener('mouseleave', () => {
-          bubble.style.transform = '';
-          bubble.style.boxShadow = '';
-        });
       }
 
       lineEl.appendChild(bubble);
-      section.appendChild(lineEl);
+      body.appendChild(lineEl);
     });
 
-    // Separator between dialogues
-    if (dIdx < dialogueData.dialogues.length - 1) {
-      const sep = document.createElement('hr');
-      sep.style.cssText = 'margin: 16px 0; border: none; border-top: 1px dashed #d0d0d0;';
-      section.appendChild(sep);
-    }
+    details.appendChild(body);
+    section.appendChild(details);
   });
 
   return section;

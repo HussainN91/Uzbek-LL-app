@@ -1,0 +1,13 @@
+Replacements made: True
+Remaining ?? patterns: 4
+Remaining ?— patterns: 1
+  L2642: if (window.__DEV_AUDIT__) console.log('?— Auto-unlocked bubble on card complete:', currentCard.dialo
+Traceback (most recent call last):
+  File "D:\New folder\fix_qmarks.py", line 150, in <module>
+    print(f"  L{i}: {line.strip()[:100]}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4cd' in position 71: character maps to <undefined>
+EXIT_CODE=1 
