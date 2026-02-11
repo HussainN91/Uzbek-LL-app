@@ -25,3 +25,6 @@ export * from './audio.js';
 
 // Mirror toggle (RULE E11 — shared by vocab-tile & dialogue-tile)
 export * from './mirror-toggle.js';
+
+// Language display (Progressive L1→L2 unlock)
+export * from './language-display.js';

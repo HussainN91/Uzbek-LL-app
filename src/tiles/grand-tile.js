@@ -13,6 +13,7 @@ import {
   clearTileContainer,
   STATES,
   setState,
+  transitionToTile,
   createButton,
   resolveUIData,
   mergeMissingKeys
@@ -97,7 +98,7 @@ export function renderGrandTile(unitId) {
     msg.classList.add("tl-uz");
     msg.dataset.translation = "Grand tile data not found.";
     
-    const btnFinish = createButton("Birlikni yakunlash", () => setState(STATES.DONE));
+    const btnFinish = createButton("Birlikni yakunlash", () => transitionToTile(STATES.DONE));
     btnFinish.classList.add("tl-uz");
     btnFinish.dataset.translation = "Finish Unit";
     
@@ -207,7 +208,7 @@ export function renderGrandTile(unitId) {
     if (lastPassed) {
       // GRAND_TILE completion does NOT auto-unlock next unit (future-safe)
       // Just go to DONE state, unit selector handles unit progression separately
-      setState(STATES.DONE);
+      transitionToTile(STATES.DONE);
     } else {
       feedback.textContent = "Oldin Grand Tile topshirig'ini bajaring.";
       feedback.className = "feedback err";

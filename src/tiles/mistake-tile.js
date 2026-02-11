@@ -8,6 +8,7 @@ import {
   clearTileContainer,
   createButton,
   setState,
+  transitionToTile,
   awardPoints,
   STATES
 } from './tile-utils.js';
@@ -119,7 +120,7 @@ export function renderMistakeTile(lesson) {
     msg.dataset.translation = "Complete the LISTEN_WRITE tile first.";
     
     const btnBack = createButton("Qaytish: LISTEN_WRITE", () => {
-      setState(STATES.LISTEN_WRITE);
+      transitionToTile(STATES.LISTEN_WRITE);
     });
     btnBack.classList.add("tl-uz");
     btnBack.dataset.translation = "Back: LISTEN_WRITE";
@@ -221,7 +222,7 @@ export function renderMistakeTile(lesson) {
       awardPoints(mistakeReviewPoints, 'Reviewed mistakes', 'MISTAKE');
       container.dataset.pointsAwarded = "true";
     }
-    setState(STATES.DONE);
+    transitionToTile(STATES.DONE);
   });
   btnNext.classList.add("tl-uz");
   btnNext.dataset.translation = "Finish";

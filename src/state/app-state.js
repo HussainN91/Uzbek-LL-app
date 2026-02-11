@@ -82,6 +82,14 @@ const AppState = {
     tileScores: {},       // { tileName: points }
     startTime: null,
     lastActivity: null,
+    // NEW: Gamification - XP and leveling
+    xp: 0,
+    level: 1,
+    streak: 0,            // Consecutive days
+    lastStreakDate: null, // ISO date string
+    badges: [],           // Array of badge IDs earned
+    // NEW: Progressive L1→L2 unlock - mastered vocab/chunk keys
+    masteredKeys: null,   // Set<string>, lazy-initialized from localStorage
   },
 
   // ============================
@@ -91,6 +99,13 @@ const AppState = {
     teacher: false,
     debug: false,
     devBypassGates: false,
+    // NEW: Language display override for teacher control
+    // 'auto' = progressive unlock based on mastery (default for students)
+    // 'all-uz' = force all Uzbek (initial presentation)
+    // 'all-en' = force all English (advanced review)
+    languageDisplay: 'auto',
+    // NEW: Show activity context cards before tile transitions
+    showActivityCards: true,
   },
 
   // ============================
@@ -398,6 +413,185 @@ export function toggleDevBypass(force) {
   notify('modes.devBypassGates', AppState.modes.devBypassGates, oldValue);
 }
 
+// ============================
+// LANGUAGE DISPLAY CONTROL (Teacher Mode)
+// ============================
+
+/**
+ * Set language display mode
+ * @param {'auto' | 'all-uz' | 'all-en'} mode - Display mode
+ */
+export function setLanguageDisplay(mode) {
+  const validModes = ['auto', 'all-uz', 'all-en'];
+  if (!validModes.includes(mode)) {
+    console.warn(`Invalid language display mode: ${mode}`);
+    return;
+  }
+  
+  const oldValue = AppState.modes.languageDisplay;
+  if (oldValue === mode) return;
+  
+  AppState.modes.languageDisplay = mode;
+  notify('modes.languageDisplay', mode, oldValue);
+}
+
+/**
+ * Get current language display mode
+ * @returns {'auto' | 'all-uz' | 'all-en'}
+ */
+export function getLanguageDisplay() {
+  return AppState.modes.languageDisplay;
+}
+
+/**
+ * Toggle activity context cards display
+ * @param {boolean} [force] - Optional force value
+ */
+export function toggleActivityCards(force) {
+  const oldValue = AppState.modes.showActivityCards;
+  AppState.modes.showActivityCards = force !== undefined ? force : !oldValue;
+  notify('modes.showActivityCards', AppState.modes.showActivityCards, oldValue);
+}
+
+/**
+ * Check if activity cards should be shown
+ * @returns {boolean}
+ */
+export function shouldShowActivityCards() {
+  // In teacher mode, respect the setting; in student mode, always show
+  if (AppState.modes.teacher) {
+    return AppState.modes.showActivityCards;
+  }
+  return true;
+}
+
+// ============================
+// XP & GAMIFICATION
+// ============================
+
+/** XP thresholds per level (cumulative) */
+export const XP_LEVELS = [0, 100, 250, 500, 850, 1300, 1900, 2600, 3500, 4600, 6000];
+
+/**
+ * Award XP and handle level-ups
+ * @param {number} xp - XP to award
+ * @param {string} [reason=''] - Reason for XP (for logging/display)
+ * @returns {{ newXP: number, leveledUp: boolean, newLevel: number }}
+ */
+export function awardXP(xp, reason = '') {
+  if (xp <= 0) return { newXP: AppState.session.xp, leveledUp: false, newLevel: AppState.session.level };
+  
+  const oldXP = AppState.session.xp;
+  const oldLevel = AppState.session.level;
+  
+  AppState.session.xp += xp;
+  
+  // Check for level up
+  let newLevel = oldLevel;
+  while (newLevel < XP_LEVELS.length && AppState.session.xp >= XP_LEVELS[newLevel]) {
+    newLevel++;
+  }
+  
+  const leveledUp = newLevel > oldLevel;
+  if (leveledUp) {
+    AppState.session.level = newLevel;
+    notify('session.level', newLevel, oldLevel);
+    
+    // Dispatch level up event for UI
+    window.dispatchEvent(new CustomEvent('levelUp', {
+      detail: { newLevel, oldLevel }
+    }));
+  }
+  
+  notify('session.xp', AppState.session.xp, oldXP);
+  
+  // Dispatch XP awarded event for UI
+  window.dispatchEvent(new CustomEvent('xpAwarded', {
+    detail: { xp, reason, newXP: AppState.session.xp }
+  }));
+  
+  if (reason) {
+    console.log(`🎮 +${xp} XP: ${reason}`);
+  }
+  
+  return { newXP: AppState.session.xp, leveledUp, newLevel };
+}
+
+/**
+ * Get XP needed for next level
+ * @returns {{ current: number, needed: number, progress: number }}
+ */
+export function getXPProgress() {
+  const level = AppState.session.level;
+  const currentXP = AppState.session.xp;
+  
+  const prevThreshold = XP_LEVELS[level - 1] || 0;
+  const nextThreshold = XP_LEVELS[level] || XP_LEVELS[XP_LEVELS.length - 1];
+  
+  const xpInLevel = currentXP - prevThreshold;
+  const xpNeeded = nextThreshold - prevThreshold;
+  const progress = Math.min(1, xpInLevel / xpNeeded);
+  
+  return { current: xpInLevel, needed: xpNeeded, progress };
+}
+
+/**
+ * Update streak counter
+ * Called on app init/lesson completion
+ */
+export function updateStreak() {
+  const today = new Date().toISOString().split('T')[0];
+  const lastDate = AppState.session.lastStreakDate;
+  
+  if (!lastDate) {
+    // First activity
+    AppState.session.streak = 1;
+    AppState.session.lastStreakDate = today;
+  } else if (lastDate === today) {
+    // Already counted today
+    return;
+  } else {
+    const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+    if (lastDate === yesterday) {
+      // Consecutive day
+      AppState.session.streak++;
+      AppState.session.lastStreakDate = today;
+      notify('session.streak', AppState.session.streak, AppState.session.streak - 1);
+    } else {
+      // Streak broken
+      const oldStreak = AppState.session.streak;
+      AppState.session.streak = 1;
+      AppState.session.lastStreakDate = today;
+      notify('session.streak', 1, oldStreak);
+    }
+  }
+}
+
+/**
+ * Award a badge
+ * @param {string} badgeId - Badge identifier
+ * @returns {boolean} True if badge was newly awarded
+ */
+export function awardBadge(badgeId) {
+  if (AppState.session.badges.includes(badgeId)) {
+    return false; // Already has badge
+  }
+  
+  AppState.session.badges.push(badgeId);
+  notify('session.badges', AppState.session.badges, null);
+  console.log(`🏆 Badge earned: ${badgeId}`);
+  return true;
+}
+
+/**
+ * Check if a badge is earned
+ * @param {string} badgeId - Badge identifier
+ * @returns {boolean}
+ */
+export function hasBadge(badgeId) {
+  return AppState.session.badges.includes(badgeId);
+}
+
 /**
  * Set curriculum data
  * @param {Object} curriculum - Curriculum data
@@ -457,6 +651,12 @@ export function persistState() {
     session: {
       score: AppState.session.score,
       maxScore: AppState.session.maxScore,
+      // Gamification data
+      xp: AppState.session.xp,
+      level: AppState.session.level,
+      streak: AppState.session.streak,
+      lastStreakDate: AppState.session.lastStreakDate,
+      badges: AppState.session.badges,
     },
   };
   
@@ -479,7 +679,14 @@ export function hydrateState() {
         Object.assign(AppState.navigation, saved.navigation);
       }
       if (saved.session) {
-        Object.assign(AppState.session, saved.session);
+        // Merge session, ensuring arrays are properly handled
+        AppState.session.score = saved.session.score ?? 0;
+        AppState.session.maxScore = saved.session.maxScore ?? 0;
+        AppState.session.xp = saved.session.xp ?? 0;
+        AppState.session.level = saved.session.level ?? 1;
+        AppState.session.streak = saved.session.streak ?? 0;
+        AppState.session.lastStreakDate = saved.session.lastStreakDate ?? null;
+        AppState.session.badges = Array.isArray(saved.session.badges) ? saved.session.badges : [];
       }
     }
     
@@ -520,11 +727,18 @@ export function resetState() {
   
   // Session
   resetSessionScore();
+  AppState.session.xp = 0;
+  AppState.session.level = 1;
+  AppState.session.streak = 0;
+  AppState.session.lastStreakDate = null;
+  AppState.session.badges = [];
   
   // Modes
   AppState.modes.teacher = false;
   AppState.modes.debug = false;
   AppState.modes.devBypassGates = false;
+  AppState.modes.languageDisplay = 'auto';
+  AppState.modes.showActivityCards = true;
   
   notify('state', AppState, null);
 }
@@ -685,5 +899,15 @@ if (typeof window !== 'undefined') {
     isPOSGameShown,
     markPreReadComplete,
     isPreReadComplete,
+    // NEW: Language display and gamification
+    setLanguageDisplay,
+    getLanguageDisplay,
+    toggleActivityCards,
+    shouldShowActivityCards,
+    awardXP,
+    getXPProgress,
+    updateStreak,
+    awardBadge,
+    hasBadge,
   };
 }

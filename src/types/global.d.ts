@@ -328,6 +328,38 @@ declare global {
     usageTracker: Record<string, unknown>;
     
     // ============================
+    // UX Enhancement Components (2025 Update)
+    // ============================
+    
+    /** XP Display component */
+    XPDisplay: {
+      mount(): void;
+      unmount(): void;
+      update(): void;
+      show(): void;
+      hide(): void;
+    };
+    
+    /** Language display utilities */
+    LanguageDisplay: {
+      getMasteredKeys(): Set<string>;
+      markAsMastered(key: string): void;
+      isMastered(key: string): boolean;
+      getChunkDisplayMode(chunk: any, options?: any): 'l1' | 'l2' | 'hybrid';
+      renderChunk(chunk: any, options?: any): HTMLElement;
+      getLanguageDisplay(): 'auto' | 'all-uz' | 'all-en';
+    };
+    
+    /** Mission Briefing gateway */
+    showMissionBriefing?: (lesson: any) => Promise<void>;
+    
+    /** Activity Context Card */
+    showActivityContextCard?: (targetTile: string, options?: any) => Promise<void>;
+    
+    /** Tile transition with context card */
+    transitionToTile?: (newState: string, options?: any) => Promise<void>;
+    
+    // ============================
     // Translation Data
     // ============================
     

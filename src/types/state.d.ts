@@ -123,6 +123,18 @@ export interface SessionState {
   startTime: number | null;
   /** Last activity timestamp */
   lastActivity: number | null;
+  /** XP earned (gamification) */
+  xp: number;
+  /** Current level (gamification) */
+  level: number;
+  /** Daily streak count */
+  streak: number;
+  /** Last streak date (ISO string) */
+  lastStreakDate: string | null;
+  /** Earned badge IDs */
+  badges: string[];
+  /** Mastered vocab/chunk keys for progressive L1→L2 unlock */
+  masteredKeys: Set<string> | null;
 }
 
 /**
@@ -135,6 +147,10 @@ export interface ModesState {
   debug: boolean;
   /** Dev gate bypass enabled */
   devBypassGates: boolean;
+  /** Language display override: 'auto' | 'all-uz' | 'all-en' */
+  languageDisplay: 'auto' | 'all-uz' | 'all-en';
+  /** Show activity context cards before tile transitions */
+  showActivityCards: boolean;
 }
 
 /**

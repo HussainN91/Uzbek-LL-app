@@ -26,6 +26,7 @@ import {
   initTeacherMode
 } from './core/index.js';
 import { initUIRedesign } from './features/index.js';
+import { mountXPDisplay } from './components/xp-display.js';
 
 // Populate the tile registry before anything renders
 import './tiles/tile-registrations.js';
@@ -134,6 +135,14 @@ async function loadTileModules() {
  * Initialize additional systems (audio, vocab gap, etc.)
  */
 async function initAdditionalSystems() {
+  // Initialize XP display badge (gamification)
+  try {
+    mountXPDisplay();
+    console.log('✅ XP Display mounted');
+  } catch (e) {
+    console.warn('⚠️ XP Display failed to mount:', e);
+  }
+  
   // Initialize vocab gap hover system
   // TODO: vocab_gap_hover_data.json does not exist yet — generate it when gap data is ready
   try {

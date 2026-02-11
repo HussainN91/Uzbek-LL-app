@@ -13,6 +13,7 @@ import {
   getTileContainer,
   createButton,
   setState,
+  transitionToTile,
   STATES,
   resolveUIData,
   mergeMissingKeys
@@ -1071,14 +1072,14 @@ export function renderFunctionTile(lesson) {
   const btnContinue = createButton("Continue", () => {
     // TEACHER MODE bypass
     if (window.TEACHER_MODE) {
-      setState(STATES.CONTROLLED);
+      transitionToTile(STATES.CONTROLLED);
       return;
     }
 
     // Gate: require all 3 subtasks passed (≥66%)
     const allPassed = subtaskState.scores.every(score => score !== null && score >= 0.66);
     if (allPassed || !functionSubtasks) {
-      setState(STATES.CONTROLLED);
+      transitionToTile(STATES.CONTROLLED);
     } else {
       const feedback = document.createElement("div");
       feedback.className = "feedback err";

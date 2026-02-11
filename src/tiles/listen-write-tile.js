@@ -13,6 +13,7 @@ import {
   getTileContainer,
   createButton,
   setState,
+  transitionToTile,
   STATES,
   resolveUIData,
   awardPoints,
@@ -108,7 +109,7 @@ export function renderListenWriteTile(lesson) {
     msg.dataset.translation = "Complete the WRITING tile first.";
 
     const btnBack = createButton("Qaytish: WRITING", () => {
-      setState(STATES.WRITING);
+      transitionToTile(STATES.WRITING);
     });
     btnBack.classList.add("tl-uz");
     btnBack.dataset.translation = "Back: WRITING";
@@ -292,14 +293,14 @@ export function renderListenWriteTile(lesson) {
     // TEACHER MODE: Bypass validation
     if (window.TEACHER_MODE) {
       playSound('complete');
-      setState(STATES.MISTAKE);
+      transitionToTile(STATES.MISTAKE);
       return;
     }
 
     const lastScore = Number(feedback.dataset.lastScore || "0");
     if (lastScore >= 0.8) {
       playSound('complete');
-      setState(STATES.MISTAKE);
+      transitionToTile(STATES.MISTAKE);
     } else {
       feedback.textContent = "Oldin bu mashqni yakunlang (≥80%).";
       feedback.className = "feedback err";
@@ -310,7 +311,7 @@ export function renderListenWriteTile(lesson) {
   // TEACHER MODE: Skip button
   if (window.TEACHER_MODE) {
     const btnSkip = createButton("🎓 Skip (Teacher)", () => {
-      setState(STATES.MISTAKE);
+      transitionToTile(STATES.MISTAKE);
     });
     btnSkip.style.background = "#673ab7";
     form.appendChild(btnSkip);

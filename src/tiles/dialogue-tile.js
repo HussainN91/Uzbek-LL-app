@@ -17,6 +17,7 @@ import {
   createBackButton,
   createButton,
   setState,
+  transitionToTile,
   STATES,
   getCurrentUnitId,
   getCurrentLessonId,
@@ -28,6 +29,13 @@ import {
   buildMirrorHtml,
   createGlobalMirrorToggle
 } from '../utils/mirror-toggle.js';
+
+import {
+  renderChunk,
+  markAsMastered,
+  isMastered,
+  getChunkDisplayMode
+} from '../utils/language-display.js';
 
 // ============================
 // MASTERY PERSISTENCE (G4)
@@ -793,13 +801,19 @@ export function renderLessonDialogueTile(lesson) {
         textEnEl.style.cssText = "color: white; font-size: 1.05rem; line-height: 1.5; margin-bottom: 6px;";
         
         if (turn.text_chunks && Array.isArray(turn.text_chunks)) {
-          // Chunk-level hover translations
+          // Chunk-level progressive L1→L2 display
           turn.text_chunks.forEach((chunk, ci) => {
-            const chunkSpan = document.createElement("span");
-            chunkSpan.textContent = chunk.en;
-            chunkSpan.classList.add("dialogue-chunk-hoverable");
-            chunkSpan.dataset.uzbek = chunk.uz;
-            chunkSpan.style.cssText = "display: inline; position: relative; cursor: help; padding: 2px 0; border-bottom: 1px dotted rgba(255,255,255,0.3); transition: all 0.2s ease;";
+            // Generate mastery key for this chunk (dialogue_id + line + chunk index)
+            const chunkMasteryKey = turn.mastery_key ? `${turn.mastery_key}_c${ci}` : null;
+            
+            // Use progressive L1→L2 rendering
+            const chunkSpan = renderChunk(chunk, {
+              masteryKey: chunkMasteryKey,
+              hoverable: true
+            });
+            
+            // Add dialogue-specific styling
+            chunkSpan.classList.add('dialogue-chunk-hoverable');
             textEnEl.appendChild(chunkSpan);
             if (ci < turn.text_chunks.length - 1) textEnEl.appendChild(document.createTextNode(" "));
           });
@@ -859,10 +873,30 @@ export function renderLessonDialogueTile(lesson) {
           turnEl.addEventListener('click', () => {
             if (currentMode !== 'practice') return;
             setLineMastered(dialogueId, idx);
+            
+            // Also mark chunks as mastered for progressive L1→L2 unlock
+            if (Array.isArray(turn.text_chunks)) {
+              turn.text_chunks.forEach((_, ci) => {
+                const chunkKey = `${turn.mastery_key}_c${ci}`;
+                markAsMastered(chunkKey);
+              });
+            }
+            // Mark the line itself
+            if (turn.mastery_key) {
+              markAsMastered(turn.mastery_key);
+            }
+            
             turnEl.classList.add('mastered');
             masteryBadge.style.display = 'inline-block';
             textUzEl.style.display = 'none';
             turnEl.style.cursor = 'default';
+            
+            // Update chunk display to show mastered state
+            turnEl.querySelectorAll('.dialogue-chunk').forEach(chunkEl => {
+              chunkEl.classList.add('lang-mode-l2');
+              chunkEl.classList.remove('lang-mode-hybrid', 'lang-mode-l1');
+              chunkEl.classList.add('chunk-just-unlocked');
+            });
           });
         }
 
@@ -1173,7 +1207,7 @@ export function renderLessonDialogueTile(lesson) {
     navContainer.appendChild(backBtn);
   }
 
-  const nextBtn = createButton("Next: Pattern \u2192", () => setState(STATES.PATTERN));
+  const nextBtn = createButton("Next: Pattern \u2192", () => transitionToTile(STATES.PATTERN));
   nextBtn.style.cssText = "flex: 1; max-width: 200px; padding: 14px 24px; background: #27ae60; color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(39,174,96,0.3);";
   navContainer.appendChild(nextBtn);
 

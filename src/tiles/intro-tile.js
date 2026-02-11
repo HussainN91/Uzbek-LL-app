@@ -15,7 +15,7 @@ import {
   resolveUIData,
   mergeMissingKeys,
   createButton,
-  setState,
+  transitionToTile,
   getStates
 } from './tile-utils.js';
 
@@ -61,7 +61,7 @@ export function renderIntroTile(lesson) {
   appendChildren(tileContainer, title, fn, sem, grammarDiv);
 
   // Next button
-  const btnNext = createButton("Next: Vocabulary", () => setState(STATES.VOCAB));
+  const btnNext = createButton("Next: Vocabulary", () => transitionToTile(STATES.VOCAB));
   tileContainer.appendChild(btnNext);
 }
 

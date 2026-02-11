@@ -30,6 +30,7 @@ import {
   resetIntegrationState
 } from './navigation.js';
 import { buildUnitSelectorUI, buildLessonSelectorUI } from './ui-builders.js';
+import { setLanguageDisplay, getLanguageDisplay } from '../state/app-state.js';
 
 // ============================
 // MODE FLAGS
@@ -46,6 +47,7 @@ let teacherUnitSelect = null;
 let teacherLessonSelect = null;
 let teacherTileSelect = null;
 let teacherCloseBtn = null;
+let teacherLangBtns = null;
 
 // ============================
 // INITIALIZATION
@@ -97,6 +99,30 @@ export function initTeacherMode() {
       if (_TEACHER_MODE) {
         const target = /** @type {HTMLSelectElement} */ (e.target);
         goToTile(target.value);
+      }
+    });
+  }
+  
+  // Language control buttons
+  teacherLangBtns = document.getElementById("teacher-lang-btns");
+  if (teacherLangBtns) {
+    teacherLangBtns.addEventListener("click", (e) => {
+      const target = /** @type {HTMLElement} */ (e.target);
+      if (target.classList.contains("teacher-lang-btn")) {
+        const lang = target.dataset.lang;
+        if (lang && ['auto', 'all-uz', 'all-en'].includes(lang)) {
+          setLanguageDisplay(/** @type {'auto' | 'all-uz' | 'all-en'} */ (lang));
+          
+          // Update active state
+          teacherLangBtns.querySelectorAll('.teacher-lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.lang === lang);
+          });
+          
+          // Re-render current tile to apply language change
+          render();
+          
+          console.log(`🌐 Language display set to: ${lang}`);
+        }
       }
     });
   }
@@ -380,6 +406,14 @@ export function updateTeacherPanelUI() {
         option.textContent = tile.label;
         if (tile.value === getCurrentState()) option.selected = true;
         teacherTileSelect.appendChild(option);
+      });
+    }
+    
+    // Sync language control buttons with current state
+    if (teacherLangBtns) {
+      const currentLang = getLanguageDisplay();
+      teacherLangBtns.querySelectorAll('.teacher-lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === currentLang);
       });
     }
   } else {

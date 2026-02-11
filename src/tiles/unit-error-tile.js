@@ -13,6 +13,7 @@ import {
   clearTileContainer,
   STATES,
   setState,
+  transitionToTile,
   createButton
 } from './tile-utils.js';
 
@@ -89,7 +90,7 @@ export function renderUnitErrorDetectionTile(unitId) {
     msg.classList.add("tl-uz");
     msg.dataset.translation = "Unit error detection data not found or invalid.";
     
-    const btnSkip = createButton("Skip to Grand Tile", () => setState(STATES.GRAND_TILE));
+    const btnSkip = createButton("Skip to Grand Tile", () => transitionToTile(STATES.GRAND_TILE));
     
     tileContainer.appendChild(title);
     tileContainer.appendChild(msg);
@@ -224,7 +225,7 @@ export function renderUnitErrorDetectionTile(unitId) {
   const btnContinue = createButton(getUz("errorDetectionTile.continueGrand"), () => {
     // TEACHER MODE: Bypass validation
     if (isTeacherMode()) {
-      setState(STATES.GRAND_TILE);
+      transitionToTile(STATES.GRAND_TILE);
       return;
     }
     
@@ -232,7 +233,7 @@ export function renderUnitErrorDetectionTile(unitId) {
     const threshold = spec.pass_threshold || 0.8;
     
     if (lastScore >= threshold) {
-      setState(STATES.GRAND_TILE);
+      transitionToTile(STATES.GRAND_TILE);
     } else {
       feedback.textContent = "Oldin xatolarni aniqlash topshirig'idan o'ting (≥" + Math.round(threshold * 100) + "%).";
       feedback.className = "feedback err";

@@ -6,9 +6,13 @@
  *
  * @module src/tiles/controlled-tile
  * @version 2.1.0 (Simplified stages)
+ */
+
+import {
   getTileContainer,
   createButton,
   setState,
+  transitionToTile,
   STATES,
   awardPoints,
   addMaxScore,
@@ -780,7 +784,7 @@ function handleControlledContinue(feedback, lesson, CONTROLLED_STAGES, renderCon
       setControlledStageIndex(controlledStageIndex);
       saveControlledStageProgress();
       playSound('complete');
-      setState(STATES.WRITING);
+      transitionToTile(STATES.WRITING);
     }
     return;
   }
@@ -800,7 +804,7 @@ function handleControlledContinue(feedback, lesson, CONTROLLED_STAGES, renderCon
       setControlledStageIndex(controlledStageIndex);
       saveControlledStageProgress();
       playSound('complete');
-      setState(STATES.WRITING);
+      transitionToTile(STATES.WRITING);
     }
   } else {
     playSound('wrong');

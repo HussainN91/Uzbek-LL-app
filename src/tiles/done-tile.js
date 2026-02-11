@@ -8,6 +8,7 @@ import {
   clearTileContainer,
   createButton,
   setState,
+  transitionToTile,
   playSound,
   STATES,
   getCurrentUnitId
@@ -273,7 +274,7 @@ export function renderDoneTile(lesson) {
         if (typeof window.setLastListenWritePassed === 'function') window.setLastListenWritePassed(false);
         resetIntegrationState();
         buildLessonSelectorUI();
-        setState(STATES.INTRO); // single render via setState
+        transitionToTile(STATES.INTRO); // single render via transitionToTile
       }
     );
     tileContainer.appendChild(btnNextLesson);
@@ -309,7 +310,7 @@ export function renderDoneTile(lesson) {
             const curriculum = typeof window.getActiveCurriculum === 'function' ? window.getActiveCurriculum() : null;
             const firstLessonId = curriculum?.lessons ? Object.keys(curriculum.lessons)[0] : null;
             if (firstLessonId && typeof window.setCurrentLesson === 'function') window.setCurrentLesson(firstLessonId);
-            setState(STATES.INTRO); // single render via setState
+            transitionToTile(STATES.INTRO); // single render via transitionToTile
           }
         );
         tileContainer.appendChild(btnNextUnit);
@@ -322,7 +323,7 @@ export function renderDoneTile(lesson) {
               lessonIds.filter(id => !completedLessons.has(id)).map(id => getFriendlyLessonName(id)).join(", "));
         return;
       }
-      setState(STATES.UNIT_ERROR_DETECTION);
+      transitionToTile(STATES.UNIT_ERROR_DETECTION);
     });
     
     // Visual indicator if not all complete

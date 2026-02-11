@@ -8,6 +8,7 @@ import {
   clearTileContainer,
   createButton,
   setState,
+  transitionToTile,
   STATES
 } from './tile-utils.js';
 
@@ -89,7 +90,7 @@ export function renderWritingTile(lesson) {
     msg.dataset.translation = "Complete all " + totalStages + " stages of CONTROLLED (" + CONTROLLED_STAGES.join(", ") + ") first. Current stage: " + Math.min(controlledStageIndex + 1, totalStages) + "/" + totalStages + ".";
     
     const btnBack = createButton("Qaytish: CONTROLLED", () => {
-      setState(STATES.CONTROLLED);
+      transitionToTile(STATES.CONTROLLED);
     });
     btnBack.classList.add("tl-uz");
     btnBack.dataset.translation = "Back: CONTROLLED";
@@ -196,12 +197,12 @@ export function renderWritingTile(lesson) {
   const btnContinue = createButton(getUz("common.buttons.continue"), () => {
     // TEACHER MODE: Bypass all validation
     if (window.TEACHER_MODE) {
-      setState(STATES.LISTEN_WRITE);
+      transitionToTile(STATES.LISTEN_WRITE);
       return;
     }
     
     if (window.lastWritingPassed) {
-      setState(STATES.LISTEN_WRITE);
+      transitionToTile(STATES.LISTEN_WRITE);
     } else {
       feedback.textContent = "Oldin WRITING tile'dan o'ting (shartlar bajarilsin).";
       feedback.classList.add("tl-uz");

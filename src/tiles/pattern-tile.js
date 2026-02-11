@@ -11,6 +11,7 @@ import {
   createButton,
   createBackButton,
   setState,
+  transitionToTile,
   STATES,
   playSound,
   speakText,
@@ -231,7 +232,7 @@ export function renderPatternTile(lesson) {
     navContainer.appendChild(backBtn);
   }
 
-  const nextBtn = createButton("Next: Function →", () => setState(STATES.FUNCTION));
+  const nextBtn = createButton("Next: Function →", () => transitionToTile(STATES.FUNCTION));
   nextBtn.style.cssText = "flex: 1; max-width: 200px; padding: 14px 24px; background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(39,174,96,0.3);";
   navContainer.appendChild(nextBtn);
 

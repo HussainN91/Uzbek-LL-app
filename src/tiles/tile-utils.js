@@ -127,6 +127,22 @@ export function setState(state) {
 }
 
 /**
+ * Transition to a new tile with Activity Context Card (student mode)
+ * Shows a brief context overlay before the tile renders
+ * @param {string} state - Target state constant
+ * @param {Object} [options] - Optional context for the card
+ * @returns {Promise<void>}
+ */
+export async function transitionToTile(state, options = {}) {
+  if (typeof window.transitionToTile === 'function') {
+    await window.transitionToTile(state, options);
+  } else {
+    // Fallback to direct state change if transition not available
+    setState(state);
+  }
+}
+
+/**
  * Get current application state
  * @returns {string} Current state
  */
@@ -175,12 +191,13 @@ export function createButton(text, onClick) {
 
 /**
  * Create a next tile button
+ * Uses transitionToTile to show Activity Context Card before navigation
  * @param {string} nextStateName - Name of next state
  * @param {string} nextState - State constant
  * @returns {HTMLElement} Button element
  */
 export function createNextButton(nextStateName, nextState) {
-  return createButton(`Next: ${nextStateName}`, () => setState(nextState));
+  return createButton(`Next: ${nextStateName}`, () => transitionToTile(nextState));
 }
 
 // ============================
@@ -394,6 +411,7 @@ if (typeof window !== 'undefined') {
     resolveUIData,
     mergeMissingKeys,
     setState,
+    transitionToTile, // NEW: with activity context card
     getCurrentState,
     getCurrentLesson,
     getCurrentLessonId,

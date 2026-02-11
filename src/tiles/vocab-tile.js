@@ -21,6 +21,7 @@ import {
   mergeMissingKeys,
   createButton,
   setState,
+  transitionToTile,
   getVocabForLesson,
   getStates
 } from './tile-utils.js';
@@ -250,9 +251,9 @@ export function renderVocabTile(lesson) {
     // Check if this lesson has a dialogue
     const hasLessonDialogue = lesson?.lesson_dialogue?.dialogues?.length > 0;
     if (hasLessonDialogue) {
-      btnNext = createButton("Next: Dialogue", () => setState(STATES.DIALOGUE));
+      btnNext = createButton("Next: Dialogue", () => transitionToTile(STATES.DIALOGUE));
     } else {
-      btnNext = createButton("Next: Pattern", () => setState(STATES.PATTERN));
+      btnNext = createButton("Next: Pattern", () => transitionToTile(STATES.PATTERN));
     }
   }
 
@@ -973,7 +974,7 @@ export function renderSandwichDialogueTile(lesson) {
 
   tileContainer.appendChild(wrapper);
 
-  const nextBtn = createButton('Next: Dialogue practice', () => setState(STATES.DIALOGUE));
+  const nextBtn = createButton('Next: Dialogue practice', () => transitionToTile(STATES.DIALOGUE));
   tileContainer.appendChild(nextBtn);
 
   const onLineMastered = () => {

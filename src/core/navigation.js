@@ -12,6 +12,8 @@
 import { STATES } from '../utils/constants.js';
 import { getCurrentLesson, getUnitDisplayName, getCurrentUnitId, getMissingKeys, mergeMissingKeys } from './curriculum-loader.js';
 import { mountTile, unmountActive, hasTile } from '../tiles/tile-registry.js';
+import { showActivityContextCard } from '../components/activity-context-card.js';
+import { showMissionBriefing } from '../components/mission-briefing.js';
 import {
   AppState,
   setTile as appSetTile,
@@ -80,6 +82,37 @@ export function setState(newState) {
   if (AppState.modes.teacher && typeof window.updateTeacherPanelUI === 'function') {
     window.updateTeacherPanelUI();
   }
+}
+
+/**
+ * Transition to a new tile with Activity Context Card
+ * Shows a brief context overlay before the tile renders (student mode only)
+ * For DIALOGUE tiles, also shows Mission Briefing gateway
+ * @param {string} newState - Target tile state
+ * @param {Object} [options] - Optional context for the card
+ * @returns {Promise<void>}
+ */
+export async function transitionToTile(newState, options = {}) {
+  // In teacher mode, skip the card and go directly
+  // Also skip if transitioning to same state
+  const currentState = getCurrentStateInternal();
+  if (AppState.modes.teacher || newState === currentState) {
+    setState(newState);
+    return;
+  }
+  
+  // Show activity context card, then set state
+  await showActivityContextCard(newState, options);
+  
+  // For DIALOGUE transitions, show Mission Briefing gateway
+  if (newState === STATES.DIALOGUE) {
+    const lesson = getCurrentLesson();
+    if (lesson) {
+      await showMissionBriefing(lesson);
+    }
+  }
+  
+  setState(newState);
 }
 
 export function setCurrentLesson(lessonId) {
@@ -459,6 +492,7 @@ export function getAvailableUnits() { return AppState.data.availableUnits; }
 if (typeof window !== 'undefined') {
   // Core functions (still needed by tile-utils.js and legacy code)
   window.setState = setState;
+  window.transitionToTile = transitionToTile; // NEW: with activity context card
   window.setCurrentLesson = setCurrentLesson;
   window.getCurrentState = getCurrentState;
   window.getCurrentLessonId = getCurrentLessonId;
