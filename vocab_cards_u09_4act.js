@@ -123,16 +123,16 @@ window.VOCAB_CARDS_U09 = {
         notes: "Clothing identification with possessive determiners"
       },
       lines: [
-        { speaker: "Dilnoza", line: "Hi Aziza! Are these your new trainers?", line_uz: "Salom Aziza! Bu sizning yangi krossovkalaringizmi?", recycled: ["Are", "these", "your", "new"], target: ["trainers"] },
-        { speaker: "Aziza", line: "Yes, they are! I bought them yesterday.", line_uz: "Ha, ular! Men ularni kecha sotib oldim.", recycled: ["Yes", "they", "are", "I", "bought", "them", "yesterday"], target: [] },
-        { speaker: "Dilnoza", line: "They're very nice! I like your trainers.", line_uz: "Ular juda chiroyli! Menga sizning krossovkalaringiz yoqadi.", recycled: ["They", "very", "nice", "I", "like", "your"], target: ["trainers"] },
-        { speaker: "Aziza", line: "Thanks! What about this jumper? Do you like it?", line_uz: "Rahmat! Bu jemper-chi? Sizga yoqadimi?", recycled: ["What", "about", "this", "Do", "you", "like", "it"], target: ["jumper"] },
-        { speaker: "Dilnoza", line: "Yes, I love that jumper! Is it new?", line_uz: "Ha, men bu jemperni yaxshi ko'raman! U yangimi?", recycled: ["Yes", "I", "love", "that", "Is", "it", "new"], target: ["jumper"] },
-        { speaker: "Aziza", line: "Yes, I bought this jumper last week.", line_uz: "Ha, men bu jemperni o'tgan hafta sotib oldim.", recycled: ["Yes", "I", "bought", "this", "last", "week"], target: ["jumper"] },
-        { speaker: "Dilnoza", line: "And these socks? Are these yours too?", line_uz: "Va bu paypoqlar? Bular ham siznikimi?", recycled: ["And", "these", "Are", "these", "too"], target: ["socks", "yours"] },
-        { speaker: "Aziza", line: "No, these aren't my socks. They're my brother's.", line_uz: "Yo'q, bular mening paypoqlarim emas. Ular mening ukamniki.", recycled: ["No", "these", "aren't", "my", "They", "my", "brother"], target: ["socks"] },
-        { speaker: "Dilnoza", line: "Look at this scarf! It's beautiful!", line_uz: "Bu sharfga qarang! U chiroyli!", recycled: ["Look", "at", "this", "It", "beautiful"], target: ["scarf"] },
-        { speaker: "Aziza", line: "Yes, but I don't like that color. I like blue.", line_uz: "Ha, lekin menga bu rang yoqmaydi. Men ko'k rangni yaxshi ko'raman.", recycled: ["Yes", "but", "I", "don't", "like", "that", "I", "like", "blue"], target: ["color"] }
+        { speaker: "Dilnoza", line: "Hi Aziza! Are these your new trainers?", line_uz: "Salom Aziza! Bu sizning yangi krossovkalaringizmi?", recycled: ["Are", "these", "your", "new"], target: ["trainers"] , mastery_key: "U09_L01_D01_0", audio_id: "U09_L01_D01_L0" },
+        { speaker: "Aziza", line: "Yes, they are! I bought them yesterday.", line_uz: "Ha, ular! Men ularni kecha sotib oldim.", recycled: ["Yes", "they", "are", "I", "bought", "them", "yesterday"], target: [] , mastery_key: "U09_L01_D01_1", audio_id: "U09_L01_D01_L1" },
+        { speaker: "Dilnoza", line: "They're very nice! I like your trainers.", line_uz: "Ular juda chiroyli! Menga sizning krossovkalaringiz yoqadi.", recycled: ["They", "very", "nice", "I", "like", "your"], target: ["trainers"] , mastery_key: "U09_L01_D01_2", audio_id: "U09_L01_D01_L2" },
+        { speaker: "Aziza", line: "Thanks! What about this jumper? Do you like it?", line_uz: "Rahmat! Bu jemper-chi? Sizga yoqadimi?", recycled: ["What", "about", "this", "Do", "you", "like", "it"], target: ["jumper"] , mastery_key: "U09_L01_D01_3", audio_id: "U09_L01_D01_L3" },
+        { speaker: "Dilnoza", line: "Yes, I love that jumper! Is it new?", line_uz: "Ha, men bu jemperni yaxshi ko'raman! U yangimi?", recycled: ["Yes", "I", "love", "that", "Is", "it", "new"], target: ["jumper"] , mastery_key: "U09_L01_D01_4", audio_id: "U09_L01_D01_L4" },
+        { speaker: "Aziza", line: "Yes, I bought this jumper last week.", line_uz: "Ha, men bu jemperni o'tgan hafta sotib oldim.", recycled: ["Yes", "I", "bought", "this", "last", "week"], target: ["jumper"] , mastery_key: "U09_L01_D01_5", audio_id: "U09_L01_D01_L5" },
+        { speaker: "Dilnoza", line: "And these socks? Are these yours too?", line_uz: "Va bu paypoqlar? Bular ham siznikimi?", recycled: ["And", "these", "Are", "these", "too"], target: ["socks", "yours"] , mastery_key: "U09_L01_D01_6", audio_id: "U09_L01_D01_L6" },
+        { speaker: "Aziza", line: "No, these aren't my socks. They're my brother's.", line_uz: "Yo'q, bular mening paypoqlarim emas. Ular mening ukamniki.", recycled: ["No", "these", "aren't", "my", "They", "my", "brother"], target: ["socks"] , mastery_key: "U09_L01_D01_7", audio_id: "U09_L01_D01_L7" },
+        { speaker: "Dilnoza", line: "Look at this scarf! It's beautiful!", line_uz: "Bu sharfga qarang! U chiroyli!", recycled: ["Look", "at", "this", "It", "beautiful"], target: ["scarf"] , mastery_key: "U09_L01_D01_8", audio_id: "U09_L01_D01_L8" },
+        { speaker: "Aziza", line: "Yes, but I don't like that color. I like blue.", line_uz: "Ha, lekin menga bu rang yoqmaydi. Men ko'k rangni yaxshi ko'raman.", recycled: ["Yes", "but", "I", "don't", "like", "that", "I", "like", "blue"], target: ["color"] , mastery_key: "U09_L01_D01_9", audio_id: "U09_L01_D01_L9" }
       ]
     },
 
@@ -152,16 +152,16 @@ window.VOCAB_CARDS_U09 = {
         notes: "Materials with possessive pronouns introduction"
       },
       lines: [
-        { speaker: "Jasur", line: "Farrukh, are these your new boots?", line_uz: "Farrukh, bu sizning yangi etiklaringizmi?", recycled: ["are", "these", "your", "new"], target: ["boots"] },
-        { speaker: "Farrukh", line: "Yes, they are! The boots are leather.", line_uz: "Ha, ular! Etiklar charmdan.", recycled: ["Yes", "they", "are", "The"], target: ["boots", "leather"] },
-        { speaker: "Jasur", line: "Leather boots are very good! And this bag? Is this yours?", line_uz: "Charm etiklar juda yaxshi! Va bu sumka? Bu siznikimi?", recycled: ["are", "very", "good", "And", "this", "Is", "this"], target: ["Leather", "boots", "bag", "yours"] },
-        { speaker: "Farrukh", line: "No, this isn't mine. That bag is mine.", line_uz: "Yo'q, bu meniki emas. U sumka meniki.", recycled: ["No", "this", "isn't", "That", "is"], target: ["mine", "bag", "mine"] },
-        { speaker: "Jasur", line: "Is your bag leather too?", line_uz: "Sizning sumkangiz ham charmmi?", recycled: ["Is", "your", "too"], target: ["bag", "leather"] },
-        { speaker: "Farrukh", line: "No, it isn't. My bag is plastic.", line_uz: "Yo'q, unday emas. Mening sumkam plastmassadan.", recycled: ["No", "it", "isn't", "My", "is"], target: ["bag", "plastic"] },
-        { speaker: "Jasur", line: "What about these gloves? Are they yours?", line_uz: "Bu qo'lqoplar-chi? Ular siznikimi?", recycled: ["What", "about", "these", "Are", "they"], target: ["gloves", "yours"] },
-        { speaker: "Farrukh", line: "Yes, these gloves are mine. They're cotton.", line_uz: "Ha, bu qo'lqoplar meniki. Ular paxtadan.", recycled: ["Yes", "these", "are", "They"], target: ["gloves", "mine", "cotton"] },
-        { speaker: "Jasur", line: "Cotton gloves are warm!", line_uz: "Paxta qo'lqoplar issiq!", recycled: ["are"], target: ["Cotton", "gloves", "warm"] },
-        { speaker: "Farrukh", line: "Yes, I wear them every cold day.", line_uz: "Ha, men ularni har sovuq kunda kiyaman.", recycled: ["Yes", "I", "them", "every", "day"], target: ["wear", "cold"] }
+        { speaker: "Jasur", line: "Farrukh, are these your new boots?", line_uz: "Farrukh, bu sizning yangi etiklaringizmi?", recycled: ["are", "these", "your", "new"], target: ["boots"] , mastery_key: "U09_L02_D01_0", audio_id: "U09_L02_D01_L0" },
+        { speaker: "Farrukh", line: "Yes, they are! The boots are leather.", line_uz: "Ha, ular! Etiklar charmdan.", recycled: ["Yes", "they", "are", "The"], target: ["boots", "leather"] , mastery_key: "U09_L02_D01_1", audio_id: "U09_L02_D01_L1" },
+        { speaker: "Jasur", line: "Leather boots are very good! And this bag? Is this yours?", line_uz: "Charm etiklar juda yaxshi! Va bu sumka? Bu siznikimi?", recycled: ["are", "very", "good", "And", "this", "Is", "this"], target: ["Leather", "boots", "bag", "yours"] , mastery_key: "U09_L02_D01_2", audio_id: "U09_L02_D01_L2" },
+        { speaker: "Farrukh", line: "No, this isn't mine. That bag is mine.", line_uz: "Yo'q, bu meniki emas. U sumka meniki.", recycled: ["No", "this", "isn't", "That", "is"], target: ["mine", "bag", "mine"] , mastery_key: "U09_L02_D01_3", audio_id: "U09_L02_D01_L3" },
+        { speaker: "Jasur", line: "Is your bag leather too?", line_uz: "Sizning sumkangiz ham charmmi?", recycled: ["Is", "your", "too"], target: ["bag", "leather"] , mastery_key: "U09_L02_D01_4", audio_id: "U09_L02_D01_L4" },
+        { speaker: "Farrukh", line: "No, it isn't. My bag is plastic.", line_uz: "Yo'q, unday emas. Mening sumkam plastmassadan.", recycled: ["No", "it", "isn't", "My", "is"], target: ["bag", "plastic"] , mastery_key: "U09_L02_D01_5", audio_id: "U09_L02_D01_L5" },
+        { speaker: "Jasur", line: "What about these gloves? Are they yours?", line_uz: "Bu qo'lqoplar-chi? Ular siznikimi?", recycled: ["What", "about", "these", "Are", "they"], target: ["gloves", "yours"] , mastery_key: "U09_L02_D01_6", audio_id: "U09_L02_D01_L6" },
+        { speaker: "Farrukh", line: "Yes, these gloves are mine. They're cotton.", line_uz: "Ha, bu qo'lqoplar meniki. Ular paxtadan.", recycled: ["Yes", "these", "are", "They"], target: ["gloves", "mine", "cotton"] , mastery_key: "U09_L02_D01_7", audio_id: "U09_L02_D01_L7" },
+        { speaker: "Jasur", line: "Cotton gloves are warm!", line_uz: "Paxta qo'lqoplar issiq!", recycled: ["are"], target: ["Cotton", "gloves", "warm"] , mastery_key: "U09_L02_D01_8", audio_id: "U09_L02_D01_L8" },
+        { speaker: "Farrukh", line: "Yes, I wear them every cold day.", line_uz: "Ha, men ularni har sovuq kunda kiyaman.", recycled: ["Yes", "I", "them", "every", "day"], target: ["wear", "cold"] , mastery_key: "U09_L02_D01_9", audio_id: "U09_L02_D01_L9" }
       ]
     },
 
@@ -181,16 +181,16 @@ window.VOCAB_CARDS_U09 = {
         notes: "Whose questions with possessive pronoun answers"
       },
       lines: [
-        { speaker: "Kamola", line: "Sardor, whose scarf is this?", line_uz: "Sardor, bu kim sharfi?", recycled: ["this"], target: ["Whose", "scarf"] },
-        { speaker: "Sardor", line: "I think it's mine. Yes, this scarf is mine.", line_uz: "Menimcha, bu meniki. Ha, bu sharf meniki.", recycled: ["I", "think", "it", "Yes", "this", "is"], target: ["mine", "scarf", "mine"] },
-        { speaker: "Kamola", line: "And whose suit is that? Is it yours?", line_uz: "Va u kostyum kimniki? U siznikimi?", recycled: ["And", "is", "that", "Is", "it"], target: ["whose", "suit", "yours"] },
-        { speaker: "Sardor", line: "No, it isn't mine. That suit is our father's.", line_uz: "Yo'q, bu meniki emas. U kostyum bizning otamizniki.", recycled: ["No", "it", "isn't", "That", "is", "our", "father"], target: ["mine", "suit"] },
-        { speaker: "Kamola", line: "Look! Whose trainers are these?", line_uz: "Qarang! Bu krossovkalar kimniki?", recycled: ["Look"], target: ["Whose", "trainers", "these"] },
-        { speaker: "Sardor", line: "These aren't mine. Are they yours?", line_uz: "Bular meniki emas. Ular siznikimi?", recycled: ["These", "aren't", "Are", "they"], target: ["mine", "yours"] },
-        { speaker: "Kamola", line: "No, they aren't mine. I think they're our mother's.", line_uz: "Yo'q, ular meniki emas. Menimcha ular bizning onamizniki.", recycled: ["No", "they", "aren't", "I", "think", "they", "our", "mother"], target: ["mine"] },
-        { speaker: "Sardor", line: "What about this jumper in the bedroom?", line_uz: "Yotoq xonasidagi bu jemper-chi?", recycled: ["What", "about", "this", "in", "the"], target: ["jumper", "bedroom"] },
-        { speaker: "Kamola", line: "That isn't ours. I think it's his.", line_uz: "Bu bizniki emas. Menimcha u uniki.", recycled: ["That", "isn't", "I", "think", "it"], target: ["ours", "his"] },
-        { speaker: "Sardor", line: "Yes, these clothes are his. They're all in his wardrobe.", line_uz: "Ha, bu kiyimlar uniki. Ularning hammasi uning shkafida.", recycled: ["Yes", "these", "are", "They", "all", "in", "his"], target: ["clothes", "wardrobe"] }
+        { speaker: "Kamola", line: "Sardor, whose scarf is this?", line_uz: "Sardor, bu kim sharfi?", recycled: ["this"], target: ["Whose", "scarf"] , mastery_key: "U09_L03_D01_0", audio_id: "U09_L03_D01_L0" },
+        { speaker: "Sardor", line: "I think it's mine. Yes, this scarf is mine.", line_uz: "Menimcha, bu meniki. Ha, bu sharf meniki.", recycled: ["I", "think", "it", "Yes", "this", "is"], target: ["mine", "scarf", "mine"] , mastery_key: "U09_L03_D01_1", audio_id: "U09_L03_D01_L1" },
+        { speaker: "Kamola", line: "And whose suit is that? Is it yours?", line_uz: "Va u kostyum kimniki? U siznikimi?", recycled: ["And", "is", "that", "Is", "it"], target: ["whose", "suit", "yours"] , mastery_key: "U09_L03_D01_2", audio_id: "U09_L03_D01_L2" },
+        { speaker: "Sardor", line: "No, it isn't mine. That suit is our father's.", line_uz: "Yo'q, bu meniki emas. U kostyum bizning otamizniki.", recycled: ["No", "it", "isn't", "That", "is", "our", "father"], target: ["mine", "suit"] , mastery_key: "U09_L03_D01_3", audio_id: "U09_L03_D01_L3" },
+        { speaker: "Kamola", line: "Look! Whose trainers are these?", line_uz: "Qarang! Bu krossovkalar kimniki?", recycled: ["Look"], target: ["Whose", "trainers", "these"] , mastery_key: "U09_L03_D01_4", audio_id: "U09_L03_D01_L4" },
+        { speaker: "Sardor", line: "These aren't mine. Are they yours?", line_uz: "Bular meniki emas. Ular siznikimi?", recycled: ["These", "aren't", "Are", "they"], target: ["mine", "yours"] , mastery_key: "U09_L03_D01_5", audio_id: "U09_L03_D01_L5" },
+        { speaker: "Kamola", line: "No, they aren't mine. I think they're our mother's.", line_uz: "Yo'q, ular meniki emas. Menimcha ular bizning onamizniki.", recycled: ["No", "they", "aren't", "I", "think", "they", "our", "mother"], target: ["mine"] , mastery_key: "U09_L03_D01_6", audio_id: "U09_L03_D01_L6" },
+        { speaker: "Sardor", line: "What about this jumper in the bedroom?", line_uz: "Yotoq xonasidagi bu jemper-chi?", recycled: ["What", "about", "this", "in", "the"], target: ["jumper", "bedroom"] , mastery_key: "U09_L03_D01_7", audio_id: "U09_L03_D01_L7" },
+        { speaker: "Kamola", line: "That isn't ours. I think it's his.", line_uz: "Bu bizniki emas. Menimcha u uniki.", recycled: ["That", "isn't", "I", "think", "it"], target: ["ours", "his"] , mastery_key: "U09_L03_D01_8", audio_id: "U09_L03_D01_L8" },
+        { speaker: "Sardor", line: "Yes, these clothes are his. They're all in his wardrobe.", line_uz: "Ha, bu kiyimlar uniki. Ularning hammasi uning shkafida.", recycled: ["Yes", "these", "are", "They", "all", "in", "his"], target: ["clothes", "wardrobe"] , mastery_key: "U09_L03_D01_9", audio_id: "U09_L03_D01_L9" }
       ]
     }
   },
@@ -244,7 +244,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Siz rasmiylashtirilgan sport poyabzali kiymaysizmi? Faqat tuflimi?",
-              audio: "u09_l01_trainers_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L01_trainers.mp3",
               uz_mirror_answer: "Yo'q, men tufli emas. Men krossovka kiyaman.",
               hybrid_answer: "Men **trainers** kiyaman. Krossovkalar.",
               en_canonical: "I wear trainers."
@@ -343,7 +343,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Siz sovuq kunlarda faqat ko'ylak kiymaysizmi? Issiq narsa yo'qmi?",
-              audio: "u09_l01_jumper_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L01_jumper.mp3",
               uz_mirror_answer: "Yo'q, men issiq narsa ham kiyaman. Men jemper kiyaman.",
               hybrid_answer: "Men **jumper** kiyaman. Jemper.",
               en_canonical: "I wear a jumper."
@@ -442,7 +442,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Siz poyabzalingizda hech narsa kiymaysizmi? Yalang oyoqmi?",
-              audio: "u09_l01_socks_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L01_socks.mp3",
               uz_mirror_answer: "Yo'q, men yalang oyoq emas. Men paypoq kiyaman.",
               hybrid_answer: "Men **socks** kiyaman. Paypoqlar.",
               en_canonical: "I wear socks."
@@ -541,7 +541,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Siz sovuq kunlarda bo'yningizga hech narsa o'ramaysizmi?",
-              audio: "u09_l01_scarf_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L01_scarf.mp3",
               uz_mirror_answer: "Yo'q, men nimadir o'rayman. Men sharf o'rayman.",
               hybrid_answer: "Men **scarf** o'rayman. Sharf.",
               en_canonical: "I wear a scarf."
@@ -648,7 +648,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Bu sizning kitobingizmi? Meniki emasmi?",
-              audio: "u09_l01_yours_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L01_yours.mp3",
               uz_mirror_answer: "Ha, bu mening kitobim emas. Bu sizning kitobingiz.",
               hybrid_answer: "Bu **yours**. Seniki.",
               en_canonical: "This is yours.",
@@ -778,7 +778,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Siz qishda ham yengil krossovka kiymaysizmi? Baland oy poyabzal kerak emasmi?",
-              audio: "u09_l02_boots_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L02_boots.mp3",
               uz_mirror_answer: "Yo'q, men qishda krossovka emas. Men etik kiyaman.",
               hybrid_answer: "Men **boots** kiyaman. Etiklar.",
               en_canonical: "I wear boots."
@@ -884,7 +884,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Sizning etiklaringiz plastmassadanmi? Qog'ozdan qilinganmi?",
-              audio: "u09_l02_leather_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L02_leather.mp3",
               uz_mirror_answer: "Yo'q, ular plastmassa emas. Ular charmdan.",
               hybrid_answer: "Ular **leather**. Charmdan.",
               en_canonical: "They are leather.",
@@ -990,7 +990,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Siz narsalaringizni qo'lingizda ushlab yurmasizmi? Cho'ntagingizda saqlamaysizmi?",
-              audio: "u09_l02_bag_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L02_bag.mp3",
               uz_mirror_answer: "Yo'q, men sumkada saqlayman. Men sumka ishlataman.",
               hybrid_answer: "Men **bag** ishlataman. Sumka.",
               en_canonical: "I use a bag."
@@ -1097,7 +1097,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Bu sumka mening do'stimnikimi? Siznikimi?",
-              audio: "u09_l02_mine_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L02_mine.mp3",
               uz_mirror_answer: "Yo'q, bu do'stimniki emas. Bu meniki.",
               hybrid_answer: "Bu **mine**. Meniki.",
               en_canonical: "This is mine.",
@@ -1203,7 +1203,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Sizning sumkangiz charmmi? Qimmat materialmi?",
-              audio: "u09_l02_plastic_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L02_plastic.mp3",
               uz_mirror_answer: "Yo'q, u charm emas. U plastmassadan.",
               hybrid_answer: "U **plastic**. Plastmassadan.",
               en_canonical: "It's plastic."
@@ -1302,7 +1302,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Siz sovuq kunlarda qo'llaringizga hech narsa kiymaysizmi?",
-              audio: "u09_l02_gloves_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L02_gloves.mp3",
               uz_mirror_answer: "Yo'q, men nimadir kiyaman. Men qo'lqop kiyaman.",
               hybrid_answer: "Men **gloves** kiyaman. Qo'lqoplar.",
               en_canonical: "I wear gloves."
@@ -1401,7 +1401,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Sizning futbolkangiz plastmassadanmi? Metallmi?",
-              audio: "u09_l02_cotton_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L02_cotton.mp3",
               uz_mirror_answer: "Yo'q, u plastmassa emas. U paxtadan.",
               hybrid_answer: "U **cotton**. Paxtadan.",
               en_canonical: "It's cotton."
@@ -1531,7 +1531,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Siz mening narsalarimni ko'rdingiz. Lekin kimniki ekanini bilmaysizmi?",
-              audio: "u09_l03_whose_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L03_whose.mp3",
               uz_mirror_answer: "Men bilmayman. Bu kimniki?",
               hybrid_answer: "Bu **whose**? Kimniki?",
               en_canonical: "Whose is this?",
@@ -1637,7 +1637,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Siz muhim uchrashuvga jeans va futbolka kiymaysizmi?",
-              audio: "u09_l03_suit_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L03_suit.mp3",
               uz_mirror_answer: "Yo'q, men jeans emas. Men kostyum kiyaman.",
               hybrid_answer: "Men **suit** kiyaman. Kostyum.",
               en_canonical: "I wear a suit."
@@ -1743,7 +1743,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Bu sumka siznikimi? Menikimi?",
-              audio: "u09_l03_his_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L03_his.mp3",
               uz_mirror_answer: "Yo'q, bu sizniki yoki meniki emas. Bu uniki.",
               hybrid_answer: "Bu **his**. Uniki (o'g'il bola).",
               en_canonical: "This is his.",
@@ -1856,7 +1856,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Bu xona sizning do'stingiznikimi? Boshqa odamnikimi?",
-              audio: "u09_l03_ours_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L03_ours.mp3",
               uz_mirror_answer: "Yo'q, bu boshqa odamniki emas. Bu bizniki.",
               hybrid_answer: "Bu **ours**. Bizniki.",
               en_canonical: "This is ours."
@@ -1955,7 +1955,7 @@ window.VOCAB_CARDS_U09 = {
             {
               phase: "presentation",
               uz_context: "Siz do'koningа faqat poyabzal sotib olasizmi? Boshqa narsa yo'qmi?",
-              audio: "u09_l03_clothes_uz.mp3",
+              audio: "./audio_assets/unit_09/vocab/V_U09_L03_clothes.mp3",
               uz_mirror_answer: "Yo'q, men boshqa narsa ham sotib olaman. Men kiyim sotib olaman.",
               hybrid_answer: "Men **clothes** sotib olaman. Kiyimlar.",
               en_canonical: "I buy clothes."

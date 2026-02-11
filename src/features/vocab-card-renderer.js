@@ -697,22 +697,83 @@
     });
   }
 
-  // Render audio play button if slide has audio
+  // Render audio play button(s) — EN + optional UZ
   function renderAudioButton(slide) {
     const audioSrc = slide?.audio;
-    if (!audioSrc) return '';
+    const enText = slide?.en_canonical || '';
+    if (!audioSrc && !enText) return '';
+
+    // Build UZ audio path (same base path with _uz suffix)
+    const uzAudioSrc = audioSrc ? audioSrc.replace(/\.mp3$/, '_uz.mp3') : '';
+    const uzText = slide?.uz_context || slide?.uz_mirror_answer || '';
+
+    const btnStyle = `
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      border: 1.5px solid;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    `.replace(/\n/g, '');
+
+    const enBtnStyle = `${btnStyle} background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-color: #2196f3; color: #1565c0;`;
+    const uzBtnStyle = `${btnStyle} background: linear-gradient(135deg, #fff3e0, #ffe0b2); border-color: #ef6c00; color: #e65100;`;
+
+    // Playback helper: try file first, fall back to browser TTS
+    const playFn = `window.__vcPlayAudio = window.__vcPlayAudio || function(src, text, lang) {
+      var btn = event.currentTarget;
+      var origHTML = btn.innerHTML;
+      btn.innerHTML = '⏳';
+      btn.disabled = true;
+      if (src) {
+        var a = new Audio(src);
+        a.play().then(function() {
+          btn.innerHTML = '⏸️';
+          a.onended = function() { btn.innerHTML = origHTML; btn.disabled = false; };
+        }).catch(function() {
+          if (text && window.speechSynthesis) {
+            var u = new SpeechSynthesisUtterance(text);
+            u.lang = lang || 'en-US';
+            u.rate = lang === 'uz' ? 0.9 : 0.85;
+            u.onend = function() { btn.innerHTML = origHTML; btn.disabled = false; };
+            window.speechSynthesis.speak(u);
+            btn.innerHTML = '🔊';
+          } else { btn.innerHTML = origHTML; btn.disabled = false; }
+        });
+      } else if (text && window.speechSynthesis) {
+        var u = new SpeechSynthesisUtterance(text);
+        u.lang = lang || 'en-US';
+        u.rate = lang === 'uz' ? 0.9 : 0.85;
+        u.onend = function() { btn.innerHTML = origHTML; btn.disabled = false; };
+        window.speechSynthesis.speak(u);
+        btn.innerHTML = '🔊';
+      } else { btn.innerHTML = origHTML; btn.disabled = false; }
+    };`;
+
+    const escapedEnText = enText.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+    const escapedUzText = uzText.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+
+    let buttons = `
+      <button onclick="(function(){${playFn}window.__vcPlayAudio('${audioSrc || ''}','${escapedEnText}','en-US');})()" 
+        style="${enBtnStyle}" title="Listen in English">
+        🔊 Listen
+      </button>`;
+
+    if (uzText) {
+      buttons += `
+      <button onclick="(function(){${playFn}window.__vcPlayAudio('${uzAudioSrc}','${escapedUzText}','uz');})()" 
+        style="${uzBtnStyle}" title="O'zbek tilida tinglang">
+        🇺🇿 Tingla
+      </button>`;
+    }
+
     return `
-      <div style="text-align: center; margin-top: 12px;">
-        <button onclick="(function(){ var a = new Audio('${audioSrc}'); a.play().catch(function(){}); })()" style="
-          padding: 10px 24px;
-          background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-          border: 1px solid #2196f3;
-          border-radius: 24px;
-          font-size: 14px;
-          cursor: pointer;
-          color: #1565c0;
-          font-weight: 600;
-        ">🔊 Play Audio</button>
+      <div style="text-align: center; margin-top: 12px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+        ${buttons}
       </div>
     `;
   }

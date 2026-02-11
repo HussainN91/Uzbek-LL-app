@@ -120,16 +120,16 @@ window.VOCAB_CARDS_U08 = {
         notes: "Bedroom furniture with There is/are existentials"
       },
       lines: [
-        { speaker: "Laylo", line: "Hi Akmal! Did you see our new bedroom?", line_uz: "Salom Akmal! Yangi xonamizni ko'rdingmi?", recycled: ["Did", "you", "our", "new"], target: ["see", "bedroom"] },
-        { speaker: "Akmal", line: "Yes, I saw it! It's very big! What's there?", line_uz: "Ha, ko'rdim! U juda katta! Nima bor?", recycled: ["I", "saw", "it", "very", "big", "What"], target: ["there"] },
-        { speaker: "Laylo", line: "There are big beds. Two beds!", line_uz: "Katta kravatlar bor. Ikkita kravat!", recycled: ["big"], target: ["There are", "beds", "Two"] },
-        { speaker: "Akmal", line: "Wonderful! Is there a bookshelf?", line_uz: "Ajoyib! Kitob javoni bormi?", recycled: ["a"], target: ["Wonderful", "Is there", "bookshelf"] },
-        { speaker: "Laylo", line: "Yes, there's a bookshelf by the wall. And there's also a desk!", line_uz: "Ha, devor yonida kitob javoni bor. Va stol ham bor!", recycled: ["Yes", "there", "a", "the", "And", "also"], target: ["bookshelf", "by", "wall", "desk"] },
-        { speaker: "Akmal", line: "Is there a wardrobe? For our clothes?", line_uz: "Shkaf bormi? Kiyimlarimiz uchun?", recycled: ["Is there", "a", "our"], target: ["wardrobe", "For", "clothes"] },
-        { speaker: "Laylo", line: "Yes, there's a big wardrobe! And there's also a mirror!", line_uz: "Ha, katta shkaf bor! Va ko'zgu ham bor!", recycled: ["Yes", "there", "a", "big", "And", "also"], target: ["wardrobe", "mirror"] },
-        { speaker: "Akmal", line: "I love this room!", line_uz: "Men bu xonani yaxshi ko'raman!", recycled: ["I", "love", "this"], target: ["room"] },
-        { speaker: "Laylo", line: "There isn't anything old here. Everything is new!", line_uz: "Bu yerda hech narsa eski yo'q. Hammasi yangi!", recycled: ["is", "new"], target: ["There isn't", "anything", "old", "here", "Everything"] },
-        { speaker: "Akmal", line: "Is there something on the desk?", line_uz: "Stol ustida nimadir bormi?", recycled: ["Is there", "on", "the", "desk"], target: ["something"] }
+        { speaker: "Laylo", line: "Hi Akmal! Did you see our new bedroom?", line_uz: "Salom Akmal! Yangi xonamizni ko'rdingmi?", recycled: ["Did", "you", "our", "new"], target: ["see", "bedroom"] , mastery_key: "U08_L01_D01_0", audio_id: "U08_L01_D01_L0" },
+        { speaker: "Akmal", line: "Yes, I saw it! It's very big! What's there?", line_uz: "Ha, ko'rdim! U juda katta! Nima bor?", recycled: ["I", "saw", "it", "very", "big", "What"], target: ["there"] , mastery_key: "U08_L01_D01_1", audio_id: "U08_L01_D01_L1" },
+        { speaker: "Laylo", line: "There are big beds. Two beds!", line_uz: "Katta kravatlar bor. Ikkita kravat!", recycled: ["big"], target: ["There are", "beds", "Two"] , mastery_key: "U08_L01_D01_2", audio_id: "U08_L01_D01_L2" },
+        { speaker: "Akmal", line: "Wonderful! Is there a bookshelf?", line_uz: "Ajoyib! Kitob javoni bormi?", recycled: ["a"], target: ["Wonderful", "Is there", "bookshelf"] , mastery_key: "U08_L01_D01_3", audio_id: "U08_L01_D01_L3" },
+        { speaker: "Laylo", line: "Yes, there's a bookshelf by the wall. And there's also a desk!", line_uz: "Ha, devor yonida kitob javoni bor. Va stol ham bor!", recycled: ["Yes", "there", "a", "the", "And", "also"], target: ["bookshelf", "by", "wall", "desk"] , mastery_key: "U08_L01_D01_4", audio_id: "U08_L01_D01_L4" },
+        { speaker: "Akmal", line: "Is there a wardrobe? For our clothes?", line_uz: "Shkaf bormi? Kiyimlarimiz uchun?", recycled: ["Is there", "a", "our"], target: ["wardrobe", "For", "clothes"] , mastery_key: "U08_L01_D01_5", audio_id: "U08_L01_D01_L5" },
+        { speaker: "Laylo", line: "Yes, there's a big wardrobe! And there's also a mirror!", line_uz: "Ha, katta shkaf bor! Va ko'zgu ham bor!", recycled: ["Yes", "there", "a", "big", "And", "also"], target: ["wardrobe", "mirror"] , mastery_key: "U08_L01_D01_6", audio_id: "U08_L01_D01_L6" },
+        { speaker: "Akmal", line: "I love this room!", line_uz: "Men bu xonani yaxshi ko'raman!", recycled: ["I", "love", "this"], target: ["room"] , mastery_key: "U08_L01_D01_7", audio_id: "U08_L01_D01_L7" },
+        { speaker: "Laylo", line: "There isn't anything old here. Everything is new!", line_uz: "Bu yerda hech narsa eski yo'q. Hammasi yangi!", recycled: ["is", "new"], target: ["There isn't", "anything", "old", "here", "Everything"] , mastery_key: "U08_L01_D01_8", audio_id: "U08_L01_D01_L8" },
+        { speaker: "Akmal", line: "Is there something on the desk?", line_uz: "Stol ustida nimadir bormi?", recycled: ["Is there", "on", "the", "desk"], target: ["something"] , mastery_key: "U08_L01_D01_9", audio_id: "U08_L01_D01_L9" }
       ]
     },
 
@@ -149,16 +149,16 @@ window.VOCAB_CARDS_U08 = {
         notes: "Activities with like + infinitive + indefinite pronouns"
       },
       lines: [
-        { speaker: "Nodira", line: "Hi Sardor! What do you like to do after school?", line_uz: "Salom Sardor! Maktabdan keyin nima qilishni yoqtirasiz?", recycled: ["What", "do", "you", "like", "to", "after", "school"], target: ["do"] },
-        { speaker: "Sardor", line: "I like to draw pictures and listen to music.", line_uz: "Men rasm chizish va musiqa tinglashni yaxshi ko'raman.", recycled: ["I", "like", "to", "and"], target: ["draw", "pictures", "listen", "music"] },
-        { speaker: "Nodira", line: "That's great! I like to play the guitar.", line_uz: "Bu ajoyib! Men gitara chalishni yaxshi ko'raman.", recycled: ["That", "great", "I", "like", "to", "play", "the"], target: ["guitar"] },
-        { speaker: "Sardor", line: "Do you like to write stories?", line_uz: "Hikoyalar yozishni yoqtirasizmi?", recycled: ["Do", "you", "like", "to"], target: ["write", "stories"] },
-        { speaker: "Nodira", line: "Yes, I write a diary every night.", line_uz: "Ha, men har kecha kundalik yozaman.", recycled: ["Yes", "I", "every"], target: ["write", "diary", "night"] },
-        { speaker: "Sardor", line: "Does anyone in your family play music?", line_uz: "Sizning oilangizda kimdir musiqa chalaydimi?", recycled: ["your", "family", "play", "music"], target: ["Does", "anyone", "in"] },
-        { speaker: "Nodira", line: "Yes, everyone in my family plays something!", line_uz: "Ha, mening oilamdagi hamma narsa chaladi!", recycled: ["Yes", "in", "my", "family", "plays"], target: ["everyone", "something"] },
-        { speaker: "Sardor", line: "I don't have anything to play.", line_uz: "Mening chaladigan narsam yo'q.", recycled: ["I", "don't", "have", "to", "play"], target: ["anything"] },
-        { speaker: "Nodira", line: "There's nothing wrong with that! You draw well.", line_uz: "Bunda yomon hech narsa yo'q! Siz yaxshi chizasiz.", recycled: ["You"], target: ["There", "nothing", "wrong", "draw", "well"] },
-        { speaker: "Sardor", line: "Thanks! I read magazines about art too.", line_uz: "Rahmat! Men san'at haqida jurnallar ham o'qiyman.", recycled: ["I", "about", "too"], target: ["read", "magazines", "art"] }
+        { speaker: "Nodira", line: "Hi Sardor! What do you like to do after school?", line_uz: "Salom Sardor! Maktabdan keyin nima qilishni yoqtirasiz?", recycled: ["What", "do", "you", "like", "to", "after", "school"], target: ["do"] , mastery_key: "U08_L02_D01_0", audio_id: "U08_L02_D01_L0" },
+        { speaker: "Sardor", line: "I like to draw pictures and listen to music.", line_uz: "Men rasm chizish va musiqa tinglashni yaxshi ko'raman.", recycled: ["I", "like", "to", "and"], target: ["draw", "pictures", "listen", "music"] , mastery_key: "U08_L02_D01_1", audio_id: "U08_L02_D01_L1" },
+        { speaker: "Nodira", line: "That's great! I like to play the guitar.", line_uz: "Bu ajoyib! Men gitara chalishni yaxshi ko'raman.", recycled: ["That", "great", "I", "like", "to", "play", "the"], target: ["guitar"] , mastery_key: "U08_L02_D01_2", audio_id: "U08_L02_D01_L2" },
+        { speaker: "Sardor", line: "Do you like to write stories?", line_uz: "Hikoyalar yozishni yoqtirasizmi?", recycled: ["Do", "you", "like", "to"], target: ["write", "stories"] , mastery_key: "U08_L02_D01_3", audio_id: "U08_L02_D01_L3" },
+        { speaker: "Nodira", line: "Yes, I write a diary every night.", line_uz: "Ha, men har kecha kundalik yozaman.", recycled: ["Yes", "I", "every"], target: ["write", "diary", "night"] , mastery_key: "U08_L02_D01_4", audio_id: "U08_L02_D01_L4" },
+        { speaker: "Sardor", line: "Does anyone in your family play music?", line_uz: "Sizning oilangizda kimdir musiqa chalaydimi?", recycled: ["your", "family", "play", "music"], target: ["Does", "anyone", "in"] , mastery_key: "U08_L02_D01_5", audio_id: "U08_L02_D01_L5" },
+        { speaker: "Nodira", line: "Yes, everyone in my family plays something!", line_uz: "Ha, mening oilamdagi hamma narsa chaladi!", recycled: ["Yes", "in", "my", "family", "plays"], target: ["everyone", "something"] , mastery_key: "U08_L02_D01_6", audio_id: "U08_L02_D01_L6" },
+        { speaker: "Sardor", line: "I don't have anything to play.", line_uz: "Mening chaladigan narsam yo'q.", recycled: ["I", "don't", "have", "to", "play"], target: ["anything"] , mastery_key: "U08_L02_D01_7", audio_id: "U08_L02_D01_L7" },
+        { speaker: "Nodira", line: "There's nothing wrong with that! You draw well.", line_uz: "Bunda yomon hech narsa yo'q! Siz yaxshi chizasiz.", recycled: ["You"], target: ["There", "nothing", "wrong", "draw", "well"] , mastery_key: "U08_L02_D01_8", audio_id: "U08_L02_D01_L8" },
+        { speaker: "Sardor", line: "Thanks! I read magazines about art too.", line_uz: "Rahmat! Men san'at haqida jurnallar ham o'qiyman.", recycled: ["I", "about", "too"], target: ["read", "magazines", "art"] , mastery_key: "U08_L02_D01_9", audio_id: "U08_L02_D01_L9" }
       ]
     },
 
@@ -178,14 +178,14 @@ window.VOCAB_CARDS_U08 = {
         notes: "Negative indefinites with activity contexts"
       },
       lines: [
-        { speaker: "Malika", line: "Hi Ravshan! Do you like to do anything creative?", line_uz: "Salom Ravshan! Ijodiy ish qilishni yoqtirasizmi?", recycled: ["Do", "you", "like", "to", "do"], target: ["anything", "creative"] },
-        { speaker: "Ravshan", line: "Yes, I like to draw! What about you?", line_uz: "Ha, men rasm chizishni yoqtiraman! Siz-chi?", recycled: ["Yes", "I", "like", "to", "draw", "What", "about", "you"], target: [] },
-        { speaker: "Malika", line: "No one in my class plays music after school.", line_uz: "Mening sinimdagi hech kim maktabdan keyin musiqa chalmaydi.", recycled: ["in", "my", "plays", "music", "after", "school"], target: ["No one", "class"] },
-        { speaker: "Ravshan", line: "Really? I don't see anything wrong with music!", line_uz: "Rostdan? Men musiqada hech qanday yomon narsa ko'rmayapman!", recycled: ["I", "don't", "see", "with", "music"], target: ["Really", "anything", "wrong"] },
-        { speaker: "Malika", line: "There's nothing wrong with music. We just prefer other things.", line_uz: "Musiqada yomon hech narsa yo'q. Biz shunchaki boshqa narsalarni afzal ko'ramiz.", recycled: ["There", "with", "music", "We", "other", "things"], target: ["nothing", "wrong", "just", "prefer"] },
-        { speaker: "Ravshan", line: "Thanks! I read magazines about art too.", line_uz: "Rahmat! Men san'at haqida jurnallar ham o'qiyman.", recycled: ["I", "read", "about", "too"], target: ["Thanks", "magazines", "art"] },
-        { speaker: "Malika", line: "That's great! Is there anyone else who draws in your family?", line_uz: "Bu ajoyib! Sizning oilangizda rasm chizadigan boshqa kimdir bormi?", recycled: ["That", "great", "Is", "there", "who", "draws", "in", "your", "family"], target: ["anyone", "else"] },
-        { speaker: "Ravshan", line: "Yes, my sister draws beautiful pictures of our bedroom.", line_uz: "Ha, mening singlim bizning yotoq xonasining chiroyli rasmlarini chizadi.", recycled: ["Yes", "my", "sister", "draws", "pictures", "of", "our", "bedroom"], target: ["beautiful"] }
+        { speaker: "Malika", line: "Hi Ravshan! Do you like to do anything creative?", line_uz: "Salom Ravshan! Ijodiy ish qilishni yoqtirasizmi?", recycled: ["Do", "you", "like", "to", "do"], target: ["anything", "creative"] , mastery_key: "U08_L03_D01_0", audio_id: "U08_L03_D01_L0" },
+        { speaker: "Ravshan", line: "Yes, I like to draw! What about you?", line_uz: "Ha, men rasm chizishni yoqtiraman! Siz-chi?", recycled: ["Yes", "I", "like", "to", "draw", "What", "about", "you"], target: [] , mastery_key: "U08_L03_D01_1", audio_id: "U08_L03_D01_L1" },
+        { speaker: "Malika", line: "No one in my class plays music after school.", line_uz: "Mening sinimdagi hech kim maktabdan keyin musiqa chalmaydi.", recycled: ["in", "my", "plays", "music", "after", "school"], target: ["No one", "class"] , mastery_key: "U08_L03_D01_2", audio_id: "U08_L03_D01_L2" },
+        { speaker: "Ravshan", line: "Really? I don't see anything wrong with music!", line_uz: "Rostdan? Men musiqada hech qanday yomon narsa ko'rmayapman!", recycled: ["I", "don't", "see", "with", "music"], target: ["Really", "anything", "wrong"] , mastery_key: "U08_L03_D01_3", audio_id: "U08_L03_D01_L3" },
+        { speaker: "Malika", line: "There's nothing wrong with music. We just prefer other things.", line_uz: "Musiqada yomon hech narsa yo'q. Biz shunchaki boshqa narsalarni afzal ko'ramiz.", recycled: ["There", "with", "music", "We", "other", "things"], target: ["nothing", "wrong", "just", "prefer"] , mastery_key: "U08_L03_D01_4", audio_id: "U08_L03_D01_L4" },
+        { speaker: "Ravshan", line: "Thanks! I read magazines about art too.", line_uz: "Rahmat! Men san'at haqida jurnallar ham o'qiyman.", recycled: ["I", "read", "about", "too"], target: ["Thanks", "magazines", "art"] , mastery_key: "U08_L03_D01_5", audio_id: "U08_L03_D01_L5" },
+        { speaker: "Malika", line: "That's great! Is there anyone else who draws in your family?", line_uz: "Bu ajoyib! Sizning oilangizda rasm chizadigan boshqa kimdir bormi?", recycled: ["That", "great", "Is", "there", "who", "draws", "in", "your", "family"], target: ["anyone", "else"] , mastery_key: "U08_L03_D01_6", audio_id: "U08_L03_D01_L6" },
+        { speaker: "Ravshan", line: "Yes, my sister draws beautiful pictures of our bedroom.", line_uz: "Ha, mening singlim bizning yotoq xonasining chiroyli rasmlarini chizadi.", recycled: ["Yes", "my", "sister", "draws", "pictures", "of", "our", "bedroom"], target: ["beautiful"] , mastery_key: "U08_L03_D01_7", audio_id: "U08_L03_D01_L7" }
       ]
     }
   },
@@ -247,7 +247,7 @@ window.VOCAB_CARDS_U08 = {
             {
               phase: "presentation",
               uz_context: "Sizning xonangizda hech narsa yo'qmi? Bo'shmi?",
-              audio: "u08_l01_there_is_uz.mp3",
+              audio: "./audio_assets/unit_08/vocab/V_U08_L01_there_is.mp3",
               uz_mirror_answer: "Yo'q, bo'sh emas. Xonamda kitob javoni bor.",
               hybrid_answer: "Yo'q, **There is** kitob javoni devor yonida.",
               en_canonical: "No, there is a bookshelf by the wall.",
@@ -353,7 +353,7 @@ window.VOCAB_CARDS_U08 = {
             {
               phase: "presentation",
               uz_context: "Siz oshxonada uxlaysizmi? Yashash xonasidami?",
-              audio: "u08_l01_bedroom_uz.mp3",
+              audio: "./audio_assets/unit_08/vocab/V_U08_L01_bedroom.mp3",
               uz_mirror_answer: "Yo'q, men oshxonada emas. Men yotoq xonasida uxlayman.",
               hybrid_answer: "Men **bedroom**da uxlayman. Yotoq xonasida.",
               en_canonical: "I sleep in the bedroom."
@@ -452,7 +452,7 @@ window.VOCAB_CARDS_U08 = {
             {
               phase: "presentation",
               uz_context: "Siz kitoblaringizni polda saqlaysizmi? Yerda tashlab qo'yasizmi?",
-              audio: "u08_l01_bookshelf_uz.mp3",
+              audio: "./audio_assets/unit_08/vocab/V_U08_L01_bookshelf.mp3",
               uz_mirror_answer: "Yo'q, men polda saqlamayman. Men kitob javonida saqlayman.",
               hybrid_answer: "Men kitob **bookshelf**ida saqlayman. Kitob javonida.",
               en_canonical: "I keep them on the bookshelf."
@@ -551,7 +551,7 @@ window.VOCAB_CARDS_U08 = {
             {
               phase: "presentation",
               uz_context: "Siz kiyimlaringizni polda saqlaysizmi? Tashlab qo'yasizmi?",
-              audio: "u08_l01_wardrobe_uz.mp3",
+              audio: "./audio_assets/unit_08/vocab/V_U08_L01_wardrobe.mp3",
               uz_mirror_answer: "Yo'q, men polda saqlamayman. Men shkafda saqlayman.",
               hybrid_answer: "Men **wardrobe**da saqlayman kiyimlarimni. Shkafda.",
               en_canonical: "I keep my clothes in the wardrobe."
@@ -658,7 +658,7 @@ window.VOCAB_CARDS_U08 = {
             {
               phase: "presentation",
               uz_context: "Stol ustida hech narsa yo'qmi? Bo'shmi?",
-              audio: "u08_l01_something_uz.mp3",
+              audio: "./audio_assets/unit_08/vocab/V_U08_L01_something.mp3",
               uz_mirror_answer: "Yo'q, bo'sh emas. Stol ustida nimadir bor.",
               hybrid_answer: "Stol ustida **something** bor. Nimadir.",
               en_canonical: "There is something on the desk.",
@@ -806,7 +806,7 @@ window.VOCAB_CARDS_U08 = {
             {
               phase: "presentation",
               uz_context: "Siz faqat musiqa tinglaysizmi? Boshqa narsa yoqtirmaysizmi?",
-              audio: "u08_l02_like_to_uz.mp3",
+              audio: "./audio_assets/unit_08/vocab/V_U08_L02_like_to.mp3",
               uz_mirror_answer: "Yo'q, men boshqa narsalarni ham yoqtiraman.",
               hybrid_answer: "Men **like to** rasm chizishni ham. Chizishni yoqtiraman.",
               en_canonical: "I like to draw pictures too.",
@@ -912,7 +912,7 @@ window.VOCAB_CARDS_U08 = {
             {
               phase: "presentation",
               uz_context: "Siz faqat yozasizmi? Boshqa ijodiy ish qilmaysizmi?",
-              audio: "u08_l02_draw_uz.mp3",
+              audio: "./audio_assets/unit_08/vocab/V_U08_L02_draw.mp3",
               uz_mirror_answer: "Yo'q, men yozishdan tashqari rasm ham chizaman.",
               hybrid_answer: "Men **draw** rasmlar ham chizaman. Chizaman.",
               en_canonical: "I draw pictures too."
@@ -1011,7 +1011,7 @@ window.VOCAB_CARDS_U08 = {
             {
               phase: "presentation",
               uz_context: "Siz faqat baraban chalaysizmi? Boshqa asbob bilmaysizmi?",
-              audio: "u08_l02_guitar_uz.mp3",
+              audio: "./audio_assets/unit_08/vocab/V_U08_L02_guitar.mp3",
               uz_mirror_answer: "Yo'q, men baraban emas. Men gitara chalayman.",
               hybrid_answer: "Men **guitar** chalayman. Gitara chalayman.",
               en_canonical: "I play the guitar."
@@ -1118,7 +1118,7 @@ window.VOCAB_CARDS_U08 = {
             {
               phase: "presentation",
               uz_context: "Sizning oilangizda hech kim musiqa chalmaydimi?",
-              audio: "u08_l02_everyone_uz.mp3",
+              audio: "./audio_assets/unit_08/vocab/V_U08_L02_everyone.mp3",
               uz_mirror_answer: "Yo'q, hamma chalaadi. Oilamdagi hamma narsa chalaydi.",
               hybrid_answer: "Oilamdagi **everyone** nimadir chalaydi. Hamma.",
               en_canonical: "Everyone in my family plays something.",
@@ -1233,7 +1233,7 @@ window.VOCAB_CARDS_U08 = {
             {
               phase: "presentation",
               uz_context: "Sizda chalish uchun nimadir bormi? Gitara, pianino?",
-              audio: "u08_l02_anything_uz.mp3",
+              audio: "./audio_assets/unit_08/vocab/V_U08_L02_anything.mp3",
               uz_mirror_answer: "Yo'q, menda hech narsa yo'q. Hech narsa.",
               hybrid_answer: "Menda **anything** yo'q chaladigan. Hech narsa yo'q.",
               en_canonical: "I don't have anything to play.",
@@ -1375,7 +1375,7 @@ window.VOCAB_CARDS_U08 = {
             {
               phase: "presentation",
               uz_context: "Sizning rasmingizda nimadir yomon bormi? Noto'g'ri?",
-              audio: "u08_l03_nothing_uz.mp3",
+              audio: "./audio_assets/unit_08/vocab/V_U08_L03_nothing.mp3",
               uz_mirror_answer: "Yo'q, hech narsa yomon yo'q. Hammasi yaxshi.",
               hybrid_answer: "**Nothing** yomon yo'q. Hech narsa yomon emas.",
               en_canonical: "There's nothing wrong with it.",
@@ -1494,7 +1494,7 @@ window.VOCAB_CARDS_U08 = {
             {
               phase: "presentation",
               uz_context: "Sizning sinfingizda hamma musiqa chalaydimi?",
-              audio: "u08_l03_no_one_uz.mp3",
+              audio: "./audio_assets/unit_08/vocab/V_U08_L03_no_one.mp3",
               uz_mirror_answer: "Yo'q, mening sifimda hech kim musiqa chalmaydi.",
               hybrid_answer: "Mening sifimda **no one** musiqa chalmaydi. Hech kim.",
               en_canonical: "No one in my class plays music.",
@@ -1600,7 +1600,7 @@ window.VOCAB_CARDS_U08 = {
             {
               phase: "presentation",
               uz_context: "Siz faqat kitob o'qiysizmi? Gazeta, jurnal o'qimaysizmi?",
-              audio: "u08_l03_magazines_uz.mp3",
+              audio: "./audio_assets/unit_08/vocab/V_U08_L03_magazines.mp3",
               uz_mirror_answer: "Yo'q, men kitobdan tashqari jurnal ham o'qiyman.",
               hybrid_answer: "Men **magazines** ham o'qiyman. Jurnallar o'qiyman.",
               en_canonical: "I read magazines too."

@@ -113,39 +113,39 @@ window.VOCAB_CARDS_U04 = {
             id: "U04_L01_D01",
             title: "Feelings Yesterday",
             lines: [
-                { speaker: "Ali", line: "Were you tired yesterday?", line_uz: "Siz kecha charchagan edingizmi?", target: ["Were", "tired", "yesterday"], mastery_key: "U04_L01_D01_0" },
-                { speaker: "Vali", line: "No, I was happy. I was excited!", line_uz: "Yo'q, men xursand edim. Men hayajonlangan edim!", target: ["was", "happy", "excited"], mastery_key: "U04_L01_D01_1" },
-                { speaker: "Ali", line: "Why? Was Sara sad or nervous?", line_uz: "Nega? Sara xafa yoki asabiy edimi?", target: ["Was", "sad", "nervous"], mastery_key: "U04_L01_D01_2" },
-                { speaker: "Vali", line: "No, we were at a party.", line_uz: "Yo'q, biz bazmda edik.", target: ["were"], mastery_key: "U04_L01_D01_3" }
+                { speaker: "Ali", line: "Were you tired yesterday?", line_uz: "Siz kecha charchagan edingizmi?", target: ["Were", "tired", "yesterday"], mastery_key: "U04_L01_D01_0", audio_id: "U04_L01_D01_L0" },
+                { speaker: "Vali", line: "No, I was happy. I was excited!", line_uz: "Yo'q, men xursand edim. Men hayajonlangan edim!", target: ["was", "happy", "excited"], mastery_key: "U04_L01_D01_1", audio_id: "U04_L01_D01_L1" },
+                { speaker: "Ali", line: "Why? Was Sara sad or nervous?", line_uz: "Nega? Sara xafa yoki asabiy edimi?", target: ["Was", "sad", "nervous"], mastery_key: "U04_L01_D01_2", audio_id: "U04_L01_D01_L2" },
+                { speaker: "Vali", line: "No, we were at a party.", line_uz: "Yo'q, biz bazmda edik.", target: ["were"], mastery_key: "U04_L01_D01_3", audio_id: "U04_L01_D01_L3" }
             ]
         },
         "U04_L02_D02": {
             id: "U04_L02_D02",
             title: "Where were you?",
             lines: [
-                { speaker: "Laylo", line: "Where were you last week?", line_uz: "Siz o'tgan hafta qayerda edingiz?", target: ["last week"], mastery_key: "U04_L02_D02_0" },
-                { speaker: "Zara", line: "I was at the beach and the park.", line_uz: "Men plyajda va parkda edim.", target: ["beach", "park"], mastery_key: "U04_L02_D02_1" },
-                { speaker: "Laylo", line: "Were you at home yesterday evening?", line_uz: "Siz kecha kechqurun uyda edingizmi?", target: ["at home", "yesterday evening"], mastery_key: "U04_L02_D02_2" },
-                { speaker: "Zara", line: "No, I was at a party at the museum... or the library!", line_uz: "Yo'q, men muzeydagi bazmda edim... yoki kutubxonada!", target: ["party", "museum", "library"], mastery_key: "U04_L02_D02_3" }
+                { speaker: "Laylo", line: "Where were you last week?", line_uz: "Siz o'tgan hafta qayerda edingiz?", target: ["last week"], mastery_key: "U04_L02_D02_0", audio_id: "U04_L02_D02_L0" },
+                { speaker: "Zara", line: "I was at the beach and the park.", line_uz: "Men plyajda va parkda edim.", target: ["beach", "park"], mastery_key: "U04_L02_D02_1", audio_id: "U04_L02_D02_L1" },
+                { speaker: "Laylo", line: "Were you at home yesterday evening?", line_uz: "Siz kecha kechqurun uyda edingizmi?", target: ["at home", "yesterday evening"], mastery_key: "U04_L02_D02_2", audio_id: "U04_L02_D02_L2" },
+                { speaker: "Zara", line: "No, I was at a party at the museum... or the library!", line_uz: "Yo'q, men muzeydagi bazmda edim... yoki kutubxonada!", target: ["party", "museum", "library"], mastery_key: "U04_L02_D02_3", audio_id: "U04_L02_D02_L3" }
             ]
         },
         "U04_L03_D03": {
             id: "U04_L03_D03",
             title: "Questions about the Past",
             lines: [
-                { speaker: "Tom", line: "Where was Ali? Was he at work?", line_uz: "Ali qayerda edi? U ishda edimi?", target: ["Where was", "Was he"], mastery_key: "U04_L03_D03_0" },
-                { speaker: "Ben", line: "No, he wasn't. He wasn't there.", line_uz: "Yo'q, u (u yerda) emas edi. U u yerda yo'q edi.", target: ["wasn't", "No he wasn't"], mastery_key: "U04_L03_D03_1" },
-                { speaker: "Tom", line: "When was the meeting? Why were they late?", line_uz: "Uchrashuv qachon edi? Ular nega kechikishdi?", target: ["When was", "Why were"], mastery_key: "U04_L03_D03_2" },
-                { speaker: "Ben", line: "They weren't late. How was your day?", line_uz: "Ular kechikishmadi. Kuningiz qanday o'tdi?", target: ["weren't", "How was"], mastery_key: "U04_L03_D03_3" }
+                { speaker: "Tom", line: "Where was Ali? Was he at work?", line_uz: "Ali qayerda edi? U ishda edimi?", target: ["Where was", "Was he"], mastery_key: "U04_L03_D03_0", audio_id: "U04_L03_D03_L0" },
+                { speaker: "Ben", line: "No, he wasn't. He wasn't there.", line_uz: "Yo'q, u (u yerda) emas edi. U u yerda yo'q edi.", target: ["wasn't", "No he wasn't"], mastery_key: "U04_L03_D03_1", audio_id: "U04_L03_D03_L1" },
+                { speaker: "Tom", line: "When was the meeting? Why were they late?", line_uz: "Uchrashuv qachon edi? Ular nega kechikishdi?", target: ["When was", "Why were"], mastery_key: "U04_L03_D03_2", audio_id: "U04_L03_D03_L2" },
+                { speaker: "Ben", line: "They weren't late. How was your day?", line_uz: "Ular kechikishmadi. Kuningiz qanday o'tdi?", target: ["weren't", "How was"], mastery_key: "U04_L03_D03_3", audio_id: "U04_L03_D03_L3" }
             ]
         },
         "U04_L04_D04": {
             id: "U04_L04_D04",
             title: "Describing Experiences",
             lines: [
-                { speaker: "Mina", line: "I was afraid and worried.", line_uz: "Men qo'rqib ketdim va xavotir oldim.", target: ["afraid", "worried"], mastery_key: "U04_L04_D04_0" },
-                { speaker: "Lola", line: "Why were you angry? Be calm.", line_uz: "Nega jahlingiz chiqdi? Tinchlaning.", target: ["angry", "calm"], mastery_key: "U04_L04_D04_1" },
-                { speaker: "Mina", line: "The hotel was peaceful and comfortable.", line_uz: "Mehmonxona tinch va qulay edi.", target: ["peaceful", "comfortable"], mastery_key: "U04_L04_D04_2" }
+                { speaker: "Mina", line: "I was afraid and worried.", line_uz: "Men qo'rqib ketdim va xavotir oldim.", target: ["afraid", "worried"], mastery_key: "U04_L04_D04_0", audio_id: "U04_L04_D04_L0" },
+                { speaker: "Lola", line: "Why were you angry? Be calm.", line_uz: "Nega jahlingiz chiqdi? Tinchlaning.", target: ["angry", "calm"], mastery_key: "U04_L04_D04_1", audio_id: "U04_L04_D04_L1" },
+                { speaker: "Mina", line: "The hotel was peaceful and comfortable.", line_uz: "Mehmonxona tinch va qulay edi.", target: ["peaceful", "comfortable"], mastery_key: "U04_L04_D04_2", audio_id: "U04_L04_D04_L2" }
             ]
         }
     },
@@ -169,7 +169,7 @@ window.VOCAB_CARDS_U04 = {
                     image: "/assets/images/unit04/was.jpg",
                     dialogue_ref: { dialogue_id: "U04_L01_D01", line_index: 1, speaker: "Vali", bubble_text: "No, I was happy." },
                     slides: [
-                        { phase: "presentation", uz_context: "Kecha u qayerda edi?", audio: "/assets/audio/unit04/was.mp3", uz_mirror_answer: "U uyda edi.", hybrid_answer: "He **was** at home.", en_canonical: "He was at home." , syntax_scaffold: { en_structure: "I was happy.", uz_gloss: "Men xursand edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be_singular", color: "green" }, { word: "happy", role: "adjective", color: "purple" }] } },
+                        { phase: "presentation", uz_context: "Kecha u qayerda edi?", audio: "./audio_assets/unit_04/vocab/V_U04_L01_was.mp3", uz_mirror_answer: "U uyda edi.", hybrid_answer: "He **was** at home.", en_canonical: "He was at home." , syntax_scaffold: { en_structure: "I was happy.", uz_gloss: "Men xursand edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be_singular", color: "green" }, { word: "happy", role: "adjective", color: "purple" }] } },
                         { phase: "concept_check", question_uz: "'I' bilan qaysi: 'was' yoki 'were'?", choices: [{ text: "I was", correct: true }, { text: "I were", correct: false }], correct_index: 0 },
                         { phase: "discovery", grammar_token: "was", form_focus: "past_be_singular", why_prompt: "'Was' qachon ishlatiladi?", explanation_uz: "'Was' = I/he/she/it bilan (birlik). 'Were' = you/we/they bilan (ko'plik). 'Was' — o'tmish zamondagi 'am/is'.", mini_rule: "I/he/she/it + WAS; you/we/they + WERE" },
 
@@ -195,7 +195,7 @@ window.VOCAB_CARDS_U04 = {
                     image: "/assets/images/unit04/were.jpg",
                     dialogue_ref: { dialogue_id: "U04_L01_D01", line_index: 0, speaker: "Ali", bubble_text: "Were you tired?" },
                     slides: [
-                        { phase: "presentation", uz_context: "Siz kecha qayerda edingiz?", audio: "/assets/audio/unit04/were.mp3", uz_mirror_answer: "Biz maktabda edik.", hybrid_answer: "We **were** at school.", en_canonical: "We were at school." , syntax_scaffold: { en_structure: "We were at school.", uz_gloss: "Biz maktabda edik.", tokens: [{ word: "We", role: "subject", color: "blue" }, { word: "were", role: "past_be_plural", color: "green" }, { word: "at school", role: "location", color: "purple" }] } },
+                        { phase: "presentation", uz_context: "Siz kecha qayerda edingiz?", audio: "./audio_assets/unit_04/vocab/V_U04_L01_were.mp3", uz_mirror_answer: "Biz maktabda edik.", hybrid_answer: "We **were** at school.", en_canonical: "We were at school." , syntax_scaffold: { en_structure: "We were at school.", uz_gloss: "Biz maktabda edik.", tokens: [{ word: "We", role: "subject", color: "blue" }, { word: "were", role: "past_be_plural", color: "green" }, { word: "at school", role: "location", color: "purple" }] } },
                         { phase: "concept_check", question_uz: "'They' bilan qaysi: 'was' yoki 'were'?", choices: [{ text: "They was", correct: false }, { text: "They were", correct: true }], correct_index: 1 },
                         { phase: "discovery", grammar_token: "were", form_focus: "past_be_plural", why_prompt: "'Were' kimlar bilan ishlatiladi?", explanation_uz: "'Were' = you/we/they (ko'plik + you). 'You were' — birlik 'you' ham 'were' oladi (hech qachon 'you was' emas!).", mini_rule: "you/we/they + WERE (even singular 'you' takes WERE)" },
 
@@ -221,7 +221,7 @@ window.VOCAB_CARDS_U04 = {
                     image: "/assets/images/unit04/happy.jpg",
                     dialogue_ref: { dialogue_id: "U04_L01_D01", line_index: 1, speaker: "Vali", bubble_text: "I was happy." },
                     slides: [
-                        { phase: "presentation", uz_context: "U qanday holatda edi?", audio: "/assets/audio/unit04/happy.mp3", uz_mirror_answer: "U xursand edi.", hybrid_answer: "She was **happy**.", en_canonical: "She was happy." , syntax_scaffold: { en_structure: "She was happy.", uz_gloss: "U xursand edi.", tokens: [{ word: "She", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "happy", role: "adjective", color: "purple" }] } },
+                        { phase: "presentation", uz_context: "U qanday holatda edi?", audio: "./audio_assets/unit_04/vocab/V_U04_L01_happy.mp3", uz_mirror_answer: "U xursand edi.", hybrid_answer: "She was **happy**.", en_canonical: "She was happy." , syntax_scaffold: { en_structure: "She was happy.", uz_gloss: "U xursand edi.", tokens: [{ word: "She", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "happy", role: "adjective", color: "purple" }] } },
                         { phase: "concept_check", question_uz: "'I was happy' — bu qaysi zamon?", choices: [{ text: "Hozirgi (present)", correct: false }, { text: "O'tmish (past)", correct: true }], correct_index: 1 },
                         { phase: "discovery", grammar_token: "happy", form_focus: "be_adjective", why_prompt: "Nega 'I was happy' — 'feel' yo'q?", explanation_uz: "Ingliz tilida 'be + adjective' = his/holat. 'I was happy' = men xursand edim. 'Feel' — ixtiyoriy: 'I felt happy' ham to'g'ri.", mini_rule: "be + adjective for states (I was happy = I felt happy)" },
 
@@ -247,7 +247,7 @@ window.VOCAB_CARDS_U04 = {
                     image: "/assets/images/unit04/sad.jpg",
                     dialogue_ref: { dialogue_id: "U04_L01_D01", line_index: 2, speaker: "Ali", bubble_text: "Was Sara sad or nervous?" },
                     slides: [
-                        { phase: "presentation", uz_context: "Nega u yig'layapti?", audio: "/assets/audio/unit04/sad.mp3", uz_mirror_answer: "U xafa edi.", hybrid_answer: "He was **sad**.", en_canonical: "He was sad." , syntax_scaffold: { en_structure: "He was sad.", uz_gloss: "U xafa edi.", tokens: [{ word: "He", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "sad", role: "adjective", color: "purple" }] } },
+                        { phase: "presentation", uz_context: "Nega u yig'layapti?", audio: "./audio_assets/unit_04/vocab/V_U04_L01_sad.mp3", uz_mirror_answer: "U xafa edi.", hybrid_answer: "He was **sad**.", en_canonical: "He was sad." , syntax_scaffold: { en_structure: "He was sad.", uz_gloss: "U xafa edi.", tokens: [{ word: "He", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "sad", role: "adjective", color: "purple" }] } },
                         { phase: "concept_check", question_uz: "'sad' ning antonimi (aksi) nima?", choices: [{ text: "happy", correct: true }, { text: "tired", correct: false }], correct_index: 0 },
                         { phase: "discovery", grammar_token: "sad", form_focus: "opposite_pairs", why_prompt: "'Sad' ning aksi nima?", explanation_uz: "Hislar juftlikda keladi: happy ↔ sad, excited ↔ nervous, calm ↔ angry. Qarama-qarshi ma'nolar.", mini_rule: "happy ↔ sad, excited ↔ nervous, calm ↔ angry" },
 
@@ -273,7 +273,7 @@ window.VOCAB_CARDS_U04 = {
                     image: "/assets/images/unit04/tired.jpg",
                     dialogue_ref: { dialogue_id: "U04_L01_D01", line_index: 0, speaker: "Ali", bubble_text: "Were you tired yesterday?" },
                     slides: [
-                        { phase: "presentation", uz_context: "Ishdan keyin ahvoli qanday edi?", audio: "/assets/audio/unit04/tired.mp3", uz_mirror_answer: "Men charchagan edim.", hybrid_answer: "I was **tired**.", en_canonical: "I was tired." , syntax_scaffold: { en_structure: "I was tired.", uz_gloss: "Men charchagan edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "tired", role: "adjective", color: "purple" }] } },
+                        { phase: "presentation", uz_context: "Ishdan keyin ahvoli qanday edi?", audio: "./audio_assets/unit_04/vocab/V_U04_L01_tired.mp3", uz_mirror_answer: "Men charchagan edim.", hybrid_answer: "I was **tired**.", en_canonical: "I was tired." , syntax_scaffold: { en_structure: "I was tired.", uz_gloss: "Men charchagan edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "tired", role: "adjective", color: "purple" }] } },
                         { phase: "concept_check", question_uz: "Qachon 'tired' bo'lasiz?", choices: [{ text: "Ko'p ishlagandan keyin", correct: true }, { text: "Yaxshi uxlagandan keyin", correct: false }], correct_index: 0 },
                         { phase: "discovery", grammar_token: "tired", form_focus: "ed_adjective", why_prompt: "'Tired' nima uchun '-ed' bilan?", explanation_uz: "Ba'zi sifatlar fe'ldan: tire → tired, excite → excited, worry → worried. '-ed' = '...gan' holatda.", mini_rule: "verb + ed → adjective of state (tired, excited, worried)" },
 
@@ -298,7 +298,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L01",
                     image: "/assets/images/unit04/nervous.jpg",
                     dialogue_ref: { dialogue_id: "U04_L01_D01", line_index: 2, speaker: "Ali", bubble_text: "Was Sara sad or nervous?" },
-                    slides: [{ phase: "presentation", uz_context: "Imtihondan oldin u qanday edi?", audio: "/assets/audio/unit04/nervous.mp3", uz_mirror_answer: "U asabiy edi.", hybrid_answer: "He was **nervous**.", en_canonical: "He was nervous." , syntax_scaffold: { en_structure: "He was nervous.", uz_gloss: "U asabiy edi.", tokens: [{ word: "He", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "nervous", role: "adjective", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Imtihondan oldin u qanday edi?", audio: "./audio_assets/unit_04/vocab/V_U04_L01_nervous.mp3", uz_mirror_answer: "U asabiy edi.", hybrid_answer: "He was **nervous**.", en_canonical: "He was nervous." , syntax_scaffold: { en_structure: "He was nervous.", uz_gloss: "U asabiy edi.", tokens: [{ word: "He", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "nervous", role: "adjective", color: "purple" }] } },
                         { phase: "concept_check", question_uz: "Imtihondan oldin qanday bo'lasiz?", choices: [{ text: "nervous", correct: true }, { text: "calm", correct: false }], correct_index: 0 },
                         { phase: "discovery", grammar_token: "nervous", form_focus: "nervous_vs_anxious", why_prompt: "'Nervous' va 'anxious' farqi?", explanation_uz: "'Nervous' = bezovta/asabiy (kichik xavotir). 'Anxious' = jiddiy xavotir. A1 darajada 'nervous' yetarli.", mini_rule: "nervous = mild worry; anxious = stronger worry" },
 
@@ -322,7 +322,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L01",
                     image: "/assets/images/unit04/excited.jpg",
                     dialogue_ref: { dialogue_id: "U04_L01_D01", line_index: 1, speaker: "Vali", bubble_text: "I was excited!" },
-                    slides: [{ phase: "presentation", uz_context: "Ular safar haqida nima deb o'ylashdi?", audio: "/assets/audio/unit04/excited.mp3", uz_mirror_answer: "Biz hayajonlangan edik.", hybrid_answer: "We were **excited**.", en_canonical: "We were excited." , syntax_scaffold: { en_structure: "We were excited.", uz_gloss: "Biz hayajonlangan edik.", tokens: [{ word: "We", role: "subject", color: "blue" }, { word: "were", role: "past_be_plural", color: "green" }, { word: "excited", role: "adjective", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Ular safar haqida nima deb o'ylashdi?", audio: "./audio_assets/unit_04/vocab/V_U04_L01_excited.mp3", uz_mirror_answer: "Biz hayajonlangan edik.", hybrid_answer: "We were **excited**.", en_canonical: "We were excited." , syntax_scaffold: { en_structure: "We were excited.", uz_gloss: "Biz hayajonlangan edik.", tokens: [{ word: "We", role: "subject", color: "blue" }, { word: "were", role: "past_be_plural", color: "green" }, { word: "excited", role: "adjective", color: "purple" }] } },
                         { phase: "concept_check", question_uz: "Safarga qachon 'excited' bo'lasiz?", choices: [{ text: "Safar oldidan", correct: true }, { text: "Safar tamom bo'lgandan keyin", correct: false }], correct_index: 0 },
                         { phase: "discovery", grammar_token: "excited", form_focus: "excited_vs_exciting", why_prompt: "'Excited' va 'exciting' farqi?", explanation_uz: "'Excited' = inson hissi (I was excited). 'Exciting' = narsa/voqea sifati (The trip was exciting). '-ed' = his, '-ing' = sabab.", mini_rule: "excited = person feels; exciting = thing causes feeling" },
 
@@ -346,7 +346,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L01",
                     image: "/assets/images/unit04/yesterday.jpg",
                     dialogue_ref: { dialogue_id: "U04_L01_D01", line_index: 0, speaker: "Ali", bubble_text: "Were you tired yesterday?" },
-                    slides: [{ phase: "presentation", uz_context: "Bugun dushanba. .. yakshanba edi.", audio: "/assets/audio/unit04/yesterday.mp3", uz_mirror_answer: "Kecha yakshanba edi.", hybrid_answer: "**Yesterday** was Sunday.", en_canonical: "Yesterday was Sunday." , syntax_scaffold: { en_structure: "Yesterday was Sunday.", uz_gloss: "Kecha yakshanba edi.", tokens: [{ word: "Yesterday", role: "time_adverb", color: "orange" }, { word: "was", role: "past_be", color: "green" }, { word: "Sunday", role: "day", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Bugun dushanba. .. yakshanba edi.", audio: "./audio_assets/unit_04/vocab/V_U04_L01_yesterday.mp3", uz_mirror_answer: "Kecha yakshanba edi.", hybrid_answer: "**Yesterday** was Sunday.", en_canonical: "Yesterday was Sunday." , syntax_scaffold: { en_structure: "Yesterday was Sunday.", uz_gloss: "Kecha yakshanba edi.", tokens: [{ word: "Yesterday", role: "time_adverb", color: "orange" }, { word: "was", role: "past_be", color: "green" }, { word: "Sunday", role: "day", color: "purple" }] } },
                         { phase: "concept_check", question_uz: "'Yesterday' qaysi zamon uchun?", choices: [{ text: "O'tmish (past)", correct: true }, { text: "Hozirgi (present)", correct: false }], correct_index: 0 },
                         { phase: "discovery", grammar_token: "yesterday", form_focus: "time_signal", why_prompt: "'Yesterday' gapda qayerga qo'yiladi?", explanation_uz: "'Yesterday' gap boshida yoki oxirida kelishi mumkin: 'Yesterday I was tired' yoki 'I was tired yesterday'. Ikkalasi ham to'g'ri.", mini_rule: "yesterday + past tense (beginning or end of sentence)" },
 
@@ -378,7 +378,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L02",
                     image: "/assets/images/unit04/museum.jpg",
                     dialogue_ref: { dialogue_id: "U04_L02_D02", line_index: 3, speaker: "Zara", bubble_text: "I was at the museum." },
-                    slides: [{ phase: "presentation", uz_context: "Eski narsalarni qayerda ko'ramiz?", audio: "/assets/audio/unit04/museum.mp3", uz_mirror_answer: "Muzeyda.", hybrid_answer: "In the **museum**.", en_canonical: "In the museum." , syntax_scaffold: { en_structure: "I was at the museum.", uz_gloss: "Men muzeyda edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "at the museum", role: "location", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Eski narsalarni qayerda ko'ramiz?", audio: "./audio_assets/unit_04/vocab/V_U04_L02_museum.mp3", uz_mirror_answer: "Muzeyda.", hybrid_answer: "In the **museum**.", en_canonical: "In the museum." , syntax_scaffold: { en_structure: "I was at the museum.", uz_gloss: "Men muzeyda edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "at the museum", role: "location", color: "purple" }] } },
                     { phase: "concept_check", question_uz: "'I was ___ the museum' — qaysi predlog?", choices: [{ text: "at", correct: true }, { text: "in", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "at the museum", form_focus: "at_vs_in_place", why_prompt: "Nega 'AT the museum' — 'in' emas?", explanation_uz: "'At' = umumiy joy (at the museum, at school). 'In' = ichida (in the room, in the building). 'At' kengroq tushuncha.", mini_rule: "at = general location; in = inside a space" },
 
@@ -402,7 +402,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L02",
                     image: "/assets/images/unit04/park.jpg",
                     dialogue_ref: { dialogue_id: "U04_L02_D02", line_index: 1, speaker: "Zara", bubble_text: "I was at the park." },
-                    slides: [{ phase: "presentation", uz_context: "Bolalar qayerda o'ynaydi?", audio: "/assets/audio/unit04/park.mp3", uz_mirror_answer: "Parkda.", hybrid_answer: "In the **park**.", en_canonical: "In the park." , syntax_scaffold: { en_structure: "I was at the park.", uz_gloss: "Men parkda edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "at the park", role: "location", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Bolalar qayerda o'ynaydi?", audio: "./audio_assets/unit_04/vocab/V_U04_L02_park.mp3", uz_mirror_answer: "Parkda.", hybrid_answer: "In the **park**.", en_canonical: "In the park." , syntax_scaffold: { en_structure: "I was at the park.", uz_gloss: "Men parkda edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "at the park", role: "location", color: "purple" }] } },
                     { phase: "concept_check", question_uz: "'We ___ at the park' — 'was' yoki 'were'?", choices: [{ text: "was", correct: false }, { text: "were", correct: true }], correct_index: 1 },
                     { phase: "discovery", grammar_token: "park", form_focus: "the_with_places", why_prompt: "Nega 'THE park'?", explanation_uz: "Ma'lum joylar uchun 'the' ishlatiladi: 'the park' (bizning park). 'A park' = har qanday park. Kontekstda ma'lum bo'lsa — 'the'.", mini_rule: "the park (specific/known) vs a park (any park)" },
 
@@ -426,7 +426,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L02",
                     image: "/assets/images/unit04/beach.jpg",
                     dialogue_ref: { dialogue_id: "U04_L02_D02", line_index: 1, speaker: "Zara", bubble_text: "I was at the beach." },
-                    slides: [{ phase: "presentation", uz_context: "Yozda qayerga borasiz?", audio: "/assets/audio/unit04/beach.mp3", uz_mirror_answer: "Plyajga.", hybrid_answer: "To the **beach**.", en_canonical: "To the beach." , syntax_scaffold: { en_structure: "I was at the beach.", uz_gloss: "Men plyajda edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "at the beach", role: "location", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Yozda qayerga borasiz?", audio: "./audio_assets/unit_04/vocab/V_U04_L02_beach.mp3", uz_mirror_answer: "Plyajga.", hybrid_answer: "To the **beach**.", en_canonical: "To the beach." , syntax_scaffold: { en_structure: "I was at the beach.", uz_gloss: "Men plyajda edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "at the beach", role: "location", color: "purple" }] } },
                     { phase: "concept_check", question_uz: "'Beach' nima?", choices: [{ text: "Dengiz bo'yidagi qumloq joy", correct: true }, { text: "Tog'ning tepasi", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "beach", form_focus: "at_the_beach", why_prompt: "'At the beach' yoki 'on the beach'?", explanation_uz: "'At the beach' = plyajda (umumiy). 'On the beach' = plyaj ustida (aniqroq). Ikkalasi ham to'g'ri, 'at' — kengroq.", mini_rule: "at the beach (general) vs on the beach (specific surface)" },
 
@@ -450,7 +450,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L02",
                     image: "/assets/images/unit04/library.jpg",
                     dialogue_ref: { dialogue_id: "U04_L02_D02", line_index: 3, speaker: "Zara", bubble_text: "I was at the library." },
-                    slides: [{ phase: "presentation", uz_context: "Kitoblarni qayerdan olasiz?", audio: "/assets/audio/unit04/library.mp3", uz_mirror_answer: "Kutubxonadan.", hybrid_answer: "From the **library**.", en_canonical: "From the library." , syntax_scaffold: { en_structure: "I was at the library.", uz_gloss: "Men kutubxonada edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "at the library", role: "location", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Kitoblarni qayerdan olasiz?", audio: "./audio_assets/unit_04/vocab/V_U04_L02_library.mp3", uz_mirror_answer: "Kutubxonadan.", hybrid_answer: "From the **library**.", en_canonical: "From the library." , syntax_scaffold: { en_structure: "I was at the library.", uz_gloss: "Men kutubxonada edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "at the library", role: "location", color: "purple" }] } },
                     { phase: "concept_check", question_uz: "'Library' da nima qilasiz?", choices: [{ text: "Kitob o'qiyman", correct: true }, { text: "Ovqat yeyman", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "library", form_focus: "pronunciation", why_prompt: "'Library' qanday talaffuz qilinadi?", explanation_uz: "'Library' = /ˈlaɪbrəri/ (LAI-bre-ri). Ko'p o'quvchilar 'libary' deyishadi — noto'g'ri. Ikkita 'r' harfi bor.", mini_rule: "library = /ˈlaɪbrəri/ (3 syllables, NOT 'libary')" },
 
@@ -474,7 +474,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L02",
                     image: "/assets/images/unit04/party.jpg",
                     dialogue_ref: { dialogue_id: "U04_L02_D02", line_index: 3, speaker: "Zara", bubble_text: "I was at a party." },
-                    slides: [{ phase: "presentation", uz_context: "Tug'ilgan kunda nima bo'ladi?", audio: "/assets/audio/unit04/party.mp3", uz_mirror_answer: "Bazm.", hybrid_answer: "A **party**.", en_canonical: "A party." , syntax_scaffold: { en_structure: "I was at a party.", uz_gloss: "Men bazmda edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "at a party", role: "location", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Tug'ilgan kunda nima bo'ladi?", audio: "./audio_assets/unit_04/vocab/V_U04_L02_party.mp3", uz_mirror_answer: "Bazm.", hybrid_answer: "A **party**.", en_canonical: "A party." , syntax_scaffold: { en_structure: "I was at a party.", uz_gloss: "Men bazmda edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "at a party", role: "location", color: "purple" }] } },
                     { phase: "concept_check", question_uz: "'Party' uchun 'the' yoki 'a'?", choices: [{ text: "a party (har qanday)", correct: true }, { text: "the party (aniq)", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "a party", form_focus: "a_vs_the_event", why_prompt: "Nega 'A party' — 'the' emas?", explanation_uz: "'A party' = har qanday bazm (birinchi marta aytilmoqda). 'The party' = ma'lum bazm (ikkinchi marta yoki qaysi ekani aniq). Birinchi safar — 'a'.", mini_rule: "a party (first mention); the party (known/specific)" },
 
@@ -498,7 +498,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L02",
                     image: "/assets/images/unit04/at_home.jpg",
                     dialogue_ref: { dialogue_id: "U04_L02_D02", line_index: 2, speaker: "Laylo", bubble_text: "Were you at home?" },
-                    slides: [{ phase: "presentation", uz_context: "Dam olish kuni qayerda edingiz?", audio: "/assets/audio/unit04/at_home.mp3", uz_mirror_answer: "Men uyda edim.", hybrid_answer: "I was **at home**.", en_canonical: "I was at home." , syntax_scaffold: { en_structure: "I was at home.", uz_gloss: "Men uyda edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "at home", role: "location", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Dam olish kuni qayerda edingiz?", audio: "./audio_assets/unit_04/vocab/V_U04_L02_at_home.mp3", uz_mirror_answer: "Men uyda edim.", hybrid_answer: "I was **at home**.", en_canonical: "I was at home." , syntax_scaffold: { en_structure: "I was at home.", uz_gloss: "Men uyda edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "at home", role: "location", color: "purple" }] } },
                     { phase: "concept_check", question_uz: "'I was ___ home' — to'g'ri predlog?", choices: [{ text: "at", correct: true }, { text: "in", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "at home", form_focus: "no_article_home", why_prompt: "Nega 'at home' — 'the' yo'q?", explanation_uz: "'Home' maxsus so'z — artiklsiz ishlatiladi: 'at home' (uyda), 'go home' (uyga borish). 'At THE home' = keksalar uyi.", mini_rule: "at home (NO article) — home is special" },
 
@@ -522,7 +522,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L02",
                     image: "/assets/images/unit04/yesterday_evening.jpg",
                     dialogue_ref: { dialogue_id: "U04_L02_D02", line_index: 2, speaker: "Laylo", bubble_text: "yesterday evening?" },
-                    slides: [{ phase: "presentation", uz_context: "Qachon televizor ko'rdingiz?", audio: "/assets/audio/unit04/yesterday_evening.mp3", uz_mirror_answer: "Kecha kechqurun.", hybrid_answer: "**Yesterday evening**.", en_canonical: "Yesterday evening." , syntax_scaffold: { en_structure: "I was home yesterday evening.", uz_gloss: "Kecha kechqurun uyda edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "yesterday evening", role: "time", color: "orange" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Qachon televizor ko'rdingiz?", audio: "./audio_assets/unit_04/vocab/V_U04_L02_yesterday_evening.mp3", uz_mirror_answer: "Kecha kechqurun.", hybrid_answer: "**Yesterday evening**.", en_canonical: "Yesterday evening." , syntax_scaffold: { en_structure: "I was home yesterday evening.", uz_gloss: "Kecha kechqurun uyda edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "yesterday evening", role: "time", color: "orange" }] } },
                     { phase: "concept_check", question_uz: "'Yesterday evening' — bu qachon?", choices: [{ text: "Kechagi kechqurun", correct: true }, { text: "Bugun ertalab", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "yesterday evening", form_focus: "compound_time", why_prompt: "'Yesterday evening' va 'last night' farqi?", explanation_uz: "'Yesterday evening' = kechqi soatlar (6-9). 'Last night' = kechasi (9+). Ikkalasi ham o'tmish vaqt ko'rsatkichi.", mini_rule: "yesterday evening (6-9pm); last night (9pm+)" },
 
@@ -546,7 +546,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L02",
                     image: "/assets/images/unit04/last_week.jpg",
                     dialogue_ref: { dialogue_id: "U04_L02_D02", line_index: 0, speaker: "Laylo", bubble_text: "Where were you last week?" },
-                    slides: [{ phase: "presentation", uz_context: "Qachon ta'tilda edingiz?", audio: "/assets/audio/unit04/last_week.mp3", uz_mirror_answer: "O'tgan hafta.", hybrid_answer: "**Last week**.", en_canonical: "Last week." , syntax_scaffold: { en_structure: "I was there last week.", uz_gloss: "Men u yerda o'tgan hafta edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "last week", role: "time", color: "orange" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Qachon ta'tilda edingiz?", audio: "./audio_assets/unit_04/vocab/V_U04_L02_last_week.mp3", uz_mirror_answer: "O'tgan hafta.", hybrid_answer: "**Last week**.", en_canonical: "Last week." , syntax_scaffold: { en_structure: "I was there last week.", uz_gloss: "Men u yerda o'tgan hafta edim.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "was", role: "past_be", color: "green" }, { word: "last week", role: "time", color: "orange" }] } },
                     { phase: "concept_check", question_uz: "'Last week' — bu qachon?", choices: [{ text: "O'tgan hafta", correct: true }, { text: "Kelasi hafta", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "last week", form_focus: "last_time_expressions", why_prompt: "'Last' bilan boshqa iboralar bormi?", explanation_uz: "'Last' + vaqt = o'tgan: last week, last month, last year, last night. Hammasi o'tmish zamon bilan ishlatiladi.", mini_rule: "last + week/month/year/night → past tense signal" },
 
@@ -578,7 +578,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L03",
                     image: "/assets/images/unit04/wasnt.jpg",
                     dialogue_ref: { dialogue_id: "U04_L03_D03", line_index: 1, speaker: "Ben", bubble_text: "No, he wasn't." },
-                    slides: [{ phase: "presentation", uz_context: "U ishda edimi?", audio: "/assets/audio/unit04/wasnt.mp3", uz_mirror_answer: "Yo'q, u emas edi.", hybrid_answer: "No, he **wasn't**.", en_canonical: "No, he wasn't." , syntax_scaffold: { en_structure: "No, he wasn't.", uz_gloss: "Yo'q, u emas edi.", tokens: [{ word: "he", role: "subject", color: "blue" }, { word: "wasn't", role: "negative_past_be", color: "red" }] } },
+                    slides: [{ phase: "presentation", uz_context: "U ishda edimi?", audio: "./audio_assets/unit_04/vocab/V_U04_L03_wasnt.mp3", uz_mirror_answer: "Yo'q, u emas edi.", hybrid_answer: "No, he **wasn't**.", en_canonical: "No, he wasn't." , syntax_scaffold: { en_structure: "No, he wasn't.", uz_gloss: "Yo'q, u emas edi.", tokens: [{ word: "he", role: "subject", color: "blue" }, { word: "wasn't", role: "negative_past_be", color: "red" }] } },
                     { phase: "concept_check", question_uz: "'wasn't' = ?", choices: [{ text: "was not", correct: true }, { text: "were not", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "wasn't", form_focus: "contraction_negative", why_prompt: "'Wasn't' qanday hosil bo'ladi?", explanation_uz: "'Was' + 'not' = 'wasn't' (qisqartma). Rasmiy: 'was not'. Og'zaki nutqda 'wasn't' ko'proq.", mini_rule: "was + not = wasn't (contraction)" },
 
@@ -602,7 +602,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L03",
                     image: "/assets/images/unit04/werent.jpg",
                     dialogue_ref: { dialogue_id: "U04_L03_D03", line_index: 3, speaker: "Ben", bubble_text: "They weren't late." },
-                    slides: [{ phase: "presentation", uz_context: "Ular xursand edimi?", audio: "/assets/audio/unit04/werent.mp3", uz_mirror_answer: "Yo'q, ular emas edi.", hybrid_answer: "No, they **weren't**.", en_canonical: "No, they weren't." , syntax_scaffold: { en_structure: "They weren't late.", uz_gloss: "Ular kechikishmadi.", tokens: [{ word: "They", role: "subject", color: "blue" }, { word: "weren't", role: "negative_past_be", color: "red" }, { word: "late", role: "adjective", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Ular xursand edimi?", audio: "./audio_assets/unit_04/vocab/V_U04_L03_werent.mp3", uz_mirror_answer: "Yo'q, ular emas edi.", hybrid_answer: "No, they **weren't**.", en_canonical: "No, they weren't." , syntax_scaffold: { en_structure: "They weren't late.", uz_gloss: "Ular kechikishmadi.", tokens: [{ word: "They", role: "subject", color: "blue" }, { word: "weren't", role: "negative_past_be", color: "red" }, { word: "late", role: "adjective", color: "purple" }] } },
                     { phase: "concept_check", question_uz: "'weren't' = ?", choices: [{ text: "were not", correct: true }, { text: "was not", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "weren't", form_focus: "plural_negative", why_prompt: "'Weren't' kimlar bilan?", explanation_uz: "'Weren't' = 'were not' (ko'plik inkor). You/we/they bilan: 'We weren't tired'. I/he/she uchun — 'wasn't'.", mini_rule: "you/we/they + weren't; I/he/she/it + wasn't" },
 
@@ -626,7 +626,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L03",
                     image: "/assets/images/unit04/where_was.jpg",
                     dialogue_ref: { dialogue_id: "U04_L03_D03", line_index: 0, speaker: "Tom", bubble_text: "Where was Ali?" },
-                    slides: [{ phase: "presentation", uz_context: "Ali qayerda edi?", audio: "/assets/audio/unit04/where_was.mp3", uz_mirror_answer: "U uyda edi.", hybrid_answer: "**Where was** he?", en_canonical: "Where was he?" , syntax_scaffold: { en_structure: "Where was Ali?", uz_gloss: "Ali qayerda edi?", tokens: [{ word: "Where", role: "question_word", color: "orange" }, { word: "was", role: "past_be", color: "green" }, { word: "Ali", role: "subject", color: "blue" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Ali qayerda edi?", audio: "./audio_assets/unit_04/vocab/V_U04_L03_where_was.mp3", uz_mirror_answer: "U uyda edi.", hybrid_answer: "**Where was** he?", en_canonical: "Where was he?" , syntax_scaffold: { en_structure: "Where was Ali?", uz_gloss: "Ali qayerda edi?", tokens: [{ word: "Where", role: "question_word", color: "orange" }, { word: "was", role: "past_be", color: "green" }, { word: "Ali", role: "subject", color: "blue" }] } },
                     { phase: "concept_check", question_uz: "'Where was Ali?' — tartib to'g'rimi?", choices: [{ text: "Ha: Where + was + subject", correct: true }, { text: "Yo'q: Where + subject + was", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "Where was", form_focus: "wh_question_past", why_prompt: "Nega 'Where Ali was?' emas?", explanation_uz: "Savol so'z + was/were + subject: 'Where WAS Ali?'. Savolda fe'l subject oldiga o'tadi (inversion). 'Where Ali was' — NOTO'G'RI.", mini_rule: "Wh + was/were + subject? (inversion in questions)" },
 
@@ -650,7 +650,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L03",
                     image: "/assets/images/unit04/was_he.jpg",
                     dialogue_ref: { dialogue_id: "U04_L03_D03", line_index: 0, speaker: "Tom", bubble_text: "Was he at work?" },
-                    slides: [{ phase: "presentation", uz_context: "Kasali bormi?", audio: "/assets/audio/unit04/was_he.mp3", uz_mirror_answer: "U kasal edimi?", hybrid_answer: "**Was he** sick?", en_canonical: "Was he sick?" , syntax_scaffold: { en_structure: "Was he sick?", uz_gloss: "U kasal edimi?", tokens: [{ word: "Was", role: "auxiliary_past", color: "green" }, { word: "he", role: "subject", color: "blue" }, { word: "sick", role: "adjective", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Kasali bormi?", audio: "./audio_assets/unit_04/vocab/V_U04_L03_was_he.mp3", uz_mirror_answer: "U kasal edimi?", hybrid_answer: "**Was he** sick?", en_canonical: "Was he sick?" , syntax_scaffold: { en_structure: "Was he sick?", uz_gloss: "U kasal edimi?", tokens: [{ word: "Was", role: "auxiliary_past", color: "green" }, { word: "he", role: "subject", color: "blue" }, { word: "sick", role: "adjective", color: "purple" }] } },
                     { phase: "concept_check", question_uz: "'Was he at work?' ga yes/no javob bering.", choices: [{ text: "Yes, he was.", correct: true }, { text: "Yes, he were.", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "Was he", form_focus: "yes_no_inversion", why_prompt: "Yes/No savolda 'was' qayerda?", explanation_uz: "Yes/No savollarda 'was/were' gap boshiga o'tadi: 'Was he sick?' (U kasal edimi?). 'He was sick' → 'Was he sick?'.", mini_rule: "Statement: He was sick → Question: Was he sick?" },
 
@@ -674,7 +674,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L03",
                     image: "/assets/images/unit04/yes_no_was.jpg",
                     dialogue_ref: { dialogue_id: "U04_L03_D03", line_index: 1, speaker: "Ben", bubble_text: "No, he wasn't." },
-                    slides: [{ phase: "presentation", uz_context: "Siz uyda edingizmi?", audio: "/assets/audio/unit04/yes_no_was.mp3", uz_mirror_answer: "Ha / Yo'q.", hybrid_answer: "**Yes I was** / **No I wasn't**.", en_canonical: "Yes I was." , syntax_scaffold: { en_structure: "Yes, I was. / No, I wasn't.", uz_gloss: "Ha, edim. / Yo'q, emas edim.", tokens: [{ word: "Yes/No", role: "answer", color: "orange" }, { word: "I", role: "subject", color: "blue" }, { word: "was/wasn't", role: "past_be", color: "green" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Siz uyda edingizmi?", audio: "./audio_assets/unit_04/vocab/V_U04_L03_yes_no_was.mp3", uz_mirror_answer: "Ha / Yo'q.", hybrid_answer: "**Yes I was** / **No I wasn't**.", en_canonical: "Yes I was." , syntax_scaffold: { en_structure: "Yes, I was. / No, I wasn't.", uz_gloss: "Ha, edim. / Yo'q, emas edim.", tokens: [{ word: "Yes/No", role: "answer", color: "orange" }, { word: "I", role: "subject", color: "blue" }, { word: "was/wasn't", role: "past_be", color: "green" }] } },
                     { phase: "concept_check", question_uz: "'Were you there?' — qisqa javob?", choices: [{ text: "Yes, I was.", correct: true }, { text: "Yes, I were.", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "Yes I was", form_focus: "short_answer", why_prompt: "Nega 'Yes, I was happy' emas?", explanation_uz: "Qisqa javobda faqat: 'Yes, I was' yoki 'No, I wasn't'. To'liq gapni takrorlamang. Qisqa javob = subject + was/were.", mini_rule: "Short answer: Yes, I was. / No, I wasn't. (no adjective)" },
 
@@ -698,7 +698,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L03",
                     image: "/assets/images/unit04/how_was.jpg",
                     dialogue_ref: { dialogue_id: "U04_L03_D03", line_index: 3, speaker: "Ben", bubble_text: "How was your day?" },
-                    slides: [{ phase: "presentation", uz_context: "Kuningiz qanday o'tdi?", audio: "/assets/audio/unit04/how_was.mp3", uz_mirror_answer: "Kuningiz qanday edi?", hybrid_answer: "**How was** your day?", en_canonical: "How was your day?" , syntax_scaffold: { en_structure: "How was your day?", uz_gloss: "Kuningiz qanday edi?", tokens: [{ word: "How", role: "question_word", color: "orange" }, { word: "was", role: "past_be", color: "green" }, { word: "your day", role: "subject", color: "blue" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Kuningiz qanday o'tdi?", audio: "./audio_assets/unit_04/vocab/V_U04_L03_how_was.mp3", uz_mirror_answer: "Kuningiz qanday edi?", hybrid_answer: "**How was** your day?", en_canonical: "How was your day?" , syntax_scaffold: { en_structure: "How was your day?", uz_gloss: "Kuningiz qanday edi?", tokens: [{ word: "How", role: "question_word", color: "orange" }, { word: "was", role: "past_be", color: "green" }, { word: "your day", role: "subject", color: "blue" }] } },
                     { phase: "concept_check", question_uz: "'How was your day?' nima ma'noda?", choices: [{ text: "Kuningiz qanday o'tdi?", correct: true }, { text: "Kuningiz qachon edi?", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "How was", form_focus: "how_quality", why_prompt: "'How was' nima so'raydi?", explanation_uz: "'How was' = sifat/holat haqida so'raydi: 'How was the food?' (Ovqat qanday edi?). Javob: 'It was good/bad/great'.", mini_rule: "How was ___? → It was + adjective (good/great/bad)" },
 
@@ -722,7 +722,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L03",
                     image: "/assets/images/unit04/why_were.jpg",
                     dialogue_ref: { dialogue_id: "U04_L03_D03", line_index: 2, speaker: "Tom", bubble_text: "Why were they late?" },
-                    slides: [{ phase: "presentation", uz_context: "Sababini so'rash (ko'plik)", audio: "/assets/audio/unit04/why_were.mp3", uz_mirror_answer: "Nega ular kechikishdi?", hybrid_answer: "**Why were** they late?", en_canonical: "Why were they late?" , syntax_scaffold: { en_structure: "Why were they late?", uz_gloss: "Ular nega kechikishdi?", tokens: [{ word: "Why", role: "question_word", color: "orange" }, { word: "were", role: "past_be_plural", color: "green" }, { word: "they", role: "subject", color: "blue" }, { word: "late", role: "adjective", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Sababini so'rash (ko'plik)", audio: "./audio_assets/unit_04/vocab/V_U04_L03_why_were.mp3", uz_mirror_answer: "Nega ular kechikishdi?", hybrid_answer: "**Why were** they late?", en_canonical: "Why were they late?" , syntax_scaffold: { en_structure: "Why were they late?", uz_gloss: "Ular nega kechikishdi?", tokens: [{ word: "Why", role: "question_word", color: "orange" }, { word: "were", role: "past_be_plural", color: "green" }, { word: "they", role: "subject", color: "blue" }, { word: "late", role: "adjective", color: "purple" }] } },
                     { phase: "concept_check", question_uz: "'Why' nima so'raydi?", choices: [{ text: "Sababni (reason)", correct: true }, { text: "Vaqtni (time)", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "Why were", form_focus: "why_reason", why_prompt: "'Why' ga qanday javob berish kerak?", explanation_uz: "'Why' = nega/sabab. Javob 'Because' bilan boshlanadi: 'Why were they late?' → 'Because they were in traffic'.", mini_rule: "Why ...? → Because + reason" },
 
@@ -746,7 +746,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L03",
                     image: "/assets/images/unit04/when_was.jpg",
                     dialogue_ref: { dialogue_id: "U04_L03_D03", line_index: 2, speaker: "Tom", bubble_text: "When was the meeting?" },
-                    slides: [{ phase: "presentation", uz_context: "Vaqtni so'rash", audio: "/assets/audio/unit04/when_was.mp3", uz_mirror_answer: "Uchrashuv qachon edi?", hybrid_answer: "**When was** the meeting?", en_canonical: "When was the meeting?" , syntax_scaffold: { en_structure: "When was the meeting?", uz_gloss: "Uchrashuv qachon edi?", tokens: [{ word: "When", role: "question_word", color: "orange" }, { word: "was", role: "past_be", color: "green" }, { word: "the meeting", role: "subject", color: "blue" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Vaqtni so'rash", audio: "./audio_assets/unit_04/vocab/V_U04_L03_when_was.mp3", uz_mirror_answer: "Uchrashuv qachon edi?", hybrid_answer: "**When was** the meeting?", en_canonical: "When was the meeting?" , syntax_scaffold: { en_structure: "When was the meeting?", uz_gloss: "Uchrashuv qachon edi?", tokens: [{ word: "When", role: "question_word", color: "orange" }, { word: "was", role: "past_be", color: "green" }, { word: "the meeting", role: "subject", color: "blue" }] } },
                     { phase: "concept_check", question_uz: "'When' nima so'raydi?", choices: [{ text: "Vaqtni (time)", correct: true }, { text: "Joyni (place)", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "When was", form_focus: "when_time", why_prompt: "'When' va 'What time' farqi?", explanation_uz: "'When' = umumiy vaqt (When was the party? → Last Friday). 'What time' = aniq soat (What time was the meeting? → At 3 o'clock).", mini_rule: "when = general time; what time = specific hour" },
 
@@ -778,7 +778,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L04",
                     image: "/assets/images/unit04/comfortable.jpg",
                     dialogue_ref: { dialogue_id: "U04_L04_D04", line_index: 2, speaker: "Mina", bubble_text: "The hotel was comfortable." },
-                    slides: [{ phase: "presentation", uz_context: "Bu stul qanday?", audio: "/assets/audio/unit04/comfortable.mp3", uz_mirror_answer: "U juda qulay.", hybrid_answer: "It is **comfortable**.", en_canonical: "It is comfortable." , syntax_scaffold: { en_structure: "It is comfortable.", uz_gloss: "Bu qulay.", tokens: [{ word: "It", role: "subject", color: "blue" }, { word: "is", role: "verb_be", color: "green" }, { word: "comfortable", role: "adjective", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Bu stul qanday?", audio: "./audio_assets/unit_04/vocab/V_U04_L04_comfortable.mp3", uz_mirror_answer: "U juda qulay.", hybrid_answer: "It is **comfortable**.", en_canonical: "It is comfortable." , syntax_scaffold: { en_structure: "It is comfortable.", uz_gloss: "Bu qulay.", tokens: [{ word: "It", role: "subject", color: "blue" }, { word: "is", role: "verb_be", color: "green" }, { word: "comfortable", role: "adjective", color: "purple" }] } },
                     { phase: "concept_check", question_uz: "'Comfortable' ning aksi nima?", choices: [{ text: "uncomfortable", correct: true }, { text: "peaceful", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "comfortable", form_focus: "un_prefix", why_prompt: "'Comfortable' ning aksini qanday qilish?", explanation_uz: "'Un-' qo'shimchasi = aks: comfortable → uncomfortable, happy → unhappy, friendly → unfriendly. Ko'p sifatlarga 'un-' qo'shiladi.", mini_rule: "un + adjective = opposite (uncomfortable, unhappy)" },
 
@@ -802,7 +802,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L04",
                     image: "/assets/images/unit04/worried.jpg",
                     dialogue_ref: { dialogue_id: "U04_L04_D04", line_index: 0, speaker: "Mina", bubble_text: "I was worried." },
-                    slides: [{ phase: "presentation", uz_context: "Muammo bo'lganda nima his qilasiz?", audio: "/assets/audio/unit04/worried.mp3", uz_mirror_answer: "Men xavotirdaman.", hybrid_answer: "I am **worried**.", en_canonical: "I am worried." , syntax_scaffold: { en_structure: "I am worried.", uz_gloss: "Men xavotirdaman.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "am", role: "verb_be", color: "green" }, { word: "worried", role: "adjective", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Muammo bo'lganda nima his qilasiz?", audio: "./audio_assets/unit_04/vocab/V_U04_L04_worried.mp3", uz_mirror_answer: "Men xavotirdaman.", hybrid_answer: "I am **worried**.", en_canonical: "I am worried." , syntax_scaffold: { en_structure: "I am worried.", uz_gloss: "Men xavotirdaman.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "am", role: "verb_be", color: "green" }, { word: "worried", role: "adjective", color: "purple" }] } },
                     { phase: "concept_check", question_uz: "'Worried' qaysi hisni bildiradi?", choices: [{ text: "Xavotir/tashvish", correct: true }, { text: "Xursandlik", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "worried", form_focus: "worried_about", why_prompt: "'Worried' dan keyin nima keladi?", explanation_uz: "'Worried' + 'about': 'I was worried about the exam'. 'About' = haqida. 'Worried' yolg'iz ham ishlatiladi: 'I was worried'.", mini_rule: "worried about + noun (worried about the exam)" },
 
@@ -826,7 +826,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L04",
                     image: "/assets/images/unit04/angry.jpg",
                     dialogue_ref: { dialogue_id: "U04_L04_D04", line_index: 1, speaker: "Lola", bubble_text: "Why were you angry?" },
-                    slides: [{ phase: "presentation", uz_context: "Kimdir yomon ish qilsa...", audio: "/assets/audio/unit04/angry.mp3", uz_mirror_answer: "Jahlingiz chiqadi.", hybrid_answer: "You are **angry**.", en_canonical: "You are angry." , syntax_scaffold: { en_structure: "You are angry.", uz_gloss: "Siz g'azablanasiz.", tokens: [{ word: "You", role: "subject", color: "blue" }, { word: "are", role: "verb_be", color: "green" }, { word: "angry", role: "adjective", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Kimdir yomon ish qilsa...", audio: "./audio_assets/unit_04/vocab/V_U04_L04_angry.mp3", uz_mirror_answer: "Jahlingiz chiqadi.", hybrid_answer: "You are **angry**.", en_canonical: "You are angry." , syntax_scaffold: { en_structure: "You are angry.", uz_gloss: "Siz g'azablanasiz.", tokens: [{ word: "You", role: "subject", color: "blue" }, { word: "are", role: "verb_be", color: "green" }, { word: "angry", role: "adjective", color: "purple" }] } },
                     { phase: "concept_check", question_uz: "'Angry' va 'sad' farqi nima?", choices: [{ text: "Angry = jahl, Sad = xafalik", correct: true }, { text: "Bir xil", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "angry", form_focus: "angry_with_at", why_prompt: "'Angry' dan keyin qaysi predlog?", explanation_uz: "'Angry WITH' = kishiga (angry with him). 'Angry ABOUT' = voqeaga (angry about the decision). Ikki xil.", mini_rule: "angry WITH person; angry ABOUT thing" },
 
@@ -850,7 +850,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L04",
                     image: "/assets/images/unit04/afraid.jpg",
                     dialogue_ref: { dialogue_id: "U04_L04_D04", line_index: 0, speaker: "Mina", bubble_text: "I was afraid." },
-                    slides: [{ phase: "presentation", uz_context: "Qorong'uda nima his qilasiz?", audio: "/assets/audio/unit04/afraid.mp3", uz_mirror_answer: "Men qo'rqaman.", hybrid_answer: "I am **afraid**.", en_canonical: "I am afraid." , syntax_scaffold: { en_structure: "I am afraid.", uz_gloss: "Men qo'rqaman.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "am", role: "verb_be", color: "green" }, { word: "afraid", role: "adjective", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Qorong'uda nima his qilasiz?", audio: "./audio_assets/unit_04/vocab/V_U04_L04_afraid.mp3", uz_mirror_answer: "Men qo'rqaman.", hybrid_answer: "I am **afraid**.", en_canonical: "I am afraid." , syntax_scaffold: { en_structure: "I am afraid.", uz_gloss: "Men qo'rqaman.", tokens: [{ word: "I", role: "subject", color: "blue" }, { word: "am", role: "verb_be", color: "green" }, { word: "afraid", role: "adjective", color: "purple" }] } },
                     { phase: "concept_check", question_uz: "'Afraid' nima ma'noda?", choices: [{ text: "Qo'rqish (fear)", correct: true }, { text: "Charchash (tiredness)", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "afraid", form_focus: "afraid_of", why_prompt: "'Afraid' dan keyin nima keladi?", explanation_uz: "'Afraid OF' + ot/gerund: 'afraid of dogs', 'afraid of flying'. 'Afraid' faqat predicative ('be afraid'), HECH QACHON otdan oldin kelmaydi.", mini_rule: "afraid OF + noun (afraid of dogs, NOT an afraid boy)" },
 
@@ -874,7 +874,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L04",
                     image: "/assets/images/unit04/calm.jpg",
                     dialogue_ref: { dialogue_id: "U04_L04_D04", line_index: 1, speaker: "Lola", bubble_text: "Be calm." },
-                    slides: [{ phase: "presentation", uz_context: "Dengiz shovqinsiz bo'lsa...", audio: "/assets/audio/unit04/calm.mp3", uz_mirror_answer: "U tinch.", hybrid_answer: "It is **calm**.", en_canonical: "It is calm." , syntax_scaffold: { en_structure: "Be calm.", uz_gloss: "Tinchlan(ing).", tokens: [{ word: "Be", role: "imperative", color: "green" }, { word: "calm", role: "adjective", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Dengiz shovqinsiz bo'lsa...", audio: "./audio_assets/unit_04/vocab/V_U04_L04_calm.mp3", uz_mirror_answer: "U tinch.", hybrid_answer: "It is **calm**.", en_canonical: "It is calm." , syntax_scaffold: { en_structure: "Be calm.", uz_gloss: "Tinchlan(ing).", tokens: [{ word: "Be", role: "imperative", color: "green" }, { word: "calm", role: "adjective", color: "purple" }] } },
                     { phase: "concept_check", question_uz: "'Calm' ning aksi nima?", choices: [{ text: "angry / nervous", correct: true }, { text: "tired", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "Be calm", form_focus: "imperative_be", why_prompt: "Nega 'Be calm' — 'Are calm' emas?", explanation_uz: "'Be' = buyruq (imperative): 'Be calm!', 'Be quiet!', 'Be careful!'. Bu to'g'ridan-to'g'ri buyruq/maslahat. Subject yo'q.", mini_rule: "Be + adjective (imperative: Be calm! Be careful!)" },
 
@@ -898,7 +898,7 @@ window.VOCAB_CARDS_U04 = {
                     introduced_in: "U04_L04",
                     image: "/assets/images/unit04/peaceful.jpg",
                     dialogue_ref: { dialogue_id: "U04_L04_D04", line_index: 2, speaker: "Mina", bubble_text: "The hotel was peaceful." },
-                    slides: [{ phase: "presentation", uz_context: "Shovqin yo'q joy.", audio: "/assets/audio/unit04/peaceful.mp3", uz_mirror_answer: "Juda osoyishta.", hybrid_answer: "Very **peaceful**.", en_canonical: "Very peaceful." , syntax_scaffold: { en_structure: "It is peaceful.", uz_gloss: "Bu osoyishta.", tokens: [{ word: "It", role: "subject", color: "blue" }, { word: "is", role: "verb_be", color: "green" }, { word: "peaceful", role: "adjective", color: "purple" }] } },
+                    slides: [{ phase: "presentation", uz_context: "Shovqin yo'q joy.", audio: "./audio_assets/unit_04/vocab/V_U04_L04_peaceful.mp3", uz_mirror_answer: "Juda osoyishta.", hybrid_answer: "Very **peaceful**.", en_canonical: "Very peaceful." , syntax_scaffold: { en_structure: "It is peaceful.", uz_gloss: "Bu osoyishta.", tokens: [{ word: "It", role: "subject", color: "blue" }, { word: "is", role: "verb_be", color: "green" }, { word: "peaceful", role: "adjective", color: "purple" }] } },
                     { phase: "concept_check", question_uz: "'Peaceful' va 'quiet' farqi?", choices: [{ text: "Peaceful=tinch/osoyishta, Quiet=jimsiz", correct: true }, { text: "Bir xil", correct: false }], correct_index: 0 },
                     { phase: "discovery", grammar_token: "peaceful", form_focus: "ful_suffix_state", why_prompt: "'Peace' → 'peaceful' qanday?", explanation_uz: "'Peace' (tinchlik) + '-ful' = 'peaceful' (tinch). '-ful' = ...ga to'la: peace → peaceful, hope → hopeful, pain → painful.", mini_rule: "noun + ful = adjective (peaceful, hopeful, painful)" },
 

@@ -169,16 +169,16 @@ window.VOCAB_CARDS_U01_5 = {
         notes: "Foundation words from U01 + new HAVE/HAS target vocabulary."
       },
       lines: [
-        { speaker: "Ali", line: "Hello Malika! Do you have a brother?", line_uz: "Salom Malika! Akangiz bormi?", recycled: ["you", "a"], target: ["Do", "have", "brother"], mastery_key: "U01_5_L01_D01_0" },
-        { speaker: "Malika", line: "Yes, I have a brother. His name is Karim.", line_uz: "Ha, akam bor. Uning ismi Karim.", recycled: ["I", "a", "His", "name", "is"], target: ["have", "brother"], mastery_key: "U01_5_L01_D01_1" },
-        { speaker: "Ali", line: "Does he have a book?", line_uz: "Uning kitobi bormi?", recycled: ["he", "a"], target: ["Does", "have", "book"], mastery_key: "U01_5_L01_D01_2" },
-        { speaker: "Malika", line: "Yes, he has a book. This is his book.", line_uz: "Ha, kitobi bor. Bu uning kitobi.", recycled: ["he", "a", "This", "is", "his"], target: ["has", "book"], mastery_key: "U01_5_L01_D01_3" },
-        { speaker: "Ali", line: "Do you have a sister?", line_uz: "Sizning singlingiz bormi?", recycled: ["you", "a"], target: ["Do", "have", "sister"], mastery_key: "U01_5_L01_D01_4" },
-        { speaker: "Malika", line: "No, I don't have a sister. I have a brother.", line_uz: "Yo'q, singlim yo'q. Akam bor.", recycled: ["I", "a"], target: ["don't have", "sister", "have", "brother"], mastery_key: "U01_5_L01_D01_5" },
-        { speaker: "Ali", line: "I have a sister. Her name is Sara.", line_uz: "Mening singlim bor. Uning ismi Sara.", recycled: ["I", "a", "Her", "name", "is"], target: ["have", "sister"], mastery_key: "U01_5_L01_D01_6" },
-        { speaker: "Malika", line: "That is nice! Does your father have a car?", line_uz: "Zo'r! Dadangizning mashinasi bormi?", recycled: ["That", "is", "your", "father"], target: ["Does", "have", "car"], mastery_key: "U01_5_L01_D01_7" },
-        { speaker: "Ali", line: "No, he doesn't have a car.", line_uz: "Yo'q, uning mashinasi yo'q.", recycled: ["he", "a"], target: ["doesn't have", "car"], mastery_key: "U01_5_L01_D01_8" },
-        { speaker: "Malika", line: "We have a nice teacher. Our teacher is good.", line_uz: "Bizning ajoyib o'qituvchimiz bor. O'qituvchimiz yaxshi.", recycled: ["We", "a", "teacher", "is"], target: ["have", "Our"], mastery_key: "U01_5_L01_D01_9" }
+        { speaker: "Ali", line: "Hello Malika! Do you have a brother?", line_uz: "Salom Malika! Akangiz bormi?", recycled: ["you", "a"], target: ["Do", "have", "brother"], mastery_key: "U01_5_L01_D01_0" , audio_id: "U01_5_L01_D01_L0" },
+        { speaker: "Malika", line: "Yes, I have a brother. His name is Karim.", line_uz: "Ha, akam bor. Uning ismi Karim.", recycled: ["I", "a", "His", "name", "is"], target: ["have", "brother"], mastery_key: "U01_5_L01_D01_1" , audio_id: "U01_5_L01_D01_L1" },
+        { speaker: "Ali", line: "Does he have a book?", line_uz: "Uning kitobi bormi?", recycled: ["he", "a"], target: ["Does", "have", "book"], mastery_key: "U01_5_L01_D01_2" , audio_id: "U01_5_L01_D01_L2" },
+        { speaker: "Malika", line: "Yes, he has a book. This is his book.", line_uz: "Ha, kitobi bor. Bu uning kitobi.", recycled: ["he", "a", "This", "is", "his"], target: ["has", "book"], mastery_key: "U01_5_L01_D01_3" , audio_id: "U01_5_L01_D01_L3" },
+        { speaker: "Ali", line: "Do you have a sister?", line_uz: "Sizning singlingiz bormi?", recycled: ["you", "a"], target: ["Do", "have", "sister"], mastery_key: "U01_5_L01_D01_4" , audio_id: "U01_5_L01_D01_L4" },
+        { speaker: "Malika", line: "No, I don't have a sister. I have a brother.", line_uz: "Yo'q, singlim yo'q. Akam bor.", recycled: ["I", "a"], target: ["don't have", "sister", "have", "brother"], mastery_key: "U01_5_L01_D01_5" , audio_id: "U01_5_L01_D01_L5" },
+        { speaker: "Ali", line: "I have a sister. Her name is Sara.", line_uz: "Mening singlim bor. Uning ismi Sara.", recycled: ["I", "a", "Her", "name", "is"], target: ["have", "sister"], mastery_key: "U01_5_L01_D01_6" , audio_id: "U01_5_L01_D01_L6" },
+        { speaker: "Malika", line: "That is nice! Does your father have a car?", line_uz: "Zo'r! Dadangizning mashinasi bormi?", recycled: ["That", "is", "your", "father"], target: ["Does", "have", "car"], mastery_key: "U01_5_L01_D01_7" , audio_id: "U01_5_L01_D01_L7" },
+        { speaker: "Ali", line: "No, he doesn't have a car.", line_uz: "Yo'q, uning mashinasi yo'q.", recycled: ["he", "a"], target: ["doesn't have", "car"], mastery_key: "U01_5_L01_D01_8" , audio_id: "U01_5_L01_D01_L8" },
+        { speaker: "Malika", line: "We have a nice teacher. Our teacher is good.", line_uz: "Bizning ajoyib o'qituvchimiz bor. O'qituvchimiz yaxshi.", recycled: ["We", "a", "teacher", "is"], target: ["have", "Our"], mastery_key: "U01_5_L01_D01_9" , audio_id: "U01_5_L01_D01_L9" }
       ]
     },
 
@@ -201,16 +201,16 @@ window.VOCAB_CARDS_U01_5 = {
         notes: "U01 foundation + U01.5 L01 (have/has) + new THERE IS/ARE."
       },
       lines: [
-        { speaker: "Nilufar", line: "Is there a teacher in the class?", line_uz: "Sinfda o'qituvchi bormi?", recycled: ["a", "teacher", "the"], target: ["Is there", "in", "class"], mastery_key: "U01_5_L02_D01_0" },
-        { speaker: "Bekzod", line: "Yes, there is a teacher. She is my teacher.", line_uz: "Ha, o'qituvchi bor. U mening o'qituvchim.", recycled: ["a", "teacher", "She", "is", "my"], target: ["there is"], mastery_key: "U01_5_L02_D01_1" },
-        { speaker: "Nilufar", line: "Are there students in the class?", line_uz: "Sinfda talabalar bormi?", recycled: ["the"], target: ["Are there", "students", "in", "class"], mastery_key: "U01_5_L02_D01_2" },
-        { speaker: "Bekzod", line: "Yes, there are students. There are five students.", line_uz: "Ha, talabalar bor. Besh talaba bor.", recycled: [], target: ["there are", "students", "five"], mastery_key: "U01_5_L02_D01_3" },
-        { speaker: "Nilufar", line: "Is there a book on the table?", line_uz: "Stolda kitob bormi?", recycled: ["a", "the"], target: ["Is there", "book", "on", "table"], mastery_key: "U01_5_L02_D01_4" },
-        { speaker: "Bekzod", line: "Yes, there is a book on the table. That is your book.", line_uz: "Ha, stolda kitob bor. Bu sizning kitobingiz.", recycled: ["a", "the", "That", "is", "your"], target: ["there is", "book", "on", "table"], mastery_key: "U01_5_L02_D01_5" },
-        { speaker: "Nilufar", line: "Is there a car at school?", line_uz: "Maktabda mashina bormi?", recycled: ["a"], target: ["Is there", "car", "at", "school"], mastery_key: "U01_5_L02_D01_6" },
-        { speaker: "Bekzod", line: "No, there isn't a car at school.", line_uz: "Yo'q, maktabda mashina yo'q.", recycled: ["a"], target: ["there isn't", "car", "at", "school"], mastery_key: "U01_5_L02_D01_7" },
-        { speaker: "Nilufar", line: "Are there books in the bag?", line_uz: "Sumkada kitoblar bormi?", recycled: ["the"], target: ["Are there", "books", "in", "bag"], mastery_key: "U01_5_L02_D01_8" },
-        { speaker: "Bekzod", line: "No, there aren't books in the bag. The bag is at home.", line_uz: "Yo'q, sumkada kitoblar yo'q. Sumka uyda.", recycled: ["the", "is"], target: ["there aren't", "books", "in", "bag", "at", "home"], mastery_key: "U01_5_L02_D01_9" }
+        { speaker: "Nilufar", line: "Is there a teacher in the class?", line_uz: "Sinfda o'qituvchi bormi?", recycled: ["a", "teacher", "the"], target: ["Is there", "in", "class"], mastery_key: "U01_5_L02_D01_0" , audio_id: "U01_5_L02_D01_L0" },
+        { speaker: "Bekzod", line: "Yes, there is a teacher. She is my teacher.", line_uz: "Ha, o'qituvchi bor. U mening o'qituvchim.", recycled: ["a", "teacher", "She", "is", "my"], target: ["there is"], mastery_key: "U01_5_L02_D01_1" , audio_id: "U01_5_L02_D01_L1" },
+        { speaker: "Nilufar", line: "Are there students in the class?", line_uz: "Sinfda talabalar bormi?", recycled: ["the"], target: ["Are there", "students", "in", "class"], mastery_key: "U01_5_L02_D01_2" , audio_id: "U01_5_L02_D01_L2" },
+        { speaker: "Bekzod", line: "Yes, there are students. There are five students.", line_uz: "Ha, talabalar bor. Besh talaba bor.", recycled: [], target: ["there are", "students", "five"], mastery_key: "U01_5_L02_D01_3" , audio_id: "U01_5_L02_D01_L3" },
+        { speaker: "Nilufar", line: "Is there a book on the table?", line_uz: "Stolda kitob bormi?", recycled: ["a", "the"], target: ["Is there", "book", "on", "table"], mastery_key: "U01_5_L02_D01_4" , audio_id: "U01_5_L02_D01_L4" },
+        { speaker: "Bekzod", line: "Yes, there is a book on the table. That is your book.", line_uz: "Ha, stolda kitob bor. Bu sizning kitobingiz.", recycled: ["a", "the", "That", "is", "your"], target: ["there is", "book", "on", "table"], mastery_key: "U01_5_L02_D01_5" , audio_id: "U01_5_L02_D01_L5" },
+        { speaker: "Nilufar", line: "Is there a car at school?", line_uz: "Maktabda mashina bormi?", recycled: ["a"], target: ["Is there", "car", "at", "school"], mastery_key: "U01_5_L02_D01_6" , audio_id: "U01_5_L02_D01_L6" },
+        { speaker: "Bekzod", line: "No, there isn't a car at school.", line_uz: "Yo'q, maktabda mashina yo'q.", recycled: ["a"], target: ["there isn't", "car", "at", "school"], mastery_key: "U01_5_L02_D01_7" , audio_id: "U01_5_L02_D01_L7" },
+        { speaker: "Nilufar", line: "Are there books in the bag?", line_uz: "Sumkada kitoblar bormi?", recycled: ["the"], target: ["Are there", "books", "in", "bag"], mastery_key: "U01_5_L02_D01_8" , audio_id: "U01_5_L02_D01_L8" },
+        { speaker: "Bekzod", line: "No, there aren't books in the bag. The bag is at home.", line_uz: "Yo'q, sumkada kitoblar yo'q. Sumka uyda.", recycled: ["the", "is"], target: ["there aren't", "books", "in", "bag", "at", "home"], mastery_key: "U01_5_L02_D01_9" , audio_id: "U01_5_L02_D01_L9" }
       ]
     },
 
@@ -233,16 +233,16 @@ window.VOCAB_CARDS_U01_5 = {
         notes: "U01 foundation + U01.5 L01-L02 + new WH-questions and prepositions."
       },
       lines: [
-        { speaker: "Sara", line: "Hello Karim! How are you?", line_uz: "Salom Karim! Qandaysiz?", recycled: ["you"], target: ["How", "are"], mastery_key: "U01_5_L03_D01_0" },
-        { speaker: "Karim", line: "I am fine, thank you. How are you?", line_uz: "Yaxshiman, rahmat. Siz-chi?", recycled: ["I", "am", "you"], target: ["How", "are", "fine"], mastery_key: "U01_5_L03_D01_1" },
-        { speaker: "Sara", line: "I am happy today. Where is Ali?", line_uz: "Bugun xursandman. Ali qayerda?", recycled: ["I", "am", "is"], target: ["happy", "Where"], mastery_key: "U01_5_L03_D01_2" },
-        { speaker: "Karim", line: "Ali is in the class. He has a book.", line_uz: "Ali sinfda. Uning kitobi bor.", recycled: ["is", "the", "He", "has", "a", "book"], target: ["in", "class"], mastery_key: "U01_5_L03_D01_3" },
-        { speaker: "Sara", line: "Where is the book?", line_uz: "Kitob qayerda?", recycled: ["is", "the", "book"], target: ["Where"], mastery_key: "U01_5_L03_D01_4" },
-        { speaker: "Karim", line: "The book is on the table.", line_uz: "Kitob stolda.", recycled: ["The", "book", "is", "the"], target: ["on", "table"], mastery_key: "U01_5_L03_D01_5" },
-        { speaker: "Sara", line: "When is the class?", line_uz: "Dars qachon?", recycled: ["is", "the"], target: ["When", "class"], mastery_key: "U01_5_L03_D01_6" },
-        { speaker: "Karim", line: "The class is at nine. It is in the morning.", line_uz: "Dars to'qqizda. Ertalab.", recycled: ["The", "is", "It", "in", "the"], target: ["class", "at", "nine", "morning"], mastery_key: "U01_5_L03_D01_7" },
-        { speaker: "Sara", line: "This is good! Why are you happy?", line_uz: "Zo'r! Nega xursandsiz?", recycled: ["This", "is", "you"], target: ["Why", "are", "happy"], mastery_key: "U01_5_L03_D01_8" },
-        { speaker: "Karim", line: "I have a sister too. She is at home.", line_uz: "Mening ham singlim bor. U uyda.", recycled: ["I", "have", "a", "sister", "She", "is"], target: ["too", "at", "home"], mastery_key: "U01_5_L03_D01_9" }
+        { speaker: "Sara", line: "Hello Karim! How are you?", line_uz: "Salom Karim! Qandaysiz?", recycled: ["you"], target: ["How", "are"], mastery_key: "U01_5_L03_D01_0" , audio_id: "U01_5_L03_D01_L0" },
+        { speaker: "Karim", line: "I am fine, thank you. How are you?", line_uz: "Yaxshiman, rahmat. Siz-chi?", recycled: ["I", "am", "you"], target: ["How", "are", "fine"], mastery_key: "U01_5_L03_D01_1" , audio_id: "U01_5_L03_D01_L1" },
+        { speaker: "Sara", line: "I am happy today. Where is Ali?", line_uz: "Bugun xursandman. Ali qayerda?", recycled: ["I", "am", "is"], target: ["happy", "Where"], mastery_key: "U01_5_L03_D01_2" , audio_id: "U01_5_L03_D01_L2" },
+        { speaker: "Karim", line: "Ali is in the class. He has a book.", line_uz: "Ali sinfda. Uning kitobi bor.", recycled: ["is", "the", "He", "has", "a", "book"], target: ["in", "class"], mastery_key: "U01_5_L03_D01_3" , audio_id: "U01_5_L03_D01_L3" },
+        { speaker: "Sara", line: "Where is the book?", line_uz: "Kitob qayerda?", recycled: ["is", "the", "book"], target: ["Where"], mastery_key: "U01_5_L03_D01_4" , audio_id: "U01_5_L03_D01_L4" },
+        { speaker: "Karim", line: "The book is on the table.", line_uz: "Kitob stolda.", recycled: ["The", "book", "is", "the"], target: ["on", "table"], mastery_key: "U01_5_L03_D01_5" , audio_id: "U01_5_L03_D01_L5" },
+        { speaker: "Sara", line: "When is the class?", line_uz: "Dars qachon?", recycled: ["is", "the"], target: ["When", "class"], mastery_key: "U01_5_L03_D01_6" , audio_id: "U01_5_L03_D01_L6" },
+        { speaker: "Karim", line: "The class is at nine. It is in the morning.", line_uz: "Dars to'qqizda. Ertalab.", recycled: ["The", "is", "It", "in", "the"], target: ["class", "at", "nine", "morning"], mastery_key: "U01_5_L03_D01_7" , audio_id: "U01_5_L03_D01_L7" },
+        { speaker: "Sara", line: "This is good! Why are you happy?", line_uz: "Zo'r! Nega xursandsiz?", recycled: ["This", "is", "you"], target: ["Why", "are", "happy"], mastery_key: "U01_5_L03_D01_8" , audio_id: "U01_5_L03_D01_L8" },
+        { speaker: "Karim", line: "I have a sister too. She is at home.", line_uz: "Mening ham singlim bor. U uyda.", recycled: ["I", "have", "a", "sister", "She", "is"], target: ["too", "at", "home"], mastery_key: "U01_5_L03_D01_9" , audio_id: "U01_5_L03_D01_L9" }
       ]
     },
     
@@ -262,16 +262,16 @@ window.VOCAB_CARDS_U01_5 = {
         notes: "Consolidates all U01.5 grammar with varied contexts."
       },
       lines: [
-        { speaker: "Madina", line: "Where are the students?", line_uz: "Talabalar qayerda?", recycled: ["the"], target: ["Where", "are", "students"], mastery_key: "U01_5_L03_D02_0" },
-        { speaker: "Vali", line: "They are in the class. Their teacher is there too.", line_uz: "Ular sinfda. O'qituvchilari ham u yerda.", recycled: ["They", "are", "in", "the", "teacher", "is"], target: ["class", "Their", "there", "too"], mastery_key: "U01_5_L03_D02_1" },
-        { speaker: "Madina", line: "Where is my bag?", line_uz: "Sumkam qayerda?", recycled: ["is", "my"], target: ["Where", "bag"], mastery_key: "U01_5_L03_D02_2" },
-        { speaker: "Vali", line: "Your bag is on the table.", line_uz: "Sumkangiz stolda.", recycled: ["Your", "is", "the"], target: ["bag", "on", "table"], mastery_key: "U01_5_L03_D02_3" },
-        { speaker: "Madina", line: "How is your father?", line_uz: "Dadangiz qalaysiz?", recycled: ["is", "your", "father"], target: ["How"], mastery_key: "U01_5_L03_D02_4" },
-        { speaker: "Vali", line: "He is fine. He is at home now.", line_uz: "U yaxshi. Hozir uyda.", recycled: ["He", "is"], target: ["fine", "at", "home"], mastery_key: "U01_5_L03_D02_5" },
-        { speaker: "Madina", line: "Why is your sister at school?", line_uz: "Nega singlingiz maktabda?", recycled: ["is", "your", "sister"], target: ["Why", "at", "school"], mastery_key: "U01_5_L03_D02_6" },
-        { speaker: "Vali", line: "She has a class. There is an exam.", line_uz: "Uning darsi bor. Imtihon bor.", recycled: ["She", "has", "a", "is", "an"], target: ["class", "There", "exam"], mastery_key: "U01_5_L03_D02_7" },
-        { speaker: "Madina", line: "Why are you happy?", line_uz: "Nega xursandsiz?", recycled: ["you"], target: ["Why", "are", "happy"], mastery_key: "U01_5_L03_D02_8" },
-        { speaker: "Vali", line: "I am happy. I have a book. The book is good.", line_uz: "Xursandman. Kitobim bor. Kitob yaxshi.", recycled: ["I", "am", "have", "a", "book", "The", "is"], target: ["happy"], mastery_key: "U01_5_L03_D02_9" }
+        { speaker: "Madina", line: "Where are the students?", line_uz: "Talabalar qayerda?", recycled: ["the"], target: ["Where", "are", "students"], mastery_key: "U01_5_L03_D02_0" , audio_id: "U01_5_L03_D02_L0" },
+        { speaker: "Vali", line: "They are in the class. Their teacher is there too.", line_uz: "Ular sinfda. O'qituvchilari ham u yerda.", recycled: ["They", "are", "in", "the", "teacher", "is"], target: ["class", "Their", "there", "too"], mastery_key: "U01_5_L03_D02_1" , audio_id: "U01_5_L03_D02_L1" },
+        { speaker: "Madina", line: "Where is my bag?", line_uz: "Sumkam qayerda?", recycled: ["is", "my"], target: ["Where", "bag"], mastery_key: "U01_5_L03_D02_2" , audio_id: "U01_5_L03_D02_L2" },
+        { speaker: "Vali", line: "Your bag is on the table.", line_uz: "Sumkangiz stolda.", recycled: ["Your", "is", "the"], target: ["bag", "on", "table"], mastery_key: "U01_5_L03_D02_3" , audio_id: "U01_5_L03_D02_L3" },
+        { speaker: "Madina", line: "How is your father?", line_uz: "Dadangiz qalaysiz?", recycled: ["is", "your", "father"], target: ["How"], mastery_key: "U01_5_L03_D02_4" , audio_id: "U01_5_L03_D02_L4" },
+        { speaker: "Vali", line: "He is fine. He is at home now.", line_uz: "U yaxshi. Hozir uyda.", recycled: ["He", "is"], target: ["fine", "at", "home"], mastery_key: "U01_5_L03_D02_5" , audio_id: "U01_5_L03_D02_L5" },
+        { speaker: "Madina", line: "Why is your sister at school?", line_uz: "Nega singlingiz maktabda?", recycled: ["is", "your", "sister"], target: ["Why", "at", "school"], mastery_key: "U01_5_L03_D02_6" , audio_id: "U01_5_L03_D02_L6" },
+        { speaker: "Vali", line: "She has a class. There is an exam.", line_uz: "Uning darsi bor. Imtihon bor.", recycled: ["She", "has", "a", "is", "an"], target: ["class", "There", "exam"], mastery_key: "U01_5_L03_D02_7" , audio_id: "U01_5_L03_D02_L7" },
+        { speaker: "Madina", line: "Why are you happy?", line_uz: "Nega xursandsiz?", recycled: ["you"], target: ["Why", "are", "happy"], mastery_key: "U01_5_L03_D02_8" , audio_id: "U01_5_L03_D02_L8" },
+        { speaker: "Vali", line: "I am happy. I have a book. The book is good.", line_uz: "Xursandman. Kitobim bor. Kitob yaxshi.", recycled: ["I", "am", "have", "a", "book", "The", "is"], target: ["happy"], mastery_key: "U01_5_L03_D02_9" , audio_id: "U01_5_L03_D02_L9" }
       ]
     }
   },

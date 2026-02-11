@@ -115,14 +115,14 @@ window.VOCAB_CARDS_U10 = {
         notes: "U10 vocab + U09 possessives + U03 food"
       },
       lines: [
-        { speaker: "Nilufar", line: "Hi Bekzod! What are you buying?", line_uz: "Salom Bekzod! Sen nima sotib olayapsan?", recycled: ["Hi", "What", "are", "you"], target: ["buying"] },
-        { speaker: "Bekzod", line: "I'm buying biscuits. For breakfast.", line_uz: "Men pechenye sotib olayapman. Nonushta uchun.", recycled: ["I'm", "breakfast"], target: ["buying", "biscuits", "For"] },
-        { speaker: "Nilufar", line: "Good! I'm buying cheese. For lunch.", line_uz: "Yaxshi! Men pishloq sotib olayapman. Tushlik uchun.", recycled: ["Good", "I'm", "lunch"], target: ["buying", "cheese", "For"] },
-        { speaker: "Bekzod", line: "Great! What about these earrings? For whom?", line_uz: "Zo'r! Bu sirg'alar-chi? Kimga?", recycled: ["Great", "What", "about", "these"], target: ["earrings", "For", "whom"] },
-        { speaker: "Nilufar", line: "These earrings are for my mother. For her birthday.", line_uz: "Bu sirg'alar onam uchun. Uning tug'ilgan kuni uchun.", recycled: ["These", "are", "my", "mother", "her", "birthday"], target: ["earrings", "for", "For"] },
-        { speaker: "Bekzod", line: "Beautiful! Is this wallet yours?", line_uz: "Chiroyli! Bu hamyon seniki-mi?", recycled: ["Beautiful", "Is", "this", "yours"], target: ["wallet"] },
-        { speaker: "Nilufar", line: "Yes, this wallet is mine. I bought it yesterday.", line_uz: "Ha, bu hamyon meniki. Men uni kecha sotib oldim.", recycled: ["Yes", "this", "is", "mine", "I", "bought", "it", "yesterday"], target: ["wallet"] },
-        { speaker: "Bekzod", line: "Good choice! Now it's time to pay!", line_uz: "Yaxshi tanlov! Endi to'lash vaqti!", recycled: ["Good", "choice", "Now", "it's", "time", "to"], target: ["pay"] }
+        { speaker: "Nilufar", line: "Hi Bekzod! What are you buying?", line_uz: "Salom Bekzod! Sen nima sotib olayapsan?", recycled: ["Hi", "What", "are", "you"], target: ["buying"] , mastery_key: "U10_L01_D01_0", audio_id: "U10_L01_D01_L0" },
+        { speaker: "Bekzod", line: "I'm buying biscuits. For breakfast.", line_uz: "Men pechenye sotib olayapman. Nonushta uchun.", recycled: ["I'm", "breakfast"], target: ["buying", "biscuits", "For"] , mastery_key: "U10_L01_D01_1", audio_id: "U10_L01_D01_L1" },
+        { speaker: "Nilufar", line: "Good! I'm buying cheese. For lunch.", line_uz: "Yaxshi! Men pishloq sotib olayapman. Tushlik uchun.", recycled: ["Good", "I'm", "lunch"], target: ["buying", "cheese", "For"] , mastery_key: "U10_L01_D01_2", audio_id: "U10_L01_D01_L2" },
+        { speaker: "Bekzod", line: "Great! What about these earrings? For whom?", line_uz: "Zo'r! Bu sirg'alar-chi? Kimga?", recycled: ["Great", "What", "about", "these"], target: ["earrings", "For", "whom"] , mastery_key: "U10_L01_D01_3", audio_id: "U10_L01_D01_L3" },
+        { speaker: "Nilufar", line: "These earrings are for my mother. For her birthday.", line_uz: "Bu sirg'alar onam uchun. Uning tug'ilgan kuni uchun.", recycled: ["These", "are", "my", "mother", "her", "birthday"], target: ["earrings", "for", "For"] , mastery_key: "U10_L01_D01_4", audio_id: "U10_L01_D01_L4" },
+        { speaker: "Bekzod", line: "Beautiful! Is this wallet yours?", line_uz: "Chiroyli! Bu hamyon seniki-mi?", recycled: ["Beautiful", "Is", "this", "yours"], target: ["wallet"] , mastery_key: "U10_L01_D01_5", audio_id: "U10_L01_D01_L5" },
+        { speaker: "Nilufar", line: "Yes, this wallet is mine. I bought it yesterday.", line_uz: "Ha, bu hamyon meniki. Men uni kecha sotib oldim.", recycled: ["Yes", "this", "is", "mine", "I", "bought", "it", "yesterday"], target: ["wallet"] , mastery_key: "U10_L01_D01_6", audio_id: "U10_L01_D01_L6" },
+        { speaker: "Bekzod", line: "Good choice! Now it's time to pay!", line_uz: "Yaxshi tanlov! Endi to'lash vaqti!", recycled: ["Good", "choice", "Now", "it's", "time", "to"], target: ["pay"] , mastery_key: "U10_L01_D01_7", audio_id: "U10_L01_D01_L7" }
       ]
     },
 
@@ -142,14 +142,14 @@ window.VOCAB_CARDS_U10 = {
         notes: "U10 quantifiers + U07 irregular past (bought, spent)"
       },
       lines: [
-        { speaker: "Madina", line: "Hi Otabek! What did you buy?", line_uz: "Salom Otabek! Sen nima sotib oldingiz?", recycled: ["Hi", "What", "did", "you", "buy"], target: [] },
-        { speaker: "Otabek", line: "I bought some biscuits. A few.", line_uz: "Men biroz pechenye sotib oldim. Bir nechta.", recycled: ["I", "bought", "some"], target: ["biscuits", "A few"] },
-        { speaker: "Madina", line: "Good! I bought some cheese. A bit.", line_uz: "Yaxshi! Men biroz pishloq sotib oldim. Ozgina.", recycled: ["Good", "I", "bought", "some"], target: ["cheese", "A bit"] },
-        { speaker: "Otabek", line: "Did you spend some money? A lot?", line_uz: "Sen biroz pul sarfladingizmi? Ko'pmi?", recycled: ["Did", "you", "some", "money"], target: ["spend", "A lot"] },
-        { speaker: "Madina", line: "No, not a lot. I spent a bit of money.", line_uz: "Yo'q, ko'p emas. Men ozgina pul sarfladim.", recycled: ["No", "not", "a lot", "I", "money"], target: ["spent", "a bit of"] },
-        { speaker: "Otabek", line: "Me too. I received a few coins.", line_uz: "Men ham. Men bir nechta tanga oldim.", recycled: ["Me", "too", "I", "received", "a few"], target: ["coins"] },
-        { speaker: "Madina", line: "Did you get the receipt?", line_uz: "Chek oldingizmi?", recycled: ["Did", "you", "get", "the"], target: ["receipt"] },
-        { speaker: "Otabek", line: "Yes, I got the receipt. It's mine.", line_uz: "Ha, men chekni oldim. U meniki.", recycled: ["Yes", "I", "got", "the", "It's", "mine"], target: ["receipt"] }
+        { speaker: "Madina", line: "Hi Otabek! What did you buy?", line_uz: "Salom Otabek! Sen nima sotib oldingiz?", recycled: ["Hi", "What", "did", "you", "buy"], target: [] , mastery_key: "U10_L02_D01_0", audio_id: "U10_L02_D01_L0" },
+        { speaker: "Otabek", line: "I bought some biscuits. A few.", line_uz: "Men biroz pechenye sotib oldim. Bir nechta.", recycled: ["I", "bought", "some"], target: ["biscuits", "A few"] , mastery_key: "U10_L02_D01_1", audio_id: "U10_L02_D01_L1" },
+        { speaker: "Madina", line: "Good! I bought some cheese. A bit.", line_uz: "Yaxshi! Men biroz pishloq sotib oldim. Ozgina.", recycled: ["Good", "I", "bought", "some"], target: ["cheese", "A bit"] , mastery_key: "U10_L02_D01_2", audio_id: "U10_L02_D01_L2" },
+        { speaker: "Otabek", line: "Did you spend some money? A lot?", line_uz: "Sen biroz pul sarfladingizmi? Ko'pmi?", recycled: ["Did", "you", "some", "money"], target: ["spend", "A lot"] , mastery_key: "U10_L02_D01_3", audio_id: "U10_L02_D01_L3" },
+        { speaker: "Madina", line: "No, not a lot. I spent a bit of money.", line_uz: "Yo'q, ko'p emas. Men ozgina pul sarfladim.", recycled: ["No", "not", "a lot", "I", "money"], target: ["spent", "a bit of"] , mastery_key: "U10_L02_D01_4", audio_id: "U10_L02_D01_L4" },
+        { speaker: "Otabek", line: "Me too. I received a few coins.", line_uz: "Men ham. Men bir nechta tanga oldim.", recycled: ["Me", "too", "I", "received", "a few"], target: ["coins"] , mastery_key: "U10_L02_D01_5", audio_id: "U10_L02_D01_L5" },
+        { speaker: "Madina", line: "Did you get the receipt?", line_uz: "Chek oldingizmi?", recycled: ["Did", "you", "get", "the"], target: ["receipt"] , mastery_key: "U10_L02_D01_6", audio_id: "U10_L02_D01_L6" },
+        { speaker: "Otabek", line: "Yes, I got the receipt. It's mine.", line_uz: "Ha, men chekni oldim. U meniki.", recycled: ["Yes", "I", "got", "the", "It's", "mine"], target: ["receipt"] , mastery_key: "U10_L02_D01_7", audio_id: "U10_L02_D01_L7" }
       ]
     },
 
@@ -169,14 +169,14 @@ window.VOCAB_CARDS_U10 = {
         notes: "U10 FOR phrases + U05/07 recycling"
       },
       lines: [
-        { speaker: "Gulnora", line: "Hi Sardor! How much is this bag?", line_uz: "Salom Sardor! Bu sumka qancha?", recycled: ["Hi", "How", "is", "this"], target: ["much", "bag"] },
-        { speaker: "Sardor", line: "This bag is for 50 dollars. Very expensive!", line_uz: "Bu sumka 50 dollarga. Juda qimmat!", recycled: ["This", "is", "dollars", "Very"], target: ["bag", "for", "expensive"] },
-        { speaker: "Gulnora", line: "Very expensive! I sold my old bag for 20 dollars.", line_uz: "Juda qimmat! Men eski sumkamni 20 dollarga sotdim.", recycled: ["Very", "I", "my", "old", "dollars"], target: ["expensive", "sold", "bag", "for"] },
-        { speaker: "Sardor", line: "Good! This work must be finished for Monday.", line_uz: "Yaxshi! Bu ish dushanba kuni uchun tugashi kerak.", recycled: ["Good", "This", "work", "must", "be", "finished", "Monday"], target: ["for"] },
-        { speaker: "Gulnora", line: "By the way, Spain is famous for food.", line_uz: "Aytgancha, Ispaniya ovqati bilan mashhur.", recycled: ["By the way", "Spain", "is", "food"], target: ["famous", "for"] },
-        { speaker: "Sardor", line: "Yes! And 'Sneakers' - this is the word for 'trainers'.", line_uz: "Ha! Va 'Sneakers' - bu 'trainers' uchun so'z.", recycled: ["Yes", "And", "this", "is", "the", "trainers"], target: ["word", "for"] },
-        { speaker: "Gulnora", line: "Right! I'll ask for a discount.", line_uz: "To'g'ri! Men chegirma uchun so'rayman.", recycled: ["Right", "I'll", "ask"], target: ["for", "discount"] },
-        { speaker: "Sardor", line: "Good idea! Get the receipt!", line_uz: "Yaxshi fikr! Chekni oling!", recycled: ["Good", "idea", "Get", "the"], target: ["receipt"] }
+        { speaker: "Gulnora", line: "Hi Sardor! How much is this bag?", line_uz: "Salom Sardor! Bu sumka qancha?", recycled: ["Hi", "How", "is", "this"], target: ["much", "bag"] , mastery_key: "U10_L03_D01_0", audio_id: "U10_L03_D01_L0" },
+        { speaker: "Sardor", line: "This bag is for 50 dollars. Very expensive!", line_uz: "Bu sumka 50 dollarga. Juda qimmat!", recycled: ["This", "is", "dollars", "Very"], target: ["bag", "for", "expensive"] , mastery_key: "U10_L03_D01_1", audio_id: "U10_L03_D01_L1" },
+        { speaker: "Gulnora", line: "Very expensive! I sold my old bag for 20 dollars.", line_uz: "Juda qimmat! Men eski sumkamni 20 dollarga sotdim.", recycled: ["Very", "I", "my", "old", "dollars"], target: ["expensive", "sold", "bag", "for"] , mastery_key: "U10_L03_D01_2", audio_id: "U10_L03_D01_L2" },
+        { speaker: "Sardor", line: "Good! This work must be finished for Monday.", line_uz: "Yaxshi! Bu ish dushanba kuni uchun tugashi kerak.", recycled: ["Good", "This", "work", "must", "be", "finished", "Monday"], target: ["for"] , mastery_key: "U10_L03_D01_3", audio_id: "U10_L03_D01_L3" },
+        { speaker: "Gulnora", line: "By the way, Spain is famous for food.", line_uz: "Aytgancha, Ispaniya ovqati bilan mashhur.", recycled: ["By the way", "Spain", "is", "food"], target: ["famous", "for"] , mastery_key: "U10_L03_D01_4", audio_id: "U10_L03_D01_L4" },
+        { speaker: "Sardor", line: "Yes! And 'Sneakers' - this is the word for 'trainers'.", line_uz: "Ha! Va 'Sneakers' - bu 'trainers' uchun so'z.", recycled: ["Yes", "And", "this", "is", "the", "trainers"], target: ["word", "for"] , mastery_key: "U10_L03_D01_5", audio_id: "U10_L03_D01_L5" },
+        { speaker: "Gulnora", line: "Right! I'll ask for a discount.", line_uz: "To'g'ri! Men chegirma uchun so'rayman.", recycled: ["Right", "I'll", "ask"], target: ["for", "discount"] , mastery_key: "U10_L03_D01_6", audio_id: "U10_L03_D01_L6" },
+        { speaker: "Sardor", line: "Good idea! Get the receipt!", line_uz: "Yaxshi fikr! Chekni oling!", recycled: ["Good", "idea", "Get", "the"], target: ["receipt"] , mastery_key: "U10_L03_D01_7", audio_id: "U10_L03_D01_L7" }
       ]
     }
   },
