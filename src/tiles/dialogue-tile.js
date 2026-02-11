@@ -1030,27 +1030,111 @@ export function renderLessonDialogueTile(lesson) {
     }
   });
 
-  // === G2: THINKING PRESSURE (Stage 3.1 Mastery only) ===
-  if (isMasteryStage) {
+  // ═══════════════════════════════════════════════════════════════
+  // G2: LINGUISTIC PRESSURE (Dialogue X.1 — Applies to ALL stages)
+  // ═══════════════════════════════════════════════════════════════
+  // Per Master Document: Every dialogue gets a Linguistic Pressure pass
+  // (Dialogue 1.1, 2.1, 3.1) — text vanishes 800ms after audio,
+  // 2s response deadline forces proceduralization.
+  {
     const tpSection = document.createElement("div");
-    tpSection.style.cssText = "margin-top: 20px; padding: 16px; background: #fff5f5; border-radius: 12px; border: 2px solid #fed7d7;";
-    
+    tpSection.className = "tp-section";
+    tpSection.style.cssText = `
+      margin-top: 28px; padding: 20px 24px; border-radius: 16px;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      box-shadow: 0 8px 32px rgba(15, 52, 96, 0.4), inset 0 1px 0 rgba(255,255,255,0.05);
+      position: relative; overflow: hidden;
+    `;
+
+    // Subtle animated border glow
+    const glowBorder = document.createElement("div");
+    glowBorder.style.cssText = `
+      position: absolute; inset: 0; border-radius: 16px;
+      border: 2px solid transparent;
+      background: linear-gradient(135deg, rgba(229,62,62,0.4), rgba(237,137,54,0.4), rgba(229,62,62,0.4)) border-box;
+      -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor; mask-composite: exclude;
+      pointer-events: none;
+    `;
+    tpSection.appendChild(glowBorder);
+
+    // Header with icon
     const tpHeader = document.createElement("div");
-    tpHeader.textContent = "\u23F1\u{FE0F} Mastery Challenge \u2014 Thinking Pressure Mode";
-    tpHeader.style.cssText = "font-weight: 700; color: #e53e3e; margin-bottom: 12px; font-size: 1.1rem;";
+    tpHeader.style.cssText = "display: flex; align-items: center; gap: 12px; margin-bottom: 14px; position: relative; z-index: 1;";
+    
+    const tpIcon = document.createElement("div");
+    tpIcon.innerHTML = `<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#f6ad55" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`;
+    tpIcon.style.cssText = "width: 44px; height: 44px; background: rgba(246,173,85,0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;";
+
+    const tpTitleBlock = document.createElement("div");
+    const tpLabel = document.createElement("div");
+    tpLabel.textContent = "LINGUISTIC PRESSURE";
+    tpLabel.style.cssText = "font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #f6ad55; margin-bottom: 2px;";
+    const tpTitle = document.createElement("div");
+    tpTitle.textContent = isMasteryStage ? "Mastery Challenge — Final Pass" : "Dialogue Replay — Pressure Mode";
+    tpTitle.style.cssText = "font-size: 16px; font-weight: 700; color: rgba(255,255,255,0.95);";
+    tpTitleBlock.appendChild(tpLabel);
+    tpTitleBlock.appendChild(tpTitle);
+    tpHeader.appendChild(tpIcon);
+    tpHeader.appendChild(tpTitleBlock);
     tpSection.appendChild(tpHeader);
-    
+
+    // Description
     const tpDesc = document.createElement("p");
-    tpDesc.textContent = "In this stage, text vanishes after 800ms. You have 2 seconds to produce each line from memory.";
-    tpDesc.style.cssText = "color: #742a2a; font-size: 0.9rem; margin-bottom: 12px;";
+    tpDesc.style.cssText = "color: rgba(255,255,255,0.6); font-size: 13px; line-height: 1.6; margin: 0 0 18px 0; position: relative; z-index: 1;";
+    tpDesc.innerHTML = `The same dialogue replays with audio. Text <strong style="color:#f6ad55">vanishes after 800ms</strong> — you have <strong style="color:#fc8181">2 seconds</strong> to produce each line from memory.`;
     tpSection.appendChild(tpDesc);
+
+    // Stats pills
+    const tpStats = document.createElement("div");
+    tpStats.style.cssText = "display: flex; gap: 10px; margin-bottom: 18px; position: relative; z-index: 1;";
     
+    const pill1 = document.createElement("div");
+    pill1.innerHTML = `<span style="color:rgba(255,255,255,0.4);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;">Vanish</span><br><span style="color:#f6ad55;font-weight:700;font-size:15px;">800ms</span>`;
+    pill1.style.cssText = "flex:1; text-align:center; padding:10px; background:rgba(255,255,255,0.05); border-radius:10px; border:1px solid rgba(255,255,255,0.08);";
+    
+    const pill2 = document.createElement("div");
+    pill2.innerHTML = `<span style="color:rgba(255,255,255,0.4);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;">Deadline</span><br><span style="color:#fc8181;font-weight:700;font-size:15px;">2.0s</span>`;
+    pill2.style.cssText = "flex:1; text-align:center; padding:10px; background:rgba(255,255,255,0.05); border-radius:10px; border:1px solid rgba(255,255,255,0.08);";
+    
+    const pill3 = document.createElement("div");
+    const turnCount = allTurnElements.length;
+    pill3.innerHTML = `<span style="color:rgba(255,255,255,0.4);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;">Lines</span><br><span style="color:#90cdf4;font-weight:700;font-size:15px;">${turnCount}</span>`;
+    pill3.style.cssText = "flex:1; text-align:center; padding:10px; background:rgba(255,255,255,0.05); border-radius:10px; border:1px solid rgba(255,255,255,0.08);";
+    
+    tpStats.appendChild(pill1);
+    tpStats.appendChild(pill2);
+    tpStats.appendChild(pill3);
+    tpSection.appendChild(tpStats);
+    
+    // Start button
     const startTPBtn = document.createElement("button");
-    startTPBtn.textContent = "\u{1F525} Start Thinking Pressure";
-    startTPBtn.style.cssText = "padding: 12px 24px; background: #e53e3e; color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; width: 100%;";
+    startTPBtn.className = "tp-start-btn";
+    startTPBtn.innerHTML = `<svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M8 5v14l11-7z"/></svg> Start Pressure Mode`;
+    startTPBtn.style.cssText = `
+      width: 100%; padding: 14px 24px;
+      background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+      color: white; border: none; border-radius: 12px;
+      font-size: 15px; font-weight: 700; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 15px rgba(229, 62, 62, 0.4);
+      position: relative; z-index: 1; letter-spacing: 0.3px;
+    `;
+    
+    startTPBtn.addEventListener("mouseenter", () => {
+      startTPBtn.style.transform = "translateY(-2px)";
+      startTPBtn.style.boxShadow = "0 8px 25px rgba(229, 62, 62, 0.5)";
+    });
+    startTPBtn.addEventListener("mouseleave", () => {
+      startTPBtn.style.transform = "translateY(0)";
+      startTPBtn.style.boxShadow = "0 4px 15px rgba(229, 62, 62, 0.4)";
+    });
     
     startTPBtn.addEventListener("click", () => {
-      startThinkingPressure(allTurnElements);
+      // Scroll to top of dialogue
+      wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setTimeout(() => startThinkingPressure(allTurnElements), 600);
     });
     
     tpSection.appendChild(startTPBtn);
@@ -1092,54 +1176,98 @@ async function startThinkingPressure(turnElements) {
   const VANISHING_CUE_MS = 800;
   const RESPONSE_DEADLINE = 2000;
   
+  // Dim all turns initially
+  turnElements.forEach(({ turnEl }) => {
+    turnEl.style.transition = 'all 0.4s ease';
+    turnEl.style.opacity = '0.35';
+    turnEl.style.filter = 'grayscale(0.5)';
+  });
+  
   for (let i = 0; i < turnElements.length; i++) {
     const { textEnEl, turnEl, turn } = turnElements[i];
     
     // Scroll into view
     turnEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
     
-    // Highlight current turn
-    turnEl.style.boxShadow = "0 4px 16px rgba(229,62,62,0.4)";
-    turnEl.style.transform = "scale(1.02)";
+    // Highlight current turn — bring to full visibility
+    turnEl.style.opacity = '1';
+    turnEl.style.filter = 'none';
+    turnEl.style.boxShadow = "0 0 0 3px rgba(229,62,62,0.5), 0 4px 20px rgba(229,62,62,0.3)";
+    turnEl.style.transform = "scale(1.03)";
+    
+    // Show turn counter overlay
+    const counterOverlay = document.createElement('div');
+    counterOverlay.style.cssText = `
+      position: absolute; top: -10px; right: -10px; width: 28px; height: 28px;
+      background: linear-gradient(135deg, #e53e3e, #c53030); color: white;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 700; z-index: 5;
+      box-shadow: 0 2px 8px rgba(229,62,62,0.5);
+    `;
+    counterOverlay.textContent = `${i + 1}`;
+    turnEl.appendChild(counterOverlay);
     
     // Play audio if available
     if (turn.audio_id && window.dialogueAudioPlayer) {
       const unitFolder = 'unit_' + (typeof getCurrentUnitId === 'function' ? getCurrentUnitId() : 'U01').toLowerCase().slice(1);
       const audioPath = `./audio_assets/${unitFolder}/lesson_dialogues/${turn.audio_id}.mp3`;
-      try { window.dialogueAudioPlayer.play(audioPath, /** @type {HTMLButtonElement} */ (turnEl.querySelector('button') || document.createElement('button'))); } catch (e) { /* fallback */ }
+      try { 
+        window.dialogueAudioPlayer.play(audioPath, /** @type {HTMLButtonElement} */ (turnEl.querySelector('.dlg-audio-btn') || document.createElement('button'))); 
+      } catch (e) { /* fallback */ }
     }
     
     // Vanish text after 800ms
     await new Promise(r => setTimeout(r, VANISHING_CUE_MS));
-    textEnEl.style.transition = 'opacity 0.3s ease';
+    textEnEl.style.transition = 'opacity 0.4s ease-out, filter 0.4s ease-out';
     textEnEl.style.opacity = '0';
+    textEnEl.style.filter = 'blur(4px)';
     
-    // Show timer bar
+    // Show timer bar — gradient with glow
     const timerBar = document.createElement('div');
     timerBar.className = 'thinking-timer-bar';
-    timerBar.style.width = '100%';
+    timerBar.style.cssText = `
+      width: 100%; height: 4px; margin-top: 8px; border-radius: 2px;
+      background: linear-gradient(90deg, #e53e3e, #f6ad55);
+      box-shadow: 0 0 8px rgba(229,62,62,0.4);
+      transition: width ${RESPONSE_DEADLINE}ms linear;
+    `;
     turnEl.appendChild(timerBar);
     
-    // Start 2s countdown
+    // Start countdown (next frame so transition triggers)
     requestAnimationFrame(() => {
-      timerBar.style.transition = `width ${RESPONSE_DEADLINE}ms linear`;
-      timerBar.style.width = '0';
+      requestAnimationFrame(() => {
+        timerBar.style.width = '0';
+        timerBar.style.background = 'linear-gradient(90deg, #fc8181, #feb2b2)';
+      });
     });
     
     // Wait for deadline
     await new Promise(r => setTimeout(r, RESPONSE_DEADLINE));
     
-    // Restore text
+    // Restore text with a reveal animation
+    textEnEl.style.transition = 'opacity 0.3s ease-in, filter 0.3s ease-in';
     textEnEl.style.opacity = '1';
+    textEnEl.style.filter = 'none';
     timerBar.remove();
+    counterOverlay.remove();
     
-    // Reset turn style
+    // Mark as completed — keep visible but subtle
     turnEl.style.boxShadow = "none";
     turnEl.style.transform = "scale(1)";
+    turnEl.style.opacity = '0.7';
+    turnEl.style.filter = 'none';
     
     // Pause between turns
     await new Promise(r => setTimeout(r, 500));
   }
+  
+  // Restore all turns to full visibility at end
+  turnElements.forEach(({ turnEl }) => {
+    turnEl.style.opacity = '1';
+    turnEl.style.filter = 'none';
+    turnEl.style.boxShadow = '';
+    turnEl.style.transform = '';
+  });
 }
 
 
