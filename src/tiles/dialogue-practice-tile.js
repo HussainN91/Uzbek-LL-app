@@ -179,40 +179,39 @@ export function renderDialogueTile(dialogueContent, lesson) {
         turnEl.appendChild(speaker);
         turnEl.appendChild(text);
         
-        // Add audio button if audio_id is provided
+        // ═══ LUXURIOUS Per-Line Audio Button ═══
         if (turn.audio_id) {
           const audioBtn = document.createElement("button");
-          audioBtn.textContent = "🔊";
-          audioBtn.className = "dialogue-audio-btn";
-          audioBtn.style.cssText = "margin-left: 10px; padding: 6px 10px; background: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; transition: background 0.3s;";
+          audioBtn.className = "dlg-audio-btn dlg-audio-btn--light";
+          audioBtn.title = "Listen";
+          audioBtn.innerHTML = `<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8.5v7a4.49 4.49 0 0 0 2.5-3.5zM14 3.23v2.06a7.007 7.007 0 0 1 0 13.42v2.06A9.013 9.013 0 0 0 14 3.23z"/></svg><span class="dlg-audio-waves"><span></span><span></span><span></span><span></span><span></span></span>`;
           
           audioBtn.addEventListener("click", () => {
             const player = getDialogueAudioPlayer();
             
-            // Check if this audio is currently playing
-            if (player && player.currentButton === audioBtn) {
-              // Toggle pause/play
-              player.toggle();
-            } else {
-              // Start new audio
-              const unitFolder = 'unit_' + getCurrentUnitId().toLowerCase().slice(1);
-              const audioPath = `./audio_assets/${unitFolder}/lesson_dialogues/${turn.audio_id}.mp3`;
-              
-              if (player) {
-                player.play(audioPath, audioBtn).catch(e => {
-                  console.error("Error playing audio:", e);
-                  alert("Could not play audio file: " + audioPath);
-                });
-              }
+            if (audioBtn.classList.contains('is-playing')) {
+              if (player) player.toggle();
+              audioBtn.classList.remove('is-playing');
+              return;
             }
-          });
-          
-          audioBtn.addEventListener("mouseover", () => {
-            audioBtn.style.background = "#2980b9";
-          });
-          
-          audioBtn.addEventListener("mouseout", () => {
-            audioBtn.style.background = "#3498db";
+            
+            // Reset all other buttons in this dialogue
+            turnEl.parentElement?.querySelectorAll('.dlg-audio-btn').forEach(b => b.classList.remove('is-playing', 'is-loading'));
+            
+            audioBtn.classList.add('is-loading');
+            const unitFolder = 'unit_' + getCurrentUnitId().toLowerCase().slice(1);
+            const audioPath = `./audio_assets/${unitFolder}/lesson_dialogues/${turn.audio_id}.mp3`;
+            
+            if (player) {
+              player.play(audioPath, audioBtn).then(() => {
+                audioBtn.classList.remove('is-playing');
+              }).catch(e => {
+                console.error("Error playing audio:", e);
+                audioBtn.classList.remove('is-loading', 'is-playing');
+              });
+              audioBtn.classList.remove('is-loading');
+              audioBtn.classList.add('is-playing');
+            }
           });
           
           turnEl.appendChild(audioBtn);

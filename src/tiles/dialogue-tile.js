@@ -629,36 +629,37 @@ export function renderLessonDialogueTile(lesson) {
     // Chat dialogue box
     const dialogueBox = document.createElement("div");
     dialogueBox.className = "dialogue-box chat-style";
-    dialogueBox.style.cssText = "background: #fafbfc; border-radius: 20px; padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); position: relative; overflow: hidden;";
+    dialogueBox.style.cssText = "background: #fafbfc; border-radius: 20px; padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); position: relative; overflow: hidden; padding-top: 60px;";
     
-    // Play All button
+    // ═══ LUXURIOUS Play All Button ═══
     const playAllBtn = document.createElement("button");
-    playAllBtn.className = "play-all-btn tl-uz";
-    playAllBtn.innerHTML = "\u25B6\u{FE0F} Hammasini tinglash";
+    playAllBtn.className = "dlg-play-all tl-uz";
+    playAllBtn.innerHTML = `<span class="dlg-play-all-icon">▶</span><span class="dlg-play-all-waves"><span></span><span></span><span></span></span> <span data-label>Play All</span>`;
     playAllBtn.dataset.translation = "Play All";
-    playAllBtn.style.cssText = "position: absolute; top: 12px; right: 12px; padding: 8px 16px; background: #5a67d8; color: white; border: none; border-radius: 20px; font-size: 13px; cursor: pointer; z-index: 10; box-shadow: 0 2px 8px rgba(90,103,216,0.4);";
     
     let isPlayingAll = false;
     playAllBtn.addEventListener("click", async () => {
       if (isPlayingAll) {
         isPlayingAll = false;
-        playAllBtn.innerHTML = "\u25B6\u{FE0F} Hammasini tinglash";
+        playAllBtn.classList.remove('is-playing');
+        playAllBtn.querySelector('[data-label]').textContent = 'Play All';
         dialogueBox.querySelectorAll(".dialogue-turn").forEach(t => {
-          if (t instanceof HTMLElement) { t.style.transform = "scale(1)"; t.style.boxShadow = "none"; }
+          if (t instanceof HTMLElement) { t.classList.remove('dlg-active-turn'); }
         });
         return;
       }
       
       isPlayingAll = true;
-      playAllBtn.innerHTML = "\u23F9\u{FE0F} To\u2018xtatish";
+      playAllBtn.classList.add('is-playing');
+      playAllBtn.querySelector('[data-label]').textContent = 'Stop';
       
       const turns = dialogue.turns || [];
       for (let i = 0; i < turns.length && isPlayingAll; i++) {
         const turn = turns[i];
         dialogueBox.querySelectorAll(".dialogue-turn").forEach((t, idx) => {
           if (t instanceof HTMLElement) {
-            t.style.transform = idx === i ? "scale(1.02)" : "scale(1)";
-            t.style.boxShadow = idx === i ? "0 4px 16px rgba(90,103,216,0.3)" : "none";
+            if (idx === i) { t.classList.add('dlg-active-turn'); }
+            else { t.classList.remove('dlg-active-turn'); }
           }
         });
         
@@ -667,9 +668,10 @@ export function renderLessonDialogueTile(lesson) {
       }
       
       isPlayingAll = false;
-      playAllBtn.innerHTML = "\u25B6\u{FE0F} Hammasini tinglash";
+      playAllBtn.classList.remove('is-playing');
+      playAllBtn.querySelector('[data-label]').textContent = 'Play All';
       dialogueBox.querySelectorAll(".dialogue-turn").forEach(t => {
-        if (t instanceof HTMLElement) { t.style.transform = "scale(1)"; t.style.boxShadow = "none"; }
+        if (t instanceof HTMLElement) { t.classList.remove('dlg-active-turn'); }
       });
     });
     
@@ -715,33 +717,43 @@ export function renderLessonDialogueTile(lesson) {
         speakerRow.appendChild(speakerName);
         speakerRow.appendChild(masteryBadge);
         
-        // Audio button
+        // ═══ LUXURIOUS Per-Line Audio Button ═══
         if (turn.audio_id) {
           const audioBtn = document.createElement("button");
-          audioBtn.innerHTML = "\u{1F50A}";
-          audioBtn.className = "dialogue-audio-btn";
-          audioBtn.title = "Tinglash / Listen";
-          audioBtn.style.cssText = `width: 32px; height: 32px; background: rgba(255,255,255,0.25); color: white; border: 2px solid rgba(255,255,255,0.4); border-radius: 50%; cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center; transition: all 0.2s ease; flex-shrink: 0;`;
-          
-          audioBtn.addEventListener("mouseenter", () => { audioBtn.style.background = "rgba(255,255,255,0.4)"; audioBtn.style.transform = "scale(1.1)"; });
-          audioBtn.addEventListener("mouseleave", () => { audioBtn.style.background = "rgba(255,255,255,0.25)"; audioBtn.style.transform = "scale(1)"; });
+          audioBtn.className = "dlg-audio-btn";
+          audioBtn.title = "Listen";
+          audioBtn.innerHTML = `<svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8.5v7a4.49 4.49 0 0 0 2.5-3.5zM14 3.23v2.06a7.007 7.007 0 0 1 0 13.42v2.06A9.013 9.013 0 0 0 14 3.23z"/></svg><span class="dlg-audio-waves"><span></span><span></span><span></span><span></span><span></span></span>`;
 
           const CURRENT_UNIT_ID = getCurrentUnitId();
           const turnTextForAudio = turn.text || turn.text_en || '';
+          
           audioBtn.addEventListener("click", (e) => {
             e.stopPropagation();
-            if (window.dialogueAudioPlayer && window.dialogueAudioPlayer.currentButton === audioBtn) {
-              window.dialogueAudioPlayer.toggle();
-            } else {
-              const unitFolder = 'unit_' + CURRENT_UNIT_ID.toLowerCase().slice(1);
-              const audioPath = `./audio_assets/${unitFolder}/lesson_dialogues/${turn.audio_id}.mp3`;
-              if (window.dialogueAudioPlayer) {
-                window.dialogueAudioPlayer.play(audioPath, audioBtn).catch(() => {
-                  if (window.playExerciseAudio) window.playExerciseAudio(turnTextForAudio, "neutral_female_slow");
-                  audioBtn.innerHTML = "\u{1F50A}";
-                  audioBtn.style.background = "rgba(255,255,255,0.25)";
-                });
-              }
+            
+            // If this button is already playing, toggle pause
+            if (audioBtn.classList.contains('is-playing')) {
+              if (window.dialogueAudioPlayer) window.dialogueAudioPlayer.toggle();
+              audioBtn.classList.remove('is-playing');
+              return;
+            }
+            
+            // Reset all other per-line buttons in this dialogue
+            dialogueBox.querySelectorAll('.dlg-audio-btn').forEach(b => b.classList.remove('is-playing', 'is-loading'));
+            
+            audioBtn.classList.add('is-loading');
+            const unitFolder = 'unit_' + CURRENT_UNIT_ID.toLowerCase().slice(1);
+            const audioPath = `./audio_assets/${unitFolder}/lesson_dialogues/${turn.audio_id}.mp3`;
+            
+            if (window.dialogueAudioPlayer) {
+              window.dialogueAudioPlayer.play(audioPath, audioBtn).then(() => {
+                audioBtn.classList.remove('is-playing');
+              }).catch(() => {
+                if (window.playExerciseAudio) window.playExerciseAudio(turnTextForAudio, "neutral_female_slow");
+                audioBtn.classList.remove('is-loading', 'is-playing');
+              });
+              // Mark as playing once audio starts
+              audioBtn.classList.remove('is-loading');
+              audioBtn.classList.add('is-playing');
             }
           });
           

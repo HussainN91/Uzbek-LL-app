@@ -697,66 +697,98 @@
     });
   }
 
-  // Render audio play button — English only
+  // ═══════════════════════════════════════════════════════════════
+  // LUXURIOUS AUDIO PLAYER — English Only
+  // ═══════════════════════════════════════════════════════════════
+
   function renderAudioButton(slide) {
     const audioSrc = slide?.audio;
     const enText = slide?.en_canonical || slide?.reproduction?.en_canonical || '';
     if (!audioSrc && !enText) return '';
 
-    const btnStyle = `
-      padding: 10px 24px;
-      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-      border: 1px solid #2196f3;
-      border-radius: 24px;
-      font-size: 14px;
-      cursor: pointer;
-      color: #1565c0;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.2s ease;
-    `.replace(/\n/g, '');
+    const escapedEnText = enText.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+    const displayText = enText.length > 40 ? enText.substring(0, 37) + '…' : enText;
 
-    // Playback: try MP3 file first, fall back to browser TTS
-    const playFn = `window.__vcPlayAudio = window.__vcPlayAudio || function(src, text, lang) {
-      var btn = event.currentTarget;
-      var origHTML = btn.innerHTML;
-      btn.innerHTML = '⏳';
-      btn.disabled = true;
+    // SVG icons
+    const playSVG = `<svg class="vc-audio-icon" viewBox="0 0 24 24" width="22" height="22" fill="white"><path d="M8 5v14l11-7z"/></svg>`;
+    const pauseSVG = `<svg class="vc-audio-icon" viewBox="0 0 24 24" width="22" height="22" fill="white"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>`;
+
+    // Playback logic — injected once
+    const playFn = `window.__vcAudioPlay = window.__vcAudioPlay || function(src, text, lang) {
+      var player = document.querySelector('.vc-audio-player');
+      var btn = player ? player.querySelector('.vc-audio-play-btn') : null;
+      if (!btn) return;
+
+      // If already playing, toggle pause/resume
+      if (window.__vcAudioInstance && !window.__vcAudioInstance.paused) {
+        window.__vcAudioInstance.pause();
+        btn.classList.remove('is-playing', 'is-loading');
+        player.classList.remove('is-playing');
+        btn.innerHTML = '${playSVG.replace(/'/g, "\\'")}';
+        return;
+      }
+
+      // Cleanup previous
+      if (window.__vcAudioInstance) { try { window.__vcAudioInstance.pause(); } catch(e){} }
+
+      btn.classList.add('is-loading');
+      btn.classList.remove('is-playing');
+      btn.innerHTML = '';
+      player.classList.remove('is-playing');
+
+      function onPlay(audio) {
+        btn.classList.remove('is-loading');
+        btn.classList.add('is-playing');
+        player.classList.add('is-playing');
+        btn.innerHTML = '${pauseSVG.replace(/'/g, "\\'")}';
+        audio.onended = function() {
+          btn.classList.remove('is-playing');
+          player.classList.remove('is-playing');
+          btn.innerHTML = '${playSVG.replace(/'/g, "\\'")}';
+          window.__vcAudioInstance = null;
+        };
+      }
+
+      function fallbackTTS() {
+        if (text && window.speechSynthesis) {
+          var u = new SpeechSynthesisUtterance(text);
+          u.lang = lang || 'en-US';
+          u.rate = 0.85;
+          onPlay({ onended: null, pause: function(){}, paused: true });
+          u.onend = function() {
+            btn.classList.remove('is-playing');
+            player.classList.remove('is-playing');
+            btn.innerHTML = '${playSVG.replace(/'/g, "\\'")}';
+          };
+          window.speechSynthesis.speak(u);
+          window.__vcAudioInstance = { pause: function(){ window.speechSynthesis.cancel(); }, paused: false };
+        } else {
+          btn.classList.remove('is-loading');
+          btn.innerHTML = '${playSVG.replace(/'/g, "\\'")}';
+        }
+      }
+
       if (src) {
         var a = new Audio(src);
-        a.play().then(function() {
-          btn.innerHTML = '⏸️';
-          a.onended = function() { btn.innerHTML = origHTML; btn.disabled = false; };
-        }).catch(function() {
-          if (text && window.speechSynthesis) {
-            var u = new SpeechSynthesisUtterance(text);
-            u.lang = lang || 'en-US';
-            u.rate = 0.85;
-            u.onend = function() { btn.innerHTML = origHTML; btn.disabled = false; };
-            window.speechSynthesis.speak(u);
-            btn.innerHTML = '🔊';
-          } else { btn.innerHTML = origHTML; btn.disabled = false; }
-        });
-      } else if (text && window.speechSynthesis) {
-        var u = new SpeechSynthesisUtterance(text);
-        u.lang = lang || 'en-US';
-        u.rate = 0.85;
-        u.onend = function() { btn.innerHTML = origHTML; btn.disabled = false; };
-        window.speechSynthesis.speak(u);
-        btn.innerHTML = '🔊';
-      } else { btn.innerHTML = origHTML; btn.disabled = false; }
+        window.__vcAudioInstance = a;
+        a.play().then(function() { onPlay(a); }).catch(function() { fallbackTTS(); });
+      } else {
+        fallbackTTS();
+      }
     };`;
 
-    const escapedEnText = enText.replace(/'/g, "\\'").replace(/"/g, '&quot;');
-
     return `
-      <div style="text-align: center; margin-top: 12px;">
-        <button onclick="(function(){${playFn}window.__vcPlayAudio('${audioSrc || ''}','${escapedEnText}','en-US');})()" 
-          style="${btnStyle}" title="Listen in English">
-          🔊 Listen
+      <div class="vc-audio-player" onclick="(function(){${playFn}window.__vcAudioPlay('${audioSrc || ''}','${escapedEnText}','en-US');})()">
+        <button type="button" class="vc-audio-play-btn" title="Listen in English">
+          ${playSVG}
         </button>
+        <div class="vc-audio-info">
+          <div class="vc-audio-label">Listen · English</div>
+          <div class="vc-audio-text">${displayText || 'Audio'}</div>
+        </div>
+        <div class="vc-audio-waves">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
       </div>
     `;
   }

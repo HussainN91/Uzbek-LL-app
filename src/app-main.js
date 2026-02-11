@@ -162,6 +162,15 @@ function createDialogueAudioPlayer() {
   let currentAudio = null;
   let currentButton = null;
   let isPlaying = false;
+
+  // SVG icons for the dialogue buttons
+  const speakerSVG = '<svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8.5v7a4.49 4.49 0 0 0 2.5-3.5zM14 3.23v2.06a7.007 7.007 0 0 1 0 13.42v2.06A9.013 9.013 0 0 0 14 3.23z"/></svg>';
+  const waveSpans = '<span class="dlg-audio-waves"><span></span><span></span><span></span><span></span><span></span></span>';
+
+  function resetButton(btn) {
+    if (!btn) return;
+    btn.classList.remove('is-playing', 'is-loading');
+  }
   
   return {
     get currentButton() { return currentButton; },
@@ -177,20 +186,23 @@ function createDialogueAudioPlayer() {
       return new Promise((resolve, reject) => {
         currentAudio.onended = () => {
           isPlaying = false;
-          if (button) button.innerHTML = "🔊";
+          resetButton(button);
           resolve();
         };
         
         currentAudio.onerror = (e) => {
           isPlaying = false;
-          if (button) button.innerHTML = "🔊";
+          resetButton(button);
           reject(e);
         };
         
         currentAudio.play()
           .then(() => {
             isPlaying = true;
-            if (button) button.innerHTML = "⏸️";
+            if (button) {
+              button.classList.remove('is-loading');
+              button.classList.add('is-playing');
+            }
           })
           .catch(reject);
       });
@@ -202,11 +214,11 @@ function createDialogueAudioPlayer() {
       if (isPlaying) {
         currentAudio.pause();
         isPlaying = false;
-        if (currentButton) currentButton.innerHTML = "▶️";
+        if (currentButton) currentButton.classList.remove('is-playing');
       } else {
         currentAudio.play();
         isPlaying = true;
-        if (currentButton) currentButton.innerHTML = "⏸️";
+        if (currentButton) currentButton.classList.add('is-playing');
       }
     },
     
@@ -216,10 +228,8 @@ function createDialogueAudioPlayer() {
         currentAudio.currentTime = 0;
         currentAudio = null;
       }
-      if (currentButton) {
-        currentButton.innerHTML = "🔊";
-        currentButton = null;
-      }
+      resetButton(currentButton);
+      currentButton = null;
       isPlaying = false;
     }
   };
