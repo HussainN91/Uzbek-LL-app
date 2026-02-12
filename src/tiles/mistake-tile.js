@@ -108,7 +108,8 @@ export function renderMistakeTile(lesson) {
   clearTileContainer();
 
   // Enforce LISTEN_WRITE completion before MISTAKE
-  if (!window.lastListenWritePassed) {
+  // Teacher mode bypasses ALL gates for absolute freedom
+  if (!window.lastListenWritePassed && !window.TEACHER_MODE) {
     const title = document.createElement("div");
     title.className = "tile-title";
     title.textContent = "Tile 9 — Mistake Awareness (Locked)";

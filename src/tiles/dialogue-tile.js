@@ -735,7 +735,8 @@ export function renderLessonDialogueTile(lesson) {
         speakerRow.appendChild(masteryBadge);
         
         // ═══ LUXURIOUS Per-Line Audio Button ═══
-        if (turn.audio_id) {
+        console.log('[Audio] Dialogue turn:', { speaker: turn.speaker, audio_id: turn.audio_id, hasText: !!(turn.text || turn.text_en) });
+        if (turn.audio_id || turn.text || turn.text_en) {
           const audioBtn = document.createElement("button");
           audioBtn.className = "dlg-audio-btn";
           audioBtn.title = "Listen";
@@ -760,6 +761,24 @@ export function renderLessonDialogueTile(lesson) {
             audioBtn.classList.add('is-loading');
             const CURRENT_UNIT_ID = typeof getCurrentUnitId === 'function' ? getCurrentUnitId() : 'U01';
             const unitFolder = 'unit_' + CURRENT_UNIT_ID.toLowerCase().slice(1);
+
+            // TTS-only fallback when no audio_id
+            if (!turn.audio_id) {
+              console.log('[Audio] No audio_id — using TTS for:', turnTextForAudio.substring(0, 50));
+              audioBtn.classList.remove('is-loading');
+              if (turnTextForAudio && window.speechSynthesis) {
+                const u = new SpeechSynthesisUtterance(turnTextForAudio);
+                u.lang = 'en-US';
+                u.rate = 0.85;
+                audioBtn.classList.add('is-playing');
+                u.onend = () => { audioBtn.classList.remove('is-playing'); };
+                window.speechSynthesis.speak(u);
+              } else if (window.playExerciseAudio) {
+                window.playExerciseAudio(turnTextForAudio, "neutral_female_slow");
+              }
+              return;
+            }
+
             // Use absolute path /audio_assets/
             const audioPath = `/audio_assets/${unitFolder}/lesson_dialogues/${turn.audio_id}.mp3`;
             console.log('Playing button audio:', audioPath);
@@ -770,16 +789,34 @@ export function renderLessonDialogueTile(lesson) {
               }).catch((e) => {
                 console.error('Button audio failed:', e);
                 audioBtn.classList.remove('is-loading');
-                // Fallback to TTS?
-                if (window.playExerciseAudio) window.playExerciseAudio(turnTextForAudio, "neutral_female_slow");
+                // Fallback to TTS
+                if (turnTextForAudio && window.speechSynthesis) {
+                  const u = new SpeechSynthesisUtterance(turnTextForAudio);
+                  u.lang = 'en-US';
+                  u.rate = 0.85;
+                  audioBtn.classList.add('is-playing');
+                  audioBtn.classList.remove('is-loading');
+                  u.onend = () => { audioBtn.classList.remove('is-playing'); };
+                  window.speechSynthesis.speak(u);
+                } else if (window.playExerciseAudio) {
+                  window.playExerciseAudio(turnTextForAudio, "neutral_female_slow");
+                }
               });
             } else {
               // Fallback to simple audio if player not found
               const audio = new Audio(audioPath);
               audio.onended = () => { audioBtn.classList.remove('is-playing', 'is-loading'); };
               audio.play().catch(e => {
-                console.error('Simple audio failed:', e);
+                console.error('Simple audio failed, falling back to TTS:', e);
                 audioBtn.classList.remove('is-playing', 'is-loading');
+                if (turnTextForAudio && window.speechSynthesis) {
+                  const u = new SpeechSynthesisUtterance(turnTextForAudio);
+                  u.lang = 'en-US';
+                  u.rate = 0.85;
+                  audioBtn.classList.add('is-playing');
+                  u.onend = () => { audioBtn.classList.remove('is-playing'); };
+                  window.speechSynthesis.speak(u);
+                }
               });
               audioBtn.classList.add('is-playing');
               audioBtn.classList.remove('is-loading');

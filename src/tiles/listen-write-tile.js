@@ -97,7 +97,8 @@ export function renderListenWriteTile(lesson) {
   const tileContainer = getTileContainer();
 
   // Enforce WRITING tile completion before allowing Listen & Write
-  if (!window.lastWritingPassed) {
+  // Teacher mode bypasses ALL gates for absolute freedom
+  if (!window.lastWritingPassed && !window.TEACHER_MODE) {
     const title = document.createElement("div");
     title.className = "tile-title";
     title.textContent = "Tile 8 — Listen & Write (Locked)";

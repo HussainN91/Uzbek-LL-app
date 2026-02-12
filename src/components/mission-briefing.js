@@ -449,9 +449,9 @@ export async function showMissionBriefing(lesson) {
     });
     
     const exerciseArea = overlay.querySelector('#mission-exercise-area');
-    const progressFill = overlay.querySelector('#mission-progress');
-    const feedback = overlay.querySelector('#mission-feedback');
-    const checkBtn = overlay.querySelector('#mission-check-btn');
+    const progressFill = /** @type {HTMLElement} */ (overlay.querySelector('#mission-progress'));
+    const feedback = /** @type {HTMLElement} */ (overlay.querySelector('#mission-feedback'));
+    const checkBtn = /** @type {HTMLButtonElement} */ (overlay.querySelector('#mission-check-btn'));
     const hintBtn = overlay.querySelector('#mission-hint-btn');
     const skipBtn = overlay.querySelector('.mission-skip-btn');
     
@@ -516,7 +516,7 @@ export async function showMissionBriefing(lesson) {
         chunk.addEventListener('dragstart', (e) => {
           draggedChunk = chunk;
           chunk.classList.add('dragging');
-          e.dataTransfer.effectAllowed = 'move';
+          /** @type {DragEvent} */ (e).dataTransfer.effectAllowed = 'move';
         });
         
         chunk.addEventListener('dragend', () => {
@@ -569,10 +569,11 @@ export async function showMissionBriefing(lesson) {
       
       // Click on drop zone to return chunks
       dropZone.addEventListener('click', (e) => {
-        if (e.target.classList.contains('mission-chunk')) {
-          chunkPool.appendChild(e.target);
-          e.target.classList.remove('placed');
-          placedChunks = placedChunks.filter(c => c !== e.target);
+        const target = /** @type {HTMLElement} */ (e.target);
+        if (target.classList.contains('mission-chunk')) {
+          chunkPool.appendChild(target);
+          target.classList.remove('placed');
+          placedChunks = placedChunks.filter(c => c !== target);
           updateCheckButton();
           
           if (placedChunks.length === 0) {
@@ -683,7 +684,7 @@ export async function showMissionBriefing(lesson) {
     document.addEventListener('keydown', handleKeydown);
     
     // Clean up handler
-    overlay._cleanup = () => {
+    /** @type {any} */ (overlay)._cleanup = () => {
       document.removeEventListener('keydown', handleKeydown);
     };
     

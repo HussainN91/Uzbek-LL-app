@@ -274,6 +274,26 @@ export function awardPoints(points, reason, tile) {
 }
 
 /**
+ * Award XP for gamification (levels, badges, streaks)
+ * @param {number} xp - XP amount
+ * @param {string} [reason] - Reason for display
+ */
+export function awardXP(xp, reason) {
+  if (typeof window.StateActions?.awardXP === 'function') {
+    return window.StateActions.awardXP(xp, reason);
+  }
+}
+
+/**
+ * Update the daily streak counter on lesson completion
+ */
+export function updateStreak() {
+  if (typeof window.StateActions?.updateStreak === 'function') {
+    window.StateActions.updateStreak();
+  }
+}
+
+/**
  * Add to the max score for the session
  * @param {number} points - Points to add to max
  */

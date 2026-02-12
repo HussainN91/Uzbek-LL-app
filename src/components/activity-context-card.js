@@ -352,7 +352,7 @@ export function showActivityContextCard(targetTile, options = {}) {
     injectActivityCardCSS();
 
     const meta = ACTIVITY_METADATA[targetTile] || ACTIVITY_METADATA[STATES.INTRO];
-    const currentIndex = TILE_ORDER.indexOf(targetTile);
+    const currentIndex = TILE_ORDER.indexOf(/** @type {import('../types/state.d.ts').TileState} */ (targetTile));
     const totalSteps = TILE_ORDER.length - 1; // Exclude DONE from count
 
     // Create overlay

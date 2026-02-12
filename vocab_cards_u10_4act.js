@@ -715,5 +715,41 @@ window.VOCAB_CARDS_U10 = {
         }
       ]
     }
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // HELPER METHODS
+  // ═══════════════════════════════════════════════════════════════════════════
+  getCardsForLesson: function(lessonId) {
+    const lesson = this.lessons?.[lessonId];
+    return lesson?.items || [];
+  },
+
+  getLesson: function(lessonId) {
+    return this.lessons?.[lessonId] || null;
+  },
+
+  getDialogue: function(dialogueId) {
+    return this.dialogues?.[dialogueId] || null;
+  },
+
+  getCardById: function(cardId) {
+    for (const lessonKey in this.lessons) {
+      const lesson = this.lessons[lessonKey];
+      for (const item of lesson.items) {
+        if (item.id === cardId) {
+          return item;
+        }
+      }
+    }
+    return null;
   }
 };
+
+// Freeze object
+Object.freeze(window.VOCAB_CARDS_U10);
+
+// Export for Node.js
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = window.VOCAB_CARDS_U10;
+}

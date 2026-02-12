@@ -19,8 +19,5 @@ Desktop.ini
 
 # Misc
 *.log
-# Audio assets (generated — use scripts/generate_audio.py to rebuild)
-public/audio_assets/
-
 # GCP credentials
 gcp-key.json

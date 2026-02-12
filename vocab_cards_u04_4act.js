@@ -934,6 +934,34 @@ window.VOCAB_CARDS_U04 = {
         affirmative: ["I was happy", "We were at school", "It was peaceful"],
         negative: ["I wasn't happy", "He wasn't there", "We weren't tired"],
         question: ["Were you tired?", "Where was Ali?", "Why were you angry?"]
+    },
+
+    // ═══════════════════════════════════════════════════════════════════════════
+    // HELPER METHODS
+    // ═══════════════════════════════════════════════════════════════════════════
+    getCardsForLesson: function(lessonId) {
+        const lesson = this.lessons?.[lessonId];
+        return lesson?.items || [];
+    },
+
+    getLesson: function(lessonId) {
+        return this.lessons?.[lessonId] || null;
+    },
+
+    getDialogue: function(dialogueId) {
+        return this.dialogues?.[dialogueId] || null;
+    },
+
+    getCardById: function(cardId) {
+        for (const lessonKey in this.lessons) {
+            const lesson = this.lessons[lessonKey];
+            for (const item of lesson.items) {
+                if (item.id === cardId) {
+                    return item;
+                }
+            }
+        }
+        return null;
     }
 };
 

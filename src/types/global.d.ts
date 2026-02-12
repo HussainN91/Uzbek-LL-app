@@ -359,6 +359,10 @@ declare global {
     /** Tile transition with context card */
     transitionToTile?: (newState: string, options?: any) => Promise<void>;
     
+    /** Class Profile (Teacher Mode only) */
+    openClassProfile?: () => void;
+    closeClassProfile?: () => void;
+    
     // ============================
     // Translation Data
     // ============================

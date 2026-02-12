@@ -281,6 +281,8 @@
     const polarQ = pres.uz_polar_question || '';
     const mirrorA = pres.uz_mirror_answer || '';
     const hybridA = pres.hybrid_answer || mirrorA;
+
+    console.log('[Audio] renderPresentationStage:', { hasAudio: !!slide?.audio, enCanonical: enCanonical?.substring(0, 50), slidePhase: slide?.phase });
     
     container.innerHTML = `
       <div style="display:flex;flex-direction:column;gap:14px;align-items:center;">
@@ -708,8 +710,19 @@
       audioSrc = audioSrc.substring(1); // ./audio -> /audio
     }
 
-    const enText = slide?.en_canonical || slide?.reproduction?.en_canonical || '';
-    if (!audioSrc && !enText) return '';
+    // Multiple fallbacks for English text (TTS needs this even without MP3)
+    const enText = slide?.en_canonical
+      || slide?.reproduction?.en_canonical
+      || slide?.production?.en_target
+      || currentCard?.en
+      || '';
+
+    console.log('[Audio] renderAudioButton called:', { audioSrc, enText: enText?.substring(0, 50), slideKeys: slide ? Object.keys(slide) : 'null' });
+
+    if (!audioSrc && !enText) {
+      console.warn('[Audio] ⚠ No audio source and no English text — audio button HIDDEN');
+      return '';
+    }
 
     const escapedEnText = enText.replace(/'/g, "\\'").replace(/"/g, '&quot;');
     const displayText = enText.length > 40 ? enText.substring(0, 37) + '…' : enText;
@@ -1934,6 +1947,45 @@
   window.markVocabComplete = markVocabComplete;
   window.flipPracticeCard = flipPracticeCard;
   // window.removeJumbleChunk is set inside renderJumbleExercise (closure-scoped)
+
+  // ═══════════════════════════════════════════════════════════════
+  // AUDIO DIAGNOSTICS — call window.audioHealthCheck() in console
+  // ═══════════════════════════════════════════════════════════════
+  window.audioHealthCheck = function() {
+    const results = [];
+    results.push('=== AUDIO HEALTH CHECK ===');
+    results.push(`speechSynthesis: ${window.speechSynthesis ? '✅ Available' : '❌ Missing'}`);
+    results.push(`dialogueAudioPlayer: ${window.dialogueAudioPlayer ? '✅ Available' : '❌ Missing'}`);
+    results.push(`playExerciseAudio: ${typeof window.playExerciseAudio === 'function' ? '✅ Available' : '❌ Missing'}`);
+    results.push(`VocabCardRenderer: ${typeof VocabCardRenderer === 'object' ? '✅ Loaded' : '❌ Missing'}`);
+    results.push(`renderAudioButton: ${typeof renderAudioButton === 'function' ? '✅ Loaded' : '❌ Missing'}`);
+    
+    // Check CSS
+    const testEl = document.createElement('div');
+    testEl.className = 'vc-audio-player';
+    testEl.style.position = 'absolute';
+    testEl.style.opacity = '0';
+    document.body.appendChild(testEl);
+    const computed = getComputedStyle(testEl);
+    results.push(`CSS .vc-audio-player display: ${computed.display}`);
+    results.push(`CSS .vc-audio-player visibility: ${computed.visibility}`);
+    document.body.removeChild(testEl);
+    
+    // Check if vocab-card-styles.css loaded
+    const stylesheets = Array.from(document.styleSheets);
+    const vocabCSS = stylesheets.find(s => s.href && s.href.includes('vocab-card-styles'));
+    results.push(`vocab-card-styles.css: ${vocabCSS ? '✅ Loaded (' + vocabCSS.cssRules?.length + ' rules)' : '❌ NOT LOADED'}`);
+    
+    // Check audio files
+    const testAudio = new Audio('/audio_assets/unit_01/vocab/V_U01_L01_hello.mp3');
+    results.push(`Test audio (U01 hello): loading...`);
+    testAudio.addEventListener('canplaythrough', () => console.log('  → Test audio: ✅ Can play'));
+    testAudio.addEventListener('error', () => console.log('  → Test audio: ❌ File not found'));
+    
+    const output = results.join('\n');
+    console.log(output);
+    return output;
+  };
 
   // ═══════════════════════════════════════════════════════════════
   // MODAL ANIMATION STYLES — now in vocab-card-styles.css

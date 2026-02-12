@@ -30,7 +30,8 @@ import {
   resetIntegrationState
 } from './navigation.js';
 import { buildUnitSelectorUI, buildLessonSelectorUI } from './ui-builders.js';
-import { setLanguageDisplay, getLanguageDisplay } from '../state/app-state.js';
+import { setLanguageDisplay, getLanguageDisplay, toggleTeacherMode as syncTeacherMode, toggleDevBypass as syncDevBypass } from '../state/app-state.js';
+import { openClassProfile, initClassProfile } from '../components/class-profile.js';
 
 // ============================
 // MODE FLAGS
@@ -48,6 +49,7 @@ let teacherLessonSelect = null;
 let teacherTileSelect = null;
 let teacherCloseBtn = null;
 let teacherLangBtns = null;
+let teacherClassBtn = null;
 
 // ============================
 // INITIALIZATION
@@ -127,6 +129,17 @@ export function initTeacherMode() {
     });
   }
   
+  // Class Profile button
+  teacherClassBtn = document.getElementById("teacher-class-profile-btn");
+  if (teacherClassBtn) {
+    teacherClassBtn.addEventListener("click", () => {
+      openClassProfile();
+    });
+  }
+  
+  // Initialize class profile system (loads data, sets up auto-sync)
+  initClassProfile();
+  
   console.log("✅ Teacher mode initialized");
 }
 
@@ -143,6 +156,10 @@ export async function setTeacherMode(enabled) {
   
   _TEACHER_MODE = enabled;
   _DEV_BYPASS_GATES = enabled; // Auto-enable bypass when teacher mode is on
+  
+  // ✅ Critical sync: keep AppState.modes.teacher in sync
+  syncTeacherMode(enabled);
+  syncDevBypass(enabled);
   
   console.log(`👨‍🏫 TEACHER MODE ${enabled ? "✅ ON" : "❌ OFF"}`);
   
@@ -171,6 +188,7 @@ export function setDevBypassGates(enabled) {
   if (_DEV_BYPASS_GATES === enabled || _rebuildInProgress) return;
   
   _DEV_BYPASS_GATES = enabled;
+  syncDevBypass(enabled); // ✅ Keep AppState.modes.devBypassGates in sync
   console.log(`🔧 DEV: Gate Bypass ${enabled ? "✅ ON" : "❌ OFF"}`);
   
   _rebuildInProgress = true;

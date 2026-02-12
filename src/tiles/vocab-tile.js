@@ -242,7 +242,8 @@ export function renderVocabTile(lesson) {
   });
   list.appendChild(vocabFragment);
 
-  const hasVocabCards = vocabCardsData?.getCardsForLesson(lessonId)?.length > 0;
+  const hasVocabCards = typeof vocabCardsData?.getCardsForLesson === 'function'
+    && vocabCardsData.getCardsForLesson(lessonId)?.length > 0;
   
   let btnNext;
   if (hasVocabCards) {
@@ -627,7 +628,7 @@ function createVocabNextButton(lesson, lessonId, vocabCardsData, STATES, tileCon
     allComplete ? nextLabel : `So'zlarni o'rganing (${completedCards}/${totalCards})`,
     () => {
       if (allComplete) {
-        setState(nextState);
+        transitionToTile(nextState);
       } else {
         handleIncompleteVocab(lesson, lessonId, vocabCardsData, completedCards);
       }

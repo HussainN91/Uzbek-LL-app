@@ -10,6 +10,8 @@ import {
   setState,
   transitionToTile,
   playSound,
+  awardXP,
+  updateStreak,
   STATES,
   getCurrentUnitId
 } from './tile-utils.js';
@@ -147,6 +149,17 @@ export function renderDoneTile(lesson) {
     _saveCompletedLessons();
     GameState.save();
   }
+
+  // ✅ Award XP based on score performance
+  const pctForXP = sessionMaxScore > 0 ? Math.round((sessionScore / sessionMaxScore) * 100) : 0;
+  let xpReward = 25; // Base XP for completing any lesson
+  if (pctForXP >= 90) xpReward = 100;
+  else if (pctForXP >= 75) xpReward = 75;
+  else if (pctForXP >= 60) xpReward = 50;
+  awardXP(xpReward, `Lesson complete (${pctForXP}%)`);
+
+  // ✅ Update daily streak
+  updateStreak();
 
   // Trigger confetti
   const confettiCount = 50;

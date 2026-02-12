@@ -1,0 +1,263 @@
+{
+  "V_U10_L01_biscuit": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L01_biscuit.mp3",
+    "text": "I'm buying biscuits.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L01_cheese": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L01_cheese.mp3",
+    "text": "I'm buying cheese.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L01_for_purpose": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L01_for_purpose.mp3",
+    "text": "For breakfast.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L01_for_person": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L01_for_person.mp3",
+    "text": "These earrings are for my mother.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L01_earring": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L01_earring.mp3",
+    "text": "These earrings are for my mother.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L01_wallet": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L01_wallet.mp3",
+    "text": "Is this wallet yours?",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L01_purse": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L01_purse.mp3",
+    "text": "Where is my purse?",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L01_shop": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L01_shop.mp3",
+    "text": "I was at the shop yesterday.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L02_a_few": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L02_a_few.mp3",
+    "text": "I bought a few biscuits.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L02_a_bit_of": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L02_a_bit_of.mp3",
+    "text": "I spent a bit of money.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L02_a_lot_of": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L02_a_lot_of.mp3",
+    "text": "No, I spent a lot of money. (Ex)",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L02_money": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L02_money.mp3",
+    "text": "I spent a bit of money.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L02_coin": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L02_coin.mp3",
+    "text": "I received a few coins.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L02_receipt": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L02_receipt.mp3",
+    "text": "Did you get the receipt?",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L02_spend": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L02_spend.mp3",
+    "text": "Did you spend some money?",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L02_countable_uncountable": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L02_countable_uncountable.mp3",
+    "text": "Money is uncountable.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L03_how_much": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L03_how_much.mp3",
+    "text": "How much is this bag?",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L03_for_price": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L03_for_price.mp3",
+    "text": "This bag is for 50 dollars.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L03_sold": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L03_sold.mp3",
+    "text": "I sold my old bag for 20 dollars.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L03_for_deadline": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L03_for_deadline.mp3",
+    "text": "This work must be finished for Monday.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L03_famous_for": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L03_famous_for.mp3",
+    "text": "Spain is famous for food.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L03_word_for": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L03_word_for.mp3",
+    "text": "\\",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L03_price": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L03_price.mp3",
+    "text": "This bag's price is 50 dollars.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L03_discount": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L03_discount.mp3",
+    "text": "I'll ask for a discount.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L03_sale": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L03_sale.mp3",
+    "text": "These boots are on sale.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L03_bill": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L03_bill.mp3",
+    "text": "Can I have the bill?",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L03_cash": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L03_cash.mp3",
+    "text": "I pay by cash.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L03_jewellery": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L03_jewellery.mp3",
+    "text": "I have a lot of jewellery.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  },
+  "V_U10_L03_make_up": {
+    "file": "audio_assets\\unit_10\\vocab\\V_U10_L03_make_up.mp3",
+    "text": "There is a bit of make-up in the bag.",
+    "voice": "en-US-Neural2-A",
+    "pitch": 0.0,
+    "rate": 1.0,
+    "speaker": "narrator",
+    "unit": "U10"
+  }
+}
