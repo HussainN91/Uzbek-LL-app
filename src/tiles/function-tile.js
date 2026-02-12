@@ -18,27 +18,25 @@ import {
   resolveUIData,
   mergeMissingKeys
 } from './tile-utils.js';
+import { uz, en } from '../core/i18n.js';
+import { createInstructionBanner } from '../components/instruction-banner.js';
 
 // ============================
 // UI STRING HELPERS
 // ============================
 
 /**
- * Get Uzbek UI string
- * @param {string} path - Path to string in UI_STRINGS
- * @returns {string} Uzbek string or path as fallback
+ * Get Uzbek UI string — delegates to centralized i18n
  */
 function getUz(path) {
-  return typeof window.getUz === 'function' ? window.getUz(path) : path;
+  return uz(path);
 }
 
 /**
- * Get English UI string
- * @param {string} path - Path to string in UI_STRINGS
- * @returns {string} English string or path as fallback
+ * Get English UI string — delegates to centralized i18n
  */
 function getEn(path) {
-  return typeof window.getEn === 'function' ? window.getEn(path) : path;
+  return en(path);
 }
 
 // ============================
@@ -920,9 +918,15 @@ export function renderFunctionTile(lesson) {
   const r = resolveUIData(STATES.FUNCTION, lesson);
   mergeMissingKeys(r.missingKeys);
 
+  // Instruction banner
+  const funcBanner = createInstructionBanner('function', { showPairWork: true });
+  if (funcBanner) tileContainer.appendChild(funcBanner);
+
   const title = document.createElement("div");
   title.className = "tile-title";
-  title.textContent = "Tile 5 — Function Check";
+  title.textContent = uz('tiles.function');
+  title.classList.add('tl-uz');
+  title.dataset.translation = en('tiles.function');
 
   // === SCENARIO CONTEXT ===
   if (lesson && lesson.scenario_context) {

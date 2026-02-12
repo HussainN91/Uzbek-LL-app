@@ -217,6 +217,7 @@ window.VOCAB_CARDS_U01 = {
           id: "V_U01_L01_name",
           en: "name",
           uz: "ism",
+          ar: "اسم",
           pos: "noun",
           type: "identity_noun",
           priority: 1,
@@ -225,8 +226,8 @@ window.VOCAB_CARDS_U01 = {
           image: "/images/U01/U01_L01/img_name.png",
           dialogue_ref: { dialogue_id: "U01_L01_D01", line_index: 0, speaker: "Ali", bubble_text: "My name is Ali." },
           slides: [
-            { phase: "presentation", uz_context: "Sizning ismingiz Ali-mi?", audio: "./audio_assets/unit_01/vocab/V_U01_L01_name.mp3", uz_mirror_answer: "Yo'q, mening ismim Sara.", hybrid_answer: "Yo'q, mening **name** Sara.", en_canonical: "No, my name is Sara.", syntax_scaffold: "[Yo'q], [mening] **name** is [Sara]" },
-            { phase: "practice", type: "concept_check", instruction: "Bu gapda 'name' so'zi nima haqida?", exercise: { type: "function_sort", sentence: "My name is Ali.", options: [{ label: "Shaxsni aniqlash (Identity)", value: "identity", correct: true }, { label: "Harakat (Action)", value: "action", correct: false }], success_msg: "To'g'ri! 'Name' = ism, shaxsni aniqlaydi.", fail_msg: "Yo'q. 'Name' = ISM. Bu harakat emas, shaxsni aniqlash." } },
+            { phase: "presentation", uz_context: "Sizning ismingiz Ali-mi?", ar_context: "هل اسمك علي؟", audio: "./audio_assets/unit_01/vocab/V_U01_L01_name.mp3", uz_mirror_answer: "Yo'q, mening ismim Sara.", ar_mirror_answer: "لا ، اسمي سارة.", hybrid_answer: "Yo'q, mening **name** Sara.", en_canonical: "No, my name is Sara.", syntax_scaffold: "[Yo'q], [mening] **name** is [Sara]" },
+            { phase: "practice", type: "concept_check", instruction: "Bu gapda 'name' so'zi nima haqida?", ar_instruction: "ماذا تعني كلمة name هنا؟", exercise: { type: "function_sort", sentence: "My name is Ali.", options: [{ label: "Shaxsni aniqlash (Identity)", value: "identity", correct: true }, { label: "Harakat (Action)", value: "action", correct: false }], success_msg: "To'g'ri! 'Name' = ism, shaxsni aniqlaydi.", fail_msg: "Yo'q. 'Name' = ISM. Bu harakat emas, shaxsni aniqlash." } },
             { phase: "practice", type: "discovery", instruction: "'Name' so'zi gapda qanday o'rin egallaydi?", sentence: "My name is Ali.", highlight_tokens: ["name"], options: [{ label: "Ot (noun) — shaxsni aniqlash uchun", value: "noun_identity", correct: true }, { label: "Fe'l (verb) — harakat bildiradi", value: "verb_action", correct: false }], success_msg: "'Name' = ISM (ot). 'My name is...' — shaxsni aniqlash uchun ishlatiladi.", fail_msg: "'Name' = ISM (ot). Bu harakat emas, shaxsni aniqlash uchun." },
             { phase: "practice", type: "drill_list", en_examples: [{ en: "My name is Ali.", uz: "Mening ismim Ali.", is_anchor: true, source_dialogue: "U01_L01_D01", source_line: 0, speaker: "Ali" }, { en: "Her name is Sara.", uz: "Uning ismi Sara.", subject: "Her", focus_word: "name" }, { en: "What is his name?", uz: "Uning ismi nima?", subject: "his", focus_word: "name" }] },
             { phase: "production", uz_prompt: "Ingliz tilida ayting: Mening ismim [your name].", model_answer: "My name is [student's name].", accepted_answers: ["My name is...", "I am...", "My name's..."], trap: { trigger: "Me name", message: "⚠️ 'Me' emas! 'MY name' to'g'ri." }, on_success: { unlock_bubble: true, dialogue_id: "U01_L01_D01", line_index: 0 } },

@@ -9,6 +9,8 @@
  */
 
 import { STATES } from './utils/index.js';
+import { applyLanguageDirection } from './utils/language.js';
+import { showLanguageSelector } from './components/language-selector.js';
 import {
   setActiveUnit,
   detectAvailableUnits,
@@ -60,6 +62,10 @@ export async function initApp() {
   try {
     // Step 1: Ensure tiles are loaded
     await loadTileModules();
+
+    // Step 1.5: Apply Language Settings
+    applyLanguageDirection();
+    showLanguageSelector(); // Will show if language not set
     
     // Step 2: Initialize navigation system
     initNavigation();

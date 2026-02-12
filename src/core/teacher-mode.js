@@ -31,7 +31,8 @@ import {
 } from './navigation.js';
 import { buildUnitSelectorUI, buildLessonSelectorUI } from './ui-builders.js';
 import { setLanguageDisplay, getLanguageDisplay, toggleTeacherMode as syncTeacherMode, toggleDevBypass as syncDevBypass } from '../state/app-state.js';
-import { openClassProfile, initClassProfile } from '../components/class-profile.js';
+import { openClassProfile, initClassProfile, closeClassProfile, isClassProfileOpen } from '../components/class-profile.js';
+import { initClassroomMode, buildClassroomSection } from './classroom-mode.js';
 
 // ============================
 // MODE FLAGS
@@ -140,6 +141,9 @@ export function initTeacherMode() {
   // Initialize class profile system (loads data, sets up auto-sync)
   initClassProfile();
   
+  // Initialize classroom mode controls
+  initClassroomMode();
+  
   console.log("✅ Teacher mode initialized");
 }
 
@@ -170,6 +174,14 @@ export async function setTeacherMode(enabled) {
     
     await buildUnitSelectorUI();
     buildLessonSelectorUI();
+    
+    // Build classroom mode controls in teacher panel
+    if (teacherPanelEl) {
+      buildClassroomSection(teacherPanelEl);
+    }
+  } else {
+    // Close class profile panel if it was open
+    if (isClassProfileOpen()) closeClassProfile();
   }
   
   updateTeacherPanelUI();

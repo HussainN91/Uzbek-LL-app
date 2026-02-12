@@ -15,7 +15,7 @@
  * @version 1.0.0
  */
 
-import { AppState, persistState, subscribe } from '../state/app-state.js';
+import { AppState, subscribe } from '../state/app-state.js';
 import {
   getActiveCurriculum,
   getCurrentUnitId,
@@ -91,6 +91,7 @@ let activeStudentId = null;
 let activeTab = 'roster'; // 'roster' | 'analytics' | 'settings'
 let saveTimer = null;
 let lastSaveTime = 0;
+let _subscribed = false;
 
 // ============================================================================
 // PERSISTENCE
@@ -106,6 +107,10 @@ function loadClassData() {
     classData = saved;
     // Ensure arrays/objects exist on old records
     classData.students.forEach(s => {
+      s.firstName = s.firstName || 'Unknown';
+      s.lastName = s.lastName || '';
+      s.nickname = s.nickname || '';
+      s.notes = s.notes || '';
       s.completedLessons = s.completedLessons || {};
       s.lessonScores = s.lessonScores || {};
       s.completedUnits = s.completedUnits || {};
@@ -220,34 +225,35 @@ function getStudent(id) {
 
 /**
  * Syncs current app progress to the active student record.
- * Called on lesson completion, unit completion, and score awards.
+ * Only syncs the CURRENT lesson/unit — not the global cumulative state,
+ * to avoid accidentally copying other students' progress.
  */
 export function syncProgressToStudent(studentId) {
   const student = getStudent(studentId || activeStudentId);
   if (!student) return;
 
-  // Sync completed lessons
-  for (const lessonId of AppState.progress.completedLessons) {
-    student.completedLessons[lessonId] = true;
+  // Sync CURRENT lesson completion (not the entire global set)
+  const currentLessonId = AppState.navigation.lessonId;
+  if (currentLessonId && AppState.progress.completedLessons.has(currentLessonId)) {
+    student.completedLessons[currentLessonId] = true;
   }
 
-  // Sync completed units
-  for (const unitId of AppState.progress.completedUnits) {
-    student.completedUnits[unitId] = true;
+  // Sync CURRENT unit completion
+  const currentUnitId = AppState.navigation.unitId;
+  if (currentUnitId && AppState.progress.completedUnits.has(currentUnitId)) {
+    student.completedUnits[currentUnitId] = true;
   }
 
   // Sync XP and level
-  student.xp = AppState.session.xp;
-  student.level = AppState.session.level;
-  student.streak = AppState.session.streak;
+  student.xp = Math.max(student.xp, AppState.session.xp);
+  student.level = Math.max(student.level, AppState.session.level);
+  student.streak = Math.max(student.streak, AppState.session.streak);
 
-  // Current lesson score
-  const lessonId = AppState.navigation.lessonId;
-  if (lessonId && AppState.session.maxScore > 0) {
+  // Current lesson score — keep highest
+  if (currentLessonId && AppState.session.maxScore > 0) {
     const pct = Math.round((AppState.session.score / AppState.session.maxScore) * 100);
-    // Keep highest score
-    if (!student.lessonScores[lessonId] || pct > student.lessonScores[lessonId]) {
-      student.lessonScores[lessonId] = pct;
+    if (!student.lessonScores[currentLessonId] || pct > student.lessonScores[currentLessonId]) {
+      student.lessonScores[currentLessonId] = pct;
     }
   }
 
@@ -1032,16 +1038,20 @@ function renderRosterTab() {
     `;
   } else {
     classData.students.forEach(student => {
-      const initials = (student.firstName[0] || '') + (student.lastName[0] || '');
+      const firstName = student.firstName || '';
+      const lastName = student.lastName || '';
+      const initials = (firstName[0] || '?') + (lastName[0] || '?');
       const progress = getStudentProgress(student);
       const todayAtt = student.attendance[today] || '';
       const avatarClass = student.gender === 'F' ? ' female' : '';
+      const safeName = escapeHtml(firstName + ' ' + lastName);
+      const safeNick = student.nickname ? ` (${escapeHtml(student.nickname)})` : '';
 
       html += `
         <div class="cp-student-card ${activeStudentId === student.id ? 'active' : ''}" data-id="${student.id}">
-          <div class="cp-student-avatar${avatarClass}">${initials.toUpperCase()}</div>
+          <div class="cp-student-avatar${avatarClass}">${escapeHtml(initials.toUpperCase())}</div>
           <div class="cp-student-info">
-            <div class="cp-student-name">${student.firstName} ${student.lastName}${student.nickname ? ` (${student.nickname})` : ''}</div>
+            <div class="cp-student-name">${safeName}${safeNick}</div>
             <div class="cp-student-meta">Lvl ${student.level} · ${progress.completedCount} lessons · ${progress.avgScore}% avg</div>
           </div>
           <div class="cp-student-stats">
@@ -1620,6 +1630,7 @@ export function openClassProfile() {
 
   isOpen = true;
   activeTab = 'roster';
+  document.body.style.overflow = 'hidden'; // Lock body scroll
 
   // Reset tab UI
   panelEl.querySelectorAll('.cp-tab').forEach(t => {
@@ -1628,15 +1639,18 @@ export function openClassProfile() {
 
   renderActiveTab();
 
-  // Animate in
+  // Animate in — double rAF to ensure CSS transition fires
   requestAnimationFrame(() => {
-    document.getElementById('cp-overlay')?.classList.add('open');
-    panelEl?.classList.add('open');
+    requestAnimationFrame(() => {
+      document.getElementById('cp-overlay')?.classList.add('open');
+      panelEl?.classList.add('open');
+    });
   });
 }
 
 export function closeClassProfile() {
   isOpen = false;
+  document.body.style.overflow = ''; // Restore body scroll
 
   // Save on close
   if (classData) saveClassData();
@@ -1656,20 +1670,20 @@ export function isClassProfileOpen() {
 export function initClassProfile() {
   loadClassData();
 
-  // Listen for lesson completion → auto-sync to active student
-  const origComplete = AppState.progress.completedLessons;
+  // Subscribe to state changes for auto-sync (guard against duplicate subscriptions)
+  if (!_subscribed) {
+    _subscribed = true;
+    subscribe((path) => {
+      if (!activeStudentId || !AppState.modes.teacher) return;
 
-  // Subscribe to state changes for auto-sync
-  subscribe((path) => {
-    if (!activeStudentId || !AppState.modes.teacher) return;
-
-    if (path === 'progress.completedLessons' ||
-        path === 'progress.completedUnits' ||
-        path === 'session.xp' ||
-        path === 'session.score') {
-      syncProgressToStudent(activeStudentId);
-    }
-  });
+      if (path === 'progress.completedLessons' ||
+          path === 'progress.completedUnits' ||
+          path === 'session.xp' ||
+          path === 'session.score') {
+        syncProgressToStudent(activeStudentId);
+      }
+    });
+  }
 
   console.log('✅ Class Profile initialized');
 }

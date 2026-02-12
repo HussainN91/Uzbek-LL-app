@@ -11,16 +11,19 @@ import {
   transitionToTile,
   STATES
 } from './tile-utils.js';
+import { uz, en } from '../core/i18n.js';
+import { createInstructionBanner } from '../components/instruction-banner.js';
 
 /**
- * Get translation function reference
+ * Get translation function reference — delegates to i18n.js
+ * (Kept for backward compat but now routes through centralized i18n)
  */
 function getUz(key) {
-  return typeof window.getUz === 'function' ? window.getUz(key) : key;
+  return uz(key);
 }
 
 function getEn(key) {
-  return typeof window.getEn === 'function' ? window.getEn(key) : key;
+  return en(key);
 }
 
 /**
@@ -81,7 +84,9 @@ export function renderWritingTile(lesson) {
   if (controlledStageIndex < totalStages) {
     const title = document.createElement("div");
     title.className = "tile-title";
-    title.textContent = "Tile 7 — Writing (Locked)";
+    title.textContent = uz('writing.locked');
+    title.classList.add('tl-uz');
+    title.dataset.translation = en('writing.locked');
     
     const msg = document.createElement("div");
     msg.className = "tile-section";
@@ -127,9 +132,15 @@ export function renderWritingTile(lesson) {
   const targetWordCount = (we && Number(we.target_word_count)) || 10;
   const minWC = Math.max(8, Math.ceil(targetWordCount * 0.8));
 
+  // Instruction banner
+  const writingBanner = createInstructionBanner('writing', { showPairWork: true });
+  if (writingBanner) tileContainer.appendChild(writingBanner);
+
   const title = document.createElement("div");
   title.className = "tile-title";
-  title.textContent = "Tile 7 — Writing (Gated)";
+  title.textContent = uz('tiles.writing');
+  title.classList.add('tl-uz');
+  title.dataset.translation = en('tiles.writing');
 
   const instr = document.createElement("div");
   instr.className = "tile-section";
@@ -143,14 +154,14 @@ export function renderWritingTile(lesson) {
 
   const textarea = document.createElement("textarea");
   textarea.rows = 5;
-  textarea.placeholder = getUz("common.placeholders.writeHere");
+  textarea.placeholder = uz('writing.placeholder');
   textarea.classList.add("tl-uz");
   textarea.dataset.translation = getEn("common.placeholders.writeHere");
 
   const feedback = document.createElement("div");
   feedback.className = "feedback";
 
-  const btnCheck = createButton(getUz("common.buttons.check"), () => {
+  const btnCheck = createButton(uz('buttons.check'), () => {
     const text = textarea.value || "";
     const wc = _wordCount(text);
     const wcOk = wc >= minWC;
@@ -194,7 +205,7 @@ export function renderWritingTile(lesson) {
     }
   });
 
-  const btnContinue = createButton(getUz("common.buttons.continue"), () => {
+  const btnContinue = createButton(uz('nav.nextListenWrite'), () => {
     // TEACHER MODE: Bypass all validation
     if (window.TEACHER_MODE) {
       transitionToTile(STATES.LISTEN_WRITE);

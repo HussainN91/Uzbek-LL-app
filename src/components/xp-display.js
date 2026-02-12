@@ -30,9 +30,22 @@ const XP_DISPLAY_CSS = `
   border-radius: 50px;
   padding: 8px 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 60px rgba(100, 100, 255, 0.05);
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   cursor: pointer;
   user-select: none;
+}
+/* Shift XP badge below teacher panel when active */
+body.teacher-mode-active .xp-badge {
+  top: auto;
+  bottom: 20px;
+  right: 20px;
+  z-index: 900;
+  transform: scale(0.9);
+  opacity: 0.85;
+}
+body.teacher-mode-active .xp-badge:hover {
+  opacity: 1;
+  transform: scale(0.95);
 }
 .xp-badge:hover {
   transform: translateY(-2px);
@@ -225,6 +238,13 @@ const XP_DISPLAY_CSS = `
   right: 16px;
   width: 280px;
   z-index: 999;
+}
+/* When teacher mode is active, XP panel opens upward from bottom badge */
+body.teacher-mode-active .xp-panel {
+  top: auto;
+  bottom: 80px;
+  right: 20px;
+}
   background: linear-gradient(145deg, rgba(30, 30, 45, 0.98), rgba(20, 20, 35, 0.99));
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 16px;

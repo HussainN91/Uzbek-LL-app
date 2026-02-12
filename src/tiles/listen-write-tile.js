@@ -20,6 +20,8 @@ import {
   addMaxScore,
   playSound
 } from './tile-utils.js';
+import { uz, en } from '../core/i18n.js';
+import { createInstructionBanner } from '../components/instruction-banner.js';
 
 // ============================
 // HELPER FUNCTIONS
@@ -101,7 +103,9 @@ export function renderListenWriteTile(lesson) {
   if (!window.lastWritingPassed && !window.TEACHER_MODE) {
     const title = document.createElement("div");
     title.className = "tile-title";
-    title.textContent = "Tile 8 — Listen & Write (Locked)";
+    title.textContent = uz('listenWrite.locked');
+    title.classList.add('tl-uz');
+    title.dataset.translation = en('listenWrite.locked');
 
     const msg = document.createElement("div");
     msg.className = "tile-section";
@@ -123,9 +127,15 @@ export function renderListenWriteTile(lesson) {
 
   const r = resolveUIData(STATES.LISTEN_WRITE, lesson);
 
+  // Instruction banner
+  const lwBanner = createInstructionBanner('listen_write', { showPairWork: true });
+  if (lwBanner) tileContainer.appendChild(lwBanner);
+
   const title = document.createElement("div");
   title.className = "tile-title";
-  title.textContent = "Tile 8 — Listen & Write";
+  title.textContent = uz('tiles.listenWrite');
+  title.classList.add('tl-uz');
+  title.dataset.translation = en('tiles.listenWrite');
 
   const info = document.createElement("div");
   info.className = "tile-section";

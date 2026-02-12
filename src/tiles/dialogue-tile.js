@@ -23,6 +23,8 @@ import {
   getCurrentLessonId,
   highlightGrammarTokens
 } from './tile-utils.js';
+import { uz, en } from '../core/i18n.js';
+import { createInstructionBanner } from '../components/instruction-banner.js';
 
 import {
   LANG_STATES,
@@ -298,7 +300,9 @@ function showDiscoveryPopup(ct) {
   
   // Close button
   const closeBtn = document.createElement('button');
-  closeBtn.textContent = 'Got it! \u2713';
+  closeBtn.textContent = uz('buttons.gotIt');
+  closeBtn.classList.add('tl-uz');
+  closeBtn.dataset.translation = en('buttons.gotIt');
   closeBtn.style.cssText = 'width: 100%; padding: 12px; background: #48bb78; color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer;';
   closeBtn.addEventListener('click', () => overlay.remove());
   popup.appendChild(closeBtn);
@@ -430,9 +434,15 @@ export function renderLessonDialogueTile(lesson) {
   
   const tileNumber = document.createElement("div");
   tileNumber.className = "tile-title";
-  tileNumber.textContent = "Tile 3 \u2014 Dialogue";
+  tileNumber.textContent = uz('tiles.dialogue');
+  tileNumber.classList.add('tl-uz');
+  tileNumber.dataset.translation = en('tiles.dialogue');
   tileNumber.style.cssText = "font-size: 0.9rem; color: #999; margin-bottom: 12px; font-weight: 500;";
   headerSection.appendChild(tileNumber);
+
+  // Instruction banner (inserted into wrapper, not tileContainer)
+  const dlgBanner = createInstructionBanner('dialogue', { showPairWork: true });
+  if (dlgBanner) wrapper.insertBefore(dlgBanner, headerSection.nextSibling || null);
   
   // Mission stage badge
   if (missionStage) {
@@ -525,7 +535,7 @@ export function renderLessonDialogueTile(lesson) {
   const vanishToggle = document.createElement("div");
   vanishToggle.style.cssText = "display: flex; gap: 6px; justify-content: center; margin-bottom: 20px;";
   
-  const vanishLabels = { full: '\u{1F441}\u{FE0F} Full', faded: '\u{1F32B}\u{FE0F} Faded', blind: '\u{1F648} Blind' };
+  const vanishLabels = { full: '\u{1F441}\u{FE0F} ' + uz('dialogue.full'), faded: '\u{1F32B}\u{FE0F} ' + uz('dialogue.faded'), blind: '\u{1F648} ' + uz('dialogue.blind') };
   VANISH_MODES.forEach(mode => {
     const btn = document.createElement('button');
     btn.className = `vanish-mode-btn ${mode === currentVanishMode ? 'active' : ''}`;
@@ -651,8 +661,8 @@ export function renderLessonDialogueTile(lesson) {
     // ═══ LUXURIOUS Play All Button ═══
     const playAllBtn = document.createElement("button");
     playAllBtn.className = "dlg-play-all tl-uz";
-    playAllBtn.innerHTML = `<span class="dlg-play-all-icon">▶</span><span class="dlg-play-all-waves"><span></span><span></span><span></span></span> <span data-label>Play All</span>`;
-    playAllBtn.dataset.translation = "Play All";
+    playAllBtn.innerHTML = `<span class="dlg-play-all-icon">▶</span><span class="dlg-play-all-waves"><span></span><span></span><span></span></span> <span data-label>${uz('buttons.playAll')}</span>`;
+    playAllBtn.dataset.translation = en('buttons.playAll');
     
     let isPlayingAll = false;
     playAllBtn.addEventListener("click", async () => {
@@ -1160,7 +1170,7 @@ export function renderLessonDialogueTile(lesson) {
 
     const tpTitleBlock = document.createElement("div");
     const tpLabel = document.createElement("div");
-    tpLabel.textContent = "LINGUISTIC PRESSURE";
+    tpLabel.textContent = uz('dialogue.pressureMode');
     tpLabel.style.cssText = "font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #f6ad55; margin-bottom: 2px;";
     const tpTitle = document.createElement("div");
     tpTitle.textContent = isMasteryStage ? "Mastery Challenge — Final Pass" : "Dialogue Replay — Pressure Mode";
@@ -1202,7 +1212,7 @@ export function renderLessonDialogueTile(lesson) {
     // Start button
     const startTPBtn = document.createElement("button");
     startTPBtn.className = "tp-start-btn";
-    startTPBtn.innerHTML = `<svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M8 5v14l11-7z"/></svg> Start Pressure Mode`;
+    startTPBtn.innerHTML = `<svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M8 5v14l11-7z"/></svg> ${uz('dialogue.startPressure')}`;
     startTPBtn.style.cssText = `
       width: 100%; padding: 14px 24px;
       background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
@@ -1244,7 +1254,18 @@ export function renderLessonDialogueTile(lesson) {
     navContainer.appendChild(backBtn);
   }
 
-  const nextBtn = createButton("Next: Pattern \u2192", () => transitionToTile(STATES.PATTERN));
+  // Re-practice button (post-dialogue cloze gap-fill)
+  const repracticeBtn = createButton('🔄 ' + uz('repractice.title'), () => {
+    renderDialogueRepractice(lesson, dialogueData, wrapper, tileContainer);
+  });
+  repracticeBtn.classList.add('tl-uz');
+  repracticeBtn.dataset.translation = en('repractice.title');
+  repracticeBtn.style.cssText = "flex: 1; max-width: 220px; padding: 14px 24px; background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: white; border: none; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(99,102,241,0.3);";
+  navContainer.appendChild(repracticeBtn);
+
+  const nextBtn = createButton(uz('nav.nextPattern') + ' →', () => transitionToTile(STATES.PATTERN));
+  nextBtn.classList.add('tl-uz');
+  nextBtn.dataset.translation = en('nav.nextPattern') + ' →';
   nextBtn.style.cssText = "flex: 1; max-width: 200px; padding: 14px 24px; background: #27ae60; color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(39,174,96,0.3);";
   navContainer.appendChild(nextBtn);
 
@@ -1363,6 +1384,353 @@ async function startThinkingPressure(turnElements) {
     turnEl.style.boxShadow = '';
     turnEl.style.transform = '';
   });
+}
+
+
+// ============================
+// DIALOGUE RE-PRACTICE (Post-Dialogue Cloze System)
+// ============================
+// Research: Testing Effect (Roediger & Karpicke 2006), Desirable Difficulty (Bjork 1994)
+// Progressive cloze removal: Stage 1 (easy) → Stage 2 (medium) → Stage 3 (hard)
+// Savol (question) / Javob (answer) indicators for dialogue structure awareness
+
+let repracticeCSSInjected = false;
+function injectRepracticeCSS() {
+  if (repracticeCSSInjected) return;
+  repracticeCSSInjected = true;
+  const style = document.createElement('style');
+  style.textContent = `
+    .repractice-container { max-width: 800px; margin: 0 auto; padding: 16px; }
+    .repractice-header { text-align: center; margin-bottom: 20px; }
+    .repractice-stage-badge {
+      display: inline-block; padding: 4px 14px; border-radius: 16px;
+      font-size: 0.85rem; font-weight: 600; margin-bottom: 8px;
+    }
+    .repractice-stage-1 { background: #d1fae5; color: #065f46; }
+    .repractice-stage-2 { background: #fef3c7; color: #92400e; }
+    .repractice-stage-3 { background: #fee2e2; color: #991b1b; }
+    .repractice-turn {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 12px 16px; margin-bottom: 10px; border-radius: 10px;
+      background: #f8fafc; border: 1px solid #e2e8f0;
+      transition: all 0.3s;
+    }
+    .repractice-turn.correct { border-color: #86efac; background: #f0fdf4; }
+    .repractice-turn.wrong { border-color: #fca5a5; background: #fef2f2; }
+    .repractice-role {
+      display: flex; flex-direction: column; align-items: center; gap: 2px;
+      min-width: 50px; flex-shrink: 0;
+    }
+    .repractice-role-icon { font-size: 1.5rem; }
+    .repractice-role-tag {
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.5px;
+      padding: 2px 6px; border-radius: 4px; text-transform: uppercase;
+    }
+    .tag-savol { background: #dbeafe; color: #1e40af; }
+    .tag-javob { background: #fce7f3; color: #9d174d; }
+    .repractice-text { flex: 1; font-size: 1rem; line-height: 1.6; }
+    .repractice-gap {
+      display: inline-block; min-width: 60px; padding: 2px 8px;
+      border-bottom: 2px dashed #6366f1; margin: 0 2px;
+      text-align: center; font-weight: 600; transition: all 0.3s;
+      cursor: text;
+    }
+    .repractice-gap:focus { outline: none; border-color: #4f46e5; background: #eef2ff; }
+    .repractice-gap.filled { border-style: solid; border-color: #818cf8; background: #eef2ff; }
+    .repractice-gap.correct-gap { border-color: #22c55e; background: #dcfce7; color: #166534; }
+    .repractice-gap.wrong-gap { border-color: #ef4444; background: #fef2f2; color: #991b1b; text-decoration: line-through; }
+    .repractice-word-bank {
+      display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+      padding: 12px; background: #f1f5f9; border-radius: 10px; margin: 16px 0;
+    }
+    .repractice-word-chip {
+      padding: 6px 14px; background: white; border: 1px solid #cbd5e1;
+      border-radius: 20px; font-size: 0.9rem; cursor: pointer;
+      transition: all 0.2s; user-select: none;
+    }
+    .repractice-word-chip:hover { background: #eef2ff; border-color: #6366f1; }
+    .repractice-word-chip.used { opacity: 0.4; pointer-events: none; text-decoration: line-through; }
+    .repractice-feedback {
+      text-align: center; padding: 12px; margin-top: 16px;
+      border-radius: 8px; font-weight: 600; font-size: 1rem;
+    }
+    .repractice-nav { display: flex; gap: 12px; justify-content: center; margin-top: 20px; }
+  `;
+  document.head.appendChild(style);
+}
+
+/**
+ * Render the dialogue re-practice cloze exercise.
+ * Progressive difficulty: Stage 1 (1-2 gaps), Stage 2 (3-4 gaps), Stage 3 (keywords only)
+ * Savol/Javob indicators on each turn
+ *
+ * @param {Object} lesson - Lesson data
+ * @param {Object} dialogueData - The lesson_dialogue object
+ * @param {HTMLElement} wrapper - The dialogue wrapper to replace
+ * @param {HTMLElement} tileContainer - The tile container
+ */
+function renderDialogueRepractice(lesson, dialogueData, wrapper, tileContainer) {
+  injectRepracticeCSS();
+
+  // Get all dialogue turns
+  const allTurns = [];
+  (dialogueData.dialogues || []).forEach(d => {
+    (d.turns || []).forEach((t, idx) => {
+      allTurns.push({
+        speaker: t.speaker || (idx % 2 === 0 ? 'A' : 'B'),
+        text: t.text || '',
+        text_uz: t.text_uz || '',
+        isQuestion: !!(t.text && t.text.trim().endsWith('?')),
+        dialogueId: d.id || 'D1',
+      });
+    });
+  });
+
+  if (allTurns.length === 0) return;
+
+  let currentStage = 1;
+  const maxStage = 3;
+
+  function renderStage(stage) {
+    // Clear container
+    const container = document.createElement('div');
+    container.className = 'repractice-container';
+
+    // Instruction banner for repractice
+    const rpBanner = createInstructionBanner('repractice');
+    if (rpBanner) container.appendChild(rpBanner);
+
+    // Header
+    const header = document.createElement('div');
+    header.className = 'repractice-header';
+    
+    const titleEl = document.createElement('h2');
+    titleEl.textContent = uz('repractice.title');
+    titleEl.classList.add('tl-uz');
+    titleEl.dataset.translation = en('repractice.title');
+    titleEl.style.cssText = 'color: #6366f1; margin: 0 0 8px 0;';
+    header.appendChild(titleEl);
+
+    const stageKey = `repractice.stage${stage}`;
+    const stageBadge = document.createElement('span');
+    stageBadge.className = `repractice-stage-badge repractice-stage-${stage}`;
+    stageBadge.textContent = uz(stageKey);
+    stageBadge.classList.add('tl-uz');
+    stageBadge.dataset.translation = en(stageKey);
+    header.appendChild(stageBadge);
+
+    container.appendChild(header);
+
+    // Generate cloze gaps based on stage
+    const gapData = [];
+    const wordBank = new Set();
+    const turnsWithGaps = allTurns.map((turn, tIdx) => {
+      const words = turn.text.split(/\s+/);
+      const gaps = [];
+
+      if (stage === 1) {
+        // Easy: remove 1-2 content words per turn
+        const contentWordIndices = words
+          .map((w, i) => ({ w: w.replace(/[.,!?;:'"]/g, '').toLowerCase(), i }))
+          .filter(({ w }) => w.length > 2 && !['the', 'a', 'an', 'is', 'am', 'are', 'in', 'on', 'at', 'to', 'and', 'or', 'but', 'for', 'of'].includes(w));
+        const count = Math.min(contentWordIndices.length, Math.max(1, Math.floor(words.length * 0.15)));
+        const shuffled = contentWordIndices.sort(() => Math.random() - 0.5).slice(0, count);
+        shuffled.forEach(({ i }) => { gaps.push(i); wordBank.add(words[i].replace(/[.,!?;:'"]/g, '')); });
+      } else if (stage === 2) {
+        // Medium: remove 3-4 words per turn
+        const contentWordIndices = words
+          .map((w, i) => ({ w: w.replace(/[.,!?;:'"]/g, '').toLowerCase(), i }))
+          .filter(({ w }) => w.length > 1 && !['a', 'i'].includes(w));
+        const count = Math.min(contentWordIndices.length, Math.max(2, Math.floor(words.length * 0.35)));
+        const shuffled = contentWordIndices.sort(() => Math.random() - 0.5).slice(0, count);
+        shuffled.forEach(({ i }) => { gaps.push(i); wordBank.add(words[i].replace(/[.,!?;:'"]/g, '')); });
+      } else {
+        // Hard: only show keywords (function words + first word visible, everything else gaps)
+        const keepWords = new Set(['i', 'you', 'he', 'she', 'it', 'we', 'they', 'my', 'your', 'his', 'her', 'our', 'their', 'the', 'a', 'an', 'do', 'does', 'did', 'is', 'am', 'are', 'was', 'were', 'not', "don't", "doesn't", "isn't", "aren't", 'can', 'will', 'would', 'should']);
+        words.forEach((w, i) => {
+          const clean = w.replace(/[.,!?;:'"]/g, '').toLowerCase();
+          if (i !== 0 && !keepWords.has(clean)) {
+            gaps.push(i);
+            wordBank.add(w.replace(/[.,!?;:'"]/g, ''));
+          }
+        });
+      }
+
+      return { ...turn, words, gaps, tIdx };
+    });
+
+    // Add some distractors to word bank
+    const distractors = ['going', 'doing', 'making', 'having', 'getting', 'taking', 'coming', 'looking', 'working', 'playing'];
+    distractors.sort(() => Math.random() - 0.5).slice(0, 3).forEach(d => wordBank.add(d));
+
+    // Word bank UI
+    const bankEl = document.createElement('div');
+    bankEl.className = 'repractice-word-bank';
+    const bankWords = Array.from(wordBank).sort(() => Math.random() - 0.5);
+    bankWords.forEach(word => {
+      const chip = document.createElement('span');
+      chip.className = 'repractice-word-chip';
+      chip.textContent = word;
+      chip.dataset.word = word.toLowerCase();
+      chip.addEventListener('click', () => {
+        // Find first empty gap and fill it
+        const emptyGap = container.querySelector('.repractice-gap:not(.filled)');
+        if (emptyGap) {
+          emptyGap.textContent = word;
+          emptyGap.dataset.userAnswer = word;
+          emptyGap.classList.add('filled');
+          chip.classList.add('used');
+        }
+      });
+      bankEl.appendChild(chip);
+    });
+    container.appendChild(bankEl);
+
+    // Render turns with gaps
+    turnsWithGaps.forEach(turn => {
+      const turnEl = document.createElement('div');
+      turnEl.className = 'repractice-turn';
+
+      // Role indicator with savol/javob tag
+      const roleEl = document.createElement('div');
+      roleEl.className = 'repractice-role';
+      roleEl.innerHTML = `
+        <span class="repractice-role-icon">${turn.speaker === 'A' || turn.speaker === 'Person A' ? '👤' : '👥'}</span>
+        <span class="repractice-role-tag ${turn.isQuestion ? 'tag-savol' : 'tag-javob'}">
+          ${turn.isQuestion ? uz('dialogue.savol') : uz('dialogue.javob')}
+        </span>
+      `;
+      turnEl.appendChild(roleEl);
+
+      // Text with gaps
+      const textEl = document.createElement('div');
+      textEl.className = 'repractice-text';
+
+      turn.words.forEach((word, wIdx) => {
+        if (turn.gaps.includes(wIdx)) {
+          const gap = document.createElement('span');
+          gap.className = 'repractice-gap';
+          gap.contentEditable = 'true';
+          gap.dataset.answer = word.replace(/[.,!?;:'"]/g, '');
+          gap.dataset.punctuation = word.match(/[.,!?;:'"]+$/)?.[0] || '';
+          gap.setAttribute('spellcheck', 'false');
+          gap.addEventListener('input', () => {
+            if (gap.textContent.trim()) {
+              gap.dataset.userAnswer = gap.textContent.trim();
+              gap.classList.add('filled');
+            } else {
+              gap.classList.remove('filled');
+              delete gap.dataset.userAnswer;
+            }
+          });
+          textEl.appendChild(gap);
+          // Add punctuation after gap if any
+          if (gap.dataset.punctuation) {
+            textEl.appendChild(document.createTextNode(gap.dataset.punctuation + ' '));
+          } else {
+            textEl.appendChild(document.createTextNode(' '));
+          }
+        } else {
+          textEl.appendChild(document.createTextNode(word + ' '));
+        }
+      });
+
+      turnEl.appendChild(textEl);
+      container.appendChild(turnEl);
+    });
+
+    // Feedback area
+    const feedbackEl = document.createElement('div');
+    feedbackEl.className = 'repractice-feedback';
+    feedbackEl.style.display = 'none';
+    container.appendChild(feedbackEl);
+
+    // Navigation
+    const navEl = document.createElement('div');
+    navEl.className = 'repractice-nav';
+
+    // Check button
+    const checkBtn = createButton('✓ ' + uz('buttons.check'), () => {
+      const gaps = container.querySelectorAll('.repractice-gap');
+      let correct = 0;
+      let total = gaps.length;
+
+      gaps.forEach(gap => {
+        const answer = (gap.dataset.answer || '').toLowerCase();
+        const userAnswer = (gap.dataset.userAnswer || gap.textContent || '').trim().toLowerCase();
+
+        if (userAnswer === answer) {
+          gap.classList.add('correct-gap');
+          gap.classList.remove('wrong-gap');
+          correct++;
+        } else {
+          gap.classList.add('wrong-gap');
+          gap.classList.remove('correct-gap');
+          // Show correct answer below
+          if (!gap.dataset.correctionShown) {
+            const correction = document.createElement('span');
+            correction.textContent = ' → ' + gap.dataset.answer;
+            correction.style.cssText = 'color: #16a34a; font-size: 0.85rem; font-weight: 600;';
+            gap.parentNode.insertBefore(correction, gap.nextSibling);
+            gap.dataset.correctionShown = 'true';
+          }
+        }
+      });
+
+      feedbackEl.style.display = 'block';
+      if (correct === total) {
+        feedbackEl.textContent = uz('repractice.allCorrect');
+        feedbackEl.style.background = '#dcfce7';
+        feedbackEl.style.color = '#166534';
+        // Award XP for perfect re-practice
+        if (typeof window.StateActions?.awardXP === 'function') {
+          window.StateActions.awardXP(15 * stage, `Re-practice Stage ${stage} perfect`);
+        }
+      } else {
+        feedbackEl.textContent = uz('repractice.someWrong', { count: total - correct });
+        feedbackEl.style.background = '#fef2f2';
+        feedbackEl.style.color = '#991b1b';
+      }
+
+      // Show next stage button if passed
+      if (correct >= Math.ceil(total * 0.7) && stage < maxStage) {
+        const nextStageBtn = createButton('🔄 ' + uz('repractice.nextStage'), () => {
+          currentStage = stage + 1;
+          tileContainer.innerHTML = '';
+          renderStage(currentStage);
+        });
+        nextStageBtn.classList.add('tl-uz');
+        nextStageBtn.dataset.translation = en('repractice.nextStage');
+        nextStageBtn.style.cssText = 'margin-top: 12px; background: linear-gradient(135deg, #6366f1, #8b5cf6); color: white; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;';
+        navEl.appendChild(nextStageBtn);
+      }
+    });
+    checkBtn.classList.add('tl-uz');
+    checkBtn.dataset.translation = en('buttons.check');
+    navEl.appendChild(checkBtn);
+
+    // Back to dialogue button
+    const backDlgBtn = createButton(uz('buttons.back') + ' ← ' + uz('tiles.dialogue'), () => {
+      tileContainer.innerHTML = '';
+      renderLessonDialogueTile(lesson);
+    });
+    backDlgBtn.classList.add('tl-uz');
+    backDlgBtn.dataset.translation = en('buttons.back') + ' ← ' + en('tiles.dialogue');
+    navEl.appendChild(backDlgBtn);
+
+    // Continue to next tile button
+    const continueBtn = createButton(uz('nav.nextPattern') + ' →', () => transitionToTile(STATES.PATTERN));
+    continueBtn.classList.add('tl-uz');
+    continueBtn.dataset.translation = en('nav.nextPattern') + ' →';
+    continueBtn.style.cssText = 'background: #27ae60; color: white; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;';
+    navEl.appendChild(continueBtn);
+
+    container.appendChild(navEl);
+    tileContainer.innerHTML = '';
+    tileContainer.appendChild(container);
+  }
+
+  renderStage(currentStage);
 }
 
 

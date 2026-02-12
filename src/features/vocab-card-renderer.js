@@ -40,6 +40,9 @@
     renderJumbleExercise, renderTrapExercise, renderScratchExercise
   } from './vocab-exercises.js';
 
+  import { uz, en } from '../core/i18n.js';
+  import { getText, getTranslation } from '../utils/language.js';
+
   // Note: carousel state is now imported from vocab-card-state.js
   // Use setSlideIndex/setCurrentCard/setExerciseCompleted to mutate
   // Use currentSlideIndex/currentCard/exerciseCompleted to read
@@ -83,7 +86,7 @@
 
     if (!hasSlidesFormat && !hasLegacyFormat) {
       console.error('Card format not recognized. Expected slides[], practice, Master Doc, or 4-Act format:', card);
-      alert('This card is under construction or missing practice data.');
+      alert(uz('vcr.cardNotReady'));
       return;
     }
     
@@ -134,12 +137,12 @@
           <button class="vc-close-btn" onclick="window.closeVocabModal()">×</button>
           <div class="vc-header-row">
             <span class="vc-word">${card.en || card.word || ''}</span>
-            ${(card.uz || card.uz_word) ? `<span class="vc-translation">— ${card.uz || card.uz_word}</span>` : ''}
+            ${getTranslation(card) ? `<span class="vc-translation">— ${getTranslation(card)}</span>` : ''}
           </div>
           <div class="vc-tags">
             ${card.pos ? `<span class="vc-tag">${card.pos}</span>` : ''}
             ${card.type ? `<span class="vc-tag">${card.type.replace(/_/g, ' ')}</span>` : ''}
-            ${isCompleted ? '<span class="vc-tag vc-tag--done">Done</span>' : ''}
+            ${isCompleted ? '<span class="vc-tag vc-tag--done">' + uz('vcr.done') + '</span>' : ''}
           </div>
         </div>
 
@@ -155,16 +158,16 @@
         </div>
 
         <!-- Stage Label -->
-        <div id="stage-label">Presentation</div>
+        <div id="stage-label">${uz('vcr.stagePresentation')}</div>
 
         <!-- Stage Content Area -->
         <div id="stage-content"></div>
 
         <!-- Navigation Footer -->
         <div class="vc-nav-footer">
-          <button id="btn-back" onclick="window.goToPrevStage()">← Back</button>
-          <button id="btn-next" onclick="window.goToNextStage()">Continue →</button>
-          <button id="btn-complete" onclick="window.markVocabComplete('${vocabId}')">✓ Complete Card</button>
+          <button id="btn-back" onclick="window.goToPrevStage()">${uz('vcr.backBtn')}</button>
+          <button id="btn-next" onclick="window.goToNextStage()">${uz('vcr.continueBtn')}</button>
+          <button id="btn-complete" onclick="window.markVocabComplete('${vocabId}')">${uz('vcr.completeCard')}</button>
         </div>
       </div>
     `;
@@ -216,7 +219,7 @@
     // Update stage label
     const stageLabel = document.getElementById('stage-label');
     if (stageLabel) {
-      const labels = { presentation: '📖 Presentation', concept_check: '🧠 Concept Check', discovery: '🔍 Discovery', drill: '🏋 Drill', production: '✍ Production', personalization: '🎯 Personalization' };
+      const labels = { presentation: uz('vcr.stagePresentation'), concept_check: uz('vcr.stageConceptCheck'), discovery: uz('vcr.stageDiscovery'), drill: uz('vcr.stageDrill'), production: uz('vcr.stageProduction'), personalization: uz('vcr.stagePersonalization') };
       stageLabel.textContent = labels[stageName] || stageName;
     }
     
@@ -263,8 +266,8 @@
         <div class="vc-stage-error">
           <div style="text-align:center;padding:40px 20px;color:#c62828;">
             <div style="font-size:32px;margin-bottom:12px;">⚠️</div>
-            <div style="font-size:16px;font-weight:600;margin-bottom:8px;">Stage failed to load</div>
-            <div style="font-size:13px;color:#999;">Try the next stage or close and reopen.</div>
+            <div style="font-size:16px;font-weight:600;margin-bottom:8px;">${uz('vcr.stageFailed')}</div>
+            <div style="font-size:13px;color:#999;">${uz('vcr.stageFailedHint')}</div>
           </div>
         </div>
       `;
@@ -330,14 +333,14 @@
         <div class="vc-flip-container">
           <div class="vc-flip-card" id="flip-card" onclick="this.classList.toggle('flipped')">
             <div class="vc-flip-front">
-              <div class="vc-flip-label" style="color:#b8860b;">🔀 Hybrid Bridge</div>
+              <div class="vc-flip-label" style="color:#b8860b;">${uz('vcr.hybridBridge')}</div>
               <div class="vc-flip-text" style="color:#333;">${renderHybridAnswer(hybridA)}</div>
-              <div class="vc-flip-hint">↕ Tap to see full English</div>
+              <div class="vc-flip-hint">${uz('vcr.tapToSeeEnglish')}</div>
             </div>
             <div class="vc-flip-back">
-              <div class="vc-flip-label" style="color:#558b2f;">Full English</div>
+              <div class="vc-flip-label" style="color:#558b2f;">${uz('vcr.fullEnglish')}</div>
               <div class="vc-flip-text" style="font-size:20px;font-weight:700;color:#2e7d32;">${enCanonical}</div>
-              <div class="vc-flip-hint">↕ Tap to flip back</div>
+              <div class="vc-flip-hint">${uz('vcr.tapToFlipBack')}</div>
             </div>
           </div>
         </div>
@@ -370,14 +373,14 @@
     if (negative && typeof negative === 'object' && !Array.isArray(negative)) {
       if (typeof negative.was === 'string' || typeof negative.were === 'string') {
         const negEntries = Object.entries(negative).map(([k, v]) => (typeof v === 'string' ? `${k} — ${v}` : '')).filter(Boolean).join('; ');
-        rows += `<tr><td style="padding:8px 12px;font-weight:600;color:#c62828;">Negative</td><td style="padding:8px 12px;">${negEntries}</td></tr>`;
+        rows += `<tr><td style="padding:8px 12px;font-weight:600;color:#c62828;">${uz('vcr.negative')}</td><td style="padding:8px 12px;">${negEntries}</td></tr>`;
       } else {
         const negEntries = Object.entries(negative).map(([k, v]) => `${k} — ${v}`).join(', ');
-        rows += `<tr><td style="padding:8px 12px;font-weight:600;color:#c62828;">Negative</td><td style="padding:8px 12px;">${negEntries}</td></tr>`;
+        rows += `<tr><td style="padding:8px 12px;font-weight:600;color:#c62828;">${uz('vcr.negative')}</td><td style="padding:8px 12px;">${negEntries}</td></tr>`;
       }
     }
     if (question) {
-      rows += `<tr><td style="padding:8px 12px;font-weight:600;color:#6a1b9a;">Question</td><td style="padding:8px 12px;">${question.pattern || ''}</td></tr>`;
+      rows += `<tr><td style="padding:8px 12px;font-weight:600;color:#6a1b9a;">${uz('vcr.questionForm')}</td><td style="padding:8px 12px;">${question.pattern || ''}</td></tr>`;
     }
 
     // U04 alternate shape: wasn_t: { full, subjects }, weren_t: { full, subjects }
@@ -399,7 +402,7 @@
 
     return `
       <div style="margin-top: 16px; background: #f5f5f5; border-radius: 12px; overflow: hidden;">
-        <div style="font-size: 13px; font-weight: 600; color: #666; padding: 10px 14px; border-bottom: 1px solid #e0e0e0;">📊 Grammar Reference</div>
+        <div style="font-size: 13px; font-weight: 600; color: #666; padding: 10px 14px; border-bottom: 1px solid #e0e0e0;">${uz('vcr.grammarRef')}</div>
         <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
           ${rows}
         </table>
@@ -505,7 +508,7 @@
           </div>
           ${linesHTML}
           <div style="font-size: 11px; color: #999; text-align: center; margin-top: 8px;">
-            🔒 Complete vocab cards to unlock more lines
+            ${uz('vcr.unlockMore')}
           </div>
         </div>
       </div>
@@ -561,7 +564,7 @@
       const isJustUnlocked = idx === ref.line_index;
       const isLeft = idx % 2 === 0;
       const lineText = isJustUnlocked && targetWord ? highlightTargetWord(line.line, targetWord) : (line.line || '');
-      const lineUzText = (line.line_uz || '');
+      const lineUzText = getText(line, 'line');
 
       return `
         <div class="dialogue-takeover-line" data-just-unlocked="${isJustUnlocked}" style="
@@ -597,7 +600,7 @@
               : 'background: #fff; border: 1px solid #e8e8e8; box-shadow: 0 1px 4px rgba(0,0,0,0.06);'}
             ${!isUnlocked ? 'filter: blur(4px); user-select: none; pointer-events: none;' : ''}
           ">
-            ${isJustUnlocked ? '<div style="font-size: 11px; font-weight: 700; color: #2e7d32; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">— Just unlocked</div>' : ''}
+            ${isJustUnlocked ? '<div style="font-size: 11px; font-weight: 700; color: #2e7d32; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">' + uz('vcr.justUnlocked') + '</div>' : ''}
             <div style="color: #1a1a1a; font-weight: ${isJustUnlocked ? 600 : 400};">${lineText}</div>
             ${(isUnlocked || isJustUnlocked) && lineUzText ? `<div style="font-size: 13px; color: #5c6bc0; margin-top: 8px; font-style: italic;">${lineUzText}</div>` : ''}
           </div>
@@ -641,7 +644,7 @@
             justify-content: center;
             transition: background 0.2s;
           " onmouseenter="this.style.background='rgba(255,255,255,0.35)'" onmouseleave="this.style.background='rgba(255,255,255,0.2)'">&times;</button>
-          <div style="font-size: 13px; opacity: 0.9; margin-bottom: 4px;">In context</div>
+          <div style="font-size: 13px; opacity: 0.9; margin-bottom: 4px;">${uz('vcr.inContext')}</div>
           <div style="font-size: 20px; font-weight: 700; letter-spacing: -0.3px;">${dialogue.title || 'Dialogue'}</div>
           ${(dialogue.setting || dialogue.characters?.length) ? `<div style="font-size: 12px; opacity: 0.85; margin-top: 6px;">${dialogue.setting || ''}${dialogue.setting && dialogue.characters?.length ? ' • ' : ''}${(dialogue.characters || []).join(' & ')}</div>` : ''}
         </div>
@@ -674,7 +677,7 @@
             cursor: pointer;
             box-shadow: 0 4px 14px rgba(57,73,171,0.35);
             transition: transform 0.2s, box-shadow 0.2s;
-          " onmouseenter="this.style.transform='translateY(-1px)';this.style.boxShadow='0 6px 20px rgba(57,73,171,0.4)'" onmouseleave="this.style.transform='';this.style.boxShadow='0 4px 14px rgba(57,73,171,0.35)'">Back</button>
+          " onmouseenter="this.style.transform='translateY(-1px)';this.style.boxShadow='0 6px 20px rgba(57,73,171,0.4)'" onmouseleave="this.style.transform='';this.style.boxShadow='0 4px 14px rgba(57,73,171,0.35)'">${uz('buttons.back')}</button>
         </div>
       </div>
     `;
@@ -797,11 +800,11 @@
 
     return `
       <div class="vc-audio-player" onclick="(function(){${playFn}window.__vcAudioPlay('${audioSrc || ''}','${escapedEnText}','en-US');})()">
-        <button type="button" class="vc-audio-play-btn" title="Listen in English">
+        <button type="button" class="vc-audio-play-btn" title="${uz('vcr.listenInEnglish')}">
           ${playSVG}
         </button>
         <div class="vc-audio-info">
-          <div class="vc-audio-label">Listen · English</div>
+          <div class="vc-audio-label">${uz('vcr.listenEnglish')}</div>
           <div class="vc-audio-text">${displayText || 'Audio'}</div>
         </div>
         <div class="vc-audio-waves">
@@ -858,7 +861,7 @@
           border-radius: 10px;
         ">
           <div style="font-size: 11px; font-weight: 700; color: #283593; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
-            🔀 Syntax Scaffold (Mirror Mode)
+            ${uz('vcr.syntaxScaffold')}
           </div>
           <div style="font-size: 15px; line-height: 1.5; margin-bottom: 6px;">
             ${tokensHTML}
@@ -878,7 +881,7 @@
         border-radius: 10px;
       ">
         <div style="font-size: 11px; font-weight: 700; color: #283593; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
-          🔀 Syntax Scaffold (Mirror Mode)
+          ${uz('vcr.syntaxScaffold')}
         </div>
         <div style="font-size: 15px; color: #1a237e; line-height: 1.5;">
           ${renderHybridAnswer(scaffold)}
@@ -903,7 +906,7 @@
     container.innerHTML = `
       <div style="display:flex;flex-direction:column;height:100%;justify-content:center;">
         <div style="font-size:14px;color:#888;margin-bottom:16px;font-weight:600;text-align:center;">
-          🔍 DISCOVERY
+          ${uz('vcr.discoveryLabel')}
         </div>
 
         <!-- Grammar Token -->
@@ -947,7 +950,7 @@
             font-weight:600;
             color:#2e7d32;
             transition:all 0.2s;
-          ">👆 Tap to see the rule</button>
+          ">${uz('vcr.tapSeeRule')}</button>
         </div>
 
         <div id="grammar-explanation" style="display:none;margin-top:16px;">
@@ -960,7 +963,7 @@
             border-radius:10px;
             margin-bottom:12px;
           ">
-            <div style="font-size:11px;font-weight:700;color:#283593;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">📏 Rule</div>
+            <div style="font-size:11px;font-weight:700;color:#283593;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">${uz('vcr.ruleLabel')}</div>
             <div style="font-size:16px;color:#1a237e;font-weight:600;line-height:1.5;">${miniRule}</div>
           </div>
           ` : ''}
@@ -1022,7 +1025,7 @@
         justify-content: center;
       ">
         <div style="font-size: 14px; color: #888; margin-bottom: 16px; font-weight: 600; text-align: center;">
-          🔍 DISCOVERY
+          ${uz('vcr.discoveryLabel')}
         </div>
 
         <!-- Instruction -->
@@ -1110,7 +1113,7 @@
     });
 
     if (options.length === 0) {
-      container.innerHTML += '<div style="text-align:center;color:#999;font-style:italic;">No discovery exercise for this card.</div>';
+      container.innerHTML += '<div style="text-align:center;color:#999;font-style:italic;">' + uz('vcr.noDiscovery') + '</div>';
     }
   }
 
@@ -1136,7 +1139,7 @@
         text-align: center;
       ">
         <div style="font-size: 14px; color: #888; margin-bottom: 20px; font-weight: 600;">
-          🎯 PERSONALIZATION
+          ${uz('vcr.personalizationLabel')}
         </div>
 
         <!-- Uzbek Prompt -->
@@ -1148,13 +1151,13 @@
           max-width: 400px;
           width: 100%;
         ">
-          <div style="font-size: 12px; color: #6a1b9a; margin-bottom: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Your turn — answer personally:</div>
+          <div style="font-size: 12px; color: #6a1b9a; margin-bottom: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">${uz('vcr.answerPersonally')}</div>
           <div style="font-size: 18px; color: #4a148c; font-weight: 600; line-height: 1.4;">${uzPrompt}</div>
         </div>
 
         <!-- Input Area -->
         <div style="width: 100%; max-width: 400px; margin-bottom: 16px;">
-          <input type="text" id="personalization-input" placeholder="Type your answer in English..." style="
+          <input type="text" id="personalization-input" placeholder="${uz('vcr.typeAnswerEnglish')}" style="
             width: 100%;
             padding: 16px 20px;
             border: 2px solid #ce93d8;
@@ -1179,7 +1182,7 @@
           box-shadow: 0 4px 12px rgba(171, 71, 188, 0.3);
           transition: all 0.2s;
           margin-bottom: 16px;
-        ">Check Answer</button>
+        ">${uz('vcr.checkAnswer')}</button>
 
         <!-- Feedback Area -->
         <div id="personalization-feedback" style="max-width: 400px; width: 100%;"></div>
@@ -1251,7 +1254,7 @@
     const examples = practice.en_examples || [];
     
     if (examples.length === 0) {
-      container.innerHTML = '<div style="text-align:center;color:#999;padding:40px 0;">No practice examples available for this stage.</div>';
+      container.innerHTML = '<div style="text-align:center;color:#999;padding:40px 0;">' + uz('vcr.noPractice') + '</div>';
       return;
     }
 
@@ -1260,7 +1263,7 @@
         <div style="
           font-size:12px;color:#666;text-align:center;
           padding:8px 12px;background:#f5f5f5;border-radius:8px;
-        ">Tap each card to reveal the English translation</div>
+        ">${uz('vcr.tapRevealEnglish')}</div>
         <div id="practice-examples" style="display:flex;flex-direction:column;gap:10px;"></div>
       </div>
     `;
@@ -1291,7 +1294,7 @@
             border-radius:12px;
           ">
             <div style="font-size:11px;color:#2e7d32;margin-bottom:5px;font-weight:700;display:flex;align-items:center;gap:4px;">
-              <span>⚓</span> ANCHOR${ex.speaker ? ' — ' + ex.speaker : ''}
+              <span>⚓</span> ${uz('vcr.anchor')}${ex.speaker ? ' — ' + ex.speaker : ''}
             </div>
             <div style="font-size:16px;color:#1b5e20;line-height:1.4;">${sentence}</div>
             ${ex.sentence_uz ? `<div style="font-size:13px;color:#558b2f;margin-top:5px;font-style:italic;">${ex.sentence_uz}</div>` : ''}
@@ -1310,12 +1313,12 @@
           " onclick="window.flipPracticeCard('${uniqueId}')">
             <div class="uz-side">
               <div style="font-size:11px;color:#e65100;margin-bottom:5px;font-weight:700;display:flex;align-items:center;gap:4px;">
-                <span>👆</span> Tap to reveal English${ex.subject ? ` <span style="opacity:0.7">(${ex.subject})</span>` : ''}
+                <span>👆</span> ${uz('vcr.tapReveal')}${ex.subject ? ` <span style="opacity:0.7">(${ex.subject})</span>` : ''}
               </div>
               <div style="font-size:16px;color:#333;line-height:1.4;">${uzSentence || '...'}</div>
             </div>
             <div class="en-side" style="display:none;">
-              <div style="font-size:11px;color:#1565c0;margin-bottom:5px;font-weight:700;">🇬🇧 ENGLISH</div>
+              <div style="font-size:11px;color:#1565c0;margin-bottom:5px;font-weight:700;">${uz('vcr.englishLabel')}</div>
               <div style="font-size:16px;color:#0d47a1;line-height:1.4;">${sentence}</div>
               ${uzSentence ? `<div style="font-size:12px;color:#888;margin-top:4px;font-style:italic;">${uzSentence}</div>` : ''}
             </div>
@@ -1355,16 +1358,16 @@
     const canonical = slide.reproduction?.en_canonical || slide.production?.en_target || '';
     
     // Determine exercise type label
-    let exerciseLabel = 'PRACTICE';
-    if (exercise.type === 'jumble') exerciseLabel = 'Arrange the chunks';
-    else if (exercise.type === 'function_sort') exerciseLabel = 'Concept Check';
-    else if (exercise.type === 'trap') exerciseLabel = 'Spot the Error';
-    else if (exercise.type === 'scratch') exerciseLabel = 'Reveal Words';
+    let exerciseLabel = uz('vcr.exercisePractice');
+    if (exercise.type === 'jumble') exerciseLabel = uz('vcr.arrangeChunks');
+    else if (exercise.type === 'function_sort') exerciseLabel = uz('vcr.conceptCheckEx');
+    else if (exercise.type === 'trap') exerciseLabel = uz('vcr.spotError');
+    else if (exercise.type === 'scratch') exerciseLabel = uz('vcr.revealWords');
     
     container.innerHTML = `
       <div style="height: 100%; display: flex; flex-direction: column;">
         <div style="font-size: 14px; color: #888; margin-bottom: 16px; font-weight: 600; text-align: center;">
-          📝 EXERCISE — ${exerciseLabel}
+          ${uz('vcr.exerciseLabel')} — ${exerciseLabel}
         </div>
         
         <div id="exercise-area" style="flex: 1; display: flex; flex-direction: column; justify-content: center;"></div>
@@ -1383,7 +1386,7 @@
     } else if (exercise.type === 'scratch') {
       renderScratchExercise(exerciseArea, exercise.data, canonical, () => {});
     } else {
-      exerciseArea.innerHTML = '<div style="text-align: center; color: #999;">No exercise available</div>';
+      exerciseArea.innerHTML = '<div style="text-align: center; color: #999;">' + uz('vcr.noExercise') + '</div>';
     }
   }
 
@@ -1393,14 +1396,14 @@
   
   function renderFunctionSortExercise(container, exerciseData, instruction) {
     if (!exerciseData) {
-      container.innerHTML = '<div style="text-align: center; color: #999;">No exercise data available</div>';
+      container.innerHTML = '<div style="text-align: center; color: #999;">' + uz('vcr.noExerciseData') + '</div>';
       return;
     }
 
     const sentence = exerciseData.sentence || '';
     const options = exerciseData.options || [];
-    const successMsg = exerciseData.success_msg || 'Correct!';
-    const failMsg = exerciseData.fail_msg || 'Try again.';
+    const successMsg = exerciseData.success_msg || uz('feedback.correct');
+    const failMsg = exerciseData.fail_msg || uz('feedback.tryAgain');
 
     container.innerHTML = `
       <div style="text-align: center;">
@@ -1412,7 +1415,7 @@
           padding: 12px;
           background: #f5f5f5;
           border-radius: 8px;
-        ">${instruction || 'Categorize this sentence:'}</div>
+        ">${instruction || uz('vcr.categorize')}</div>
         
         <!-- Target Sentence -->
         <div style="
@@ -1519,7 +1522,7 @@
           justify-content: center;
           align-items: center;
         ">
-          <span style="color: #999;">Tap chunks to build the sentence</span>
+          <span style="color: #999;">${uz('vcr.tapToOrder')}</span>
         </div>
         
         <!-- Chunk options -->
@@ -1592,7 +1595,7 @@
               border-radius: 8px;
               color: #2e7d32;
               font-weight: 600;
-            ">— Correct! Well done!</div>
+            ">— ${uz('vcr.correctWellDone')}</div>
           `;
           answerDiv.style.background = '#e8f5e9';
           answerDiv.style.borderColor = '#4caf50';
@@ -1603,7 +1606,7 @@
               background: #ffebee;
               border-radius: 8px;
               color: #c62828;
-            ">— Try again. Correct: <strong>${correctAnswer}</strong></div>
+            ">— ${uz('vcr.tryAgainCorrect')} <strong>${correctAnswer}</strong></div>
           `;
         }
       }
@@ -1643,7 +1646,7 @@
         text-align: center;
       ">
         <div style="font-size: 14px; color: #888; margin-bottom: 20px; font-weight: 600;">
-          ✏️ PRODUCTION
+          ${uz('vcr.productionLabel')}
         </div>
         
         <!-- Uzbek Prompt -->
@@ -1655,13 +1658,13 @@
           max-width: 400px;
           width: 100%;
         ">
-          <div style="font-size: 12px; color: #666; margin-bottom: 8px;">Say in English:</div>
+          <div style="font-size: 12px; color: #666; margin-bottom: 8px;">${uz('vcr.sayInEnglish')}</div>
           <div style="font-size: 18px; color: #0d47a1; font-weight: 600;">${prod.uz_prompt || ''}</div>
         </div>
         
         <!-- Input Area -->
         <div style="width: 100%; max-width: 400px; margin-bottom: 16px;">
-          <input type="text" id="production-input" placeholder="Type your answer here..." style="
+          <input type="text" id="production-input" placeholder="${uz('vcr.typeHere')}" style="
             width: 100%;
             padding: 16px 20px;
             border: 2px solid #ddd;
@@ -1686,7 +1689,7 @@
           box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
           transition: all 0.2s;
           margin-bottom: 16px;
-        ">Check Answer</button>
+        ">${uz('vcr.checkAnswer')}</button>
         
         <!-- Feedback Area -->
         <div id="production-feedback" style="max-width: 400px; width: 100%;"></div>
@@ -1701,7 +1704,7 @@
           margin-top: 16px;
           display: none;
         ">
-          <div style="font-size: 12px; color: #666; margin-bottom: 8px;">Model Answer:</div>
+          <div style="font-size: 12px; color: #666; margin-bottom: 8px;">${uz('vcr.modelAnswer')}</div>
           <div style="font-size: 18px; color: #2e7d32; font-weight: 700;">${prod.en_target || ''}</div>
         </div>
       </div>
@@ -1730,7 +1733,7 @@
               color: #856404;
               text-align: left;
             ">
-              <strong>⚠️ Trap Detected!</strong><br>
+              <strong>${uz('vcr.trapDetected')}</strong><br>
               ${trap.message || 'Check your answer carefully.'}
             </div>
           `;
@@ -1770,7 +1773,7 @@
           const unlockNotice = document.createElement('div');
           unlockNotice.style.cssText = 'margin-top:12px;padding:12px 16px;background:linear-gradient(135deg,#e8f5e9 0%,#c8e6c9 100%);border-radius:10px;border-left:4px solid #4caf50;animation:modalSlideIn 0.3s ease-out;';
           unlockNotice.innerHTML = `
-            <div style="font-size:13px;font-weight:600;color:#2e7d32;">🔓 Dialogue Line Unlocked!</div>
+            <div style="font-size:13px;font-weight:600;color:#2e7d32;">${uz('vcr.dialogueUnlocked')}</div>
             <div style="font-size:12px;color:#558b2f;margin-top:4px;">${currentCard?.dialogue_ref?.speaker || ''}: "${currentCard?.dialogue_ref?.bubble_text || ''}"</div>
           `;
           feedbackDiv.after(unlockNotice);
@@ -1782,7 +1785,7 @@
             background: #ffebee;
             border-radius: 8px;
             color: #c62828;
-          ">— Not quite. Try again or reveal the answer.</div>
+          ">— ${uz('vcr.notQuiteReveal')}</div>
         `;
         inputEl.style.borderColor = '#f44336';
         inputEl.style.background = '#ffebee';

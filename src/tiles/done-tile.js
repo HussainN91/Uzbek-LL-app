@@ -15,6 +15,9 @@ import {
   STATES,
   getCurrentUnitId
 } from './tile-utils.js';
+import { uz, en } from '../core/i18n.js';
+import { createInstructionBanner } from '../components/instruction-banner.js';
+import { checkBadges, showBadgeNotification } from '../core/badge-catalog.js';
 
 /**
  * Get translation function reference
@@ -142,6 +145,10 @@ export function renderDoneTile(lesson) {
   
   clearTileContainer();
 
+  // Instruction banner
+  const banner = createInstructionBanner('done');
+  if (banner) tileContainer.appendChild(banner);
+
   // Mark current lesson as completed for sequential unlocking
   if (currentLessonId) {
     completedLessons.add(currentLessonId);
@@ -161,6 +168,28 @@ export function renderDoneTile(lesson) {
   // ✅ Update daily streak
   updateStreak();
 
+  // ✅ Check for new badges
+  try {
+    const badgeState = {
+      completedLessons: completedLessons,
+      completedUnits: completedUnits,
+      lastScorePct: pctForXP,
+      streak: window.AppState?.session?.streak || 0,
+      level: window.AppState?.session?.level || 1,
+      vocabCompletion: window.AppState?.progress?.vocabCompletion || {},
+    };
+    const alreadyEarned = window.AppState?.session?.badges || [];
+    const newBadges = checkBadges(badgeState, alreadyEarned);
+    for (const badge of newBadges) {
+      if (typeof window.StateActions?.awardBadge === 'function') {
+        window.StateActions.awardBadge(badge.id);
+      }
+      showBadgeNotification(badge);
+    }
+  } catch (e) {
+    console.warn('Badge check error:', e);
+  }
+
   // Trigger confetti
   const confettiCount = 50;
   for (let i = 0; i < confettiCount; i++) {
@@ -177,7 +206,9 @@ export function renderDoneTile(lesson) {
 
   const title = document.createElement("div");
   title.className = "tile-title";
-  title.textContent = "🎉 Lesson Completed!";
+  title.textContent = uz('done.title');
+  title.classList.add('tl-uz');
+  title.dataset.translation = en('done.title');
 
   // Save score to history
   saveScoreToHistory();
@@ -244,6 +275,40 @@ export function renderDoneTile(lesson) {
   scoreSection.appendChild(scoreDisplay);
   scoreSection.appendChild(breakdown);
   
+  // ── Tile Progress Overview ──
+  const progressOverview = document.createElement("div");
+  progressOverview.style.cssText = 'margin-top: 16px; padding: 12px; background: rgba(255,255,255,0.7); border-radius: 10px;';
+  
+  const progressTitle = document.createElement("div");
+  progressTitle.textContent = uz('done.tileBreakdown');
+  progressTitle.classList.add('tl-uz');
+  progressTitle.dataset.translation = en('done.tileBreakdown');
+  progressTitle.style.cssText = 'font-weight: 700; font-size: 0.85rem; color: #555; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;';
+  progressOverview.appendChild(progressTitle);
+
+  const tileIcons = { intro: '🏠', vocab: '📚', dialogue: '💬', pattern: '🔤', function: '✅', controlled: '🎯', writing: '✍️', listen_write: '👂', mistake: '🔄', done: '🎉' };
+  const tileKeys = ['intro', 'vocab', 'dialogue', 'pattern', 'function', 'controlled', 'writing', 'listen_write', 'mistake'];
+  
+  tileKeys.forEach(key => {
+    const row = document.createElement("div");
+    row.style.cssText = 'display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 0.85rem;';
+    
+    const icon = tileIcons[key] || '▪';
+    const stateKey = 'tiles.' + (key === 'listen_write' ? 'listenWrite' : key);
+    const tileName = uz(stateKey);
+    const pts = tileScores[key] || 0;
+    const hasPts = pts > 0;
+
+    row.innerHTML = `
+      <span style="font-size: 1.1rem;">${icon}</span>
+      <span style="flex: 1; color: ${hasPts ? '#333' : '#999'};">${tileName}</span>
+      <span style="font-weight: 600; color: ${hasPts ? '#2e7d32' : '#ccc'};">${hasPts ? pts + ' ball' : '—'}</span>
+    `;
+    progressOverview.appendChild(row);
+  });
+
+  scoreSection.appendChild(progressOverview);
+  
   // Best score comparison
   const bestScore = getBestScore(currentLessonId);
   if (bestScore && bestScore.percentage !== percentage) {
@@ -253,10 +318,14 @@ export function renderDoneTile(lesson) {
     comparison.style.fontStyle = "italic";
     
     if (percentage > bestScore.percentage) {
-      comparison.textContent = "🎉 New personal best! (Previous: " + bestScore.percentage + "%)";
+      comparison.textContent = uz('done.newBest', { pct: bestScore.percentage });
+      comparison.classList.add('tl-uz');
+      comparison.dataset.translation = en('done.newBest', { pct: bestScore.percentage });
       comparison.style.color = "#2e7d32";
     } else {
-      comparison.textContent = "Your best: " + bestScore.percentage + "% (" + new Date(bestScore.date).toLocaleDateString() + ")";
+      comparison.textContent = uz('done.yourBest', { pct: bestScore.percentage, date: new Date(bestScore.date).toLocaleDateString() });
+      comparison.classList.add('tl-uz');
+      comparison.dataset.translation = en('done.yourBest', { pct: bestScore.percentage, date: new Date(bestScore.date).toLocaleDateString() });
       comparison.style.color = "#666";
     }
     
@@ -265,8 +334,9 @@ export function renderDoneTile(lesson) {
 
   const msg = document.createElement("div");
   msg.className = "tile-section";
-  msg.textContent =
-    "Bu dars uchun master bosqichi yakunlandi. To'liq ilovada bu keyingi darsni yoki bo'lim bosqichlarini ochadi.";
+  msg.textContent = uz('done.completionMessage');
+  msg.classList.add('tl-uz');
+  msg.dataset.translation = en('done.completionMessage');
 
   tileContainer.appendChild(title);
   tileContainer.appendChild(scoreSection);
@@ -330,7 +400,7 @@ export function renderDoneTile(lesson) {
       }
     }
     
-    const btnUnitCheck = createButton("📊 Unit Error Check", () => {
+    const btnUnitCheck = createButton(uz('done.errorCheck'), () => {
       if (!allLessonsComplete) {
         alert("Oldin barcha darslarni yakunlang. Tugallanmagan darslar: " + 
               lessonIds.filter(id => !completedLessons.has(id)).map(id => getFriendlyLessonName(id)).join(", "));
@@ -347,6 +417,22 @@ export function renderDoneTile(lesson) {
     
     tileContainer.appendChild(btnUnitCheck);
   }
+
+  // ── Lesson Restart Button ──
+  const btnRestart = createButton(uz('done.restartLesson'), () => {
+    if (typeof window.setLastMasterPassed === 'function') window.setLastMasterPassed(false);
+    if (typeof window.setLastWritingPassed === 'function') window.setLastWritingPassed(false);
+    if (typeof window.setLastListenWritePassed === 'function') window.setLastListenWritePassed(false);
+    if (typeof resetIntegrationState === 'function') resetIntegrationState();
+    window.sessionScore = 0;
+    window.sessionMaxScore = 0;
+    window.tileScores = {};
+    transitionToTile(STATES.INTRO);
+  });
+  btnRestart.classList.add('tl-uz');
+  btnRestart.dataset.translation = en('done.restartLesson');
+  btnRestart.style.cssText += '; background: linear-gradient(135deg, #78909c 0%, #546e7a 100%); margin-top: 12px; opacity: 0.85;';
+  tileContainer.appendChild(btnRestart);
 }
 
 // Backward compatibility

@@ -18,6 +18,8 @@ import {
   addMaxScore,
   playSound
 } from './tile-utils.js';
+import { uz, en } from '../core/i18n.js';
+import { createInstructionBanner } from '../components/instruction-banner.js';
 
 // ============================
 // HELPER BRIDGE FUNCTIONS
@@ -253,9 +255,17 @@ export function renderControlledTile(lesson) {
   });
 
   // === RENDER TILE UI ===
+  // Instruction banner
+  const ctrlBanner = createInstructionBanner('controlled', { showPairWork: true });
+  if (ctrlBanner) tileContainer.appendChild(ctrlBanner);
+
   const title = document.createElement("div");
   title.className = "tile-title";
-  title.textContent = "Tile 6 — Controlled Practice (" + stageName + ")";
+  const stageUz = stageName === 'GAP' ? uz('controlled.gap') : uz('controlled.reorder');
+  const stageEn = stageName === 'GAP' ? en('controlled.gap') : en('controlled.reorder');
+  title.textContent = uz('tiles.controlled') + ' (' + stageUz + ')';
+  title.classList.add('tl-uz');
+  title.dataset.translation = en('tiles.controlled') + ' (' + stageEn + ')';
 
   // Load indicator
   const loadIndicator = document.createElement("div");

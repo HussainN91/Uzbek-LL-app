@@ -12,6 +12,8 @@ import {
   awardPoints,
   STATES
 } from './tile-utils.js';
+import { uz, en } from '../core/i18n.js';
+import { createInstructionBanner } from '../components/instruction-banner.js';
 
 /**
  * Get mistake by ID
@@ -112,7 +114,9 @@ export function renderMistakeTile(lesson) {
   if (!window.lastListenWritePassed && !window.TEACHER_MODE) {
     const title = document.createElement("div");
     title.className = "tile-title";
-    title.textContent = "Tile 9 — Mistake Awareness (Locked)";
+    title.textContent = uz('tiles.mistake') + ' (Qulflangan)';
+    title.classList.add('tl-uz');
+    title.dataset.translation = en('tiles.mistake') + ' (Locked)';
     
     const msg = document.createElement("div");
     msg.className = "tile-section";
@@ -132,9 +136,15 @@ export function renderMistakeTile(lesson) {
     return;
   }
 
+  // Instruction banner
+  const mistakeBanner = createInstructionBanner('mistake', { showPairWork: true });
+  if (mistakeBanner) tileContainer.appendChild(mistakeBanner);
+
   const title = document.createElement("div");
   title.className = "tile-title";
-  title.textContent = "Tile 9 — Mistake Awareness";
+  title.textContent = uz('tiles.mistake');
+  title.classList.add('tl-uz');
+  title.dataset.translation = en('tiles.mistake');
 
   const container = document.createElement("div");
 
@@ -217,7 +227,7 @@ export function renderMistakeTile(lesson) {
     container.appendChild(fallbackFragment);
   }
 
-  const btnNext = createButton("Tugatish", () => {
+  const btnNext = createButton(uz('nav.nextDone'), () => {
     // Award points for completing mistake review
     if (!container.dataset.pointsAwarded) {
       awardPoints(mistakeReviewPoints, 'Reviewed mistakes', 'MISTAKE');

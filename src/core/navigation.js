@@ -147,28 +147,30 @@ function doRender() {
   const lesson = getCurrentLesson(currentLessonId) || {};
 
   // ╔═══════════════════════════════════════════════════════════════╗
-  // ║  DIAGNOSTIC: doRender() dispatch trace                       ║
+  // ║  DIAGNOSTIC: doRender() dispatch trace (dev-only)            ║
   // ╚═══════════════════════════════════════════════════════════════╝
-  console.group('%c[DIAG] doRender() DISPATCH', 'background:#222;color:#0ff;font-weight:bold;padding:2px 8px;');
-  console.log('currentState:', JSON.stringify(currentState));
-  console.log('currentLessonId:', currentLessonId);
-  console.log('lesson keys:', Object.keys(lesson));
-  console.log('lesson.lesson_id:', lesson.lesson_id);
-  console.log('lesson.lesson_dialogue?', !!lesson.lesson_dialogue);
-  if (lesson.lesson_dialogue) {
-    console.log('  dialogues count:', lesson.lesson_dialogue.dialogues?.length);
-    console.log('  title_en:', lesson.lesson_dialogue.title_en);
-    lesson.lesson_dialogue.dialogues?.forEach((d, i) => {
-      console.log(`  dialogue[${i}]: id=${d.id}, turns=${d.turns?.length}, context=${d.context_en}`);
-    });
+  if (window.__DEV_AUDIT__) {
+    console.group('%c[DIAG] doRender() DISPATCH', 'background:#222;color:#0ff;font-weight:bold;padding:2px 8px;');
+    console.log('currentState:', JSON.stringify(currentState));
+    console.log('currentLessonId:', currentLessonId);
+    console.log('lesson keys:', Object.keys(lesson));
+    console.log('lesson.lesson_id:', lesson.lesson_id);
+    console.log('lesson.lesson_dialogue?', !!lesson.lesson_dialogue);
+    if (lesson.lesson_dialogue) {
+      console.log('  dialogues count:', lesson.lesson_dialogue.dialogues?.length);
+      console.log('  title_en:', lesson.lesson_dialogue.title_en);
+      lesson.lesson_dialogue.dialogues?.forEach((d, i) => {
+        console.log(`  dialogue[${i}]: id=${d.id}, turns=${d.turns?.length}, context=${d.context_en}`);
+      });
+    }
+    console.log('lesson.version:', lesson.version);
+    console.log('lesson.source_dialogue:', lesson.source_dialogue);
+    console.log('lesson.is_integration_lesson:', lesson.is_integration_lesson);
+    console.log('STATES.DIALOGUE =', typeof STATES !== 'undefined' ? STATES.DIALOGUE : 'STATES not in scope');
+    console.log('hasTile("dialogue"):', typeof hasTile === 'function' ? hasTile('dialogue') : 'hasTile not available');
+    console.log('hasTile(currentState):', typeof hasTile === 'function' ? hasTile(currentState) : 'N/A');
+    console.groupEnd();
   }
-  console.log('lesson.version:', lesson.version);
-  console.log('lesson.source_dialogue:', lesson.source_dialogue);
-  console.log('lesson.is_integration_lesson:', lesson.is_integration_lesson);
-  console.log('STATES.DIALOGUE =', typeof STATES !== 'undefined' ? STATES.DIALOGUE : 'STATES not in scope');
-  console.log('hasTile("dialogue"):', typeof hasTile === 'function' ? hasTile('dialogue') : 'hasTile not available');
-  console.log('hasTile(currentState):', typeof hasTile === 'function' ? hasTile(currentState) : 'N/A');
-  console.groupEnd();
   
   // Integration lesson check
   if (lesson.is_integration_lesson && lesson.integration_content) {

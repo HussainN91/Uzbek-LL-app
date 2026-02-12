@@ -18,6 +18,8 @@ import {
   transitionToTile,
   getStates
 } from './tile-utils.js';
+import { uz, en } from '../core/i18n.js';
+import { createInstructionBanner } from '../components/instruction-banner.js';
 
 /**
  * Render the Intro tile
@@ -32,8 +34,14 @@ export function renderIntroTile(lesson) {
   const r = resolveUIData(STATES.INTRO, lesson);
   mergeMissingKeys(r.missingKeys);
 
+  // Instruction banner
+  const banner = createInstructionBanner('intro');
+  if (banner) tileContainer.appendChild(banner);
+
   // Title
-  const title = createTileTitle("Tile 1 – Intro (Uzbek meta)");
+  const title = createTileTitle(uz('tiles.intro'));
+  title.classList.add('tl-uz');
+  title.dataset.translation = en('tiles.intro');
 
   // Function section
   const fn = document.createElement("div");
@@ -61,7 +69,9 @@ export function renderIntroTile(lesson) {
   appendChildren(tileContainer, title, fn, sem, grammarDiv);
 
   // Next button
-  const btnNext = createButton("Next: Vocabulary", () => transitionToTile(STATES.VOCAB));
+  const btnNext = createButton(uz('nav.nextVocab'), () => transitionToTile(STATES.VOCAB));
+  btnNext.classList.add('tl-uz');
+  btnNext.dataset.translation = en('nav.nextVocab');
   tileContainer.appendChild(btnNext);
 }
 

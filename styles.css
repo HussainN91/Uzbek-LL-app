@@ -3208,12 +3208,13 @@ button.loading::after {
 /* Main Bar */
 .teacher-panel-bar {
   background: #4a5568;
-  padding: 10px 20px;
+  padding: 6px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  min-height: 44px;
 }
 
 /* Left Section - Badge */
@@ -3224,10 +3225,10 @@ button.loading::after {
 .teacher-badge {
   background: rgba(255, 255, 255, 0.2);
   color: white;
-  padding: 6px 12px;
+  padding: 4px 10px;
   border-radius: 20px;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   white-space: nowrap;
 }
 
@@ -3235,10 +3236,11 @@ button.loading::after {
 .teacher-panel-center {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
   flex: 1;
+  overflow: hidden;
 }
 
 .teacher-nav-item {
@@ -3255,14 +3257,14 @@ button.loading::after {
 }
 
 .teacher-select-inline {
-  padding: 6px 10px;
+  padding: 4px 8px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.95);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   cursor: pointer;
   transition: all 0.2s ease;
-  min-width: 100px;
+  min-width: 90px;
 }
 
 .teacher-select-inline:hover {
@@ -3367,6 +3369,11 @@ button.loading::after {
 body.teacher-mode-active {
   padding-top: 60px;
 }
+/* Make room for classroom controls if expanded */
+body.teacher-mode-active .teacher-control-panel.active {
+  max-height: 260px;
+  overflow: hidden;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -3414,6 +3421,10 @@ body.teacher-mode-active {
 
   .teacher-status-mini {
     display: none;
+  }
+
+  body.teacher-mode-active {
+    padding-top: 80px;
   }
 }
 
@@ -3470,7 +3481,7 @@ body.teacher-mode-active #tile-container::before {
   content: '👨‍🏫 TEACHER MODE';
   position: fixed;
   bottom: 16px;
-  right: 20px;
+  left: 20px;
   font-size: 0.7rem;
   font-weight: 700;
   color: rgba(102, 126, 234, 0.15);

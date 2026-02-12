@@ -45,8 +45,8 @@ export function adaptMasterDocFormat(rawCard) {
     // Slide 1: Presentation (flip card)
     phase: 'presentation',
     presentation: {
-      uz_polar_question: c.uz_context_question,
-      uz_mirror_answer: c.uz_mirror_answer,
+      uz_polar_question: getText(c, 'context_question') || c.uz_context_question,
+      uz_mirror_answer: getText(c, 'mirror_answer') || c.uz_mirror_answer,
       hybrid_answer: c.hybrid_answer
     },
     reproduction: {

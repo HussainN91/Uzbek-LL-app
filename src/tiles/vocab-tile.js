@@ -25,6 +25,8 @@ import {
   getVocabForLesson,
   getStates
 } from './tile-utils.js';
+import { uz, en } from '../core/i18n.js';
+import { createInstructionBanner } from '../components/instruction-banner.js';
 
 import { VocabCardRenderer } from '../features/vocab-card-renderer.js';
 import {
@@ -178,7 +180,13 @@ export function renderVocabTile(lesson) {
     windowCurriculumVocab: Object.keys(window.ACTIVE_CURRICULUM?.vocab || {}).length
   });
   
-  const title = createTileTitle("Tile 2 – Vocabulary");
+  // Instruction banner
+  const vocabBanner = createInstructionBanner('vocab', { showPairWork: true });
+  if (vocabBanner) tileContainer.appendChild(vocabBanner);
+
+  const title = createTileTitle(uz('tiles.vocab'));
+  title.classList.add('tl-uz');
+  title.dataset.translation = en('tiles.vocab');
   tileContainer.appendChild(title);
 
   // Get vocab card data for dialogue_ref lookup (U01_5_L01 -> U01_5, U02_L01 -> U02)

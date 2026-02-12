@@ -19,6 +19,8 @@ import {
   addGrammarHover,
   openGrammarPresentationModal
 } from './tile-utils.js';
+import { uz, en } from '../core/i18n.js';
+import { createInstructionBanner } from '../components/instruction-banner.js';
 
 /**
  * Render Tile 4 - Pattern / Grammar in Action
@@ -36,8 +38,13 @@ export function renderPatternTile(lesson) {
 
   const title = document.createElement("div");
   title.className = "tile-title";
-  title.textContent = "Tile 4 — Grammar in Action";
+  title.textContent = uz('tiles.pattern');
+  title.classList.add('tl-uz');
+  title.dataset.translation = en('tiles.pattern');
   
+  // Instruction banner
+  const patternBanner = createInstructionBanner('pattern', { showPairWork: true });
+  if (patternBanner) tileContainer.appendChild(patternBanner);
   tileContainer.appendChild(title);
 
   // Interactive PPP Grammar Presentation Modal
@@ -160,19 +167,21 @@ export function renderPatternTile(lesson) {
         contentArea.appendChild(stepLabel);
         contentArea.appendChild(step.content());
 
-        const understood = createButton(index === 0 ? "I see it! →" : "Tushundim →", () => {
+        const understood = createButton(index === 0 ? uz('pattern.iSeeIt') : uz('pattern.understood'), () => {
           currentStep++;
           renderStep(currentStep);
         });
-        understood.classList.add('btn--understood');
+        understood.classList.add('btn--understood', 'tl-uz');
+        understood.dataset.translation = index === 0 ? en('pattern.iSeeIt') : en('pattern.understood');
         buttonArea.appendChild(understood);
         
         if (index > 0) {
-          const back = createButton("← Back", () => {
+          const back = createButton(uz('buttons.back') + ' ←', () => {
             currentStep--;
             renderStep(currentStep);
           });
-          back.classList.add('btn--back');
+          back.classList.add('btn--back', 'tl-uz');
+          back.dataset.translation = en('buttons.back') + ' ←';
           buttonArea.appendChild(back);
         }
 
@@ -183,10 +192,12 @@ export function renderPatternTile(lesson) {
         done.dataset.translation = "✓ All information reviewed";
         contentArea.appendChild(done);
         
-        const restart = createButton("Review Rules ↺", () => {
+        const restart = createButton(uz('pattern.reviewRules'), () => {
           currentStep = 0;
           renderStep(0);
         });
+        restart.classList.add('tl-uz');
+        restart.dataset.translation = en('pattern.reviewRules');
         buttonArea.appendChild(restart);
       }
     }
@@ -232,7 +243,9 @@ export function renderPatternTile(lesson) {
     navContainer.appendChild(backBtn);
   }
 
-  const nextBtn = createButton("Next: Function →", () => transitionToTile(STATES.FUNCTION));
+  const nextBtn = createButton(uz('pattern.nextFunction'), () => transitionToTile(STATES.FUNCTION));
+  nextBtn.classList.add('tl-uz');
+  nextBtn.dataset.translation = en('pattern.nextFunction');
   nextBtn.style.cssText = "flex: 1; max-width: 200px; padding: 14px 24px; background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(39,174,96,0.3);";
   navContainer.appendChild(nextBtn);
 

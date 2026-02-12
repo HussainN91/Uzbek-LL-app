@@ -129,3 +129,26 @@ export {
   SemanticTagEngine,
   SemanticDebug
 } from './semantic-tags.js';
+
+// Internationalization (i18n)
+export { uz, en, uzEl, uzify, uzBtn } from './i18n.js';
+
+// Uzbek per-tile instructions
+export { getInstructionForTile, getAllInstructions } from './uz-instructions.js';
+
+// Badge catalog & gamification
+export {
+  BADGE_CATALOG,
+  checkBadges,
+  getBadge,
+  getBadgesByCategory,
+  showBadgeNotification
+} from './badge-catalog.js';
+
+// Classroom mode
+export {
+  initClassroomMode,
+  buildClassroomSection,
+  getClassroomState,
+  getPaceMultiplier
+} from './classroom-mode.js';
