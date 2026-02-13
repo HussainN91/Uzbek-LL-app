@@ -1,5 +1,5 @@
 /**
- * done-tile.js - Tile 10: Lesson Completed
+ * done-tile.js - Lesson Completed Tile
  * Final tile with score summary, confetti, and next lesson navigation
  */
 
@@ -279,15 +279,15 @@ export function renderDoneTile(lesson) {
   progressTitle.style.cssText = 'font-weight: 700; font-size: 0.85rem; color: #555; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;';
   progressOverview.appendChild(progressTitle);
 
-  const tileIcons = { intro: '🏠', vocab: '📚', dialogue: '💬', pattern: '🔤', function: '✅', controlled: '🎯', writing: '✍️', listen_write: '👂', mistake: '🔄', done: '🎉' };
-  const tileKeys = ['intro', 'vocab', 'dialogue', 'pattern', 'function', 'controlled', 'writing', 'listen_write', 'mistake'];
+  const tileIcons = { intro: '🏠', vocab: '📚', dialogue: '💬', done: '🎉' };
+  const tileKeys = ['intro', 'vocab', 'dialogue'];
   
   tileKeys.forEach(key => {
     const row = document.createElement("div");
     row.style.cssText = 'display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 0.85rem;';
     
     const icon = tileIcons[key] || '▪';
-    const stateKey = 'tiles.' + (key === 'listen_write' ? 'listenWrite' : key);
+    const stateKey = 'tiles.' + key;
     const tileName = uz(stateKey);
     const pts = tileScores[key] || 0;
     const hasPts = pts > 0;
@@ -346,8 +346,6 @@ export function renderDoneTile(lesson) {
       () => {
         if (typeof window.setCurrentLesson === 'function') window.setCurrentLesson(nextId);
         if (typeof window.setLastMasterPassed === 'function') window.setLastMasterPassed(false);
-        if (typeof window.setLastWritingPassed === 'function') window.setLastWritingPassed(false);
-        if (typeof window.setLastListenWritePassed === 'function') window.setLastListenWritePassed(false);
         resetIntegrationState();
         buildLessonSelectorUI();
         transitionToTile(STATES.INTRO); // single render via transitionToTile
@@ -393,29 +391,12 @@ export function renderDoneTile(lesson) {
       }
     }
     
-    const btnUnitCheck = createButton(uz('done.errorCheck'), () => {
-      if (!allLessonsComplete) {
-        alert(uz('done.completeAllFirst').replace('{lessons}', 
-              lessonIds.filter(id => !completedLessons.has(id)).map(id => getFriendlyLessonName(id)).join(", ")));
-        return;
-      }
-      transitionToTile(STATES.UNIT_ERROR_DETECTION);
-    });
-    
-    // Visual indicator if not all complete
-    if (!allLessonsComplete) {
-      btnUnitCheck.style.opacity = "0.5";
-      btnUnitCheck.title = uz('done.allLessonsRequired');
-    }
-    
-    tileContainer.appendChild(btnUnitCheck);
+    // Unit Error Check removed - feature deprecated
   }
 
   // ── Lesson Restart Button ──
   const btnRestart = createButton(uz('done.restartLesson'), () => {
     if (typeof window.setLastMasterPassed === 'function') window.setLastMasterPassed(false);
-    if (typeof window.setLastWritingPassed === 'function') window.setLastWritingPassed(false);
-    if (typeof window.setLastListenWritePassed === 'function') window.setLastListenWritePassed(false);
     if (typeof resetIntegrationState === 'function') resetIntegrationState();
     window.sessionScore = 0;
     window.sessionMaxScore = 0;

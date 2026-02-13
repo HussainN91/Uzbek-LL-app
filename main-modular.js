@@ -44,22 +44,13 @@ import './src/data/index.js';
 // ===========================================
 
 const lazyLoadTiles = () => {
-  // Load all tiles from src/tiles/ (single batch, no duplicate loads â€” ES modules are cached)
+  // Load all tiles from src/tiles/ (single batch, no duplicate loads — ES modules are cached)
   return Promise.all([
     import('./src/tiles/intro-tile.js'),
     import('./src/tiles/vocab-tile.js'),
     import('./src/tiles/dialogue-tile.js'),
-    import('./src/tiles/pattern-tile.js'),
-    import('./src/tiles/function-tile.js'),
-    import('./src/tiles/controlled-tile.js'),
-    import('./src/tiles/writing-tile.js'),
-    import('./src/tiles/listen-write-tile.js'),
-    import('./src/tiles/mistake-tile.js'),
     import('./src/tiles/done-tile.js'),
-    import('./src/tiles/unit-error-tile.js'),
-    import('./src/tiles/grand-tile.js'),
     import('./src/tiles/dialogue-practice-tile.js'),
-    import('./src/tiles/transformation-tile.js'),
   ]);
 };
 window.lazyLoadTiles = lazyLoadTiles;

@@ -19,12 +19,11 @@ import { STATES } from '../utils/constants.js';
  * @property {Object} units
  * @property {Object} lessons
  * @property {Object} vocab
- * @property {Object} patterns
- * @property {Object} mistakes
  * @property {Object} audio
- * @property {Object} masterTiles
- * @property {any} unitErrorDetection
- * @property {any} grandTile
+ * @property {Object} dialogues
+ * @property {any} mission
+ * @property {any[]} contrastive_turns
+ * @property {string} grammar_focus
  * @property {any[]} audioBank
  */
 
@@ -34,12 +33,11 @@ let ACTIVE_CURRICULUM = {
   units: {},
   lessons: {},
   vocab: {},
-  patterns: {},
-  mistakes: {},
   audio: {},
-  masterTiles: {},
-  unitErrorDetection: null,
-  grandTile: null,
+  dialogues: {},
+  mission: null,
+  contrastive_turns: [],
+  grammar_focus: '',
   audioBank: [],
 };
 
@@ -160,9 +158,8 @@ export async function setActiveUnit(unitId) {
       },
       lessons: {},
       vocab: {},
-      patterns: {},
       audio: {},
-      mistakes: {},
+      audioBank: [],
       // Pedagogical data from vocab card bundles
       dialogues: vocabCards.dialogues || {},
       mission: vocabCards.mission || null,
@@ -190,9 +187,7 @@ export async function setActiveUnit(unitId) {
         communicative_function: lesson.function_en || "",
         semantic_category: lesson.semantic_category_en || "",
         vocab_ids: vocabIds,
-        main_pattern_id: "",
         audio_ids: [],
-        mistake_ids: [],
         version: lesson.version || undefined,
         source_dialogue: lesson.source_dialogue || (lesson.source_dialogues && lesson.source_dialogues[0]) || undefined,
         source_dialogues: lesson.source_dialogues || (lesson.source_dialogue ? [lesson.source_dialogue] : undefined)
@@ -251,34 +246,27 @@ export async function setActiveUnit(unitId) {
     // ╔═══════════════════════════════════════════════════════════════╗
     // ║  DIAGNOSTIC: Vocab-only curriculum data trace                 ║
     // ╚═══════════════════════════════════════════════════════════════╝
-    console.group('%c[DIAG] CURRICULUM DATA WIRING', 'background:#222;color:#0f0;font-weight:bold;padding:2px 8px;');
-    console.log('Unit:', CURRENT_UNIT_ID);
-    console.log('Lessons built:', Object.keys(ACTIVE_CURRICULUM.lessons));
-    console.log('Top-level dialogues:', Object.keys(ACTIVE_CURRICULUM.dialogues || {}));
-    console.log('Mission:', ACTIVE_CURRICULUM.mission ? `${ACTIVE_CURRICULUM.mission.mission_id} (${ACTIVE_CURRICULUM.mission.stages?.length} stages)` : 'NONE');
-    console.log('Contrastive turns:', ACTIVE_CURRICULUM.contrastive_turns?.length || 0);
-    console.log('Grammar focus:', ACTIVE_CURRICULUM.grammar_focus || 'NONE');
-    Object.entries(ACTIVE_CURRICULUM.lessons).forEach(([lid, lobj]) => {
-      console.group(`  Lesson: ${lid}`);
-      console.log('has lesson_dialogue:', !!lobj.lesson_dialogue);
-      if (lobj.lesson_dialogue) {
-        console.log('  title_en:', lobj.lesson_dialogue.title_en);
-        console.log('  dialogues:', lobj.lesson_dialogue.dialogues?.length);
-        lobj.lesson_dialogue.dialogues?.forEach((d, i) => {
-          console.log(`    [${i}] id=${d.id} turns=${d.turns?.length}`);
-          if (d.turns?.length > 0) {
-            console.log(`      turn[0]: speaker=${d.turns[0].speaker}, text="${d.turns[0].text?.substring(0,40)}"`);
-          }
-        });
-      } else {
-        console.warn('  ⚠️ NO lesson_dialogue — tile will skip to Pattern!');
-      }
-      console.log('source_dialogue:', lobj.source_dialogue);
-      console.log('source_dialogues:', lobj.source_dialogues);
-      console.log('version:', lobj.version);
+    if (window.__DEV_AUDIT__) {
+      console.group('[DIAG] CURRICULUM DATA WIRING');
+      console.log('Unit:', CURRENT_UNIT_ID);
+      console.log('Lessons built:', Object.keys(ACTIVE_CURRICULUM.lessons));
+      console.log('Top-level dialogues:', Object.keys(ACTIVE_CURRICULUM.dialogues || {}));
+      console.log('Mission:', ACTIVE_CURRICULUM.mission ? `${ACTIVE_CURRICULUM.mission.mission_id} (${ACTIVE_CURRICULUM.mission.stages?.length} stages)` : 'NONE');
+      console.log('Contrastive turns:', ACTIVE_CURRICULUM.contrastive_turns?.length || 0);
+      console.log('Grammar focus:', ACTIVE_CURRICULUM.grammar_focus || 'NONE');
+      Object.entries(ACTIVE_CURRICULUM.lessons).forEach(([lid, lobj]) => {
+        console.group(`  Lesson: ${lid}`);
+        console.log('has lesson_dialogue:', !!lobj.lesson_dialogue);
+        if (lobj.lesson_dialogue) {
+          console.log('  title_en:', lobj.lesson_dialogue.title_en);
+          console.log('  dialogues:', lobj.lesson_dialogue.dialogues?.length);
+        } else {
+          console.warn('  ⚠️ NO lesson_dialogue — tile will skip to Done!');
+        }
+        console.groupEnd();
+      });
       console.groupEnd();
-    });
-    console.groupEnd();
+    }
 
     hideLoading();
     return true;
@@ -423,9 +411,7 @@ export async function setActiveUnit(unitId) {
     console.warn("⚠️ Failed to lazy-load vocab cards:", e);
   }
   
-  // Backfill function data if needed
-  await _backfillFunctionData(CURRENT_UNIT_ID);
-  
+
   hideLoading();
   return true;
 }
@@ -514,41 +500,6 @@ export function getCurrentLesson(lessonId) {
 
 export function getVocab(vocabId) {
   return ACTIVE_CURRICULUM.vocab?.[vocabId] || null;
-}
-
-export function getPattern(patternId) {
-  return ACTIVE_CURRICULUM.patterns?.[patternId] || null;
-}
-
-export function getMistake(mistakeId) {
-  return ACTIVE_CURRICULUM.mistakes?.[mistakeId] || null;
-}
-
-export function getMasterSpecForCurrentLesson(lessonId) {
-  const id = lessonId || window.currentLessonId;
-  return ACTIVE_CURRICULUM.masterTiles?.[id] || null;
-}
-
-export function getUnitErrorDetectionSpec(unitId) {
-  const c = ACTIVE_CURRICULUM;
-  if (!c?.unitErrorDetection) return null;
-  
-  if (c.unitErrorDetection.unit_error_detection_id && Array.isArray(c.unitErrorDetection.items)) {
-    return c.unitErrorDetection;
-  }
-  
-  return c.unitErrorDetection[unitId] || null;
-}
-
-export function getGrandTileSpec(unitId) {
-  const c = ACTIVE_CURRICULUM;
-  if (!c?.grandTile) return null;
-  
-  if (c.grandTile.uz_instruction || c.grandTile.expected_output_sample) {
-    return c.grandTile;
-  }
-  
-  return c.grandTile[unitId] || null;
 }
 
 export function getAudioEntry(audioId) {
@@ -695,11 +646,6 @@ if (typeof window !== 'undefined') {
   window.getUnitLessonIds = getUnitLessonIds;
   window.getCurrentLesson = getCurrentLesson;
   window.getVocab = getVocab;
-  window.getPattern = getPattern;
-  window.getMistake = getMistake;
-  window.getMasterSpecForCurrentLesson = getMasterSpecForCurrentLesson;
-  window.getUnitErrorDetectionSpec = getUnitErrorDetectionSpec;
-  window.getGrandTileSpec = getGrandTileSpec;
   window.getAudioEntry = getAudioEntry;
   
   // Loading

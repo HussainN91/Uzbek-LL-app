@@ -208,7 +208,7 @@ export function renderDialogueTile(dialogueContent, lesson) {
             
             audioBtn.classList.add('is-loading');
             const unitFolder = 'unit_' + getCurrentUnitId().toLowerCase().slice(1);
-            const audioPath = `./audio_assets/${unitFolder}/lesson_dialogues/${turn.audio_id}.mp3`;
+            const audioPath = `/audio_assets/${unitFolder}/lesson_dialogues/${turn.audio_id}.mp3`;
             
             if (player) {
               player.play(audioPath, audioBtn).then(() => {
@@ -330,13 +330,13 @@ export function renderDialogueUzbekTile(dialogueContent, lesson) {
 
   // Proceed button
   const proceedBtn = document.createElement("button");
-  proceedBtn.textContent = uz('nav.nextPattern') + ' →';
+  proceedBtn.textContent = uz('nav.continue') + ' →';
   proceedBtn.classList.add('tl-uz');
-  proceedBtn.dataset.translation = en('nav.nextPattern') + ' →';
+  proceedBtn.dataset.translation = en('nav.continue') + ' →';
   proceedBtn.className = "btn-primary";
   proceedBtn.style.cssText = "padding: 15px 30px; background: #27ae60; border: none; border-radius: 8px; color: white; font-size: 16px; cursor: pointer; display: block; margin: 20px auto;";
   proceedBtn.addEventListener("click", () => {
-    setIntegrationState('transformation');
+    setIntegrationState('done');
     render();
   });
   wrapper.appendChild(proceedBtn);

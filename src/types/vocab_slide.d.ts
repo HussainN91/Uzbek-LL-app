@@ -145,6 +145,7 @@ export interface VocabProductionSlide {
   uz_prompt?: string;
   model_sentence?: string;
   model_answer?: string;  // Legacy U01.5 format
+  accepted_answers?: string[];  // Alternative correct answers for flexible validation
   hints?: string[];
   input_type?: 'bubble' | 'full_sentence';
   // Bubble unlock props

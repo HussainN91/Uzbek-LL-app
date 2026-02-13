@@ -25,10 +25,7 @@ import {
   getCompletedUnits,
   getCompletedLessons,
   resetIntegrationState,
-  setControlledStageIndex,
   setLastMasterPassed,
-  setLastWritingPassed,
-  setLastListenWritePassed,
   getCurrentLessonId
 } from './navigation.js';
 import { uz, en } from './i18n.js';
@@ -164,9 +161,6 @@ export function buildLessonSelectorUI() {
       
       setCurrentLesson(lid);
       setLastMasterPassed(false);
-      setLastWritingPassed(false);
-      setLastListenWritePassed(false);
-      setControlledStageIndex(0);
       resetIntegrationState();
       setState(STATES.INTRO); // setState already calls render()
       

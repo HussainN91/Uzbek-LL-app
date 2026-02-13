@@ -9,7 +9,6 @@
 
 // JSDoc Type Imports
 /** @typedef {import('../types/curriculum.d.ts').Lesson} Lesson */
-/** @typedef {import('../types/curriculum.d.ts').Pattern} Pattern */
 /** @typedef {import('../types/curriculum.d.ts').AudioEntry} AudioEntry */
 /** @typedef {import('../types/vocab.d.ts').VocabItem} VocabItem */
 /** @typedef {import('../types/state.d.ts').TileState} TileState */
@@ -313,16 +312,10 @@ export function addMaxScore(points) {
  */
 export function getStates() {
   return window.STATES || {
-    INTRO: 'INTRO',
-    VOCAB: 'VOCAB',
-    DIALOGUE: 'DIALOGUE',
-    PATTERN: 'PATTERN',
-    FUNCTION: 'FUNCTION',
-    CONTROLLED: 'CONTROLLED',
-    WRITING: 'WRITING',
-    LISTEN_WRITE: 'LISTEN_WRITE',
-    MISTAKE: 'MISTAKE',
-    DONE: 'DONE'
+    INTRO: 'intro',
+    VOCAB: 'vocab',
+    DIALOGUE: 'dialogue',
+    DONE: 'done'
   };
 }
 
@@ -330,19 +323,10 @@ export function getStates() {
  * Direct reference to STATES constants
  */
 export const STATES = typeof window !== 'undefined' && window.STATES ? window.STATES : {
-  INTRO: 'INTRO',
-  VOCAB: 'VOCAB',
-  DIALOGUE: 'DIALOGUE',
-  LESSON_DIALOGUE: 'LESSON_DIALOGUE',
-  PATTERN: 'PATTERN',
-  FUNCTION: 'FUNCTION',
-  CONTROLLED: 'CONTROLLED',
-  WRITING: 'WRITING',
-  LISTEN_WRITE: 'LISTEN_WRITE',
-  MISTAKE: 'MISTAKE',
-  UNIT_ERROR_DETECTION: 'UNIT_ERROR_DETECTION',
-  GRAND: 'GRAND',
-  DONE: 'DONE'
+  INTRO: 'intro',
+  VOCAB: 'vocab',
+  DIALOGUE: 'dialogue',
+  DONE: 'done'
 };
 
 // ============================

@@ -351,30 +351,15 @@ function escapeHtml(str) {
  * @param {Object} lesson - Lesson data containing lesson_dialogue
  */
 export function renderLessonDialogueTile(lesson) {
-  // ╔═══════════════════════════════════════════════════════════════╗
-  // ║  DIAGNOSTIC: Dialogue Tile Entry Point                       ║
-  // ╚═══════════════════════════════════════════════════════════════╝
-  console.group('%c[DIAG] renderLessonDialogueTile ENTRY', 'background:#222;color:#ff0;font-weight:bold;padding:2px 8px;');
-  console.log('lesson arg received:', typeof lesson);
-  console.log('lesson keys:', lesson ? Object.keys(lesson) : 'NULL/UNDEFINED');
-  console.log('lesson.lesson_id:', lesson?.lesson_id);
-  console.log('lesson.lesson_dialogue:', lesson?.lesson_dialogue ? 'EXISTS' : 'MISSING');
-  if (lesson?.lesson_dialogue) {
-    const ld = lesson.lesson_dialogue;
-    console.log('  .title_en:', ld.title_en);
-    console.log('  .title_uz:', ld.title_uz);
-    console.log('  .dialogues:', Array.isArray(ld.dialogues) ? `Array(${ld.dialogues.length})` : typeof ld.dialogues);
-    ld.dialogues?.forEach((d, i) => {
-      console.log(`  dialogue[${i}]: id=${d.id}, context_en="${d.context_en}", turns=${d.turns?.length}`);
-      d.turns?.slice(0, 2).forEach((t, j) => {
-        console.log(`    turn[${j}]: speaker=${t.speaker}, text="${t.text?.substring(0,50)}", text_uz="${t.text_uz?.substring(0,50)}"`);
-      });
-    });
-  } else {
-    console.error('❌ lesson.lesson_dialogue is MISSING — will skip to Pattern!');
-    console.log('Full lesson object:', JSON.stringify(lesson, null, 2).substring(0, 2000));
+  if (window.__DEV_AUDIT__) {
+    console.group('[DIAG] renderLessonDialogueTile ENTRY');
+    console.log('lesson.lesson_id:', lesson?.lesson_id);
+    console.log('lesson.lesson_dialogue:', lesson?.lesson_dialogue ? 'EXISTS' : 'MISSING');
+    if (!lesson?.lesson_dialogue) {
+      console.error('lesson.lesson_dialogue is MISSING — will skip to Done!');
+    }
+    console.groupEnd();
   }
-  console.groupEnd();
 
   injectDialogueCSS();
   
@@ -385,8 +370,8 @@ export function renderLessonDialogueTile(lesson) {
   
   // If no dialogue data, skip to next state
   if (!dialogueData || !dialogueData.dialogues || dialogueData.dialogues.length === 0) {
-    console.error('%c[DIAG] ❌ SKIPPING TO PATTERN — no dialogue data!', 'background:red;color:white;font-weight:bold;padding:2px 8px;');
-    setState(STATES.PATTERN);
+    console.error('%c[DIAG] ❌ SKIPPING TO DONE — no dialogue data!', 'background:red;color:white;font-weight:bold;padding:2px 8px;');
+    setState(STATES.DONE);
     return;
   }
 
@@ -401,21 +386,12 @@ export function renderLessonDialogueTile(lesson) {
   const mirrorEnabled = missionStage ? missionStage.mirror_enabled : true;
   const isMasteryStage = missionStage && missionStage.stage === 3 && missionStage.form === 'interrogative';
 
-  // ╔═══════════════════════════════════════════════════════════════╗
-  // ║  DIAGNOSTIC: Pedagogical context resolved                    ║
-  // ╚═══════════════════════════════════════════════════════════════╝
-  console.group('%c[DIAG] PEDAGOGICAL CONTEXT', 'background:#222;color:#f90;font-weight:bold;padding:2px 8px;');
-  console.log('lessonId:', lessonId);
-  console.log('missionStage:', missionStage);
-  console.log('grammarFocus:', grammarFocus);
-  console.log('contrastiveTurns:', contrastiveTurns?.length, contrastiveTurns);
-  console.log('mirrorEnabled:', mirrorEnabled);
-  console.log('isMasteryStage:', isMasteryStage);
-  console.log('currentVanishMode:', getVanishMode());
-  console.log('window.getMissionStageForLesson available:', typeof window.getMissionStageForLesson === 'function');
-  console.log('window.getGrammarFocus available:', typeof window.getGrammarFocus === 'function');
-  console.log('window.getContrastiveTurnsForLesson available:', typeof window.getContrastiveTurnsForLesson === 'function');
-  console.groupEnd();
+  if (window.__DEV_AUDIT__) {
+    console.group('[DIAG] PEDAGOGICAL CONTEXT');
+    console.log('lessonId:', lessonId, '| missionStage:', missionStage, '| grammarFocus:', grammarFocus);
+    console.log('contrastiveTurns:', contrastiveTurns?.length, '| mirrorEnabled:', mirrorEnabled);
+    console.groupEnd();
+  }
 
   let currentVanishMode = getVanishMode();
   let currentLangState = 'en'; // 'uz' | 'mirror' | 'en'
@@ -595,7 +571,7 @@ export function renderLessonDialogueTile(lesson) {
       // Use absolute path for reliability
       const unitFolder = 'unit_' + CURRENT_UNIT_ID.toLowerCase().slice(1);
       const audioPath = `/audio_assets/${unitFolder}/lesson_dialogues/${audioId}.mp3`;
-      console.log('Playing dialogue audio (helper):', audioPath);
+      if (window.__DEV_AUDIT__) console.log('Playing dialogue audio (helper):', audioPath);
       
       const audio = new Audio(audioPath);
       
@@ -604,7 +580,7 @@ export function renderLessonDialogueTile(lesson) {
         console.warn('Audio load failed:', audioPath, e);
         // Fallback: try relative path just in case
         const altPath = `./audio_assets/${unitFolder}/lesson_dialogues/${audioId}.mp3`;
-        console.log('Trying fallback path:', altPath);
+        if (window.__DEV_AUDIT__) console.log('Trying fallback path:', altPath);
         
         const altAudio = new Audio(altPath);
         altAudio.addEventListener("ended", resolve);
@@ -745,7 +721,7 @@ export function renderLessonDialogueTile(lesson) {
         speakerRow.appendChild(masteryBadge);
         
         // ═══ LUXURIOUS Per-Line Audio Button ═══
-        console.log('[Audio] Dialogue turn:', { speaker: turn.speaker, audio_id: turn.audio_id, hasText: !!(turn.text || turn.text_en) });
+        if (window.__DEV_AUDIT__) console.log('[Audio] Dialogue turn:', { speaker: turn.speaker, audio_id: turn.audio_id, hasText: !!(turn.text || turn.text_en) });
         if (turn.audio_id || turn.text || turn.text_en) {
           const audioBtn = document.createElement("button");
           audioBtn.className = "dlg-audio-btn";
@@ -774,7 +750,7 @@ export function renderLessonDialogueTile(lesson) {
 
             // TTS-only fallback when no audio_id
             if (!turn.audio_id) {
-              console.log('[Audio] No audio_id — using TTS for:', turnTextForAudio.substring(0, 50));
+              if (window.__DEV_AUDIT__) console.log('[Audio] No audio_id — using TTS for:', turnTextForAudio.substring(0, 50));
               audioBtn.classList.remove('is-loading');
               if (turnTextForAudio && window.speechSynthesis) {
                 const u = new SpeechSynthesisUtterance(turnTextForAudio);
@@ -791,7 +767,7 @@ export function renderLessonDialogueTile(lesson) {
 
             // Use absolute path /audio_assets/
             const audioPath = `/audio_assets/${unitFolder}/lesson_dialogues/${turn.audio_id}.mp3`;
-            console.log('Playing button audio:', audioPath);
+            if (window.__DEV_AUDIT__) console.log('Playing button audio:', audioPath);
             
             if (window.dialogueAudioPlayer) {
               window.dialogueAudioPlayer.play(audioPath, audioBtn).then(() => {
@@ -1263,9 +1239,9 @@ export function renderLessonDialogueTile(lesson) {
   repracticeBtn.style.cssText = "flex: 1; max-width: 220px; padding: 14px 24px; background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: white; border: none; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(99,102,241,0.3);";
   navContainer.appendChild(repracticeBtn);
 
-  const nextBtn = createButton(uz('nav.nextPattern') + ' →', () => transitionToTile(STATES.PATTERN));
+  const nextBtn = createButton(uz('nav.continue') + ' →', () => transitionToTile(STATES.DONE));
   nextBtn.classList.add('tl-uz');
-  nextBtn.dataset.translation = en('nav.nextPattern') + ' →';
+  nextBtn.dataset.translation = en('nav.continue') + ' →';
   nextBtn.style.cssText = "flex: 1; max-width: 200px; padding: 14px 24px; background: #27ae60; color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(39,174,96,0.3);";
   navContainer.appendChild(nextBtn);
 
@@ -1325,7 +1301,7 @@ async function startThinkingPressure(turnElements) {
       const unitFolder = 'unit_' + (typeof getCurrentUnitId === 'function' ? getCurrentUnitId() : 'U01').toLowerCase().slice(1);
       // Use absolute path
       const audioPath = `/audio_assets/${unitFolder}/lesson_dialogues/${turn.audio_id}.mp3`;
-      console.log('Thinking Pressure Audio:', audioPath);
+      if (window.__DEV_AUDIT__) console.log('Thinking Pressure Audio:', audioPath);
       
       try { 
         window.dialogueAudioPlayer.play(audioPath, /** @type {HTMLButtonElement} */ (turnEl.querySelector('.dlg-audio-btn') || document.createElement('button'))); 
@@ -1574,7 +1550,7 @@ function renderDialogueRepractice(lesson, dialogueData, wrapper, tileContainer) 
       chip.dataset.word = word.toLowerCase();
       chip.addEventListener('click', () => {
         // Find first empty gap and fill it
-        const emptyGap = container.querySelector('.repractice-gap:not(.filled)');
+        const emptyGap = /** @type {HTMLElement|null} */ (container.querySelector('.repractice-gap:not(.filled)'));
         if (emptyGap) {
           emptyGap.textContent = word;
           emptyGap.dataset.userAnswer = word;
@@ -1655,7 +1631,8 @@ function renderDialogueRepractice(lesson, dialogueData, wrapper, tileContainer) 
       let correct = 0;
       let total = gaps.length;
 
-      gaps.forEach(gap => {
+      gaps.forEach(gapEl => {
+        const gap = /** @type {HTMLElement} */ (gapEl);
         const answer = (gap.dataset.answer || '').toLowerCase();
         const userAnswer = (gap.dataset.userAnswer || gap.textContent || '').trim().toLowerCase();
 
@@ -1719,9 +1696,9 @@ function renderDialogueRepractice(lesson, dialogueData, wrapper, tileContainer) 
     navEl.appendChild(backDlgBtn);
 
     // Continue to next tile button
-    const continueBtn = createButton(uz('nav.nextPattern') + ' →', () => transitionToTile(STATES.PATTERN));
+    const continueBtn = createButton(uz('nav.continue') + ' →', () => transitionToTile(STATES.DONE));
     continueBtn.classList.add('tl-uz');
-    continueBtn.dataset.translation = en('nav.nextPattern') + ' →';
+    continueBtn.dataset.translation = en('nav.continue') + ' →';
     continueBtn.style.cssText = 'background: #27ae60; color: white; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;';
     navEl.appendChild(continueBtn);
 

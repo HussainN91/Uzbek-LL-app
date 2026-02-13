@@ -24,9 +24,6 @@ import {
   getCurrentState,
   getCompletedUnits,
   setLastMasterPassed,
-  setLastWritingPassed,
-  setLastListenWritePassed,
-  setControlledStageIndex,
   resetIntegrationState
 } from './navigation.js';
 import { buildUnitSelectorUI, buildLessonSelectorUI } from './ui-builders.js';
@@ -246,11 +243,6 @@ export function goToTile(stateName) {
   
   console.log("🎯 Teacher Mode: Moving to", targetState);
   
-  // Reset gate flags
-  if (targetState === STATES.WRITING) setLastWritingPassed(false);
-  if (targetState === STATES.LISTEN_WRITE) setLastListenWritePassed(false);
-  if (targetState === STATES.MISTAKE) setLastListenWritePassed(true);
-  
   setState(targetState);
   
   // Update dropdown
@@ -281,9 +273,6 @@ export function goToLesson(lessonId) {
   
   setCurrentLesson(lessonId);
   setLastMasterPassed(false);
-  setLastWritingPassed(false);
-  setLastListenWritePassed(false);
-  setControlledStageIndex(0);
   resetIntegrationState();
   setState(STATES.INTRO);
   
@@ -421,12 +410,6 @@ export function updateTeacherPanelUI() {
         { value: STATES.INTRO, label: "🏠 Intro" },
         { value: STATES.VOCAB, label: "📚 Vocabulary" },
         { value: STATES.DIALOGUE, label: "💬 Dialogue" },
-        { value: STATES.PATTERN, label: "🔤 Patterns" },
-        { value: STATES.FUNCTION, label: "✅ Function Check" },
-        { value: STATES.CONTROLLED, label: "🎯 Controlled Practice" },
-        { value: STATES.WRITING, label: "✍️ Writing" },
-        { value: STATES.LISTEN_WRITE, label: "👂 Listen & Write" },
-        { value: STATES.MISTAKE, label: "🔄 Mistake Review" },
         { value: STATES.DONE, label: "🎉 Done" }
       ];
       teacherTileSelect.innerHTML = '';

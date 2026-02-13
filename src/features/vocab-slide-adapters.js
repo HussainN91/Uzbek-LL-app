@@ -11,6 +11,8 @@
 
 'use strict';
 
+import { getText } from '../utils/language.js';
+
 // ═══════════════════════════════════════════════════════════════
 // ADAPTER: Master Document Format → Slides Format
 // ═══════════════════════════════════════════════════════════════

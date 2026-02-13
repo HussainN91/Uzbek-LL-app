@@ -1,13 +1,12 @@
 /**
  * Helper Functions Module
  * =======================
- * Controlled practice helpers, evaluation functions, and text utilities.
+ * Evaluation functions and text utilities.
  * 
  * @module src/core/helpers
  */
 
-import { getVocab, getMistake } from './curriculum-loader.js';
-import { uz, en } from './i18n.js';
+
 
 // ============================
 // CONSTANTS
@@ -99,86 +98,6 @@ function levenshteinDistance(a, b) {
 }
 
 // ============================
-// CONTROLLED PRACTICE HELPERS
-// ============================
-
-/**
- * Pick a random gap-fill item from vocab
- * Creates a gap by removing 1-2 letters from the middle of a word
- * @returns {Object|null} vocab item with gap details
- */
-export function pickGap() {
-  const vocab = getVocab();
-  if (!vocab || !vocab.items) return null;
-  
-  // Filter items suitable for gap
-  const suitable = vocab.items.filter(item => {
-    const word = item.it || '';
-    return word.length >= 4;
-  });
-  
-  if (suitable.length === 0) return null;
-  
-  const item = suitable[Math.floor(Math.random() * suitable.length)];
-  const word = item.it;
-  
-  // Create gap (remove 1-2 letters from middle)
-  const gapLen = word.length >= 6 ? 2 : 1;
-  const midPoint = Math.floor(word.length / 2);
-  const gapStart = Math.max(1, midPoint - Math.floor(gapLen / 2));
-  
-  return {
-    ...item,
-    gapped: word.substring(0, gapStart) + '_'.repeat(gapLen) + word.substring(gapStart + gapLen),
-    answer: word.substring(gapStart, gapStart + gapLen),
-    fullWord: word
-  };
-}
-
-// Legacy aliases for backward compatibility
-export const pickGapEasy = pickGap;
-export const pickGapHard = pickGap;
-
-/**
- * Create a word reorder exercise from a sentence
- * @param {string} sentence - Sentence to reorder
- * @returns {Object} reorder exercise data
- */
-export function makeReorder(sentence) {
-  const words = sentence.split(/\s+/).filter(w => w.length > 0);
-  const shuffled = [...words].sort(() => Math.random() - 0.5);
-  
-  // Ensure shuffled is different from original
-  if (words.length > 2 && shuffled.join(' ') === words.join(' ')) {
-    // Swap first and last
-    [shuffled[0], shuffled[shuffled.length - 1]] = [shuffled[shuffled.length - 1], shuffled[0]];
-  }
-  
-  return {
-    original: sentence,
-    words: shuffled,
-    answer: words.join(' ')
-  };
-}
-
-/**
- * Create sentence construction exercise
- * @param {string} sentence - Target sentence
- * @param {string[]} distractors - Extra words to include
- * @returns {Object} construction exercise data
- */
-export function makeConstruction(sentence, distractors = []) {
-  const words = sentence.split(/\s+/).filter(w => w.length > 0);
-  const pool = [...words, ...distractors].sort(() => Math.random() - 0.5);
-  
-  return {
-    target: sentence,
-    pool: pool,
-    answer: words
-  };
-}
-
-// ============================
 // MISTAKE ANALYSIS
 // ============================
 
@@ -227,38 +146,6 @@ export function detectCommonErrors(userAnswer, correctAnswer) {
   }
   
   return errors;
-}
-
-/**
- * Get feedback for a mistake
- * @param {string} mistakeId - Mistake identifier
- * @returns {Object|null} Mistake data with feedback
- */
-export function getMistakeFeedback(mistakeId) {
-  const mistake = getMistake(mistakeId);
-  if (mistake) return mistake;
-  
-  // Default feedbacks for common errors
-  const defaults = {
-    'missing_article': {
-      hint: "Don't forget the article!",
-      feedback_uz: uz('helpers.articleNeeded')
-    },
-    'wrong_article': {
-      hint: "Check which article to use",
-      feedback_uz: uz('helpers.checkArticle')
-    },
-    'missing_preposition': {
-      hint: "A preposition is needed here",
-      feedback_uz: uz('helpers.prepositionNeeded')
-    },
-    'word_order': {
-      hint: "Check the word order",
-      feedback_uz: uz('helpers.checkWordOrder')
-    }
-  };
-  
-  return defaults[mistakeId] || null;
 }
 
 // ============================
@@ -449,13 +336,6 @@ export function pickOne(array) {
 // ============================
 
 if (typeof window !== 'undefined') {
-  // Controlled practice helpers (used in tiles)
-  window._pickGap = pickGap;
-  window._pickGapEasy = pickGap; // Legacy alias
-  window._pickGapHard = pickGap; // Legacy alias
-  window._makeReorder = makeReorder;
-  window._makeConstruction = makeConstruction;
-  
   // Evaluation helpers
   window.evaluateTextAnswer = evaluateTextAnswer;
   window.evaluateMultipleChoice = evaluateMultipleChoice;

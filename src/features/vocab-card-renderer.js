@@ -36,8 +36,7 @@
   import { adaptMasterDocFormat, adapt4ActFormat } from './vocab-slide-adapters.js';
   
   import {
-    shuffleArray, renderChunks, renderScratchSentence,
-    renderJumbleExercise, renderTrapExercise, renderScratchExercise
+    renderTrapExercise, renderScratchExercise
   } from './vocab-exercises.js';
 
   import { uz, en } from '../core/i18n.js';
@@ -52,8 +51,7 @@
 
   // ═══════════════════════════════════════════════════════════════
   // EXERCISES + ADAPTERS — imported from extracted modules:
-  //   vocab-exercises.js (shuffleArray, renderChunks, renderScratchSentence,
-  //                       renderJumbleExercise, renderTrapExercise, renderScratchExercise)
+  //   vocab-exercises.js (renderTrapExercise, renderScratchExercise)
   //   vocab-slide-adapters.js (adaptMasterDocFormat, adapt4ActFormat)
   // ═══════════════════════════════════════════════════════════════
 
@@ -81,9 +79,6 @@
     // Check for slides[] (deep carousel format) or legacy practice object
     const hasSlidesFormat = Array.isArray(card.slides) && card.slides.length > 0;
     const hasLegacyFormat = card.practice && !card.slides;
-    const hasMasterDocFormat = card.card && card.card.uz_context_question; // Should now have slides from adapter
-    const has4ActFormat = card._is4Act === true; // Detected by adapt4ActFormat
-
     if (!hasSlidesFormat && !hasLegacyFormat) {
       console.error('Card format not recognized. Expected slides[], practice, Master Doc, or 4-Act format:', card);
       alert(uz('vcr.cardNotReady'));
@@ -206,7 +201,6 @@
     const slide = slides[currentStage] || {};
     
     // Update progress dots
-    const stageLabels = ['📖', '🧠', '🔍', '🏋', '✍', '🎯'];
     document.querySelectorAll('.stage-dot').forEach((dot, i) => {
       dot.classList.remove('stage-dot--active', 'stage-dot--completed');
       if (i === currentStage) {
@@ -1336,7 +1330,8 @@
     
     const uzSide = card.querySelector('.uz-side');
     const enSide = card.querySelector('.en-side');
-    
+    if (!uzSide || !enSide) return;
+
     if (uzSide.style.display !== 'none') {
       uzSide.style.display = 'none';
       enSide.style.display = 'block';
@@ -1716,7 +1711,8 @@
     const checkBtn = document.getElementById('production-check-btn');
     const feedbackDiv = document.getElementById('production-feedback');
     const revealDiv = document.getElementById('production-reveal');
-    
+    if (!inputEl || !checkBtn) return;
+
     checkBtn.onclick = () => {
       const userAnswer = (inputEl.value || '').trim().toLowerCase().replace(/[.,!?]/g, '');
       const targetNormalized = (prod.en_target || '').toLowerCase().replace(/[.,!?]/g, '');

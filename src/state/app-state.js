@@ -18,7 +18,7 @@
 /** @typedef {import('../types/state').TileState} TileState */
 /** @typedef {import('../types/state').AppStateShape} AppStateShape */
 
-import { STATES, CONTROLLED_STAGES } from '../utils/constants.js';
+import { STATES } from '../utils/constants.js';
 import { 
   loadGameState, 
   saveGameState, 
@@ -47,17 +47,12 @@ const AppState = {
     unitId: 'U01',
     lessonId: 'U01_L01',
     tile: STATES.INTRO,
-    controlledStage: 0,
-    integrationState: null, // 'dialogue' | 'dialogue_uz' | 'transformation' | 'listen_write'
+    integrationState: null, // 'dialogue' | 'dialogue_uz'
     integrationProgress: {
       dialogueAnswered: false,
-      transformationsPassed: 0,
-      totalTransformations: 0,
     },
     gates: {
       lastMasterPassed: false,
-      lastWritingPassed: false,
-      lastListenWritePassed: false,
     },
   },
 
@@ -69,7 +64,6 @@ const AppState = {
     completedUnits: new Set(),
     vocabCompletion: {},  // { vocabId: true }
     posGamesShown: {},    // { lessonId: true }
-    preReadProgress: {},  // { lessonId_stageName: true }
     usageTracker: {},     // Token usage tracking
   },
 
@@ -185,9 +179,6 @@ export function setLesson(lessonId) {
     AppState.navigation.unitId = unitId;
   }
   
-  // Reset controlled stage for new lesson
-  AppState.navigation.controlledStage = 0;
-  
   // Reset integration state
   resetIntegrationState();
   
@@ -207,29 +198,12 @@ export function setUnit(unitId) {
 }
 
 /**
- * Set controlled stage index
- * @param {number} stage - Stage index (0-based)
- */
-export function setControlledStage(stage) {
-  const maxStage = CONTROLLED_STAGES.length;
-  const clampedStage = Math.max(0, Math.min(stage, maxStage));
-  
-  const oldValue = AppState.navigation.controlledStage;
-  if (oldValue === clampedStage) return;
-  
-  AppState.navigation.controlledStage = clampedStage;
-  notify('navigation.controlledStage', clampedStage, oldValue);
-}
-
-/**
  * Reset integration state (for lesson transitions)
  */
 export function resetIntegrationState() {
   AppState.navigation.integrationState = null;
   AppState.navigation.integrationProgress = {
     dialogueAnswered: false,
-    transformationsPassed: 0,
-    totalTransformations: 0,
   };
 }
 
@@ -239,12 +213,12 @@ export function resetIntegrationState() {
 
 /**
  * Set gate flag
- * @param {'lastMasterPassed'|'lastWritingPassed'|'lastListenWritePassed'} gate
+ * @param {'lastMasterPassed'} gate
  * @param {boolean} value
  */
 export function setGate(gate, value) {
   if (!AppState.navigation.gates) {
-    AppState.navigation.gates = { lastMasterPassed: false, lastWritingPassed: false, lastListenWritePassed: false };
+    AppState.navigation.gates = { lastMasterPassed: false };
   }
   const old = AppState.navigation.gates[gate];
   AppState.navigation.gates[gate] = value;
@@ -253,7 +227,7 @@ export function setGate(gate, value) {
 
 /**
  * Get gate flag
- * @param {'lastMasterPassed'|'lastWritingPassed'|'lastListenWritePassed'} gate
+ * @param {'lastMasterPassed'} gate
  * @returns {boolean}
  */
 export function getGate(gate) {
@@ -294,31 +268,6 @@ export function markPOSGameShown(lessonId) {
  */
 export function isPOSGameShown(lessonId) {
   return AppState.progress.posGamesShown[lessonId] === true;
-}
-
-/**
- * Mark pre-read as completed for a controlled stage
- * @param {string} lessonId - Lesson ID
- * @param {string} stageName - Stage name
- */
-export function markPreReadComplete(lessonId, stageName) {
-  const key = `${lessonId}_${stageName}`;
-  if (!AppState.progress.preReadProgress) {
-    AppState.progress.preReadProgress = {};
-  }
-  AppState.progress.preReadProgress[key] = true;
-  notify('progress.preReadProgress', AppState.progress.preReadProgress, null);
-}
-
-/**
- * Check if pre-read is completed for a controlled stage
- * @param {string} lessonId - Lesson ID
- * @param {string} stageName - Stage name
- * @returns {boolean}
- */
-export function isPreReadComplete(lessonId, stageName) {
-  const key = `${lessonId}_${stageName}`;
-  return AppState.progress?.preReadProgress?.[key] === true;
 }
 
 /**
@@ -646,7 +595,6 @@ export function persistState() {
       unitId: AppState.navigation.unitId,
       lessonId: AppState.navigation.lessonId,
       tile: AppState.navigation.tile,
-      controlledStage: AppState.navigation.controlledStage,
     },
     session: {
       score: AppState.session.score,
@@ -714,7 +662,6 @@ export function resetState() {
   AppState.navigation.unitId = 'U01';
   AppState.navigation.lessonId = 'U01_L01';
   AppState.navigation.tile = STATES.INTRO;
-  AppState.navigation.controlledStage = 0;
   resetIntegrationState();
   
   // Progress
@@ -722,7 +669,6 @@ export function resetState() {
   AppState.progress.completedUnits.clear();
   AppState.progress.vocabCompletion = {};
   AppState.progress.posGamesShown = {};
-  AppState.progress.preReadProgress = {};
   AppState.progress.usageTracker = {};
   
   // Session
@@ -821,8 +767,6 @@ if (typeof window !== 'undefined') {
     set lessonId(v) { setLesson(v); },
     get tile() { return AppState.navigation.tile; },
     set tile(v) { setTile(v); },
-    get controlledStage() { return AppState.navigation.controlledStage; },
-    set controlledStage(v) { setControlledStage(v); },
     get score() { return AppState.session.score; },
     set score(v) { AppState.session.score = v; },
     get maxScore() { return AppState.session.maxScore; },
@@ -877,7 +821,6 @@ if (typeof window !== 'undefined') {
     setTile,
     setLesson,
     setUnit,
-    setControlledStage,
     completeVocab,
     completeLesson,
     completeUnit,
@@ -894,11 +837,9 @@ if (typeof window !== 'undefined') {
     resetIntegrationState,
     setGate,
     getGate,
-    // POS Game and Pre-read progress
+    // POS Game
     markPOSGameShown,
     isPOSGameShown,
-    markPreReadComplete,
-    isPreReadComplete,
     // NEW: Language display and gamification
     setLanguageDisplay,
     getLanguageDisplay,

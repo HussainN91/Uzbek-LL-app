@@ -246,28 +246,6 @@ export function addScoreToHistory(lessonId, entry, maxEntries = 10) {
 }
 
 /**
- * Load controlled stage progress for a lesson
- * @param {string} lessonId - Lesson ID
- * @returns {number} Stage index (0-based)
- */
-export function loadControlledStage(lessonId) {
-  const key = STORAGE_KEYS.CONTROLLED_STAGE(lessonId);
-  const value = getSession(key, 0);
-  return typeof value === 'number' ? value : parseInt(value, 10) || 0;
-}
-
-/**
- * Save controlled stage progress for a lesson
- * @param {string} lessonId - Lesson ID
- * @param {number} stage - Stage index
- * @returns {boolean} Success status
- */
-export function saveControlledStage(lessonId, stage) {
-  const key = STORAGE_KEYS.CONTROLLED_STAGE(lessonId);
-  return setSession(key, stage);
-}
-
-/**
  * Check if POS game has been shown for a lesson
  * @param {string} lessonId - Lesson ID
  * @returns {boolean}
@@ -388,8 +366,6 @@ if (typeof window !== 'undefined') {
     loadScoreHistory,
     saveScoreHistory,
     addScoreToHistory,
-    loadControlledStage,
-    saveControlledStage,
     isPOSGameShown,
     setPOSGameShown,
     loadVocabCompletion,

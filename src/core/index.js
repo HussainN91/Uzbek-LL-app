@@ -13,8 +13,6 @@ export {
   getActiveCurriculum,
   getCurrentUnitId,
   getVocab,
-  getPattern,
-  getMistake,
   getUnitDisplayName,
   // Pedagogical data access
   getMission,
@@ -44,9 +42,6 @@ export {
   getCompletedUnits,
   setAvailableUnits,
   getAvailableUnits,
-  setControlledStageIndex,
-  getControlledStageIndex,
-  resetControlledStage,
   setIntegrationState,
   resetIntegrationState,
   getCurrentState,
@@ -81,13 +76,6 @@ export {
   compareAnswers,
   fuzzyCompare,
   
-  // Controlled practice
-  pickGap,
-  pickGapEasy,  // Legacy alias
-  pickGapHard,  // Legacy alias
-  makeReorder,
-  makeConstruction,
-  
   // Evaluation
   evaluateTextAnswer,
   evaluateMultipleChoice,
@@ -95,7 +83,6 @@ export {
   evaluateGapFill,
   evaluateMasterOutput,
   detectCommonErrors,
-  getMistakeFeedback,
   
   // Randomization
   shuffle,

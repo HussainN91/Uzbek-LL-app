@@ -150,21 +150,7 @@ async function initAdditionalSystems() {
     console.warn('⚠️ XP Display failed to mount:', e);
   }
   
-  // Initialize vocab gap hover system
-  // TODO: vocab_gap_hover_data.json does not exist yet — generate it when gap data is ready
-  try {
-    const response = await fetch('vocab_gap_hover_data.json');
-    if (response.ok) {
-      const gapData = await response.json();
-      if (window.vocabGapSystem) {
-        await window.vocabGapSystem.initialize(gapData);
-        console.log(`✅ Vocab Gap System: ${gapData.total_gap_words} words`);
-      }
-    }
-  } catch {
-    // Optional feature, ignore if not available
-  }
-  
+
   // Initialize dialogue audio player
   if (!window.dialogueAudioPlayer) {
     window.dialogueAudioPlayer = createDialogueAudioPlayer();
@@ -178,10 +164,6 @@ function createDialogueAudioPlayer() {
   let currentAudio = null;
   let currentButton = null;
   let isPlaying = false;
-
-  // SVG icons for the dialogue buttons
-  const speakerSVG = '<svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8.5v7a4.49 4.49 0 0 0 2.5-3.5zM14 3.23v2.06a7.007 7.007 0 0 1 0 13.42v2.06A9.013 9.013 0 0 0 14 3.23z"/></svg>';
-  const waveSpans = '<span class="dlg-audio-waves"><span></span><span></span><span></span><span></span><span></span></span>';
 
   function resetButton(btn) {
     if (!btn) return;
@@ -264,7 +246,7 @@ function printDevCommands() {
   console.log("║  TEACHER_MODE = true            Enable free navigation         ║");
   console.log("║  goToUnit('U02')                Jump to unit                   ║");
   console.log("║  goToLesson('U02_L03')          Jump to lesson                 ║");
-  console.log("║  goToTile('FUNCTION')           Jump to tile                   ║");
+  console.log("║  goToTile('DIALOGUE')           Jump to tile                   ║");
   console.log("║  showUnits()                    List available units           ║");
   console.log("║  showLessons()                  List lessons in current unit   ║");
   console.log("║  showTiles()                    List available tiles           ║");
@@ -287,48 +269,6 @@ function reset() {
   } else {
     console.log("❌ Reset cancelled.");
   }
-}
-
-// ============================
-// SERVICE WORKER
-// ============================
-
-function registerServiceWorker() {
-  if (!('serviceWorker' in navigator)) {
-    console.log("⚠️ Service Worker not supported");
-    return;
-  }
-  
-  const isLocalhost = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
-  
-  if (isLocalhost) {
-    // Disable SW on localhost to prevent stale caches
-    navigator.serviceWorker.getRegistrations()
-      .then(registrations => Promise.all(registrations.map(reg => reg.unregister())))
-      .then(() => console.log('🧹 Service Worker disabled on localhost'))
-      .catch(error => console.log('❌ SW unregister failed:', error));
-    return;
-  }
-  
-  navigator.serviceWorker.register('/sw.js')
-    .then(registration => {
-      console.log('✅ Service Worker registered:', registration.scope);
-      
-      registration.addEventListener('updatefound', () => {
-        const newWorker = registration.installing;
-        if (newWorker) {
-          newWorker.addEventListener('statechange', () => {
-            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-              console.log('🔄 New app version available!');
-              if (confirm('A new version is available. Reload to update?')) {
-                window.location.reload();
-              }
-            }
-          });
-        }
-      });
-    })
-    .catch(error => console.log('❌ SW registration failed:', error));
 }
 
 // ============================

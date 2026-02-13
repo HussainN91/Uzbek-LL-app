@@ -263,7 +263,7 @@ export function renderVocabTile(lesson) {
     if (hasLessonDialogue) {
       btnNext = createButton(uz('nav.nextDialogue'), () => transitionToTile(STATES.DIALOGUE));
     } else {
-      btnNext = createButton(uz('nav.nextPattern'), () => transitionToTile(STATES.PATTERN));
+      btnNext = createButton(uz('nav.continue'), () => transitionToTile(STATES.DONE));
     }
   }
 
@@ -628,10 +628,10 @@ function createVocabNextButton(lesson, lessonId, vocabCardsData, STATES, tileCon
   progressDiv.querySelector('div').dataset.translation = `Words: ${completedCards} / ${totalCards}`;
   tileContainer.appendChild(progressDiv);
   
-  // Determine next state: DIALOGUE if lesson has dialogue data, else PATTERN
+  // Determine next state: DIALOGUE if lesson has dialogue data, else DONE
   const hasDialogue = lesson?.lesson_dialogue?.dialogues?.length > 0;
-  const nextState = hasDialogue ? STATES.DIALOGUE : STATES.PATTERN;
-  const nextLabel = hasDialogue ? "Next: Dialogue ✓" : "Next: Pattern ✓";
+  const nextState = hasDialogue ? STATES.DIALOGUE : STATES.DONE;
+  const nextLabel = hasDialogue ? uz('nav.nextDialogue') + ' ✓' : uz('nav.continue') + ' ✓';
 
   const btnNext = createButton(
     allComplete ? nextLabel : uz('vocabTile.learnWords').replace('{completed}', completedCards).replace('{total}', totalCards),

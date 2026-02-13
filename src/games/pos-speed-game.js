@@ -326,9 +326,9 @@ class POSSpeedGame {
       const key = CATEGORY_TO_KEY[catValue];
       const catStrings = key ? s.categories[key] : null;
       const icon = catStrings?.icon || '⚪';
-      const uz = catStrings?.uz || catValue;
-      const en = catStrings?.en || catValue;
-      return `<div class="pos-game-category-item">${icon} ${uz} (${en})</div>`;
+      const uzLabel = catStrings?.uz || catValue;
+      const enLabel = catStrings?.en || catValue;
+      return `<div class="pos-game-category-item">${icon} ${uzLabel} (${enLabel})</div>`;
     }).join('');
 
     this.modal.innerHTML = `
@@ -381,8 +381,8 @@ class POSSpeedGame {
       const key = CATEGORY_TO_KEY[catValue];
       const catStrings = key ? s.categories[key] : null;
       const icon = catStrings?.icon || '⚪';
-      const uz = catStrings?.uz || catValue;
-      return { name: `${icon} ${uz}`, value: catValue };
+      const uzLabel = catStrings?.uz || catValue;
+      return { name: `${icon} ${uzLabel}`, value: catValue };
     });
 
     this.modal.innerHTML = `

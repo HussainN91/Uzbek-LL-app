@@ -12,11 +12,7 @@
 // TYPE DEFINITIONS
 // ============================
 /**
- * @typedef {'intro'|'vocab'|'dialogue'|'pattern'|'function'|'controlled'|'writing'|'listen_write'|'mistake'|'unit_error_detection'|'grand_tile'|'done'} TileStateValue
- */
-
-/**
- * @typedef {'GAP'|'REORDER'} ControlledStageValue
+ * @typedef {'intro'|'vocab'|'dialogue'|'done'} TileStateValue
  */
 
 // ============================
@@ -27,22 +23,8 @@ export const STATES = Object.freeze({
   INTRO: "intro",
   VOCAB: "vocab",
   DIALOGUE: "dialogue",
-  PATTERN: "pattern",
-  FUNCTION: "function",
-  CONTROLLED: "controlled",
-  WRITING: "writing",
-  LISTEN_WRITE: "listen_write",
-  MISTAKE: "mistake",
-  UNIT_ERROR_DETECTION: "unit_error_detection",
-  GRAND_TILE: "grand_tile",
   DONE: "done",
 });
-
-// ============================
-// CONTROLLED PRACTICE STAGES
-// (Simplified: GAP_EASY and GAP_HARD merged into GAP)
-// ============================
-export const CONTROLLED_STAGES = Object.freeze(["GAP", "REORDER"]);
 
 // ============================
 // UI DATA CONTRACT
@@ -57,46 +39,6 @@ export const UI_DATA_CONTRACT = Object.freeze({
 
   [STATES.VOCAB]: Object.freeze({
     vocab_ids: "vocab_ids",
-  }),
-
-  [STATES.PATTERN]: Object.freeze({
-    pattern_id: "main_pattern_id",
-    pattern_template: "PATTERN.pattern_template",
-    pattern_name: "PATTERN.name",
-    examples: "PATTERN.example_sentences",
-  }),
-
-  [STATES.FUNCTION]: Object.freeze({
-    items: "function_check_items",
-    function_en: "function_en",
-  }),
-
-  [STATES.WRITING]: Object.freeze({
-    expectations: "writing_expectations",
-  }),
-
-  [STATES.LISTEN_WRITE]: Object.freeze({
-    refs: "listen_write_refs",
-    audio_ids: "listen_write_refs",
-  }),
-
-  [STATES.CONTROLLED]: Object.freeze({
-    controlled: "controlled_templates",
-    examples: "ALL_PATTERNS.example_sentences",
-  }),
-
-  [STATES.UNIT_ERROR_DETECTION]: Object.freeze({
-    items: "unitErrorDetection.items",
-    prompt_uz: "unitErrorDetection.prompt_uz",
-    pass_threshold: "unitErrorDetection.pass_threshold",
-  }),
-
-  [STATES.GRAND_TILE]: Object.freeze({
-    uz_instruction: "grandTile.uz_instruction",
-    expected_output_samples_en: "grandTile.expected_output_samples_en",
-    expected_output_sample: "grandTile.expected_output_sample",
-    required_tokens: "grandTile.required_tokens",
-    target_word_count: "grandTile.target_word_count",
   }),
 });
 
@@ -113,22 +55,12 @@ export const STORAGE_KEYS = Object.freeze({
   
   // Dynamic key generators
   SCORE_HISTORY: (lessonId) => `scoreHistory_${lessonId}`,
-  CONTROLLED_STAGE: (lessonId) => `controlledStage_${lessonId}`,
   SRS_DATA: (vocabId) => `srs_${vocabId}`,
   
   // sessionStorage keys
   VOCAB_COMPLETION: 'vocabCardCompletion',
   POS_GAME_SHOWN: (lessonId) => `POSGameShown_${lessonId}`,
 });
-
-// ============================
-// LESSON SELECTOR CONFIG (U01)
-// ============================
-export const LESSON_SELECTOR_CONFIG = Object.freeze([
-  { id: "U01_L01", label: "Names & Identity" },
-  { id: "U01_L02", label: "Age" },
-  { id: "U01_L03", label: "Origin" },
-]);
 
 // ============================
 // DEVICE DETECTION
@@ -216,15 +148,11 @@ export const CSS_CLASSES = Object.freeze({
 if (typeof window !== 'undefined') {
   Object.assign(window, {
     STATES,
-    CONTROLLED_STAGES,
     UI_DATA_CONTRACT,
-    LESSON_SELECTOR_CONFIG: Array.from(LESSON_SELECTOR_CONFIG),
     STORAGE_KEYS,
     AppConstants: {
       STATES,
-      CONTROLLED_STAGES,
       UI_DATA_CONTRACT,
-      LESSON_SELECTOR_CONFIG: Array.from(LESSON_SELECTOR_CONFIG),
       STORAGE_KEYS,
       SOUND_CONFIGS,
       CSS_CLASSES,

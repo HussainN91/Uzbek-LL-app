@@ -7,7 +7,7 @@
  * @version 1.0.0 (Phase 5)
  */
 
-import type { Curriculum, Lesson, VocabItem, Pattern, AudioEntry } from './curriculum';
+import type { Curriculum, Lesson, VocabItem, AudioEntry } from './curriculum';
 import type { VocabUnit } from './vocab';
 import type { AppStateShape, StateActions, TileState, IntegrationProgress } from './state';
 
@@ -28,7 +28,6 @@ declare global {
       unitId: string;
       lessonId: string;
       tile: string;
-      controlledStage: number;
       score: number;
       maxScore: number;
       completedLessons: Set<string>;
@@ -44,9 +43,6 @@ declare global {
       currentState: string;
       currentUnitId: string;
       lastMasterPassed: boolean;
-      lastWritingPassed: boolean;
-      lastListenWritePassed: boolean;
-      controlledStageIndex: number;
       integrationState: string | null;
       integrationProgress: IntegrationProgress;
       completedLessons: Set<string>;
@@ -82,15 +78,8 @@ declare global {
     
     /** Session evaluation flags */
     lastMasterPassed?: boolean;
-    lastWritingPassed?: boolean;
-    lastListenWritePassed?: boolean;
-    listenWritePassed?: boolean;
     
-    /** Controlled practice helpers */
-    controlledStageIndex?: number;
-    __LAST_PATTERN_SENTENCES__?: string[];
-    __LAST_CONTROLLED_SENTENCES__?: string[];
-    _skipGapHard?: boolean;
+    /** App utility flags */
     showAnswers?: () => void;
     
     // ============================
@@ -149,8 +138,17 @@ declare global {
     /** Development audit mode */
     __DEV_AUDIT__: boolean;
     
-    /** Function tile debugging */
-    __FUNCTION_DEBUG__?: boolean;
+    /** Audio bank by unit */
+    AUDIO_BANK: Record<string, Record<string, AudioEntry>>;
+    
+    /** LessonPack adapter */
+    LessonPackAdapter?: {
+      adapt(raw: any): any;
+      loadUnitLessonPack(unitId: string): Promise<any>;
+    };
+    
+    /** Lazy load vocab unit data */
+    lazyLoadVocabUnit(unitId: string | number): Promise<void>;
     
     // ============================
     // Functions
@@ -165,8 +163,29 @@ declare global {
     /** Get vocab by ID */
     getVocab(id: string): VocabItem | null;
     
-    /** Get pattern by ID */
-    getPattern(id: string): Pattern | null;
+    /** Get active curriculum */
+    getActiveCurriculum(): Curriculum | null;
+    
+    /** Get unit by ID */
+    getUnit(unitId: string): any;
+    
+    /** Get unit lesson IDs */
+    getUnitLessonIds(unitId: string): string[];
+    
+    /** Get friendly lesson name */
+    getFriendlyLessonName(lessonId: string): string;
+    
+    /** Get mission data */
+    getMission(): any;
+    
+    /** Get all dialogues */
+    getDialogues(): Record<string, any>;
+    
+    /** Get specific dialogue */
+    getDialogue(dialogueId: string): any;
+    
+    /** Get contrastive turns */
+    getContrastiveTurns(): any[];
     
     /** Get audio entry */
     getAudioEntry(id: string): AudioEntry | null;
@@ -400,16 +419,12 @@ declare global {
     isUnitCompleted?: (unitId: string) => boolean;
     getCompletedLessons?: () => Set<string>;
     getCompletedUnits?: () => Set<string>;
-    getControlledStageIndex?: () => number;
-    setControlledStageIndex?: (index: number) => void;
     setIntegrationState?: (state: string | null) => void;
     resetIntegrationState?: () => void;
     setAvailableUnits?: (units: string[]) => void;
     getAvailableUnits?: () => string[];
     isGateOpen?: (gate: string) => boolean;
     passGate?: (gate: string) => void;
-    setControlledStage?: (stage: number) => void;
-    getControlledStage?: () => number;
     
     /** Teacher mode functions */
     initTeacherMode?: () => void;
@@ -425,10 +440,6 @@ declare global {
     updateTeacherPanelUI?: () => void;
     
     /** Helper functions */
-    _pickGapEasy?: () => any;
-    _pickGapHard?: () => any;
-    _makeReorder?: (sentence: string) => any;
-    _makeConstruction?: (sentence: string, distractors?: string[]) => any;
     evaluateTextAnswer?: (userAnswer: string, target: string, options?: any) => any;
     evaluateMultipleChoice?: (selected: any, correct: any) => any;
     evaluateReorder?: (userOrder: string[], correctOrder: string[]) => any;
@@ -455,6 +466,30 @@ declare global {
     lazyLoadTiles?: () => Promise<any[]>;
     lazyLoadVocabUnit?: (unitNum: number) => Promise<any>;
     lazyLoadAudit?: () => Promise<any>;
+
+    // ============================
+    // Module Window Bridges
+    // ============================
+
+    /** Instruction system (uz-instructions.js) */
+    getInstructionForTile?: (tileName: string) => any;
+
+    /** Instruction banner component */
+    createInstructionBanner?: (tileName: string, container: HTMLElement) => any;
+
+    /** Badge catalog */
+    BadgeCatalog?: {
+      BADGE_CATALOG: Record<string, any>;
+      checkBadges: (context: any) => any[];
+      getBadge: (id: string) => any;
+      showBadgeNotification: (badge: any) => void;
+    };
+
+    /** Classroom mode */
+    classroomMode?: Record<string, any>;
+
+    /** i18n bridge */
+    i18n?: Record<string, any>;
   }
 }
 

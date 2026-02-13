@@ -20,7 +20,6 @@ import {
   setTile as appSetTile,
   setLesson as appSetLesson,
   setUnit as appSetUnit,
-  setControlledStage as appSetControlledStage,
   resetIntegrationState as appResetIntegrationState,
   completeLesson as appCompleteLesson,
   completeUnit as appCompleteUnit,
@@ -216,10 +215,6 @@ function doRender() {
     // Always use unified vocab tile (dialogue-first + card grid)
     // Sandwich logic merged into renderVocabTile — no more version gate
     dispatched = mountTile('vocab', lesson);
-  } else if (currentState === STATES.UNIT_ERROR_DETECTION) {
-    dispatched = mountTile('unit_error_detection', getCurrentUnitId());
-  } else if (currentState === STATES.GRAND_TILE) {
-    dispatched = mountTile('grand_tile', getCurrentUnitId());
   } else if (hasTile(currentState)) {
     // Generic dispatch: state ID matches a registered tile
     dispatched = mountTile(currentState, lesson);
@@ -264,22 +259,8 @@ function renderIntegrationLesson(lesson) {
         mountTile('integration_dialogue_uz', content.dialogue, lesson);
       }
       break;
-    case 'transformation':
-      if (content.transformation) {
-        mountTile('integration_transformation', content.transformation, lesson);
-      }
-      break;
-    case 'listen_write':
-      // TODO: register integration_listen_write tile
-      if (content.listen_write && hasTile('integration_listen_write')) {
-        mountTile('integration_listen_write', content.listen_write, lesson);
-      }
-      break;
     case 'done':
-      // TODO: register integration_done tile
-      if (hasTile('integration_done')) {
-        mountTile('integration_done', lesson);
-      }
+      mountTile('done', lesson);
       break;
   }
 }
@@ -311,7 +292,6 @@ export function getTileContainer() {
 export function clearTileContainer() {
   if (!tileContainer) return;
   
-  tileContainer.classList.remove("function-tile");
   tileContainer.innerHTML = "";
   
   // Progress bar
@@ -334,9 +314,7 @@ export function clearTileContainer() {
 
 function createProgressBar() {
   const stateOrder = [
-    STATES.INTRO, STATES.VOCAB, STATES.DIALOGUE, STATES.PATTERN,
-    STATES.FUNCTION, STATES.CONTROLLED, STATES.WRITING,
-    STATES.LISTEN_WRITE, STATES.MISTAKE
+    STATES.INTRO, STATES.VOCAB, STATES.DIALOGUE, STATES.DONE
   ];
   
   const currentIndex = stateOrder.indexOf(getCurrentStateInternal());
@@ -367,9 +345,7 @@ function createProgressBar() {
 
 function createBackButton() {
   const stateOrder = [
-    STATES.INTRO, STATES.VOCAB, STATES.DIALOGUE, STATES.PATTERN,
-    STATES.FUNCTION, STATES.CONTROLLED, STATES.WRITING,
-    STATES.LISTEN_WRITE, STATES.MISTAKE
+    STATES.INTRO, STATES.VOCAB, STATES.DIALOGUE, STATES.DONE
   ];
   
   const idx = stateOrder.indexOf(getCurrentStateInternal());
@@ -454,32 +430,8 @@ export function getCompletedUnits() {
 // GATE FLAGS (delegate to AppState)
 // ============================
 
-export function setLastWritingPassed(val) { setGate('lastWritingPassed', val); }
-export function getLastWritingPassed() { return getGate('lastWritingPassed'); }
-export function setLastListenWritePassed(val) { setGate('lastListenWritePassed', val); }
-export function getLastListenWritePassed() { return getGate('lastListenWritePassed'); }
 export function setLastMasterPassed(val) { setGate('lastMasterPassed', val); }
 export function getLastMasterPassed() { return getGate('lastMasterPassed'); }
-
-// ============================
-// CONTROLLED STAGE (delegate to AppState)
-// ============================
-
-export function getControlledStageIndex() { return AppState.navigation.controlledStage; }
-export function setControlledStageIndex(idx) { 
-  appSetControlledStage(idx);
-  saveControlledStageProgress();
-}
-export function resetControlledStage() {
-  appSetControlledStage(0);
-  saveControlledStageProgress();
-}
-
-function saveControlledStageProgress() {
-  try {
-    sessionStorage.setItem(`controlledStage_${getCurrentLessonIdInternal()}`, String(AppState.navigation.controlledStage));
-  } catch {}
-}
 
 // ============================
 // AVAILABLE UNITS (delegate to AppState)
@@ -531,33 +483,12 @@ if (typeof window !== 'undefined') {
   });
   
   // Gates (live getters — not stale snapshots)
-  Object.defineProperty(window, 'lastWritingPassed', {
-    get() { return getGate('lastWritingPassed'); },
-    set(v) { setGate('lastWritingPassed', v); },
-    configurable: true
-  });
-  Object.defineProperty(window, 'lastListenWritePassed', {
-    get() { return getGate('lastListenWritePassed'); },
-    set(v) { setGate('lastListenWritePassed', v); },
-    configurable: true
-  });
   Object.defineProperty(window, 'lastMasterPassed', {
     get() { return getGate('lastMasterPassed'); },
     set(v) { setGate('lastMasterPassed', v); },
     configurable: true
   });
-  window.setLastWritingPassed = setLastWritingPassed;
-  window.setLastListenWritePassed = setLastListenWritePassed;
   window.setLastMasterPassed = setLastMasterPassed;
-  
-  // Controlled
-  Object.defineProperty(window, 'controlledStageIndex', {
-    get() { return AppState.navigation.controlledStage; },
-    set(v) { appSetControlledStage(v); },
-    configurable: true
-  });
-  window.getControlledStageIndex = getControlledStageIndex;
-  window.setControlledStageIndex = setControlledStageIndex;
   
   // Integration (delegated — AppState already defines these via defineProperty)
   window.resetIntegrationState = resetIntegrationState;

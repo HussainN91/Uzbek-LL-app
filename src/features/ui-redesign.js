@@ -362,15 +362,6 @@ import { uz, en } from '../core/i18n.js';
     return completed && typeof completed.has === 'function' ? completed.has(prevUnitId) : false;
   }
 
-  function isLessonUnlocked(lessonId, lessonIds) {
-    if (w.TEACHER_MODE || w.DEV_BYPASS_GATES) return true;
-    const idx = lessonIds.indexOf(lessonId);
-    if (idx <= 0) return true;
-    const prevLessonId = lessonIds[idx - 1];
-    const completed = w.completedLessons || w.GameState?.completedLessons;
-    return completed && typeof completed.has === 'function' ? completed.has(prevLessonId) : false;
-  }
-
   // ═══════════════════════════════════════════════════════════════════════════════
   // PROGRESS BAR ENHANCEMENT
   // ═══════════════════════════════════════════════════════════════════════════════
@@ -385,7 +376,7 @@ import { uz, en } from '../core/i18n.js';
       oldProgress.remove();
     }
 
-    const totalSteps = 9;
+    const totalSteps = 4;
     const currentStep = Number(w.currentStep) || 1;
 
     // Idempotent: update existing bar segments instead of re-inserting (avoids observer loop)
@@ -485,11 +476,6 @@ import { uz, en } from '../core/i18n.js';
   function wrapInstructionText() {
     const tileContainer = document.getElementById('tile-container');
     if (!tileContainer) return;
-
-    // CRITICAL: Skip Function Tile - it has its own interactive UI that must not be transformed
-    if (tileContainer.classList.contains('function-tile')) {
-      return;
-    }
 
     // Find Uzbek instruction text (typically has .tl-uz class and contains "Funksiya")
     const uzElements = tileContainer.querySelectorAll('.tl-uz');
@@ -628,7 +614,7 @@ import { uz, en } from '../core/i18n.js';
     const tileContainer = document.getElementById('tile-container');
     if (!tileContainer) return;
 
-    const totalSteps = 9;
+    const totalSteps = 4;
     const currentStep = Number(w.currentStep) || 1;
 
     // Idempotent: update existing step-meta instead of adding duplicates (avoids observer loop)

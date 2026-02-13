@@ -17,15 +17,7 @@ export type TileState =
   | 'intro'
   | 'vocab'
   | 'dialogue'
-  | 'pattern'
-  | 'function'
-  | 'controlled'
-  | 'writing'
-  | 'listen_write'
-  | 'mistake'
-  | 'done'
-  | 'unit_error_detection'
-  | 'grand_tile';
+  | 'done';
 
 /**
  * Integration lesson state
@@ -33,8 +25,7 @@ export type TileState =
 export type IntegrationState = 
   | 'dialogue'
   | 'dialogue_uz'
-  | 'transformation'
-  | 'listen_write'
+  | 'done'
   | null;
 
 /**
@@ -47,8 +38,6 @@ export interface NavigationState {
   lessonId: string;
   /** Current tile state */
   tile: TileState;
-  /** Controlled practice stage index */
-  controlledStage: number;
   /** Integration lesson state */
   integrationState: IntegrationState;
   /** Integration progress tracking */
@@ -56,8 +45,6 @@ export interface NavigationState {
   /** Gate flags for tile transition gating */
   gates: {
     lastMasterPassed: boolean;
-    lastWritingPassed: boolean;
-    lastListenWritePassed: boolean;
   };
 }
 
@@ -67,10 +54,6 @@ export interface NavigationState {
 export interface IntegrationProgress {
   /** Whether dialogue question was answered */
   dialogueAnswered: boolean;
-  /** Number of transformations passed */
-  transformationsPassed: number;
-  /** Total transformations in exercise */
-  totalTransformations: number;
 }
 
 /**
@@ -85,8 +68,6 @@ export interface ProgressState {
   vocabCompletion: Record<string, boolean>;
   /** POS games shown per lesson */
   posGamesShown: Record<string, boolean>;
-  /** Pre-read completion by lessonId_stageName */
-  preReadProgress: Record<string, boolean>;
   /** Token usage tracking */
   usageTracker: Record<string, UsageData>;
 }
@@ -197,7 +178,6 @@ export interface StateActions {
   setTile(tile: TileState): void;
   setLesson(lessonId: string): void;
   setUnit(unitId: string): void;
-  setControlledStage(stage: number): void;
   completeVocab(vocabId: string): void;
   completeLesson(lessonId: string): void;
   completeUnit(unitId: string): void;
@@ -211,13 +191,12 @@ export interface StateActions {
   hydrateState(): boolean;
   resetState(): void;
   resetIntegrationState(): void;
-  setGate(gate: 'lastMasterPassed' | 'lastWritingPassed' | 'lastListenWritePassed', value: boolean): void;
-  getGate(gate: 'lastMasterPassed' | 'lastWritingPassed' | 'lastListenWritePassed'): boolean;
+  setGate(gate: 'lastMasterPassed', value: boolean): void;
+  getGate(gate: 'lastMasterPassed'): boolean;
   subscribe(callback: StateObserver): () => void;
+  // Gamification
+  awardXP(xp: number, reason?: string): { newXP: number; leveledUp: boolean; newLevel: number };
   // POS Game progress
   markPOSGameShown(lessonId: string): void;
   isPOSGameShown(lessonId: string): boolean;
-  // Pre-read progress
-  markPreReadComplete(lessonId: string, stageName: string): void;
-  isPreReadComplete(lessonId: string, stageName: string): boolean;
 }

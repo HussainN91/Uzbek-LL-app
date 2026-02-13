@@ -9,7 +9,6 @@
  */
 
 import { createElement } from '../utils/dom.js';
-import { CSS_CLASSES } from '../utils/constants.js';
 
 // ============================
 // BUTTON FACTORY

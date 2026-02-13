@@ -19,15 +19,7 @@ const TILE_KEY_MAP = {
   intro: 'intro',
   vocab: 'vocab',
   dialogue: 'dialogue',
-  pattern: 'pattern',
-  function: 'function',
-  controlled: 'controlled',
-  writing: 'writing',
-  listen_write: 'listenWrite',
-  mistake: 'mistake',
   done: 'done',
-  unit_error_detection: 'unitError',
-  grand_tile: 'grand',
   repractice: 'repractice',
 };
 
@@ -68,6 +60,18 @@ export function getInstructionForTile(tileState) {
     pairWork: pairWork || null,
     pairWorkEn: pairWorkEn || null,
   };
+}
+
+/**
+ * Get all tile instructions as an object
+ * @returns {Object<string, TileInstruction>}
+ */
+export function getAllInstructions() {
+  const result = {};
+  for (const tileState of Object.keys(TILE_KEY_MAP)) {
+    result[tileState] = getInstructionForTile(tileState);
+  }
+  return result;
 }
 
 // ============================

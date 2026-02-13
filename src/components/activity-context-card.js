@@ -50,66 +50,6 @@ const ACTIVITY_METADATA = {
     descriptionEn: en('activityCard.dialogue.desc'),
     descriptionUz: uz('activityCard.dialogue.desc')
   },
-  [STATES.PATTERN]: {
-    icon: '🧩',
-    label: 'Pattern Practice',
-    labelUz: uz('activityCard.pattern.label'),
-    color: '#d69e2e', // Gold
-    skills: ['Grammar', 'Writing'],
-    estimatedMinutes: 3,
-    descriptionEn: en('activityCard.pattern.desc'),
-    descriptionUz: uz('activityCard.pattern.desc')
-  },
-  [STATES.FUNCTION]: {
-    icon: '🎯',
-    label: 'Function Check',
-    labelUz: uz('activityCard.function.label'),
-    color: '#e53e3e', // Red
-    skills: ['Grammar', 'Reading'],
-    estimatedMinutes: 2,
-    descriptionEn: en('activityCard.function.desc'),
-    descriptionUz: uz('activityCard.function.desc')
-  },
-  [STATES.CONTROLLED]: {
-    icon: '✍️',
-    label: 'Controlled Practice',
-    labelUz: uz('activityCard.controlled.label'),
-    color: '#805ad5', // Purple
-    skills: ['Writing', 'Grammar'],
-    estimatedMinutes: 4,
-    descriptionEn: en('activityCard.controlled.desc'),
-    descriptionUz: uz('activityCard.controlled.desc')
-  },
-  [STATES.WRITING]: {
-    icon: '📝',
-    label: 'Free Writing',
-    labelUz: uz('activityCard.writing.label'),
-    color: '#2b6cb0', // Dark Blue
-    skills: ['Writing', 'Grammar'],
-    estimatedMinutes: 3,
-    descriptionEn: en('activityCard.writing.desc'),
-    descriptionUz: uz('activityCard.writing.desc')
-  },
-  [STATES.LISTEN_WRITE]: {
-    icon: '👂',
-    label: 'Listen & Write',
-    labelUz: uz('activityCard.listenWrite.label'),
-    color: '#319795', // Teal
-    skills: ['Listening', 'Writing'],
-    estimatedMinutes: 3,
-    descriptionEn: en('activityCard.listenWrite.desc'),
-    descriptionUz: uz('activityCard.listenWrite.desc')
-  },
-  [STATES.MISTAKE]: {
-    icon: '🔄',
-    label: 'Error Correction',
-    labelUz: uz('activityCard.mistake.label'),
-    color: '#c53030', // Dark Red
-    skills: ['Grammar', 'Writing'],
-    estimatedMinutes: 2,
-    descriptionEn: en('activityCard.mistake.desc'),
-    descriptionUz: uz('activityCard.mistake.desc')
-  },
   [STATES.DONE]: {
     icon: '🎉',
     label: 'Complete!',
@@ -127,12 +67,6 @@ const TILE_ORDER = [
   STATES.INTRO,
   STATES.VOCAB,
   STATES.DIALOGUE,
-  STATES.PATTERN,
-  STATES.FUNCTION,
-  STATES.CONTROLLED,
-  STATES.WRITING,
-  STATES.LISTEN_WRITE,
-  STATES.MISTAKE,
   STATES.DONE
 ];
 
@@ -387,7 +321,7 @@ export function showActivityContextCard(targetTile, options = {}) {
         ${meta.estimatedMinutes > 0 ? `
           <div class="acc-time">
             <span>⏱️</span>
-            <span>${uz('activityCard.minutes').replace('{min}', meta.estimatedMinutes)}</span>
+            <span>${uz('activityCard.minutes').replace('{min}', String(meta.estimatedMinutes))}</span>
           </div>
         ` : ''}
         <button class="acc-cta">${uz('activityCard.startBtn')}</button>

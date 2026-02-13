@@ -397,6 +397,7 @@ class GrammarPPPModal {
     // Initialize with animation
     setTimeout(() => {
       this.overlay.classList.add('active');
+      this.currentStep = 0;
       this.renderCurrentPhase();
     }, 50);
   }
@@ -517,6 +518,7 @@ class GrammarPPPModal {
         const btn = /** @type {HTMLElement|null} */ ((/** @type {HTMLElement} */ (e.target)).closest('.phase-btn'));
         if (!btn) return;
         this.currentPhase = btn.dataset.phase;
+        this.currentStep = 0;
         this.renderCurrentPhase();
       });
     }
@@ -558,6 +560,7 @@ class GrammarPPPModal {
         this.renderCompletion();
         return;
       }
+      this.currentStep = 0;
       this.renderCurrentPhase();
     }
   }
@@ -607,7 +610,7 @@ class GrammarPPPModal {
    * Render current phase
    */
   renderCurrentPhase() {
-    this.currentStep = 0; // Reset step when changing phases
+    // Note: currentStep is managed by callers (prev/next buttons, phase switches)
 
     if (this.currentPhase === 'present') {
       this.renderPresentPhase();
