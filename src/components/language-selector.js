@@ -6,7 +6,7 @@
  */
 
 import { LANGUAGES, LANGUAGE_META, setLanguage, getCurrentLanguage, hasLanguageSelection } from '../utils/language.js';
-import { runClickSound } from '../utils/audio.js';
+import { playClickSound } from '../utils/audio.js';
 
 export function showLanguageSelector(force = false) {
   if (hasLanguageSelection() && !force) return;
@@ -62,25 +62,33 @@ export function showLanguageSelector(force = false) {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 1rem;
-      border: 2px solid ${isSelected ? '#4CAF50' : '#e0e0e0'};
-      background: ${isSelected ? '#e8f5e9' : '#f9f9f9'};
+      padding: 1rem 1.5rem;
+      border: 2px solid ${isSelected ? '#4CAF50' : '#ddd'};
+      background: ${isSelected ? '#e8f5e9' : '#ffffff'};
+      color: #333;
       border-radius: 12px;
       cursor: pointer;
       font-size: 1.1rem;
       transition: all 0.2s;
       width: 100%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     `;
 
     btn.onmouseover = () => {
-        if (getCurrentLanguage() !== lang) btn.style.background = '#f0f0f0';
+        if (getCurrentLanguage() !== lang) {
+          btn.style.background = '#f5f5f5';
+          btn.style.borderColor = '#bbb';
+        }
     };
     btn.onmouseout = () => {
-        if (getCurrentLanguage() !== lang) btn.style.background = '#f9f9f9';
+        if (getCurrentLanguage() !== lang) {
+          btn.style.background = '#ffffff';
+          btn.style.borderColor = '#ddd';
+        }
     };
 
     btn.onclick = () => {
-      runClickSound();
+      playClickSound();
       setLanguage(lang);
       
       // Animate selection

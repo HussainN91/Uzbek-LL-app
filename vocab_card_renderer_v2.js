@@ -52,6 +52,29 @@
   let completedCards = new Set();
   
   // ═══════════════════════════════════════════════════════════════
+  // ═══════════════════════════════════════════════════════════════
+  // LANGUAGE HELPERS
+  // ═══════════════════════════════════════════════════════════════
+
+  const LANG_STORAGE_KEY = 'app_native_language';
+
+  /**
+   * Get current language code (uz, ar, en, etc.)
+   */
+  function getLang() {
+    return localStorage.getItem(LANG_STORAGE_KEY) || 'uz';
+  }
+
+  /**
+   * Get localized line from dialogue data.
+   * Tries: line_{lang} -> line_uz -> line (English) -> ''
+   */
+  function getLocalizedLine(lineObj) {
+    if (!lineObj) return '';
+    const lang = getLang();
+    return lineObj[`line_${lang}`] || lineObj.line_uz || lineObj.line || '';
+  }
+
   // CAROUSEL STATE MANAGEMENT
   // ═══════════════════════════════════════════════════════════════
   
@@ -1136,7 +1159,7 @@
             ${!isUnlocked && !isTarget ? 'filter: blur(3px); user-select: none;' : ''}
           ">
             <div style="color: #333; ${isTarget ? 'font-weight: 600;' : ''}">${line.line}</div>
-            ${isUnlocked || isTarget ? `<div style="font-size: 11px; color: #888; margin-top: 3px; font-style: italic;">${line.line_uz || ''}</div>` : ''}
+            ${isUnlocked || isTarget ? `<div style="font-size: 11px; color: #888; margin-top: 3px; font-style: italic;">${getLocalizedLine(line)}</div>` : ''}
           </div>
           ${isTarget ? '<span style="font-size: 14px; padding-top: 6px;">🔓</span>' : (isUnlocked ? '<span style="font-size: 12px; padding-top: 6px; opacity: 0.5;">✓</span>' : '<span style="font-size: 12px; padding-top: 6px; opacity: 0.3;">🔒</span>')}
         </div>

@@ -281,8 +281,8 @@
   function renderPresentationStage(container, slide) {
     const pres = slide.presentation || {};
     const enCanonical = slide.reproduction?.en_canonical || pres.en_canonical || slide.production?.en_target || currentCard?.en || '';
-    const polarQ = pres.uz_polar_question || '';
-    const mirrorA = pres.uz_mirror_answer || '';
+    const polarQ = getText(pres, 'polar_question') || getText(pres, 'context') || '';
+    const mirrorA = getText(pres, 'mirror_answer') || '';
     const hybridA = pres.hybrid_answer || mirrorA;
 
     console.log('[Audio] renderPresentationStage:', { hasAudio: !!slide?.audio, enCanonical: enCanonical?.substring(0, 50), slidePhase: slide?.phase });
@@ -467,7 +467,7 @@
             ${!isUnlocked && !isTarget ? 'filter: blur(3px); user-select: none;' : ''}
           ">
             <div style="color: #333; ${isTarget ? 'font-weight: 600;' : ''}">${line.line}</div>
-            ${isUnlocked || isTarget ? `<div style="font-size: 11px; color: #888; margin-top: 3px; font-style: italic;">${line.line_uz || ''}</div>` : ''}
+            ${isUnlocked || isTarget ? `<div style="font-size: 11px; color: #888; margin-top: 3px; font-style: italic;">${getText(line, 'line') || ''}</div>` : ''}
           </div>
           ${isTarget ? '<span style="font-size: 14px; padding-top: 6px;">🎯</span>' : (isUnlocked ? '<span style="font-size: 12px; padding-top: 6px; opacity: 0.5;">✅</span>' : '<span style="font-size: 12px; padding-top: 6px; opacity: 0.3;">🔒</span>')}
         </div>
@@ -825,7 +825,8 @@
   // ═══════════════════════════════════════════════════════════════
   
   function renderSyntaxScaffold(slide) {
-    const scaffold = slide.syntax_scaffold || slide.presentation?.syntax_scaffold;
+    // Try Arabic scaffold first when in Arabic mode
+    const scaffold = getText(slide, 'syntax_scaffold') || slide.syntax_scaffold || slide.presentation?.syntax_scaffold;
     if (!scaffold) return '';
 
     // U07+ object format: { en_structure, uz_gloss, tokens: [{word, role, color}] }
@@ -866,7 +867,7 @@
           <div style="font-size: 15px; line-height: 1.5; margin-bottom: 6px;">
             ${tokensHTML}
           </div>
-          ${scaffold.uz_gloss ? `<div style="font-size: 13px; color: #555; font-style: italic;">${scaffold.uz_gloss}</div>` : ''}
+          ${getText(scaffold, 'gloss') || scaffold.uz_gloss ? `<div style="font-size: 13px; color: #555; font-style: italic;">${getText(scaffold, 'gloss') || scaffold.uz_gloss}</div>` : ''}
         </div>
       `;
     }
@@ -1001,12 +1002,12 @@
     }
 
     // ── Legacy format (sentence + highlight_tokens + MCQ options) ──
-    const instruction = slide.instruction || 'Diqqat bilan qarang... (Look carefully...)';
+    const instruction = getText(slide, 'instruction') || uz('vcr.discoveryDefault') || uz('vcr.fallbackDiscovery');
     const sentence = slide.sentence || '';
     const highlightTokens = slide.highlight_tokens || [];
     const options = slide.options || [];
-    const successMsg = slide.success_msg || 'To\'g\'ri! (Correct!)';
-    const failMsg = slide.fail_msg || 'Qayta urinib ko\'ring. (Try again.)';
+    const successMsg = getText(slide, 'success_msg') || uz('feedback.correct') || 'To\'g\'ri! (Correct!)';
+    const failMsg = getText(slide, 'fail_msg') || uz('feedback.tryAgain') || 'Qayta urinib ko\'ring. (Try again.)';
 
     // Build sentence HTML with highlighted tokens
     let sentenceHTML = sentence;
@@ -1073,7 +1074,7 @@
               cursor: pointer;
               transition: all 0.2s;
               text-align: left;
-            ">${opt.label || opt.value || ''}</button>
+            ">${getText(opt, 'label') || opt.label || opt.value || ''}</button>
           `).join('')}
         </div>
 
@@ -1123,11 +1124,11 @@
   // ═══════════════════════════════════════════════════════════════
   
   function renderPersonalizationStage(container, slide) {
-    const uzPrompt = slide.uz_prompt || '';
+    const uzPrompt = getText(slide, 'prompt') || '';
     const focusPattern = slide.focus_pattern || '';
     const acceptedPatterns = slide.accepted_patterns || [];
-    const successMsg = slide.success_msg || 'Ajoyib! (Excellent!)';
-    const failMsg = slide.fail_msg || 'Kerakli so\'zlarni ishlatib ko\'ring. (Try using the target words.)';
+    const successMsg = getText(slide, 'success_msg') || uz('feedback.excellent') || 'Ajoyib! (Excellent!)';
+    const failMsg = getText(slide, 'fail_msg') || uz('feedback.tryUsingTarget') || uz('vcr.fallbackFailure');
 
     container.innerHTML = `
       <div style="
@@ -1297,11 +1298,11 @@
               <span>⚓</span> ${uz('vcr.anchor')}${ex.speaker ? ' — ' + ex.speaker : ''}
             </div>
             <div style="font-size:16px;color:#1b5e20;line-height:1.4;">${sentence}</div>
-            ${ex.sentence_uz ? `<div style="font-size:13px;color:#558b2f;margin-top:5px;font-style:italic;">${ex.sentence_uz}</div>` : ''}
+            ${getText(ex, 'sentence') ? `<div style="font-size:13px;color:#558b2f;margin-top:5px;font-style:italic;">${getText(ex, 'sentence')}</div>` : ''}
           </div>
         `;
       } else {
-        const uzSentence = ex.sentence_uz || '';
+        const nativeSentence = getText(ex, 'sentence') || '';
         examplesContainer.innerHTML += `
           <div id="${uniqueId}" style="
             padding:14px 16px;
@@ -1315,12 +1316,12 @@
               <div style="font-size:11px;color:#e65100;margin-bottom:5px;font-weight:700;display:flex;align-items:center;gap:4px;">
                 <span>👆</span> ${uz('vcr.tapReveal')}${ex.subject ? ` <span style="opacity:0.7">(${ex.subject})</span>` : ''}
               </div>
-              <div style="font-size:16px;color:#333;line-height:1.4;">${uzSentence || '...'}</div>
+              <div style="font-size:16px;color:#333;line-height:1.4;">${nativeSentence || '...'}</div>
             </div>
             <div class="en-side" style="display:none;">
               <div style="font-size:11px;color:#1565c0;margin-bottom:5px;font-weight:700;">${uz('vcr.englishLabel')}</div>
               <div style="font-size:16px;color:#0d47a1;line-height:1.4;">${sentence}</div>
-              ${uzSentence ? `<div style="font-size:12px;color:#888;margin-top:4px;font-style:italic;">${uzSentence}</div>` : ''}
+              ${nativeSentence ? `<div style="font-size:12px;color:#888;margin-top:4px;font-style:italic;">${nativeSentence}</div>` : ''}
             </div>
           </div>
         `;
@@ -1380,7 +1381,7 @@
       renderChunkJumbleExercise(exerciseArea, exercise.data, canonical);
     } else if (exercise.type === 'function_sort') {
       // NEW: Function Sort (Concept Check) exercise
-      renderFunctionSortExercise(exerciseArea, exercise.data, exercise.instruction);
+      renderFunctionSortExercise(exerciseArea, exercise.data, getText(exercise, 'instruction') || exercise.instruction);
     } else if (exercise.type === 'trap') {
       renderTrapExercise(exerciseArea, exercise.data, () => {});
     } else if (exercise.type === 'scratch') {
@@ -1402,8 +1403,8 @@
 
     const sentence = exerciseData.sentence || '';
     const options = exerciseData.options || [];
-    const successMsg = exerciseData.success_msg || uz('feedback.correct');
-    const failMsg = exerciseData.fail_msg || uz('feedback.tryAgain');
+    const successMsg = getText(exerciseData, 'success_msg') || uz('feedback.correct');
+    const failMsg = getText(exerciseData, 'fail_msg') || uz('feedback.tryAgain');
 
     container.innerHTML = `
       <div style="text-align: center;">
@@ -1447,7 +1448,7 @@
               transition: all 0.2s;
               text-align: left;
             " onmouseover="this.style.borderColor='#667eea'" onmouseout="this.style.borderColor='#ddd'">
-              ${opt.label}
+              ${getText(opt, 'label') || opt.label}
             </button>
           `).join('')}
         </div>
@@ -1659,7 +1660,7 @@
           width: 100%;
         ">
           <div style="font-size: 12px; color: #666; margin-bottom: 8px;">${uz('vcr.sayInEnglish')}</div>
-          <div style="font-size: 18px; color: #0d47a1; font-weight: 600;">${prod.uz_prompt || ''}</div>
+          <div style="font-size: 18px; color: #0d47a1; font-weight: 600;">${getText(prod, 'prompt') || ''}</div>
         </div>
         
         <!-- Input Area -->
@@ -1734,7 +1735,7 @@
               text-align: left;
             ">
               <strong>${uz('vcr.trapDetected')}</strong><br>
-              ${trap.message || 'Check your answer carefully.'}
+              ${getText(trap, 'message') || 'Check your answer carefully.'}
             </div>
           `;
           inputEl.style.borderColor = '#ff9800';
@@ -1756,7 +1757,7 @@
             border-radius: 8px;
             color: #2e7d32;
             font-weight: 600;
-          ">— Correct! Well done!</div>
+          ">${uz('vcr.correctWellDone')}</div>
         `;
         inputEl.style.borderColor = '#4caf50';
         inputEl.style.background = '#e8f5e9';

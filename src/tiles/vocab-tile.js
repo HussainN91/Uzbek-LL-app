@@ -26,6 +26,7 @@ import {
   getStates
 } from './tile-utils.js';
 import { uz, en } from '../core/i18n.js';
+import { getText } from '../utils/language.js';
 import { createInstructionBanner } from '../components/instruction-banner.js';
 
 import { VocabCardRenderer } from '../features/vocab-card-renderer.js';
@@ -260,9 +261,9 @@ export function renderVocabTile(lesson) {
     // Check if this lesson has a dialogue
     const hasLessonDialogue = lesson?.lesson_dialogue?.dialogues?.length > 0;
     if (hasLessonDialogue) {
-      btnNext = createButton("Next: Dialogue", () => transitionToTile(STATES.DIALOGUE));
+      btnNext = createButton(uz('nav.nextDialogue'), () => transitionToTile(STATES.DIALOGUE));
     } else {
-      btnNext = createButton("Next: Pattern", () => transitionToTile(STATES.PATTERN));
+      btnNext = createButton(uz('nav.nextPattern'), () => transitionToTile(STATES.PATTERN));
     }
   }
 
@@ -271,7 +272,7 @@ export function renderVocabTile(lesson) {
     const gridWrapper = document.createElement('details');
     gridWrapper.className = 'vocab-grid-collapsible';
     const summary = document.createElement('summary');
-    summary.innerHTML = `<span style="transition: transform 0.2s; display: inline-block;">▸</span> \u{1F4DA} All Vocabulary Cards (${orderedVocab.length})`;
+    summary.innerHTML = `<span style="transition: transform 0.2s; display: inline-block;">▸</span> ${uz('vocab.allCards').replace('{count}', orderedVocab.length)}`;
     gridWrapper.addEventListener('toggle', () => {
       const arrow = summary.querySelector('span');
       if (arrow) arrow.style.transform = gridWrapper.open ? 'rotate(90deg)' : '';
@@ -359,12 +360,12 @@ function createDialogueBubble(dialogueRef, vocabCardsBundle, vocabId, targetWord
   const { dialogue_id, line_index, speaker, bubble_text } = dialogueRef;
   if (!bubble_text) return null;
 
-  // Pull the Uzbek translation from the full dialogue data
+  // Pull the localized translation from the full dialogue data
   let lineUz = '';
   if (vocabCardsBundle?.getDialogue) {
     const dialogue = vocabCardsBundle.getDialogue(dialogue_id);
     const line = dialogue?.lines?.[line_index];
-    if (line) lineUz = line.line_uz || '';
+    if (line) lineUz = getText(line, 'line') || '';
   }
 
   const displayText = targetWord ? highlightTargetInBubble(bubble_text, targetWord) : bubble_text;
@@ -390,7 +391,7 @@ function createDialogueBubble(dialogueRef, vocabCardsBundle, vocabId, targetWord
       <div class="bubble-text-en">${displayText}</div>
       ${lineUz ? `<div class="bubble-text-uz">${lineUz}</div>` : ''}
     </div>
-    ${vocabId ? `<button class="bubble-reopen" title="Re-practice this card">↩</button>` : ''}
+    ${vocabId ? `<button class="bubble-reopen" title="${uz('vocab.rePractice')}">↩</button>` : ''}
   `;
 
   // Click the re-open arrow to re-practice the card
@@ -417,7 +418,7 @@ function createCompletedChip(v) {
   const word = v.word || v.en || '';
   chip.innerHTML = `
     <span class="chip-word">\u2713 ${escapeHtml(word)}</span>
-    <span class="chip-hint">Tap to review</span>
+    <span class="chip-hint">${uz('vocab.tapToReview')}</span>
   `;
   chip.onclick = () => VocabCardRenderer.open(v.id);
   return chip;
@@ -517,7 +518,7 @@ function setupCardInteraction(card, v, details, header, unitId) {
       e.stopPropagation();
       const msg = document.createElement('div');
       msg.style.cssText = "position:fixed;bottom:20px;right:20px;background:#fff;border:2px solid #2196f3;border-radius:8px;padding:12px 16px;box-shadow:0 4px 12px rgba(0,0,0,0.15);z-index:1000;max-width:320px;font-size:13px;color:#333;";
-      msg.innerHTML = "<strong>Vocabulary cards not loaded</strong><br>Interactive vocab cards are not available in this build.";
+      msg.innerHTML = `<strong>${uz('vocab.cardsNotLoaded')}</strong><br>${uz('vocab.cardsNotAvailable')}`;
       document.body.appendChild(msg);
       setTimeout(() => { if (msg.parentElement) msg.remove(); }, 4000);
     });
@@ -584,15 +585,15 @@ function addSRSBadge(details, vocabId) {
   if (srsData.isDue) {
     statusBadge.style.background = '#ff5722';
     statusBadge.style.color = '#fff';
-    statusBadge.textContent = '🔥 Review now';
+    statusBadge.textContent = uz('vocab.reviewNow');
   } else if (srsData.daysUntilDue <= 1) {
     statusBadge.style.background = '#ff9800';
     statusBadge.style.color = '#fff';
-    statusBadge.textContent = '⏱ Due tomorrow';
+    statusBadge.textContent = uz('vocab.dueTomorrow');
   } else {
     statusBadge.style.background = '#4caf50';
     statusBadge.style.color = '#fff';
-    statusBadge.textContent = `✓ Next: ${srsData.dueDate}`;
+    statusBadge.textContent = uz('vocab.nextDue').replace('{date}', srsData.dueDate);
   }
   
   details.appendChild(statusBadge);
@@ -618,7 +619,7 @@ function createVocabNextButton(lesson, lessonId, vocabCardsData, STATES, tileCon
   progressDiv.style.cssText = "text-align:center;padding:12px;margin:16px 0;background:#f5f5f5;border-radius:8px;";
   progressDiv.innerHTML = `
     <div style="font-size:0.9rem;color:#666;margin-bottom:8px;">
-      So'zlar: <strong>${completedCards}</strong> / ${totalCards}
+      ${uz('vocabTile.wordsProgress').replace('{completed}', `<strong>${completedCards}</strong>`).replace('{total}', totalCards)}
     </div>
     <div style="height:8px;background:#ddd;border-radius:4px;overflow:hidden;">
       <div style="height:100%;width:${(completedCards/totalCards)*100}%;background:var(--success-green);transition:width 0.3s;"></div>
@@ -633,7 +634,7 @@ function createVocabNextButton(lesson, lessonId, vocabCardsData, STATES, tileCon
   const nextLabel = hasDialogue ? "Next: Dialogue ✓" : "Next: Pattern ✓";
 
   const btnNext = createButton(
-    allComplete ? nextLabel : `So'zlarni o'rganing (${completedCards}/${totalCards})`,
+    allComplete ? nextLabel : uz('vocabTile.learnWords').replace('{completed}', completedCards).replace('{total}', totalCards),
     () => {
       if (allComplete) {
         transitionToTile(nextState);
@@ -834,8 +835,8 @@ export function renderSandwichDialogueTile(lesson) {
     .filter(({ dialogue }) => dialogue && Array.isArray(dialogue.lines));
 
   if (dialogues.length === 0) {
-    tileContainer.innerHTML = '<div class="feedback err">Dialogue not found for this lesson.</div>';
-    const btn = createButton('Back to vocabulary', () => {
+    tileContainer.innerHTML = '<div class="feedback err">' + uz('vocab.dialogueNotFound') + '</div>';
+    const btn = createButton(uz('vocab.backToVocab'), () => {
       if (typeof window.renderVocabTile === 'function') window.renderVocabTile(lesson);
     });
     tileContainer.appendChild(btn);
@@ -860,10 +861,10 @@ export function renderSandwichDialogueTile(lesson) {
   fluencyRow.className = 'fluency-controls';
   fluencyRow.setAttribute('aria-label', 'Script visibility');
   fluencyRow.innerHTML = `
-    <span class="fluency-label">Script:</span>
-    <button type="button" class="fluency-btn" data-mode="full" aria-pressed="${sandwichFluencyMode === 'full'}">Full</button>
-    <button type="button" class="fluency-btn" data-mode="faded" aria-pressed="${sandwichFluencyMode === 'faded'}">Faded</button>
-    <button type="button" class="fluency-btn" data-mode="blind" aria-pressed="${sandwichFluencyMode === 'blind'}">Blind</button>
+    <span class="fluency-label">${uz('vocab.scriptLabel')}</span>
+    <button type="button" class="fluency-btn" data-mode="full" aria-pressed="${sandwichFluencyMode === 'full'}">${uz('vocab.fluencyFull')}</button>
+    <button type="button" class="fluency-btn" data-mode="faded" aria-pressed="${sandwichFluencyMode === 'faded'}">${uz('vocab.fluencyFaded')}</button>
+    <button type="button" class="fluency-btn" data-mode="blind" aria-pressed="${sandwichFluencyMode === 'blind'}">${uz('vocab.fluencyBlind')}</button>
   `;
   fluencyRow.querySelectorAll('.fluency-btn').forEach(btn => {
     const mode = btn.getAttribute('data-mode');
@@ -890,7 +891,7 @@ export function renderSandwichDialogueTile(lesson) {
     const progressEl = document.createElement('div');
     progressEl.className = 'sandwich-progress';
     progressEl.setAttribute('aria-live', 'polite');
-    progressEl.textContent = `${masteredCount} of ${totalLinesWithCards} lines mastered`;
+    progressEl.textContent = uz('vocab.linesMastered').replace('{mastered}', masteredCount).replace('{total}', totalLinesWithCards);
     wrapper.appendChild(progressEl);
   }
 
@@ -945,8 +946,8 @@ export function renderSandwichDialogueTile(lesson) {
         contentDiv.setAttribute('aria-label', 'Context only; no vocabulary for this line');
         contentDiv.innerHTML = `
           <div class="dialogue-line-english">${englishHtml}</div>
-          <div class="dialogue-line-uzbek sandwich-hint">${escapeHtml(line.line_uz || '')}</div>
-          <div class="sandwich-no-vocab-hint">Context only — no vocabulary for this line</div>
+          <div class="dialogue-line-uzbek sandwich-hint">${escapeHtml(getText(line, 'line') || '')}</div>
+          <div class="sandwich-no-vocab-hint">${uz('vocab.contextOnly')}</div>
         `;
       } else {
         contentDiv.classList.add('sandwich-line-clickable');
@@ -955,8 +956,8 @@ export function renderSandwichDialogueTile(lesson) {
         contentDiv.setAttribute('aria-label', `Learn vocabulary for this line: ${escapeHtml(linePreview)}`);
         contentDiv.innerHTML = `
           <div class="dialogue-line-english">${englishHtml}</div>
-          <div class="dialogue-line-uzbek sandwich-hint">${escapeHtml(line.line_uz || '')}</div>
-          <div class="sandwich-learn-hint">Click or press Enter to learn vocabulary for this line</div>
+          <div class="dialogue-line-uzbek sandwich-hint">${escapeHtml(getText(line, 'line') || '')}</div>
+          <div class="sandwich-learn-hint">${uz('vocab.clickToLearn')}</div>
         `;
         contentDiv.onclick = () => {
           window._sandwichSessionActive = true;
@@ -983,7 +984,7 @@ export function renderSandwichDialogueTile(lesson) {
 
   tileContainer.appendChild(wrapper);
 
-  const nextBtn = createButton('Next: Dialogue practice', () => transitionToTile(STATES.DIALOGUE));
+  const nextBtn = createButton(uz('vocab.nextDialoguePractice'), () => transitionToTile(STATES.DIALOGUE));
   tileContainer.appendChild(nextBtn);
 
   const onLineMastered = () => {
@@ -1029,8 +1030,8 @@ function renderDialogueFirstSection(lesson, vocabCardsBundle, lessonId) {
   // Instruction banner
   const instr = document.createElement('div');
   instr.className = 'vocab-dialogue-instruction tl-uz';
-  instr.textContent = "\u{1F4D6} Suhbatni o\u2018qing \u2014 so\u2018zlarni bosib o\u2018rganing";
-  instr.dataset.translation = 'Read the dialogue \u2014 tap highlighted lines to learn vocabulary';
+  instr.textContent = uz('vocabTile.dialogueInstruction');
+  instr.dataset.translation = en('vocab.sandwichDesc');
   section.appendChild(instr);
 
   // Track which is the first dialogue with unlearned words (auto-open it)
@@ -1112,7 +1113,7 @@ function renderDialogueFirstSection(lesson, vocabCardsBundle, lessonId) {
     const speakerSet = new Set();
     turns.forEach((turn, tIdx) => {
       const turnTextEn = turn.text || turn.text_en || turn.line || '';
-      const turnTextUz = turn.text_uz || turn.line_uz || '';
+      const turnTextUz = getText(turn, 'text') || getText(turn, 'line') || '';
       const speaker = turn.speaker || '?';
       speakerSet.add(speaker);
       const speakerList = [...speakerSet];
@@ -1178,8 +1179,8 @@ function renderDialogueFirstSection(lesson, vocabCardsBundle, lessonId) {
         const badge2 = document.createElement('div');
         badge2.className = 'dialogue-vocab-badge';
         badge2.textContent = allDone
-          ? `\u2705 ${cardsForLine.length} word${cardsForLine.length > 1 ? 's' : ''} learned`
-          : `\u{1F4DD} ${cardsForLine.length} word${cardsForLine.length > 1 ? 's' : ''} to learn`;
+          ? uz('vocab.wordsLearned').replace('{count}', cardsForLine.length)
+          : uz('vocab.wordsToLearn').replace('{count}', cardsForLine.length);
         if (allDone) badge2.style.color = '#16a34a';
         bubble.appendChild(badge2);
 

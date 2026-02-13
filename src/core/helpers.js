@@ -7,6 +7,7 @@
  */
 
 import { getVocab, getMistake } from './curriculum-loader.js';
+import { uz, en } from './i18n.js';
 
 // ============================
 // CONSTANTS
@@ -241,19 +242,19 @@ export function getMistakeFeedback(mistakeId) {
   const defaults = {
     'missing_article': {
       hint: "Don't forget the article!",
-      feedback_uz: "Artikl kerak!"
+      feedback_uz: uz('helpers.articleNeeded')
     },
     'wrong_article': {
       hint: "Check which article to use",
-      feedback_uz: "Qaysi artikl kerakligini tekshiring"
+      feedback_uz: uz('helpers.checkArticle')
     },
     'missing_preposition': {
       hint: "A preposition is needed here",
-      feedback_uz: "Bu yerda predlog kerak"
+      feedback_uz: uz('helpers.prepositionNeeded')
     },
     'word_order': {
       hint: "Check the word order",
-      feedback_uz: "So'z tartibini tekshiring"
+      feedback_uz: uz('helpers.checkWordOrder')
     }
   };
   

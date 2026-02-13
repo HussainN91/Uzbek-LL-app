@@ -46,24 +46,24 @@ export function renderIntroTile(lesson) {
   // Function section
   const fn = document.createElement("div");
   fn.className = "tile-section";
-  fn.textContent = "Funksiya (UZ): " + (r.data.function_uz || "(hali o'rnatilmagan)");
+  fn.textContent = uz('intro.functionLabel') + (r.data.function_uz || uz('intro.notSet'));
   fn.classList.add("tl-uz");
-  fn.dataset.translation = "Function (EN): " + (lesson?.function_en || "Not set");
+  fn.dataset.translation = en('intro.functionEnLabel') + (lesson?.function_en || en('intro.notSetLabel'));
 
   // Semantic category section
   const sem = document.createElement("div");
   sem.className = "tile-section";
-  sem.textContent = "Semantik toifa (UZ): " + (r.data.semantic_category_uz || "(hali o'rnatilmagan)");
+  sem.textContent = uz('intro.semanticLabel') + (r.data.semantic_category_uz || uz('intro.notSet'));
   sem.classList.add("tl-uz");
-  sem.dataset.translation = "Semantic Category (EN): " + (lesson?.semantic_category_en || "Not set");
+  sem.dataset.translation = en('intro.semanticEnLabel') + (lesson?.semantic_category_en || en('intro.notSetLabel'));
   
   // Grammar spine section
   const grammarDiv = document.createElement("div");
   grammarDiv.className = "tile-section";
   const grammarItems = Array.isArray(r.data.grammar_spine) ? r.data.grammar_spine : [];
-  grammarDiv.textContent = "Grammatika: " + (grammarItems.length > 0 ? grammarItems.join(" • ") : "(hali o'rnatilmagan)");
+  grammarDiv.textContent = uz('intro.grammarLabel') + (grammarItems.length > 0 ? grammarItems.join(" • ") : uz('intro.notSet'));
   grammarDiv.classList.add("tl-uz");
-  grammarDiv.dataset.translation = "Grammar Spine: " + (grammarItems.length > 0 ? grammarItems.join(" • ") : "Not set");
+  grammarDiv.dataset.translation = en('intro.grammarEnLabel') + (grammarItems.length > 0 ? grammarItems.join(" \u2022 ") : en('intro.notSetLabel'));
 
   // Append main sections
   appendChildren(tileContainer, title, fn, sem, grammarDiv);

@@ -32,6 +32,7 @@ import { mountXPDisplay } from './components/xp-display.js';
 
 // Populate the tile registry before anything renders
 import './tiles/tile-registrations.js';
+import { uz, en } from './core/i18n.js';
 
 // ============================
 // APPLICATION STATE
@@ -278,7 +279,7 @@ function printDevCommands() {
 // ============================
 
 function reset() {
-  if (confirm("⚠️ Bu barcha progressni o'chiradi. Davom etasizmi?\n\n(This will clear ALL progress. Continue?)")) {
+  if (confirm(uz('app.resetConfirm'))) {
     localStorage.clear();
     sessionStorage.clear();
     console.log("✅ Progress cleared. Reloading...");

@@ -1,0 +1,4552 @@
+{
+  "meta": {
+    "unit": "02_4",
+    "source_file": "vocab_cards_u02_4act.js",
+    "total_strings": 364,
+    "categories": {
+      "line_uz": 32,
+      "item_uz": 137,
+      "uz_context": 37,
+      "uz_mirror_answer": 16,
+      "uz_gloss": 16,
+      "option_label": 37,
+      "why_prompt": 2,
+      "uz_prompt": 36,
+      "prompt_uz": 37,
+      "explanation_uz": 12,
+      "trap_message": 2
+    },
+    "version": "1.0.0"
+  },
+  "strings": [
+    {
+      "id": "dialogues.U02_L01_D01.line_134",
+      "field": "line_uz",
+      "value": "Xayrli tong! Siz erta turasismi?",
+      "context": {
+        "line_number": 134,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U02_L01_D01",
+        "en_line": "Good morning! Do you wake up early?"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D01.line_135",
+      "field": "line_uz",
+      "value": "Ha, men har kuni soat 6 da turaman.",
+      "context": {
+        "line_number": 135,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "dialogue_id": "U02_L01_D01",
+        "en_line": "Yes, I wake up at 6 AM every day."
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D01.line_136",
+      "field": "line_uz",
+      "value": "Avval nima qilasiz?",
+      "context": {
+        "line_number": 136,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U02_L01_D01",
+        "en_line": "What do you do first?"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D01.line_137",
+      "field": "line_uz",
+      "value": "Men tishlarimni yuvaman va dush qabul qilaman.",
+      "context": {
+        "line_number": 137,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "dialogue_id": "U02_L01_D01",
+        "en_line": "I brush my teeth and take a shower."
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D01.line_138",
+      "field": "line_uz",
+      "value": "Men ertalabni yoqtirmayman. Siz mashq qilasizmi?",
+      "context": {
+        "line_number": 138,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U02_L01_D01",
+        "en_line": "I don"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D01.line_139",
+      "field": "line_uz",
+      "value": "Ha, men har ertalab yuguraman. Bu siz uchun yaxshi.",
+      "context": {
+        "line_number": 139,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "dialogue_id": "U02_L01_D01",
+        "en_line": "Yes, I run every morning. It"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D01.line_140",
+      "field": "line_uz",
+      "value": "Bu yaxshi eshitiladi. Siz nonushta qilasizmi?",
+      "context": {
+        "line_number": 140,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U02_L01_D01",
+        "en_line": "That sounds nice. Do you eat breakfast?"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D01.line_141",
+      "field": "line_uz",
+      "value": "Ha, men soat 7 da katta nonushta qilaman.",
+      "context": {
+        "line_number": 141,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "dialogue_id": "U02_L01_D01",
+        "en_line": "Yes, I eat a big breakfast at 7 AM."
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D02.line_148",
+      "field": "line_uz",
+      "value": "Soat nechada ishni boshlaysiz?",
+      "context": {
+        "line_number": 148,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U02_L01_D02",
+        "en_line": "What time do you start work?"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D02.line_149",
+      "field": "line_uz",
+      "value": "Men har kuni soat 9 da boshlayman.",
+      "context": {
+        "line_number": 149,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "dialogue_id": "U02_L01_D02",
+        "en_line": "I start at 9 AM every day."
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D02.line_150",
+      "field": "line_uz",
+      "value": "Siz ingliz tilini o",
+      "context": {
+        "line_number": 150,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U02_L01_D02",
+        "en_line": "Do you study English?"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D02.line_151",
+      "field": "line_uz",
+      "value": "Ha, men ishdan keyin kuniga ikki soat o",
+      "context": {
+        "line_number": 151,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "dialogue_id": "U02_L01_D02",
+        "en_line": "Yes, I study two hours a day after work."
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D02.line_152",
+      "field": "line_uz",
+      "value": "Bu yaxshi! Sport-chi?",
+      "context": {
+        "line_number": 152,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U02_L01_D02",
+        "en_line": "That"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D02.line_153",
+      "field": "line_uz",
+      "value": "Men dam olish kunlari futbol o",
+      "context": {
+        "line_number": 153,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "dialogue_id": "U02_L01_D02",
+        "en_line": "I play football on weekends."
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D02.line_154",
+      "field": "line_uz",
+      "value": "Shanba kuni ishlaysizmi?",
+      "context": {
+        "line_number": 154,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U02_L01_D02",
+        "en_line": "Do you work on Saturdays?"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D02.line_155",
+      "field": "line_uz",
+      "value": "Yo",
+      "context": {
+        "line_number": 155,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "dialogue_id": "U02_L01_D02",
+        "en_line": "No, I don"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D03.line_162",
+      "field": "line_uz",
+      "value": "Qanchalik tez-tez mashq qilasiz?",
+      "context": {
+        "line_number": 162,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "dialogue_id": "U02_L01_D03",
+        "en_line": "How often do you exercise?"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D03.line_163",
+      "field": "line_uz",
+      "value": "Men har doim haftada uch marta mashq qilaman.",
+      "context": {
+        "line_number": 163,
+        "field": "line_uz",
+        "speaker": "Kamila",
+        "dialogue_id": "U02_L01_D03",
+        "en_line": "I always exercise three times a week."
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D03.line_164",
+      "field": "line_uz",
+      "value": "Ovqatlanishingiz-chi?",
+      "context": {
+        "line_number": 164,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "dialogue_id": "U02_L01_D03",
+        "en_line": "What about your diet?"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D03.line_165",
+      "field": "line_uz",
+      "value": "Men odatda uyda sog",
+      "context": {
+        "line_number": 165,
+        "field": "line_uz",
+        "speaker": "Kamila",
+        "dialogue_id": "U02_L01_D03",
+        "en_line": "I usually eat healthy food at home."
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D03.line_166",
+      "field": "line_uz",
+      "value": "Hech qachon tashqarida ovqatlanasizmi?",
+      "context": {
+        "line_number": 166,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "dialogue_id": "U02_L01_D03",
+        "en_line": "Do you ever eat out?"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D03.line_167",
+      "field": "line_uz",
+      "value": "Ba",
+      "context": {
+        "line_number": 167,
+        "field": "line_uz",
+        "speaker": "Kamila",
+        "dialogue_id": "U02_L01_D03",
+        "en_line": "Sometimes I eat at restaurants with friends."
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D03.line_168",
+      "field": "line_uz",
+      "value": "Bu yaxshi eshitiladi. Kechqurun nima qilasiz?",
+      "context": {
+        "line_number": 168,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "dialogue_id": "U02_L01_D03",
+        "en_line": "That sounds good. What do you do in the evening?"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D03.line_169",
+      "field": "line_uz",
+      "value": "Men odatda uxlashdan oldin televizor ko",
+      "context": {
+        "line_number": 169,
+        "field": "line_uz",
+        "speaker": "Kamila",
+        "dialogue_id": "U02_L01_D03",
+        "en_line": "I usually watch TV or read books before bed."
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D04.line_176",
+      "field": "line_uz",
+      "value": "Ofisingiz yaqinida qahvaxona bormi?",
+      "context": {
+        "line_number": 176,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U02_L01_D04",
+        "en_line": "Is there a coffee shop near your office?"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D04.line_177",
+      "field": "line_uz",
+      "value": "Ha, pastda yaxshi qahvaxona bor.",
+      "context": {
+        "line_number": 177,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U02_L01_D04",
+        "en_line": "Yes, there"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D04.line_178",
+      "field": "line_uz",
+      "value": "Ofisingizda kompyuterlar bormi?",
+      "context": {
+        "line_number": 178,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U02_L01_D04",
+        "en_line": "Are there computers in your office?"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D04.line_179",
+      "field": "line_uz",
+      "value": "Ha, o",
+      "context": {
+        "line_number": 179,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U02_L01_D04",
+        "en_line": "Yes, there are thirty computers. We use them every day."
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D04.line_180",
+      "field": "line_uz",
+      "value": "Bu yaxshi eshitiladi. Sizda noutbuk bormi?",
+      "context": {
+        "line_number": 180,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U02_L01_D04",
+        "en_line": "That sounds nice. Do you have a laptop?"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D04.line_181",
+      "field": "line_uz",
+      "value": "Ha, mening shaxsiy noutbukam bor. Men usiz ishlamayman.",
+      "context": {
+        "line_number": 181,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U02_L01_D04",
+        "en_line": "Yes, I have my own laptop. I don"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D04.line_182",
+      "field": "line_uz",
+      "value": "Oila-chi? Sizda aka-uka yoki opa-singillar bormi?",
+      "context": {
+        "line_number": 182,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U02_L01_D04",
+        "en_line": "What about family? Do you have siblings?"
+      }
+    },
+    {
+      "id": "dialogues.U02_L01_D04.line_183",
+      "field": "line_uz",
+      "value": "Mening bitta singlim bor. U universitetda o",
+      "context": {
+        "line_number": 183,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U02_L01_D04",
+        "en_line": "I have one sister. She studies at university."
+      }
+    },
+    {
+      "id": "items.V_U02_L01_wake_up.item_uz",
+      "field": "item_uz",
+      "value": "uyg",
+      "context": {
+        "line_number": 202,
+        "field": "item_uz",
+        "item_id": "V_U02_L01_wake_up",
+        "dialogue_id": "U02_L01_D04"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_wake_up.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz soat 8 da uyg",
+      "context": {
+        "line_number": 211,
+        "field": "uz_context",
+        "item_id": "V_U02_L01_wake_up",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I wake up at 6 AM."
+      }
+    },
+    {
+      "id": "items.V_U02_L01_wake_up.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo",
+      "context": {
+        "line_number": 211,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L01_wake_up",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I wake up at 6 AM."
+      }
+    },
+    {
+      "id": "items.V_U02_L01_wake_up.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Yo",
+      "context": {
+        "line_number": 211,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L01_wake_up",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I wake up at 6 AM."
+      }
+    },
+    {
+      "id": "items.V_U02_L01_wake_up.practice.option_label",
+      "field": "option_label",
+      "value": "Kechqurun (In the evening)",
+      "context": {
+        "line_number": 212,
+        "field": "option_label",
+        "item_id": "V_U02_L01_wake_up",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_wake_up.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega",
+      "context": {
+        "line_number": 213,
+        "field": "why_prompt",
+        "item_id": "V_U02_L01_wake_up",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_wake_up.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men har kuni soat 6 da uyg",
+      "context": {
+        "line_number": 214,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L01_wake_up",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_wake_up.practice.item_uz",
+      "field": "item_uz",
+      "value": "U erta uyg",
+      "context": {
+        "line_number": 214,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L01_wake_up",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_wake_up.practice.item_uz",
+      "field": "item_uz",
+      "value": "Dam olish kunlari kech uyg",
+      "context": {
+        "line_number": 214,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L01_wake_up",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_wake_up.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men soat 7 da uyg",
+      "context": {
+        "line_number": 215,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L01_wake_up",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_wake_up.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz soat nechada uyg",
+      "context": {
+        "line_number": 216,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L01_wake_up",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_morning.personalization.item_uz",
+      "field": "item_uz",
+      "value": "ertalab / tong",
+      "context": {
+        "line_number": 223,
+        "field": "item_uz",
+        "item_id": "V_U02_L01_morning",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_morning.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Hozir kechqurun-mi?",
+      "context": {
+        "line_number": 232,
+        "field": "uz_context",
+        "item_id": "V_U02_L01_morning",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, it"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_morning.practice.option_label",
+      "field": "option_label",
+      "value": "Kun boshi (Start of day)",
+      "context": {
+        "line_number": 233,
+        "field": "option_label",
+        "item_id": "V_U02_L01_morning",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_morning.practice.item_uz",
+      "field": "item_uz",
+      "value": "Xayrli tong!",
+      "context": {
+        "line_number": 235,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U02_L01_morning",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_morning.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men har ertalab yuguraman.",
+      "context": {
+        "line_number": 235,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U02_L01_morning",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_morning.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ertalab men kofe ichaman.",
+      "context": {
+        "line_number": 235,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U02_L01_morning",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_morning.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men har ertalab yuguraman.",
+      "context": {
+        "line_number": 236,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L01_morning",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_morning.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz ertalab nima qilishni yoqtirasiz?",
+      "context": {
+        "line_number": 237,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L01_morning",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_brush.personalization.item_uz",
+      "field": "item_uz",
+      "value": "tozalamoq (tish/soch)",
+      "context": {
+        "line_number": 244,
+        "field": "item_uz",
+        "item_id": "V_U02_L01_brush",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_brush.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz tishlaringizni yuvmaymisiz?",
+      "context": {
+        "line_number": 253,
+        "field": "uz_context",
+        "item_id": "V_U02_L01_brush",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I brush my teeth every day."
+      }
+    },
+    {
+      "id": "items.V_U02_L01_brush.practice.option_label",
+      "field": "option_label",
+      "value": "Tish yoki soch (Teeth or hair)",
+      "context": {
+        "line_number": 254,
+        "field": "option_label",
+        "item_id": "V_U02_L01_brush",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_brush.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Ingliz tilida tish uchun",
+      "context": {
+        "line_number": 255,
+        "field": "explanation_uz",
+        "item_id": "V_U02_L01_brush",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_brush.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men tishlarimni yuvaman.",
+      "context": {
+        "line_number": 256,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L01_brush",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_brush.practice.item_uz",
+      "field": "item_uz",
+      "value": "U sochlarini taraydi.",
+      "context": {
+        "line_number": 256,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L01_brush",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_brush.practice.item_uz",
+      "field": "item_uz",
+      "value": "Tishlaringizni yuvasizmi?",
+      "context": {
+        "line_number": 256,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L01_brush",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_brush.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men tishimni yuvaman.",
+      "context": {
+        "line_number": 257,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L01_brush",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_brush.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz kuniga necha marta tish yuvaysiz?",
+      "context": {
+        "line_number": 258,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L01_brush",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_teeth.personalization.item_uz",
+      "field": "item_uz",
+      "value": "tishlar",
+      "context": {
+        "line_number": 265,
+        "field": "item_uz",
+        "item_id": "V_U02_L01_teeth",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_teeth.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz nimani yuvasiz?",
+      "context": {
+        "line_number": 274,
+        "field": "uz_context",
+        "item_id": "V_U02_L01_teeth",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "I brush my teeth."
+      }
+    },
+    {
+      "id": "items.V_U02_L01_teeth.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Men tishlarimni yuvaman.",
+      "context": {
+        "line_number": 274,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L01_teeth",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "I brush my teeth."
+      }
+    },
+    {
+      "id": "items.V_U02_L01_teeth.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men tishlarimni yuvaman.",
+      "context": {
+        "line_number": 274,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L01_teeth",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "I brush my teeth."
+      }
+    },
+    {
+      "id": "items.V_U02_L01_teeth.practice.option_label",
+      "field": "option_label",
+      "value": "Og'izdagi qism (In mouth)",
+      "context": {
+        "line_number": 275,
+        "field": "option_label",
+        "item_id": "V_U02_L01_teeth",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_teeth.practice.option_label",
+      "field": "option_label",
+      "value": "Qo'l (Hand)",
+      "context": {
+        "line_number": 275,
+        "field": "option_label",
+        "item_id": "V_U02_L01_teeth",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_teeth.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening tishlarim toza.",
+      "context": {
+        "line_number": 277,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L01_teeth",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_teeth.practice.item_uz",
+      "field": "item_uz",
+      "value": "Tishingni yuv!",
+      "context": {
+        "line_number": 277,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L01_teeth",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_teeth.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Mening tishlarim toza.",
+      "context": {
+        "line_number": 278,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L01_teeth",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_teeth.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sizning tishlaringiz qanday?",
+      "context": {
+        "line_number": 279,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L01_teeth",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_shower.personalization.item_uz",
+      "field": "item_uz",
+      "value": "dush",
+      "context": {
+        "line_number": 286,
+        "field": "item_uz",
+        "item_id": "V_U02_L01_shower",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_shower.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz ertalab nima qilasiz?",
+      "context": {
+        "line_number": 295,
+        "field": "uz_context",
+        "item_id": "V_U02_L01_shower",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "I take a shower."
+      }
+    },
+    {
+      "id": "items.V_U02_L01_shower.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Men dush qabul qilaman.",
+      "context": {
+        "line_number": 295,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L01_shower",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "I take a shower."
+      }
+    },
+    {
+      "id": "items.V_U02_L01_shower.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men dush qabul qilaman.",
+      "context": {
+        "line_number": 295,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L01_shower",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "I take a shower."
+      }
+    },
+    {
+      "id": "items.V_U02_L01_shower.practice.option_label",
+      "field": "option_label",
+      "value": "Yuvinmoq (Wash body)",
+      "context": {
+        "line_number": 296,
+        "field": "option_label",
+        "item_id": "V_U02_L01_shower",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_shower.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men dush qabul qilaman.",
+      "context": {
+        "line_number": 298,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L01_shower",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_shower.practice.item_uz",
+      "field": "item_uz",
+      "value": "U kechqurun dush qabul qiladi.",
+      "context": {
+        "line_number": 298,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L01_shower",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_shower.practice.item_uz",
+      "field": "item_uz",
+      "value": "Dush qabul qilasizmi?",
+      "context": {
+        "line_number": 298,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L01_shower",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_shower.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men dush qabul qilaman.",
+      "context": {
+        "line_number": 299,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L01_shower",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_shower.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz qachon dush qabul qilasiz?",
+      "context": {
+        "line_number": 300,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L01_shower",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_breakfast.personalization.item_uz",
+      "field": "item_uz",
+      "value": "nonushta",
+      "context": {
+        "line_number": 307,
+        "field": "item_uz",
+        "item_id": "V_U02_L01_breakfast",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_breakfast.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz tushlik qilasizmi?",
+      "context": {
+        "line_number": 316,
+        "field": "uz_context",
+        "item_id": "V_U02_L01_breakfast",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I eat breakfast."
+      }
+    },
+    {
+      "id": "items.V_U02_L01_breakfast.practice.option_label",
+      "field": "option_label",
+      "value": "Kechki ovqat (Evening meal)",
+      "context": {
+        "line_number": 317,
+        "field": "option_label",
+        "item_id": "V_U02_L01_breakfast",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_breakfast.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Ovqat nomlari (breakfast, lunch, dinner) oldidan artiklsiz ishlatiladi.",
+      "context": {
+        "line_number": 318,
+        "field": "explanation_uz",
+        "item_id": "V_U02_L01_breakfast",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_breakfast.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men soat 7 da katta nonushta qilaman.",
+      "context": {
+        "line_number": 319,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L01_breakfast",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_breakfast.practice.item_uz",
+      "field": "item_uz",
+      "value": "U har ertalab nonushta qiladi.",
+      "context": {
+        "line_number": 319,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L01_breakfast",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_breakfast.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz uyda nonushta qilasizmi?",
+      "context": {
+        "line_number": 319,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L01_breakfast",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_breakfast.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men har kuni nonushta qilaman.",
+      "context": {
+        "line_number": 320,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L01_breakfast",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_breakfast.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Nonushtaga nima yeyishni yoqtirasiz?",
+      "context": {
+        "line_number": 321,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L01_breakfast",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_eat.personalization.item_uz",
+      "field": "item_uz",
+      "value": "yemoq",
+      "context": {
+        "line_number": 328,
+        "field": "item_uz",
+        "item_id": "V_U02_L01_eat",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_eat.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz nonushta ichasizmi?",
+      "context": {
+        "line_number": 337,
+        "field": "uz_context",
+        "item_id": "V_U02_L01_eat",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I eat breakfast."
+      }
+    },
+    {
+      "id": "items.V_U02_L01_eat.practice.option_label",
+      "field": "option_label",
+      "value": "Ichimlik (Drink)",
+      "context": {
+        "line_number": 338,
+        "field": "option_label",
+        "item_id": "V_U02_L01_eat",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_eat.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz nonushta qilasizmi?",
+      "context": {
+        "line_number": 340,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U02_L01_eat",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_eat.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men sog",
+      "context": {
+        "line_number": 340,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U02_L01_eat",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_eat.practice.item_uz",
+      "field": "item_uz",
+      "value": "U soat 1 da tushlik qiladi.",
+      "context": {
+        "line_number": 340,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U02_L01_eat",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_eat.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men olma yeyman.",
+      "context": {
+        "line_number": 341,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L01_eat",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_eat.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ Hozir emas, umuman!",
+      "context": {
+        "line_number": 341,
+        "field": "trap_message",
+        "item_id": "V_U02_L01_eat",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L01_eat.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz nimani yeyishni ko",
+      "context": {
+        "line_number": 342,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L01_eat",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_work.personalization.item_uz",
+      "field": "item_uz",
+      "value": "ishlamoq",
+      "context": {
+        "line_number": 358,
+        "field": "item_uz",
+        "item_id": "V_U02_L02_work",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_work.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz dam olish kunlari ishlaysizmi?",
+      "context": {
+        "line_number": 367,
+        "field": "uz_context",
+        "item_id": "V_U02_L02_work",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "presentation",
+        "en_canonical": "No, I don"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_work.practice.option_label",
+      "field": "option_label",
+      "value": "Ishlamoq (To do a job)",
+      "context": {
+        "line_number": 368,
+        "field": "option_label",
+        "item_id": "V_U02_L02_work",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_work.practice.option_label",
+      "field": "option_label",
+      "value": "O'ynamoq (To play)",
+      "context": {
+        "line_number": 368,
+        "field": "option_label",
+        "item_id": "V_U02_L02_work",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_work.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Present Simple inkorida",
+      "context": {
+        "line_number": 369,
+        "field": "explanation_uz",
+        "item_id": "V_U02_L02_work",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_work.practice.item_uz",
+      "field": "item_uz",
+      "value": "Yo",
+      "context": {
+        "line_number": 370,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_work",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_work.practice.item_uz",
+      "field": "item_uz",
+      "value": "U uyda ishlaydi.",
+      "context": {
+        "line_number": 370,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_work",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_work.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz har kuni ishlaysizmi?",
+      "context": {
+        "line_number": 370,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_work",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_work.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men ofisda ishlayman.",
+      "context": {
+        "line_number": 371,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L02_work",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_work.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz qayerda ishlaysiz?",
+      "context": {
+        "line_number": 372,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L02_work",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_start.personalization.item_uz",
+      "field": "item_uz",
+      "value": "boshlamoq",
+      "context": {
+        "line_number": 379,
+        "field": "item_uz",
+        "item_id": "V_U02_L02_start",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_start.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz ishni 10 da boshlaysizmi?",
+      "context": {
+        "line_number": 388,
+        "field": "uz_context",
+        "item_id": "V_U02_L02_start",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "presentation",
+        "en_canonical": "No, I start at 9 AM."
+      }
+    },
+    {
+      "id": "items.V_U02_L02_start.practice.option_label",
+      "field": "option_label",
+      "value": "Boshlanish (Begin)",
+      "context": {
+        "line_number": 389,
+        "field": "option_label",
+        "item_id": "V_U02_L02_start",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_start.practice.option_label",
+      "field": "option_label",
+      "value": "Tugash (Finish)",
+      "context": {
+        "line_number": 389,
+        "field": "option_label",
+        "item_id": "V_U02_L02_start",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_start.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Aniq vaqt bilan",
+      "context": {
+        "line_number": 390,
+        "field": "explanation_uz",
+        "item_id": "V_U02_L02_start",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_start.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men har kuni soat 9 da boshlayman.",
+      "context": {
+        "line_number": 391,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_start",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_start.practice.item_uz",
+      "field": "item_uz",
+      "value": "Dars soat 2 da boshlanadi.",
+      "context": {
+        "line_number": 391,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_start",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_start.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ishni qachon boshlaysiz?",
+      "context": {
+        "line_number": 391,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_start",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_start.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men soat 8 da boshlayman.",
+      "context": {
+        "line_number": 392,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L02_start",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_start.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz ishni soat nechada boshlaysiz?",
+      "context": {
+        "line_number": 393,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L02_start",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_study.personalization.item_uz",
+      "field": "item_uz",
+      "value": "o",
+      "context": {
+        "line_number": 400,
+        "field": "item_uz",
+        "item_id": "V_U02_L02_study",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_study.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz ingliz tilini o",
+      "context": {
+        "line_number": 409,
+        "field": "uz_context",
+        "item_id": "V_U02_L02_study",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "presentation",
+        "en_canonical": "Yes, I study English."
+      }
+    },
+    {
+      "id": "items.V_U02_L02_study.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Ha, men ingliz tilini o",
+      "context": {
+        "line_number": 409,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L02_study",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "presentation",
+        "en_canonical": "Yes, I study English."
+      }
+    },
+    {
+      "id": "items.V_U02_L02_study.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Ha, men o",
+      "context": {
+        "line_number": 409,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L02_study",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "presentation",
+        "en_canonical": "Yes, I study English."
+      }
+    },
+    {
+      "id": "items.V_U02_L02_study.practice.option_label",
+      "field": "option_label",
+      "value": "O'rganmoq (Learn)",
+      "context": {
+        "line_number": 410,
+        "field": "option_label",
+        "item_id": "V_U02_L02_study",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_study.practice.option_label",
+      "field": "option_label",
+      "value": "O'ynamoq (Play)",
+      "context": {
+        "line_number": 410,
+        "field": "option_label",
+        "item_id": "V_U02_L02_study",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_study.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ha, men kuniga ikki soat o",
+      "context": {
+        "line_number": 412,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_study",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_study.practice.item_uz",
+      "field": "item_uz",
+      "value": "U tibbiyotni o",
+      "context": {
+        "line_number": 412,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_study",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_study.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz universitetda o",
+      "context": {
+        "line_number": 412,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_study",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_study.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men har kuni o",
+      "context": {
+        "line_number": 413,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L02_study",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_study.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz nimani o",
+      "context": {
+        "line_number": 414,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L02_study",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_English.personalization.item_uz",
+      "field": "item_uz",
+      "value": "Ingliz tili",
+      "context": {
+        "line_number": 421,
+        "field": "item_uz",
+        "item_id": "V_U02_L02_English",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_English.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz rus tilini o",
+      "context": {
+        "line_number": 430,
+        "field": "uz_context",
+        "item_id": "V_U02_L02_English",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "presentation",
+        "en_canonical": "No, I study English."
+      }
+    },
+    {
+      "id": "items.V_U02_L02_English.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Tillar nomi har doim katta harf bilan yoziladi: English, Uzbek, Russian. Bu qoida.",
+      "context": {
+        "line_number": 432,
+        "field": "explanation_uz",
+        "item_id": "V_U02_L02_English",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_English.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz ingliz tilini o",
+      "context": {
+        "line_number": 433,
+        "field": "item_uz",
+        "speaker": "Bekzod",
+        "item_id": "V_U02_L02_English",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_English.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ingliz tili muhim.",
+      "context": {
+        "line_number": 433,
+        "field": "item_uz",
+        "speaker": "Bekzod",
+        "item_id": "V_U02_L02_English",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_English.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men ingliz tilini yoqtiraman.",
+      "context": {
+        "line_number": 433,
+        "field": "item_uz",
+        "speaker": "Bekzod",
+        "item_id": "V_U02_L02_English",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_English.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men ingliz tilini o",
+      "context": {
+        "line_number": 434,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L02_English",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_English.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz nima uchun ingliz tilini o",
+      "context": {
+        "line_number": 435,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L02_English",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_play.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz tennis o",
+      "context": {
+        "line_number": 451,
+        "field": "uz_context",
+        "item_id": "V_U02_L02_play",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "presentation",
+        "en_canonical": "No, I play football."
+      }
+    },
+    {
+      "id": "items.V_U02_L02_play.practice.option_label",
+      "field": "option_label",
+      "value": "Sport va o'yinlar (Sports)",
+      "context": {
+        "line_number": 452,
+        "field": "option_label",
+        "item_id": "V_U02_L02_play",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_play.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Sport nomlari bilan artiklsiz ishlatiladi:",
+      "context": {
+        "line_number": 453,
+        "field": "explanation_uz",
+        "item_id": "V_U02_L02_play",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_play.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men dam olish kunlari futbol o",
+      "context": {
+        "line_number": 454,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_play",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_play.practice.item_uz",
+      "field": "item_uz",
+      "value": "U tennis o",
+      "context": {
+        "line_number": 454,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_play",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_play.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz shaxmat o",
+      "context": {
+        "line_number": 454,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_play",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_play.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men futbol o",
+      "context": {
+        "line_number": 455,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L02_play",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_play.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ Sport bilan",
+      "context": {
+        "line_number": 455,
+        "field": "trap_message",
+        "item_id": "V_U02_L02_play",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_play.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz qanday sport o",
+      "context": {
+        "line_number": 456,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L02_play",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_football.personalization.item_uz",
+      "field": "item_uz",
+      "value": "futbol",
+      "context": {
+        "line_number": 463,
+        "field": "item_uz",
+        "item_id": "V_U02_L02_football",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_football.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz basketbol o",
+      "context": {
+        "line_number": 472,
+        "field": "uz_context",
+        "item_id": "V_U02_L02_football",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "presentation",
+        "en_canonical": "No, I play football."
+      }
+    },
+    {
+      "id": "items.V_U02_L02_football.practice.item_uz",
+      "field": "item_uz",
+      "value": "Futbol ajoyib sport.",
+      "context": {
+        "line_number": 475,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_football",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_football.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ular futbol tomosha qilishadi.",
+      "context": {
+        "line_number": 475,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_football",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_football.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz futbol tomosha qilishni yoqtirasizmi?",
+      "context": {
+        "line_number": 477,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L02_football",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_weekend.personalization.item_uz",
+      "field": "item_uz",
+      "value": "dam olish kuni (shanba-yakshanba)",
+      "context": {
+        "line_number": 484,
+        "field": "item_uz",
+        "item_id": "V_U02_L02_weekend",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_weekend.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz dushanba kuni ishlaysizmi?",
+      "context": {
+        "line_number": 493,
+        "field": "uz_context",
+        "item_id": "V_U02_L02_weekend",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "presentation",
+        "en_canonical": "No, I work on weekends."
+      }
+    },
+    {
+      "id": "items.V_U02_L02_weekend.practice.option_label",
+      "field": "option_label",
+      "value": "Shanba va Yakshanba (Sat & Sun)",
+      "context": {
+        "line_number": 494,
+        "field": "option_label",
+        "item_id": "V_U02_L02_weekend",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_weekend.practice.option_label",
+      "field": "option_label",
+      "value": "Dushanbadan Jumagacha (Mon-Fri)",
+      "context": {
+        "line_number": 494,
+        "field": "option_label",
+        "item_id": "V_U02_L02_weekend",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_weekend.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Kunlar va sanalar bilan",
+      "context": {
+        "line_number": 495,
+        "field": "explanation_uz",
+        "item_id": "V_U02_L02_weekend",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_weekend.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men dam olish kunlari ishlamayman.",
+      "context": {
+        "line_number": 496,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_weekend",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_weekend.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz dam olish kunlari parkka boramiz.",
+      "context": {
+        "line_number": 496,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_weekend",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_weekend.practice.item_uz",
+      "field": "item_uz",
+      "value": "Dam olish kuningiz yaxshi o",
+      "context": {
+        "line_number": 496,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U02_L02_weekend",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_weekend.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Dam olish kunlari.",
+      "context": {
+        "line_number": 497,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L02_weekend",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L02_weekend.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Dam olish kunlari nima qilasiz?",
+      "context": {
+        "line_number": 498,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L02_weekend",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_often.personalization.item_uz",
+      "field": "item_uz",
+      "value": "tez-tez / ko",
+      "context": {
+        "line_number": 514,
+        "field": "item_uz",
+        "item_id": "V_U02_L03_often",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_often.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz kamdan-kam mashq qilasizmi?",
+      "context": {
+        "line_number": 523,
+        "field": "uz_context",
+        "item_id": "V_U02_L03_often",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "No, I often exercise."
+      }
+    },
+    {
+      "id": "items.V_U02_L03_often.practice.option_label",
+      "field": "option_label",
+      "value": "Ko'p (A lot)",
+      "context": {
+        "line_number": 524,
+        "field": "option_label",
+        "item_id": "V_U02_L03_often",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_often.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Chastota ravishlarini (always, often, usually) asosiy fe",
+      "context": {
+        "line_number": 525,
+        "field": "explanation_uz",
+        "item_id": "V_U02_L03_often",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_often.practice.item_uz",
+      "field": "item_uz",
+      "value": "Qanchalik tez-tez mashq qilasiz?",
+      "context": {
+        "line_number": 526,
+        "field": "item_uz",
+        "speaker": "Nilufar",
+        "item_id": "V_U02_L03_often",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_often.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men ko",
+      "context": {
+        "line_number": 526,
+        "field": "item_uz",
+        "speaker": "Nilufar",
+        "item_id": "V_U02_L03_often",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_often.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz tez-tez sayohat qilasizmi?",
+      "context": {
+        "line_number": 526,
+        "field": "item_uz",
+        "speaker": "Nilufar",
+        "item_id": "V_U02_L03_often",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_often.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men ko",
+      "context": {
+        "line_number": 527,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L03_often",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_often.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz tez-tez nima qilasiz?",
+      "context": {
+        "line_number": 528,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L03_often",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_always.personalization.item_uz",
+      "field": "item_uz",
+      "value": "har doim",
+      "context": {
+        "line_number": 535,
+        "field": "item_uz",
+        "item_id": "V_U02_L03_always",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_always.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz ba",
+      "context": {
+        "line_number": 544,
+        "field": "uz_context",
+        "item_id": "V_U02_L03_always",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "No, I always eat breakfast."
+      }
+    },
+    {
+      "id": "items.V_U02_L03_always.practice.option_label",
+      "field": "option_label",
+      "value": "100% (Har doim)\", value: \"100\", correct: true }, { label: \"50% (Ba'zan)",
+      "context": {
+        "line_number": 545,
+        "field": "option_label",
+        "item_id": "V_U02_L03_always",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_always.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men har doim mashq qilaman.",
+      "context": {
+        "line_number": 547,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L03_always",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_always.practice.item_uz",
+      "field": "item_uz",
+      "value": "U har doim qattiq ishlaydi.",
+      "context": {
+        "line_number": 547,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L03_always",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_always.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ular har doim kech kelishadi.",
+      "context": {
+        "line_number": 547,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L03_always",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_always.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men har doim suv ichaman.",
+      "context": {
+        "line_number": 548,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L03_always",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_always.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz har doim nima qilasiz?",
+      "context": {
+        "line_number": 549,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L03_always",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_usually.personalization.item_uz",
+      "field": "item_uz",
+      "value": "odatda",
+      "context": {
+        "line_number": 556,
+        "field": "item_uz",
+        "item_id": "V_U02_L03_usually",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_usually.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz har kuni baliq yeysizmi?",
+      "context": {
+        "line_number": 565,
+        "field": "uz_context",
+        "item_id": "V_U02_L03_usually",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "No, I usually eat chicken."
+      }
+    },
+    {
+      "id": "items.V_U02_L03_usually.practice.option_label",
+      "field": "option_label",
+      "value": "Ko'pincha (Most days)",
+      "context": {
+        "line_number": 566,
+        "field": "option_label",
+        "item_id": "V_U02_L03_usually",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_usually.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men odatda sog",
+      "context": {
+        "line_number": 568,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L03_usually",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_usually.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz odatda 6 da uchrashamiz.",
+      "context": {
+        "line_number": 568,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L03_usually",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_usually.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz odatda piyoda yurasizmi?",
+      "context": {
+        "line_number": 568,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L03_usually",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_usually.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men odatda kitob o",
+      "context": {
+        "line_number": 569,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L03_usually",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_usually.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz odatda kechqurun nima qilasiz?",
+      "context": {
+        "line_number": 570,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L03_usually",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_sometimes.personalization.item_uz",
+      "field": "item_uz",
+      "value": "ba",
+      "context": {
+        "line_number": 577,
+        "field": "item_uz",
+        "item_id": "V_U02_L03_sometimes",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_sometimes.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz har doim uyda yeysizmi?",
+      "context": {
+        "line_number": 586,
+        "field": "uz_context",
+        "item_id": "V_U02_L03_sometimes",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I sometimes eat at restaurants."
+      }
+    },
+    {
+      "id": "items.V_U02_L03_sometimes.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Ba",
+      "context": {
+        "line_number": 586,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L03_sometimes",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I sometimes eat at restaurants."
+      }
+    },
+    {
+      "id": "items.V_U02_L03_sometimes.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men ba",
+      "context": {
+        "line_number": 586,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L03_sometimes",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I sometimes eat at restaurants."
+      }
+    },
+    {
+      "id": "items.V_U02_L03_sometimes.practice.option_label",
+      "field": "option_label",
+      "value": "50% (Ba'zan)\", value: \"50\", correct: true }, { label: \"0% (Hech qachon)",
+      "context": {
+        "line_number": 587,
+        "field": "option_label",
+        "item_id": "V_U02_L03_sometimes",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_sometimes.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ba",
+      "context": {
+        "line_number": 589,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L03_sometimes",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_sometimes.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men ba",
+      "context": {
+        "line_number": 589,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L03_sometimes",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_sometimes.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men ba",
+      "context": {
+        "line_number": 590,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L03_sometimes",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_sometimes.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz ba",
+      "context": {
+        "line_number": 591,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L03_sometimes",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_never.personalization.item_uz",
+      "field": "item_uz",
+      "value": "hech qachon",
+      "context": {
+        "line_number": 598,
+        "field": "item_uz",
+        "item_id": "V_U02_L03_never",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_never.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz sigaret chekasizmi?",
+      "context": {
+        "line_number": 607,
+        "field": "uz_context",
+        "item_id": "V_U02_L03_never",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "No, I never smoke."
+      }
+    },
+    {
+      "id": "items.V_U02_L03_never.practice.option_label",
+      "field": "option_label",
+      "value": "0% (Hech qachon)\", value: \"0\", correct: true }, { label: \"100% (Har doim)",
+      "context": {
+        "line_number": 608,
+        "field": "option_label",
+        "item_id": "V_U02_L03_never",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_never.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men hech qachon zararli ovqat yemayman.",
+      "context": {
+        "line_number": 610,
+        "field": "item_uz",
+        "item_id": "V_U02_L03_never",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_never.practice.item_uz",
+      "field": "item_uz",
+      "value": "U hech qachon kech uxlamaydi.",
+      "context": {
+        "line_number": 610,
+        "field": "item_uz",
+        "item_id": "V_U02_L03_never",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_never.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz hech qachon urishmaymiz.",
+      "context": {
+        "line_number": 610,
+        "field": "item_uz",
+        "item_id": "V_U02_L03_never",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_never.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men hech qachon kech qolmayman.",
+      "context": {
+        "line_number": 611,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L03_never",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_never.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz hech qachon nima qilmaysiz?",
+      "context": {
+        "line_number": 612,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L03_never",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_every.personalization.item_uz",
+      "field": "item_uz",
+      "value": "har (har bir)",
+      "context": {
+        "line_number": 619,
+        "field": "item_uz",
+        "item_id": "V_U02_L03_every",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_every.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz faqat dushanba kuni yugurasizmi?",
+      "context": {
+        "line_number": 628,
+        "field": "uz_context",
+        "item_id": "V_U02_L03_every",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I run every day."
+      }
+    },
+    {
+      "id": "items.V_U02_L03_every.practice.item_uz",
+      "field": "item_uz",
+      "value": "Har bir talabada kitob bor.",
+      "context": {
+        "line_number": 631,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L03_every",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_every.practice.item_uz",
+      "field": "item_uz",
+      "value": "U har ertalab ishlaydi.",
+      "context": {
+        "line_number": 631,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L03_every",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_every.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Har kuni.",
+      "context": {
+        "line_number": 632,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L03_every",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_every.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz har kuni nima qilasiz?",
+      "context": {
+        "line_number": 633,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L03_every",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_week.personalization.item_uz",
+      "field": "item_uz",
+      "value": "hafta",
+      "context": {
+        "line_number": 640,
+        "field": "item_uz",
+        "item_id": "V_U02_L03_week",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_week.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Bu oyda necha kun bor?",
+      "context": {
+        "line_number": 649,
+        "field": "uz_context",
+        "item_id": "V_U02_L03_week",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "One week has seven days."
+      }
+    },
+    {
+      "id": "items.V_U02_L03_week.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Bir haftada yetti kun bor.",
+      "context": {
+        "line_number": 649,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L03_week",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "One week has seven days."
+      }
+    },
+    {
+      "id": "items.V_U02_L03_week.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Bir haftada yetti kun bor.",
+      "context": {
+        "line_number": 649,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L03_week",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "One week has seven days."
+      }
+    },
+    {
+      "id": "items.V_U02_L03_week.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men haftada uch marta mashq qilaman.",
+      "context": {
+        "line_number": 652,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L03_week",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_week.practice.item_uz",
+      "field": "item_uz",
+      "value": "Haftangiz yaxshi o",
+      "context": {
+        "line_number": 652,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L03_week",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_week.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kelasi hafta ko",
+      "context": {
+        "line_number": 652,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L03_week",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_week.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Kelasi hafta.",
+      "context": {
+        "line_number": 653,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L03_week",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L03_week.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Haftada necha marta mashq qilasiz?",
+      "context": {
+        "line_number": 654,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L03_week",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_exercise.personalization.item_uz",
+      "field": "item_uz",
+      "value": "mashq qilmoq (sport)",
+      "context": {
+        "line_number": 670,
+        "field": "item_uz",
+        "item_id": "V_U02_L04_exercise",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_exercise.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz faqat uxlaysizmi?",
+      "context": {
+        "line_number": 679,
+        "field": "uz_context",
+        "item_id": "V_U02_L04_exercise",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "No, I exercise every day."
+      }
+    },
+    {
+      "id": "items.V_U02_L04_exercise.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mashq qilish siz uchun foydali.",
+      "context": {
+        "line_number": 682,
+        "field": "item_uz",
+        "speaker": "Nilufar",
+        "item_id": "V_U02_L04_exercise",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_exercise.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men yetarlicha mashq qilmayman.",
+      "context": {
+        "line_number": 682,
+        "field": "item_uz",
+        "speaker": "Nilufar",
+        "item_id": "V_U02_L04_exercise",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_exercise.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men har kuni mashq qilaman.",
+      "context": {
+        "line_number": 683,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L04_exercise",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_exercise.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz qanday mashq qilasiz?",
+      "context": {
+        "line_number": 684,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L04_exercise",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_run.personalization.item_uz",
+      "field": "item_uz",
+      "value": "yugurmoq",
+      "context": {
+        "line_number": 691,
+        "field": "item_uz",
+        "item_id": "V_U02_L04_run",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_run.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz yuradiganmisiz?",
+      "context": {
+        "line_number": 700,
+        "field": "uz_context",
+        "item_id": "V_U02_L04_run",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I run."
+      }
+    },
+    {
+      "id": "items.V_U02_L04_run.practice.option_label",
+      "field": "option_label",
+      "value": "Yugurish (Fast)",
+      "context": {
+        "line_number": 701,
+        "field": "option_label",
+        "item_id": "V_U02_L04_run",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_run.practice.option_label",
+      "field": "option_label",
+      "value": "Yurish (Slow)",
+      "context": {
+        "line_number": 701,
+        "field": "option_label",
+        "item_id": "V_U02_L04_run",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_run.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "He/She/It bilan fe",
+      "context": {
+        "line_number": 702,
+        "field": "explanation_uz",
+        "item_id": "V_U02_L04_run",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_run.practice.item_uz",
+      "field": "item_uz",
+      "value": "U parkda yuguradi.",
+      "context": {
+        "line_number": 703,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L04_run",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_run.practice.item_uz",
+      "field": "item_uz",
+      "value": "Yugurishni yoqtirasizmi?",
+      "context": {
+        "line_number": 703,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U02_L04_run",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_run.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: U parkda yuguradi.",
+      "context": {
+        "line_number": 704,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L04_run",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_run.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz qayerda yugurasiz?",
+      "context": {
+        "line_number": 705,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L04_run",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_healthy.personalization.item_uz",
+      "field": "item_uz",
+      "value": "sog",
+      "context": {
+        "line_number": 712,
+        "field": "item_uz",
+        "item_id": "V_U02_L04_healthy",
+        "dialogue_id": "U02_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_healthy.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz kasalmisiz?",
+      "context": {
+        "line_number": 721,
+        "field": "uz_context",
+        "item_id": "V_U02_L04_healthy",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "No, I am healthy."
+      }
+    },
+    {
+      "id": "items.V_U02_L04_healthy.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Ingliz tilida sifat otdan OLDIN keladi:",
+      "context": {
+        "line_number": 723,
+        "field": "explanation_uz",
+        "item_id": "V_U02_L04_healthy",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_healthy.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mashq qilish sog",
+      "context": {
+        "line_number": 724,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L04_healthy",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_healthy.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bu sog",
+      "context": {
+        "line_number": 724,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L04_healthy",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_healthy.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Sog",
+      "context": {
+        "line_number": 725,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L04_healthy",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_healthy.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz sog",
+      "context": {
+        "line_number": 726,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L04_healthy",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_restaurant.personalization.item_uz",
+      "field": "item_uz",
+      "value": "restoran",
+      "context": {
+        "line_number": 733,
+        "field": "item_uz",
+        "item_id": "V_U02_L04_restaurant",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_restaurant.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Biz bugun uyda ovqatlanamizmi?",
+      "context": {
+        "line_number": 742,
+        "field": "uz_context",
+        "item_id": "V_U02_L04_restaurant",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "No, let"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_restaurant.practice.option_label",
+      "field": "option_label",
+      "value": "Ovqatlanish joyi (Eating place)",
+      "context": {
+        "line_number": 743,
+        "field": "option_label",
+        "item_id": "V_U02_L04_restaurant",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_restaurant.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bu restoran yaxshi.",
+      "context": {
+        "line_number": 745,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L04_restaurant",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_restaurant.practice.item_uz",
+      "field": "item_uz",
+      "value": "Restoran qayerda?",
+      "context": {
+        "line_number": 745,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L04_restaurant",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_restaurant.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men restoranda yeyman.",
+      "context": {
+        "line_number": 746,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L04_restaurant",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_restaurant.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz qaysi restoranni yoqtirasiz?",
+      "context": {
+        "line_number": 747,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L04_restaurant",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_friend.personalization.item_uz",
+      "field": "item_uz",
+      "value": "do",
+      "context": {
+        "line_number": 754,
+        "field": "item_uz",
+        "item_id": "V_U02_L04_friend",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_friend.presentation.uz_context",
+      "field": "uz_context",
+      "value": "U sizning dushmaningizmi?",
+      "context": {
+        "line_number": 763,
+        "field": "uz_context",
+        "item_id": "V_U02_L04_friend",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "No, he is my friend."
+      }
+    },
+    {
+      "id": "items.V_U02_L04_friend.practice.option_label",
+      "field": "option_label",
+      "value": "Notanish (Stranger)",
+      "context": {
+        "line_number": 764,
+        "field": "option_label",
+        "item_id": "V_U02_L04_friend",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_friend.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Egalik olmoshlari:",
+      "context": {
+        "line_number": 765,
+        "field": "explanation_uz",
+        "item_id": "V_U02_L04_friend",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_friend.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men do",
+      "context": {
+        "line_number": 766,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L04_friend",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_friend.practice.item_uz",
+      "field": "item_uz",
+      "value": "U mening eng yaqin do",
+      "context": {
+        "line_number": 766,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L04_friend",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_friend.practice.item_uz",
+      "field": "item_uz",
+      "value": "Salom, do",
+      "context": {
+        "line_number": 766,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L04_friend",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_friend.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: U mening do",
+      "context": {
+        "line_number": 767,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L04_friend",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_friend.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sizning eng yaxshi do",
+      "context": {
+        "line_number": 768,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L04_friend",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_home.personalization.item_uz",
+      "field": "item_uz",
+      "value": "uy",
+      "context": {
+        "line_number": 775,
+        "field": "item_uz",
+        "item_id": "V_U02_L04_home",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_home.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz qayerdasiz?",
+      "context": {
+        "line_number": 784,
+        "field": "uz_context",
+        "item_id": "V_U02_L04_home",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I am at home."
+      }
+    },
+    {
+      "id": "items.V_U02_L04_home.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Men uydaman.",
+      "context": {
+        "line_number": 784,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L04_home",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I am at home."
+      }
+    },
+    {
+      "id": "items.V_U02_L04_home.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men uydaman.",
+      "context": {
+        "line_number": 784,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L04_home",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I am at home."
+      }
+    },
+    {
+      "id": "items.V_U02_L04_home.practice.option_label",
+      "field": "option_label",
+      "value": "Yashash joyi (Living place)",
+      "context": {
+        "line_number": 785,
+        "field": "option_label",
+        "item_id": "V_U02_L04_home",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_home.practice.option_label",
+      "field": "option_label",
+      "value": "Ish joyi (Work place)",
+      "context": {
+        "line_number": 785,
+        "field": "option_label",
+        "item_id": "V_U02_L04_home",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_home.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men uyda ovqatlanaman.",
+      "context": {
+        "line_number": 787,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L04_home",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_home.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men 6 da uyga boraman.",
+      "context": {
+        "line_number": 787,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L04_home",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_home.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uyga xush kelibsiz.",
+      "context": {
+        "line_number": 787,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L04_home",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_home.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men uyga boraman.",
+      "context": {
+        "line_number": 788,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L04_home",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_home.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz uyda nima qilishni yoqtirasiz?",
+      "context": {
+        "line_number": 789,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L04_home",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_time.personalization.item_uz",
+      "field": "item_uz",
+      "value": "vaqt",
+      "context": {
+        "line_number": 796,
+        "field": "item_uz",
+        "item_id": "V_U02_L04_time",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_time.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Soat nechi bo",
+      "context": {
+        "line_number": 805,
+        "field": "uz_context",
+        "item_id": "V_U02_L04_time",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "presentation",
+        "en_canonical": "It is time."
+      }
+    },
+    {
+      "id": "items.V_U02_L04_time.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Vaqt bo",
+      "context": {
+        "line_number": 805,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L04_time",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "presentation",
+        "en_canonical": "It is time."
+      }
+    },
+    {
+      "id": "items.V_U02_L04_time.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Vaqt bo",
+      "context": {
+        "line_number": 805,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L04_time",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "presentation",
+        "en_canonical": "It is time."
+      }
+    },
+    {
+      "id": "items.V_U02_L04_time.practice.item_uz",
+      "field": "item_uz",
+      "value": "Soat nechada ishni boshlaysiz?",
+      "context": {
+        "line_number": 808,
+        "field": "item_uz",
+        "speaker": "Bekzod",
+        "item_id": "V_U02_L04_time",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_time.practice.item_uz",
+      "field": "item_uz",
+      "value": "Menda vaqt bor.",
+      "context": {
+        "line_number": 808,
+        "field": "item_uz",
+        "speaker": "Bekzod",
+        "item_id": "V_U02_L04_time",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_time.practice.item_uz",
+      "field": "item_uz",
+      "value": "Vaqt - bu pul.",
+      "context": {
+        "line_number": 808,
+        "field": "item_uz",
+        "speaker": "Bekzod",
+        "item_id": "V_U02_L04_time",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_time.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Menda vaqt yo",
+      "context": {
+        "line_number": 809,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L04_time",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_time.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz soat nechada uxlaysiz?",
+      "context": {
+        "line_number": 810,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L04_time",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_evening.personalization.item_uz",
+      "field": "item_uz",
+      "value": "kechqurun",
+      "context": {
+        "line_number": 817,
+        "field": "item_uz",
+        "item_id": "V_U02_L04_evening",
+        "dialogue_id": "U02_L01_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_evening.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Kechki ovqat qachon?",
+      "context": {
+        "line_number": 826,
+        "field": "uz_context",
+        "item_id": "V_U02_L04_evening",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "In the evening."
+      }
+    },
+    {
+      "id": "items.V_U02_L04_evening.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Kechqurun.",
+      "context": {
+        "line_number": 826,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L04_evening",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "In the evening."
+      }
+    },
+    {
+      "id": "items.V_U02_L04_evening.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Kechqurun.",
+      "context": {
+        "line_number": 826,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L04_evening",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "In the evening."
+      }
+    },
+    {
+      "id": "items.V_U02_L04_evening.practice.option_label",
+      "field": "option_label",
+      "value": "Kechki payt (After 6 PM)",
+      "context": {
+        "line_number": 827,
+        "field": "option_label",
+        "item_id": "V_U02_L04_evening",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_evening.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kechqurun nima qilasiz?",
+      "context": {
+        "line_number": 829,
+        "field": "item_uz",
+        "speaker": "Nilufar",
+        "item_id": "V_U02_L04_evening",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_evening.practice.item_uz",
+      "field": "item_uz",
+      "value": "Xayrli kech!",
+      "context": {
+        "line_number": 829,
+        "field": "item_uz",
+        "speaker": "Nilufar",
+        "item_id": "V_U02_L04_evening",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_evening.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men kechqurun televizor ko",
+      "context": {
+        "line_number": 829,
+        "field": "item_uz",
+        "speaker": "Nilufar",
+        "item_id": "V_U02_L04_evening",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_evening.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Xayrli kech!",
+      "context": {
+        "line_number": 830,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L04_evening",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L04_evening.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kechqurun nima qilishni yoqtirasiz?",
+      "context": {
+        "line_number": 831,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L04_evening",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_watch.personalization.item_uz",
+      "field": "item_uz",
+      "value": "tomosha qilmoq (TV/kino)",
+      "context": {
+        "line_number": 847,
+        "field": "item_uz",
+        "item_id": "V_U02_L05_watch",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_watch.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz kechqurun nima qilasiz?",
+      "context": {
+        "line_number": 856,
+        "field": "uz_context",
+        "item_id": "V_U02_L05_watch",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I watch TV."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_watch.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Men televizor tomosha qilaman.",
+      "context": {
+        "line_number": 856,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L05_watch",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I watch TV."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_watch.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men televizor ko",
+      "context": {
+        "line_number": 856,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L05_watch",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I watch TV."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_watch.practice.option_label",
+      "field": "option_label",
+      "value": "Ko'rmoq (See moving things)",
+      "context": {
+        "line_number": 857,
+        "field": "option_label",
+        "item_id": "V_U02_L05_watch",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_watch.practice.option_label",
+      "field": "option_label",
+      "value": "Eshitmoq (Hear)",
+      "context": {
+        "line_number": 857,
+        "field": "option_label",
+        "item_id": "V_U02_L05_watch",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_watch.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men odatda televizor ko",
+      "context": {
+        "line_number": 859,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L05_watch",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_watch.practice.item_uz",
+      "field": "item_uz",
+      "value": "U kinolar ko",
+      "context": {
+        "line_number": 859,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L05_watch",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_watch.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ko",
+      "context": {
+        "line_number": 859,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L05_watch",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_watch.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men kino ko",
+      "context": {
+        "line_number": 860,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L05_watch",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_watch.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz televizorda nimani ko",
+      "context": {
+        "line_number": 861,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L05_watch",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_TV.personalization.item_uz",
+      "field": "item_uz",
+      "value": "televizor",
+      "context": {
+        "line_number": 868,
+        "field": "item_uz",
+        "item_id": "V_U02_L05_TV",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_TV.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Bu nima?",
+      "context": {
+        "line_number": 877,
+        "field": "uz_context",
+        "item_id": "V_U02_L05_TV",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "It is a TV."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_TV.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Bu televizor.",
+      "context": {
+        "line_number": 877,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L05_TV",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "It is a TV."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_TV.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Bu televizor.",
+      "context": {
+        "line_number": 877,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L05_TV",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "It is a TV."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_TV.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "TV nima qisqartma?",
+      "context": {
+        "line_number": 879,
+        "field": "why_prompt",
+        "item_id": "V_U02_L05_TV",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_TV.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men televizor ko",
+      "context": {
+        "line_number": 880,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L05_TV",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_TV.practice.item_uz",
+      "field": "item_uz",
+      "value": "Televizor yoqilgan.",
+      "context": {
+        "line_number": 880,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L05_TV",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_TV.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bizda katta televizor bor.",
+      "context": {
+        "line_number": 880,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L05_TV",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_TV.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men televizorni yoqtiraman.",
+      "context": {
+        "line_number": 881,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L05_TV",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_TV.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sizda nechta televizor bor?",
+      "context": {
+        "line_number": 882,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L05_TV",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_read.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz kitob yozasizmi?",
+      "context": {
+        "line_number": 898,
+        "field": "uz_context",
+        "item_id": "V_U02_L05_read",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "No, I read books."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_read.practice.option_label",
+      "field": "option_label",
+      "value": "O'qimoq (Look at words)",
+      "context": {
+        "line_number": 899,
+        "field": "option_label",
+        "item_id": "V_U02_L05_read",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_read.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men uxlashdan oldin kitob o",
+      "context": {
+        "line_number": 901,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L05_read",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_read.practice.item_uz",
+      "field": "item_uz",
+      "value": "U yangiliklarni o",
+      "context": {
+        "line_number": 901,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L05_read",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_read.practice.item_uz",
+      "field": "item_uz",
+      "value": "O",
+      "context": {
+        "line_number": 901,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L05_read",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_read.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men kitob o",
+      "context": {
+        "line_number": 902,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L05_read",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_read.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz qanday kitoblarni o",
+      "context": {
+        "line_number": 903,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L05_read",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_relax.personalization.item_uz",
+      "field": "item_uz",
+      "value": "dam olmoq / hordiq chiqarmoq",
+      "context": {
+        "line_number": 910,
+        "field": "item_uz",
+        "item_id": "V_U02_L05_relax",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_relax.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz ishdan keyin nima qilasiz?",
+      "context": {
+        "line_number": 919,
+        "field": "uz_context",
+        "item_id": "V_U02_L05_relax",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I relax."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_relax.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Men dam olaman.",
+      "context": {
+        "line_number": 919,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L05_relax",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I relax."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_relax.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men dam olaman.",
+      "context": {
+        "line_number": 919,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L05_relax",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I relax."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_relax.practice.option_label",
+      "field": "option_label",
+      "value": "Dam olish (Rest)",
+      "context": {
+        "line_number": 920,
+        "field": "option_label",
+        "item_id": "V_U02_L05_relax",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_relax.practice.option_label",
+      "field": "option_label",
+      "value": "Ishlash (Work)",
+      "context": {
+        "line_number": 920,
+        "field": "option_label",
+        "item_id": "V_U02_L05_relax",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_relax.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Fe",
+      "context": {
+        "line_number": 921,
+        "field": "explanation_uz",
+        "item_id": "V_U02_L05_relax",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_relax.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men kechqurun dam olaman.",
+      "context": {
+        "line_number": 922,
+        "field": "item_uz",
+        "item_id": "V_U02_L05_relax",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_relax.practice.item_uz",
+      "field": "item_uz",
+      "value": "U yoga bilan dam oladi.",
+      "context": {
+        "line_number": 922,
+        "field": "item_uz",
+        "item_id": "V_U02_L05_relax",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_relax.practice.item_uz",
+      "field": "item_uz",
+      "value": "Shunchaki dam oling (tinchlaning).",
+      "context": {
+        "line_number": 922,
+        "field": "item_uz",
+        "item_id": "V_U02_L05_relax",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_relax.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men uyda dam olaman.",
+      "context": {
+        "line_number": 923,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L05_relax",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_relax.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz qanday dam olasiz?",
+      "context": {
+        "line_number": 924,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L05_relax",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_sleep.personalization.item_uz",
+      "field": "item_uz",
+      "value": "uxlamoq",
+      "context": {
+        "line_number": 931,
+        "field": "item_uz",
+        "item_id": "V_U02_L05_sleep",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_sleep.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz kechasi nima qilasiz?",
+      "context": {
+        "line_number": 940,
+        "field": "uz_context",
+        "item_id": "V_U02_L05_sleep",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I sleep."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_sleep.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Men uxlayman.",
+      "context": {
+        "line_number": 940,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L05_sleep",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I sleep."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_sleep.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men uxlayman.",
+      "context": {
+        "line_number": 940,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L05_sleep",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I sleep."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_sleep.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men 8 soat uxlayman.",
+      "context": {
+        "line_number": 943,
+        "field": "item_uz",
+        "item_id": "V_U02_L05_sleep",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_sleep.practice.item_uz",
+      "field": "item_uz",
+      "value": "Chaqaloq uxlayapti.",
+      "context": {
+        "line_number": 943,
+        "field": "item_uz",
+        "item_id": "V_U02_L05_sleep",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_sleep.practice.item_uz",
+      "field": "item_uz",
+      "value": "Xayrli tun, yaxshi dam oling.",
+      "context": {
+        "line_number": 943,
+        "field": "item_uz",
+        "item_id": "V_U02_L05_sleep",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_sleep.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men uxlayman.",
+      "context": {
+        "line_number": 944,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L05_sleep",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_sleep.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz necha soat uxlaysiz?",
+      "context": {
+        "line_number": 945,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L05_sleep",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_bed.personalization.item_uz",
+      "field": "item_uz",
+      "value": "yotoq / kravat",
+      "context": {
+        "line_number": 952,
+        "field": "item_uz",
+        "item_id": "V_U02_L05_bed",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_bed.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz qayerda uxlaysiz?",
+      "context": {
+        "line_number": 961,
+        "field": "uz_context",
+        "item_id": "V_U02_L05_bed",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I sleep in bed."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_bed.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Men yotoqda uxlayman.",
+      "context": {
+        "line_number": 961,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L05_bed",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I sleep in bed."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_bed.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men yotoqda uxlayman.",
+      "context": {
+        "line_number": 961,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L05_bed",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "presentation",
+        "en_canonical": "I sleep in bed."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_bed.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men uxlashdan oldin o",
+      "context": {
+        "line_number": 964,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L05_bed",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_bed.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bu yotoq yumshoq.",
+      "context": {
+        "line_number": 964,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L05_bed",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_bed.practice.item_uz",
+      "field": "item_uz",
+      "value": "Yotib uxla!",
+      "context": {
+        "line_number": 964,
+        "field": "item_uz",
+        "speaker": "Kamila",
+        "item_id": "V_U02_L05_bed",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_bed.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men yotoqga boraman (uxlashga).",
+      "context": {
+        "line_number": 965,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L05_bed",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_bed.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz soat nechada uxlashga borasiz?",
+      "context": {
+        "line_number": 966,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L05_bed",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_have.personalization.item_uz",
+      "field": "item_uz",
+      "value": "bor bo",
+      "context": {
+        "line_number": 973,
+        "field": "item_uz",
+        "item_id": "V_U02_L05_have",
+        "dialogue_id": "U02_L01_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_have.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Sizda mashina bormi?",
+      "context": {
+        "line_number": 982,
+        "field": "uz_context",
+        "item_id": "V_U02_L05_have",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "presentation",
+        "en_canonical": "Yes, I have a car."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_have.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Ha, menda mashina bor.",
+      "context": {
+        "line_number": 982,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L05_have",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "presentation",
+        "en_canonical": "Yes, I have a car."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_have.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Ha, menda mashina bor.",
+      "context": {
+        "line_number": 982,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L05_have",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "presentation",
+        "en_canonical": "Yes, I have a car."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_have.practice.option_label",
+      "field": "option_label",
+      "value": "Egalik qilish (Own)",
+      "context": {
+        "line_number": 983,
+        "field": "option_label",
+        "item_id": "V_U02_L05_have",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_have.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening shaxsiy noutbukim bor.",
+      "context": {
+        "line_number": 985,
+        "field": "item_uz",
+        "speaker": "Bekzod",
+        "item_id": "V_U02_L05_have",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_have.practice.item_uz",
+      "field": "item_uz",
+      "value": "Sizda aka-uka bormi?",
+      "context": {
+        "line_number": 985,
+        "field": "item_uz",
+        "speaker": "Bekzod",
+        "item_id": "V_U02_L05_have",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_have.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bizda vaqt bor.",
+      "context": {
+        "line_number": 985,
+        "field": "item_uz",
+        "speaker": "Bekzod",
+        "item_id": "V_U02_L05_have",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_have.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Menda kitob bor.",
+      "context": {
+        "line_number": 986,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L05_have",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_have.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sizda nima bor?",
+      "context": {
+        "line_number": 987,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L05_have",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_there_is.personalization.item_uz",
+      "field": "item_uz",
+      "value": "bor (mavjudlik)",
+      "context": {
+        "line_number": 994,
+        "field": "item_uz",
+        "item_id": "V_U02_L05_there_is",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_there_is.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Bu yerda stol bormi?",
+      "context": {
+        "line_number": 1003,
+        "field": "uz_context",
+        "item_id": "V_U02_L05_there_is",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "presentation",
+        "en_canonical": "Yes, there is a table here."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_there_is.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Ha, bu yerda stol bor.",
+      "context": {
+        "line_number": 1003,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U02_L05_there_is",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "presentation",
+        "en_canonical": "Yes, there is a table here."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_there_is.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Ha, bu yerda stol bor.",
+      "context": {
+        "line_number": 1003,
+        "field": "uz_gloss",
+        "item_id": "V_U02_L05_there_is",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "presentation",
+        "en_canonical": "Yes, there is a table here."
+      }
+    },
+    {
+      "id": "items.V_U02_L05_there_is.practice.option_label",
+      "field": "option_label",
+      "value": "Bir narsa uchun (Singular)",
+      "context": {
+        "line_number": 1004,
+        "field": "option_label",
+        "item_id": "V_U02_L05_there_is",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_there_is.practice.option_label",
+      "field": "option_label",
+      "value": "Ko'p narsa uchun (Plural)",
+      "context": {
+        "line_number": 1004,
+        "field": "option_label",
+        "item_id": "V_U02_L05_there_is",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_there_is.practice.item_uz",
+      "field": "item_uz",
+      "value": "Yaxshi qahvaxona bor.",
+      "context": {
+        "line_number": 1006,
+        "field": "item_uz",
+        "speaker": "Bekzod",
+        "item_id": "V_U02_L05_there_is",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_there_is.practice.item_uz",
+      "field": "item_uz",
+      "value": "Muammo bormi?",
+      "context": {
+        "line_number": 1006,
+        "field": "item_uz",
+        "speaker": "Bekzod",
+        "item_id": "V_U02_L05_there_is",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_there_is.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Kitob bor.",
+      "context": {
+        "line_number": 1007,
+        "field": "uz_prompt",
+        "item_id": "V_U02_L05_there_is",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U02_L05_there_is.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sizning xonangizda nima bor?",
+      "context": {
+        "line_number": 1008,
+        "field": "prompt_uz",
+        "item_id": "V_U02_L05_there_is",
+        "dialogue_id": "U02_L01_D04",
+        "phase": "personalization"
+      }
+    }
+  ]
+}

@@ -12,6 +12,7 @@
  */
 
 import { getTileContainer } from './tile-utils.js';
+import { uz, en } from '../core/i18n.js';
 
 /**
  * Access integration state from window
@@ -84,7 +85,7 @@ export function renderTransformationTile(transformContent, lesson) {
 
   // Title
   const title = document.createElement("h2");
-  title.textContent = "Text Transformation \u200D\u201C Form Responds to Meaning";
+  title.textContent = uz('transformation.tileTitle');
   title.style.cssText = "color: #2c3e50; margin-bottom: 20px; text-align: center;";
   wrapper.appendChild(title);
 
@@ -100,7 +101,7 @@ export function renderTransformationTile(transformContent, lesson) {
   wrapper.appendChild(progressBar);
 
   const progressText = document.createElement("div");
-  progressText.textContent = `${progress.transformationsPassed} / ${progress.totalTransformations} completed`;
+  progressText.textContent = uz('transformation.progressLabel').replace('{passed}', progress.transformationsPassed).replace('{total}', progress.totalTransformations);
   progressText.style.cssText = "text-align: center; color: #7f8c8d; margin-bottom: 30px; font-weight: bold;";
   wrapper.appendChild(progressText);
 
@@ -121,7 +122,7 @@ export function renderTransformationTile(transformContent, lesson) {
   scenarioBox.style.cssText = "background: #e8f4f8; padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #3498db;";
   
   const scenarioLabel = document.createElement("div");
-  scenarioLabel.textContent = "📖 Vaziyat:";
+  scenarioLabel.textContent = uz('transformation.scenario');
   scenarioLabel.style.cssText = "font-weight: bold; color: #2980b9; margin-bottom: 10px;";
   scenarioBox.appendChild(scenarioLabel);
 
@@ -137,7 +138,7 @@ export function renderTransformationTile(transformContent, lesson) {
   changeBox.style.cssText = "background: #fff3cd; padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #f39c12;";
   
   const changeLabel = document.createElement("div");
-  changeLabel.textContent = "🔄 O'zgarish:";
+  changeLabel.textContent = uz('transformation.change');
   changeLabel.style.cssText = "font-weight: bold; color: #856404; margin-bottom: 10px;";
   changeBox.appendChild(changeLabel);
 
@@ -153,19 +154,19 @@ export function renderTransformationTile(transformContent, lesson) {
   inputBox.style.cssText = "background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 2px solid #3498db;";
 
   const inputLabel = document.createElement("div");
-  inputLabel.textContent = "✏️ Gapni qayta yozing:";
+  inputLabel.textContent = uz('transformation.rewrite');
   inputLabel.style.cssText = "font-weight: bold; color: #2c3e50; margin-bottom: 15px;";
   inputBox.appendChild(inputLabel);
 
   const textarea = document.createElement("textarea");
   textarea.className = "transformation-textarea";
-  textarea.placeholder = "Gapni kiriting...";
+  textarea.placeholder = uz('transformation.placeholder');
   textarea.style.cssText = "width: 100%; padding: 15px; font-size: 16px; border: 2px solid #bdc3c7; border-radius: 8px; resize: vertical; min-height: 80px; font-family: inherit;";
   inputBox.appendChild(textarea);
 
   // Check button
   const checkBtn = document.createElement("button");
-  checkBtn.textContent = "Tekshirish";
+  checkBtn.textContent = uz('transformation.checkBtn');
   checkBtn.className = "btn-check-transformation";
   checkBtn.style.cssText = "margin-top: 15px; padding: 12px 25px; background: #3498db; border: none; border-radius: 8px; color: white; font-size: 16px; cursor: pointer;";
   
@@ -185,7 +186,7 @@ export function renderTransformationTile(transformContent, lesson) {
       feedbackEl.style.background = "#d5f4e6";
       feedbackEl.style.borderLeft = "4px solid #27ae60";
       feedbackEl.innerHTML = `
-        <div style="color: #27ae60; font-weight: bold; margin-bottom: 10px;">✓ To'g'ri!</div>
+        <div style="color: #27ae60; font-weight: bold; margin-bottom: 10px;">${uz('transformation.correct')}</div>
         <div style="color: #1e8449;">${transformation.explanation_uz}</div>
       `;
       
@@ -202,8 +203,8 @@ export function renderTransformationTile(transformContent, lesson) {
       feedbackEl.style.background = "#fdecea";
       feedbackEl.style.borderLeft = "4px solid #e74c3c";
       feedbackEl.innerHTML = `
-        <div style="color: #e74c3c; font-weight: bold; margin-bottom: 10px;">✗ Qayta urinib ko'ring</div>
-        <div style="color: #c0392b;">To'g'ri javob: <strong>${correctAnswer}</strong></div>
+        <div style="color: #e74c3c; font-weight: bold; margin-bottom: 10px;">${uz('transformation.incorrect')}</div>
+        <div style="color: #c0392b;">${uz('transformation.correctAnswer')}<strong>${correctAnswer}</strong></div>
       `;
     }
   });

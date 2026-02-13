@@ -56,7 +56,7 @@ function buildGrammarMistakeBlocks(lesson) {
     out.push({
       wrong_form: "It's mines.",
       correct_form: "It's mine.",
-      meta_uz: "Possessive pronoun ko'plik qilinmaydi.",
+      meta_uz: uz('mistake.fallbackMeta'),
       meta_en: "Possessive pronouns are not pluralized."
     });
     out.push({
@@ -114,21 +114,21 @@ export function renderMistakeTile(lesson) {
   if (!window.lastListenWritePassed && !window.TEACHER_MODE) {
     const title = document.createElement("div");
     title.className = "tile-title";
-    title.textContent = uz('tiles.mistake') + ' (Qulflangan)';
+    title.textContent = uz('tiles.mistake') + ' ' + uz('mistake.locked');
     title.classList.add('tl-uz');
-    title.dataset.translation = en('tiles.mistake') + ' (Locked)';
+    title.dataset.translation = en('tiles.mistake') + ' ' + en('mistake.locked');
     
     const msg = document.createElement("div");
     msg.className = "tile-section";
-    msg.textContent = "Oldin LISTEN_WRITE tile'ni bajaring.";
+    msg.textContent = uz('mistake.gatePrev');
     msg.classList.add("tl-uz");
-    msg.dataset.translation = "Complete the LISTEN_WRITE tile first.";
+    msg.dataset.translation = en('mistake.gatePrev');
     
-    const btnBack = createButton("Qaytish: LISTEN_WRITE", () => {
+    const btnBack = createButton(uz("nav.backListenWrite"), () => {
       transitionToTile(STATES.LISTEN_WRITE);
     });
     btnBack.classList.add("tl-uz");
-    btnBack.dataset.translation = "Back: LISTEN_WRITE";
+    btnBack.dataset.translation = en("nav.backListenWrite");
     
     tileContainer.appendChild(title);
     tileContainer.appendChild(msg);
@@ -164,14 +164,14 @@ export function renderMistakeTile(lesson) {
     block.className = "tile-section";
     
     const wrongLabel = document.createElement("strong");
-    wrongLabel.textContent = "Noto'g'ri:";
+    wrongLabel.textContent = uz('mistake.labelWrong');
     wrongLabel.classList.add("tl-uz");
-    wrongLabel.dataset.translation = "Wrong:";
+    wrongLabel.dataset.translation = en('mistake.labelWrong');
     
     const correctLabel = document.createElement("strong");
-    correctLabel.textContent = "To'g'ri:";
+    correctLabel.textContent = uz('mistake.labelCorrect');
     correctLabel.classList.add("tl-uz");
-    correctLabel.dataset.translation = "Correct:";
+    correctLabel.dataset.translation = en('mistake.labelCorrect');
 
     block.appendChild(wrongLabel);
     block.appendChild(document.createTextNode(" " + (m.wrong_form || "(missing)")));
@@ -183,7 +183,7 @@ export function renderMistakeTile(lesson) {
     const meta = document.createElement("em");
     meta.textContent = m.meta_uz || "";
     meta.classList.add("tl-uz");
-    meta.dataset.translation = m.meta_en || "Explanation";
+    meta.dataset.translation = m.meta_en || en('mistake.explanation');
     block.appendChild(meta);
     
     mistakeFragment.appendChild(block);
@@ -200,14 +200,14 @@ export function renderMistakeTile(lesson) {
       block.className = "tile-section";
 
       const wrongLabel = document.createElement("strong");
-      wrongLabel.textContent = "Noto'g'ri:";
+      wrongLabel.textContent = uz('mistake.labelWrong');
       wrongLabel.classList.add("tl-uz");
-      wrongLabel.dataset.translation = "Wrong:";
+      wrongLabel.dataset.translation = en('mistake.labelWrong');
 
       const correctLabel = document.createElement("strong");
-      correctLabel.textContent = "To'g'ri:";
+      correctLabel.textContent = uz('mistake.labelCorrect');
       correctLabel.classList.add("tl-uz");
-      correctLabel.dataset.translation = "Correct:";
+      correctLabel.dataset.translation = en('mistake.labelCorrect');
 
       block.appendChild(wrongLabel);
       block.appendChild(document.createTextNode(" " + (m.wrong_form || "(missing)")));
@@ -219,7 +219,7 @@ export function renderMistakeTile(lesson) {
       const meta = document.createElement("em");
       meta.textContent = m.meta_uz || "";
       meta.classList.add("tl-uz");
-      meta.dataset.translation = m.meta_en || "Explanation";
+      meta.dataset.translation = m.meta_en || en('mistake.explanation');
       block.appendChild(meta);
 
       fallbackFragment.appendChild(block);
@@ -236,7 +236,7 @@ export function renderMistakeTile(lesson) {
     transitionToTile(STATES.DONE);
   });
   btnNext.classList.add("tl-uz");
-  btnNext.dataset.translation = "Finish";
+  btnNext.dataset.translation = en('mistake.finishBtn');
 
   tileContainer.appendChild(title);
   tileContainer.appendChild(container);

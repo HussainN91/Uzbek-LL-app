@@ -12,6 +12,7 @@
 
 import { STATES } from '../utils/constants.js';
 import { shouldShowActivityCards } from '../state/app-state.js';
+import { uz, en } from '../core/i18n.js';
 
 // ============================
 // ACTIVITY METADATA
@@ -22,102 +23,102 @@ const ACTIVITY_METADATA = {
   [STATES.INTRO]: {
     icon: '🏠',
     label: 'Introduction',
-    labelUz: 'Kirish',
+    labelUz: uz('activityCard.intro.label'),
     color: '#5a67d8', // Indigo
     skills: ['Overview'],
     estimatedMinutes: 1,
-    descriptionEn: 'Learn what this lesson is about',
-    descriptionUz: 'Ushbu dars nimaga bag\'ishlangan ekanligini bilib oling'
+    descriptionEn: en('activityCard.intro.desc'),
+    descriptionUz: uz('activityCard.intro.desc')
   },
   [STATES.VOCAB]: {
     icon: '📚',
     label: 'Vocabulary',
-    labelUz: 'Lug\'at',
+    labelUz: uz('activityCard.vocab.label'),
     color: '#3182ce', // Blue
     skills: ['Reading', 'Listening', 'Grammar'],
     estimatedMinutes: 5,
-    descriptionEn: 'Learn new words with flip cards',
-    descriptionUz: 'Kartochkalar bilan yangi so\'zlarni o\'rganing'
+    descriptionEn: en('activityCard.vocab.desc'),
+    descriptionUz: uz('activityCard.vocab.desc')
   },
   [STATES.DIALOGUE]: {
     icon: '💬',
     label: 'Dialogue',
-    labelUz: 'Suhbat',
+    labelUz: uz('activityCard.dialogue.label'),
     color: '#38a169', // Green
     skills: ['Listening', 'Speaking', 'Grammar'],
     estimatedMinutes: 4,
-    descriptionEn: 'Practice conversation with native speakers',
-    descriptionUz: 'Ona tilida so\'zlashuvchilar bilan suhbat mashq qiling'
+    descriptionEn: en('activityCard.dialogue.desc'),
+    descriptionUz: uz('activityCard.dialogue.desc')
   },
   [STATES.PATTERN]: {
     icon: '🧩',
     label: 'Pattern Practice',
-    labelUz: 'Grammatik qoida',
+    labelUz: uz('activityCard.pattern.label'),
     color: '#d69e2e', // Gold
     skills: ['Grammar', 'Writing'],
     estimatedMinutes: 3,
-    descriptionEn: 'Recognize and use grammar patterns',
-    descriptionUz: 'Grammatik qoidalarni taniw va ishlating'
+    descriptionEn: en('activityCard.pattern.desc'),
+    descriptionUz: uz('activityCard.pattern.desc')
   },
   [STATES.FUNCTION]: {
     icon: '🎯',
     label: 'Function Check',
-    labelUz: 'Tekshirish',
+    labelUz: uz('activityCard.function.label'),
     color: '#e53e3e', // Red
     skills: ['Grammar', 'Reading'],
     estimatedMinutes: 2,
-    descriptionEn: 'Check your understanding of grammar functions',
-    descriptionUz: 'Grammatik funksiyalarni tushunishingizni tekshiring'
+    descriptionEn: en('activityCard.function.desc'),
+    descriptionUz: uz('activityCard.function.desc')
   },
   [STATES.CONTROLLED]: {
     icon: '✍️',
     label: 'Controlled Practice',
-    labelUz: 'Nazorat mashqi',
+    labelUz: uz('activityCard.controlled.label'),
     color: '#805ad5', // Purple
     skills: ['Writing', 'Grammar'],
     estimatedMinutes: 4,
-    descriptionEn: 'Fill gaps and reorder sentences',
-    descriptionUz: 'Bo\'shliqlarni to\'ldiring va gaplarni tartiblang'
+    descriptionEn: en('activityCard.controlled.desc'),
+    descriptionUz: uz('activityCard.controlled.desc')
   },
   [STATES.WRITING]: {
     icon: '📝',
     label: 'Free Writing',
-    labelUz: 'Erkin yozish',
+    labelUz: uz('activityCard.writing.label'),
     color: '#2b6cb0', // Dark Blue
     skills: ['Writing', 'Grammar'],
     estimatedMinutes: 3,
-    descriptionEn: 'Write your own sentences',
-    descriptionUz: 'O\'zingizning gapingizni yozing'
+    descriptionEn: en('activityCard.writing.desc'),
+    descriptionUz: uz('activityCard.writing.desc')
   },
   [STATES.LISTEN_WRITE]: {
     icon: '👂',
     label: 'Listen & Write',
-    labelUz: 'Eshiting va yozing',
+    labelUz: uz('activityCard.listenWrite.label'),
     color: '#319795', // Teal
     skills: ['Listening', 'Writing'],
     estimatedMinutes: 3,
-    descriptionEn: 'Listen and write what you hear',
-    descriptionUz: 'Tinglang va eshitganingizni yozing'
+    descriptionEn: en('activityCard.listenWrite.desc'),
+    descriptionUz: uz('activityCard.listenWrite.desc')
   },
   [STATES.MISTAKE]: {
     icon: '🔄',
     label: 'Error Correction',
-    labelUz: 'Xatolarni tuzatish',
+    labelUz: uz('activityCard.mistake.label'),
     color: '#c53030', // Dark Red
     skills: ['Grammar', 'Writing'],
     estimatedMinutes: 2,
-    descriptionEn: 'Find and fix the mistakes',
-    descriptionUz: 'Xatolarni toping va tuzating'
+    descriptionEn: en('activityCard.mistake.desc'),
+    descriptionUz: uz('activityCard.mistake.desc')
   },
   [STATES.DONE]: {
     icon: '🎉',
     label: 'Complete!',
-    labelUz: 'Tugallandi!',
+    labelUz: uz('activityCard.done.label'),
     color: '#38a169', // Green
     skills: [],
     estimatedMinutes: 0,
-    descriptionEn: 'You finished this lesson!',
-    descriptionUz: 'Siz bu darsni tugatdingiz!'
+    descriptionEn: en('activityCard.done.desc'),
+    descriptionUz: uz('activityCard.done.desc')
   }
 };
 
@@ -386,11 +387,11 @@ export function showActivityContextCard(targetTile, options = {}) {
         ${meta.estimatedMinutes > 0 ? `
           <div class="acc-time">
             <span>⏱️</span>
-            <span>~${meta.estimatedMinutes} daqiqa</span>
+            <span>${uz('activityCard.minutes').replace('{min}', meta.estimatedMinutes)}</span>
           </div>
         ` : ''}
-        <button class="acc-cta">Boshlash →</button>
-        <div class="acc-dismiss-hint">Yoki Enter bosing</div>
+        <button class="acc-cta">${uz('activityCard.startBtn')}</button>
+        <div class="acc-dismiss-hint">${uz('activityCard.dismissHint')}</div>
       </div>
     `;
 

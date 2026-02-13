@@ -212,6 +212,7 @@ export async function setActiveUnit(unitId) {
             context_en: d.title || '',
             context_uz: '',
             turns: (d.lines || []).map(line => ({
+              ...line, // Preserve line_ar, line_ru etc. for i18n
               speaker: line.speaker,
               text: line.line,
               text_en: line.line,
@@ -359,6 +360,7 @@ export async function setActiveUnit(unitId) {
               context_en: d.title || '',
               context_uz: '',
               turns: (d.lines || []).map(line => ({
+                ...line, // Preserve line_ar, line_ru etc. for i18n
                 speaker: line.speaker,
                 text: line.line,
                 text_en: line.line,

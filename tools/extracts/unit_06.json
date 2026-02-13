@@ -1,0 +1,2517 @@
+{
+  "meta": {
+    "unit": "06",
+    "source_file": "vocab_cards_u06_4act.js",
+    "total_strings": 203,
+    "categories": {
+      "line_uz": 29,
+      "item_uz": 62,
+      "uz_context": 16,
+      "uz_mirror_answer": 16,
+      "uz_gloss": 16,
+      "explanation_uz": 16,
+      "why_prompt": 16,
+      "prompt_uz": 32
+    },
+    "version": "1.0.0"
+  },
+  "strings": [
+    {
+      "id": "dialogues.U06_L01_D01.line_177",
+      "field": "line_uz",
+      "value": "Salom Sara! Kecha muzeyga bordingizmi?",
+      "context": {
+        "line_number": 177,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U06_L01_D01",
+        "en_line": "Hi Sara! Did you go to the museum yesterday?"
+      }
+    },
+    {
+      "id": "dialogues.U06_L01_D01.line_178",
+      "field": "line_uz",
+      "value": "Yo'q, muzeyga bormadim.",
+      "context": {
+        "line_number": 178,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "dialogue_id": "U06_L01_D01",
+        "en_line": "No, I didn't go to the museum."
+      }
+    },
+    {
+      "id": "dialogues.U06_L01_D01.line_179",
+      "field": "line_uz",
+      "value": "Nega bormadingiz?",
+      "context": {
+        "line_number": 179,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U06_L01_D01",
+        "en_line": "Why didn't you go?"
+      }
+    },
+    {
+      "id": "dialogues.U06_L01_D01.line_180",
+      "field": "line_uz",
+      "value": "Charchagan edim. Uyda qoldim.",
+      "context": {
+        "line_number": 180,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "dialogue_id": "U06_L01_D01",
+        "en_line": "I was tired. I stayed at home."
+      }
+    },
+    {
+      "id": "dialogues.U06_L01_D01.line_181",
+      "field": "line_uz",
+      "value": "U siz bilan futbol o'ynadimi?",
+      "context": {
+        "line_number": 181,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U06_L01_D01",
+        "en_line": "Did she play football with you?"
+      }
+    },
+    {
+      "id": "dialogues.U06_L01_D01.line_182",
+      "field": "line_uz",
+      "value": "Yo'q, u kecha futbol o'ynamadi.",
+      "context": {
+        "line_number": 182,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "dialogue_id": "U06_L01_D01",
+        "en_line": "No, she didn't play football yesterday."
+      }
+    },
+    {
+      "id": "dialogues.U06_L01_D01.line_183",
+      "field": "line_uz",
+      "value": "Men o'tgan hafta qal'aga bormadim.",
+      "context": {
+        "line_number": 183,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U06_L01_D01",
+        "en_line": "I didn't visit the castle last week."
+      }
+    },
+    {
+      "id": "dialogues.U06_L01_D01.line_185",
+      "field": "line_uz",
+      "value": "Band edim. Kun bo'yi ishladim.",
+      "context": {
+        "line_number": 185,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U06_L01_D01",
+        "en_line": "I was busy. I worked all day."
+      }
+    },
+    {
+      "id": "dialogues.U06_L01_D01.line_186",
+      "field": "line_uz",
+      "value": "Biz birga bormadik. Bu qayg'uli.",
+      "context": {
+        "line_number": 186,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "dialogue_id": "U06_L01_D01",
+        "en_line": "We didn't go together. That's sad."
+      }
+    },
+    {
+      "id": "dialogues.U06_L02_D01.line_193",
+      "field": "line_uz",
+      "value": "Ilgari o'qituvchi bo'lib ishlaganmisiz?",
+      "context": {
+        "line_number": 193,
+        "field": "line_uz",
+        "speaker": "Manager",
+        "dialogue_id": "U06_L02_D01",
+        "en_line": "Did you work as a teacher before?"
+      }
+    },
+    {
+      "id": "dialogues.U06_L02_D01.line_194",
+      "field": "line_uz",
+      "value": "Ha, ikki yil o'qituvchi bo'lib ishladim.",
+      "context": {
+        "line_number": 194,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U06_L02_D01",
+        "en_line": "Yes, I worked as a teacher for two years."
+      }
+    },
+    {
+      "id": "dialogues.U06_L02_D01.line_195",
+      "field": "line_uz",
+      "value": "Yaxshi! Siz menejer ham bo'lib ishladingizmi?",
+      "context": {
+        "line_number": 195,
+        "field": "line_uz",
+        "speaker": "Manager",
+        "dialogue_id": "U06_L02_D01",
+        "en_line": "That's good! Did you work as a manager too?"
+      }
+    },
+    {
+      "id": "dialogues.U06_L02_D01.line_196",
+      "field": "line_uz",
+      "value": "Yo'q, menejer bo'lib ishlamadim.",
+      "context": {
+        "line_number": 196,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U06_L02_D01",
+        "en_line": "No, I didn't work as a manager."
+      }
+    },
+    {
+      "id": "dialogues.U06_L02_D01.line_197",
+      "field": "line_uz",
+      "value": "Oshpaz bo'lib ishladingizmi?",
+      "context": {
+        "line_number": 197,
+        "field": "line_uz",
+        "speaker": "Manager",
+        "dialogue_id": "U06_L02_D01",
+        "en_line": "Did you work as a cook?"
+      }
+    },
+    {
+      "id": "dialogues.U06_L02_D01.line_198",
+      "field": "line_uz",
+      "value": "Yo'q, oshpaz bo'lib ishlamadim. Pishirishni yoqtirmayman.",
+      "context": {
+        "line_number": 198,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U06_L02_D01",
+        "en_line": "No, I didn't work as a cook. I don't like cooking."
+      }
+    },
+    {
+      "id": "dialogues.U06_L02_D01.line_199",
+      "field": "line_uz",
+      "value": "Nega oshpaz bo'lib ishlamadingiz?",
+      "context": {
+        "line_number": 199,
+        "field": "line_uz",
+        "speaker": "Manager",
+        "dialogue_id": "U06_L02_D01",
+        "en_line": "Why didn't you work as a cook?"
+      }
+    },
+    {
+      "id": "dialogues.U06_L02_D01.line_200",
+      "field": "line_uz",
+      "value": "Men o'qitishni yaxshi ko'raman. Bu mening ishim.",
+      "context": {
+        "line_number": 200,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U06_L02_D01",
+        "en_line": "I love teaching. That's my job."
+      }
+    },
+    {
+      "id": "dialogues.U06_L02_D01.line_201",
+      "field": "line_uz",
+      "value": "Akangiz hamshira bo'lib ishladimi?",
+      "context": {
+        "line_number": 201,
+        "field": "line_uz",
+        "speaker": "Manager",
+        "dialogue_id": "U06_L02_D01",
+        "en_line": "Did your brother work as a nurse?"
+      }
+    },
+    {
+      "id": "dialogues.U06_L02_D01.line_202",
+      "field": "line_uz",
+      "value": "Ha, u o'tgan yili hamshira bo'lib ishladi.",
+      "context": {
+        "line_number": 202,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U06_L02_D01",
+        "en_line": "Yes, he worked as a nurse last year."
+      }
+    },
+    {
+      "id": "dialogues.U06_L03_D01.line_209",
+      "field": "line_uz",
+      "value": "Salom Nilufar! Kecha nega maktabga kelmadingiz?",
+      "context": {
+        "line_number": 209,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "dialogue_id": "U06_L03_D01",
+        "en_line": "Hi Nilufar! Why didn't you come to school yesterday?"
+      }
+    },
+    {
+      "id": "dialogues.U06_L03_D01.line_210",
+      "field": "line_uz",
+      "value": "Kelmadim chunki kasal edim.",
+      "context": {
+        "line_number": 210,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "dialogue_id": "U06_L03_D01",
+        "en_line": "I didn't come because I was sick."
+      }
+    },
+    {
+      "id": "dialogues.U06_L03_D01.line_211",
+      "field": "line_uz",
+      "value": "Qayg'uli! Endi yaxshimisiz?",
+      "context": {
+        "line_number": 211,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "dialogue_id": "U06_L03_D01",
+        "en_line": "That's sad! Are you fine now?"
+      }
+    },
+    {
+      "id": "dialogues.U06_L03_D01.line_212",
+      "field": "line_uz",
+      "value": "Ha, endi yaxshiman. Kecha futbol o'ynadingizmi?",
+      "context": {
+        "line_number": 212,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "dialogue_id": "U06_L03_D01",
+        "en_line": "Yes, I'm fine now. Did you play football yesterday?"
+      }
+    },
+    {
+      "id": "dialogues.U06_L03_D01.line_213",
+      "field": "line_uz",
+      "value": "Yo'q, o'ynamadim chunki charchagan edim.",
+      "context": {
+        "line_number": 213,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "dialogue_id": "U06_L03_D01",
+        "en_line": "No, I didn't play because I was tired."
+      }
+    },
+    {
+      "id": "dialogues.U06_L03_D01.line_214",
+      "field": "line_uz",
+      "value": "Singliz maktabga keldimi?",
+      "context": {
+        "line_number": 214,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "dialogue_id": "U06_L03_D01",
+        "en_line": "Did your sister come to school?"
+      }
+    },
+    {
+      "id": "dialogues.U06_L03_D01.line_215",
+      "field": "line_uz",
+      "value": "Yo'q, kelmadi. U uyda edi.",
+      "context": {
+        "line_number": 215,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "dialogue_id": "U06_L03_D01",
+        "en_line": "No, she didn't come. She was at home."
+      }
+    },
+    {
+      "id": "dialogues.U06_L03_D01.line_216",
+      "field": "line_uz",
+      "value": "Nega kelmadi?",
+      "context": {
+        "line_number": 216,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "dialogue_id": "U06_L03_D01",
+        "en_line": "Why didn't she come?"
+      }
+    },
+    {
+      "id": "dialogues.U06_L03_D01.line_217",
+      "field": "line_uz",
+      "value": "Kelmadi chunki band edi.",
+      "context": {
+        "line_number": 217,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "dialogue_id": "U06_L03_D01",
+        "en_line": "She didn't come because she was busy."
+      }
+    },
+    {
+      "id": "dialogues.U06_L03_D01.line_218",
+      "field": "line_uz",
+      "value": "Kecha dars o'qimadim chunki kasal edim.",
+      "context": {
+        "line_number": 218,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "dialogue_id": "U06_L03_D01",
+        "en_line": "I didn't study yesterday because I was sick."
+      }
+    },
+    {
+      "id": "items.V_U06_L01_didnt.item_uz",
+      "field": "item_uz",
+      "value": "qilmadi (did not = didn't)",
+      "context": {
+        "line_number": 237,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_didnt",
+        "dialogue_id": "U06_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_didnt.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz kecha muzeyga bordingizmi?",
+      "context": {
+        "line_number": 246,
+        "field": "uz_context",
+        "item_id": "V_U06_L01_didnt",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I didn't go to the museum."
+      }
+    },
+    {
+      "id": "items.V_U06_L01_didnt.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men muzeyga bormadim.",
+      "context": {
+        "line_number": 246,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L01_didnt",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I didn't go to the museum."
+      }
+    },
+    {
+      "id": "items.V_U06_L01_didnt.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men muzeyga bormadim.",
+      "context": {
+        "line_number": 246,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L01_didnt",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I didn't go to the museum."
+      }
+    },
+    {
+      "id": "items.V_U06_L01_didnt.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Didn't' o'zi o'tmishni ko'rsatadi. Shuning uchun ikkinchi fe'l BASE shaklda qoladi: didn't go, didn't play, didn't visit. XATO: didn't went, didn't played. Bu eng ko'p xato qilinadigan qoida!",
+      "context": {
+        "line_number": 248,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L01_didnt",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_didnt.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega 'didn't go' — 'didn't went' emas?",
+      "context": {
+        "line_number": 248,
+        "field": "why_prompt",
+        "item_id": "V_U06_L01_didnt",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_didnt.practice.item_uz",
+      "field": "item_uz",
+      "value": "Yo'q, muzeyga bormadim.",
+      "context": {
+        "line_number": 250,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U06_L01_didnt",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_didnt.practice.item_uz",
+      "field": "item_uz",
+      "value": "U kecha futbol o'ynamadi.",
+      "context": {
+        "line_number": 251,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_didnt",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_didnt.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz o'tgan hafta qal'aga bormadik.",
+      "context": {
+        "line_number": 252,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_didnt",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_didnt.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'didn't' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 254,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L01_didnt",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_didnt.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kecha nima QILMADINGIZ?",
+      "context": {
+        "line_number": 255,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L01_didnt",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_did.personalization.item_uz",
+      "field": "item_uz",
+      "value": "qildimi (o'tmish savol)",
+      "context": {
+        "line_number": 262,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_did",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_did.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz kecha muzeyga bormaganmisiz?",
+      "context": {
+        "line_number": 271,
+        "field": "uz_context",
+        "item_id": "V_U06_L01_did",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "Did you go to the museum yesterday?"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_did.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Savol: bordingizmi?",
+      "context": {
+        "line_number": 271,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L01_did",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "Did you go to the museum yesterday?"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_did.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Kecha muzeyga bordingizmi?",
+      "context": {
+        "line_number": 271,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L01_did",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "Did you go to the museum yesterday?"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_did.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Did' o'zi o'tmishni ko'rsatadi. Shuning uchun fe'l BASE shaklda qoladi: Did you go? Did she play? Did they visit? XATO: Did you went? Did she played?",
+      "context": {
+        "line_number": 273,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L01_did",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_did.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega 'Did you go' — 'Did you went' emas?",
+      "context": {
+        "line_number": 273,
+        "field": "why_prompt",
+        "item_id": "V_U06_L01_did",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_did.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kecha muzeyga bordingizmi?",
+      "context": {
+        "line_number": 275,
+        "field": "item_uz",
+        "speaker": "Bekzod",
+        "item_id": "V_U06_L01_did",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_did.practice.item_uz",
+      "field": "item_uz",
+      "value": "U siz bilan futbol o'ynadimi?",
+      "context": {
+        "line_number": 276,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_did",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_did.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ular qal'aga bordilarmi?",
+      "context": {
+        "line_number": 277,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_did",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_did.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'Did' bilan savol tuzing.",
+      "context": {
+        "line_number": 279,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L01_did",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_did.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Do'stingizdan kecha haqida savol so'rang.",
+      "context": {
+        "line_number": 280,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L01_did",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_why.personalization.item_uz",
+      "field": "item_uz",
+      "value": "nega / nima uchun",
+      "context": {
+        "line_number": 287,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_why",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_why.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz sabab so'ramaganmisiz? Nega qilmaganini bilmoqchimisiz?",
+      "context": {
+        "line_number": 296,
+        "field": "uz_context",
+        "item_id": "V_U06_L01_why",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "Why didn't you go?"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_why.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Ha, men sabab so'radim. Nega?",
+      "context": {
+        "line_number": 296,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L01_why",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "Why didn't you go?"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_why.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Nega bormadingiz?",
+      "context": {
+        "line_number": 296,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L01_why",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "Why didn't you go?"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_why.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Why' + didn't + subject + BASE verb: Why didn't you go? Why didn't she play? XATO: 'Why you didn't go?' — tartib noto'g'ri! Ingliz tilida savol so'z tartibida auxiliary oldin keladi.",
+      "context": {
+        "line_number": 298,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L01_why",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_why.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Why didn't you go?' — tartib qanday?",
+      "context": {
+        "line_number": 298,
+        "field": "why_prompt",
+        "item_id": "V_U06_L01_why",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_why.practice.item_uz",
+      "field": "item_uz",
+      "value": "Nega bormadingiz?",
+      "context": {
+        "line_number": 300,
+        "field": "item_uz",
+        "speaker": "Bekzod",
+        "item_id": "V_U06_L01_why",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_why.practice.item_uz",
+      "field": "item_uz",
+      "value": "U nega futbol o'ynamadi?",
+      "context": {
+        "line_number": 301,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_why",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_why.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ular kecha nega muzeyga bormadi?",
+      "context": {
+        "line_number": 302,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_why",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_why.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'Why' bilan sabab savol tuzing.",
+      "context": {
+        "line_number": 304,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L01_why",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_why.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Biror kishi nimani qilmaganiga sabab so'rang.",
+      "context": {
+        "line_number": 305,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L01_why",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_together.personalization.item_uz",
+      "field": "item_uz",
+      "value": "birga",
+      "context": {
+        "line_number": 312,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_together",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_together.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz yolg'iz bordingizmi? Faqat o'zingiz bordingizmi?",
+      "context": {
+        "line_number": 321,
+        "field": "uz_context",
+        "item_id": "V_U06_L01_together",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, we went together!"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_together.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men yolg'iz bormadim. Biz birga bordik!",
+      "context": {
+        "line_number": 321,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L01_together",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, we went together!"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_together.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Biz birga bormadik.",
+      "context": {
+        "line_number": 321,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L01_together",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, we went together!"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_together.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Together' odatda gap oxirida turadi: We went together. They studied together. 'Alone' = yolg'iz (qarama-qarshi). 'Together' = birga, birgalikda.",
+      "context": {
+        "line_number": 323,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L01_together",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_together.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Together' gap oxirida keladi!",
+      "context": {
+        "line_number": 323,
+        "field": "why_prompt",
+        "item_id": "V_U06_L01_together",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_together.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz birga bormadik.",
+      "context": {
+        "line_number": 325,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U06_L01_together",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_together.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ular kecha birga o'qishdi.",
+      "context": {
+        "line_number": 326,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_together",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_together.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men va singlim birga maktabga yurdik.",
+      "context": {
+        "line_number": 327,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_together",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_together.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'together' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 329,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L01_together",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_together.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kim bilan birga nima qilasiz?",
+      "context": {
+        "line_number": 330,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L01_together",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_castle.personalization.item_uz",
+      "field": "item_uz",
+      "value": "qal'a",
+      "context": {
+        "line_number": 337,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_castle",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_castle.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz o'tgan hafta qayerga bordingiz?",
+      "context": {
+        "line_number": 346,
+        "field": "uz_context",
+        "item_id": "V_U06_L01_castle",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "I didn't visit the castle last week."
+      }
+    },
+    {
+      "id": "items.V_U06_L01_castle.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Men o'tgan hafta qal'aga bormadim.",
+      "context": {
+        "line_number": 346,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L01_castle",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "I didn't visit the castle last week."
+      }
+    },
+    {
+      "id": "items.V_U06_L01_castle.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men o'tgan hafta qal'aga bormadim.",
+      "context": {
+        "line_number": 346,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L01_castle",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "I didn't visit the castle last week."
+      }
+    },
+    {
+      "id": "items.V_U06_L01_castle.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Castle' = /ˈkɑːsl/ — 't' talaffuz qilinmaydi! Bu jim harf (silent letter). Boshqa misol: 'listen' = /ˈlɪsn/ ('t' jim). Ingliz tilida ko'p jim harflar bor.",
+      "context": {
+        "line_number": 348,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L01_castle",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_castle.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Castle' talaffuzida 't' jim!",
+      "context": {
+        "line_number": 348,
+        "field": "why_prompt",
+        "item_id": "V_U06_L01_castle",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_castle.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men o'tgan hafta qal'aga bormadim.",
+      "context": {
+        "line_number": 350,
+        "field": "item_uz",
+        "speaker": "Bekzod",
+        "item_id": "V_U06_L01_castle",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_castle.practice.item_uz",
+      "field": "item_uz",
+      "value": "Eski qal'ani ko'rdingizmi?",
+      "context": {
+        "line_number": 351,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_castle",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_castle.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz kecha go'zal qal'aga bordik.",
+      "context": {
+        "line_number": 352,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_castle",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_castle.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'castle' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 354,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L01_castle",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_castle.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Qal'aga borganmisiz? Qanday edi?",
+      "context": {
+        "line_number": 355,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L01_castle",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_sad.personalization.item_uz",
+      "field": "item_uz",
+      "value": "qayg'uli / xafa",
+      "context": {
+        "line_number": 362,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_sad",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_sad.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz xursand edingizmi? Baxtli edingizmi?",
+      "context": {
+        "line_number": 371,
+        "field": "uz_context",
+        "item_id": "V_U06_L01_sad",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I was sad."
+      }
+    },
+    {
+      "id": "items.V_U06_L01_sad.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men xursand emas edim. Men xafa edim.",
+      "context": {
+        "line_number": 371,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L01_sad",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I was sad."
+      }
+    },
+    {
+      "id": "items.V_U06_L01_sad.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Bu qayg'uli.",
+      "context": {
+        "line_number": 371,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L01_sad",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I was sad."
+      }
+    },
+    {
+      "id": "items.V_U06_L01_sad.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "His-tuyg'u sifatlari juftlik qiladi: sad ↔ happy, tired ↔ energetic, nervous ↔ calm, excited ↔ bored. O'tmishda: 'I was sad' / 'She was happy'.",
+      "context": {
+        "line_number": 373,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L01_sad",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_sad.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'sad ↔ happy' — qarama-qarshi his-tuyg'ular.",
+      "context": {
+        "line_number": 373,
+        "field": "why_prompt",
+        "item_id": "V_U06_L01_sad",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_sad.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bu qayg'uli.",
+      "context": {
+        "line_number": 375,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U06_L01_sad",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_sad.practice.item_uz",
+      "field": "item_uz",
+      "value": "U xafa edi chunki o'ynamadi.",
+      "context": {
+        "line_number": 376,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_sad",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_sad.practice.item_uz",
+      "field": "item_uz",
+      "value": "O'qituvchimiz kasal bo'lganda biz xafa edik.",
+      "context": {
+        "line_number": 377,
+        "field": "item_uz",
+        "item_id": "V_U06_L01_sad",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_sad.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'sad' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 379,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L01_sad",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L01_sad.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Qachon xafa bo'lgansiz? Nega?",
+      "context": {
+        "line_number": 380,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L01_sad",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_teacher.personalization.item_uz",
+      "field": "item_uz",
+      "value": "o'qituvchi",
+      "context": {
+        "line_number": 396,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_teacher",
+        "dialogue_id": "U06_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_teacher.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz talaba edingizmi? Faqat o'qidingizmi?",
+      "context": {
+        "line_number": 405,
+        "field": "uz_context",
+        "item_id": "V_U06_L02_teacher",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I worked as a teacher."
+      }
+    },
+    {
+      "id": "items.V_U06_L02_teacher.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men talaba emas edim. Men o'qituvchi edim!",
+      "context": {
+        "line_number": 405,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L02_teacher",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I worked as a teacher."
+      }
+    },
+    {
+      "id": "items.V_U06_L02_teacher.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men ikki yil o'qituvchi bo'lib ishladim.",
+      "context": {
+        "line_number": 405,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L02_teacher",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I worked as a teacher."
+      }
+    },
+    {
+      "id": "items.V_U06_L02_teacher.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Work as a' = kasb sifatida ishlash. 'As' = sifatida. 'A' = bitta. 'I worked as a teacher' = Men o'qituvchi sifatida ishladim. Barcha kasblar uchun: 'as a nurse', 'as a cook'.",
+      "context": {
+        "line_number": 407,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L02_teacher",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_teacher.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Worked AS A teacher' — nega 'as a'?",
+      "context": {
+        "line_number": 407,
+        "field": "why_prompt",
+        "item_id": "V_U06_L02_teacher",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_teacher.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ha, ikki yil o'qituvchi bo'lib ishladim.",
+      "context": {
+        "line_number": 409,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U06_L02_teacher",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_teacher.practice.item_uz",
+      "field": "item_uz",
+      "value": "U o'tgan yili o'qituvchi bo'lib ishladi.",
+      "context": {
+        "line_number": 410,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_teacher",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_teacher.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening onam o'qituvchi bo'lib ishladi chunki u bolalarni yaxshi ko'radi.",
+      "context": {
+        "line_number": 411,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_teacher",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_teacher.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'teacher' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 413,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L02_teacher",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_teacher.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Oilangizdagi kimdir o'qituvchimi?",
+      "context": {
+        "line_number": 414,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L02_teacher",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_manager.personalization.item_uz",
+      "field": "item_uz",
+      "value": "menejer / boshqaruvchi",
+      "context": {
+        "line_number": 421,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_manager",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_manager.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz menejer bo'lib ishlagansiz shekilli?",
+      "context": {
+        "line_number": 430,
+        "field": "uz_context",
+        "item_id": "V_U06_L02_manager",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I didn't work as a manager."
+      }
+    },
+    {
+      "id": "items.V_U06_L02_manager.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men menejer bo'lib ishlamadim.",
+      "context": {
+        "line_number": 430,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L02_manager",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I didn't work as a manager."
+      }
+    },
+    {
+      "id": "items.V_U06_L02_manager.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men menejer bo'lib ishlamadim.",
+      "context": {
+        "line_number": 430,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L02_manager",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I didn't work as a manager."
+      }
+    },
+    {
+      "id": "items.V_U06_L02_manager.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Fe'lga '-er' qo'shsak, odam ma'nosini beradi: teach → teacher, work → worker, manage → manager, play → player. Bu productiv suffiks.",
+      "context": {
+        "line_number": 432,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L02_manager",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_manager.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Manage' → 'manager' — '-er' qo'shish.",
+      "context": {
+        "line_number": 432,
+        "field": "why_prompt",
+        "item_id": "V_U06_L02_manager",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_manager.practice.item_uz",
+      "field": "item_uz",
+      "value": "Yo'q, menejer bo'lib ishlamadim.",
+      "context": {
+        "line_number": 434,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U06_L02_manager",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_manager.practice.item_uz",
+      "field": "item_uz",
+      "value": "U besh yil menejer bo'lib ishladi.",
+      "context": {
+        "line_number": 435,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_manager",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_manager.practice.item_uz",
+      "field": "item_uz",
+      "value": "U menejer bo'lib ishladimi? — Ha, ishladi.",
+      "context": {
+        "line_number": 436,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_manager",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_manager.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'manager' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 438,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L02_manager",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_manager.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kim boshqaruvchi bo'lishni xohlaydi?",
+      "context": {
+        "line_number": 439,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L02_manager",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_cook.personalization.item_uz",
+      "field": "item_uz",
+      "value": "oshpaz",
+      "context": {
+        "line_number": 446,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_cook",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_cook.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz oshpaz bo'lib ishlamaganmisiz?",
+      "context": {
+        "line_number": 455,
+        "field": "uz_context",
+        "item_id": "V_U06_L02_cook",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I didn't work as a cook."
+      }
+    },
+    {
+      "id": "items.V_U06_L02_cook.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men oshpaz bo'lib ishlamadim.",
+      "context": {
+        "line_number": 455,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L02_cook",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I didn't work as a cook."
+      }
+    },
+    {
+      "id": "items.V_U06_L02_cook.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men oshpaz bo'lib ishlamadim. Pishirishni yoqtirmayman.",
+      "context": {
+        "line_number": 455,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L02_cook",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I didn't work as a cook."
+      }
+    },
+    {
+      "id": "items.V_U06_L02_cook.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Cook' ism (oshpaz: He's a cook) VA fe'l (pishirmoq: I cook food). 'Cooking' = gerund (pishirish): 'I like cooking.' = Men pishirishni yoqtiraman. Farq: cook (kishi/harakat) vs cooking (jarayon).",
+      "context": {
+        "line_number": 457,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L02_cook",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_cook.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Cook' = oshpaz, 'cooking' = pishirish — qanday farq?",
+      "context": {
+        "line_number": 457,
+        "field": "why_prompt",
+        "item_id": "V_U06_L02_cook",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_cook.practice.item_uz",
+      "field": "item_uz",
+      "value": "Yo'q, oshpaz bo'lib ishlamadim. Pishirishni yoqtirmayman.",
+      "context": {
+        "line_number": 459,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U06_L02_cook",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_cook.practice.item_uz",
+      "field": "item_uz",
+      "value": "U restoranda oshpaz bo'lib ishladi.",
+      "context": {
+        "line_number": 460,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_cook",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_cook.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening otam oshpaz chunki u pishirishni yaxshi ko'radi.",
+      "context": {
+        "line_number": 461,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_cook",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_cook.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'cook' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 463,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L02_cook",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_cook.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Oilangizda kim yaxshi pishiradi?",
+      "context": {
+        "line_number": 464,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L02_cook",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_nurse.personalization.item_uz",
+      "field": "item_uz",
+      "value": "hamshira",
+      "context": {
+        "line_number": 471,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_nurse",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_nurse.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Akangiz shifokor bo'lib ishladimi?",
+      "context": {
+        "line_number": 480,
+        "field": "uz_context",
+        "item_id": "V_U06_L02_nurse",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "He worked as a nurse last year."
+      }
+    },
+    {
+      "id": "items.V_U06_L02_nurse.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, akam shifokor emas, hamshira bo'lib ishladi.",
+      "context": {
+        "line_number": 480,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L02_nurse",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "He worked as a nurse last year."
+      }
+    },
+    {
+      "id": "items.V_U06_L02_nurse.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "U o'tgan yili hamshira bo'lib ishladi.",
+      "context": {
+        "line_number": 480,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L02_nurse",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "He worked as a nurse last year."
+      }
+    },
+    {
+      "id": "items.V_U06_L02_nurse.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Nurse' = hamshira (bemordarga g'amxo'rlik, dori berish). 'Doctor' = shifokor (kasal tashxis qo'yish, retsept yozish). Ikkalasi ham kasalxonada ishlaydi. 'Nurse' erkak ham bo'lishi mumkin!",
+      "context": {
+        "line_number": 482,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L02_nurse",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_nurse.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Nurse' va 'doctor' farqi?",
+      "context": {
+        "line_number": 482,
+        "field": "why_prompt",
+        "item_id": "V_U06_L02_nurse",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_nurse.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ha, u o'tgan yili hamshira bo'lib ishladi.",
+      "context": {
+        "line_number": 484,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U06_L02_nurse",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_nurse.practice.item_uz",
+      "field": "item_uz",
+      "value": "U o'n yil hamshira bo'lib ishladi.",
+      "context": {
+        "line_number": 485,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_nurse",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_nurse.practice.item_uz",
+      "field": "item_uz",
+      "value": "Hamshira bo'lib ishladingizmi? — Ha, ishladim.",
+      "context": {
+        "line_number": 486,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_nurse",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_nurse.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'nurse' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 488,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L02_nurse",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_nurse.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kimni bilasiz hamshira bo'lib ishlaydigan?",
+      "context": {
+        "line_number": 489,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L02_nurse",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_before.personalization.item_uz",
+      "field": "item_uz",
+      "value": "oldin / ilgari",
+      "context": {
+        "line_number": 496,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_before",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_before.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz hozir ishlamayrapsizmi? Avval-chi?",
+      "context": {
+        "line_number": 505,
+        "field": "uz_context",
+        "item_id": "V_U06_L02_before",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "Yes, I worked before."
+      }
+    },
+    {
+      "id": "items.V_U06_L02_before.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Ha, men ilgari ishladim.",
+      "context": {
+        "line_number": 505,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L02_before",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "Yes, I worked before."
+      }
+    },
+    {
+      "id": "items.V_U06_L02_before.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Ilgari o'qituvchi bo'lib ishlaganmisiz?",
+      "context": {
+        "line_number": 505,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L02_before",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "Yes, I worked before."
+      }
+    },
+    {
+      "id": "items.V_U06_L02_before.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Before' = oldin, avval, ilgari. 'After' = keyin, so'ng. 'Before school' = maktabdan oldin. 'After school' = maktabdan keyin. Gap oxirida ham keladi: 'I worked there before.' = Men u yerda ilgari ishladim.",
+      "context": {
+        "line_number": 507,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L02_before",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_before.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Before' va 'after' — qarama-qarshi vaqt so'zlari.",
+      "context": {
+        "line_number": 507,
+        "field": "why_prompt",
+        "item_id": "V_U06_L02_before",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_before.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ilgari o'qituvchi bo'lib ishlaganmisiz?",
+      "context": {
+        "line_number": 509,
+        "field": "item_uz",
+        "speaker": "Manager",
+        "item_id": "V_U06_L02_before",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_before.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men ilgari muzeyga borgan edim.",
+      "context": {
+        "line_number": 510,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_before",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_before.practice.item_uz",
+      "field": "item_uz",
+      "value": "U ilgari ingliz tili o'qigan.",
+      "context": {
+        "line_number": 511,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_before",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_before.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'before' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 513,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L02_before",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_before.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Ilgari nima qilgansiz?",
+      "context": {
+        "line_number": 514,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L02_before",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_job.personalization.item_uz",
+      "field": "item_uz",
+      "value": "ish / kasb",
+      "context": {
+        "line_number": 521,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_job",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_job.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Bu sizning hobbingizmi? Faqat sevimli mashg'ulotingizmi?",
+      "context": {
+        "line_number": 530,
+        "field": "uz_context",
+        "item_id": "V_U06_L02_job",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, that's my job!"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_job.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, bu mening hobbim emas. Bu mening ishim!",
+      "context": {
+        "line_number": 530,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L02_job",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, that's my job!"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_job.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Bu mening ishim.",
+      "context": {
+        "line_number": 530,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L02_job",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, that's my job!"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_job.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Job' = sanaladigan ish (a job, two jobs). 'Work' = sanalmaydigan ish (work, no 'a'). 'I have a job' but 'I have work to do'. 'Job' = aniq kasb; 'Work' = umuman ishlash.",
+      "context": {
+        "line_number": 532,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L02_job",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_job.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Job' va 'work' farqi?",
+      "context": {
+        "line_number": 532,
+        "field": "why_prompt",
+        "item_id": "V_U06_L02_job",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_job.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bu mening ishim.",
+      "context": {
+        "line_number": 534,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U06_L02_job",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_job.practice.item_uz",
+      "field": "item_uz",
+      "value": "U o'qituvchilik kasbini yaxshi ko'radi.",
+      "context": {
+        "line_number": 535,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_job",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_job.practice.item_uz",
+      "field": "item_uz",
+      "value": "Sizning kasbingiz nima? — Men talabaman!",
+      "context": {
+        "line_number": 536,
+        "field": "item_uz",
+        "item_id": "V_U06_L02_job",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_job.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'job' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 538,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L02_job",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L02_job.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kelajakda qanday ish qilmoqchisiz?",
+      "context": {
+        "line_number": 539,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L02_job",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_because.personalization.item_uz",
+      "field": "item_uz",
+      "value": "chunki / sababi",
+      "context": {
+        "line_number": 555,
+        "field": "item_uz",
+        "item_id": "V_U06_L03_because",
+        "dialogue_id": "U06_L02_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_because.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Nima uchun kelmadingiz? Sabab bormi?",
+      "context": {
+        "line_number": 564,
+        "field": "uz_context",
+        "item_id": "V_U06_L03_because",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "I didn't come because I was sick."
+      }
+    },
+    {
+      "id": "items.V_U06_L03_because.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Ha, sabab bor. Men kelmadim chunki kasal edim.",
+      "context": {
+        "line_number": 564,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L03_because",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "I didn't come because I was sick."
+      }
+    },
+    {
+      "id": "items.V_U06_L03_because.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Kelmadim chunki kasal edim.",
+      "context": {
+        "line_number": 564,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L03_because",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "I didn't come because I was sick."
+      }
+    },
+    {
+      "id": "items.V_U06_L03_because.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Because' + SUBJECT + VERB: 'because I was sick' (chunki men kasal edim). 'Because' dan keyin to'liq gap (subject + verb) kerak. XATO: 'because sick' (subject va verb yo'q!).",
+      "context": {
+        "line_number": 566,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L03_because",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_because.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Because' dan keyin to'liq gap keladi!",
+      "context": {
+        "line_number": 566,
+        "field": "why_prompt",
+        "item_id": "V_U06_L03_because",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_because.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kelmadim chunki kasal edim.",
+      "context": {
+        "line_number": 568,
+        "field": "item_uz",
+        "speaker": "Nilufar",
+        "item_id": "V_U06_L03_because",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_because.practice.item_uz",
+      "field": "item_uz",
+      "value": "U o'ynamadi chunki charchagan edi.",
+      "context": {
+        "line_number": 569,
+        "field": "item_uz",
+        "item_id": "V_U06_L03_because",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_because.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ular muzeyga bormadi chunki band edilar.",
+      "context": {
+        "line_number": 570,
+        "field": "item_uz",
+        "item_id": "V_U06_L03_because",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_because.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'because' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 572,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L03_because",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_because.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kecha nega nimadir qilmadingiz? Sabab ayting.",
+      "context": {
+        "line_number": 573,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L03_because",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_sick.personalization.item_uz",
+      "field": "item_uz",
+      "value": "kasal",
+      "context": {
+        "line_number": 580,
+        "field": "item_uz",
+        "item_id": "V_U06_L03_sick",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_sick.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz sog'lom edingizmi? Yaxshi edingizmi?",
+      "context": {
+        "line_number": 589,
+        "field": "uz_context",
+        "item_id": "V_U06_L03_sick",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I was sick."
+      }
+    },
+    {
+      "id": "items.V_U06_L03_sick.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men yaxshi emas edim. Men kasal edim.",
+      "context": {
+        "line_number": 589,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L03_sick",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I was sick."
+      }
+    },
+    {
+      "id": "items.V_U06_L03_sick.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men kecha kasal edim.",
+      "context": {
+        "line_number": 589,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L03_sick",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I was sick."
+      }
+    },
+    {
+      "id": "items.V_U06_L03_sick.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Sick' = kasal (eng ko'p ishlatiladi, ayniqsa AQShda). 'Ill' = kasal (rasmiyroq, Britaniyada). 'Unwell' = kasal (eng rasmiy). Barchasi bir xil ma'no. 'Sick' ↔ 'healthy/well' (qarama-qarshi).",
+      "context": {
+        "line_number": 591,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L03_sick",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_sick.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Sick', 'ill', 'unwell' — barchasi kasal!",
+      "context": {
+        "line_number": 591,
+        "field": "why_prompt",
+        "item_id": "V_U06_L03_sick",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_sick.practice.item_uz",
+      "field": "item_uz",
+      "value": "U o'tgan hafta kasal edi.",
+      "context": {
+        "line_number": 594,
+        "field": "item_uz",
+        "item_id": "V_U06_L03_sick",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_sick.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kecha kasal edingizmi? — Ha, edim.",
+      "context": {
+        "line_number": 595,
+        "field": "item_uz",
+        "item_id": "V_U06_L03_sick",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_sick.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'sick' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 597,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L03_sick",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_sick.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Oxirgi marotaba qachon kasal bo'lgansiz?",
+      "context": {
+        "line_number": 598,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L03_sick",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_come.personalization.item_uz",
+      "field": "item_uz",
+      "value": "kelmoq",
+      "context": {
+        "line_number": 605,
+        "field": "item_uz",
+        "item_id": "V_U06_L03_come",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_come.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz kecha maktabga keldingizmi?",
+      "context": {
+        "line_number": 614,
+        "field": "uz_context",
+        "item_id": "V_U06_L03_come",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "I didn't come to school yesterday."
+      }
+    },
+    {
+      "id": "items.V_U06_L03_come.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men maktabga kelmadim.",
+      "context": {
+        "line_number": 614,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L03_come",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "I didn't come to school yesterday."
+      }
+    },
+    {
+      "id": "items.V_U06_L03_come.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Kecha nega maktabga kelmadingiz?",
+      "context": {
+        "line_number": 614,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L03_come",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "I didn't come to school yesterday."
+      }
+    },
+    {
+      "id": "items.V_U06_L03_come.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Come' = kelmoq (gapiruvchi tomonga harakat). 'Go' = bormoq (gapiruvchidan uzoqqa). 'Come to school' = maktabga kel. 'Go to school' = maktabga bor. O'tmishi: came (irregular!), went.",
+      "context": {
+        "line_number": 616,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L03_come",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_come.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Come' va 'go' farqi?",
+      "context": {
+        "line_number": 616,
+        "field": "why_prompt",
+        "item_id": "V_U06_L03_come",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_come.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kecha nega maktabga kelmadingiz?",
+      "context": {
+        "line_number": 618,
+        "field": "item_uz",
+        "speaker": "Madina",
+        "item_id": "V_U06_L03_come",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_come.practice.item_uz",
+      "field": "item_uz",
+      "value": "U kelmadi chunki band edi.",
+      "context": {
+        "line_number": 619,
+        "field": "item_uz",
+        "item_id": "V_U06_L03_come",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_come.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ular bazmga keldilarmi? — Yo'q, kelishmadi.",
+      "context": {
+        "line_number": 620,
+        "field": "item_uz",
+        "item_id": "V_U06_L03_come",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_come.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'come' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 622,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L03_come",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_come.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kim kecha maktabga kelmadi? Nega?",
+      "context": {
+        "line_number": 623,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L03_come",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_busy.personalization.item_uz",
+      "field": "item_uz",
+      "value": "band",
+      "context": {
+        "line_number": 630,
+        "field": "item_uz",
+        "item_id": "V_U06_L03_busy",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_busy.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Singliz bo'sh edimi kecha? Dam oldimi?",
+      "context": {
+        "line_number": 639,
+        "field": "uz_context",
+        "item_id": "V_U06_L03_busy",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "She was busy."
+      }
+    },
+    {
+      "id": "items.V_U06_L03_busy.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, u bo'sh emas edi. U band edi.",
+      "context": {
+        "line_number": 639,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U06_L03_busy",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "She was busy."
+      }
+    },
+    {
+      "id": "items.V_U06_L03_busy.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "U kelmadi chunki band edi.",
+      "context": {
+        "line_number": 639,
+        "field": "uz_gloss",
+        "item_id": "V_U06_L03_busy",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "She was busy."
+      }
+    },
+    {
+      "id": "items.V_U06_L03_busy.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Because' bilan SABAB aytamiz. Eng ko'p ishlatiladigan sabablar: 'because I was tired' (charchagan), 'because I was sick' (kasal), 'because I was busy' (band). Sabablar 'was/were' + sifat.",
+      "context": {
+        "line_number": 641,
+        "field": "explanation_uz",
+        "item_id": "V_U06_L03_busy",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_busy.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Because' bilan holat jumlalar.",
+      "context": {
+        "line_number": 641,
+        "field": "why_prompt",
+        "item_id": "V_U06_L03_busy",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_busy.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men kecha band edim. Kun bo'yi ishladim.",
+      "context": {
+        "line_number": 644,
+        "field": "item_uz",
+        "item_id": "V_U06_L03_busy",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_busy.practice.item_uz",
+      "field": "item_uz",
+      "value": "O'tgan hafta band edingizmi? — Ha, juda band edim.",
+      "context": {
+        "line_number": 645,
+        "field": "item_uz",
+        "item_id": "V_U06_L03_busy",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_busy.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'busy' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 647,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L03_busy",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U06_L03_busy.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Qachon juda band bo'lgansiz?",
+      "context": {
+        "line_number": 648,
+        "field": "prompt_uz",
+        "item_id": "V_U06_L03_busy",
+        "dialogue_id": "U06_L03_D01",
+        "phase": "personalization"
+      }
+    }
+  ]
+}

@@ -62,8 +62,8 @@ export function renderPatternTile(lesson) {
     grammarBtn.innerHTML = `
       <div class="grammar-btn-icon">📚</div>
       <div class="grammar-btn-text">
-        <div class="grammar-btn-title">${grammarPresentation.title || "Grammatika"}</div>
-        <div class="grammar-btn-subtitle">Interactive PPP Lesson</div>
+        <div class="grammar-btn-title">${grammarPresentation.title || uz('pattern.grammarDefault')}</div>
+        <div class="grammar-btn-subtitle">${uz('pattern.interactivePPP')}</div>
       </div>
       <div class="grammar-btn-arrow">▶</div>
     `;
@@ -75,7 +75,7 @@ export function renderPatternTile(lesson) {
   const hasGFC = !!(grammarFormContent && Object.keys(grammarFormContent).length > 0);
   if (grammarSection.childElementCount === 0 && !hasGFC) {
     const placeholder = document.createElement("div");
-    placeholder.textContent = "Grammar/Form mazmuni kiritilmagan (dars uchun talab etiladi).";
+    placeholder.textContent = uz('pattern.missingContent');
     grammarSection.appendChild(placeholder);
   }
 
@@ -98,7 +98,7 @@ export function renderPatternTile(lesson) {
     // Step 0: Inductive Pattern Discovery (Interactive!)
     if (mainPatternExamples.length >= 3) {
       steps.push({
-        label: "📍 Pattern Spotting",
+        label: uz('pattern.patternSpotting'),
         content: () => createPatternSpottingStep(lesson, mainPatternExamples, targetWords)
       });
     }
@@ -107,7 +107,7 @@ export function renderPatternTile(lesson) {
     const anchor = grammarFormContent.anchor_example_en;
     if (anchor) {
       steps.push({
-        label: "🎧 Tinglang va Takrorlang",
+        label: uz('pattern.listenRepeatTab'),
         content: () => createListenModelStep(anchor)
       });
     }
@@ -117,7 +117,7 @@ export function renderPatternTile(lesson) {
     const meaningEn = grammarFormContent.meaning_en || {};
     if (meaning.explanation) {
       steps.push({
-        label: "💡 Ma'no",
+        label: uz('pattern.meaningTab'),
         content: () => createMeaningStep(meaning, meaningEn)
       });
     }
@@ -130,7 +130,7 @@ export function renderPatternTile(lesson) {
     
     if (cmp.en || cmp.uz || crossLangNote || (conceptAwareness && conceptAwareness.prompt_uz) || (formAwareness && formAwareness.prompt_uz)) {
       steps.push({
-        label: "🔄 Taqqoslash va E'tibor",
+        label: uz('pattern.compareTab'),
         content: () => createCompareNoticeStep(cmp, crossLangNote, conceptAwareness, formAwareness)
       });
     }
@@ -138,7 +138,7 @@ export function renderPatternTile(lesson) {
     // Step 4: Form Rules (explicit grammar rules)
     if (Array.isArray(grammarFormContent.form_uz) && grammarFormContent.form_uz.length > 0) {
       steps.push({
-        label: "📝 Shakl qoidalari",
+        label: uz('pattern.formRulesTab'),
         content: () => createFormRulesStep(grammarFormContent)
       });
     }
@@ -187,9 +187,9 @@ export function renderPatternTile(lesson) {
 
       } else {
         const done = document.createElement("div");
-        done.textContent = "✓ Barcha ma'lumotlar ko'rib chiqildi";
+        done.textContent = uz('pattern.allReviewedMsg');
         done.classList.add("tl-uz", "completion-message");
-        done.dataset.translation = "✓ All information reviewed";
+        done.dataset.translation = en('pattern.allReviewedMsg');
         contentArea.appendChild(done);
         
         const restart = createButton(uz('pattern.reviewRules'), () => {
@@ -212,7 +212,7 @@ export function renderPatternTile(lesson) {
   const templateDiv = document.createElement("div");
   templateDiv.className = "tile-section";
   templateDiv.textContent =
-    "Pattern template: " +
+    uz('pattern.templateLabel') +
     (r.data.pattern_template ||
       r.data.pattern_name ||
       "(missing)");
@@ -226,7 +226,7 @@ export function renderPatternTile(lesson) {
   const examplesDiv = document.createElement("div");
   examplesDiv.className = "tile-section";
   const exTitle = document.createElement("div");
-  exTitle.textContent = "Examples:";
+  exTitle.textContent = uz('pattern.examplesLabel');
   examplesDiv.appendChild(exTitle);
 
   tileContainer.appendChild(templateDiv);
@@ -268,13 +268,13 @@ function createPatternSpottingStep(lesson, mainPatternExamples, targetWords) {
   
   const prompt = document.createElement("div");
   prompt.innerHTML = `
-    <div style="font-size: 0.9rem; color: #666; margin-bottom: 8px;" class="tl-uz" data-translation="Goal: ${lesson.function_en || 'communicate'} (${lesson.semantic_category_en || 'topic'})">
-      Maqsad: <strong>${funcUz}</strong> (${semUz})
+    <div style="font-size: 0.9rem; color: #666; margin-bottom: 8px;" class="tl-uz" data-translation="${en('pattern.goalLabel')} ${lesson.function_en || 'communicate'} (${lesson.semantic_category_en || 'topic'})">
+      ${uz('pattern.goalLabel')} <strong>${funcUz}</strong> (${semUz})
     </div>
-    <div style="font-weight: bold; font-size: 1.1rem; margin-bottom: 16px;" class="tl-uz" data-translation="${targetWords.length > 0 ? '👆 Tap the <u>important words</u> in the sentences below!' : 'What is the common rule in these sentences?'}">
+    <div style="font-weight: bold; font-size: 1.1rem; margin-bottom: 16px;" class="tl-uz" data-translation="${targetWords.length > 0 ? en('pattern.tapImportantDT') : en('pattern.commonRuleQuestion')}">
       ${targetWords.length > 0 
-        ? "👆 Quyidagi gaplardagi <u>muhim so'zlarni</u> bosing!"
-        : "Quyidagi gaplarda qanday umumiy qoida bor?"}
+        ? uz('pattern.tapInstruction')
+        : uz('pattern.commonRuleQuestion')}
     </div>
   `;
   div.appendChild(prompt);
@@ -332,7 +332,7 @@ function createPatternSpottingStep(lesson, mainPatternExamples, targetWords) {
               feedback.style.border = "1px solid #4CAF50";
               feedback.classList.add("tl-uz");
               feedback.dataset.translation = `✅ "${word.trim()}" Correct! (${discoveredWords.size}/${totalTargets || "?"})`;
-              feedback.innerHTML = `✅ <strong>"${word.trim()}"</strong> To'g'ri! (${discoveredWords.size}/${totalTargets || "?"})`;
+              feedback.innerHTML = uz('pattern.discoveryProgress').replace('{found}', discoveredWords.size).replace('{total}', totalTargets || '?').replace('{word}', word.trim());
               
               container.querySelectorAll(".pattern-word").forEach(w => {
                 if (w.textContent.replace(/[.,!?]/g, "").toLowerCase() === cleanWord) {
@@ -366,11 +366,11 @@ function createPatternSpottingStep(lesson, mainPatternExamples, targetWords) {
   hint.style.fontStyle = "italic";
   hint.classList.add("tl-uz");
   hint.dataset.translation = targetWords.length > 0 
-    ? "💡 Find the important words, then we'll see the rule."
-    : "💡 Notice the structure? Let's learn the rule.";
+    ? en('pattern.findImportantDT')
+    : en('pattern.noticeStructureHint');
   hint.textContent = targetWords.length > 0 
-    ? "💡 Muhim so'zlarni toping, keyin qoidani ko'ramiz."
-    : "💡 Notice the structure? Let's learn the rule.";
+    ? uz('pattern.discoveryHint')
+    : uz('pattern.noticeStructureHint');
   div.appendChild(hint);
 
   return div;
@@ -398,16 +398,16 @@ function createListenModelStep(anchor) {
   div.appendChild(anchorDisplay);
 
   const instr = document.createElement("div");
-  instr.innerHTML = "1️⃣ <strong>Eshiting</strong> → 2️⃣ <strong>Qaytaring</strong> → 3️⃣ <strong>Taqqoslang</strong>";
+  instr.innerHTML = uz('pattern.steps');
   instr.classList.add("tl-uz");
-  instr.dataset.translation = "1️⃣ Listen → 2️⃣ Repeat → 3️⃣ Compare";
+  instr.dataset.translation = en('pattern.steps');
   instr.style.marginBottom = "16px";
   instr.style.color = "#555";
   instr.style.fontSize = "0.95rem";
   div.appendChild(instr);
   
   const btn = document.createElement("button");
-  btn.innerHTML = "🔊 Eshiting";
+  btn.innerHTML = uz('pattern.listenBtn');
   btn.className = "action-button";
   btn.style.fontSize = "1.1rem";
   btn.style.padding = "12px 24px";
@@ -422,7 +422,7 @@ function createListenModelStep(anchor) {
   div.appendChild(btn);
   
   const slowBtn = document.createElement("button");
-  slowBtn.innerHTML = "🐢 Sekin";
+  slowBtn.innerHTML = uz('pattern.slowBtn');
   slowBtn.className = "action-button";
   slowBtn.style.fontSize = "1rem";
   slowBtn.style.padding = "12px 20px";
@@ -441,8 +441,8 @@ function createListenModelStep(anchor) {
   tip.style.fontStyle = "italic";
   tip.style.fontSize = "0.9rem";
   tip.classList.add("tl-uz");
-  tip.dataset.translation = "💡 Tip: Listen 2-3 times, then repeat aloud!";
-  tip.textContent = "💡 Maslahat: 2-3 marta eshiting, keyin ovoz chiqarib takrorlang!";
+  tip.dataset.translation = en('pattern.listenTip');
+  tip.textContent = uz('pattern.listenTip');
   div.appendChild(tip);
   
   return div;
@@ -491,9 +491,9 @@ function createCompareNoticeStep(cmp, crossLangNote, conceptAwareness, formAware
     compSection.style.border = "1px solid #86efac";
     
     const compTitle = document.createElement("div");
-    compTitle.textContent = "Inglizcha ↔ O'zbekcha";
+    compTitle.textContent = uz('pattern.compareTitle');
     compTitle.classList.add("tl-uz");
-    compTitle.dataset.translation = "English ↔ Uzbek";
+    compTitle.dataset.translation = en('pattern.compareTitle');
     compTitle.style.fontWeight = "600";
     compTitle.style.marginBottom = "8px";
     compTitle.style.color = "#166534";
@@ -541,7 +541,7 @@ function createCompareNoticeStep(cmp, crossLangNote, conceptAwareness, formAware
     const noteText = document.createElement("span");
     noteText.textContent = String(crossLangNote);
     noteText.classList.add("tl-uz");
-    noteText.dataset.translation = "Cross-language note";
+    noteText.dataset.translation = en('pattern.crossLangNote');
     
     noteSection.appendChild(noteIcon);
     noteSection.appendChild(noteText);
@@ -558,9 +558,9 @@ function createCompareNoticeStep(cmp, crossLangNote, conceptAwareness, formAware
     awarenessSection.style.borderLeft = "4px solid #2563eb";
     
     const awarenessTitle = document.createElement("div");
-    awarenessTitle.textContent = "🧠 E'tibor bering";
+    awarenessTitle.textContent = uz('pattern.awarenessTitle');
     awarenessTitle.classList.add("tl-uz");
-    awarenessTitle.dataset.translation = "🧠 Pay Attention";
+    awarenessTitle.dataset.translation = en('pattern.awarenessTitle');
     awarenessTitle.style.fontWeight = "600";
     awarenessTitle.style.marginBottom = "8px";
     awarenessTitle.style.color = "#1e40af";

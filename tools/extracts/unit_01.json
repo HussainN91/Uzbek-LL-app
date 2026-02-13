@@ -1,0 +1,6595 @@
+{
+  "meta": {
+    "unit": "01",
+    "source_file": "vocab_cards_u01_4act.js",
+    "total_strings": 540,
+    "categories": {
+      "line_uz": 14,
+      "item_uz": 76,
+      "uz_context": 21,
+      "uz_mirror_answer": 20,
+      "instruction": 90,
+      "success_msg": 91,
+      "fail_msg": 91,
+      "option_label": 50,
+      "uz_prompt": 41,
+      "trap_message": 46
+    },
+    "version": "1.0.0"
+  },
+  "strings": [
+    {
+      "id": "dialogues.U01_L01_D01.line_133",
+      "field": "line_uz",
+      "value": "Salom! Mening ismim Ali.",
+      "context": {
+        "line_number": 133,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U01_L01_D01",
+        "en_line": "Hello! My name is Ali."
+      }
+    },
+    {
+      "id": "dialogues.U01_L01_D01.line_134",
+      "field": "line_uz",
+      "value": "Men talabaman.",
+      "context": {
+        "line_number": 134,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U01_L01_D01",
+        "en_line": "I am a student."
+      }
+    },
+    {
+      "id": "dialogues.U01_L01_D01.line_135",
+      "field": "line_uz",
+      "value": "Salom, Ali. Mening ismim Sara.",
+      "context": {
+        "line_number": 135,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "dialogue_id": "U01_L01_D01",
+        "en_line": "Hello, Ali. My name is Sara."
+      }
+    },
+    {
+      "id": "dialogues.U01_L01_D01.line_136",
+      "field": "line_uz",
+      "value": "Men ham talabaman.",
+      "context": {
+        "line_number": 136,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "dialogue_id": "U01_L01_D01",
+        "en_line": "I am a student too."
+      }
+    },
+    {
+      "id": "dialogues.U01_L02_D01.line_143",
+      "field": "line_uz",
+      "value": "Tanishganimdan xursandman, Sara.",
+      "context": {
+        "line_number": 143,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U01_L02_D01",
+        "en_line": "Nice to meet you, Sara."
+      }
+    },
+    {
+      "id": "dialogues.U01_L02_D01.line_144",
+      "field": "line_uz",
+      "value": "Siz o'qituvchimisiz?",
+      "context": {
+        "line_number": 144,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U01_L02_D01",
+        "en_line": "Are you a teacher?"
+      }
+    },
+    {
+      "id": "dialogues.U01_L02_D01.line_145",
+      "field": "line_uz",
+      "value": "Yo'q. U o'qituvchi.",
+      "context": {
+        "line_number": 145,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "dialogue_id": "U01_L02_D01",
+        "en_line": "No. He is a teacher."
+      }
+    },
+    {
+      "id": "dialogues.U01_L02_D01.line_146",
+      "field": "line_uz",
+      "value": "U o'qituvchimi?",
+      "context": {
+        "line_number": 146,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U01_L02_D01",
+        "en_line": "Is she a teacher?"
+      }
+    },
+    {
+      "id": "dialogues.U01_L02_D01.line_147",
+      "field": "line_uz",
+      "value": "Yo'q, u talaba.",
+      "context": {
+        "line_number": 147,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "dialogue_id": "U01_L02_D01",
+        "en_line": "No, she is a student."
+      }
+    },
+    {
+      "id": "dialogues.U01_L02_D01.line_148",
+      "field": "line_uz",
+      "value": "Ismingiz nima, xonim?",
+      "context": {
+        "line_number": 148,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U01_L02_D01",
+        "en_line": "What is your name, Miss?"
+      }
+    },
+    {
+      "id": "dialogues.U01_L03_D01.line_155",
+      "field": "line_uz",
+      "value": "Biz talabalarmiz. Ular o'qituvchilar.",
+      "context": {
+        "line_number": 155,
+        "field": "line_uz",
+        "speaker": "Vali",
+        "dialogue_id": "U01_L03_D01",
+        "en_line": "We are students. They are teachers."
+      }
+    },
+    {
+      "id": "dialogues.U01_L03_D01.line_156",
+      "field": "line_uz",
+      "value": "Bu mening otam. Uning ismi Omar.",
+      "context": {
+        "line_number": 156,
+        "field": "line_uz",
+        "speaker": "Vali",
+        "dialogue_id": "U01_L03_D01",
+        "en_line": "This is my father. His name is Omar."
+      }
+    },
+    {
+      "id": "dialogues.U01_L03_D01.line_157",
+      "field": "line_uz",
+      "value": "Bu mening onam. Uning ismi Laylo.",
+      "context": {
+        "line_number": 157,
+        "field": "line_uz",
+        "speaker": "Vali",
+        "dialogue_id": "U01_L03_D01",
+        "en_line": "This is my mother. Her name is Laylo."
+      }
+    },
+    {
+      "id": "dialogues.U01_L03_D01.line_158",
+      "field": "line_uz",
+      "value": "Bu mening akam va mening singlim.",
+      "context": {
+        "line_number": 158,
+        "field": "line_uz",
+        "speaker": "Vali",
+        "dialogue_id": "U01_L03_D01",
+        "en_line": "This is my brother and my sister."
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.item_uz",
+      "field": "item_uz",
+      "value": "salom",
+      "context": {
+        "line_number": 177,
+        "field": "item_uz",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Xayr aytish kerak-mi?",
+      "context": {
+        "line_number": 187,
+        "field": "uz_context",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, we say hello."
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, salom aytish kerak.",
+      "context": {
+        "line_number": 187,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, we say hello."
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.instruction",
+      "field": "instruction",
+      "value": "'Hello' qachon ishlatiladi?",
+      "context": {
+        "line_number": 188,
+        "field": "instruction",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.instruction",
+      "field": "instruction",
+      "value": "متى نستخدم 'Hello'؟",
+      "context": {
+        "line_number": 188,
+        "field": "instruction",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Hello' = SALOM, uchrashganda.",
+      "context": {
+        "line_number": 188,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'Hello' = مرحبا، عند اللقاء.",
+      "context": {
+        "line_number": 188,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'Hello' = uchrashganda, 'Goodbye' = xayrlashganda.",
+      "context": {
+        "line_number": 188,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'Hello' = عند اللقاء، 'Goodbye' = عند الوداع.",
+      "context": {
+        "line_number": 188,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.option_label",
+      "field": "option_label",
+      "value": "Uchrashganda (When meeting)",
+      "context": {
+        "line_number": 188,
+        "field": "option_label",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.option_label",
+      "field": "option_label",
+      "value": "Xayrlashganda (When leaving)",
+      "context": {
+        "line_number": 188,
+        "field": "option_label",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.instruction",
+      "field": "instruction",
+      "value": "Diqqat bilan qarang: 'Hello' qayerda keladi?",
+      "context": {
+        "line_number": 189,
+        "field": "instruction",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.instruction",
+      "field": "instruction",
+      "value": "انظر بعناية: أين تأتي 'Hello'؟",
+      "context": {
+        "line_number": 189,
+        "field": "instruction",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Hello' har doim gapning BOSHIDA keladi — uchrashgandagi salomlashish.",
+      "context": {
+        "line_number": 189,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Hello' تأتي دائماً في بداية الجملة — تحية عند اللقاء.",
+      "context": {
+        "line_number": 189,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'Hello' gapning BOSHIDA, salomlashish uchun ishlatiladi.",
+      "context": {
+        "line_number": 189,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'Hello' تأتي في بداية الجملة، للتحية.",
+      "context": {
+        "line_number": 189,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.option_label",
+      "field": "option_label",
+      "value": "Gapning boshida — salomlashish (At the beginning — greeting)",
+      "context": {
+        "line_number": 189,
+        "field": "option_label",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.option_label",
+      "field": "option_label",
+      "value": "Gapning oxirida — xayrlashish (At the end — farewell)",
+      "context": {
+        "line_number": 189,
+        "field": "option_label",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.item_uz",
+      "field": "item_uz",
+      "value": "Salom! Mening ismim Ali.",
+      "context": {
+        "line_number": 190,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.item_uz",
+      "field": "item_uz",
+      "value": "Salom, Sara!",
+      "context": {
+        "line_number": 190,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.practice.item_uz",
+      "field": "item_uz",
+      "value": "Salom, hamma!",
+      "context": {
+        "line_number": 190,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida salom ayting.",
+      "context": {
+        "line_number": 191,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ Ingliz tilida! 'HELLO' to'g'ri.",
+      "context": {
+        "line_number": 191,
+        "field": "trap_message",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ بالإنجليزية! 'HELLO' هو الصحيح.",
+      "context": {
+        "line_number": 191,
+        "field": "trap_message",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_hello.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Do'stingizga ingliz tilida salom ayting va ismingizni ayting.",
+      "context": {
+        "line_number": 192,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L01_hello",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.production.item_uz",
+      "field": "item_uz",
+      "value": "mening",
+      "context": {
+        "line_number": 199,
+        "field": "item_uz",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Uning ismi Ali-mi?",
+      "context": {
+        "line_number": 209,
+        "field": "uz_context",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, my name is Sara."
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, mening ismim Sara.",
+      "context": {
+        "line_number": 209,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, my name is Sara."
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.instruction",
+      "field": "instruction",
+      "value": "'My' so'zi kim haqida?",
+      "context": {
+        "line_number": 210,
+        "field": "instruction",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.instruction",
+      "field": "instruction",
+      "value": "عمن تتحدث كلمة 'My'؟",
+      "context": {
+        "line_number": 210,
+        "field": "instruction",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'MY' = MENING, gapiruvchiga tegishli.",
+      "context": {
+        "line_number": 210,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'MY' = لي، تابع للمتحدث.",
+      "context": {
+        "line_number": 210,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'MY' = gapiruvchining o'zi.",
+      "context": {
+        "line_number": 210,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'MY' = المتحدث نفسه.",
+      "context": {
+        "line_number": 210,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.option_label",
+      "field": "option_label",
+      "value": "Gapiruvchiga tegishli (Belongs to speaker)",
+      "context": {
+        "line_number": 210,
+        "field": "option_label",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.option_label",
+      "field": "option_label",
+      "value": "Boshqaga tegishli (Belongs to someone else)",
+      "context": {
+        "line_number": 210,
+        "field": "option_label",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.instruction",
+      "field": "instruction",
+      "value": "Nima uchun 'me' emas, 'my' ishlatilgan?",
+      "context": {
+        "line_number": 211,
+        "field": "instruction",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.instruction",
+      "field": "instruction",
+      "value": "لماذا استخدمنا 'my' وليس 'me'؟",
+      "context": {
+        "line_number": 211,
+        "field": "instruction",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.success_msg",
+      "field": "success_msg",
+      "value": "'My' = MENING (egalik). Ism/narsa oldidan keladi: MY name, MY book.",
+      "context": {
+        "line_number": 211,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.success_msg",
+      "field": "success_msg",
+      "value": "'My' = لي (ملكية). تأتي قبل الاسم: MY name, MY book.",
+      "context": {
+        "line_number": 211,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'My' = MENING. 'Me' = MENI. Ism oldidan doim 'MY' kerak.",
+      "context": {
+        "line_number": 211,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'My' = لي. 'Me' = أنا. قبل الاسم دائماً 'MY'.",
+      "context": {
+        "line_number": 211,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.option_label",
+      "field": "option_label",
+      "value": "'My' = egalik (mening) — ism oldidan keladi",
+      "context": {
+        "line_number": 211,
+        "field": "option_label",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.option_label",
+      "field": "option_label",
+      "value": "'My' = ملكية (لي) — تأتي قبل الاسم",
+      "context": {
+        "line_number": 211,
+        "field": "option_label",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening ismim Ali.",
+      "context": {
+        "line_number": 212,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening otam Omar.",
+      "context": {
+        "line_number": 212,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening onam Laylo.",
+      "context": {
+        "line_number": 212,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Mening ismim [your name].",
+      "context": {
+        "line_number": 213,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'ME name' emas! 'MY name' to'g'ri.",
+      "context": {
+        "line_number": 213,
+        "field": "trap_message",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'ME name'! الصحيح 'MY name'.",
+      "context": {
+        "line_number": 213,
+        "field": "trap_message",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_my.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Oilangiz haqida bir gap ayting: Mening ... (my ...)",
+      "context": {
+        "line_number": 214,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L01_my",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.production.item_uz",
+      "field": "item_uz",
+      "value": "ism",
+      "context": {
+        "line_number": 221,
+        "field": "item_uz",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Sizning ismingiz Ali-mi?",
+      "context": {
+        "line_number": 231,
+        "field": "uz_context",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, my name is Sara."
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.instruction",
+      "field": "instruction",
+      "value": "Bu gapda 'name' so'zi nima haqida?",
+      "context": {
+        "line_number": 232,
+        "field": "instruction",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Name' = ism, shaxsni aniqlaydi.",
+      "context": {
+        "line_number": 232,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'Name' = اسم، يحدد الهوية.",
+      "context": {
+        "line_number": 232,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'Name' = ISM. Bu harakat emas, shaxsni aniqlash.",
+      "context": {
+        "line_number": 232,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'Name' = اسم. ليس فعلاً، بل تحديد هوية.",
+      "context": {
+        "line_number": 232,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.option_label",
+      "field": "option_label",
+      "value": "Shaxsni aniqlash (Identity)",
+      "context": {
+        "line_number": 232,
+        "field": "option_label",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.instruction",
+      "field": "instruction",
+      "value": "'Name' so'zi gapda qanday o'rin egallaydi?",
+      "context": {
+        "line_number": 233,
+        "field": "instruction",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.instruction",
+      "field": "instruction",
+      "value": "أين تقع كلمة 'name' في الجملة؟",
+      "context": {
+        "line_number": 233,
+        "field": "instruction",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Name' = ISM (ot). 'My name is...' — shaxsni aniqlash uchun ishlatiladi.",
+      "context": {
+        "line_number": 233,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Name' = اسم. 'My name is...' — يستخدم لتحديد الهوية.",
+      "context": {
+        "line_number": 233,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Name' = ISM (ot). Bu harakat emas, shaxsni aniqlash uchun.",
+      "context": {
+        "line_number": 233,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Name' = اسم. ليس فعلاً، بل لتحديد الهوية.",
+      "context": {
+        "line_number": 233,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.option_label",
+      "field": "option_label",
+      "value": "Ot (noun) — shaxsni aniqlash uchun",
+      "context": {
+        "line_number": 233,
+        "field": "option_label",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.option_label",
+      "field": "option_label",
+      "value": "Fe'l (verb) — harakat bildiradi",
+      "context": {
+        "line_number": 233,
+        "field": "option_label",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uning ismi Sara.",
+      "context": {
+        "line_number": 234,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uning ismi nima?",
+      "context": {
+        "line_number": 234,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'Me' emas! 'MY name' to'g'ri.",
+      "context": {
+        "line_number": 235,
+        "field": "trap_message",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'Me'! الصحيح 'MY name'.",
+      "context": {
+        "line_number": 235,
+        "field": "trap_message",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_name.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Do'stingizning ismini ingliz tilida ayting.",
+      "context": {
+        "line_number": 236,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L01_name",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.production.item_uz",
+      "field": "item_uz",
+      "value": "-dir / -mi",
+      "context": {
+        "line_number": 243,
+        "field": "item_uz",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Men o'qituvchi-mi?",
+      "context": {
+        "line_number": 254,
+        "field": "uz_context",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, he is a student."
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, u talaba.",
+      "context": {
+        "line_number": 254,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, he is a student."
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.practice.instruction",
+      "field": "instruction",
+      "value": "'Is' qaysi olmoshlar bilan ishlatiladi?",
+      "context": {
+        "line_number": 255,
+        "field": "instruction",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.practice.instruction",
+      "field": "instruction",
+      "value": "مع أي ضمائر نستخدم 'Is'؟",
+      "context": {
+        "line_number": 255,
+        "field": "instruction",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'IS' = He/She/It (uchinchi shaxs birlik).",
+      "context": {
+        "line_number": 255,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'IS' = He/She/It (الشخص الثالث المفرد).",
+      "context": {
+        "line_number": 255,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'IS' = He/She/It. 'I' = am, 'You/We/They' = are.",
+      "context": {
+        "line_number": 255,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'IS' = He/She/It. 'I' = am، 'You/We/They' = are.",
+      "context": {
+        "line_number": 255,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.practice.instruction",
+      "field": "instruction",
+      "value": "Nima uchun 'are' emas, 'is' ishlatilgan?",
+      "context": {
+        "line_number": 256,
+        "field": "instruction",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.practice.instruction",
+      "field": "instruction",
+      "value": "لماذا استخدمنا 'is' وليس 'are'؟",
+      "context": {
+        "line_number": 256,
+        "field": "instruction",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.practice.success_msg",
+      "field": "success_msg",
+      "value": "'He/She/It' bilan har doim 'IS' keladi. 'Are' = you/we/they.",
+      "context": {
+        "line_number": 256,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.practice.success_msg",
+      "field": "success_msg",
+      "value": "مع 'He/She/It' دائماً 'IS'. 'Are' = you/we/they.",
+      "context": {
+        "line_number": 256,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Is' = He/She/It BILAN. 'Are' = You/We/They bilan.",
+      "context": {
+        "line_number": 256,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Is' = مع He/She/It. 'Are' = مع You/We/They.",
+      "context": {
+        "line_number": 256,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.practice.item_uz",
+      "field": "item_uz",
+      "value": "U talaba.",
+      "context": {
+        "line_number": 257,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.practice.item_uz",
+      "field": "item_uz",
+      "value": "U shu yerda-mi?",
+      "context": {
+        "line_number": 257,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: U o'qituvchi (erkak).",
+      "context": {
+        "line_number": 258,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'He AM' emas! 'He IS' to'g'ri.",
+      "context": {
+        "line_number": 258,
+        "field": "trap_message",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'He AM'! الصحيح 'He IS'.",
+      "context": {
+        "line_number": 258,
+        "field": "trap_message",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_is.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Sinfdoshingiz haqida gap ayting: U ... (He/She is ...)",
+      "context": {
+        "line_number": 259,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L01_is",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.production.item_uz",
+      "field": "item_uz",
+      "value": "men",
+      "context": {
+        "line_number": 266,
+        "field": "item_uz",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.presentation.uz_context",
+      "field": "uz_context",
+      "value": "U talaba-mi?",
+      "context": {
+        "line_number": 276,
+        "field": "uz_context",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I am a student."
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men talabaman.",
+      "context": {
+        "line_number": 276,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I am a student."
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.instruction",
+      "field": "instruction",
+      "value": "'I' so'zi kim haqida gapiradi?",
+      "context": {
+        "line_number": 277,
+        "field": "instruction",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.instruction",
+      "field": "instruction",
+      "value": "عمن يتحدث الضمير 'I'؟",
+      "context": {
+        "line_number": 277,
+        "field": "instruction",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'I' = MEN, gapiruvchi o'zi haqida.",
+      "context": {
+        "line_number": 277,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'I' = أنا، المتحدث عن نفسه.",
+      "context": {
+        "line_number": 277,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'I' har doim GAPIRUVCHI haqida.",
+      "context": {
+        "line_number": 277,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'I' دائماً عن المتحدث.",
+      "context": {
+        "line_number": 277,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.option_label",
+      "field": "option_label",
+      "value": "Gapiruvchi (Speaker)",
+      "context": {
+        "line_number": 277,
+        "field": "option_label",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.option_label",
+      "field": "option_label",
+      "value": "Boshqa odam (Another person)",
+      "context": {
+        "line_number": 277,
+        "field": "option_label",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.instruction",
+      "field": "instruction",
+      "value": "'I' dan keyin qaysi fe'l keladi?",
+      "context": {
+        "line_number": 278,
+        "field": "instruction",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.instruction",
+      "field": "instruction",
+      "value": "ما الفعل الذي يأتي بعد 'I'؟",
+      "context": {
+        "line_number": 278,
+        "field": "instruction",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.success_msg",
+      "field": "success_msg",
+      "value": "'I' har doim 'AM' bilan keladi. I AM = Men ...man.",
+      "context": {
+        "line_number": 278,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.success_msg",
+      "field": "success_msg",
+      "value": "'I' دائماً مع 'AM'. I AM = أنا...",
+      "context": {
+        "line_number": 278,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'I' FAQAT 'am' bilan! 'Is' = he/she/it.",
+      "context": {
+        "line_number": 278,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'I' فقط مع 'am'! 'Is' = he/she/it.",
+      "context": {
+        "line_number": 278,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men talabaman.",
+      "context": {
+        "line_number": 279,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men o'qituvchiman.",
+      "context": {
+        "line_number": 279,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men talabaman.",
+      "context": {
+        "line_number": 280,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'Me am' emas! 'I AM' to'g'ri.",
+      "context": {
+        "line_number": 280,
+        "field": "trap_message",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'Me am'! الصحيح 'I AM'.",
+      "context": {
+        "line_number": 280,
+        "field": "trap_message",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_I.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "O'zingiz haqida ingliz tilida bir gap ayting: I am ...",
+      "context": {
+        "line_number": 281,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L01_I",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.production.item_uz",
+      "field": "item_uz",
+      "value": "-man",
+      "context": {
+        "line_number": 288,
+        "field": "item_uz",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz talaba-mi?",
+      "context": {
+        "line_number": 299,
+        "field": "uz_context",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "Yes, I am a student."
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Ha, men talabaman.",
+      "context": {
+        "line_number": 299,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "Yes, I am a student."
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.practice.instruction",
+      "field": "instruction",
+      "value": "'Am' qaysi olmosh bilan ishlatiladi?",
+      "context": {
+        "line_number": 300,
+        "field": "instruction",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.practice.instruction",
+      "field": "instruction",
+      "value": "مع أي ضمير نستخدم 'Am'؟",
+      "context": {
+        "line_number": 300,
+        "field": "instruction",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'AM' faqat 'I' bilan. I AM = Men ...man.",
+      "context": {
+        "line_number": 300,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'AM' فقط مع 'I'. I AM = أنا...",
+      "context": {
+        "line_number": 300,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'AM' FAQAT 'I' bilan!",
+      "context": {
+        "line_number": 300,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'AM' فقط مع 'I'!",
+      "context": {
+        "line_number": 300,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.practice.option_label",
+      "field": "option_label",
+      "value": "Faqat 'I' bilan (Only with 'I')",
+      "context": {
+        "line_number": 300,
+        "field": "option_label",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.practice.option_label",
+      "field": "option_label",
+      "value": "فقط مع 'I' (Only with 'I')",
+      "context": {
+        "line_number": 300,
+        "field": "option_label",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.practice.option_label",
+      "field": "option_label",
+      "value": "Barcha olmoshlar bilan (With all pronouns)",
+      "context": {
+        "line_number": 300,
+        "field": "option_label",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.practice.instruction",
+      "field": "instruction",
+      "value": "'Am' boshqa olmoshlar bilan ishlatiladi-mi?",
+      "context": {
+        "line_number": 301,
+        "field": "instruction",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.practice.instruction",
+      "field": "instruction",
+      "value": "هل تستخدم 'Am' مع ضمائر أخرى؟",
+      "context": {
+        "line_number": 301,
+        "field": "instruction",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Am' FAQAT 'I' bilan. He = is, You/We/They = are.",
+      "context": {
+        "line_number": 301,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Am' فقط مع 'I'. He = is، You/We/They = are.",
+      "context": {
+        "line_number": 301,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Am' faqat 'I' bilan! 'He' = is, 'You' = are.",
+      "context": {
+        "line_number": 301,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Am' فقط مع 'I'! 'He' = is، 'You' = are.",
+      "context": {
+        "line_number": 301,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Men Ali-man.",
+      "context": {
+        "line_number": 303,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'I IS' emas! 'I AM' to'g'ri.",
+      "context": {
+        "line_number": 303,
+        "field": "trap_message",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'I IS'! الصحيح 'I AM'.",
+      "context": {
+        "line_number": 303,
+        "field": "trap_message",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_am.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "O'zingiz haqida ayting — kasbingiz yoki holatingiz: I am ...",
+      "context": {
+        "line_number": 304,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L01_am",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.production.item_uz",
+      "field": "item_uz",
+      "value": "talaba",
+      "context": {
+        "line_number": 311,
+        "field": "item_uz",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz o'qituvchi-misiz?",
+      "context": {
+        "line_number": 321,
+        "field": "uz_context",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "No, I am a student."
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.instruction",
+      "field": "instruction",
+      "value": "'Student' nima?",
+      "context": {
+        "line_number": 322,
+        "field": "instruction",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.instruction",
+      "field": "instruction",
+      "value": "ما معنى 'Student'؟",
+      "context": {
+        "line_number": 322,
+        "field": "instruction",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Student' = TALABA, o'quvchi.",
+      "context": {
+        "line_number": 322,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'Student' = طالب، متعلم.",
+      "context": {
+        "line_number": 322,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'Student' = talaba, 'Teacher' = o'qituvchi.",
+      "context": {
+        "line_number": 322,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'Student' = طالب، 'Teacher' = معلم.",
+      "context": {
+        "line_number": 322,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.option_label",
+      "field": "option_label",
+      "value": "O'quvchi/Talaba (Learner)",
+      "context": {
+        "line_number": 322,
+        "field": "option_label",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.option_label",
+      "field": "option_label",
+      "value": "O'qituvchi (Teacher)",
+      "context": {
+        "line_number": 322,
+        "field": "option_label",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.option_label",
+      "field": "option_label",
+      "value": "معلم (Teacher)",
+      "context": {
+        "line_number": 322,
+        "field": "option_label",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.instruction",
+      "field": "instruction",
+      "value": "Nima uchun 'a' artikli kerak: 'a student'?",
+      "context": {
+        "line_number": 323,
+        "field": "instruction",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.instruction",
+      "field": "instruction",
+      "value": "لماذا نحتاج إلى أداة 'a': 'a student'؟",
+      "context": {
+        "line_number": 323,
+        "field": "instruction",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.success_msg",
+      "field": "success_msg",
+      "value": "Ingliz tilida kasb/rol oldidan 'A' artikli kerak: a student, a teacher.",
+      "context": {
+        "line_number": 323,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.success_msg",
+      "field": "success_msg",
+      "value": "في الإنجليزية يلزم 'A' قبل المهنة: a student, a teacher.",
+      "context": {
+        "line_number": 323,
+        "field": "success_msg",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Ingliz tilida kasb oldidan 'A' artikli SHART: I am A student.",
+      "context": {
+        "line_number": 323,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "في الإنجليزية 'A' ضروري قبل المهنة: I am A student.",
+      "context": {
+        "line_number": 323,
+        "field": "fail_msg",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz talabamiz.",
+      "context": {
+        "line_number": 324,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz talaba-misiz?",
+      "context": {
+        "line_number": 324,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'A' artikli kerak! 'I am A student' to'g'ri.",
+      "context": {
+        "line_number": 325,
+        "field": "trap_message",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ يلزم 'A'! الصحيح 'I am A student'.",
+      "context": {
+        "line_number": 325,
+        "field": "trap_message",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L01_student.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Siz talabamisiz yoki o'qituvchimisiz? Ingliz tilida javob bering.",
+      "context": {
+        "line_number": 326,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L01_student",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.production.item_uz",
+      "field": "item_uz",
+      "value": "yoqimli",
+      "context": {
+        "line_number": 342,
+        "field": "item_uz",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Uni tanishgandan bexursand-mi?",
+      "context": {
+        "line_number": 352,
+        "field": "uz_context",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, nice to meet you!"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, tanishgandan xursandman.",
+      "context": {
+        "line_number": 352,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, nice to meet you!"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.instruction",
+      "field": "instruction",
+      "value": "'Nice to meet you' qachon ishlatiladi?",
+      "context": {
+        "line_number": 353,
+        "field": "instruction",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.instruction",
+      "field": "instruction",
+      "value": "متى نستخدم 'Nice to meet you'؟",
+      "context": {
+        "line_number": 353,
+        "field": "instruction",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Nice to meet you' = birinchi tanishuv.",
+      "context": {
+        "line_number": 353,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'Nice to meet you' = عند اللقاء الأول.",
+      "context": {
+        "line_number": 353,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'Nice to meet you' = BIRINCHI marta tanishganda.",
+      "context": {
+        "line_number": 353,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'Nice to meet you' = عند اللقاء الأول فقط.",
+      "context": {
+        "line_number": 353,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.option_label",
+      "field": "option_label",
+      "value": "Birinchi marta tanishganda (First meeting)",
+      "context": {
+        "line_number": 353,
+        "field": "option_label",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.option_label",
+      "field": "option_label",
+      "value": "Har doim ko'rishganda (Every meeting)",
+      "context": {
+        "line_number": 353,
+        "field": "option_label",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.instruction",
+      "field": "instruction",
+      "value": "'Nice to meet you' — bu iboraning tarkibini ko'ring.",
+      "context": {
+        "line_number": 354,
+        "field": "instruction",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.instruction",
+      "field": "instruction",
+      "value": "انظر إلى تركيب 'Nice to meet you'.",
+      "context": {
+        "line_number": 354,
+        "field": "instruction",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Nice to meet you' = birinchi marta uchrashgandagi RASMIY salom.",
+      "context": {
+        "line_number": 354,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Nice to meet you' = تحية رسمية عند اللقاء الأول.",
+      "context": {
+        "line_number": 354,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Bu maqtash emas! 'Nice to meet you' = tanishish salomlashishi.",
+      "context": {
+        "line_number": 354,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "ليس مدحاً! 'Nice to meet you' = تحية عند التعارف.",
+      "context": {
+        "line_number": 354,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.item_uz",
+      "field": "item_uz",
+      "value": "Tanishganimdan xursandman, Sara.",
+      "context": {
+        "line_number": 355,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.item_uz",
+      "field": "item_uz",
+      "value": "Tanishganimdan xursandman, Malika.",
+      "context": {
+        "line_number": 355,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.practice.item_uz",
+      "field": "item_uz",
+      "value": "Sizni tanishgandan juda xursandman.",
+      "context": {
+        "line_number": 355,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Tanishganimdan xursandman.",
+      "context": {
+        "line_number": 356,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'TO' kerak! 'Nice TO meet you' to'g'ri.",
+      "context": {
+        "line_number": 356,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ يلزم 'TO'! الصحيح 'Nice TO meet you'.",
+      "context": {
+        "line_number": 356,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_nice.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Yangi do'stingizga salomlashing: Nice to meet you, [ism]!",
+      "context": {
+        "line_number": 357,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L02_nice",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.production.item_uz",
+      "field": "item_uz",
+      "value": "tanishmoq",
+      "context": {
+        "line_number": 364,
+        "field": "item_uz",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.presentation.uz_context",
+      "field": "uz_context",
+      "value": "U uni biladi-mi?",
+      "context": {
+        "line_number": 374,
+        "field": "uz_context",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, but I want to meet her."
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, lekin tanishmoqchi.",
+      "context": {
+        "line_number": 374,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, but I want to meet her."
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.instruction",
+      "field": "instruction",
+      "value": "'Meet' nima demak?",
+      "context": {
+        "line_number": 375,
+        "field": "instruction",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.instruction",
+      "field": "instruction",
+      "value": "ماذا تعني 'Meet'؟",
+      "context": {
+        "line_number": 375,
+        "field": "instruction",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Meet' = TANISHMOQ.",
+      "context": {
+        "line_number": 375,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'Meet' = التعارف.",
+      "context": {
+        "line_number": 375,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'Meet' = tanishmoq, 'See' = ko'rmoq.",
+      "context": {
+        "line_number": 375,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'Meet' = التعارف، 'See' = الرؤية.",
+      "context": {
+        "line_number": 375,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.option_label",
+      "field": "option_label",
+      "value": "Tanishmoq (To become acquainted)",
+      "context": {
+        "line_number": 375,
+        "field": "option_label",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.option_label",
+      "field": "option_label",
+      "value": "Ko'rmoq (To see)",
+      "context": {
+        "line_number": 375,
+        "field": "option_label",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.instruction",
+      "field": "instruction",
+      "value": "'Meet' va 'see' — farqi nimada?",
+      "context": {
+        "line_number": 376,
+        "field": "instruction",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.instruction",
+      "field": "instruction",
+      "value": "ما الفرق بين 'Meet' و 'See'؟",
+      "context": {
+        "line_number": 376,
+        "field": "instruction",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Meet' = TANISHMOQ (birinchi uchrashuv). 'See' = KO'RMOQ.",
+      "context": {
+        "line_number": 376,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Meet' = التعارف (اللقاء الأول). 'See' = الرؤية.",
+      "context": {
+        "line_number": 376,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Meet' ≠ 'see'. 'Meet' = TANISHMOQ, 'See' = KO'RMOQ.",
+      "context": {
+        "line_number": 376,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Meet' ≠ 'see'. 'Meet' = التعارف، 'See' = الرؤية.",
+      "context": {
+        "line_number": 376,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.option_label",
+      "field": "option_label",
+      "value": "'Meet' = TANISHMOQ (birinchi marta)",
+      "context": {
+        "line_number": 376,
+        "field": "option_label",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.option_label",
+      "field": "option_label",
+      "value": "'Meet' = التعارف (أول مرة)",
+      "context": {
+        "line_number": 376,
+        "field": "option_label",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.option_label",
+      "field": "option_label",
+      "value": "'Meet' = KO'RMOQ (ko'z bilan)",
+      "context": {
+        "line_number": 376,
+        "field": "option_label",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.option_label",
+      "field": "option_label",
+      "value": "'Meet' = الرؤية (بالعين)",
+      "context": {
+        "line_number": 376,
+        "field": "option_label",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.item_uz",
+      "field": "item_uz",
+      "value": "Hammaningiz bilan tanishgandan xursandman!",
+      "context": {
+        "line_number": 377,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.practice.item_uz",
+      "field": "item_uz",
+      "value": "Akangiz bilan tanishmoqchiman.",
+      "context": {
+        "line_number": 377,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'MET' emas! 'MEET' to'g'ri.",
+      "context": {
+        "line_number": 378,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'MET'! الصحيح 'MEET'.",
+      "context": {
+        "line_number": 378,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_meet.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Kim bilan tanishmoqchisiz? I want to meet ...",
+      "context": {
+        "line_number": 379,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L02_meet",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.production.item_uz",
+      "field": "item_uz",
+      "value": "siz",
+      "context": {
+        "line_number": 386,
+        "field": "item_uz",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Men o'qituvchiman-mi?",
+      "context": {
+        "line_number": 396,
+        "field": "uz_context",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "Yes, you are right."
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Ha, siz to'g'ri.",
+      "context": {
+        "line_number": 396,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "Yes, you are right."
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.practice.instruction",
+      "field": "instruction",
+      "value": "'You' so'zi kim haqida?",
+      "context": {
+        "line_number": 397,
+        "field": "instruction",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.practice.instruction",
+      "field": "instruction",
+      "value": "عمن تتحدث كلمة 'You'؟",
+      "context": {
+        "line_number": 397,
+        "field": "instruction",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'You' = SIZ, tinglovchi haqida.",
+      "context": {
+        "line_number": 397,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'You' = أنت، عن المستمع.",
+      "context": {
+        "line_number": 397,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'You' = TINGLOVCHI haqida, 'I' = gapiruvchi.",
+      "context": {
+        "line_number": 397,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'You' = عن المستمع، 'I' = المتحدث.",
+      "context": {
+        "line_number": 397,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.practice.option_label",
+      "field": "option_label",
+      "value": "Tinglovchi (Listener)",
+      "context": {
+        "line_number": 397,
+        "field": "option_label",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.practice.instruction",
+      "field": "instruction",
+      "value": "'You' — birlik va ko'plik uchun bir xil-mi?",
+      "context": {
+        "line_number": 398,
+        "field": "instruction",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.practice.instruction",
+      "field": "instruction",
+      "value": "هل 'You' للمفرد أم للجمع؟",
+      "context": {
+        "line_number": 398,
+        "field": "instruction",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.practice.success_msg",
+      "field": "success_msg",
+      "value": "Ingliz tilida 'you' = siz/sen/sizlar — hammasi bir xil!",
+      "context": {
+        "line_number": 398,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.practice.success_msg",
+      "field": "success_msg",
+      "value": "في الإنجليزية 'you' = أنت/أنتم — الكل واحد!",
+      "context": {
+        "line_number": 398,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'You' birlik HAM ko'plik HAM uchun ishlatiladi.",
+      "context": {
+        "line_number": 398,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'You' للمفرد والجمع معاً.",
+      "context": {
+        "line_number": 398,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz Sara-siz.",
+      "context": {
+        "line_number": 399,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz talaba-siz.",
+      "context": {
+        "line_number": 399,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida so'rang: Siz talaba-misiz?",
+      "context": {
+        "line_number": 400,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'You IS' emas! 'You ARE' to'g'ri.",
+      "context": {
+        "line_number": 400,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'You IS'! الصحيح 'You ARE'.",
+      "context": {
+        "line_number": 400,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_you.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Do'stingizga savol bering: Are you ...?",
+      "context": {
+        "line_number": 401,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L02_you",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.production.item_uz",
+      "field": "item_uz",
+      "value": "-siz / -miz",
+      "context": {
+        "line_number": 408,
+        "field": "item_uz",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Ha, siz talaba-siz.",
+      "context": {
+        "line_number": 419,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "Yes, you are a student."
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.practice.instruction",
+      "field": "instruction",
+      "value": "'Are' qaysi olmoshlar bilan ishlatiladi?",
+      "context": {
+        "line_number": 420,
+        "field": "instruction",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.practice.instruction",
+      "field": "instruction",
+      "value": "مع أي ضمائر نستخدم 'Are'؟",
+      "context": {
+        "line_number": 420,
+        "field": "instruction",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'ARE' = You/We/They bilan.",
+      "context": {
+        "line_number": 420,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'ARE' = مع You/We/They.",
+      "context": {
+        "line_number": 420,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'ARE' = You/We/They. 'I' = am, 'He/She' = is.",
+      "context": {
+        "line_number": 420,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'ARE' = You/We/They. 'I' = am، 'He/She' = is.",
+      "context": {
+        "line_number": 420,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.practice.instruction",
+      "field": "instruction",
+      "value": "Nima uchun 'is' emas, 'are' ishlatilgan?",
+      "context": {
+        "line_number": 421,
+        "field": "instruction",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.practice.instruction",
+      "field": "instruction",
+      "value": "لماذا استخدمنا 'are' وليس 'is'؟",
+      "context": {
+        "line_number": 421,
+        "field": "instruction",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.practice.success_msg",
+      "field": "success_msg",
+      "value": "'You/We/They' bilan har doim 'ARE'. 'Is' = He/She/It.",
+      "context": {
+        "line_number": 421,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.practice.success_msg",
+      "field": "success_msg",
+      "value": "مع 'You/We/They' دائماً 'ARE'. 'Is' = He/She/It.",
+      "context": {
+        "line_number": 421,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'You' bilan 'ARE' keladi, 'is' emas!",
+      "context": {
+        "line_number": 421,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "مع 'You' نستخدم 'ARE'، ليس 'is'!",
+      "context": {
+        "line_number": 421,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz o'qituvchimisiz?",
+      "context": {
+        "line_number": 422,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ular shu yerda.",
+      "context": {
+        "line_number": 422,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'You AM' emas! 'You ARE' to'g'ri.",
+      "context": {
+        "line_number": 423,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'You AM'! الصحيح 'You ARE'.",
+      "context": {
+        "line_number": 423,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_are.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Oilangiz haqida ayting: We are ... / They are ...",
+      "context": {
+        "line_number": 424,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L02_are",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.production.item_uz",
+      "field": "item_uz",
+      "value": "o'qituvchi",
+      "context": {
+        "line_number": 431,
+        "field": "item_uz",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, u o'qituvchi.",
+      "context": {
+        "line_number": 441,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, he is a teacher."
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.practice.instruction",
+      "field": "instruction",
+      "value": "'Teacher' nima?",
+      "context": {
+        "line_number": 442,
+        "field": "instruction",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.practice.instruction",
+      "field": "instruction",
+      "value": "ما معنى 'Teacher'؟",
+      "context": {
+        "line_number": 442,
+        "field": "instruction",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Teacher' = O'QITUVCHI, kasb.",
+      "context": {
+        "line_number": 442,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'Teacher' = معلم، مهنة.",
+      "context": {
+        "line_number": 442,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'Teacher' = KASB, joy emas.",
+      "context": {
+        "line_number": 442,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'Teacher' = مهنة، ليس مكان.",
+      "context": {
+        "line_number": 442,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.practice.instruction",
+      "field": "instruction",
+      "value": "Nima uchun 'a teacher' — 'a' kerak?",
+      "context": {
+        "line_number": 443,
+        "field": "instruction",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.practice.instruction",
+      "field": "instruction",
+      "value": "لماذا نحتاج 'a' في 'a teacher'؟",
+      "context": {
+        "line_number": 443,
+        "field": "instruction",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.practice.success_msg",
+      "field": "success_msg",
+      "value": "Ingliz tilida kasb aytganda 'A' artikli SHART: a teacher, a student.",
+      "context": {
+        "line_number": 443,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.practice.success_msg",
+      "field": "success_msg",
+      "value": "في الإنجليزية 'A' ضروري قبل المهنة: a teacher, a student.",
+      "context": {
+        "line_number": 443,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Kasb oldidan 'A' kerak: He is A teacher.",
+      "context": {
+        "line_number": 443,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'A' ضروري قبل المهنة: He is A teacher.",
+      "context": {
+        "line_number": 443,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz o'qituvchi-misiz?",
+      "context": {
+        "line_number": 444,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening otam o'qituvchi.",
+      "context": {
+        "line_number": 444,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: U o'qituvchi.",
+      "context": {
+        "line_number": 445,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'A' artikli kerak! 'He is A teacher' to'g'ri.",
+      "context": {
+        "line_number": 445,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ يلزم 'A'! الصحيح 'He is A teacher'.",
+      "context": {
+        "line_number": 445,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_teacher.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "O'qituvchingiz haqida gap ayting: He/She is a teacher.",
+      "context": {
+        "line_number": 446,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L02_teacher",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.production.item_uz",
+      "field": "item_uz",
+      "value": "u (erkak)",
+      "context": {
+        "line_number": 453,
+        "field": "item_uz",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.presentation.uz_context",
+      "field": "uz_context",
+      "value": "U Malika-mi?",
+      "context": {
+        "line_number": 463,
+        "field": "uz_context",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, he is Karim."
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, u Karim.",
+      "context": {
+        "line_number": 463,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, he is Karim."
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.practice.instruction",
+      "field": "instruction",
+      "value": "'He' so'zi kim haqida?",
+      "context": {
+        "line_number": 464,
+        "field": "instruction",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.practice.instruction",
+      "field": "instruction",
+      "value": "عمن يتحدث الضمير 'He'؟",
+      "context": {
+        "line_number": 464,
+        "field": "instruction",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'He' = U (erkak kishi haqida).",
+      "context": {
+        "line_number": 464,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'He' = هو (عن شخص ذكر).",
+      "context": {
+        "line_number": 464,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'He' = ERKAK, 'She' = ayol.",
+      "context": {
+        "line_number": 464,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'He' = ذكر، 'She' = أنثى.",
+      "context": {
+        "line_number": 464,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.practice.option_label",
+      "field": "option_label",
+      "value": "Erkak kishi (Male person)",
+      "context": {
+        "line_number": 464,
+        "field": "option_label",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.practice.option_label",
+      "field": "option_label",
+      "value": "Ayol kishi (Female person)",
+      "context": {
+        "line_number": 464,
+        "field": "option_label",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.practice.instruction",
+      "field": "instruction",
+      "value": "'He' va 'she' — qanday tanlanadi?",
+      "context": {
+        "line_number": 465,
+        "field": "instruction",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.practice.instruction",
+      "field": "instruction",
+      "value": "هل نستخدم 'He' للفتاة؟",
+      "context": {
+        "line_number": 465,
+        "field": "instruction",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.practice.success_msg",
+      "field": "success_msg",
+      "value": "'He' = ERKAK (u). 'She' = AYOL (u). Jins bo'yicha farqlanadi.",
+      "context": {
+        "line_number": 465,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.practice.success_msg",
+      "field": "success_msg",
+      "value": "'He' = ذكر (هو). 'She' = أنثى (هي). يختلفان حسب الجنس.",
+      "context": {
+        "line_number": 465,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'He' faqat ERKAK uchun! 'She' = ayol.",
+      "context": {
+        "line_number": 465,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'He' فقط للذكور! 'She' = أنثى.",
+      "context": {
+        "line_number": 465,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.practice.item_uz",
+      "field": "item_uz",
+      "value": "U o'qituvchi.",
+      "context": {
+        "line_number": 466,
+        "field": "item_uz",
+        "speaker": "Sara",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'He ARE' emas! 'He IS' to'g'ri.",
+      "context": {
+        "line_number": 467,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'He ARE'! الصحيح 'He IS'.",
+      "context": {
+        "line_number": 467,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_he.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Sinfdagi bir erkak o'quvchi haqida gap ayting: He is ...",
+      "context": {
+        "line_number": 468,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L02_he",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.production.item_uz",
+      "field": "item_uz",
+      "value": "u (ayol)",
+      "context": {
+        "line_number": 475,
+        "field": "item_uz",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.presentation.uz_context",
+      "field": "uz_context",
+      "value": "U o'qituvchi-mi?",
+      "context": {
+        "line_number": 485,
+        "field": "uz_context",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "No, she is a student."
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.practice.instruction",
+      "field": "instruction",
+      "value": "'She' so'zi kim haqida?",
+      "context": {
+        "line_number": 486,
+        "field": "instruction",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.practice.instruction",
+      "field": "instruction",
+      "value": "عمن تتحدث كلمة 'She'؟",
+      "context": {
+        "line_number": 486,
+        "field": "instruction",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'She' = U (ayol kishi haqida).",
+      "context": {
+        "line_number": 486,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'She' = هي (عن شخص أنثى).",
+      "context": {
+        "line_number": 486,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'She' = AYOL, 'He' = erkak.",
+      "context": {
+        "line_number": 486,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'She' = أنثى، 'He' = ذكر.",
+      "context": {
+        "line_number": 486,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.practice.instruction",
+      "field": "instruction",
+      "value": "Bu gapda nima uchun 'she' ishlatilgan?",
+      "context": {
+        "line_number": 487,
+        "field": "instruction",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.practice.instruction",
+      "field": "instruction",
+      "value": "لماذا استخدمنا 'she' في هذه الجملة؟",
+      "context": {
+        "line_number": 487,
+        "field": "instruction",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.practice.success_msg",
+      "field": "success_msg",
+      "value": "'She' = U (ayol). Ayol haqida gapirganingizda 'she' ishlating.",
+      "context": {
+        "line_number": 487,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.practice.success_msg",
+      "field": "success_msg",
+      "value": "'She' = هي (أنثى). عند الحديث عن أنثى استخدم 'she'.",
+      "context": {
+        "line_number": 487,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'She' = AYOL uchun! Erkak = 'he'.",
+      "context": {
+        "line_number": 487,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'She' = للأنثى فقط! الذكر = 'he'.",
+      "context": {
+        "line_number": 487,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.practice.item_uz",
+      "field": "item_uz",
+      "value": "U o'qituvchi-mi?",
+      "context": {
+        "line_number": 488,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.practice.item_uz",
+      "field": "item_uz",
+      "value": "U Malika.",
+      "context": {
+        "line_number": 488,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: U talaba (ayol).",
+      "context": {
+        "line_number": 489,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'She ARE' emas! 'She IS' to'g'ri.",
+      "context": {
+        "line_number": 489,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'She ARE'! الصحيح 'She IS'.",
+      "context": {
+        "line_number": 489,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_she.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Sinfdagi bir qiz o'quvchi haqida gap ayting: She is ...",
+      "context": {
+        "line_number": 490,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L02_she",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.production.item_uz",
+      "field": "item_uz",
+      "value": "sizning",
+      "context": {
+        "line_number": 497,
+        "field": "item_uz",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Mening akam shu yerda-mi?",
+      "context": {
+        "line_number": 507,
+        "field": "uz_context",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "Your brother is here."
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Sizning akangiz shu yerda.",
+      "context": {
+        "line_number": 507,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "presentation",
+        "en_canonical": "Your brother is here."
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.instruction",
+      "field": "instruction",
+      "value": "'Your' so'zi kimga tegishli?",
+      "context": {
+        "line_number": 508,
+        "field": "instruction",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.instruction",
+      "field": "instruction",
+      "value": "لمن تشير كلمة 'Your'؟",
+      "context": {
+        "line_number": 508,
+        "field": "instruction",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'YOUR' = SIZNING, tinglovchiga tegishli.",
+      "context": {
+        "line_number": 508,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'YOUR' = لك، تابع للمستمع.",
+      "context": {
+        "line_number": 508,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'YOUR' = tinglovchiga, 'MY' = gapiruvchiga.",
+      "context": {
+        "line_number": 508,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'YOUR' = للمستمع، 'MY' = للمتحدث.",
+      "context": {
+        "line_number": 508,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.option_label",
+      "field": "option_label",
+      "value": "Tinglovchiga tegishli (Belongs to listener)",
+      "context": {
+        "line_number": 508,
+        "field": "option_label",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.instruction",
+      "field": "instruction",
+      "value": "'Your' va 'you' — farqi nimada?",
+      "context": {
+        "line_number": 509,
+        "field": "instruction",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.instruction",
+      "field": "instruction",
+      "value": "ما الفرق بين 'Your' و 'You'؟",
+      "context": {
+        "line_number": 509,
+        "field": "instruction",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Your' = SIZNING (egalik). 'You' = SIZ (olmosh). Egalik uchun 'your'!",
+      "context": {
+        "line_number": 509,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Your' = لك (ملكية). 'You' = أنت (ضمير). للملكية 'your'!",
+      "context": {
+        "line_number": 509,
+        "field": "success_msg",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Your' ≠ 'you'. 'Your' = SIZNING, 'You' = SIZ.",
+      "context": {
+        "line_number": 509,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Your' ≠ 'you'. 'Your' = لك، 'You' = أنت.",
+      "context": {
+        "line_number": 509,
+        "field": "fail_msg",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.option_label",
+      "field": "option_label",
+      "value": "'Your' = sizning (egalik), 'you' = siz (olmosh)",
+      "context": {
+        "line_number": 509,
+        "field": "option_label",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.option_label",
+      "field": "option_label",
+      "value": "'Your' = لك (ملكية)، 'you' = أنت (ضمير)",
+      "context": {
+        "line_number": 509,
+        "field": "option_label",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ismingiz nima, xonim?",
+      "context": {
+        "line_number": 510,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.item_uz",
+      "field": "item_uz",
+      "value": "Sizning ismingiz nima?",
+      "context": {
+        "line_number": 510,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.practice.item_uz",
+      "field": "item_uz",
+      "value": "Sizning onangiz Malika.",
+      "context": {
+        "line_number": 510,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida so'rang: Sizning ismingiz nima?",
+      "context": {
+        "line_number": 511,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'YOU name' emas! 'YOUR name' to'g'ri.",
+      "context": {
+        "line_number": 511,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'YOU name'! الصحيح 'YOUR name'.",
+      "context": {
+        "line_number": 511,
+        "field": "trap_message",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L02_your.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Do'stingizga savol bering: What is your ...?",
+      "context": {
+        "line_number": 512,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L02_your",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.production.item_uz",
+      "field": "item_uz",
+      "value": "biz",
+      "context": {
+        "line_number": 528,
+        "field": "item_uz",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Ular o'qituvchi-mi?",
+      "context": {
+        "line_number": 538,
+        "field": "uz_context",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "No, we are students."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, biz talabamiz.",
+      "context": {
+        "line_number": 538,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "No, we are students."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.instruction",
+      "field": "instruction",
+      "value": "'We' so'zi kimlar haqida?",
+      "context": {
+        "line_number": 539,
+        "field": "instruction",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.instruction",
+      "field": "instruction",
+      "value": "عمن تتحدث كلمة 'We'؟",
+      "context": {
+        "line_number": 539,
+        "field": "instruction",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'We' = BIZ, gapiruvchi + boshqalar.",
+      "context": {
+        "line_number": 539,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'We' = نحن، المتحدث + آخرون.",
+      "context": {
+        "line_number": 539,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'We' = gapiruvchi O'ZI HAM ichida.",
+      "context": {
+        "line_number": 539,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'We' = المتحدث نفسه مشمول أيضاً.",
+      "context": {
+        "line_number": 539,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.option_label",
+      "field": "option_label",
+      "value": "Gapiruvchi + boshqalar (Speaker + others)",
+      "context": {
+        "line_number": 539,
+        "field": "option_label",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.option_label",
+      "field": "option_label",
+      "value": "Faqat boshqalar (Only others)",
+      "context": {
+        "line_number": 539,
+        "field": "option_label",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.instruction",
+      "field": "instruction",
+      "value": "'We' va 'they' — farqi nimada?",
+      "context": {
+        "line_number": 540,
+        "field": "instruction",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.instruction",
+      "field": "instruction",
+      "value": "ما الفرق بين 'We' و 'They'؟",
+      "context": {
+        "line_number": 540,
+        "field": "instruction",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.success_msg",
+      "field": "success_msg",
+      "value": "'We' = BIZ (gapiruvchi + boshqalar). 'They' = ULAR (faqat boshqalar).",
+      "context": {
+        "line_number": 540,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.success_msg",
+      "field": "success_msg",
+      "value": "'We' = نحن (المتحدث + آخرون). 'They' = هم (الآخرون فقط).",
+      "context": {
+        "line_number": 540,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'We' ≠ 'they'. 'We' = men HAM, 'They' = faqat boshqalar.",
+      "context": {
+        "line_number": 540,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'We' ≠ 'they'. 'We' = أنا أيضاً، 'They' = الآخرون فقط.",
+      "context": {
+        "line_number": 540,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz talabalarmiz.",
+      "context": {
+        "line_number": 541,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz shu yerdamiz.",
+      "context": {
+        "line_number": 541,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz tayyormiz-mi?",
+      "context": {
+        "line_number": 541,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Biz talabamiz.",
+      "context": {
+        "line_number": 542,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'We IS' emas! 'We ARE' to'g'ri.",
+      "context": {
+        "line_number": 542,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'We IS'! الصحيح 'We ARE'.",
+      "context": {
+        "line_number": 542,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_we.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Siz va do'stlaringiz haqida ayting: We are ...",
+      "context": {
+        "line_number": 543,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_we",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.production.item_uz",
+      "field": "item_uz",
+      "value": "ular",
+      "context": {
+        "line_number": 550,
+        "field": "item_uz",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Ular shu yerda-mi?",
+      "context": {
+        "line_number": 560,
+        "field": "uz_context",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "Yes, they are students."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Ha, ular talaba.",
+      "context": {
+        "line_number": 560,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "Yes, they are students."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.practice.instruction",
+      "field": "instruction",
+      "value": "'They' so'zi kimlar haqida?",
+      "context": {
+        "line_number": 561,
+        "field": "instruction",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.practice.instruction",
+      "field": "instruction",
+      "value": "عمن تتحدث كلمة 'They'؟",
+      "context": {
+        "line_number": 561,
+        "field": "instruction",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'They' = ULAR, boshqa odamlar haqida.",
+      "context": {
+        "line_number": 561,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'They' = هم، عن أشخاص آخرين.",
+      "context": {
+        "line_number": 561,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'They' = BOSHQALAR, 'I/We' = gapiruvchi.",
+      "context": {
+        "line_number": 561,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'They' = الآخرون، 'I/We' = المتحدث.",
+      "context": {
+        "line_number": 561,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.practice.option_label",
+      "field": "option_label",
+      "value": "Boshqa odamlar (Other people)",
+      "context": {
+        "line_number": 561,
+        "field": "option_label",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.practice.instruction",
+      "field": "instruction",
+      "value": "'They' qanday kishilar haqida ishlatiladi?",
+      "context": {
+        "line_number": 562,
+        "field": "instruction",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.practice.instruction",
+      "field": "instruction",
+      "value": "هل تشمل 'They' المتحدث؟",
+      "context": {
+        "line_number": 562,
+        "field": "instruction",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.practice.success_msg",
+      "field": "success_msg",
+      "value": "'They' = ULAR (uchinchi shaxs ko'plik). Gapiruvchi ichida EMAS.",
+      "context": {
+        "line_number": 562,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.practice.success_msg",
+      "field": "success_msg",
+      "value": "'They' = هم (الشخص الثالث جمع). المتحدث غير مشمول.",
+      "context": {
+        "line_number": 562,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'They' = boshqa odamlar. Gapiruvchi ichida bo'lsa 'we' ishlatiladi.",
+      "context": {
+        "line_number": 562,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'They' = أشخاص آخرون. إذا كان المتحدث مشمولاً نستخدم 'we'.",
+      "context": {
+        "line_number": 562,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ular o'qituvchilar.",
+      "context": {
+        "line_number": 563,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ular mening do'stlarim.",
+      "context": {
+        "line_number": 563,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Ular talaba.",
+      "context": {
+        "line_number": 564,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'They IS' emas! 'They ARE' to'g'ri.",
+      "context": {
+        "line_number": 564,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'They IS'! الصحيح 'They ARE'.",
+      "context": {
+        "line_number": 564,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_they.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "O'qituvchilaringiz haqida ayting: They are ...",
+      "context": {
+        "line_number": 565,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_they",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.production.item_uz",
+      "field": "item_uz",
+      "value": "ota",
+      "context": {
+        "line_number": 572,
+        "field": "item_uz",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Ota kim?",
+      "context": {
+        "line_number": 582,
+        "field": "uz_context",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "My father is Omar."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Mening otam Omar.",
+      "context": {
+        "line_number": 582,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "My father is Omar."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.practice.instruction",
+      "field": "instruction",
+      "value": "'Father' kim?",
+      "context": {
+        "line_number": 583,
+        "field": "instruction",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.practice.instruction",
+      "field": "instruction",
+      "value": "من هو 'Father'؟",
+      "context": {
+        "line_number": 583,
+        "field": "instruction",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Father' = OTA, erkak ota-ona.",
+      "context": {
+        "line_number": 583,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'Father' = أب، الوالد الذكر.",
+      "context": {
+        "line_number": 583,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'Father' = ota, 'Mother' = ona.",
+      "context": {
+        "line_number": 583,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'Father' = أب، 'Mother' = أم.",
+      "context": {
+        "line_number": 583,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.practice.instruction",
+      "field": "instruction",
+      "value": "'Father' so'zini qaysi egalik so'zi bilan ishlatamiz?",
+      "context": {
+        "line_number": 584,
+        "field": "instruction",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.practice.instruction",
+      "field": "instruction",
+      "value": "أي ضمير ملكية نستخدم مع 'father'؟",
+      "context": {
+        "line_number": 584,
+        "field": "instruction",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.practice.success_msg",
+      "field": "success_msg",
+      "value": "Oila a'zolari oldidan egalik so'zi kerak: MY father, HIS father.",
+      "context": {
+        "line_number": 584,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Ingliz tilida oila a'zolari oldidan egalik so'zi SHART.",
+      "context": {
+        "line_number": 584,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bu mening otam.",
+      "context": {
+        "line_number": 585,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uning otasi shu yerda.",
+      "context": {
+        "line_number": 585,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.practice.item_uz",
+      "field": "item_uz",
+      "value": "Sizning otangiz o'qituvchi-mi?",
+      "context": {
+        "line_number": 585,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Mening otam [ism].",
+      "context": {
+        "line_number": 586,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'ARE' emas! 'My father IS' to'g'ri.",
+      "context": {
+        "line_number": 586,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'ARE'! الصحيح 'My father IS'.",
+      "context": {
+        "line_number": 586,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_father.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Otangiz haqida gap ayting: My father is ...",
+      "context": {
+        "line_number": 587,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_father",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.production.item_uz",
+      "field": "item_uz",
+      "value": "uning (erkak)",
+      "context": {
+        "line_number": 594,
+        "field": "item_uz",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Mening ismim Karim-mi?",
+      "context": {
+        "line_number": 604,
+        "field": "uz_context",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "No, his name is Karim."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, uning ismi Karim.",
+      "context": {
+        "line_number": 604,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "No, his name is Karim."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.instruction",
+      "field": "instruction",
+      "value": "'His' so'zi kimga tegishli?",
+      "context": {
+        "line_number": 605,
+        "field": "instruction",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.instruction",
+      "field": "instruction",
+      "value": "لمن تشير 'His'؟",
+      "context": {
+        "line_number": 605,
+        "field": "instruction",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'HIS' = UNING (erkak kishiga tegishli).",
+      "context": {
+        "line_number": 605,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'HIS' = له (تابع للذكر).",
+      "context": {
+        "line_number": 605,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'HIS' = erkak, 'HER' = ayol.",
+      "context": {
+        "line_number": 605,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'HIS' = ذكر، 'HER' = أنثى.",
+      "context": {
+        "line_number": 605,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.option_label",
+      "field": "option_label",
+      "value": "Erkak kishiga tegishli (Belongs to male)",
+      "context": {
+        "line_number": 605,
+        "field": "option_label",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.option_label",
+      "field": "option_label",
+      "value": "Ayol kishiga tegishli (Belongs to female)",
+      "context": {
+        "line_number": 605,
+        "field": "option_label",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.instruction",
+      "field": "instruction",
+      "value": "'His' va 'he' — qanday farq bor?",
+      "context": {
+        "line_number": 606,
+        "field": "instruction",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.instruction",
+      "field": "instruction",
+      "value": "ما الفرق بين 'His' و 'He'؟",
+      "context": {
+        "line_number": 606,
+        "field": "instruction",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.success_msg",
+      "field": "success_msg",
+      "value": "'His' = UNING (egalik). 'He' = U (olmosh). Egalik uchun 'his'!",
+      "context": {
+        "line_number": 606,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.success_msg",
+      "field": "success_msg",
+      "value": "'His' = له (ملكية). 'He' = هو (ضمير). للملكية 'his'!",
+      "context": {
+        "line_number": 606,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'His' ≠ 'he'. 'His' = UNING (egalik), 'He' = U (olmosh).",
+      "context": {
+        "line_number": 606,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'His' ≠ 'he'. 'His' = له (ملكية)، 'He' = هو (ضمير).",
+      "context": {
+        "line_number": 606,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.option_label",
+      "field": "option_label",
+      "value": "'His' = uning (egalik), 'he' = u (olmosh)",
+      "context": {
+        "line_number": 606,
+        "field": "option_label",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.option_label",
+      "field": "option_label",
+      "value": "'His' = له (ملكية)، 'he' = هو (ضمير)",
+      "context": {
+        "line_number": 606,
+        "field": "option_label",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uning ismi Omar.",
+      "context": {
+        "line_number": 607,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uning singlisi talaba-mi?",
+      "context": {
+        "line_number": 607,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Uning ismi Karim (erkak).",
+      "context": {
+        "line_number": 608,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'HE name' emas! 'HIS name' to'g'ri.",
+      "context": {
+        "line_number": 608,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'HE name'! الصحيح 'HIS name'.",
+      "context": {
+        "line_number": 608,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_his.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Do'stingiz (erkak) haqida ayting: His name is ...",
+      "context": {
+        "line_number": 609,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_his",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.production.item_uz",
+      "field": "item_uz",
+      "value": "ona",
+      "context": {
+        "line_number": 616,
+        "field": "item_uz",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Ona kim?",
+      "context": {
+        "line_number": 626,
+        "field": "uz_context",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "My mother is Laylo."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Mening onam Laylo.",
+      "context": {
+        "line_number": 626,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "My mother is Laylo."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.instruction",
+      "field": "instruction",
+      "value": "'Mother' kim?",
+      "context": {
+        "line_number": 627,
+        "field": "instruction",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.instruction",
+      "field": "instruction",
+      "value": "من هي 'Mother'؟",
+      "context": {
+        "line_number": 627,
+        "field": "instruction",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Mother' = ONA, ayol ota-ona.",
+      "context": {
+        "line_number": 627,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'Mother' = أم، الوالدة.",
+      "context": {
+        "line_number": 627,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'Mother' = ona, 'Father' = ota.",
+      "context": {
+        "line_number": 627,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'Mother' = أم، 'Father' = أب.",
+      "context": {
+        "line_number": 627,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.instruction",
+      "field": "instruction",
+      "value": "'Mother' va 'father' — oiladagi roli nimada?",
+      "context": {
+        "line_number": 628,
+        "field": "instruction",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Mother' = ONA (ayol ota-ona). 'Father' = OTA (erkak ota-ona).",
+      "context": {
+        "line_number": 628,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Mother' = أم (الوالدة). 'Father' = أب (الوالد).",
+      "context": {
+        "line_number": 628,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Mother' = ONA! 'Father' = OTA. Adashmang!",
+      "context": {
+        "line_number": 628,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Mother' = أم! 'Father' = أب. لا تخلط بينهما!",
+      "context": {
+        "line_number": 628,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.option_label",
+      "field": "option_label",
+      "value": "'Mother' = ona (ayol ota-ona)",
+      "context": {
+        "line_number": 628,
+        "field": "option_label",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.option_label",
+      "field": "option_label",
+      "value": "'Mother' = أم (الوالدة)",
+      "context": {
+        "line_number": 628,
+        "field": "option_label",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.option_label",
+      "field": "option_label",
+      "value": "'Mother' = ota (erkak ota-ona)",
+      "context": {
+        "line_number": 628,
+        "field": "option_label",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.option_label",
+      "field": "option_label",
+      "value": "'Mother' = أب (الوالد)",
+      "context": {
+        "line_number": 628,
+        "field": "option_label",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bu mening onam.",
+      "context": {
+        "line_number": 629,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uning onasi Malika.",
+      "context": {
+        "line_number": 629,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.practice.item_uz",
+      "field": "item_uz",
+      "value": "Sizning onangiz shu yerda-mi?",
+      "context": {
+        "line_number": 629,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Mening onam [ism].",
+      "context": {
+        "line_number": 630,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'ARE' emas! 'My mother IS' to'g'ri.",
+      "context": {
+        "line_number": 630,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'ARE'! الصحيح 'My mother IS'.",
+      "context": {
+        "line_number": 630,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_mother.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Onangiz haqida gap ayting: My mother is ...",
+      "context": {
+        "line_number": 631,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_mother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.production.item_uz",
+      "field": "item_uz",
+      "value": "uning (ayol)",
+      "context": {
+        "line_number": 638,
+        "field": "item_uz",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Mening onamning ismi nima?",
+      "context": {
+        "line_number": 648,
+        "field": "uz_context",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "Her name is Malika."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Uning ismi Malika.",
+      "context": {
+        "line_number": 648,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "Her name is Malika."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.instruction",
+      "field": "instruction",
+      "value": "'Her' so'zi kimga tegishli?",
+      "context": {
+        "line_number": 649,
+        "field": "instruction",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.instruction",
+      "field": "instruction",
+      "value": "لمن تشير 'Her'؟",
+      "context": {
+        "line_number": 649,
+        "field": "instruction",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'HER' = UNING (ayol kishiga tegishli).",
+      "context": {
+        "line_number": 649,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'HER' = لها (تابع للأنثى).",
+      "context": {
+        "line_number": 649,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'HER' = ayol, 'HIS' = erkak.",
+      "context": {
+        "line_number": 649,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'HER' = أنثى، 'HIS' = ذكر.",
+      "context": {
+        "line_number": 649,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.instruction",
+      "field": "instruction",
+      "value": "'Her' qaysi jinsdagi kishi uchun ishlatiladi?",
+      "context": {
+        "line_number": 650,
+        "field": "instruction",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.instruction",
+      "field": "instruction",
+      "value": "هل هناك فرق بين 'Her' و 'His'؟",
+      "context": {
+        "line_number": 650,
+        "field": "instruction",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Her' = UNING (ayol). 'His' = UNING (erkak). Jins bo'yicha farqlanadi.",
+      "context": {
+        "line_number": 650,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Her' = لها (أنثى). 'His' = له (ذكر). يختلفان حسب الجنس.",
+      "context": {
+        "line_number": 650,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Her' = AYOL uchun! Erkak uchun 'his' ishlating.",
+      "context": {
+        "line_number": 650,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Her' = للأنثى فقط! للذكر استخدم 'his'.",
+      "context": {
+        "line_number": 650,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.option_label",
+      "field": "option_label",
+      "value": "Ayol uchun — 'her' = uning (ayol)",
+      "context": {
+        "line_number": 650,
+        "field": "option_label",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.option_label",
+      "field": "option_label",
+      "value": "Erkak uchun — 'her' = uning (erkak)",
+      "context": {
+        "line_number": 650,
+        "field": "option_label",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uning ismi Laylo.",
+      "context": {
+        "line_number": 651,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uning otasi Omar.",
+      "context": {
+        "line_number": 651,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uning akasi shu yerda-mi?",
+      "context": {
+        "line_number": 651,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Uning ismi Malika (ayol).",
+      "context": {
+        "line_number": 652,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'SHE name' emas! 'HER name' to'g'ri.",
+      "context": {
+        "line_number": 652,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'SHE name'! الصحيح 'HER name'.",
+      "context": {
+        "line_number": 652,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_her.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Do'stingiz (qiz) haqida ayting: Her name is ...",
+      "context": {
+        "line_number": 653,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_her",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.production.item_uz",
+      "field": "item_uz",
+      "value": "aka",
+      "context": {
+        "line_number": 660,
+        "field": "item_uz",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Akangiz shu yerda-mi?",
+      "context": {
+        "line_number": 670,
+        "field": "uz_context",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "Yes, my brother is here."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Ha, mening akam shu yerda.",
+      "context": {
+        "line_number": 670,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "Yes, my brother is here."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.instruction",
+      "field": "instruction",
+      "value": "'Brother' kim?",
+      "context": {
+        "line_number": 671,
+        "field": "instruction",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.instruction",
+      "field": "instruction",
+      "value": "من هو 'Brother'؟",
+      "context": {
+        "line_number": 671,
+        "field": "instruction",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Brother' = AKA, erkak bola.",
+      "context": {
+        "line_number": 671,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'Brother' = أخ.",
+      "context": {
+        "line_number": 671,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'Brother' = aka, 'Sister' = singil.",
+      "context": {
+        "line_number": 671,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'Brother' = أخ، 'Sister' = أخت.",
+      "context": {
+        "line_number": 671,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.instruction",
+      "field": "instruction",
+      "value": "'Brother' va 'sister' — qanday juftlik?",
+      "context": {
+        "line_number": 672,
+        "field": "instruction",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.instruction",
+      "field": "instruction",
+      "value": "ما العلاقة بين 'Brother' و 'Sister'؟",
+      "context": {
+        "line_number": 672,
+        "field": "instruction",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Brother' = AKA/UKA (erkak). 'Sister' = OPA/SINGIL (ayol).",
+      "context": {
+        "line_number": 672,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Brother' = أخ (ذكر). 'Sister' = أخت (أنثى).",
+      "context": {
+        "line_number": 672,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Brother' = erkak bola, 'Sister' = ayol bola. Farq bor!",
+      "context": {
+        "line_number": 672,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Brother' = أخ ذكر، 'Sister' = أخت أنثى. هناك فرق!",
+      "context": {
+        "line_number": 672,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.option_label",
+      "field": "option_label",
+      "value": "'Brother' = erkak, 'sister' = ayol (aka-singil)",
+      "context": {
+        "line_number": 672,
+        "field": "option_label",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.option_label",
+      "field": "option_label",
+      "value": "'Brother' = ذكر، 'sister' = أنثى (أخ-أخت)",
+      "context": {
+        "line_number": 672,
+        "field": "option_label",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bu mening akam.",
+      "context": {
+        "line_number": 673,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening akam talaba.",
+      "context": {
+        "line_number": 673,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uning akasi shu yerda.",
+      "context": {
+        "line_number": 673,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida so'rang: Sizning akangiz shu yerda-mi?",
+      "context": {
+        "line_number": 674,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ Savol uchun 'IS' birinchi! 'IS your brother here?' to'g'ri.",
+      "context": {
+        "line_number": 674,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ في السؤال 'IS' أولاً! الصحيح 'IS your brother here?'.",
+      "context": {
+        "line_number": 674,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_brother.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Akangiz yoki ukangiz bormi? My brother is ...",
+      "context": {
+        "line_number": 675,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_brother",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.production.item_uz",
+      "field": "item_uz",
+      "value": "singil",
+      "context": {
+        "line_number": 682,
+        "field": "item_uz",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Singlingiz shu yerda-mi?",
+      "context": {
+        "line_number": 692,
+        "field": "uz_context",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "Yes, my sister is here."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Ha, mening singlim shu yerda.",
+      "context": {
+        "line_number": 692,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "presentation",
+        "en_canonical": "Yes, my sister is here."
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.instruction",
+      "field": "instruction",
+      "value": "'Sister' kim?",
+      "context": {
+        "line_number": 693,
+        "field": "instruction",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.instruction",
+      "field": "instruction",
+      "value": "من هي 'Sister'؟",
+      "context": {
+        "line_number": 693,
+        "field": "instruction",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Sister' = SINGIL, ayol bola.",
+      "context": {
+        "line_number": 693,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.success_msg",
+      "field": "success_msg",
+      "value": "صحيح! 'Sister' = أخت.",
+      "context": {
+        "line_number": 693,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Yo'q. 'Sister' = singil, 'Brother' = aka.",
+      "context": {
+        "line_number": 693,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "لا. 'Sister' = أخت، 'Brother' = أخ.",
+      "context": {
+        "line_number": 693,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.instruction",
+      "field": "instruction",
+      "value": "'Sister' so'zi kimni bildiradi?",
+      "context": {
+        "line_number": 694,
+        "field": "instruction",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.instruction",
+      "field": "instruction",
+      "value": "ما معنى كلمة 'Sister'؟",
+      "context": {
+        "line_number": 694,
+        "field": "instruction",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Sister' = OPA/SINGIL (ayol). Erkak = 'brother'.",
+      "context": {
+        "line_number": 694,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.success_msg",
+      "field": "success_msg",
+      "value": "'Sister' = أخت (أنثى). الذكر = 'brother'.",
+      "context": {
+        "line_number": 694,
+        "field": "success_msg",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Sister' = AYOL bola! Erkak = 'brother'.",
+      "context": {
+        "line_number": 694,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Sister' = أنثى! الذكر = 'brother'.",
+      "context": {
+        "line_number": 694,
+        "field": "fail_msg",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.option_label",
+      "field": "option_label",
+      "value": "Ayol aka-uka (opa yoki singil)",
+      "context": {
+        "line_number": 694,
+        "field": "option_label",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.option_label",
+      "field": "option_label",
+      "value": "Erkak aka-uka (aka yoki uka)",
+      "context": {
+        "line_number": 694,
+        "field": "option_label",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bu mening singlim.",
+      "context": {
+        "line_number": 695,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.item_uz",
+      "field": "item_uz",
+      "value": "Sizning singlingiz talaba-mi?",
+      "context": {
+        "line_number": 695,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uning singlisi o'qituvchi.",
+      "context": {
+        "line_number": 695,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: Mening singlim shu yerda.",
+      "context": {
+        "line_number": 696,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'ARE' emas! 'My sister IS' to'g'ri.",
+      "context": {
+        "line_number": 696,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ ليس 'ARE'! الصحيح 'My sister IS'.",
+      "context": {
+        "line_number": 696,
+        "field": "trap_message",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_L03_sister.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Opangiz yoki singlingiz bormi? My sister is ...",
+      "context": {
+        "line_number": 697,
+        "field": "uz_prompt",
+        "item_id": "V_U01_L03_sister",
+        "dialogue_id": "U01_L03_D01",
+        "phase": "production"
+      }
+    }
+  ]
+}

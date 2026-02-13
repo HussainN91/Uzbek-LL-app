@@ -18,17 +18,7 @@ import {
   resolveUIData,
   mergeMissingKeys
 } from './tile-utils.js';
-
-/**
- * Bilingual string retrieval functions from window
- */
-function getUz(path) {
-  return typeof window.getUz === 'function' ? window.getUz(path) : path;
-}
-
-function getEn(path) {
-  return typeof window.getEn === 'function' ? window.getEn(path) : path;
-}
+import { uz as getUz, en as getEn } from '../core/i18n.js';
 
 /**
  * Access getGrandTileSpec from window
@@ -86,21 +76,21 @@ export function renderGrandTile(unitId) {
   // Create title element
   const title = document.createElement("div");
   title.className = "tile-title";
-  title.textContent = "Birlik \u200D\u201C Yakuniy Topshiriq";
+  title.textContent = getUz('grand.tileTitle');
   title.classList.add("tl-uz");
-  title.dataset.translation = "Unit \u200D\u201C Final Task";
+  title.dataset.translation = getEn('grand.tileTitle');
 
   // Validate data availability
   if (!spec && !r.data.uz_instruction && !r.data.expected_output_sample) {
     const msg = document.createElement("div");
     msg.className = "tile-section";
-    msg.textContent = "Grand tile ma'lumotlari topilmadi.";
+    msg.textContent = getUz('grand.noData');
     msg.classList.add("tl-uz");
-    msg.dataset.translation = "Grand tile data not found.";
+    msg.dataset.translation = getEn('grand.noData');
     
-    const btnFinish = createButton("Birlikni yakunlash", () => transitionToTile(STATES.DONE));
+    const btnFinish = createButton(getUz('grand.completeUnit'), () => transitionToTile(STATES.DONE));
     btnFinish.classList.add("tl-uz");
-    btnFinish.dataset.translation = "Finish Unit";
+    btnFinish.dataset.translation = getEn('grand.finishUnit');
     
     tileContainer.appendChild(title);
     tileContainer.appendChild(msg);
@@ -111,16 +101,16 @@ export function renderGrandTile(unitId) {
   // Create instruction section
   const instr = document.createElement("div");
   instr.className = "tile-section";
-  instr.textContent = r.data.uz_instruction || (spec && spec.uz_instruction) || "Birlik topshirig'ini bajaring.";
+  instr.textContent = r.data.uz_instruction || (spec && spec.uz_instruction) || getUz('grand.fallbackInstruction');
   instr.classList.add("tl-uz");
-  instr.dataset.translation = "Complete the unit task.";
+  instr.dataset.translation = getEn('grand.taskInstruction');
 
   // Create text input area
   const textarea = document.createElement("textarea");
   textarea.rows = 6;
-  textarea.placeholder = "Bu yerda yozing...";
+  textarea.placeholder = getUz('grand.placeholder');
   textarea.classList.add("tl-uz");
-  textarea.dataset.translation = "Write here...";
+  textarea.dataset.translation = getEn('grand.placeholder');
 
   // Create samples section
   const samplesDiv = document.createElement("div");
@@ -184,7 +174,7 @@ export function renderGrandTile(unitId) {
     const passed = reasons.length === 0;
     
     if (passed) {
-      feedback.textContent = "Yaxshi! Birlik topshirig'i muvaffaqiyatli bajarildi.";
+      feedback.textContent = getUz('grand.success');
       feedback.className = "feedback ok";
     } else {
       if (reasons.includes("len")) {
@@ -192,9 +182,9 @@ export function renderGrandTile(unitId) {
       } else if (reasons.includes("tl")) {
         feedback.textContent = getUz("grandTile.feedback.requiredMissing").replace("${words}", missingTL.join(", "));
       } else if (reasons.includes("tv")) {
-        feedback.textContent = "Dars so'zlarini ko'proq ishlating (kamida " + tvNeed + " ta so'z).";
+        feedback.textContent = getUz('grand.needMoreWords').replace('{count}', tvNeed);
       } else {
-        feedback.textContent = "Yetarli emas. Qayta urinib ko'ring.";
+        feedback.textContent = getUz('grand.failure');
       }
       feedback.className = "feedback err";
     }
@@ -203,14 +193,14 @@ export function renderGrandTile(unitId) {
   });
 
   // Finish button
-  const btnFinish = createButton("Birlikni yakunlash", () => {
+  const btnFinish = createButton(getUz('grand.completeUnit'), () => {
     const lastPassed = feedback.dataset.lastPassed === "true";
     if (lastPassed) {
       // GRAND_TILE completion does NOT auto-unlock next unit (future-safe)
       // Just go to DONE state, unit selector handles unit progression separately
       transitionToTile(STATES.DONE);
     } else {
-      feedback.textContent = "Oldin Grand Tile topshirig'ini bajaring.";
+      feedback.textContent = getUz('grand.gate');
       feedback.className = "feedback err";
     }
   });

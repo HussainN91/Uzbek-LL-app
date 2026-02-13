@@ -1,0 +1,632 @@
+{
+  "meta": {
+    "unit": "10",
+    "source_file": "vocab_cards_u10_4act.js",
+    "total_strings": 54,
+    "categories": {
+      "line_uz": 24,
+      "item_uz": 30
+    },
+    "version": "1.0.0"
+  },
+  "strings": [
+    {
+      "id": "dialogues.U10_L01_D01.line_118",
+      "field": "line_uz",
+      "value": "Salom Bekzod! Sen nima sotib olayapsan?",
+      "context": {
+        "line_number": 118,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "dialogue_id": "U10_L01_D01",
+        "en_line": "Hi Bekzod! What are you buying?"
+      }
+    },
+    {
+      "id": "dialogues.U10_L01_D01.line_119",
+      "field": "line_uz",
+      "value": "Men pechenye sotib olayapman. Nonushta uchun.",
+      "context": {
+        "line_number": 119,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U10_L01_D01",
+        "en_line": "I'm buying biscuits. For breakfast."
+      }
+    },
+    {
+      "id": "dialogues.U10_L01_D01.line_120",
+      "field": "line_uz",
+      "value": "Yaxshi! Men pishloq sotib olayapman. Tushlik uchun.",
+      "context": {
+        "line_number": 120,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "dialogue_id": "U10_L01_D01",
+        "en_line": "Good! I'm buying cheese. For lunch."
+      }
+    },
+    {
+      "id": "dialogues.U10_L01_D01.line_121",
+      "field": "line_uz",
+      "value": "Zo'r! Bu sirg'alar-chi? Kimga?",
+      "context": {
+        "line_number": 121,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U10_L01_D01",
+        "en_line": "Great! What about these earrings? For whom?"
+      }
+    },
+    {
+      "id": "dialogues.U10_L01_D01.line_122",
+      "field": "line_uz",
+      "value": "Bu sirg'alar onam uchun. Uning tug'ilgan kuni uchun.",
+      "context": {
+        "line_number": 122,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "dialogue_id": "U10_L01_D01",
+        "en_line": "These earrings are for my mother. For her birthday."
+      }
+    },
+    {
+      "id": "dialogues.U10_L01_D01.line_123",
+      "field": "line_uz",
+      "value": "Chiroyli! Bu hamyon seniki-mi?",
+      "context": {
+        "line_number": 123,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U10_L01_D01",
+        "en_line": "Beautiful! Is this wallet yours?"
+      }
+    },
+    {
+      "id": "dialogues.U10_L01_D01.line_124",
+      "field": "line_uz",
+      "value": "Ha, bu hamyon meniki. Men uni kecha sotib oldim.",
+      "context": {
+        "line_number": 124,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "dialogue_id": "U10_L01_D01",
+        "en_line": "Yes, this wallet is mine. I bought it yesterday."
+      }
+    },
+    {
+      "id": "dialogues.U10_L01_D01.line_125",
+      "field": "line_uz",
+      "value": "Yaxshi tanlov! Endi to'lash vaqti!",
+      "context": {
+        "line_number": 125,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "dialogue_id": "U10_L01_D01",
+        "en_line": "Good choice! Now it's time to pay!"
+      }
+    },
+    {
+      "id": "dialogues.U10_L02_D01.line_145",
+      "field": "line_uz",
+      "value": "Salom Otabek! Sen nima sotib oldingiz?",
+      "context": {
+        "line_number": 145,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "dialogue_id": "U10_L02_D01",
+        "en_line": "Hi Otabek! What did you buy?"
+      }
+    },
+    {
+      "id": "dialogues.U10_L02_D01.line_146",
+      "field": "line_uz",
+      "value": "Men biroz pechenye sotib oldim. Bir nechta.",
+      "context": {
+        "line_number": 146,
+        "field": "line_uz",
+        "speaker": "Otabek",
+        "dialogue_id": "U10_L02_D01",
+        "en_line": "I bought some biscuits. A few."
+      }
+    },
+    {
+      "id": "dialogues.U10_L02_D01.line_147",
+      "field": "line_uz",
+      "value": "Yaxshi! Men biroz pishloq sotib oldim. Ozgina.",
+      "context": {
+        "line_number": 147,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "dialogue_id": "U10_L02_D01",
+        "en_line": "Good! I bought some cheese. A bit."
+      }
+    },
+    {
+      "id": "dialogues.U10_L02_D01.line_148",
+      "field": "line_uz",
+      "value": "Sen biroz pul sarfladingizmi? Ko'pmi?",
+      "context": {
+        "line_number": 148,
+        "field": "line_uz",
+        "speaker": "Otabek",
+        "dialogue_id": "U10_L02_D01",
+        "en_line": "Did you spend some money? A lot?"
+      }
+    },
+    {
+      "id": "dialogues.U10_L02_D01.line_149",
+      "field": "line_uz",
+      "value": "Yo'q, ko'p emas. Men ozgina pul sarfladim.",
+      "context": {
+        "line_number": 149,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "dialogue_id": "U10_L02_D01",
+        "en_line": "No, not a lot. I spent a bit of money."
+      }
+    },
+    {
+      "id": "dialogues.U10_L02_D01.line_150",
+      "field": "line_uz",
+      "value": "Men ham. Men bir nechta tanga oldim.",
+      "context": {
+        "line_number": 150,
+        "field": "line_uz",
+        "speaker": "Otabek",
+        "dialogue_id": "U10_L02_D01",
+        "en_line": "Me too. I received a few coins."
+      }
+    },
+    {
+      "id": "dialogues.U10_L02_D01.line_151",
+      "field": "line_uz",
+      "value": "Chek oldingizmi?",
+      "context": {
+        "line_number": 151,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "dialogue_id": "U10_L02_D01",
+        "en_line": "Did you get the receipt?"
+      }
+    },
+    {
+      "id": "dialogues.U10_L02_D01.line_152",
+      "field": "line_uz",
+      "value": "Ha, men chekni oldim. U meniki.",
+      "context": {
+        "line_number": 152,
+        "field": "line_uz",
+        "speaker": "Otabek",
+        "dialogue_id": "U10_L02_D01",
+        "en_line": "Yes, I got the receipt. It's mine."
+      }
+    },
+    {
+      "id": "dialogues.U10_L03_D01.line_172",
+      "field": "line_uz",
+      "value": "Salom Sardor! Bu sumka qancha?",
+      "context": {
+        "line_number": 172,
+        "field": "line_uz",
+        "speaker": "Gulnora",
+        "dialogue_id": "U10_L03_D01",
+        "en_line": "Hi Sardor! How much is this bag?"
+      }
+    },
+    {
+      "id": "dialogues.U10_L03_D01.line_173",
+      "field": "line_uz",
+      "value": "Bu sumka 50 dollarga. Juda qimmat!",
+      "context": {
+        "line_number": 173,
+        "field": "line_uz",
+        "speaker": "Sardor",
+        "dialogue_id": "U10_L03_D01",
+        "en_line": "This bag is for 50 dollars. Very expensive!"
+      }
+    },
+    {
+      "id": "dialogues.U10_L03_D01.line_174",
+      "field": "line_uz",
+      "value": "Juda qimmat! Men eski sumkamni 20 dollarga sotdim.",
+      "context": {
+        "line_number": 174,
+        "field": "line_uz",
+        "speaker": "Gulnora",
+        "dialogue_id": "U10_L03_D01",
+        "en_line": "Very expensive! I sold my old bag for 20 dollars."
+      }
+    },
+    {
+      "id": "dialogues.U10_L03_D01.line_175",
+      "field": "line_uz",
+      "value": "Yaxshi! Bu ish dushanba kuni uchun tugashi kerak.",
+      "context": {
+        "line_number": 175,
+        "field": "line_uz",
+        "speaker": "Sardor",
+        "dialogue_id": "U10_L03_D01",
+        "en_line": "Good! This work must be finished for Monday."
+      }
+    },
+    {
+      "id": "dialogues.U10_L03_D01.line_176",
+      "field": "line_uz",
+      "value": "Aytgancha, Ispaniya ovqati bilan mashhur.",
+      "context": {
+        "line_number": 176,
+        "field": "line_uz",
+        "speaker": "Gulnora",
+        "dialogue_id": "U10_L03_D01",
+        "en_line": "By the way, Spain is famous for food."
+      }
+    },
+    {
+      "id": "dialogues.U10_L03_D01.line_177",
+      "field": "line_uz",
+      "value": "Ha! Va 'Sneakers' - bu 'trainers' uchun so'z.",
+      "context": {
+        "line_number": 177,
+        "field": "line_uz",
+        "speaker": "Sardor",
+        "dialogue_id": "U10_L03_D01",
+        "en_line": "Yes! And 'Sneakers' - this is the word for 'trainers'."
+      }
+    },
+    {
+      "id": "dialogues.U10_L03_D01.line_178",
+      "field": "line_uz",
+      "value": "To'g'ri! Men chegirma uchun so'rayman.",
+      "context": {
+        "line_number": 178,
+        "field": "line_uz",
+        "speaker": "Gulnora",
+        "dialogue_id": "U10_L03_D01",
+        "en_line": "Right! I'll ask for a discount."
+      }
+    },
+    {
+      "id": "dialogues.U10_L03_D01.line_179",
+      "field": "line_uz",
+      "value": "Yaxshi fikr! Chekni oling!",
+      "context": {
+        "line_number": 179,
+        "field": "line_uz",
+        "speaker": "Sardor",
+        "dialogue_id": "U10_L03_D01",
+        "en_line": "Good idea! Get the receipt!"
+      }
+    },
+    {
+      "id": "items.V_U10_L01_biscuit.item_uz",
+      "field": "item_uz",
+      "value": "pechenye(lar)",
+      "context": {
+        "line_number": 205,
+        "field": "item_uz",
+        "item_id": "V_U10_L01_biscuit",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L01_cheese.item_uz",
+      "field": "item_uz",
+      "value": "pishloq",
+      "context": {
+        "line_number": 221,
+        "field": "item_uz",
+        "item_id": "V_U10_L01_cheese",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L01_for_purpose.item_uz",
+      "field": "item_uz",
+      "value": "uchun (maqsad)",
+      "context": {
+        "line_number": 237,
+        "field": "item_uz",
+        "item_id": "V_U10_L01_for_purpose",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L01_for_person.item_uz",
+      "field": "item_uz",
+      "value": "uchun (odam)",
+      "context": {
+        "line_number": 253,
+        "field": "item_uz",
+        "item_id": "V_U10_L01_for_person",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L01_earring.item_uz",
+      "field": "item_uz",
+      "value": "sirg'a(lar)",
+      "context": {
+        "line_number": 269,
+        "field": "item_uz",
+        "item_id": "V_U10_L01_earring",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L01_wallet.item_uz",
+      "field": "item_uz",
+      "value": "hamyon (erkaklar)",
+      "context": {
+        "line_number": 285,
+        "field": "item_uz",
+        "item_id": "V_U10_L01_wallet",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L01_purse.item_uz",
+      "field": "item_uz",
+      "value": "hamyon (ayollar)",
+      "context": {
+        "line_number": 301,
+        "field": "item_uz",
+        "item_id": "V_U10_L01_purse",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L01_shop.item_uz",
+      "field": "item_uz",
+      "value": "do'kon",
+      "context": {
+        "line_number": 317,
+        "field": "item_uz",
+        "item_id": "V_U10_L01_shop",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L02_a_few.item_uz",
+      "field": "item_uz",
+      "value": "bir nechta (sanaladigan)",
+      "context": {
+        "line_number": 350,
+        "field": "item_uz",
+        "item_id": "V_U10_L02_a_few",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L02_a_bit_of.item_uz",
+      "field": "item_uz",
+      "value": "ozgina (sanalmaydigan)",
+      "context": {
+        "line_number": 366,
+        "field": "item_uz",
+        "item_id": "V_U10_L02_a_bit_of",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L02_a_lot_of.item_uz",
+      "field": "item_uz",
+      "value": "juda ko'p (ikkalasi uchun)",
+      "context": {
+        "line_number": 382,
+        "field": "item_uz",
+        "item_id": "V_U10_L02_a_lot_of",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L02_money.item_uz",
+      "field": "item_uz",
+      "value": "pul",
+      "context": {
+        "line_number": 398,
+        "field": "item_uz",
+        "item_id": "V_U10_L02_money",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L02_coin.item_uz",
+      "field": "item_uz",
+      "value": "tanga(lar)",
+      "context": {
+        "line_number": 414,
+        "field": "item_uz",
+        "item_id": "V_U10_L02_coin",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L02_receipt.item_uz",
+      "field": "item_uz",
+      "value": "chek (to'lov qog'ozi)",
+      "context": {
+        "line_number": 430,
+        "field": "item_uz",
+        "item_id": "V_U10_L02_receipt",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L02_spend.item_uz",
+      "field": "item_uz",
+      "value": "sarflamoq",
+      "context": {
+        "line_number": 446,
+        "field": "item_uz",
+        "item_id": "V_U10_L02_spend",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L02_countable_uncountable.item_uz",
+      "field": "item_uz",
+      "value": "Sanaladigan va Sanalmaydigan",
+      "context": {
+        "line_number": 462,
+        "field": "item_uz",
+        "item_id": "V_U10_L02_countable_uncountable",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L03_how_much.item_uz",
+      "field": "item_uz",
+      "value": "Qancha...?",
+      "context": {
+        "line_number": 495,
+        "field": "item_uz",
+        "item_id": "V_U10_L03_how_much",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L03_for_price.item_uz",
+      "field": "item_uz",
+      "value": "ga (narx uchun)",
+      "context": {
+        "line_number": 511,
+        "field": "item_uz",
+        "item_id": "V_U10_L03_for_price",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L03_sold.item_uz",
+      "field": "item_uz",
+      "value": "sotdim/sotdi (o'tmish)",
+      "context": {
+        "line_number": 527,
+        "field": "item_uz",
+        "item_id": "V_U10_L03_sold",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L03_for_deadline.item_uz",
+      "field": "item_uz",
+      "value": "ga (muddat/vaqt)",
+      "context": {
+        "line_number": 543,
+        "field": "item_uz",
+        "item_id": "V_U10_L03_for_deadline",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L03_famous_for.item_uz",
+      "field": "item_uz",
+      "value": "bilan mashhur",
+      "context": {
+        "line_number": 559,
+        "field": "item_uz",
+        "item_id": "V_U10_L03_famous_for",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L03_word_for.item_uz",
+      "field": "item_uz",
+      "value": "uchun so'z",
+      "context": {
+        "line_number": 575,
+        "field": "item_uz",
+        "item_id": "V_U10_L03_word_for",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L03_price.item_uz",
+      "field": "item_uz",
+      "value": "narx",
+      "context": {
+        "line_number": 591,
+        "field": "item_uz",
+        "item_id": "V_U10_L03_price",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L03_discount.item_uz",
+      "field": "item_uz",
+      "value": "chegirma",
+      "context": {
+        "line_number": 607,
+        "field": "item_uz",
+        "item_id": "V_U10_L03_discount",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L03_sale.item_uz",
+      "field": "item_uz",
+      "value": "sotuv (arzonlashtirilgan)",
+      "context": {
+        "line_number": 623,
+        "field": "item_uz",
+        "item_id": "V_U10_L03_sale",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L03_bill.item_uz",
+      "field": "item_uz",
+      "value": "hisob (to'lovdan oldin)",
+      "context": {
+        "line_number": 639,
+        "field": "item_uz",
+        "item_id": "V_U10_L03_bill",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L03_cash.item_uz",
+      "field": "item_uz",
+      "value": "naqd pul",
+      "context": {
+        "line_number": 655,
+        "field": "item_uz",
+        "item_id": "V_U10_L03_cash",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L03_jewellery.item_uz",
+      "field": "item_uz",
+      "value": "taqinchoqlar",
+      "context": {
+        "line_number": 671,
+        "field": "item_uz",
+        "item_id": "V_U10_L03_jewellery",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L03_make_up.item_uz",
+      "field": "item_uz",
+      "value": "pardoz vositalari",
+      "context": {
+        "line_number": 687,
+        "field": "item_uz",
+        "item_id": "V_U10_L03_make_up",
+        "dialogue_id": "U10_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U10_L03_rules_summary.item_uz",
+      "field": "item_uz",
+      "value": "Miqdor qoidalari",
+      "context": {
+        "line_number": 703,
+        "field": "item_uz",
+        "item_id": "V_U10_L03_rules_summary",
+        "dialogue_id": "U10_L03_D01"
+      }
+    }
+  ]
+}

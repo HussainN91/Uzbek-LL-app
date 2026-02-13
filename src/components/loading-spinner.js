@@ -7,6 +7,8 @@
  * @version 1.0.0
  */
 
+import { uz } from '../core/i18n.js';
+
 /**
  * Create a loading spinner element
  * @returns {HTMLElement} Loading spinner div
@@ -21,7 +23,7 @@ export function createLoadingSpinner() {
   
   const text = document.createElement('div');
   text.className = 'spinner-text';
-  text.textContent = 'Loading...';
+  text.textContent = uz('ui.loading');
   spinner.appendChild(text);
   
   return spinner;

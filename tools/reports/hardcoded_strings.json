@@ -1,0 +1,334 @@
+{
+  "meta": {
+    "total_strings": 34,
+    "by_severity": {
+      "high": 6,
+      "medium": 4,
+      "low": 24
+    },
+    "by_pattern": {
+      "innerHTML": 5,
+      "dataField": 24,
+      "createButton": 5
+    },
+    "by_file": {
+      "src\\components\\instruction-banner.js": 1,
+      "src\\core\\badge-catalog.js": 12,
+      "src\\games\\grammar-ppp.js": 11,
+      "src\\tiles\\function-tile.js": 1,
+      "src\\tiles\\listen-write-tile.js": 1,
+      "src\\tiles\\mistake-tile.js": 4,
+      "src\\tiles\\pattern-tile.js": 2,
+      "src\\tiles\\unit-error-tile.js": 1,
+      "src\\tiles\\writing-tile.js": 1
+    }
+  },
+  "strings": [
+    {
+      "file": "src\\components\\instruction-banner.js",
+      "line": 220,
+      "type": "innerHTML",
+      "string": "🔊 Tinglash",
+      "severity": "medium",
+      "suggested_key": "instructionBanner.tinglash",
+      "has_translation": false
+    },
+    {
+      "file": "src\\core\\badge-catalog.js",
+      "line": 45,
+      "type": "dataField",
+      "string": "Birinchi qadam",
+      "severity": "low",
+      "suggested_key": "badges.birinchiQadam",
+      "has_translation": false
+    },
+    {
+      "file": "src\\core\\badge-catalog.js",
+      "line": 56,
+      "type": "dataField",
+      "string": "O\\'quvchi",
+      "severity": "low",
+      "suggested_key": "badges.oquvchi",
+      "has_translation": false
+    },
+    {
+      "file": "src\\core\\badge-catalog.js",
+      "line": 78,
+      "type": "dataField",
+      "string": "O\\'zlashtiruvchi",
+      "severity": "low",
+      "suggested_key": "badges.ozlashtiruvchi",
+      "has_translation": false
+    },
+    {
+      "file": "src\\core\\badge-catalog.js",
+      "line": 100,
+      "type": "dataField",
+      "string": "Yulduz o\\'quvchi",
+      "severity": "low",
+      "suggested_key": "badges.yulduzOquvchi",
+      "has_translation": false
+    },
+    {
+      "file": "src\\core\\badge-catalog.js",
+      "line": 124,
+      "type": "dataField",
+      "string": "Yuqori natija",
+      "severity": "low",
+      "suggested_key": "badges.yuqoriNatija",
+      "has_translation": false
+    },
+    {
+      "file": "src\\core\\badge-catalog.js",
+      "line": 126,
+      "type": "dataField",
+      "string": "Darsda 90% dan yuqori natija",
+      "severity": "low",
+      "suggested_key": "badges.darsda90DanYuqori",
+      "has_translation": false
+    },
+    {
+      "file": "src\\core\\badge-catalog.js",
+      "line": 135,
+      "type": "dataField",
+      "string": "Barqaror",
+      "severity": "low",
+      "suggested_key": "badges.barqaror",
+      "has_translation": false
+    },
+    {
+      "file": "src\\core\\badge-catalog.js",
+      "line": 137,
+      "type": "dataField",
+      "string": "Ketma-ket 3 darsda 80% dan yuqori",
+      "severity": "low",
+      "suggested_key": "badges.ketmaket3Darsda80",
+      "has_translation": false
+    },
+    {
+      "file": "src\\core\\badge-catalog.js",
+      "line": 194,
+      "type": "dataField",
+      "string": "10 ta so\\'z o\\'zlashtirildi",
+      "severity": "low",
+      "suggested_key": "badges.10TaSozOzlashtirildi",
+      "has_translation": false
+    },
+    {
+      "file": "src\\core\\badge-catalog.js",
+      "line": 196,
+      "type": "dataField",
+      "string": "10 ta lug\\'at so\\'zini o\\'zlashtirdingiz",
+      "severity": "low",
+      "suggested_key": "badges.10TaLugatSozini",
+      "has_translation": false
+    },
+    {
+      "file": "src\\core\\badge-catalog.js",
+      "line": 205,
+      "type": "dataField",
+      "string": "50 ta so\\'z o\\'zlashtirildi",
+      "severity": "low",
+      "suggested_key": "badges.50TaSozOzlashtirildi",
+      "has_translation": false
+    },
+    {
+      "file": "src\\core\\badge-catalog.js",
+      "line": 207,
+      "type": "dataField",
+      "string": "50 ta lug\\'at so\\'zini o\\'zlashtirdingiz",
+      "severity": "low",
+      "suggested_key": "badges.50TaLugatSozini",
+      "has_translation": false
+    },
+    {
+      "file": "src\\games\\grammar-ppp.js",
+      "line": 322,
+      "type": "dataField",
+      "string": "O\\'zingizning gaplaringizni yarating",
+      "severity": "low",
+      "suggested_key": "grammarPPP.ozingizningGaplaringizniYarati",
+      "has_translation": false
+    },
+    {
+      "file": "src\\games\\grammar-ppp.js",
+      "line": 323,
+      "type": "dataField",
+      "string": "Namuna asosida mashq qiling",
+      "severity": "low",
+      "suggested_key": "grammarPPP.namunaAsosidaMashqQiling",
+      "has_translation": false
+    },
+    {
+      "file": "src\\games\\grammar-ppp.js",
+      "line": 332,
+      "type": "dataField",
+      "string": "Namunani kashf eting",
+      "severity": "low",
+      "suggested_key": "grammarPPP.namunaniKashfEting",
+      "has_translation": false
+    },
+    {
+      "file": "src\\games\\grammar-ppp.js",
+      "line": 339,
+      "type": "dataField",
+      "string": "Ushbu misollarga qarang. Nima sezasiz?",
+      "severity": "low",
+      "suggested_key": "grammarPPP.ushbuMisollargaQarangNima",
+      "has_translation": false
+    },
+    {
+      "file": "src\\games\\grammar-ppp.js",
+      "line": 356,
+      "type": "dataField",
+      "string": "Boshqarilgan mashq",
+      "severity": "low",
+      "suggested_key": "grammarPPP.boshqarilganMashq",
+      "has_translation": false
+    },
+    {
+      "file": "src\\games\\grammar-ppp.js",
+      "line": 361,
+      "type": "dataField",
+      "string": "Gaplarni to\\'ldiring",
+      "severity": "low",
+      "suggested_key": "grammarPPP.gaplarniToldiring",
+      "has_translation": false
+    },
+    {
+      "file": "src\\games\\grammar-ppp.js",
+      "line": 370,
+      "type": "dataField",
+      "string": "🚀 ISHLAB CHIQARISH",
+      "severity": "low",
+      "suggested_key": "grammarPPP.ishlabChiqarish",
+      "has_translation": false
+    },
+    {
+      "file": "src\\games\\grammar-ppp.js",
+      "line": 372,
+      "type": "dataField",
+      "string": "Erkin ishlab chiqarish",
+      "severity": "low",
+      "suggested_key": "grammarPPP.erkinIshlabChiqarish",
+      "has_translation": false
+    },
+    {
+      "file": "src\\games\\grammar-ppp.js",
+      "line": 377,
+      "type": "dataField",
+      "string": "O\\'zingiz yarating",
+      "severity": "low",
+      "suggested_key": "grammarPPP.ozingizYarating",
+      "has_translation": false
+    },
+    {
+      "file": "src\\games\\grammar-ppp.js",
+      "line": 961,
+      "type": "innerHTML",
+      "string": "<span class=\"ccq-hint\">🤔 Yana o\\'ylab ko\\'ring... \"-ing\" qo\\'shimchasi nimani bildiradi?</span>",
+      "severity": "medium",
+      "suggested_key": "grammarPPP.spanClassccqhintYanaOylab",
+      "has_translation": false
+    },
+    {
+      "file": "src\\games\\grammar-ppp.js",
+      "line": 1015,
+      "type": "innerHTML",
+      "string": "<span class=\"feedback-wrong\">❌ Qaytadan o\\'ylab ko\\'ring</span>",
+      "severity": "medium",
+      "suggested_key": "grammarPPP.spanClassfeedbackwrongQaytadan",
+      "has_translation": false
+    },
+    {
+      "file": "src\\tiles\\function-tile.js",
+      "line": 730,
+      "type": "createButton",
+      "string": "Tugallash",
+      "severity": "high",
+      "suggested_key": "function.tugallash",
+      "has_translation": false
+    },
+    {
+      "file": "src\\tiles\\listen-write-tile.js",
+      "line": 116,
+      "type": "createButton",
+      "string": "Qaytish: WRITING",
+      "severity": "high",
+      "suggested_key": "listenWrite.qaytishWriting",
+      "has_translation": false
+    },
+    {
+      "file": "src\\tiles\\mistake-tile.js",
+      "line": 65,
+      "type": "dataField",
+      "string": "Determiner (my/your...) ot bilan keladi; pronoun 'mine' mustaqil keladi.",
+      "severity": "low",
+      "suggested_key": "mistake.determinerMyyourOtBilan",
+      "has_translation": false
+    },
+    {
+      "file": "src\\tiles\\mistake-tile.js",
+      "line": 75,
+      "type": "dataField",
+      "string": "'Money' sanalmaydi, shuning uchun 'a few' ishlatilmaydi.",
+      "severity": "low",
+      "suggested_key": "mistake.moneySanalmaydiShuningUchun",
+      "has_translation": false
+    },
+    {
+      "file": "src\\tiles\\mistake-tile.js",
+      "line": 81,
+      "type": "dataField",
+      "string": "'Books' sanaladi, shuning uchun 'a bit of' ishlatilmaydi.",
+      "severity": "low",
+      "suggested_key": "mistake.booksSanaladiShuningUchun",
+      "has_translation": false
+    },
+    {
+      "file": "src\\tiles\\mistake-tile.js",
+      "line": 127,
+      "type": "createButton",
+      "string": "Qaytish: LISTEN_WRITE",
+      "severity": "high",
+      "suggested_key": "mistake.qaytishListen_write",
+      "has_translation": false
+    },
+    {
+      "file": "src\\tiles\\pattern-tile.js",
+      "line": 401,
+      "type": "innerHTML",
+      "string": "1️⃣ <strong>Eshiting</strong> → 2️⃣ <strong>Qaytaring</strong> → 3️⃣ <strong>Taqqoslang</strong>",
+      "severity": "high",
+      "suggested_key": "pattern.1Strongeshitingstrong2Strongqa",
+      "has_translation": true
+    },
+    {
+      "file": "src\\tiles\\pattern-tile.js",
+      "line": 410,
+      "type": "innerHTML",
+      "string": "🔊 Eshiting",
+      "severity": "medium",
+      "suggested_key": "pattern.eshiting",
+      "has_translation": false
+    },
+    {
+      "file": "src\\tiles\\unit-error-tile.js",
+      "line": 153,
+      "type": "createButton",
+      "string": "Tinglash",
+      "severity": "high",
+      "suggested_key": "unitError.tinglash",
+      "has_translation": true
+    },
+    {
+      "file": "src\\tiles\\writing-tile.js",
+      "line": 97,
+      "type": "createButton",
+      "string": "Qaytish: CONTROLLED",
+      "severity": "high",
+      "suggested_key": "writing.qaytishControlled",
+      "has_translation": false
+    }
+  ]
+}

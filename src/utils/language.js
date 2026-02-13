@@ -8,14 +8,18 @@
 
 export const LANGUAGES = {
   UZ: 'uz', // Uzbek (Default)
+  EN: 'en', // English
   AR: 'ar', // Arabic
+  RU: 'ru', // Russian
   ID: 'id', // Indonesian
   ZH: 'zh', // Chinese
 };
 
 export const LANGUAGE_META = {
   [LANGUAGES.UZ]: { label: "O'zbekcha", dir: 'ltr', flag: '🇺🇿' },
+  [LANGUAGES.EN]: { label: "English", dir: 'ltr', flag: '🇬🇧' },
   [LANGUAGES.AR]: { label: "العربية", dir: 'rtl', flag: '🇸🇦' },
+  [LANGUAGES.RU]: { label: "Русский", dir: 'ltr', flag: '🇷🇺' },
   [LANGUAGES.ID]: { label: "Bahasa Indonesia", dir: 'ltr', flag: '🇮🇩' },
   [LANGUAGES.ZH]: { label: "中文", dir: 'ltr', flag: '🇨🇳' },
 };

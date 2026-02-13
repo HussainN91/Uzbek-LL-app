@@ -31,6 +31,7 @@ import {
   setLastListenWritePassed,
   getCurrentLessonId
 } from './navigation.js';
+import { uz, en } from './i18n.js';
 
 // ============================
 // UNIT SELECTOR
@@ -69,7 +70,7 @@ export async function buildUnitSelectorUI() {
     
     const btn = createButton(label, async () => {
       if (!isUnlocked && !isCurrent) {
-        alert(`Oldin Unit ${parseInt(prevUnitId.substring(1))} ni yakunlang.`);
+        alert(uz('uiBuilders.completeUnitFirst').replace('{unit}', parseInt(prevUnitId.substring(1))));
         return;
       }
       
@@ -90,7 +91,7 @@ export async function buildUnitSelectorUI() {
     if (!isUnlocked && !isCurrent) {
       btn.style.opacity = "0.5";
       btn.style.cursor = "not-allowed";
-      btn.title = "🔒 Locked: Complete previous unit first";
+      btn.title = uz('uiBuilders.lockedUnit');
     }
     
     // Highlight current
@@ -148,7 +149,7 @@ export function buildLessonSelectorUI() {
     const lesson = lessons[lid] || {};
     const lessonNumber = idx + 1;
     const functionText = lesson.function_en || lesson.function_uz || "";
-    const label = `Lesson ${lessonNumber}: ${functionText.charAt(0).toUpperCase()}${functionText.slice(1)}`;
+    const label = uz('uiBuilders.lessonLabel').replace('{num}', lessonNumber).replace('{name}', `${functionText.charAt(0).toUpperCase()}${functionText.slice(1)}`);
     
     // Unlock check
     const prevLessonId = idx > 0 ? ids[idx - 1] : null;
@@ -157,7 +158,7 @@ export function buildLessonSelectorUI() {
     const btn = createButton(label, () => {
       const isUnlocked = window.DEV_BYPASS_GATES || window.TEACHER_MODE || !prevLessonId || completedLessons.has(prevLessonId);
       if (!isUnlocked && !isCurrent) {
-        alert(`Oldin Lesson ${idx} ni yakunlang.`);
+        alert(uz('uiBuilders.completeLessonFirst').replace('{lesson}', idx));
         return;
       }
       
@@ -177,7 +178,7 @@ export function buildLessonSelectorUI() {
     if (!visualIsUnlocked && !isCurrent) {
       btn.style.opacity = "0.5";
       btn.style.cursor = "not-allowed";
-      btn.title = "🔒 Locked";
+      btn.title = uz('uiBuilders.lockedLesson');
     }
     
     // Current style

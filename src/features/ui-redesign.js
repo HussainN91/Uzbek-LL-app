@@ -11,6 +11,8 @@
 
 'use strict';
 
+import { uz, en } from '../core/i18n.js';
+
   const w = /** @type {any} */ (window);
   let _sidebarUnitsCache = null;
 
@@ -51,7 +53,7 @@
         <div class="sidebar-header">
           <div class="app-logo">
             <span class="app-logo-icon">🇺🇿</span>
-            <span>Learn English</span>
+            <span>${uz('uiRedesign.learnEnglish')}</span>
           </div>
         </div>
         <nav class="sidebar-nav" id="sidebar-nav"></nav>
@@ -143,7 +145,7 @@
         unitBtn.setAttribute('aria-disabled', 'true');
       }
 
-      const unitLabel = unitSelectorButtons[idx]?.textContent?.trim() || `Unit ${parseInt(unitNum)}`;
+      const unitLabel = unitSelectorButtons[idx]?.textContent?.trim() || uz('uiRedesign.unitBreadcrumb').replace('{num}', parseInt(unitNum));
 
       unitBtn.innerHTML = `
         <span class="unit-icon">${getUnitIcon(unitNum)}</span>
@@ -175,7 +177,7 @@
         if (!isUnlocked && !isActive) {
           const lockedBtn = unitSelectorButtons[idx];
           if (lockedBtn) lockedBtn.click();
-          else alert('Complete previous unit first.');
+          else alert(uz('uiRedesign.completePrevUnit'));
           return;
         }
         
@@ -267,7 +269,7 @@
     if (unitId !== currentUnit) {
       const empty = document.createElement('div');
       empty.className = 'lesson-empty';
-      empty.textContent = 'Select unit to view lessons';
+      empty.textContent = uz('uiRedesign.selectUnit');
       drawer.appendChild(empty);
       return drawer;
     }
@@ -278,13 +280,13 @@
     if (!lessonButtons.length) {
       const empty = document.createElement('div');
       empty.className = 'lesson-empty';
-      empty.textContent = 'Lessons load after selecting unit';
+      empty.textContent = uz('uiRedesign.lessonsAfterUnit');
       drawer.appendChild(empty);
       return drawer;
     }
 
     lessonButtons.forEach((sourceBtn, index) => {
-      const lessonLabel = sourceBtn.textContent?.trim() || `Lesson ${index + 1}`;
+      const lessonLabel = sourceBtn.textContent?.trim() || uz('uiRedesign.lessonBreadcrumb').replace('{num}', index + 1);
       const isLocked = sourceBtn.style.cursor === 'not-allowed' || sourceBtn.title.includes('Oldin Lesson');
       const isActive = sourceBtn.classList.contains('active');
 
@@ -435,9 +437,9 @@
 
     topBarLeft.innerHTML = `
       <div class="breadcrumbs">
-        <span class="breadcrumb-item">Unit ${unitNum}</span>
+        <span class="breadcrumb-item">${uz('uiRedesign.unitBreadcrumb').replace('{num}', unitNum)}</span>
         <span class="breadcrumb-separator">›</span>
-        <span class="breadcrumb-current">Lesson ${parseInt(lessonNum)}</span>
+        <span class="breadcrumb-current">${uz('uiRedesign.lessonBreadcrumb').replace('{num}', parseInt(lessonNum))}</span>
       </div>
     `;
 
@@ -510,7 +512,7 @@
         
         const title = document.createElement('div');
         title.className = 'instruction-callout-title';
-        title.textContent = "💡 Ko'rsatma (Instruction)";
+        title.textContent = uz('uiRedesign.instructionTitle');
         
         const content = document.createElement('div');
         content.innerHTML = el.innerHTML;
@@ -633,14 +635,15 @@
     const existing = tileContainer.querySelector('.step-meta');
     const indicator = existing?.querySelector('.step-indicator');
     if (indicator) {
-      indicator.textContent = `STEP ${currentStep} OF ${totalSteps}`;
+      indicator.textContent = uz('uiRedesign.stepIndicator').replace('{current}', currentStep).replace('{total}', totalSteps);
       return;
     }
 
     const stepMeta = document.createElement('div');
     stepMeta.className = 'step-meta';
+    const stepText = uz('uiRedesign.stepIndicator').replace('{current}', currentStep).replace('{total}', totalSteps);
     stepMeta.innerHTML = `
-      <div class="step-indicator">STEP ${currentStep} OF ${totalSteps}</div>
+      <div class="step-indicator">${stepText}</div>
     `;
 
     const progressBar = tileContainer.querySelector('.progress-bar-segments');

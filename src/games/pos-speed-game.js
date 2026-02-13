@@ -8,6 +8,8 @@
  * @version 2.0.0 (Phase 2 Refactor)
  */
 
+import { uz, en } from '../core/i18n.js';
+
 // ============================
 // GAME STRINGS (Uzbek/English)
 // ============================
@@ -341,7 +343,7 @@ class POSSpeedGame {
         
         <div class="pos-game-info-box">
           <div class="pos-game-info-title">
-            So'z turlari:
+            ${uz('posGame.wordTypes')}
           </div>
           <div class="pos-game-category-grid">
             ${categoryItemsHTML}
@@ -390,7 +392,7 @@ class POSSpeedGame {
             ${this.currentWordIndex + 1} / ${this.gameWords.length}
           </div>
           <div class="pos-game-score">
-            Ball: ${this.score}
+            ${uz('posGame.score').replace('{score}', this.score)}
           </div>
         </div>
 
@@ -541,11 +543,11 @@ class POSSpeedGame {
     feedback.innerHTML = `
       <div class="pos-game-feedback-icon">${icons[type]}</div>
       <div class="pos-game-feedback-message pos-game-feedback-message--${type}">${message}</div>
-      ${type !== 'correct' ? `<div class="pos-game-feedback-answer">Javob: <strong>${answer}</strong></div>` : ''}
+      ${type !== 'correct' ? `<div class="pos-game-feedback-answer">${uz('posGame.answer')} <strong>${answer}</strong></div>` : ''}
       <div class="pos-game-feedback-buttons">
-        ${onRetry ? `<button data-action="retry" class="pos-game-feedback-btn pos-game-feedback-btn--primary">Qayta urinib ko'rish</button>` : ''}
+        ${onRetry ? `<button data-action="retry" class="pos-game-feedback-btn pos-game-feedback-btn--primary">${uz('posGame.retry')}</button>` : ''}
         <button data-action="next" class="pos-game-feedback-btn ${onRetry ? 'pos-game-feedback-btn--secondary' : 'pos-game-feedback-btn--primary'}">
-          ${onRetry ? 'Keyingi so\'z' : 'Davom etish'}
+          ${onRetry ? uz('posGame.nextWord') : uz('posGame.continue')}
         </button>
       </div>
     `;
@@ -585,17 +587,17 @@ class POSSpeedGame {
         <h2 class="pos-game-results-title">${s.results.title.uz}</h2>
         
         <div class="pos-game-results-score-section">
-          <div class="pos-game-results-label">Sizning ballingiz:</div>
+          <div class="pos-game-results-label">${uz('posGame.yourScore')}</div>
           <div class="pos-game-results-score">${this.score}</div>
           <div class="pos-game-results-fraction">${this.correctAnswers} / ${this.gameWords.length}</div>
         </div>
 
         <div class="pos-game-results-summary">
-          Siz ${percentage}% to'g'ri javob berdingiz!
+          ${uz('posGame.percentCorrect').replace('{percent}', percentage)}
         </div>
 
         <button class="pos-game-close-btn pos-game-btn mt-24">
-          Yopish
+          ${uz('posGame.close')}
         </button>
       </div>
     `;

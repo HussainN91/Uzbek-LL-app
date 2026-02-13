@@ -144,10 +144,10 @@ function _trackTokenUsage(token, isCorrect) {
  */
 function _uzFailRemarkForStage(stageName) {
   const remarks = {
-    "GAP": "Qayta urinib ko'ring. To'g'ri so'zni toping.",
-    "REORDER": "Tartibni tekshiring. Gapni to'g'ri tuzing."
+    "GAP": uz('controlled.retryFindWord'),
+    "REORDER": uz('controlled.checkOrder')
   };
-  return remarks[stageName] || "Kamida 80% to'g'ri bo'lishi kerak.";
+  return remarks[stageName] || uz('controlled.minCorrect80');
 }
 
 // ============================
@@ -219,7 +219,7 @@ export function renderControlledTile(lesson) {
           otherVocabs.sort(() => 0.5 - Math.random());
 
           const target = card.en;
-          const promptUz = card.production ? card.production.uz_prompt : "Translate: " + card.en;
+          const promptUz = card.production ? card.production.uz_prompt : uz('controlled.translatePrefix') + card.en;
 
           const srsItem = {
             id: "SRS_" + id,
@@ -227,7 +227,7 @@ export function renderControlledTile(lesson) {
             prompt_en: "___ (" + promptUz + ")",
             answer: target,
             options: [target, otherVocabs[0]?.en || "distractor1", otherVocabs[1]?.en || "distractor2"].sort(() => 0.5 - Math.random()),
-            explanation: "Repetition: " + target
+            explanation: uz('controlled.repetitionPrefix') + target
           };
           items.push(srsItem);
         }
@@ -282,17 +282,17 @@ export function renderControlledTile(lesson) {
 
   const loadLabel = document.createElement("span");
   loadLabel.style.cssText = "font-size:0.85rem;color:#666;white-space:nowrap;";
-  loadLabel.textContent = items.length + " ta mashq";
-  loadLabel.dataset.translation = items.length + " exercises";
+  loadLabel.textContent = uz('controlled.exerciseCount').replace('{count}', items.length);
+  loadLabel.dataset.translation = en('controlled.exerciseCount').replace('{count}', items.length);
 
   loadIndicator.appendChild(loadBar);
   loadIndicator.appendChild(loadLabel);
 
   const info = document.createElement("div");
   info.className = "tile-section";
-  info.textContent = "Har bosqich ≥80% to'plang. " + totalStages + " bosqichni o'ting.";
+  info.textContent = uz('controlled.stageInstruction').replace('{total}', totalStages);
   info.classList.add("tl-uz");
-  info.dataset.translation = "Each stage must be passed (≥80%). Pass all " + totalStages + " stages.";
+  info.dataset.translation = en('controlled.stageInstruction').replace('{total}', totalStages);
 
   // Stage progress dots
   const stageLine = document.createElement("div");
@@ -341,8 +341,8 @@ export function renderControlledTile(lesson) {
 
     const pTitle = document.createElement("div");
     pTitle.style.cssText = "font-weight:600;margin-bottom:12px;color:#1565c0;";
-    pTitle.textContent = "📖 Avval o'qing:";
-    pTitle.dataset.translation = "Read first:";
+    pTitle.textContent = uz('controlled.readFirst');
+    pTitle.dataset.translation = en('controlled.readFirst');
     pTitle.classList.add("tl-uz");
     passage.appendChild(pTitle);
 
@@ -362,7 +362,7 @@ export function renderControlledTile(lesson) {
     });
     passage.appendChild(ul);
 
-    const btnFinish = createButton("O'qib bo'ldim ✓", () => {
+    const btnFinish = createButton(uz('controlled.readDone'), () => {
       passage.style.opacity = "0";
       setTimeout(() => {
         // Mark pre-read complete in AppState
@@ -372,7 +372,7 @@ export function renderControlledTile(lesson) {
     });
     btnFinish.style.marginTop = "12px";
     btnFinish.classList.add("tl-uz");
-    btnFinish.dataset.translation = "I've finished reading ✓";
+    btnFinish.dataset.translation = en('controlled.readDone');
 
     tileContainer.appendChild(title);
     tileContainer.appendChild(loadIndicator);
@@ -443,11 +443,11 @@ export function renderControlledTile(lesson) {
     feedback.dataset.scoreInitialized = "true";
   }
 
-  const btnCheck = createButton("Check", () => {
+  const btnCheck = createButton(uz('buttons.check'), () => {
     checkControlledAnswers(inputs, reorderInputs, feedback, pointsPerItem, stageName);
   });
 
-  const btnContinue = createButton("Continue", () => {
+  const btnContinue = createButton(uz('buttons.continue'), () => {
     handleControlledContinue(feedback, lesson, CONTROLLED_STAGES, renderControlledTile);
   });
 
@@ -472,7 +472,7 @@ export function renderControlledTile(lesson) {
 
 function renderReorderItem(wrapper, item, idx, reorderInputs) {
   const label = document.createElement("div");
-  label.textContent = "Reorder tokens to form a correct sentence:";
+  label.textContent = uz('controlled.reorderInstruction');
 
   const tokenBox = document.createElement("div");
   tokenBox.className = "reorder-token-box";
@@ -550,7 +550,7 @@ function renderGapItem(wrapper, item, idx, inputs, lesson, stageName) {
   const input = document.createElement("input");
   input.type = "text";
   input.dataset.answer = String(item.answer || "");
-  input.placeholder = "Type the missing word...";
+  input.placeholder = uz('controlled.gapPlaceholder');
 
   if (!item.answer && window.__DEV_AUDIT__) {
     console.warn("⚠️ GAP item [" + (idx + 1) + "] has no answer!");
@@ -670,7 +670,7 @@ function getDragAfterElement(container, x) {
 function checkControlledAnswers(inputs, reorderInputs, feedback, pointsPerItem, stageName) {
   const total = inputs.length + reorderInputs.length;
   if (total === 0) {
-    feedback.textContent = "No controlled items available.";
+    feedback.textContent = uz('controlled.noItems');
     feedback.className = "feedback err";
     return;
   }
@@ -706,11 +706,11 @@ function checkControlledAnswers(inputs, reorderInputs, feedback, pointsPerItem, 
       hint.style.cssText = "font-size:0.85rem;color:#d35400;margin-top:4px;";
 
       if (val[0].toLowerCase() !== ans[0].toLowerCase()) {
-        hint.textContent = `💡 Hint: Starts with "${ans[0]}..."`;
+        hint.textContent = uz('controlled.hintStartsWith').replace('{letter}', ans[0]);
       } else if (val.length !== ans.length) {
-        hint.textContent = `💡 Hint: Word length is ${ans.length} letters.`;
+        hint.textContent = uz('controlled.hintWordLength').replace('{length}', ans.length);
       } else {
-        hint.textContent = `💡 Hint: Check spelling.`;
+        hint.textContent = uz('controlled.hintCheckSpelling');
       }
       input.parentNode.appendChild(hint);
     }
@@ -745,11 +745,11 @@ function checkControlledAnswers(inputs, reorderInputs, feedback, pointsPerItem, 
       const ansWords = ans.split(" ");
 
       if (userWords[0] !== ansWords[0]) {
-        hint.textContent = `💡 Hint: The first word should be "${ansWords[0]}".`;
+        hint.textContent = uz('controlled.hintFirstWord').replace('{word}', ansWords[0]);
       } else if (userWords[userWords.length - 1] !== ansWords[ansWords.length - 1]) {
-        hint.textContent = `💡 Hint: The last word should be "${ansWords[ansWords.length - 1]}".`;
+        hint.textContent = uz('controlled.hintLastWord').replace('{word}', ansWords[ansWords.length - 1]);
       } else {
-        hint.textContent = `💡 Hint: Check the middle words.`;
+        hint.textContent = uz('controlled.hintMiddleWords');
       }
       wrapper.appendChild(hint);
     }
@@ -766,7 +766,7 @@ function checkControlledAnswers(inputs, reorderInputs, feedback, pointsPerItem, 
 
   if (score >= 0.8) {
     const pointsMsg = newlyCorrect > 0 ? " (+" + (newlyCorrect * pointsPerItem) + " points)" : "";
-    feedback.textContent = "Yaxshi. Keyingi bosqich ochildi." + pointsMsg;
+    feedback.textContent = uz('controlled.stageUnlocked') + pointsMsg;
     feedback.className = "feedback ok";
     playSound('correct');
   } else {
@@ -818,7 +818,7 @@ function handleControlledContinue(feedback, lesson, CONTROLLED_STAGES, renderCon
     }
   } else {
     playSound('wrong');
-    feedback.textContent = "Oldin bu bosqichdan o'ting (≥80%).";
+    feedback.textContent = uz('controlled.stageLocked');
     feedback.className = "feedback err";
   }
 }

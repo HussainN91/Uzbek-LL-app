@@ -151,14 +151,17 @@ export function adapt4ActFormat(rawCard) {
     phase: 'presentation',
     presentation: {
       uz_polar_question: presentationSlide?.uz_context || '',
+      ar_polar_question: presentationSlide?.ar_context || '',
       uz_mirror_answer: presentationSlide?.uz_mirror_answer || '',
+      ar_mirror_answer: presentationSlide?.ar_mirror_answer || '',
       hybrid_answer: presentationSlide?.hybrid_answer || '',
       uz_context: []
     },
     reproduction: { en_canonical: presentationSlide?.en_canonical || '' },
     audio: presentationSlide?.audio || null,
     grammar_visual: presentationSlide?.grammar_visual || null,
-    syntax_scaffold: scaffoldValue
+    syntax_scaffold: scaffoldValue,
+    ar_syntax_scaffold: presentationSlide?.ar_syntax_scaffold || null
   };
 
   // ─── Slide 2: CONCEPT CHECK ──────────────────────────────────
@@ -171,7 +174,8 @@ export function adapt4ActFormat(rawCard) {
       conceptExercise = {
         type: conceptCheckSlide.exercise.type,
         data: conceptCheckSlide.exercise,
-        instruction: conceptCheckSlide.instruction || ''
+        instruction: conceptCheckSlide.instruction || '',
+        ar_instruction: conceptCheckSlide.ar_instruction || ''
       };
     } else if (conceptCheckSlide.choices || conceptCheckSlide.question_uz) {
       // U07+ format: convert question_uz + choices to function_sort exercise
@@ -209,11 +213,14 @@ export function adapt4ActFormat(rawCard) {
     type: 'discovery',
     // Legacy fields
     instruction: discoverySlide?.instruction || discoverySlide?.why_prompt || '',
+    ar_instruction: discoverySlide?.ar_instruction || '',
     sentence: discoverySlide?.sentence || '',
     highlight_tokens: discoverySlide?.highlight_tokens || [],
     options: discoverySlide?.options || [],
     success_msg: discoverySlide?.success_msg || '',
+    ar_success_msg: discoverySlide?.ar_success_msg || '',
     fail_msg: discoverySlide?.fail_msg || '',
+    ar_fail_msg: discoverySlide?.ar_fail_msg || '',
     // U07+ grammar pattern fields
     grammar_token: discoverySlide?.grammar_token || '',
     form_focus: discoverySlide?.form_focus || '',
@@ -231,6 +238,7 @@ export function adapt4ActFormat(rawCard) {
       en_examples: (drillListSlide?.en_examples || []).map(ex => ({
         sentence: ex.en || '',
         sentence_uz: ex.uz || '',
+        sentence_ar: ex.ar || '',
         is_anchor: ex.is_anchor || false,
         source_dialogue: ex.source_dialogue || null,
         speaker: ex.speaker || null,
@@ -247,6 +255,7 @@ export function adapt4ActFormat(rawCard) {
     phase: 'production',
     production: {
       uz_prompt: productionSlide?.uz_prompt || productionSlide?.prompt_uz || '',
+      ar_prompt: productionSlide?.ar_prompt || '',
       en_target: productionSlide?.model_answer || productionSlide?.model_sentence || '',
       model_answer: productionSlide?.model_answer || productionSlide?.model_sentence || '',
       accepted_answers: productionSlide?.accepted_answers || [],
@@ -262,10 +271,12 @@ export function adapt4ActFormat(rawCard) {
     phase: 'production',
     type: 'personalization',
     uz_prompt: personalizationSlide?.uz_prompt || personalizationSlide?.prompt_uz || '',
+    ar_prompt: personalizationSlide?.ar_prompt || '',
     focus_pattern: personalizationSlide?.focus_pattern || personalizationSlide?.model_frame || '',
     accepted_patterns: personalizationSlide?.accepted_patterns || personalizationSlide?.tags || [],
     on_success: personalizationSlide?.on_success || null,
     success_msg: personalizationSlide?.on_success?.message || 'Well done!',
+    ar_success_msg: personalizationSlide?.on_success?.ar_message || '',
     fail_msg: 'Try using the target pattern in your answer.',
     flexibleCheck: personalizationSlide?.flexibleCheck || false,
     model_frame: personalizationSlide?.model_frame || ''

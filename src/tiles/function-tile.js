@@ -18,27 +18,8 @@ import {
   resolveUIData,
   mergeMissingKeys
 } from './tile-utils.js';
-import { uz, en } from '../core/i18n.js';
+import { uz as getUz, en as getEn } from '../core/i18n.js';
 import { createInstructionBanner } from '../components/instruction-banner.js';
-
-// ============================
-// UI STRING HELPERS
-// ============================
-
-/**
- * Get Uzbek UI string — delegates to centralized i18n
- */
-function getUz(path) {
-  return uz(path);
-}
-
-/**
- * Get English UI string — delegates to centralized i18n
- */
-function getEn(path) {
-  return en(path);
-}
-
 // ============================
 // DRAG & DROP HELPERS
 // ============================
@@ -166,8 +147,8 @@ function createDropZone(labelUz, correctIds, labelEn) {
       "O'zingizni tanishtirish": "Introducing yourself",
       "Do'stingizga kuningiz haqida aytib beryapsiz": "Telling a friend about your day",
       "Yangi odam bilan tanishyapsiz": "Meeting a new person",
-      "(Yangi)": "(New)",
-      "(Oldingi)": "(Previous)",
+      [getUz('function.labelNew')]: "(New)",
+      [getUz('function.labelPrevious')]: "(Previous)",
       "Chastota": "Frequency",
       "Vaqt": "Time",
       "Harakat": "Action"
@@ -372,11 +353,11 @@ function renderSubtask1(functionSubtasks, subtaskState, renderCurrentSubtask) {
   pool.className = "draggable-pool";
   pool.style.cssText = "margin:16px 0;padding:12px;background:#fafafa;border:1px solid #ddd;border-radius:4px;";
   const poolLabel = document.createElement("div");
-  poolLabel.textContent = "Patternlar:";
+  poolLabel.textContent = getUz('function.patternsLabel');
   poolLabel.style.fontWeight = "500";
   poolLabel.style.marginBottom = "8px";
   poolLabel.classList.add("tl-uz");
-  poolLabel.dataset.translation = "Patterns:";
+  poolLabel.dataset.translation = getEn('function.patternsLabel');
   pool.appendChild(poolLabel);
 
   const shuffled = [...st.items_en].sort(() => Math.random() - 0.5);
@@ -412,14 +393,14 @@ function renderSubtask1(functionSubtasks, subtaskState, renderCurrentSubtask) {
     subtaskState.attempts[0]++;
 
     if (score >= 0.66) {
-      feedback.textContent = `✓ To'g'ri! (${correct}/${total}) Davom eting.`;
+      feedback.textContent = getUz('function.successDrag').replace('{correct}', correct).replace('{total}', total);
       feedback.classList.add("tl-uz");
       feedback.dataset.translation = `✓ Correct! (${correct}/${total}) Continue.`;
       feedback.style.cssText = "margin:12px 0;padding:8px;border-radius:4px;background:#c8e6c9;color:#2e7d32;";
       btnContinue.style.display = "inline-block";
       btnRetry.style.display = "none";
     } else {
-      feedback.textContent = `✗ Kamida ${Math.ceil(total * 0.66)}/${total} to'g'ri bo'lishi kerak. (${correct}/${total})`;
+      feedback.textContent = getUz('function.failureDrag').replace('{needed}', Math.ceil(total * 0.66)).replace('{correct}', correct).replace('{total}', total);
       feedback.classList.add("tl-uz");
       feedback.dataset.translation = `✗ At least ${Math.ceil(total * 0.66)}/${total} must be correct. (${correct}/${total})`;
       feedback.style.cssText = "margin:12px 0;padding:8px;border-radius:4px;background:#ffcdd2;color:#c62828;";
@@ -428,7 +409,7 @@ function renderSubtask1(functionSubtasks, subtaskState, renderCurrentSubtask) {
     }
   });
   btnCheck.classList.add("tl-uz");
-  btnCheck.dataset.translation = "Check";
+  btnCheck.dataset.translation = getEn('buttons.check');
   wrap.appendChild(btnCheck);
 
   const btnRetry = createButton(getUz("common.buttons.retry"), () => {
@@ -503,11 +484,11 @@ function renderSubtask2(functionSubtasks, subtaskState, renderCurrentSubtask) {
   pool.className = "draggable-pool";
   pool.style.cssText = "margin:16px 0;padding:12px;background:#fafafa;border:1px solid #ddd;border-radius:4px;";
   const poolLabel = document.createElement("div");
-  poolLabel.textContent = "Gaplar:";
+  poolLabel.textContent = getUz('function.sentencesLabel');
   poolLabel.style.fontWeight = "500";
   poolLabel.style.marginBottom = "8px";
   poolLabel.classList.add("tl-uz");
-  poolLabel.dataset.translation = "Sentences:";
+  poolLabel.dataset.translation = getEn('function.sentencesLabel');
   pool.appendChild(poolLabel);
 
   const shuffled = [...st.sentences_en].sort(() => Math.random() - 0.5);
@@ -541,14 +522,14 @@ function renderSubtask2(functionSubtasks, subtaskState, renderCurrentSubtask) {
     subtaskState.attempts[1]++;
 
     if (score >= 0.66) {
-      feedback.textContent = `✓ To'g'ri! (${correct}/${total}) Davom eting.`;
+      feedback.textContent = getUz('function.successDrag').replace('{correct}', correct).replace('{total}', total);
       feedback.classList.add("tl-uz");
       feedback.dataset.translation = `✓ Correct! (${correct}/${total}) Continue.`;
       feedback.style.cssText = "margin:12px 0;padding:8px;border-radius:4px;background:#c8e6c9;color:#2e7d32;";
       btnContinue.style.display = "inline-block";
       btnRetry.style.display = "none";
     } else {
-      feedback.textContent = `✗ Kamida ${Math.ceil(total * 0.66)}/${total} to'g'ri bo'lishi kerak. (${correct}/${total})`;
+      feedback.textContent = getUz('function.failureDrag').replace('{needed}', Math.ceil(total * 0.66)).replace('{correct}', correct).replace('{total}', total);
       feedback.classList.add("tl-uz");
       feedback.dataset.translation = `✗ At least ${Math.ceil(total * 0.66)}/${total} must be correct. (${correct}/${total})`;
       feedback.style.cssText = "margin:12px 0;padding:8px;border-radius:4px;background:#ffcdd2;color:#c62828;";
@@ -662,8 +643,8 @@ function renderSubtask3(functionSubtasks, lesson, subtaskState, subtasksSection)
   const dropZones = [];
   const currentLabelEn = (st.current_unit_label_en || st.current_unit_label_uz) + " (New)";
   const prevLabelEn = (st.previous_unit_label_en || st.previous_unit_label_uz) + " (Previous)";
-  const currentZone = createDropZone(st.current_unit_label_uz + " (Yangi)", currentCorrect, currentLabelEn);
-  const prevZone = createDropZone(st.previous_unit_label_uz + " (Oldingi)", prevCorrect, prevLabelEn);
+  const currentZone = createDropZone(st.current_unit_label_uz + " " + getUz('function.labelNew'), currentCorrect, currentLabelEn);
+  const prevZone = createDropZone(st.previous_unit_label_uz + " " + getUz('function.labelPrevious'), prevCorrect, prevLabelEn);
 
   dropZones.push(currentZone, prevZone);
   wrap.appendChild(currentZone);
@@ -674,9 +655,9 @@ function renderSubtask3(functionSubtasks, lesson, subtaskState, subtasksSection)
   pool.className = "draggable-pool";
   pool.style.cssText = "margin:16px 0;padding:12px;background:#fafafa;border:1px solid #ddd;border-radius:4px;";
   const poolLabel = document.createElement("div");
-  poolLabel.textContent = "Gaplar:";
+  poolLabel.textContent = getUz('function.sentencesLabel');
   poolLabel.classList.add("tl-uz");
-  poolLabel.dataset.translation = "Sentences:";
+  poolLabel.dataset.translation = getEn('function.sentencesLabel');
   poolLabel.style.fontWeight = "500";
   poolLabel.style.marginBottom = "8px";
   pool.appendChild(poolLabel);
@@ -712,14 +693,14 @@ function renderSubtask3(functionSubtasks, lesson, subtaskState, subtasksSection)
     subtaskState.attempts[2]++;
 
     if (score >= 0.66) {
-      feedback.textContent = `✓ To'g'ri! (${correct}/${total}) ${getUz("functionTile.feedback.allComplete").split("!")[0]}!`;
+      feedback.textContent = getUz('function.successDrag').replace('{correct}', correct).replace('{total}', total);
       feedback.classList.add("tl-uz");
       feedback.dataset.translation = `✓ Correct! (${correct}/${total}) Function tasks complete!`;
       feedback.style.cssText = "margin:12px 0;padding:8px;border-radius:4px;background:#c8e6c9;color:#2e7d32;";
       btnComplete.style.display = "inline-block";
       btnRetry.style.display = "none";
     } else {
-      feedback.textContent = `✗ Kamida ${Math.ceil(total * 0.66)}/${total} to'g'ri bo'lishi kerak. (${correct}/${total})`;
+      feedback.textContent = getUz('function.failureDrag').replace('{needed}', Math.ceil(total * 0.66)).replace('{correct}', correct).replace('{total}', total);
       feedback.classList.add("tl-uz");
       feedback.dataset.translation = `✗ At least ${Math.ceil(total * 0.66)}/${total} must be correct. (${correct}/${total})`;
       feedback.style.cssText = "margin:12px 0;padding:8px;border-radius:4px;background:#ffcdd2;color:#c62828;";
@@ -746,18 +727,18 @@ function renderSubtask3(functionSubtasks, lesson, subtaskState, subtasksSection)
   btnRetry.dataset.translation = getEn("common.buttons.retry");
   wrap.appendChild(btnRetry);
 
-  const btnComplete = createButton("Tugallash", () => {
+  const btnComplete = createButton(getUz("function.finish"), () => {
     const summary = document.createElement("div");
     summary.style.cssText = "margin:16px 0;padding:12px;background:#e8f5e9;border:1px solid #4caf50;border-radius:4px;";
     summary.classList.add("tl-uz");
-    summary.dataset.translation = '✓ All tasks completed!\n1) Category: ' + (subtaskState.scores[0] * 100).toFixed(0) + '%\n2) Function: ' + (subtaskState.scores[1] * 100).toFixed(0) + '%\n3) Recycled: ' + (subtaskState.scores[2] * 100).toFixed(0) + '%';
-    summary.innerHTML = '<strong>' + getUz("functionTile.feedback.summaryComplete") + '</strong><br>1) Kategoriya: ' + (subtaskState.scores[0] * 100).toFixed(0) + '%<br>2) Funksiya: ' + (subtaskState.scores[1] * 100).toFixed(0) + '%<br>3) Takror: ' + (subtaskState.scores[2] * 100).toFixed(0) + '%';
+    summary.dataset.translation = getEn('function.allCompleted') + '\n1) Category: ' + (subtaskState.scores[0] * 100).toFixed(0) + '%\n2) Function: ' + (subtaskState.scores[1] * 100).toFixed(0) + '%\n3) Recycled: ' + (subtaskState.scores[2] * 100).toFixed(0) + '%';
+    summary.innerHTML = '<strong>' + getUz("functionTile.feedback.summaryComplete") + '</strong><br>1) ' + getUz('function.categoryLabel') + ' ' + (subtaskState.scores[0] * 100).toFixed(0) + '%<br>2) ' + getUz('function.functionLabel') + ' ' + (subtaskState.scores[1] * 100).toFixed(0) + '%<br>3) ' + getUz('function.repeatLabel') + ' ' + (subtaskState.scores[2] * 100).toFixed(0) + '%';
     subtasksSection.appendChild(summary);
     wrap.style.display = "none";
   });
   btnComplete.style.display = "none";
   btnComplete.classList.add("tl-uz");
-  btnComplete.dataset.translation = "Finish";
+  btnComplete.dataset.translation = getEn("function.finish");
   wrap.appendChild(btnComplete);
 
   return wrap;
@@ -775,14 +756,14 @@ function renderFunctionCheckMCQ(lesson, tileContainer) {
   if (functionCheckItems) {
     const fcHeader = document.createElement("div");
     fcHeader.style.cssText = "font-weight:bold;font-size:1.1rem;margin-bottom:12px;color:#e65100;";
-    fcHeader.textContent = "📝 Function Check – MCQ";
+    fcHeader.textContent = getUz('function.mcqTitle');
     fcSection.appendChild(fcHeader);
 
     const fcInstructions = document.createElement("div");
     fcInstructions.style.cssText = "font-size:0.9rem;color:#666;margin-bottom:16px;";
-    fcInstructions.textContent = "Har bir gap uchun to'g'ri grammatik funksiyani tanlang. Variantlar ustiga kursorni olib boring — misollar ko'rinadi.";
+    fcInstructions.textContent = getUz('function.selectInstruction');
     fcInstructions.classList.add("tl-uz");
-    fcInstructions.dataset.translation = "Select the correct grammatical function for each sentence. Hover over options to see examples.";
+    fcInstructions.dataset.translation = getEn('function.mcqInstruction');
     fcSection.appendChild(fcInstructions);
 
     const fcState = { answered: 0, correct: 0, total: Object.keys(functionCheckItems).length };
@@ -869,16 +850,16 @@ function renderFunctionCheckMCQ(lesson, tileContainer) {
             if (pct >= 66) {
               scoreDisplay.style.background = "#c8e6c9";
               scoreDisplay.style.color = "#2e7d32";
-              scoreDisplay.textContent = "✓ Function Check: " + fcState.correct + "/" + fcState.total + " (" + pct + "%)";
+              scoreDisplay.textContent = getUz('function.checkResult').replace('{correct}', fcState.correct).replace('{total}', fcState.total).replace('{pct}', pct);
             } else {
               scoreDisplay.style.background = "#ffcdd2";
               scoreDisplay.style.color = "#c62828";
-              scoreDisplay.textContent = "✗ Function Check: " + fcState.correct + "/" + fcState.total + " (" + pct + "%) — Kamida 66% kerak";
+              scoreDisplay.textContent = getUz('function.failPrefix') + fcState.correct + "/" + fcState.total + " (" + pct + "%) — " + getUz('function.minRequired');
             }
             scoreDisplay.classList.add("tl-uz");
             scoreDisplay.dataset.translation = pct >= 66 ?
-              "✓ Function Check: " + fcState.correct + "/" + fcState.total + " (" + pct + "%)" :
-              "✗ Function Check: " + fcState.correct + "/" + fcState.total + " (" + pct + "%) — At least 66% required";
+              getEn('function.checkResult').replace('{correct}', fcState.correct).replace('{total}', fcState.total).replace('{pct}', pct) :
+              getEn('function.failPrefix') + fcState.correct + "/" + fcState.total + " (" + pct + "%) — " + getEn('function.atLeast66');
             fcSection.appendChild(scoreDisplay);
           }
         });
@@ -893,7 +874,7 @@ function renderFunctionCheckMCQ(lesson, tileContainer) {
   } else {
     const noFc = document.createElement("div");
     noFc.style.color = "#999";
-    noFc.textContent = "Function check items not set.";
+    noFc.textContent = getUz('function.noCheckItems');
     fcSection.appendChild(noFc);
   }
 
@@ -936,7 +917,7 @@ export function renderFunctionTile(lesson) {
     scenarioDiv.style.cssText = "background:#e0f7fa;border-left:4px solid #00bcd4;padding:12px;margin-bottom:16px;border-radius:4px;";
 
     const icon = document.createElement("div");
-    icon.textContent = "💬 Context:";
+    icon.textContent = getUz('function.contextLabel');
     icon.style.fontWeight = "bold";
     icon.style.color = "#006064";
     icon.style.marginBottom = "4px";
@@ -962,7 +943,7 @@ export function renderFunctionTile(lesson) {
   conceptSection.className = "tile-section";
   if (conceptTasks.length) {
     const header = document.createElement("div");
-    header.textContent = "Concept subtasks (read-only):";
+    header.textContent = getUz('function.conceptLabel');
     header.style.fontWeight = "600";
     conceptSection.appendChild(header);
 
@@ -971,7 +952,7 @@ export function renderFunctionTile(lesson) {
       block.style.marginTop = "8px";
 
       const label = document.createElement("div");
-      label.textContent = (task.title ? String(task.title) : "Subtask " + (idx + 1));
+      label.textContent = (task.title ? String(task.title) : uz('function.subtaskPrefix') + (idx + 1));
       label.style.fontWeight = "500";
       block.appendChild(label);
 
@@ -993,7 +974,7 @@ export function renderFunctionTile(lesson) {
 
       if (Array.isArray(task.options) && task.options.length) {
         const optList = document.createElement("div");
-        optList.textContent = "Options: " + task.options.map((o) => String(o || "")).join(" | ");
+        optList.textContent = getUz('function.optionsLabel') + task.options.map((o) => String(o || "")).join(" | ");
         block.appendChild(optList);
       }
 
@@ -1053,11 +1034,11 @@ export function renderFunctionTile(lesson) {
 
   if (functionSubtasks && Object.keys(functionSubtasks).length > 0) {
     const h = document.createElement("div");
-    h.textContent = "Funksiya topshiriqlari";
+    h.textContent = getUz('function.sectionTitle');
     h.style.fontWeight = "600";
     h.style.marginBottom = "16px";
     h.classList.add("tl-uz");
-    h.dataset.translation = "Functional Tasks";
+    h.dataset.translation = getEn('function.tasksTitle');
     subtasksSection.appendChild(h);
 
     renderCurrentSubtask();
@@ -1073,7 +1054,7 @@ export function renderFunctionTile(lesson) {
   const fcSection = renderFunctionCheckMCQ(lesson, tileContainer);
 
   // === CONTINUE BUTTON ===
-  const btnContinue = createButton("Continue", () => {
+  const btnContinue = createButton(getUz('buttons.continue'), () => {
     // TEACHER MODE bypass
     if (window.TEACHER_MODE) {
       transitionToTile(STATES.CONTROLLED);
@@ -1088,9 +1069,9 @@ export function renderFunctionTile(lesson) {
       const feedback = document.createElement("div");
       feedback.className = "feedback err";
       feedback.style.cssText = "margin:16px 0;padding:12px;background:#ffcdd2;color:#c62828;border-radius:4px;";
-      feedback.textContent = "Barcha 3 ta topshiriqdan o'ting (≥66%).";
+      feedback.textContent = getUz('function.gateAll');
       feedback.classList.add("tl-uz");
-      feedback.dataset.translation = "Pass all 3 tasks (≥66%).";
+      feedback.dataset.translation = getEn('function.passThreshold');
       if (!subtasksSection.querySelector(".feedback")) {
         subtasksSection.appendChild(feedback);
       }

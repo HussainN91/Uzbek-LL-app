@@ -221,7 +221,7 @@ function renderContrastiveTurns(contrastiveTurns, container) {
     // Header
     const ctHeader = document.createElement('div');
     ctHeader.style.cssText = 'font-weight: 600; color: #2b6cb0; margin-bottom: 12px; font-size: 0.9rem;';
-    ctHeader.textContent = `\u{1F50D} ${ct.focus || 'Notice the difference'}`;
+    ctHeader.textContent = `\u{1F50D} ${ct.focus || uz('dialogue.noticeDifference')}`;
     ctSection.appendChild(ctHeader);
     
     // Speaker A (blue / Form A)
@@ -242,7 +242,7 @@ function renderContrastiveTurns(contrastiveTurns, container) {
     
     // "Discover" button
     const discoverBtn = document.createElement('button');
-    discoverBtn.textContent = '\u{1F4A1} Discover the Pattern';
+    discoverBtn.textContent = uz('dialogue.discoverPattern');
     discoverBtn.style.cssText = 'padding: 10px 20px; background: #5a67d8; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 14px; width: 100%;';
     
     discoverBtn.addEventListener('click', () => {
@@ -263,7 +263,7 @@ function showDiscoveryPopup(ct) {
   
   // Title
   const title = document.createElement('h3');
-  title.textContent = '\u{1F4A1} Discovery';
+  title.textContent = uz('dialogue.discoveryTitle');
   title.style.cssText = 'margin: 0 0 16px 0; color: #2d3748; font-size: 1.3rem;';
   popup.appendChild(title);
   
@@ -284,12 +284,12 @@ function showDiscoveryPopup(ct) {
       // Blue (Form A)
       const blueBox = document.createElement('div');
       blueBox.style.cssText = 'padding: 12px; background: #ebf8ff; border-radius: 8px; text-align: center; border: 2px solid #bee3f8;';
-      blueBox.innerHTML = `<div style="font-size:0.75rem;color:#2b6cb0;margin-bottom:4px;">Form A</div><div class="discovery-blue" style="font-size:1.1rem;">${renderHighlightText(h.blue || h.form_a || '', 'blue')}</div>`;
+      blueBox.innerHTML = `<div style="font-size:0.75rem;color:#2b6cb0;margin-bottom:4px;">${uz('dialogue.formA')}</div><div class="discovery-blue" style="font-size:1.1rem;">${renderHighlightText(h.blue || h.form_a || '', 'blue')}</div>`;
       
       // Red (Form B)
       const redBox = document.createElement('div');
       redBox.style.cssText = 'padding: 12px; background: #fff5f5; border-radius: 8px; text-align: center; border: 2px solid #fed7d7;';
-      redBox.innerHTML = `<div style="font-size:0.75rem;color:#c53030;margin-bottom:4px;">Form B</div><div class="discovery-red" style="font-size:1.1rem;">${renderHighlightText(h.red || h.form_b || '', 'red')}</div>`;
+      redBox.innerHTML = `<div style="font-size:0.75rem;color:#c53030;margin-bottom:4px;">${uz('dialogue.formB')}</div><div class="discovery-red" style="font-size:1.1rem;">${renderHighlightText(h.red || h.form_b || '', 'red')}</div>`;
       
       highlightGrid.appendChild(blueBox);
       highlightGrid.appendChild(redBox);
@@ -448,7 +448,7 @@ export function renderLessonDialogueTile(lesson) {
   if (missionStage) {
     const stageBadge = document.createElement("div");
     const stageEmoji = missionStage.stage === 1 ? '\u2705' : missionStage.stage === 2 ? '\u274C' : '\u2753';
-    stageBadge.textContent = `${stageEmoji} Stage ${missionStage.stage}: ${missionStage.form.charAt(0).toUpperCase() + missionStage.form.slice(1)}`;
+    stageBadge.textContent = `${stageEmoji} ${uz('dialogue.stageLabel').replace('{stage}', missionStage.stage).replace('{form}', missionStage.form.charAt(0).toUpperCase() + missionStage.form.slice(1))}`;
     stageBadge.style.cssText = "display: inline-block; padding: 4px 14px; background: #edf2f7; border-radius: 12px; font-size: 0.8rem; color: #4a5568; margin-bottom: 10px; font-weight: 500;";
     headerSection.appendChild(stageBadge);
   }
@@ -462,7 +462,7 @@ export function renderLessonDialogueTile(lesson) {
   // Title
   const title = document.createElement("h2");
   title.className = "tile-title";
-  title.textContent = dialogueData.title_en || "Dialogue Practice";
+  title.textContent = dialogueData.title_en || uz('dialogue.fallbackTitle');
   title.style.cssText = "color: #5a67d8; font-size: 1.8rem; font-weight: 700; margin: 0;";
   headerSection.appendChild(title);
 
@@ -565,8 +565,8 @@ export function renderLessonDialogueTile(lesson) {
   const instruction = document.createElement("div");
   instruction.className = "dialogue-instruction tl-uz";
   instruction.id = "dialogue-instruction";
-  instruction.textContent = "\u{1F4AC} Suhbatni tinglang va grammatikaga e\u2018tibor bering:";
-  instruction.dataset.translation = "Listen to the dialogue and pay attention to the grammar:";
+  instruction.textContent = uz('dialogue.listenGrammar');
+  instruction.dataset.translation = en('dialogue.listenGrammar');
   instruction.style.cssText = "background: #e8f4f8; padding: 14px 20px; border-radius: 12px; margin-bottom: 24px; color: #2980b9; font-weight: 500; text-align: center; border-left: 4px solid #5a67d8;";
   wrapper.appendChild(instruction);
 
@@ -574,14 +574,14 @@ export function renderLessonDialogueTile(lesson) {
     const instr = document.getElementById("dialogue-instruction");
     if (!instr) return;
     if (mode === "listen") {
-      instr.textContent = "\u{1F442} Avval suhbatni tinglang, keyin gapirishga o\u2018ting:";
-      instr.dataset.translation = "Listen first, then try speaking:";
+      instr.textContent = uz('dialogue.listenFirstInstruction');
+      instr.dataset.translation = en('dialogue.listenFirstInstruction');
     } else if (mode === "read") {
-      instr.textContent = "\u{1F4D6} Suhbatni o\u2018qing va grammatikaga e\u2018tibor bering:";
-      instr.dataset.translation = "Read along and notice the grammar:";
+      instr.textContent = uz('dialogue.readGrammar');
+      instr.dataset.translation = en('dialogue.readGrammar');
     } else {
-      instr.textContent = "\u{1F3A4} Dialogdagi gaplarni takrorlang:";
-      instr.dataset.translation = "Repeat the sentences from the dialogue:";
+      instr.textContent = uz('dialogue.repeatLines');
+      instr.dataset.translation = en('dialogue.repeatLines');
     }
   }
 
@@ -669,7 +669,7 @@ export function renderLessonDialogueTile(lesson) {
       if (isPlayingAll) {
         isPlayingAll = false;
         playAllBtn.classList.remove('is-playing');
-        playAllBtn.querySelector('[data-label]').textContent = 'Play All';
+        playAllBtn.querySelector('[data-label]').textContent = uz('buttons.playAll');
         dialogueBox.querySelectorAll(".dialogue-turn").forEach(t => {
           if (t instanceof HTMLElement) { t.classList.remove('dlg-active-turn'); }
         });
@@ -678,7 +678,7 @@ export function renderLessonDialogueTile(lesson) {
       
       isPlayingAll = true;
       playAllBtn.classList.add('is-playing');
-      playAllBtn.querySelector('[data-label]').textContent = 'Stop';
+      playAllBtn.querySelector('[data-label]').textContent = uz('buttons.stop');
       
       const turns = dialogue.turns || [];
       for (let i = 0; i < turns.length && isPlayingAll; i++) {
@@ -696,7 +696,7 @@ export function renderLessonDialogueTile(lesson) {
       
       isPlayingAll = false;
       playAllBtn.classList.remove('is-playing');
-      playAllBtn.querySelector('[data-label]').textContent = 'Play All';
+      playAllBtn.querySelector('[data-label]').textContent = uz('buttons.playAll');
       dialogueBox.querySelectorAll(".dialogue-turn").forEach(t => {
         if (t instanceof HTMLElement) { t.classList.remove('dlg-active-turn'); }
       });
@@ -749,7 +749,7 @@ export function renderLessonDialogueTile(lesson) {
         if (turn.audio_id || turn.text || turn.text_en) {
           const audioBtn = document.createElement("button");
           audioBtn.className = "dlg-audio-btn";
-          audioBtn.title = "Listen";
+          audioBtn.title = en('dialogue.audioTitle');
           audioBtn.innerHTML = `<svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8.5v7a4.49 4.49 0 0 0 2.5-3.5zM14 3.23v2.06a7.007 7.007 0 0 1 0 13.42v2.06A9.013 9.013 0 0 0 14 3.23z"/></svg><span class="dlg-audio-waves"><span></span><span></span><span></span><span></span><span></span></span>`;
 
           const CURRENT_UNIT_ID = getCurrentUnitId();
@@ -1016,8 +1016,8 @@ export function renderLessonDialogueTile(lesson) {
     uzSection.style.cssText = "margin-top: 16px;";
 
     const toggleBtn = document.createElement("button");
-    toggleBtn.textContent = "\u{1F441}\u{FE0F} O\u2018zbek tarjimasini ko\u2018rish";
-    toggleBtn.dataset.translation = "Show Uzbek translation";
+    toggleBtn.textContent = uz('dialogue.showUzTranslation');
+    toggleBtn.dataset.translation = en('dialogue.showUzTranslation');
     toggleBtn.className = "toggle-translation-btn tl-uz";
     toggleBtn.style.cssText = "padding: 10px 16px; background: #16a085; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; transition: all 0.2s;";
 
@@ -1106,7 +1106,7 @@ export function renderLessonDialogueTile(lesson) {
       const vocabHighlight = document.createElement("div");
       vocabHighlight.style.cssText = "margin-top: 16px; padding: 12px; background: #e3f2fd; border-radius: 8px;";
       const vocabTitle = document.createElement("div");
-      vocabTitle.textContent = "\u{1F4DA} Key Vocabulary:";
+      vocabTitle.textContent = uz('dialogue.keyVocab');
       vocabTitle.style.cssText = "font-weight: 600; color: #1565c0; margin-bottom: 8px;";
       vocabHighlight.appendChild(vocabTitle);
       
@@ -1173,7 +1173,7 @@ export function renderLessonDialogueTile(lesson) {
     tpLabel.textContent = uz('dialogue.pressureMode');
     tpLabel.style.cssText = "font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #f6ad55; margin-bottom: 2px;";
     const tpTitle = document.createElement("div");
-    tpTitle.textContent = isMasteryStage ? "Mastery Challenge — Final Pass" : "Dialogue Replay — Pressure Mode";
+    tpTitle.textContent = isMasteryStage ? uz('dialogue.masteryChallenge') : uz('dialogue.pressureReplay');
     tpTitle.style.cssText = "font-size: 16px; font-weight: 700; color: rgba(255,255,255,0.95);";
     tpTitleBlock.appendChild(tpLabel);
     tpTitleBlock.appendChild(tpTitle);
@@ -1184,7 +1184,7 @@ export function renderLessonDialogueTile(lesson) {
     // Description
     const tpDesc = document.createElement("p");
     tpDesc.style.cssText = "color: rgba(255,255,255,0.6); font-size: 13px; line-height: 1.6; margin: 0 0 18px 0; position: relative; z-index: 1;";
-    tpDesc.innerHTML = `The same dialogue replays with audio. Text <strong style="color:#f6ad55">vanishes after 800ms</strong> — you have <strong style="color:#fc8181">2 seconds</strong> to produce each line from memory.`;
+    tpDesc.innerHTML = uz('dialogue.pressureDesc');
     tpSection.appendChild(tpDesc);
 
     // Stats pills
@@ -1192,16 +1192,16 @@ export function renderLessonDialogueTile(lesson) {
     tpStats.style.cssText = "display: flex; gap: 10px; margin-bottom: 18px; position: relative; z-index: 1;";
     
     const pill1 = document.createElement("div");
-    pill1.innerHTML = `<span style="color:rgba(255,255,255,0.4);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;">Vanish</span><br><span style="color:#f6ad55;font-weight:700;font-size:15px;">800ms</span>`;
+    pill1.innerHTML = `<span style="color:rgba(255,255,255,0.4);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;">${uz('dialogue.vanish')}</span><br><span style="color:#f6ad55;font-weight:700;font-size:15px;">800ms</span>`;
     pill1.style.cssText = "flex:1; text-align:center; padding:10px; background:rgba(255,255,255,0.05); border-radius:10px; border:1px solid rgba(255,255,255,0.08);";
     
     const pill2 = document.createElement("div");
-    pill2.innerHTML = `<span style="color:rgba(255,255,255,0.4);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;">Deadline</span><br><span style="color:#fc8181;font-weight:700;font-size:15px;">2.0s</span>`;
+    pill2.innerHTML = `<span style="color:rgba(255,255,255,0.4);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;">${uz('dialogue.deadline')}</span><br><span style="color:#fc8181;font-weight:700;font-size:15px;">2.0s</span>`;
     pill2.style.cssText = "flex:1; text-align:center; padding:10px; background:rgba(255,255,255,0.05); border-radius:10px; border:1px solid rgba(255,255,255,0.08);";
     
     const pill3 = document.createElement("div");
     const turnCount = allTurnElements.length;
-    pill3.innerHTML = `<span style="color:rgba(255,255,255,0.4);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;">Lines</span><br><span style="color:#90cdf4;font-weight:700;font-size:15px;">${turnCount}</span>`;
+    pill3.innerHTML = `<span style="color:rgba(255,255,255,0.4);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;">${uz('dialogue.linesLabel')}</span><br><span style="color:#90cdf4;font-weight:700;font-size:15px;">${turnCount}</span>`;
     pill3.style.cssText = "flex:1; text-align:center; padding:10px; background:rgba(255,255,255,0.05); border-radius:10px; border:1px solid rgba(255,255,255,0.08);";
     
     tpStats.appendChild(pill1);

@@ -1,0 +1,3094 @@
+{
+  "meta": {
+    "unit": "unknown",
+    "source_file": "vocab_cards_u01.5_4act.js",
+    "total_strings": 279,
+    "categories": {
+      "line_uz": 40,
+      "item_uz": 63,
+      "uz_context": 16,
+      "uz_mirror_answer": 16,
+      "uz_gloss": 16,
+      "instruction": 16,
+      "success_msg": 16,
+      "fail_msg": 16,
+      "explanation_uz": 16,
+      "why_prompt": 15,
+      "uz_prompt": 16,
+      "trap_message": 12,
+      "prompt_uz": 15,
+      "option_label": 6
+    },
+    "version": "1.0.0"
+  },
+  "strings": [
+    {
+      "id": "line_172.line_uz",
+      "field": "line_uz",
+      "value": "Salom Malika! Akangiz bormi?",
+      "context": {
+        "line_number": 172,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "en_line": "Hello Malika! Do you have a brother?"
+      }
+    },
+    {
+      "id": "line_173.line_uz",
+      "field": "line_uz",
+      "value": "Ha, akam bor. Uning ismi Karim.",
+      "context": {
+        "line_number": 173,
+        "field": "line_uz",
+        "speaker": "Malika",
+        "en_line": "Yes, I have a brother. His name is Karim."
+      }
+    },
+    {
+      "id": "line_174.line_uz",
+      "field": "line_uz",
+      "value": "Uning kitobi bormi?",
+      "context": {
+        "line_number": 174,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "en_line": "Does he have a book?"
+      }
+    },
+    {
+      "id": "line_175.line_uz",
+      "field": "line_uz",
+      "value": "Ha, kitobi bor. Bu uning kitobi.",
+      "context": {
+        "line_number": 175,
+        "field": "line_uz",
+        "speaker": "Malika",
+        "en_line": "Yes, he has a book. This is his book."
+      }
+    },
+    {
+      "id": "line_176.line_uz",
+      "field": "line_uz",
+      "value": "Sizning singlingiz bormi?",
+      "context": {
+        "line_number": 176,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "en_line": "Do you have a sister?"
+      }
+    },
+    {
+      "id": "line_177.line_uz",
+      "field": "line_uz",
+      "value": "Yo'q, singlim yo'q. Akam bor.",
+      "context": {
+        "line_number": 177,
+        "field": "line_uz",
+        "speaker": "Malika",
+        "en_line": "No, I don't have a sister. I have a brother."
+      }
+    },
+    {
+      "id": "line_178.line_uz",
+      "field": "line_uz",
+      "value": "Mening singlim bor. Uning ismi Sara.",
+      "context": {
+        "line_number": 178,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "en_line": "I have a sister. Her name is Sara."
+      }
+    },
+    {
+      "id": "line_179.line_uz",
+      "field": "line_uz",
+      "value": "Zo'r! Dadangizning mashinasi bormi?",
+      "context": {
+        "line_number": 179,
+        "field": "line_uz",
+        "speaker": "Malika",
+        "en_line": "That is nice! Does your father have a car?"
+      }
+    },
+    {
+      "id": "line_180.line_uz",
+      "field": "line_uz",
+      "value": "Yo'q, uning mashinasi yo'q.",
+      "context": {
+        "line_number": 180,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "en_line": "No, he doesn't have a car."
+      }
+    },
+    {
+      "id": "line_181.line_uz",
+      "field": "line_uz",
+      "value": "Bizning ajoyib o'qituvchimiz bor. O'qituvchimiz yaxshi.",
+      "context": {
+        "line_number": 181,
+        "field": "line_uz",
+        "speaker": "Malika",
+        "en_line": "We have a nice teacher. Our teacher is good."
+      }
+    },
+    {
+      "id": "line_204.line_uz",
+      "field": "line_uz",
+      "value": "Sinfda o'qituvchi bormi?",
+      "context": {
+        "line_number": 204,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "en_line": "Is there a teacher in the class?"
+      }
+    },
+    {
+      "id": "line_205.line_uz",
+      "field": "line_uz",
+      "value": "Ha, o'qituvchi bor. U mening o'qituvchim.",
+      "context": {
+        "line_number": 205,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "en_line": "Yes, there is a teacher. She is my teacher."
+      }
+    },
+    {
+      "id": "line_206.line_uz",
+      "field": "line_uz",
+      "value": "Sinfda talabalar bormi?",
+      "context": {
+        "line_number": 206,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "en_line": "Are there students in the class?"
+      }
+    },
+    {
+      "id": "line_207.line_uz",
+      "field": "line_uz",
+      "value": "Ha, talabalar bor. Besh talaba bor.",
+      "context": {
+        "line_number": 207,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "en_line": "Yes, there are students. There are five students."
+      }
+    },
+    {
+      "id": "line_208.line_uz",
+      "field": "line_uz",
+      "value": "Stolda kitob bormi?",
+      "context": {
+        "line_number": 208,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "en_line": "Is there a book on the table?"
+      }
+    },
+    {
+      "id": "line_209.line_uz",
+      "field": "line_uz",
+      "value": "Ha, stolda kitob bor. Bu sizning kitobingiz.",
+      "context": {
+        "line_number": 209,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "en_line": "Yes, there is a book on the table. That is your book."
+      }
+    },
+    {
+      "id": "line_210.line_uz",
+      "field": "line_uz",
+      "value": "Maktabda mashina bormi?",
+      "context": {
+        "line_number": 210,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "en_line": "Is there a car at school?"
+      }
+    },
+    {
+      "id": "line_211.line_uz",
+      "field": "line_uz",
+      "value": "Yo'q, maktabda mashina yo'q.",
+      "context": {
+        "line_number": 211,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "en_line": "No, there isn't a car at school."
+      }
+    },
+    {
+      "id": "line_212.line_uz",
+      "field": "line_uz",
+      "value": "Sumkada kitoblar bormi?",
+      "context": {
+        "line_number": 212,
+        "field": "line_uz",
+        "speaker": "Nilufar",
+        "en_line": "Are there books in the bag?"
+      }
+    },
+    {
+      "id": "line_213.line_uz",
+      "field": "line_uz",
+      "value": "Yo'q, sumkada kitoblar yo'q. Sumka uyda.",
+      "context": {
+        "line_number": 213,
+        "field": "line_uz",
+        "speaker": "Bekzod",
+        "en_line": "No, there aren't books in the bag. The bag is at home."
+      }
+    },
+    {
+      "id": "line_236.line_uz",
+      "field": "line_uz",
+      "value": "Salom Karim! Qandaysiz?",
+      "context": {
+        "line_number": 236,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "en_line": "Hello Karim! How are you?"
+      }
+    },
+    {
+      "id": "line_237.line_uz",
+      "field": "line_uz",
+      "value": "Yaxshiman, rahmat. Siz-chi?",
+      "context": {
+        "line_number": 237,
+        "field": "line_uz",
+        "speaker": "Karim",
+        "en_line": "I am fine, thank you. How are you?"
+      }
+    },
+    {
+      "id": "line_238.line_uz",
+      "field": "line_uz",
+      "value": "Bugun xursandman. Ali qayerda?",
+      "context": {
+        "line_number": 238,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "en_line": "I am happy today. Where is Ali?"
+      }
+    },
+    {
+      "id": "line_239.line_uz",
+      "field": "line_uz",
+      "value": "Ali sinfda. Uning kitobi bor.",
+      "context": {
+        "line_number": 239,
+        "field": "line_uz",
+        "speaker": "Karim",
+        "en_line": "Ali is in the class. He has a book."
+      }
+    },
+    {
+      "id": "line_240.line_uz",
+      "field": "line_uz",
+      "value": "Kitob qayerda?",
+      "context": {
+        "line_number": 240,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "en_line": "Where is the book?"
+      }
+    },
+    {
+      "id": "line_241.line_uz",
+      "field": "line_uz",
+      "value": "Kitob stolda.",
+      "context": {
+        "line_number": 241,
+        "field": "line_uz",
+        "speaker": "Karim",
+        "en_line": "The book is on the table."
+      }
+    },
+    {
+      "id": "line_242.line_uz",
+      "field": "line_uz",
+      "value": "Dars qachon?",
+      "context": {
+        "line_number": 242,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "en_line": "When is the class?"
+      }
+    },
+    {
+      "id": "line_243.line_uz",
+      "field": "line_uz",
+      "value": "Dars to'qqizda. Ertalab.",
+      "context": {
+        "line_number": 243,
+        "field": "line_uz",
+        "speaker": "Karim",
+        "en_line": "The class is at nine. It is in the morning."
+      }
+    },
+    {
+      "id": "line_244.line_uz",
+      "field": "line_uz",
+      "value": "Zo'r! Nega xursandsiz?",
+      "context": {
+        "line_number": 244,
+        "field": "line_uz",
+        "speaker": "Sara",
+        "en_line": "This is good! Why are you happy?"
+      }
+    },
+    {
+      "id": "line_245.line_uz",
+      "field": "line_uz",
+      "value": "Mening ham singlim bor. U uyda.",
+      "context": {
+        "line_number": 245,
+        "field": "line_uz",
+        "speaker": "Karim",
+        "en_line": "I have a sister too. She is at home."
+      }
+    },
+    {
+      "id": "line_265.line_uz",
+      "field": "line_uz",
+      "value": "Talabalar qayerda?",
+      "context": {
+        "line_number": 265,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "en_line": "Where are the students?"
+      }
+    },
+    {
+      "id": "line_266.line_uz",
+      "field": "line_uz",
+      "value": "Ular sinfda. O'qituvchilari ham u yerda.",
+      "context": {
+        "line_number": 266,
+        "field": "line_uz",
+        "speaker": "Vali",
+        "en_line": "They are in the class. Their teacher is there too."
+      }
+    },
+    {
+      "id": "line_267.line_uz",
+      "field": "line_uz",
+      "value": "Sumkam qayerda?",
+      "context": {
+        "line_number": 267,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "en_line": "Where is my bag?"
+      }
+    },
+    {
+      "id": "line_268.line_uz",
+      "field": "line_uz",
+      "value": "Sumkangiz stolda.",
+      "context": {
+        "line_number": 268,
+        "field": "line_uz",
+        "speaker": "Vali",
+        "en_line": "Your bag is on the table."
+      }
+    },
+    {
+      "id": "line_269.line_uz",
+      "field": "line_uz",
+      "value": "Dadangiz qalaysiz?",
+      "context": {
+        "line_number": 269,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "en_line": "How is your father?"
+      }
+    },
+    {
+      "id": "line_270.line_uz",
+      "field": "line_uz",
+      "value": "U yaxshi. Hozir uyda.",
+      "context": {
+        "line_number": 270,
+        "field": "line_uz",
+        "speaker": "Vali",
+        "en_line": "He is fine. He is at home now."
+      }
+    },
+    {
+      "id": "line_271.line_uz",
+      "field": "line_uz",
+      "value": "Nega singlingiz maktabda?",
+      "context": {
+        "line_number": 271,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "en_line": "Why is your sister at school?"
+      }
+    },
+    {
+      "id": "line_272.line_uz",
+      "field": "line_uz",
+      "value": "Uning darsi bor. Imtihon bor.",
+      "context": {
+        "line_number": 272,
+        "field": "line_uz",
+        "speaker": "Vali",
+        "en_line": "She has a class. There is an exam."
+      }
+    },
+    {
+      "id": "line_273.line_uz",
+      "field": "line_uz",
+      "value": "Nega xursandsiz?",
+      "context": {
+        "line_number": 273,
+        "field": "line_uz",
+        "speaker": "Madina",
+        "en_line": "Why are you happy?"
+      }
+    },
+    {
+      "id": "line_274.line_uz",
+      "field": "line_uz",
+      "value": "Xursandman. Kitobim bor. Kitob yaxshi.",
+      "context": {
+        "line_number": 274,
+        "field": "line_uz",
+        "speaker": "Vali",
+        "en_line": "I am happy. I have a book. The book is good."
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_have.item_uz",
+      "field": "item_uz",
+      "value": "bor (ega bo'lmoq)",
+      "context": {
+        "line_number": 316,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_have"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_have.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Sizning akangiz yo'qmi?",
+      "context": {
+        "line_number": 335,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L01_have",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_have.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, mening akam bor.",
+      "context": {
+        "line_number": 338,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L01_have",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_have.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Mening akam bor.",
+      "context": {
+        "line_number": 341,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L01_have",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_have.practice.instruction",
+      "field": "instruction",
+      "value": "'Have' kimlar bilan ishlatiladi?",
+      "context": {
+        "line_number": 348,
+        "field": "instruction",
+        "item_id": "V_U01_5_L01_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_have.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Have' = I, You, We, They bilan ishlatiladi.",
+      "context": {
+        "line_number": 357,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L01_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_have.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Have' — I, You, We, They uchun. He/She/It uchun 'Has' kerak!",
+      "context": {
+        "line_number": 358,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L01_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_have.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Have' — I, You, We, They bilan. 'Has' — He, She, It bilan. Uchinchi shaxs birlikda 'has' kerak.",
+      "context": {
+        "line_number": 363,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L01_have",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_have.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega 'have' va 'has' farqi bor?",
+      "context": {
+        "line_number": 363,
+        "field": "why_prompt",
+        "item_id": "V_U01_5_L01_have",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_have.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ha, akam bor. Uning ismi Karim.",
+      "context": {
+        "line_number": 373,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_have.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bizning ajoyib o'qituvchimiz bor.",
+      "context": {
+        "line_number": 381,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_have.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ularning mashinasi bor.",
+      "context": {
+        "line_number": 387,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_have.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Mening akam bor'",
+      "context": {
+        "line_number": 397,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L01_have",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_have.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'Has' — He/She/It uchun. 'I' bilan 'HAVE' kerak!",
+      "context": {
+        "line_number": 403,
+        "field": "trap_message",
+        "item_id": "V_U01_5_L01_have",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_have.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sizda nima bor? Ayting.",
+      "context": {
+        "line_number": 414,
+        "field": "prompt_uz",
+        "item_id": "V_U01_5_L01_have",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_has.personalization.item_uz",
+      "field": "item_uz",
+      "value": "bor (uchinchi shaxs)",
+      "context": {
+        "line_number": 424,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_has",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_has.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Karimning kitobi yo'qmi?",
+      "context": {
+        "line_number": 443,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L01_has",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_has.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, uning kitobi bor.",
+      "context": {
+        "line_number": 446,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L01_has",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_has.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Uning kitobi bor.",
+      "context": {
+        "line_number": 449,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L01_has",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_has.practice.instruction",
+      "field": "instruction",
+      "value": "'Has' kimlar bilan ishlatiladi?",
+      "context": {
+        "line_number": 456,
+        "field": "instruction",
+        "item_id": "V_U01_5_L01_has",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_has.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Has' = He, She, It (uchinchi shaxs birlik) uchun.",
+      "context": {
+        "line_number": 465,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L01_has",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_has.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Has' — He/She/It uchun. I/You/We/They uchun 'Have' kerak!",
+      "context": {
+        "line_number": 466,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L01_has",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_has.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Has' — He, She, It (uchinchi shaxs birlik) uchun maxsus shakl. Boshqa shaxslar uchun 'have' ishlatiladi.",
+      "context": {
+        "line_number": 471,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L01_has",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_has.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega 'has' faqat uchinchi shaxs uchun?",
+      "context": {
+        "line_number": 471,
+        "field": "why_prompt",
+        "item_id": "V_U01_5_L01_has",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_has.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ha, kitobi bor. Bu uning kitobi.",
+      "context": {
+        "line_number": 481,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_has",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_has.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uning singlisi bor.",
+      "context": {
+        "line_number": 489,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_has",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_has.practice.item_uz",
+      "field": "item_uz",
+      "value": "Dadamning mashinasi bor.",
+      "context": {
+        "line_number": 495,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_has",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_has.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Uning kitobi bor' (erkak)",
+      "context": {
+        "line_number": 505,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L01_has",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_has.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'Have' — I/You/We/They uchun. 'He' bilan 'HAS' kerak!",
+      "context": {
+        "line_number": 511,
+        "field": "trap_message",
+        "item_id": "V_U01_5_L01_has",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_has.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sizning do'stingizda nima bor?",
+      "context": {
+        "line_number": 522,
+        "field": "prompt_uz",
+        "item_id": "V_U01_5_L01_has",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.personalization.item_uz",
+      "field": "item_uz",
+      "value": "yo'q (egalik yo'qligi)",
+      "context": {
+        "line_number": 532,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Sizning singlingiz bormi?",
+      "context": {
+        "line_number": 551,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, mening singlim yo'q.",
+      "context": {
+        "line_number": 554,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Mening singlim yo'q.",
+      "context": {
+        "line_number": 557,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.practice.instruction",
+      "field": "instruction",
+      "value": "'Don't have' nimani bildiradi?",
+      "context": {
+        "line_number": 564,
+        "field": "instruction",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.practice.option_label",
+      "field": "option_label",
+      "value": "Egalik yo'q (No possession)",
+      "context": {
+        "line_number": 571,
+        "field": "option_label",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Don't have' = egalik YO'Q.",
+      "context": {
+        "line_number": 573,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Don't' = inkor. 'Don't have' = egalik YO'Q!",
+      "context": {
+        "line_number": 574,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Don't' = do + not. I/You/We/They bilan 'don't have' ishlatiladi. He/She/It uchun 'doesn't have' kerak.",
+      "context": {
+        "line_number": 579,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Inkor qanday hosil bo'ladi?",
+      "context": {
+        "line_number": 579,
+        "field": "why_prompt",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.practice.item_uz",
+      "field": "item_uz",
+      "value": "Yo'q, singlim yo'q. Akam bor.",
+      "context": {
+        "line_number": 589,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bizning mashinamiz yo'q.",
+      "context": {
+        "line_number": 597,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ularning o'qituvchisi yo'q.",
+      "context": {
+        "line_number": 603,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Mening singlim yo'q'",
+      "context": {
+        "line_number": 613,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ Oddiy hozirgi zamon (Present Simple) inkor uchun 'DON'T HAVE' kerak!",
+      "context": {
+        "line_number": 619,
+        "field": "trap_message",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_dont_have.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sizda nima yo'q?",
+      "context": {
+        "line_number": 630,
+        "field": "prompt_uz",
+        "item_id": "V_U01_5_L01_dont_have",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_doesnt_have.personalization.item_uz",
+      "field": "item_uz",
+      "value": "yo'q (uchinchi shaxs)",
+      "context": {
+        "line_number": 640,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_doesnt_have",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_doesnt_have.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Dadangizning mashinasi bormi?",
+      "context": {
+        "line_number": 659,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L01_doesnt_have",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_doesnt_have.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, uning mashinasi yo'q.",
+      "context": {
+        "line_number": 662,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L01_doesnt_have",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_doesnt_have.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Uning mashinasi yo'q.",
+      "context": {
+        "line_number": 665,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L01_doesnt_have",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_doesnt_have.practice.instruction",
+      "field": "instruction",
+      "value": "'Doesn't have' kimlar uchun ishlatiladi?",
+      "context": {
+        "line_number": 672,
+        "field": "instruction",
+        "item_id": "V_U01_5_L01_doesnt_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_doesnt_have.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Doesn't have' = He/She/It uchun inkor.",
+      "context": {
+        "line_number": 681,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L01_doesnt_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_doesnt_have.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Doesn't' — He/She/It uchun. I/You/We/They uchun 'Don't' kerak!",
+      "context": {
+        "line_number": 682,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L01_doesnt_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_doesnt_have.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Doesn't' = does + not. 'Does' allaqachon uchinchi shaxs. Shuning uchun 'have' (HAS emas!) kerak: 'doesn't HAVE'.",
+      "context": {
+        "line_number": 687,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L01_doesnt_have",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_doesnt_have.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega 'doesn't have' da 'has' yo'q?",
+      "context": {
+        "line_number": 687,
+        "field": "why_prompt",
+        "item_id": "V_U01_5_L01_doesnt_have",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_doesnt_have.practice.item_uz",
+      "field": "item_uz",
+      "value": "Yo'q, uning mashinasi yo'q.",
+      "context": {
+        "line_number": 697,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_doesnt_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_doesnt_have.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uning akasi yo'q.",
+      "context": {
+        "line_number": 705,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_doesnt_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_doesnt_have.practice.item_uz",
+      "field": "item_uz",
+      "value": "Onamning sumkasi yo'q.",
+      "context": {
+        "line_number": 711,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L01_doesnt_have",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_doesnt_have.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Uning mashinasi yo'q' (erkak)",
+      "context": {
+        "line_number": 721,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L01_doesnt_have",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_doesnt_have.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'Don't' — I/You/We/They uchun. 'He' bilan 'DOESN'T' kerak!",
+      "context": {
+        "line_number": 727,
+        "field": "trap_message",
+        "item_id": "V_U01_5_L01_doesnt_have",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L01_doesnt_have.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sizning sinfdoshingizda nima yo'q?",
+      "context": {
+        "line_number": 738,
+        "field": "prompt_uz",
+        "item_id": "V_U01_5_L01_doesnt_have",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.personalization.item_uz",
+      "field": "item_uz",
+      "value": "bor (mavjudlik birlik)",
+      "context": {
+        "line_number": 777,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Sinfda o'qituvchi yo'qmi?",
+      "context": {
+        "line_number": 796,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, sinfda o'qituvchi bor.",
+      "context": {
+        "line_number": 799,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Sinfda o'qituvchi bor.",
+      "context": {
+        "line_number": 802,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.practice.instruction",
+      "field": "instruction",
+      "value": "'There is' qachon ishlatiladi?",
+      "context": {
+        "line_number": 809,
+        "field": "instruction",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.practice.option_label",
+      "field": "option_label",
+      "value": "Ko'p narsalar (Plural)",
+      "context": {
+        "line_number": 815,
+        "field": "option_label",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'There is' = BITTA narsa mavjud.",
+      "context": {
+        "line_number": 818,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'There is' — birlik uchun. Ko'plik uchun 'There are' kerak!",
+      "context": {
+        "line_number": 819,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'There is' = BITTA narsa mavjud. 'There are' = KO'P narsa mavjud. Sonni qarang!",
+      "context": {
+        "line_number": 824,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega 'there is' va 'there are' farqi bor?",
+      "context": {
+        "line_number": 824,
+        "field": "why_prompt",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ha, o'qituvchi bor. U mening o'qituvchim.",
+      "context": {
+        "line_number": 834,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.practice.item_uz",
+      "field": "item_uz",
+      "value": "Stolda kitob bor.",
+      "context": {
+        "line_number": 842,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.practice.item_uz",
+      "field": "item_uz",
+      "value": "Maktabda mashina bor.",
+      "context": {
+        "line_number": 848,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Sinfda o'qituvchi bor'",
+      "context": {
+        "line_number": 858,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'A teacher' = BITTA. 'There IS' kerak!",
+      "context": {
+        "line_number": 864,
+        "field": "trap_message",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_is.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sizning xonangizda nima bor?",
+      "context": {
+        "line_number": 875,
+        "field": "prompt_uz",
+        "item_id": "V_U01_5_L02_there_is",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_are.personalization.item_uz",
+      "field": "item_uz",
+      "value": "bor (mavjudlik ko'plik)",
+      "context": {
+        "line_number": 885,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_are",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_are.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Sinfda talabalar yo'qmi?",
+      "context": {
+        "line_number": 904,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L02_there_are",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_are.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, sinfda talabalar bor.",
+      "context": {
+        "line_number": 907,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L02_there_are",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_are.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Sinfda talabalar bor.",
+      "context": {
+        "line_number": 910,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L02_there_are",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_are.practice.instruction",
+      "field": "instruction",
+      "value": "'There are' qachon ishlatiladi?",
+      "context": {
+        "line_number": 917,
+        "field": "instruction",
+        "item_id": "V_U01_5_L02_there_are",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_are.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'There are' = KO'P narsalar mavjud.",
+      "context": {
+        "line_number": 926,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L02_there_are",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_are.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'There are' — ko'plik uchun. Birlik uchun 'There is' kerak!",
+      "context": {
+        "line_number": 927,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L02_there_are",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_are.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Are' = ko'plik uchun TO BE shakli. Students, books, teachers = ko'plik → 'There ARE'.",
+      "context": {
+        "line_number": 932,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L02_there_are",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_are.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega 'are' ko'plik uchun?",
+      "context": {
+        "line_number": 932,
+        "field": "why_prompt",
+        "item_id": "V_U01_5_L02_there_are",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_are.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ha, talabalar bor. Besh talaba bor.",
+      "context": {
+        "line_number": 942,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_are",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_are.practice.item_uz",
+      "field": "item_uz",
+      "value": "Stolda kitoblar bor.",
+      "context": {
+        "line_number": 950,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_are",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_are.practice.item_uz",
+      "field": "item_uz",
+      "value": "Maktabda o'qituvchilar bor.",
+      "context": {
+        "line_number": 956,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_are",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_are.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Sinfda talabalar bor'",
+      "context": {
+        "line_number": 966,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L02_there_are",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_are.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'Students' = KO'PLIK. 'There ARE' kerak!",
+      "context": {
+        "line_number": 972,
+        "field": "trap_message",
+        "item_id": "V_U01_5_L02_there_are",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_are.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sinfingizda nimalar bor?",
+      "context": {
+        "line_number": 983,
+        "field": "prompt_uz",
+        "item_id": "V_U01_5_L02_there_are",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_isnt.personalization.item_uz",
+      "field": "item_uz",
+      "value": "yo'q (mavjudlik inkor birlik)",
+      "context": {
+        "line_number": 993,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_isnt",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_isnt.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Maktabda mashina bormi?",
+      "context": {
+        "line_number": 1012,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L02_there_isnt",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_isnt.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, maktabda mashina yo'q.",
+      "context": {
+        "line_number": 1015,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L02_there_isnt",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_isnt.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Maktabda mashina yo'q.",
+      "context": {
+        "line_number": 1018,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L02_there_isnt",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_isnt.practice.instruction",
+      "field": "instruction",
+      "value": "'There isn't' nimani bildiradi?",
+      "context": {
+        "line_number": 1025,
+        "field": "instruction",
+        "item_id": "V_U01_5_L02_there_isnt",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_isnt.practice.option_label",
+      "field": "option_label",
+      "value": "Mavjud emas (Does not exist)",
+      "context": {
+        "line_number": 1032,
+        "field": "option_label",
+        "item_id": "V_U01_5_L02_there_isnt",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_isnt.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'There isn't' = bitta narsa MAVJUD EMAS.",
+      "context": {
+        "line_number": 1034,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L02_there_isnt",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_isnt.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Isn't' = inkor. 'There isn't' = mavjud EMAS!",
+      "context": {
+        "line_number": 1035,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L02_there_isnt",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_isnt.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'There is' + 'not' → 'There isn't'. Birlik uchun inkor shakl.",
+      "context": {
+        "line_number": 1040,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L02_there_isnt",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_isnt.practice.item_uz",
+      "field": "item_uz",
+      "value": "Yo'q, maktabda mashina yo'q.",
+      "context": {
+        "line_number": 1050,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_isnt",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_isnt.practice.item_uz",
+      "field": "item_uz",
+      "value": "Sumkada kitob yo'q.",
+      "context": {
+        "line_number": 1058,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_isnt",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_isnt.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uyda o'qituvchi yo'q.",
+      "context": {
+        "line_number": 1064,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_isnt",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_isnt.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Maktabda mashina yo'q'",
+      "context": {
+        "line_number": 1074,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L02_there_isnt",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_isnt.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'A car' = BITTA. 'There ISN'T' kerak!",
+      "context": {
+        "line_number": 1080,
+        "field": "trap_message",
+        "item_id": "V_U01_5_L02_there_isnt",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_isnt.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sizning xonangizda nima yo'q?",
+      "context": {
+        "line_number": 1091,
+        "field": "prompt_uz",
+        "item_id": "V_U01_5_L02_there_isnt",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.personalization.item_uz",
+      "field": "item_uz",
+      "value": "yo'q (mavjudlik inkor ko'plik)",
+      "context": {
+        "line_number": 1101,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Sumkada kitoblar bormi?",
+      "context": {
+        "line_number": 1120,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, sumkada kitoblar yo'q.",
+      "context": {
+        "line_number": 1123,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Sumkada kitoblar yo'q.",
+      "context": {
+        "line_number": 1126,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.practice.instruction",
+      "field": "instruction",
+      "value": "'There aren't' qachon ishlatiladi?",
+      "context": {
+        "line_number": 1133,
+        "field": "instruction",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.practice.option_label",
+      "field": "option_label",
+      "value": "Ko'p narsalar mavjud EMAS (Plural negative)",
+      "context": {
+        "line_number": 1140,
+        "field": "option_label",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'There aren't' = ko'p narsalar mavjud EMAS.",
+      "context": {
+        "line_number": 1142,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Aren't' — ko'plik uchun. Birlik uchun 'Isn't' kerak!",
+      "context": {
+        "line_number": 1143,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'There are' + 'not' → 'There aren't'. Ko'plik uchun inkor shakl. Birlik uchun 'isn't' ishlatiladi.",
+      "context": {
+        "line_number": 1148,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Ko'plik inkor qanday farq qiladi?",
+      "context": {
+        "line_number": 1148,
+        "field": "why_prompt",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.practice.item_uz",
+      "field": "item_uz",
+      "value": "Yo'q, sumkada kitoblar yo'q. Sumka uyda.",
+      "context": {
+        "line_number": 1158,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.practice.item_uz",
+      "field": "item_uz",
+      "value": "Maktabda talabalar yo'q.",
+      "context": {
+        "line_number": 1166,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.practice.item_uz",
+      "field": "item_uz",
+      "value": "Stolda mashinalar yo'q.",
+      "context": {
+        "line_number": 1172,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Sumkada kitoblar yo'q'",
+      "context": {
+        "line_number": 1182,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'Books' = KO'PLIK. 'There AREN'T' kerak!",
+      "context": {
+        "line_number": 1188,
+        "field": "trap_message",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L02_there_arent.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sinfingizda nimalar yo'q?",
+      "context": {
+        "line_number": 1199,
+        "field": "prompt_uz",
+        "item_id": "V_U01_5_L02_there_arent",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_where.personalization.item_uz",
+      "field": "item_uz",
+      "value": "qayerda",
+      "context": {
+        "line_number": 1238,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_where",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_where.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Ali qayerda ekanini bilasizmi?",
+      "context": {
+        "line_number": 1257,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L03_where",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_where.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, Ali qayerda ekanini bilmayman. Ali qayerda?",
+      "context": {
+        "line_number": 1260,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L03_where",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_where.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Ali qayerda?",
+      "context": {
+        "line_number": 1263,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L03_where",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_where.practice.instruction",
+      "field": "instruction",
+      "value": "'Where' qanday savol so'zi?",
+      "context": {
+        "line_number": 1270,
+        "field": "instruction",
+        "item_id": "V_U01_5_L03_where",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_where.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Where' = QAYERDA (joy haqida).",
+      "context": {
+        "line_number": 1279,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L03_where",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_where.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Where' = QAYERDA. Bu joy haqida savoldir!",
+      "context": {
+        "line_number": 1280,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L03_where",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_where.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Where' = joy haqida savol. Savol tartibi: WHERE + IS/ARE + Subject? Darak gapdan farqli tartib!",
+      "context": {
+        "line_number": 1285,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L03_where",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_where.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Savol so'zlari qanday ishlaydi?",
+      "context": {
+        "line_number": 1285,
+        "field": "why_prompt",
+        "item_id": "V_U01_5_L03_where",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_where.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bugun xursandman. Ali qayerda?",
+      "context": {
+        "line_number": 1295,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_where",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_where.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kitob qayerda?",
+      "context": {
+        "line_number": 1303,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_where",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_where.practice.item_uz",
+      "field": "item_uz",
+      "value": "Talabalar qayerda?",
+      "context": {
+        "line_number": 1309,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_where",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_where.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Ali qayerda?'",
+      "context": {
+        "line_number": 1319,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L03_where",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_where.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sizning eng yaqin do'stingiz qayerda?",
+      "context": {
+        "line_number": 1336,
+        "field": "prompt_uz",
+        "item_id": "V_U01_5_L03_where",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_how.personalization.item_uz",
+      "field": "item_uz",
+      "value": "qanday/qanaqasiga",
+      "context": {
+        "line_number": 1346,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_how",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_how.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz bilan uchrashganimda nima deyishim kerak?",
+      "context": {
+        "line_number": 1365,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L03_how",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_how.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Salom! Qandaysiz? deb so'rashingiz kerak.",
+      "context": {
+        "line_number": 1368,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L03_how",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_how.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Siz qandaysiz?",
+      "context": {
+        "line_number": 1371,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L03_how",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_how.practice.instruction",
+      "field": "instruction",
+      "value": "'How are you?' nima haqida so'raydi?",
+      "context": {
+        "line_number": 1378,
+        "field": "instruction",
+        "item_id": "V_U01_5_L03_how",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_how.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'How are you?' = siz QANDAY ekanligingizni so'raydi.",
+      "context": {
+        "line_number": 1387,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L03_how",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_how.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'How' = QANDAY. Bu holat haqida savoldir!",
+      "context": {
+        "line_number": 1388,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L03_how",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_how.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'How' = holat yoki usul. 'How are you?' = Qanday ekansiz? 'How' bilan turli savollar tuzish mumkin.",
+      "context": {
+        "line_number": 1393,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L03_how",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_how.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "How qachon ishlatiladi?",
+      "context": {
+        "line_number": 1393,
+        "field": "why_prompt",
+        "item_id": "V_U01_5_L03_how",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_how.practice.item_uz",
+      "field": "item_uz",
+      "value": "Salom Karim! Qandaysiz?",
+      "context": {
+        "line_number": 1403,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_how",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_how.practice.item_uz",
+      "field": "item_uz",
+      "value": "Dadangiz qalaysiz?",
+      "context": {
+        "line_number": 1411,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_how",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_how.practice.item_uz",
+      "field": "item_uz",
+      "value": "U qanday?",
+      "context": {
+        "line_number": 1417,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_how",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_how.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Qandaysiz?'",
+      "context": {
+        "line_number": 1427,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L03_how",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_how.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Bugun o'zingizni qanday his qilyapsiz?",
+      "context": {
+        "line_number": 1444,
+        "field": "prompt_uz",
+        "item_id": "V_U01_5_L03_how",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_when.personalization.item_uz",
+      "field": "item_uz",
+      "value": "qachon",
+      "context": {
+        "line_number": 1454,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_when",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_when.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Dars qachon boshlanishini bilasizmi?",
+      "context": {
+        "line_number": 1473,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L03_when",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_when.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Bilmayman. Dars qachon?",
+      "context": {
+        "line_number": 1476,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L03_when",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_when.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Dars qachon?",
+      "context": {
+        "line_number": 1479,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L03_when",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_when.practice.instruction",
+      "field": "instruction",
+      "value": "'When' qanday savol so'zi?",
+      "context": {
+        "line_number": 1486,
+        "field": "instruction",
+        "item_id": "V_U01_5_L03_when",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_when.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'When' = QACHON (vaqt haqida).",
+      "context": {
+        "line_number": 1495,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L03_when",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_when.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'When' = QACHON. Bu vaqt haqida savoldir!",
+      "context": {
+        "line_number": 1496,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L03_when",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_when.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'When' = vaqt haqida savol. 'When + is/are + subject?' — vaqtni so'rash uchun.",
+      "context": {
+        "line_number": 1501,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L03_when",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_when.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "When savol so'zi nima uchun?",
+      "context": {
+        "line_number": 1501,
+        "field": "why_prompt",
+        "item_id": "V_U01_5_L03_when",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_when.practice.item_uz",
+      "field": "item_uz",
+      "value": "Dars qachon?",
+      "context": {
+        "line_number": 1511,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_when",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_when.practice.item_uz",
+      "field": "item_uz",
+      "value": "Imtihon qachon?",
+      "context": {
+        "line_number": 1519,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_when",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_when.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz qachon uyda bo'lasiz?",
+      "context": {
+        "line_number": 1525,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_when",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_when.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Dars qachon?'",
+      "context": {
+        "line_number": 1535,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L03_when",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_when.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sizning darslaringiz qachon?",
+      "context": {
+        "line_number": 1552,
+        "field": "prompt_uz",
+        "item_id": "V_U01_5_L03_when",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_why.personalization.item_uz",
+      "field": "item_uz",
+      "value": "nega/nima uchun",
+      "context": {
+        "line_number": 1562,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_why",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_why.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz xursand ekansiz. Sabab nima?",
+      "context": {
+        "line_number": 1581,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L03_why",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_why.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Nega xursandman? Bugungi kun yaxshi!",
+      "context": {
+        "line_number": 1584,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L03_why",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_why.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Nega siz xursandsiz?",
+      "context": {
+        "line_number": 1587,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L03_why",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_why.practice.instruction",
+      "field": "instruction",
+      "value": "'Why' qanday savol so'zi?",
+      "context": {
+        "line_number": 1594,
+        "field": "instruction",
+        "item_id": "V_U01_5_L03_why",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_why.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Why' = NEGA/NIMA UCHUN (sabab haqida).",
+      "context": {
+        "line_number": 1603,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L03_why",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_why.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Why' = NEGA. Bu sabab haqida savoldir!",
+      "context": {
+        "line_number": 1604,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L03_why",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_why.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Why' = sabab/sababni so'rash. 'Why + are/is + subject + adjective?' — sababni aniqlash.",
+      "context": {
+        "line_number": 1609,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L03_why",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_why.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Why nima uchun?",
+      "context": {
+        "line_number": 1609,
+        "field": "why_prompt",
+        "item_id": "V_U01_5_L03_why",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_why.practice.item_uz",
+      "field": "item_uz",
+      "value": "Zo'r! Nega xursandsiz?",
+      "context": {
+        "line_number": 1619,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_why",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_why.practice.item_uz",
+      "field": "item_uz",
+      "value": "Nega u g'amgin?",
+      "context": {
+        "line_number": 1627,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_why",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_why.practice.item_uz",
+      "field": "item_uz",
+      "value": "Nega ular maktabda?",
+      "context": {
+        "line_number": 1633,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_why",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_why.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Nega xursandsiz?'",
+      "context": {
+        "line_number": 1643,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L03_why",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_why.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz nega ingliz tilini o'rganasiz?",
+      "context": {
+        "line_number": 1660,
+        "field": "prompt_uz",
+        "item_id": "V_U01_5_L03_why",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.personalization.item_uz",
+      "field": "item_uz",
+      "value": "-da/-de (ichida)",
+      "context": {
+        "line_number": 1670,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Ali sinf tashqarisidami?",
+      "context": {
+        "line_number": 1689,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, Ali sinfda.",
+      "context": {
+        "line_number": 1692,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Ali sinfda.",
+      "context": {
+        "line_number": 1695,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.practice.instruction",
+      "field": "instruction",
+      "value": "'In' qachon ishlatiladi?",
+      "context": {
+        "line_number": 1702,
+        "field": "instruction",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.practice.option_label",
+      "field": "option_label",
+      "value": "Ichida (Inside)",
+      "context": {
+        "line_number": 1709,
+        "field": "option_label",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'In' = ICHIDA (sinf ichida).",
+      "context": {
+        "line_number": 1711,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'In' = ICHIDA. 'In the class' = sinf ICHIDA!",
+      "context": {
+        "line_number": 1712,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "IN = ichida (in the room, in the bag). ON = ustida (on the table). AT = aniq joy (at school). Uch xil joy ko'rsatish!",
+      "context": {
+        "line_number": 1717,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "In, On, At — farqi nima?",
+      "context": {
+        "line_number": 1717,
+        "field": "why_prompt",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ali sinfda. Uning kitobi bor.",
+      "context": {
+        "line_number": 1727,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kitob sumkada.",
+      "context": {
+        "line_number": 1735,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz sinfdamiz.",
+      "context": {
+        "line_number": 1741,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Ali sinfda'",
+      "context": {
+        "line_number": 1751,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'In' = ICHIDA. 'In the class' to'g'ri!",
+      "context": {
+        "line_number": 1757,
+        "field": "trap_message",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_in.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz hozir qayerdasiz?",
+      "context": {
+        "line_number": 1768,
+        "field": "prompt_uz",
+        "item_id": "V_U01_5_L03_in",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_on.personalization.item_uz",
+      "field": "item_uz",
+      "value": "ustida",
+      "context": {
+        "line_number": 1778,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_on",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_on.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Kitob stol tagidami?",
+      "context": {
+        "line_number": 1797,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L03_on",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_on.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, kitob stol ustida.",
+      "context": {
+        "line_number": 1800,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L03_on",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_on.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Kitob stolda.",
+      "context": {
+        "line_number": 1803,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L03_on",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_on.practice.instruction",
+      "field": "instruction",
+      "value": "'On' qachon ishlatiladi?",
+      "context": {
+        "line_number": 1810,
+        "field": "instruction",
+        "item_id": "V_U01_5_L03_on",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_on.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'On' = USTIDA (stol ustida).",
+      "context": {
+        "line_number": 1819,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L03_on",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_on.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'On' = USTIDA. 'On the table' = stol USTIDA!",
+      "context": {
+        "line_number": 1820,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L03_on",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_on.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'On' = sirt ustida. On the table, on the wall, on the floor — narsa sirt USTIDA tursa 'on' kerak.",
+      "context": {
+        "line_number": 1825,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L03_on",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_on.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "On qachon ishlatiladi?",
+      "context": {
+        "line_number": 1825,
+        "field": "why_prompt",
+        "item_id": "V_U01_5_L03_on",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_on.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kitob stolda.",
+      "context": {
+        "line_number": 1835,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_on",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_on.practice.item_uz",
+      "field": "item_uz",
+      "value": "Sumkangiz stolda.",
+      "context": {
+        "line_number": 1843,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_on",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_on.practice.item_uz",
+      "field": "item_uz",
+      "value": "Surat devorda.",
+      "context": {
+        "line_number": 1849,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_on",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_on.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Kitob stolda'",
+      "context": {
+        "line_number": 1859,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L03_on",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_on.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'On' = USTIDA. 'On the table' to'g'ri!",
+      "context": {
+        "line_number": 1865,
+        "field": "trap_message",
+        "item_id": "V_U01_5_L03_on",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_on.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sizning stolingizda nimalar bor?",
+      "context": {
+        "line_number": 1876,
+        "field": "prompt_uz",
+        "item_id": "V_U01_5_L03_on",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_at.personalization.item_uz",
+      "field": "item_uz",
+      "value": "-da/-de (aniq joy)",
+      "context": {
+        "line_number": 1886,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_at",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_at.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Singlingiz maktabdami?",
+      "context": {
+        "line_number": 1905,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L03_at",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_at.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, u uyda.",
+      "context": {
+        "line_number": 1908,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L03_at",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_at.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "U uyda.",
+      "context": {
+        "line_number": 1911,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L03_at",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_at.practice.instruction",
+      "field": "instruction",
+      "value": "'At' qachon ishlatiladi?",
+      "context": {
+        "line_number": 1918,
+        "field": "instruction",
+        "item_id": "V_U01_5_L03_at",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_at.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'At' = aniq joy (at home, at school, at work).",
+      "context": {
+        "line_number": 1927,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L03_at",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_at.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'At' = aniq joy uchun. 'At home' = UYDA!",
+      "context": {
+        "line_number": 1928,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L03_at",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_at.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'At' = aniq belgilangan joy. At home, at school, at work — bu joylarning NOMI bilan 'at' kerak.",
+      "context": {
+        "line_number": 1933,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L03_at",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_at.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "At qachon ishlatiladi?",
+      "context": {
+        "line_number": 1933,
+        "field": "why_prompt",
+        "item_id": "V_U01_5_L03_at",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_at.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening ham singlim bor. U uyda.",
+      "context": {
+        "line_number": 1943,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_at",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_at.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men maktabdaman.",
+      "context": {
+        "line_number": 1951,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_at",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_at.practice.item_uz",
+      "field": "item_uz",
+      "value": "U ishda.",
+      "context": {
+        "line_number": 1957,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_at",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_at.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'U uyda' (ayol)",
+      "context": {
+        "line_number": 1967,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L03_at",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_at.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'At home' = uyda. 'In home' noto'g'ri!",
+      "context": {
+        "line_number": 1973,
+        "field": "trap_message",
+        "item_id": "V_U01_5_L03_at",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_too.personalization.item_uz",
+      "field": "item_uz",
+      "value": "ham",
+      "context": {
+        "line_number": 1994,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_too",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_too.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Faqat Saraning singlisi bormi?",
+      "context": {
+        "line_number": 2013,
+        "field": "uz_context",
+        "item_id": "V_U01_5_L03_too",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_too.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, mening ham singlim bor.",
+      "context": {
+        "line_number": 2016,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U01_5_L03_too",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_too.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Mening ham singlim bor.",
+      "context": {
+        "line_number": 2019,
+        "field": "uz_gloss",
+        "item_id": "V_U01_5_L03_too",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_too.practice.instruction",
+      "field": "instruction",
+      "value": "'Too' nimani bildiradi?",
+      "context": {
+        "line_number": 2026,
+        "field": "instruction",
+        "item_id": "V_U01_5_L03_too",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_too.practice.option_label",
+      "field": "option_label",
+      "value": "Qo'shimcha (Also/Addition)",
+      "context": {
+        "line_number": 2033,
+        "field": "option_label",
+        "item_id": "V_U01_5_L03_too",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_too.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Too' = HAM (qo'shimcha ma'nosi).",
+      "context": {
+        "line_number": 2035,
+        "field": "success_msg",
+        "item_id": "V_U01_5_L03_too",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_too.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "'Too' = HAM. Bu qo'shimcha qilish uchun ishlatiladi!",
+      "context": {
+        "line_number": 2036,
+        "field": "fail_msg",
+        "item_id": "V_U01_5_L03_too",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_too.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Too' = ham. Gap OXIRIDA keladi: 'I am happy TOO.' 'Also' esa gap o'rtasida: 'I also have...'",
+      "context": {
+        "line_number": 2041,
+        "field": "explanation_uz",
+        "item_id": "V_U01_5_L03_too",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_too.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Too qayerda keladi?",
+      "context": {
+        "line_number": 2041,
+        "field": "why_prompt",
+        "item_id": "V_U01_5_L03_too",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_too.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men ham talabaman.",
+      "context": {
+        "line_number": 2059,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_too",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_too.practice.item_uz",
+      "field": "item_uz",
+      "value": "U ham xursand.",
+      "context": {
+        "line_number": 2065,
+        "field": "item_uz",
+        "item_id": "V_U01_5_L03_too",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_too.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Mening ham singlim bor'",
+      "context": {
+        "line_number": 2075,
+        "field": "uz_prompt",
+        "item_id": "V_U01_5_L03_too",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_too.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'Too' gap oxirida keladi: 'I have a sister TOO'!",
+      "context": {
+        "line_number": 2081,
+        "field": "trap_message",
+        "item_id": "V_U01_5_L03_too",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U01_5_L03_too.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz ham nimaga qiziqasiz?",
+      "context": {
+        "line_number": 2092,
+        "field": "prompt_uz",
+        "item_id": "V_U01_5_L03_too",
+        "phase": "personalization"
+      }
+    }
+  ]
+}

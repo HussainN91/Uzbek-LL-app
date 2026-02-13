@@ -109,15 +109,15 @@ export function renderListenWriteTile(lesson) {
 
     const msg = document.createElement("div");
     msg.className = "tile-section";
-    msg.textContent = "Oldin WRITING bosqichini yakunlang.";
+    msg.textContent = uz('listenWrite.gateWriting');
     msg.classList.add("tl-uz");
-    msg.dataset.translation = "Complete the WRITING tile first.";
+    msg.dataset.translation = en('listenWrite.gateWriting');
 
-    const btnBack = createButton("Qaytish: WRITING", () => {
+    const btnBack = createButton(uz("nav.backWriting"), () => {
       transitionToTile(STATES.WRITING);
     });
     btnBack.classList.add("tl-uz");
-    btnBack.dataset.translation = "Back: WRITING";
+    btnBack.dataset.translation = en("nav.backWriting");
 
     tileContainer.appendChild(title);
     tileContainer.appendChild(msg);
@@ -139,9 +139,9 @@ export function renderListenWriteTile(lesson) {
 
   const info = document.createElement("div");
   info.className = "tile-section";
-  info.textContent = "Gapni eshiting va aynan shu gapni yozing. Har gapda kamida 60% mos kelishi kerak.";
+  info.textContent = uz('listenWrite.fullInstruction');
   info.classList.add("tl-uz");
-  info.dataset.translation = "Listen to the sentence and type exactly what you hear. Each sentence needs at least 60% word match.";
+  info.dataset.translation = en('listenWrite.fullInstruction');
 
   // Build approved sentence pool from PATTERN + CONTROLLED pools
   const patternPool = window.__LAST_PATTERN_SENTENCES__ || [];
@@ -177,7 +177,7 @@ export function renderListenWriteTile(lesson) {
   if (pool.length === 0) {
     const err = document.createElement("div");
     err.className = "tile-section";
-    err.textContent = "No sentences available for dictation.";
+    err.textContent = uz('listenWrite.noSentences');
     tileContainer.appendChild(title);
     tileContainer.appendChild(err);
     return;
@@ -196,13 +196,13 @@ export function renderListenWriteTile(lesson) {
     wrapper.style.cssText = "background:#fafafa;padding:12px;border-radius:8px;margin-bottom:12px;";
 
     const label = document.createElement("div");
-    label.textContent = "[" + (idx + 1) + "] Gapni eshiting va yozing:";
+    label.textContent = uz('listenWrite.perItemLabel').replace('{index}', idx + 1);
     label.classList.add("tl-uz");
-    label.dataset.translation = "[" + (idx + 1) + "] Listen and type the sentence:";
+    label.dataset.translation = en('listenWrite.perItemLabel').replace('{index}', idx + 1);
     label.style.marginBottom = "8px";
 
     // Audio play button
-    const btnPlay = /** @type {HTMLButtonElement} */ (createButton("🔊 Tinglash", async () => {
+    const btnPlay = /** @type {HTMLButtonElement} */ (createButton(uz('listenWrite.listenBtn'), async () => {
       btnPlay.disabled = true;
       btnPlay.textContent = "⏳...";
       try {
@@ -227,14 +227,14 @@ export function renderListenWriteTile(lesson) {
         console.warn("Listen & Write audio failed:", e);
       }
       btnPlay.disabled = false;
-      btnPlay.textContent = "🔊 Tinglash";
+      btnPlay.textContent = uz('listenWrite.listenBtn');
     }));
     btnPlay.classList.add("tl-uz");
-    btnPlay.dataset.translation = "Listen";
+    btnPlay.dataset.translation = en('listenWrite.listenBtn');
     btnPlay.style.marginBottom = "8px";
 
     const ta = document.createElement("textarea");
-    ta.placeholder = "Type the sentence you hear...";
+    ta.placeholder = uz('listenWrite.inputPlaceholder');
     ta.rows = 2;
     ta.style.cssText = "width:100%;padding:10px;border:1px solid #ddd;border-radius:4px;font-size:1rem;resize:vertical;";
     ta.dataset.correct = s;
@@ -249,7 +249,7 @@ export function renderListenWriteTile(lesson) {
   const feedback = document.createElement("div");
   feedback.className = "feedback";
 
-  const btnCheck = createButton("Check", () => {
+  const btnCheck = createButton(uz('buttons.check'), () => {
     let passCount = 0;
     let totalPoints = 0;
 
@@ -288,19 +288,19 @@ export function renderListenWriteTile(lesson) {
     const pointsMsg = totalPoints > 0 ? " (+" + totalPoints + " points)" : "";
 
     if (overallScore >= 0.8) {
-      feedback.textContent = "Juda yaxshi! " + passCount + "/" + textareas.length + " to'g'ri." + pointsMsg;
+      feedback.textContent = uz('listenWrite.successMsg').replace('{correct}', passCount + "/" + textareas.length) + pointsMsg;
       feedback.className = "feedback ok";
       playSound('correct');
       window.listenWritePassed = true;
     } else {
-      feedback.textContent = "Kamida 80% (4/5 gap) to'g'ri bo'lishi kerak. Hozir: " + passCount + "/" + textareas.length;
+      feedback.textContent = uz('listenWrite.failureMsg').replace('{current}', passCount + "/" + textareas.length);
       feedback.className = "feedback err";
       playSound('wrong');
     }
     feedback.dataset.lastScore = String(overallScore);
   });
 
-  const btnContinue = createButton("Continue", () => {
+  const btnContinue = createButton(uz('buttons.continue'), () => {
     // TEACHER MODE: Bypass validation
     if (window.TEACHER_MODE) {
       playSound('complete');
@@ -313,7 +313,7 @@ export function renderListenWriteTile(lesson) {
       playSound('complete');
       transitionToTile(STATES.MISTAKE);
     } else {
-      feedback.textContent = "Oldin bu mashqni yakunlang (≥80%).";
+      feedback.textContent = uz('listenWrite.gatePrev');
       feedback.className = "feedback err";
       playSound('wrong');
     }
@@ -321,7 +321,7 @@ export function renderListenWriteTile(lesson) {
 
   // TEACHER MODE: Skip button
   if (window.TEACHER_MODE) {
-    const btnSkip = createButton("🎓 Skip (Teacher)", () => {
+    const btnSkip = createButton(uz('listenWrite.skipTeacher'), () => {
       transitionToTile(STATES.MISTAKE);
     });
     btnSkip.style.background = "#673ab7";

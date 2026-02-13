@@ -90,15 +90,15 @@ export function renderWritingTile(lesson) {
     
     const msg = document.createElement("div");
     msg.className = "tile-section";
-    msg.textContent = "Oldin CONTROLLED barcha " + totalStages + " bosqichini (" + CONTROLLED_STAGES.join(", ") + ") yakunlang. Hozirgi bosqich: " + Math.min(controlledStageIndex + 1, totalStages) + "/" + totalStages + ".";
+    msg.textContent = uz('writing.gateControlled').replace('{total}', totalStages).replace('{current}', Math.min(controlledStageIndex + 1, totalStages) + "/" + totalStages);
     msg.classList.add("tl-uz");
-    msg.dataset.translation = "Complete all " + totalStages + " stages of CONTROLLED (" + CONTROLLED_STAGES.join(", ") + ") first. Current stage: " + Math.min(controlledStageIndex + 1, totalStages) + "/" + totalStages + ".";
+    msg.dataset.translation = en('writing.gateControlled').replace('{total}', totalStages).replace('{current}', Math.min(controlledStageIndex + 1, totalStages) + "/" + totalStages);
     
-    const btnBack = createButton("Qaytish: CONTROLLED", () => {
+    const btnBack = createButton(uz("nav.backControlled"), () => {
       transitionToTile(STATES.CONTROLLED);
     });
     btnBack.classList.add("tl-uz");
-    btnBack.dataset.translation = "Back: CONTROLLED";
+    btnBack.dataset.translation = en("nav.backControlled");
     
     tileContainer.appendChild(title);
     tileContainer.appendChild(msg);
@@ -149,7 +149,7 @@ export function renderWritingTile(lesson) {
   if (we && we.english_prompt) {
     instr.dataset.translation = String(we.english_prompt);
   } else {
-    instr.dataset.translation = "Write at least 2 simple sentences (use words from the lesson).";
+    instr.dataset.translation = en('writing.fallbackInstruction');
   }
 
   const textarea = document.createElement("textarea");
@@ -173,7 +173,7 @@ export function renderWritingTile(lesson) {
 
     if (wcOk && vocabOk) {
       window.lastWritingPassed = true;
-      feedback.textContent = "✓ Yaxshi, funksiyani to'liq ishlatyapsiz.";
+      feedback.textContent = uz('writing.successFull');
       feedback.className = "feedback ok";
     } else {
       window.lastWritingPassed = false;
@@ -181,7 +181,7 @@ export function renderWritingTile(lesson) {
       let uzFeedback;
       if (!wcOk) {
         const needed = minWC - wc;
-        uzFeedback = "Kamida 2 ta gap kerak. Yana " + needed + " ta so'z yozing (" + wc + "/" + minWC + ").";
+        uzFeedback = uz('writing.needMoreSentences').replace('{count}', needed) + " (" + wc + "/" + minWC + ")";
       } else if (!vocabOk) {
         const missingWords = [];
         allVocab.forEach((tok) => {
@@ -190,17 +190,17 @@ export function renderWritingTile(lesson) {
           }
         });
         if (missingWords.length > 0) {
-          uzFeedback = "Bu so'zlardan ishlating: '" + missingWords.join("', '") + "'.";
+          uzFeedback = uz('writing.useTheseWords').replace('{words}', missingWords.join("', '"));
         } else {
-          uzFeedback = "Darsdan ko'proq so'zlar ishlating.";
+          uzFeedback = uz('writing.useMoreVocab');
         }
       } else {
-        uzFeedback = "Qayta urinib ko'ring.";
+        uzFeedback = uz('writing.retryWriting');
       }
       
       feedback.textContent = uzFeedback;
       feedback.classList.add("tl-uz");
-      feedback.dataset.translation = "Check console for details. You need more words or more lesson vocabulary.";
+      feedback.dataset.translation = en('writing.checkConsoleMsg');
       feedback.className = "feedback err";
     }
   });
@@ -215,9 +215,9 @@ export function renderWritingTile(lesson) {
     if (window.lastWritingPassed) {
       transitionToTile(STATES.LISTEN_WRITE);
     } else {
-      feedback.textContent = "Oldin WRITING tile'dan o'ting (shartlar bajarilsin).";
+      feedback.textContent = uz('writing.gateWritingSelf');
       feedback.classList.add("tl-uz");
-      feedback.dataset.translation = "Pass the WRITING tile first (meet the requirements).";
+      feedback.dataset.translation = en('writing.gateWritingSelf');
       feedback.className = "feedback err";
     }
   });

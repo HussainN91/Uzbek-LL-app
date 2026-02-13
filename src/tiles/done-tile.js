@@ -20,13 +20,6 @@ import { createInstructionBanner } from '../components/instruction-banner.js';
 import { checkBadges, showBadgeNotification } from '../core/badge-catalog.js';
 
 /**
- * Get translation function reference
- */
-function getUz(key) {
-  return typeof window.getUz === 'function' ? window.getUz(key) : key;
-}
-
-/**
  * Get unit lesson IDs
  */
 function getUnitLessonIds(unitId) {
@@ -222,9 +215,9 @@ export function renderDoneTile(lesson) {
   scoreSection.style.marginBottom = "16px";
   
   const scoreTitle = document.createElement("h3");
-  scoreTitle.textContent = "🏆 Yakuniy natija";
+  scoreTitle.textContent = uz('done.scoreTitle');
   scoreTitle.classList.add("tl-uz");
-  scoreTitle.dataset.translation = "🏆 Final Score";
+  scoreTitle.dataset.translation = en('done.scoreTitle');
   scoreTitle.style.margin = "0 0 12px 0";
   scoreTitle.style.color = "#e65100";
   
@@ -237,38 +230,38 @@ export function renderDoneTile(lesson) {
   // Color code based on performance
   if (percentage >= 90) {
     scoreDisplay.style.color = "#2e7d32";
-    scoreDisplay.textContent = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - A'LO!";
+    scoreDisplay.textContent = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - " + uz('done.ratingExcellent');
     scoreDisplay.classList.add("tl-uz");
-    scoreDisplay.dataset.translation = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - EXCELLENT!";
+    scoreDisplay.dataset.translation = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - " + en('done.ratingExcellent');
   } else if (percentage >= 75) {
     scoreDisplay.style.color = "#1976d2";
-    scoreDisplay.textContent = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - YAXSHI!";
+    scoreDisplay.textContent = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - " + uz('done.ratingExcellent');
     scoreDisplay.classList.add("tl-uz");
-    scoreDisplay.dataset.translation = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - GOOD!";
+    scoreDisplay.dataset.translation = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - " + en('done.ratingExcellent');
   } else if (percentage >= 60) {
     scoreDisplay.style.color = "#f57c00";
-    scoreDisplay.textContent = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - QONIQARLI";
+    scoreDisplay.textContent = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - " + uz('done.ratingOkay');
     scoreDisplay.classList.add("tl-uz");
-    scoreDisplay.dataset.translation = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - SATISFACTORY";
+    scoreDisplay.dataset.translation = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - " + en('done.ratingOkay');
   } else {
     scoreDisplay.style.color = "#d32f2f";
-    scoreDisplay.textContent = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - QAYTA URINIB KO'RING";
+    scoreDisplay.textContent = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - " + uz('done.ratingRetry');
     scoreDisplay.classList.add("tl-uz");
-    scoreDisplay.dataset.translation = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - TRY AGAIN";
+    scoreDisplay.dataset.translation = sessionScore + " / " + sessionMaxScore + " (" + percentage + "%) - " + en('done.ratingRetry');
   }
   
   // Breakdown by tile
   const breakdown = document.createElement("div");
   breakdown.style.marginTop = "12px";
   breakdown.style.fontSize = "14px";
-  breakdown.innerHTML = "<strong class='tl-uz' data-translation='Breakdown:'>Tafsilotlar:</strong><br/>";
+  breakdown.innerHTML = "<strong class='tl-uz' data-translation='" + en('done.tileBreakdown') + "'>" + uz('done.tileBreakdown') + ":</strong><br/>";
   
   const tileNames = window.UI_CONFIG?.TILE_NAMES || {};
   
   Object.keys(tileScores).forEach(tileName => {
     const points = tileScores[tileName];
     const displayName = tileNames[tileName] || tileName;
-    breakdown.innerHTML += "• " + displayName + ": " + points + " points<br/>";
+    breakdown.innerHTML += "• " + displayName + ": " + points + " " + en('done.points') + "<br/>";
   });
   
   scoreSection.appendChild(scoreTitle);
@@ -302,7 +295,7 @@ export function renderDoneTile(lesson) {
     row.innerHTML = `
       <span style="font-size: 1.1rem;">${icon}</span>
       <span style="flex: 1; color: ${hasPts ? '#333' : '#999'};">${tileName}</span>
-      <span style="font-weight: 600; color: ${hasPts ? '#2e7d32' : '#ccc'};">${hasPts ? pts + ' ball' : '—'}</span>
+      <span style="font-weight: 600; color: ${hasPts ? '#2e7d32' : '#ccc'};">${hasPts ? pts + ' ' + uz('done.points') : '—'}</span>
     `;
     progressOverview.appendChild(row);
   });
@@ -349,7 +342,7 @@ export function renderDoneTile(lesson) {
     // Not last lesson - show next lesson button
     const nextId = lessonIds[idx + 1];
     const btnNextLesson = createButton(
-      "➡️ Keyingi dars (" + getFriendlyLessonName(nextId) + ")",
+      uz('done.nextLessonBtn').replace('{name}', getFriendlyLessonName(nextId)),
       () => {
         if (typeof window.setCurrentLesson === 'function') window.setCurrentLesson(nextId);
         if (typeof window.setLastMasterPassed === 'function') window.setLastMasterPassed(false);
@@ -378,7 +371,7 @@ export function renderDoneTile(lesson) {
       unitCompleteMsg.style.fontWeight = "bold";
       unitCompleteMsg.style.padding = "16px";
       unitCompleteMsg.style.marginBottom = "16px";
-      unitCompleteMsg.textContent = "🎉 " + getUnitDisplayName(CURRENT_UNIT_ID) + " yakunlandi! Keyingi unit ochildi.";
+      unitCompleteMsg.textContent = uz('done.unitCompleteMsg').replace('{unit}', getUnitDisplayName(CURRENT_UNIT_ID));
       tileContainer.appendChild(unitCompleteMsg);
       
       // Show next unit button if available
@@ -386,7 +379,7 @@ export function renderDoneTile(lesson) {
       if (currentUnitIdx >= 0 && currentUnitIdx < availableUnits.length - 1) {
         const nextUnitId = availableUnits[currentUnitIdx + 1];
         const btnNextUnit = createButton(
-          "🚀 Keyingi Unit (" + getUnitDisplayName(nextUnitId) + ")",
+          uz('done.nextUnitBtn').replace('{name}', getUnitDisplayName(nextUnitId)),
           async () => {
             await setActiveUnit(nextUnitId);
             buildLessonSelectorUI();
@@ -402,8 +395,8 @@ export function renderDoneTile(lesson) {
     
     const btnUnitCheck = createButton(uz('done.errorCheck'), () => {
       if (!allLessonsComplete) {
-        alert("Oldin barcha darslarni yakunlang. Tugallanmagan darslar: " + 
-              lessonIds.filter(id => !completedLessons.has(id)).map(id => getFriendlyLessonName(id)).join(", "));
+        alert(uz('done.completeAllFirst').replace('{lessons}', 
+              lessonIds.filter(id => !completedLessons.has(id)).map(id => getFriendlyLessonName(id)).join(", ")));
         return;
       }
       transitionToTile(STATES.UNIT_ERROR_DETECTION);
@@ -412,7 +405,7 @@ export function renderDoneTile(lesson) {
     // Visual indicator if not all complete
     if (!allLessonsComplete) {
       btnUnitCheck.style.opacity = "0.5";
-      btnUnitCheck.title = "Barcha darslar tugallanishi kerak";
+      btnUnitCheck.title = uz('done.allLessonsRequired');
     }
     
     tileContainer.appendChild(btnUnitCheck);

@@ -1,0 +1,2205 @@
+{
+  "meta": {
+    "unit": "08",
+    "source_file": "vocab_cards_u08_4act.js",
+    "total_strings": 182,
+    "categories": {
+      "line_uz": 27,
+      "item_uz": 50,
+      "uz_context": 13,
+      "uz_mirror_answer": 13,
+      "instruction": 13,
+      "option_label": 14,
+      "success_msg": 13,
+      "fail_msg": 13,
+      "uz_prompt": 13,
+      "trap_message": 13
+    },
+    "version": "1.0.0"
+  },
+  "strings": [
+    {
+      "id": "dialogues.U08_L01_D01.line_123",
+      "field": "line_uz",
+      "value": "Salom Akmal! Yangi xonamizni ko'rdingmi?",
+      "context": {
+        "line_number": 123,
+        "field": "line_uz",
+        "speaker": "Laylo",
+        "dialogue_id": "U08_L01_D01",
+        "en_line": "Hi Akmal! Did you see our new bedroom?"
+      }
+    },
+    {
+      "id": "dialogues.U08_L01_D01.line_124",
+      "field": "line_uz",
+      "value": "Ha, ko'rdim! U juda katta! Nima bor?",
+      "context": {
+        "line_number": 124,
+        "field": "line_uz",
+        "speaker": "Akmal",
+        "dialogue_id": "U08_L01_D01",
+        "en_line": "Yes, I saw it! It's very big! What's there?"
+      }
+    },
+    {
+      "id": "dialogues.U08_L01_D01.line_125",
+      "field": "line_uz",
+      "value": "Katta kravatlar bor. Ikkita kravat!",
+      "context": {
+        "line_number": 125,
+        "field": "line_uz",
+        "speaker": "Laylo",
+        "dialogue_id": "U08_L01_D01",
+        "en_line": "There are big beds. Two beds!"
+      }
+    },
+    {
+      "id": "dialogues.U08_L01_D01.line_126",
+      "field": "line_uz",
+      "value": "Ajoyib! Kitob javoni bormi?",
+      "context": {
+        "line_number": 126,
+        "field": "line_uz",
+        "speaker": "Akmal",
+        "dialogue_id": "U08_L01_D01",
+        "en_line": "Wonderful! Is there a bookshelf?"
+      }
+    },
+    {
+      "id": "dialogues.U08_L01_D01.line_127",
+      "field": "line_uz",
+      "value": "Ha, devor yonida kitob javoni bor. Va stol ham bor!",
+      "context": {
+        "line_number": 127,
+        "field": "line_uz",
+        "speaker": "Laylo",
+        "dialogue_id": "U08_L01_D01",
+        "en_line": "Yes, there's a bookshelf by the wall. And there's also a desk!"
+      }
+    },
+    {
+      "id": "dialogues.U08_L01_D01.line_128",
+      "field": "line_uz",
+      "value": "Shkaf bormi? Kiyimlarimiz uchun?",
+      "context": {
+        "line_number": 128,
+        "field": "line_uz",
+        "speaker": "Akmal",
+        "dialogue_id": "U08_L01_D01",
+        "en_line": "Is there a wardrobe? For our clothes?"
+      }
+    },
+    {
+      "id": "dialogues.U08_L01_D01.line_129",
+      "field": "line_uz",
+      "value": "Ha, katta shkaf bor! Va ko'zgu ham bor!",
+      "context": {
+        "line_number": 129,
+        "field": "line_uz",
+        "speaker": "Laylo",
+        "dialogue_id": "U08_L01_D01",
+        "en_line": "Yes, there's a big wardrobe! And there's also a mirror!"
+      }
+    },
+    {
+      "id": "dialogues.U08_L01_D01.line_130",
+      "field": "line_uz",
+      "value": "Men bu xonani yaxshi ko'raman!",
+      "context": {
+        "line_number": 130,
+        "field": "line_uz",
+        "speaker": "Akmal",
+        "dialogue_id": "U08_L01_D01",
+        "en_line": "I love this room!"
+      }
+    },
+    {
+      "id": "dialogues.U08_L01_D01.line_131",
+      "field": "line_uz",
+      "value": "Bu yerda hech narsa eski yo'q. Hammasi yangi!",
+      "context": {
+        "line_number": 131,
+        "field": "line_uz",
+        "speaker": "Laylo",
+        "dialogue_id": "U08_L01_D01",
+        "en_line": "There isn't anything old here. Everything is new!"
+      }
+    },
+    {
+      "id": "dialogues.U08_L01_D01.line_132",
+      "field": "line_uz",
+      "value": "Stol ustida nimadir bormi?",
+      "context": {
+        "line_number": 132,
+        "field": "line_uz",
+        "speaker": "Akmal",
+        "dialogue_id": "U08_L01_D01",
+        "en_line": "Is there something on the desk?"
+      }
+    },
+    {
+      "id": "dialogues.U08_L02_D01.line_152",
+      "field": "line_uz",
+      "value": "Salom Sardor! Maktabdan keyin nima qilishni yoqtirasiz?",
+      "context": {
+        "line_number": 152,
+        "field": "line_uz",
+        "speaker": "Nodira",
+        "dialogue_id": "U08_L02_D01",
+        "en_line": "Hi Sardor! What do you like to do after school?"
+      }
+    },
+    {
+      "id": "dialogues.U08_L02_D01.line_153",
+      "field": "line_uz",
+      "value": "Men rasm chizish va musiqa tinglashni yaxshi ko'raman.",
+      "context": {
+        "line_number": 153,
+        "field": "line_uz",
+        "speaker": "Sardor",
+        "dialogue_id": "U08_L02_D01",
+        "en_line": "I like to draw pictures and listen to music."
+      }
+    },
+    {
+      "id": "dialogues.U08_L02_D01.line_154",
+      "field": "line_uz",
+      "value": "Bu ajoyib! Men gitara chalishni yaxshi ko'raman.",
+      "context": {
+        "line_number": 154,
+        "field": "line_uz",
+        "speaker": "Nodira",
+        "dialogue_id": "U08_L02_D01",
+        "en_line": "That's great! I like to play the guitar."
+      }
+    },
+    {
+      "id": "dialogues.U08_L02_D01.line_155",
+      "field": "line_uz",
+      "value": "Hikoyalar yozishni yoqtirasizmi?",
+      "context": {
+        "line_number": 155,
+        "field": "line_uz",
+        "speaker": "Sardor",
+        "dialogue_id": "U08_L02_D01",
+        "en_line": "Do you like to write stories?"
+      }
+    },
+    {
+      "id": "dialogues.U08_L02_D01.line_156",
+      "field": "line_uz",
+      "value": "Ha, men har kecha kundalik yozaman.",
+      "context": {
+        "line_number": 156,
+        "field": "line_uz",
+        "speaker": "Nodira",
+        "dialogue_id": "U08_L02_D01",
+        "en_line": "Yes, I write a diary every night."
+      }
+    },
+    {
+      "id": "dialogues.U08_L02_D01.line_157",
+      "field": "line_uz",
+      "value": "Sizning oilangizda kimdir musiqa chalaydimi?",
+      "context": {
+        "line_number": 157,
+        "field": "line_uz",
+        "speaker": "Sardor",
+        "dialogue_id": "U08_L02_D01",
+        "en_line": "Does anyone in your family play music?"
+      }
+    },
+    {
+      "id": "dialogues.U08_L02_D01.line_158",
+      "field": "line_uz",
+      "value": "Ha, mening oilamdagi hamma narsa chaladi!",
+      "context": {
+        "line_number": 158,
+        "field": "line_uz",
+        "speaker": "Nodira",
+        "dialogue_id": "U08_L02_D01",
+        "en_line": "Yes, everyone in my family plays something!"
+      }
+    },
+    {
+      "id": "dialogues.U08_L02_D01.line_159",
+      "field": "line_uz",
+      "value": "Mening chaladigan narsam yo'q.",
+      "context": {
+        "line_number": 159,
+        "field": "line_uz",
+        "speaker": "Sardor",
+        "dialogue_id": "U08_L02_D01",
+        "en_line": "I don't have anything to play."
+      }
+    },
+    {
+      "id": "dialogues.U08_L02_D01.line_160",
+      "field": "line_uz",
+      "value": "Bunda yomon hech narsa yo'q! Siz yaxshi chizasiz.",
+      "context": {
+        "line_number": 160,
+        "field": "line_uz",
+        "speaker": "Nodira",
+        "dialogue_id": "U08_L02_D01",
+        "en_line": "There's nothing wrong with that! You draw well."
+      }
+    },
+    {
+      "id": "dialogues.U08_L02_D01.line_161",
+      "field": "line_uz",
+      "value": "Rahmat! Men san'at haqida jurnallar ham o'qiyman.",
+      "context": {
+        "line_number": 161,
+        "field": "line_uz",
+        "speaker": "Sardor",
+        "dialogue_id": "U08_L02_D01",
+        "en_line": "Thanks! I read magazines about art too."
+      }
+    },
+    {
+      "id": "dialogues.U08_L03_D01.line_181",
+      "field": "line_uz",
+      "value": "Salom Ravshan! Ijodiy ish qilishni yoqtirasizmi?",
+      "context": {
+        "line_number": 181,
+        "field": "line_uz",
+        "speaker": "Malika",
+        "dialogue_id": "U08_L03_D01",
+        "en_line": "Hi Ravshan! Do you like to do anything creative?"
+      }
+    },
+    {
+      "id": "dialogues.U08_L03_D01.line_182",
+      "field": "line_uz",
+      "value": "Ha, men rasm chizishni yoqtiraman! Siz-chi?",
+      "context": {
+        "line_number": 182,
+        "field": "line_uz",
+        "speaker": "Ravshan",
+        "dialogue_id": "U08_L03_D01",
+        "en_line": "Yes, I like to draw! What about you?"
+      }
+    },
+    {
+      "id": "dialogues.U08_L03_D01.line_183",
+      "field": "line_uz",
+      "value": "Mening sinimdagi hech kim maktabdan keyin musiqa chalmaydi.",
+      "context": {
+        "line_number": 183,
+        "field": "line_uz",
+        "speaker": "Malika",
+        "dialogue_id": "U08_L03_D01",
+        "en_line": "No one in my class plays music after school."
+      }
+    },
+    {
+      "id": "dialogues.U08_L03_D01.line_184",
+      "field": "line_uz",
+      "value": "Rostdan? Men musiqada hech qanday yomon narsa ko'rmayapman!",
+      "context": {
+        "line_number": 184,
+        "field": "line_uz",
+        "speaker": "Ravshan",
+        "dialogue_id": "U08_L03_D01",
+        "en_line": "Really? I don't see anything wrong with music!"
+      }
+    },
+    {
+      "id": "dialogues.U08_L03_D01.line_185",
+      "field": "line_uz",
+      "value": "Musiqada yomon hech narsa yo'q. Biz shunchaki boshqa narsalarni afzal ko'ramiz.",
+      "context": {
+        "line_number": 185,
+        "field": "line_uz",
+        "speaker": "Malika",
+        "dialogue_id": "U08_L03_D01",
+        "en_line": "There's nothing wrong with music. We just prefer other things."
+      }
+    },
+    {
+      "id": "dialogues.U08_L03_D01.line_187",
+      "field": "line_uz",
+      "value": "Bu ajoyib! Sizning oilangizda rasm chizadigan boshqa kimdir bormi?",
+      "context": {
+        "line_number": 187,
+        "field": "line_uz",
+        "speaker": "Malika",
+        "dialogue_id": "U08_L03_D01",
+        "en_line": "That's great! Is there anyone else who draws in your family?"
+      }
+    },
+    {
+      "id": "dialogues.U08_L03_D01.line_188",
+      "field": "line_uz",
+      "value": "Ha, mening singlim bizning yotoq xonasining chiroyli rasmlarini chizadi.",
+      "context": {
+        "line_number": 188,
+        "field": "line_uz",
+        "speaker": "Ravshan",
+        "dialogue_id": "U08_L03_D01",
+        "en_line": "Yes, my sister draws beautiful pictures of our bedroom."
+      }
+    },
+    {
+      "id": "items.V_U08_L01_there_is.item_uz",
+      "field": "item_uz",
+      "value": "bor (biror narsa borligi)",
+      "context": {
+        "line_number": 223,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_there_is",
+        "dialogue_id": "U08_L03_D01"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_there_is.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Sizning xonangizda hech narsa yo'qmi? Bo'shmi?",
+      "context": {
+        "line_number": 249,
+        "field": "uz_context",
+        "item_id": "V_U08_L01_there_is",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_there_is.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, bo'sh emas. Xonamda kitob javoni bor.",
+      "context": {
+        "line_number": 251,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U08_L01_there_is",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_there_is.practice.instruction",
+      "field": "instruction",
+      "value": "'There is' nima uchun ishlatiladi?",
+      "context": {
+        "line_number": 265,
+        "field": "instruction",
+        "item_id": "V_U08_L01_there_is",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_there_is.practice.option_label",
+      "field": "option_label",
+      "value": "Mulkiyat (Ownership)",
+      "context": {
+        "line_number": 271,
+        "field": "option_label",
+        "item_id": "V_U08_L01_there_is",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_there_is.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'There is' = mavjudlik bildiradi (biror narsa borligini).",
+      "context": {
+        "line_number": 281,
+        "field": "success_msg",
+        "item_id": "V_U08_L01_there_is",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_there_is.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Xato. 'There is' = mavjudlik bildiradi, mulkiyat emas.",
+      "context": {
+        "line_number": 282,
+        "field": "fail_msg",
+        "item_id": "V_U08_L01_there_is",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_there_is.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ha, devor yonida kitob javoni bor.",
+      "context": {
+        "line_number": 291,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_there_is",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_there_is.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening xonamda katta shkaf bor.",
+      "context": {
+        "line_number": 299,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_there_is",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_there_is.practice.item_uz",
+      "field": "item_uz",
+      "value": "Stol ustida nimadir bor.",
+      "context": {
+        "line_number": 305,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_there_is",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_there_is.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Devor yonida kitob javoni bor'",
+      "context": {
+        "line_number": 313,
+        "field": "uz_prompt",
+        "item_id": "V_U08_L01_there_is",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_there_is.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ Mavjudlik uchun 'THERE IS' kerak ('It is' emas)!",
+      "context": {
+        "line_number": 322,
+        "field": "trap_message",
+        "item_id": "V_U08_L01_there_is",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bedroom.production.item_uz",
+      "field": "item_uz",
+      "value": "yotoq xonasi",
+      "context": {
+        "line_number": 337,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_bedroom",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bedroom.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz oshxonada uxlaysizmi? Yashash xonasidami?",
+      "context": {
+        "line_number": 355,
+        "field": "uz_context",
+        "item_id": "V_U08_L01_bedroom",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bedroom.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men oshxonada emas. Men yotoq xonasida uxlayman.",
+      "context": {
+        "line_number": 357,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U08_L01_bedroom",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bedroom.practice.instruction",
+      "field": "instruction",
+      "value": "Bedroom nima uchun ishlatiladi?",
+      "context": {
+        "line_number": 364,
+        "field": "instruction",
+        "item_id": "V_U08_L01_bedroom",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bedroom.practice.option_label",
+      "field": "option_label",
+      "value": "Ovqat pishirish (Cooking)",
+      "context": {
+        "line_number": 370,
+        "field": "option_label",
+        "item_id": "V_U08_L01_bedroom",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bedroom.practice.option_label",
+      "field": "option_label",
+      "value": "Uxlash (Sleeping)",
+      "context": {
+        "line_number": 375,
+        "field": "option_label",
+        "item_id": "V_U08_L01_bedroom",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bedroom.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Bedroom' = yotoq xonasi, uxlash uchun.",
+      "context": {
+        "line_number": 380,
+        "field": "success_msg",
+        "item_id": "V_U08_L01_bedroom",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bedroom.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Xato. 'Bedroom' = uxlash uchun xona, oshxona emas.",
+      "context": {
+        "line_number": 381,
+        "field": "fail_msg",
+        "item_id": "V_U08_L01_bedroom",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bedroom.practice.item_uz",
+      "field": "item_uz",
+      "value": "Yangi yotoq xonamizni ko'rdingizmi?",
+      "context": {
+        "line_number": 390,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_bedroom",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bedroom.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening yotoq xonam juda katta.",
+      "context": {
+        "line_number": 398,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_bedroom",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bedroom.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bizning yotoq xonamizda ikkita kravat bor.",
+      "context": {
+        "line_number": 404,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_bedroom",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bedroom.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Bizning yangi yotoq xonamiz'",
+      "context": {
+        "line_number": 412,
+        "field": "uz_prompt",
+        "item_id": "V_U08_L01_bedroom",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bedroom.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'Sleeping room' emas! 'BEDROOM' - bitta so'z!",
+      "context": {
+        "line_number": 421,
+        "field": "trap_message",
+        "item_id": "V_U08_L01_bedroom",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bookshelf.production.item_uz",
+      "field": "item_uz",
+      "value": "kitob javoni",
+      "context": {
+        "line_number": 436,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_bookshelf",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bookshelf.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz kitoblaringizni polda saqlaysizmi? Yerda tashlab qo'yasizmi?",
+      "context": {
+        "line_number": 454,
+        "field": "uz_context",
+        "item_id": "V_U08_L01_bookshelf",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bookshelf.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men polda saqlamayman. Men kitob javonida saqlayman.",
+      "context": {
+        "line_number": 456,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U08_L01_bookshelf",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bookshelf.practice.instruction",
+      "field": "instruction",
+      "value": "'Bookshelf' nima uchun ishlatiladi?",
+      "context": {
+        "line_number": 463,
+        "field": "instruction",
+        "item_id": "V_U08_L01_bookshelf",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bookshelf.practice.option_label",
+      "field": "option_label",
+      "value": "Kitoblar saqlash (Keep books)",
+      "context": {
+        "line_number": 469,
+        "field": "option_label",
+        "item_id": "V_U08_L01_bookshelf",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bookshelf.practice.option_label",
+      "field": "option_label",
+      "value": "Yashash (Living)",
+      "context": {
+        "line_number": 474,
+        "field": "option_label",
+        "item_id": "V_U08_L01_bookshelf",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bookshelf.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Bookshelf' = kitob javoni, kitoblar saqlash uchun.",
+      "context": {
+        "line_number": 479,
+        "field": "success_msg",
+        "item_id": "V_U08_L01_bookshelf",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bookshelf.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Xato. 'Bookshelf' = kitoblar uchun, yashash uchun emas.",
+      "context": {
+        "line_number": 480,
+        "field": "fail_msg",
+        "item_id": "V_U08_L01_bookshelf",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bookshelf.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ajoyib! Kitob javoni bormi?",
+      "context": {
+        "line_number": 489,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_bookshelf",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bookshelf.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kitob javoni devor yonida.",
+      "context": {
+        "line_number": 497,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_bookshelf",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bookshelf.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men kitoblarimni kitob javoniga qo'yaman.",
+      "context": {
+        "line_number": 503,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_bookshelf",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bookshelf.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Kitob javoni bormi?'",
+      "context": {
+        "line_number": 511,
+        "field": "uz_prompt",
+        "item_id": "V_U08_L01_bookshelf",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_bookshelf.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'Book shelf' emas! 'BOOKSHELF' - bitta so'z!",
+      "context": {
+        "line_number": 520,
+        "field": "trap_message",
+        "item_id": "V_U08_L01_bookshelf",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_wardrobe.production.item_uz",
+      "field": "item_uz",
+      "value": "shkaf/garderob",
+      "context": {
+        "line_number": 535,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_wardrobe",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_wardrobe.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz kiyimlaringizni polda saqlaysizmi? Tashlab qo'yasizmi?",
+      "context": {
+        "line_number": 553,
+        "field": "uz_context",
+        "item_id": "V_U08_L01_wardrobe",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_wardrobe.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men polda saqlamayman. Men shkafda saqlayman.",
+      "context": {
+        "line_number": 555,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U08_L01_wardrobe",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_wardrobe.practice.instruction",
+      "field": "instruction",
+      "value": "'Wardrobe' nima uchun ishlatiladi?",
+      "context": {
+        "line_number": 562,
+        "field": "instruction",
+        "item_id": "V_U08_L01_wardrobe",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_wardrobe.practice.option_label",
+      "field": "option_label",
+      "value": "Kiyimlar saqlash (Keep clothes)",
+      "context": {
+        "line_number": 568,
+        "field": "option_label",
+        "item_id": "V_U08_L01_wardrobe",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_wardrobe.practice.option_label",
+      "field": "option_label",
+      "value": "Ovqat saqlash (Keep food)",
+      "context": {
+        "line_number": 573,
+        "field": "option_label",
+        "item_id": "V_U08_L01_wardrobe",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_wardrobe.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Wardrobe' = shkaf, kiyimlar saqlash uchun.",
+      "context": {
+        "line_number": 578,
+        "field": "success_msg",
+        "item_id": "V_U08_L01_wardrobe",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_wardrobe.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Xato. 'Wardrobe' = kiyimlar uchun, ovqat uchun emas.",
+      "context": {
+        "line_number": 579,
+        "field": "fail_msg",
+        "item_id": "V_U08_L01_wardrobe",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_wardrobe.practice.item_uz",
+      "field": "item_uz",
+      "value": "Shkaf bormi? Kiyimlarimiz uchun?",
+      "context": {
+        "line_number": 588,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_wardrobe",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_wardrobe.practice.item_uz",
+      "field": "item_uz",
+      "value": "U ko'ylaklarini shkafda saqlaydi.",
+      "context": {
+        "line_number": 602,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_wardrobe",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_wardrobe.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Kiyimlar uchun shkaf bormi?'",
+      "context": {
+        "line_number": 610,
+        "field": "uz_prompt",
+        "item_id": "V_U08_L01_wardrobe",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_wardrobe.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'Closet' - Amerika. Bu yerda 'WARDROBE' ishlatamiz!",
+      "context": {
+        "line_number": 619,
+        "field": "trap_message",
+        "item_id": "V_U08_L01_wardrobe",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_something.production.item_uz",
+      "field": "item_uz",
+      "value": "nimadir/biror narsa",
+      "context": {
+        "line_number": 634,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_something",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_something.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Stol ustida hech narsa yo'qmi? Bo'shmi?",
+      "context": {
+        "line_number": 660,
+        "field": "uz_context",
+        "item_id": "V_U08_L01_something",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_something.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, bo'sh emas. Stol ustida nimadir bor.",
+      "context": {
+        "line_number": 662,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U08_L01_something",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_something.practice.instruction",
+      "field": "instruction",
+      "value": "'Something' qaysi fe'llar bilan ishlatiladi?",
+      "context": {
+        "line_number": 676,
+        "field": "instruction",
+        "item_id": "V_U08_L01_something",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_something.practice.option_label",
+      "field": "option_label",
+      "value": "Ijobiy fe'llar (Positive verbs)",
+      "context": {
+        "line_number": 682,
+        "field": "option_label",
+        "item_id": "V_U08_L01_something",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_something.practice.option_label",
+      "field": "option_label",
+      "value": "Inkor fe'llar (Negative verbs)",
+      "context": {
+        "line_number": 687,
+        "field": "option_label",
+        "item_id": "V_U08_L01_something",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_something.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Something' = ijobiy fe'llar bilan (there IS, I SEE).",
+      "context": {
+        "line_number": 692,
+        "field": "success_msg",
+        "item_id": "V_U08_L01_something",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_something.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Xato. 'Something' = faqat ijobiy fe'llar bilan ishlatiladi.",
+      "context": {
+        "line_number": 693,
+        "field": "fail_msg",
+        "item_id": "V_U08_L01_something",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_something.practice.item_uz",
+      "field": "item_uz",
+      "value": "Stol ustida nimadir bormi?",
+      "context": {
+        "line_number": 702,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_something",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_something.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men xonamda nimadir ko'raman.",
+      "context": {
+        "line_number": 710,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_something",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_something.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening kompyuterimda nimadir noto'g'ri.",
+      "context": {
+        "line_number": 716,
+        "field": "item_uz",
+        "item_id": "V_U08_L01_something",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_something.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Stol ustida nimadir bor'",
+      "context": {
+        "line_number": 724,
+        "field": "uz_prompt",
+        "item_id": "V_U08_L01_something",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L01_something.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ Ijobiy gap uchun 'SOMETHING' kerak ('anything' emas)!",
+      "context": {
+        "line_number": 733,
+        "field": "trap_message",
+        "item_id": "V_U08_L01_something",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_like_to.production.item_uz",
+      "field": "item_uz",
+      "value": "yoqtirmoq (infinitiv bilan)",
+      "context": {
+        "line_number": 772,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_like_to",
+        "dialogue_id": "U08_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_like_to.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz faqat musiqa tinglaysizmi? Boshqa narsa yoqtirmaysizmi?",
+      "context": {
+        "line_number": 808,
+        "field": "uz_context",
+        "item_id": "V_U08_L02_like_to",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_like_to.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men boshqa narsalarni ham yoqtiraman.",
+      "context": {
+        "line_number": 810,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U08_L02_like_to",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_like_to.practice.instruction",
+      "field": "instruction",
+      "value": "'like' dan keyin nima keladi?",
+      "context": {
+        "line_number": 824,
+        "field": "instruction",
+        "item_id": "V_U08_L02_like_to",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_like_to.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Like' dan keyin TO + base verb (infinitiv).",
+      "context": {
+        "line_number": 840,
+        "field": "success_msg",
+        "item_id": "V_U08_L02_like_to",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_like_to.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Xato. 'Like' dan keyin TO + base verb: 'like TO draw'.",
+      "context": {
+        "line_number": 841,
+        "field": "fail_msg",
+        "item_id": "V_U08_L02_like_to",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_like_to.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men rasm chizish va musiqa tinglashni yaxshi ko'raman.",
+      "context": {
+        "line_number": 850,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_like_to",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_like_to.practice.item_uz",
+      "field": "item_uz",
+      "value": "U gitara chalishni yaxshi ko'radi.",
+      "context": {
+        "line_number": 858,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_like_to",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_like_to.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz hikoyalar yozishni yoqtirasizmi?",
+      "context": {
+        "line_number": 864,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_like_to",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_like_to.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Men rasm chizishni yoqtiraman'",
+      "context": {
+        "line_number": 872,
+        "field": "uz_prompt",
+        "item_id": "V_U08_L02_like_to",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_like_to.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'Like' dan keyin TO kerak: 'like TO draw'!",
+      "context": {
+        "line_number": 881,
+        "field": "trap_message",
+        "item_id": "V_U08_L02_like_to",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_draw.production.item_uz",
+      "field": "item_uz",
+      "value": "chizmoq/rasm chizmoq",
+      "context": {
+        "line_number": 896,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_draw",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_draw.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz faqat yozasizmi? Boshqa ijodiy ish qilmaysizmi?",
+      "context": {
+        "line_number": 914,
+        "field": "uz_context",
+        "item_id": "V_U08_L02_draw",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_draw.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men yozishdan tashqari rasm ham chizaman.",
+      "context": {
+        "line_number": 916,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U08_L02_draw",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_draw.practice.instruction",
+      "field": "instruction",
+      "value": "'Draw' nima qilishni bildiradi?",
+      "context": {
+        "line_number": 923,
+        "field": "instruction",
+        "item_id": "V_U08_L02_draw",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_draw.practice.option_label",
+      "field": "option_label",
+      "value": "Rasm chizish (Make pictures)",
+      "context": {
+        "line_number": 929,
+        "field": "option_label",
+        "item_id": "V_U08_L02_draw",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_draw.practice.option_label",
+      "field": "option_label",
+      "value": "Yozish (Writing)",
+      "context": {
+        "line_number": 934,
+        "field": "option_label",
+        "item_id": "V_U08_L02_draw",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_draw.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Draw' = rasm chizish, qalam yoki rangli qalam bilan.",
+      "context": {
+        "line_number": 939,
+        "field": "success_msg",
+        "item_id": "V_U08_L02_draw",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_draw.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Xato. 'Draw' = rasm chizish, yozish emas.",
+      "context": {
+        "line_number": 940,
+        "field": "fail_msg",
+        "item_id": "V_U08_L02_draw",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_draw.practice.item_uz",
+      "field": "item_uz",
+      "value": "U chiroyli rasmlar chizadi.",
+      "context": {
+        "line_number": 957,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_draw",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_draw.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz har dam olish kunlari birga rasm chizamiz.",
+      "context": {
+        "line_number": 963,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_draw",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_draw.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Men rasm chizaman'",
+      "context": {
+        "line_number": 971,
+        "field": "uz_prompt",
+        "item_id": "V_U08_L02_draw",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_draw.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'I drawing' emas! 'I DRAW' (present simple)!",
+      "context": {
+        "line_number": 980,
+        "field": "trap_message",
+        "item_id": "V_U08_L02_draw",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_guitar.production.item_uz",
+      "field": "item_uz",
+      "value": "gitara",
+      "context": {
+        "line_number": 995,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_guitar",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_guitar.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz faqat baraban chalaysizmi? Boshqa asbob bilmaysizmi?",
+      "context": {
+        "line_number": 1013,
+        "field": "uz_context",
+        "item_id": "V_U08_L02_guitar",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_guitar.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men baraban emas. Men gitara chalayman.",
+      "context": {
+        "line_number": 1015,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U08_L02_guitar",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_guitar.practice.instruction",
+      "field": "instruction",
+      "value": "'Guitar' nima?",
+      "context": {
+        "line_number": 1022,
+        "field": "instruction",
+        "item_id": "V_U08_L02_guitar",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_guitar.practice.option_label",
+      "field": "option_label",
+      "value": "Musiqa asbobi (Musical instrument)",
+      "context": {
+        "line_number": 1028,
+        "field": "option_label",
+        "item_id": "V_U08_L02_guitar",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_guitar.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Guitar' = gitara, musiqa asbobi.",
+      "context": {
+        "line_number": 1038,
+        "field": "success_msg",
+        "item_id": "V_U08_L02_guitar",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_guitar.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Xato. 'Guitar' = musiqa asbobi, sport emas.",
+      "context": {
+        "line_number": 1039,
+        "field": "fail_msg",
+        "item_id": "V_U08_L02_guitar",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_guitar.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bu ajoyib! Men gitara chalishni yaxshi ko'raman.",
+      "context": {
+        "line_number": 1048,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_guitar",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_guitar.practice.item_uz",
+      "field": "item_uz",
+      "value": "U gitarani juda yaxshi chaladi.",
+      "context": {
+        "line_number": 1056,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_guitar",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_guitar.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening gitaram yotoq xonamda.",
+      "context": {
+        "line_number": 1062,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_guitar",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_guitar.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Men gitara chalayman'",
+      "context": {
+        "line_number": 1070,
+        "field": "uz_prompt",
+        "item_id": "V_U08_L02_guitar",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_guitar.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ Odatda 'play THE guitar' ishlatiladi (artikel bilan)!",
+      "context": {
+        "line_number": 1079,
+        "field": "trap_message",
+        "item_id": "V_U08_L02_guitar",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_everyone.production.item_uz",
+      "field": "item_uz",
+      "value": "hamma/barcha odamlar",
+      "context": {
+        "line_number": 1094,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_everyone",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_everyone.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Sizning oilangizda hech kim musiqa chalmaydimi?",
+      "context": {
+        "line_number": 1120,
+        "field": "uz_context",
+        "item_id": "V_U08_L02_everyone",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_everyone.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, hamma chalaadi. Oilamdagi hamma narsa chalaydi.",
+      "context": {
+        "line_number": 1122,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U08_L02_everyone",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_everyone.practice.instruction",
+      "field": "instruction",
+      "value": "'Everyone' qanday fe'l oladi?",
+      "context": {
+        "line_number": 1136,
+        "field": "instruction",
+        "item_id": "V_U08_L02_everyone",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_everyone.practice.option_label",
+      "field": "option_label",
+      "value": "Birlik fe'l (Singular verb)",
+      "context": {
+        "line_number": 1142,
+        "field": "option_label",
+        "item_id": "V_U08_L02_everyone",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_everyone.practice.option_label",
+      "field": "option_label",
+      "value": "Ko'plik fe'l (Plural verb)",
+      "context": {
+        "line_number": 1147,
+        "field": "option_label",
+        "item_id": "V_U08_L02_everyone",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_everyone.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Everyone' = birlik fe'l: Everyone PLAYS (NOT play).",
+      "context": {
+        "line_number": 1152,
+        "field": "success_msg",
+        "item_id": "V_U08_L02_everyone",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_everyone.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Xato. 'Everyone' = birlik fe'l: Everyone IS, Everyone PLAYS.",
+      "context": {
+        "line_number": 1153,
+        "field": "fail_msg",
+        "item_id": "V_U08_L02_everyone",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_everyone.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ha, mening oilamdagi hamma nimadir chaladi!",
+      "context": {
+        "line_number": 1162,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_everyone",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_everyone.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bugun hamma shu yerda.",
+      "context": {
+        "line_number": 1170,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_everyone",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_everyone.practice.item_uz",
+      "field": "item_uz",
+      "value": "Hamma musiqa tinglashni yaxshi ko'radi.",
+      "context": {
+        "line_number": 1176,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_everyone",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_everyone.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Hamma nimadir chaladi'",
+      "context": {
+        "line_number": 1184,
+        "field": "uz_prompt",
+        "item_id": "V_U08_L02_everyone",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_everyone.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ 'Everyone' birlik! 'Everyone PLAYS' (NOT 'play')!",
+      "context": {
+        "line_number": 1193,
+        "field": "trap_message",
+        "item_id": "V_U08_L02_everyone",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_anything.production.item_uz",
+      "field": "item_uz",
+      "value": "hech narsa (inkor/savol)",
+      "context": {
+        "line_number": 1208,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_anything",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_anything.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Sizda chalish uchun nimadir bormi? Gitara, pianino?",
+      "context": {
+        "line_number": 1235,
+        "field": "uz_context",
+        "item_id": "V_U08_L02_anything",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_anything.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, menda hech narsa yo'q. Hech narsa.",
+      "context": {
+        "line_number": 1237,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U08_L02_anything",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_anything.practice.instruction",
+      "field": "instruction",
+      "value": "'Anything' qaysi gap turlari bilan ishlatiladi?",
+      "context": {
+        "line_number": 1251,
+        "field": "instruction",
+        "item_id": "V_U08_L02_anything",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_anything.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Anything' = inkor gaplar va savollar bilan.",
+      "context": {
+        "line_number": 1267,
+        "field": "success_msg",
+        "item_id": "V_U08_L02_anything",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_anything.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Xato. 'Anything' = INKOR gaplar bilan, ijobiy bilan emas.",
+      "context": {
+        "line_number": 1268,
+        "field": "fail_msg",
+        "item_id": "V_U08_L02_anything",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_anything.practice.item_uz",
+      "field": "item_uz",
+      "value": "Menda chaladigan hech narsa yo'q.",
+      "context": {
+        "line_number": 1277,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_anything",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_anything.practice.item_uz",
+      "field": "item_uz",
+      "value": "Sizning xonangizda nimadir bormi?",
+      "context": {
+        "line_number": 1285,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_anything",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_anything.practice.item_uz",
+      "field": "item_uz",
+      "value": "U hech qanday noto'g'ri narsa ko'rmaydi.",
+      "context": {
+        "line_number": 1291,
+        "field": "item_uz",
+        "item_id": "V_U08_L02_anything",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_anything.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Menda hech narsa yo'q'",
+      "context": {
+        "line_number": 1299,
+        "field": "uz_prompt",
+        "item_id": "V_U08_L02_anything",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L02_anything.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ Ikki marta inkor! 'don't have ANYTHING' yoki 'have NOTHING'!",
+      "context": {
+        "line_number": 1308,
+        "field": "trap_message",
+        "item_id": "V_U08_L02_anything",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_nothing.production.item_uz",
+      "field": "item_uz",
+      "value": "hech narsa",
+      "context": {
+        "line_number": 1347,
+        "field": "item_uz",
+        "item_id": "V_U08_L03_nothing",
+        "dialogue_id": "U08_L02_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_nothing.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Sizning rasmingizda nimadir yomon bormi? Noto'g'ri?",
+      "context": {
+        "line_number": 1377,
+        "field": "uz_context",
+        "item_id": "V_U08_L03_nothing",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_nothing.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, hech narsa yomon yo'q. Hammasi yaxshi.",
+      "context": {
+        "line_number": 1379,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U08_L03_nothing",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_nothing.practice.instruction",
+      "field": "instruction",
+      "value": "'Nothing' qaysi fe'llar bilan ishlatiladi?",
+      "context": {
+        "line_number": 1393,
+        "field": "instruction",
+        "item_id": "V_U08_L03_nothing",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_nothing.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Nothing' = ijobiy fe'llar bilan (There IS nothing).",
+      "context": {
+        "line_number": 1409,
+        "field": "success_msg",
+        "item_id": "V_U08_L03_nothing",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_nothing.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Xato. 'Nothing' = ijobiy fe'llar bilan, ikki marta inkor yo'q!",
+      "context": {
+        "line_number": 1410,
+        "field": "fail_msg",
+        "item_id": "V_U08_L03_nothing",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_nothing.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bunda yomon hech narsa yo'q! Siz yaxshi chizasiz.",
+      "context": {
+        "line_number": 1419,
+        "field": "item_uz",
+        "item_id": "V_U08_L03_nothing",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_nothing.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bugun qilishga hech narsam yo'q.",
+      "context": {
+        "line_number": 1427,
+        "field": "item_uz",
+        "item_id": "V_U08_L03_nothing",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_nothing.practice.item_uz",
+      "field": "item_uz",
+      "value": "Agar harakat qilsang, hech narsa imkonsiz emas.",
+      "context": {
+        "line_number": 1433,
+        "field": "item_uz",
+        "item_id": "V_U08_L03_nothing",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_nothing.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Hech narsa yomon yo'q'",
+      "context": {
+        "line_number": 1441,
+        "field": "uz_prompt",
+        "item_id": "V_U08_L03_nothing",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_nothing.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ Ikki marta inkor! 'There IS nothing' (positive verb)!",
+      "context": {
+        "line_number": 1450,
+        "field": "trap_message",
+        "item_id": "V_U08_L03_nothing",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_no_one.production.item_uz",
+      "field": "item_uz",
+      "value": "hech kim",
+      "context": {
+        "line_number": 1465,
+        "field": "item_uz",
+        "item_id": "V_U08_L03_no_one",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_no_one.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Sizning sinfingizda hamma musiqa chalaydimi?",
+      "context": {
+        "line_number": 1496,
+        "field": "uz_context",
+        "item_id": "V_U08_L03_no_one",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_no_one.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, mening sifimda hech kim musiqa chalmaydi.",
+      "context": {
+        "line_number": 1498,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U08_L03_no_one",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_no_one.practice.instruction",
+      "field": "instruction",
+      "value": "'No one' qaysi fe'llar bilan ishlatiladi?",
+      "context": {
+        "line_number": 1512,
+        "field": "instruction",
+        "item_id": "V_U08_L03_no_one",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_no_one.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'No one' = ijobiy fe'llar bilan (No one PLAYS).",
+      "context": {
+        "line_number": 1528,
+        "field": "success_msg",
+        "item_id": "V_U08_L03_no_one",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_no_one.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Xato. 'No one' = ijobiy fe'llar bilan, ikki marta inkor yo'q!",
+      "context": {
+        "line_number": 1529,
+        "field": "fail_msg",
+        "item_id": "V_U08_L03_no_one",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_no_one.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening sinimdagi hech kim maktabdan keyin musiqa chalmaydi.",
+      "context": {
+        "line_number": 1538,
+        "field": "item_uz",
+        "item_id": "V_U08_L03_no_one",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_no_one.practice.item_uz",
+      "field": "item_uz",
+      "value": "Hozir yotoq xonasida hech kim yo'q.",
+      "context": {
+        "line_number": 1546,
+        "field": "item_uz",
+        "item_id": "V_U08_L03_no_one",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_no_one.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bizning oilamizda hech kim yozishni yoqtirmaydi.",
+      "context": {
+        "line_number": 1552,
+        "field": "item_uz",
+        "item_id": "V_U08_L03_no_one",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_no_one.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Hech kim bu yerda yo'q'",
+      "context": {
+        "line_number": 1560,
+        "field": "uz_prompt",
+        "item_id": "V_U08_L03_no_one",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_no_one.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ Ikki marta inkor! 'No one IS' (positive verb)!",
+      "context": {
+        "line_number": 1569,
+        "field": "trap_message",
+        "item_id": "V_U08_L03_no_one",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_magazines.production.item_uz",
+      "field": "item_uz",
+      "value": "jurnallar",
+      "context": {
+        "line_number": 1584,
+        "field": "item_uz",
+        "item_id": "V_U08_L03_magazines",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_magazines.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz faqat kitob o'qiysizmi? Gazeta, jurnal o'qimaysizmi?",
+      "context": {
+        "line_number": 1602,
+        "field": "uz_context",
+        "item_id": "V_U08_L03_magazines",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_magazines.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, men kitobdan tashqari jurnal ham o'qiyman.",
+      "context": {
+        "line_number": 1604,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U08_L03_magazines",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "presentation"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_magazines.practice.instruction",
+      "field": "instruction",
+      "value": "'Magazines' nima?",
+      "context": {
+        "line_number": 1611,
+        "field": "instruction",
+        "item_id": "V_U08_L03_magazines",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_magazines.practice.success_msg",
+      "field": "success_msg",
+      "value": "To'g'ri! 'Magazines' = jurnallar, har oy yoki hafta chiqadigan.",
+      "context": {
+        "line_number": 1627,
+        "field": "success_msg",
+        "item_id": "V_U08_L03_magazines",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_magazines.practice.fail_msg",
+      "field": "fail_msg",
+      "value": "Xato. 'Magazines' = jurnallar, kitob emas.",
+      "context": {
+        "line_number": 1628,
+        "field": "fail_msg",
+        "item_id": "V_U08_L03_magazines",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_magazines.practice.item_uz",
+      "field": "item_uz",
+      "value": "Rahmat! Men san'at haqida jurnallar ham o'qiyman.",
+      "context": {
+        "line_number": 1637,
+        "field": "item_uz",
+        "item_id": "V_U08_L03_magazines",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_magazines.practice.item_uz",
+      "field": "item_uz",
+      "value": "U musiqa jurnallarini o'qishni yaxshi ko'radi.",
+      "context": {
+        "line_number": 1645,
+        "field": "item_uz",
+        "item_id": "V_U08_L03_magazines",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_magazines.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening kitob javonimda moda jurnallari bor.",
+      "context": {
+        "line_number": 1651,
+        "field": "item_uz",
+        "item_id": "V_U08_L03_magazines",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_magazines.production.uz_prompt",
+      "field": "uz_prompt",
+      "value": "Ingliz tilida ayting: 'Men jurnallar o'qiyman'",
+      "context": {
+        "line_number": 1659,
+        "field": "uz_prompt",
+        "item_id": "V_U08_L03_magazines",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U08_L03_magazines.production.trap_message",
+      "field": "trap_message",
+      "value": "⚠️ Ko'plik! 'I read MAGAZINES' (ko'plik -s bilan)!",
+      "context": {
+        "line_number": 1668,
+        "field": "trap_message",
+        "item_id": "V_U08_L03_magazines",
+        "dialogue_id": "U08_L03_D01",
+        "phase": "production"
+      }
+    }
+  ]
+}

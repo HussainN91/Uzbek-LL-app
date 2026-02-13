@@ -11,6 +11,8 @@
 
 'use strict';
 
+import { uz } from '../core/i18n.js';
+
 // ═══════════════════════════════════════════════════════════════
 // UTILITY
 // ═══════════════════════════════════════════════════════════════
@@ -75,7 +77,7 @@ export function renderJumbleExercise(container, jumbleWords, correctSentence, on
   container.innerHTML = '';
 
   const title = document.createElement('div');
-  title.innerHTML = '🧩 <strong>Jumble</strong> — Tap words in the correct order';
+  title.innerHTML = uz('vocabExercise.jumbleTitle');
   title.style.cssText = 'font-size: 16px; margin-bottom: 16px; color: #333;';
   container.appendChild(title);
 
@@ -133,7 +135,7 @@ export function renderJumbleExercise(container, jumbleWords, correctSentence, on
   container.appendChild(wordBank);
 
   const checkBtn = document.createElement('button');
-  checkBtn.textContent = '✓ Check Answer';
+  checkBtn.textContent = uz('vocabExercise.checkAnswer');
   checkBtn.style.cssText = `
     padding: 14px 24px;
     background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
@@ -155,18 +157,18 @@ export function renderJumbleExercise(container, jumbleWords, correctSentence, on
     if (correct) {
       answerArea.style.border = '2px solid #4caf50';
       answerArea.style.background = '#e8f5e9';
-      checkBtn.textContent = '✓ Correct!';
+      checkBtn.textContent = uz('vocabExercise.correct');
       checkBtn.style.background = 'linear-gradient(135deg, #4caf50 0%, #45a049 100%)';
       if (onComplete) setTimeout(onComplete, 1500);
     } else {
       answerArea.style.border = '2px solid #f44336';
       answerArea.style.background = '#ffebee';
-      checkBtn.textContent = '✗ Try again';
+      checkBtn.textContent = uz('vocabExercise.tryAgain');
       checkBtn.style.background = 'linear-gradient(135deg, #f44336 0%, #e53935 100%)';
       setTimeout(() => {
         answerArea.style.border = '2px dashed #ccc';
         answerArea.style.background = '#fafafa';
-        checkBtn.textContent = '✓ Check Answer';
+        checkBtn.textContent = uz('vocabExercise.checkAnswer');
         checkBtn.style.background = 'linear-gradient(135deg, #4caf50 0%, #45a049 100%)';
       }, 1500);
     }
@@ -188,7 +190,7 @@ export function renderTrapExercise(container, trapData, onComplete) {
   container.innerHTML = '';
 
   const title = document.createElement('div');
-  title.innerHTML = '🪤 <strong>Trap</strong> — Spot the error';
+  title.innerHTML = uz('vocabExercise.trapTitle');
   title.style.cssText = 'font-size: 16px; margin-bottom: 16px; color: #333;';
   container.appendChild(title);
 
@@ -206,7 +208,7 @@ export function renderTrapExercise(container, trapData, onComplete) {
   container.appendChild(wrongSentence);
 
   const revealBtn = document.createElement('button');
-  revealBtn.textContent = '🔍 Show Explanation';
+  revealBtn.textContent = uz('vocabExercise.showExplanation');
   revealBtn.style.cssText = `
     padding: 12px 24px;
     background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
@@ -233,11 +235,11 @@ export function renderTrapExercise(container, trapData, onComplete) {
     color: #333;
     display: none;
   `;
-  explanation.innerHTML = `✓ <strong>Fix:</strong> ${trapData.fix}`;
+  explanation.innerHTML = `✓ <strong>${uz('vocabExercise.fixLabel')}</strong> ${trapData.fix}`;
 
   revealBtn.onclick = () => {
     explanation.style.display = 'block';
-    revealBtn.textContent = '✓ Explanation shown';
+    revealBtn.textContent = uz('vocabExercise.explanationShown');
     revealBtn.disabled = true;
     revealBtn.style.opacity = '0.6';
     if (onComplete) setTimeout(onComplete, 2000);
@@ -261,7 +263,7 @@ export function renderScratchExercise(container, scratchWords, canonicalSentence
   container.innerHTML = '';
 
   const title = document.createElement('div');
-  title.innerHTML = '🎯 <strong>Scratch</strong> — Tap to reveal hidden words';
+  title.innerHTML = uz('vocabExercise.scratchTitle');
   title.style.cssText = 'font-size: 16px; margin-bottom: 16px; color: #333;';
   container.appendChild(title);
 

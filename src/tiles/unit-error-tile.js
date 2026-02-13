@@ -16,17 +16,7 @@ import {
   transitionToTile,
   createButton
 } from './tile-utils.js';
-
-/**
- * Bilingual string retrieval functions from window
- */
-function getUz(path) {
-  return typeof window.getUz === 'function' ? window.getUz(path) : path;
-}
-
-function getEn(path) {
-  return typeof window.getEn === 'function' ? window.getEn(path) : path;
-}
+import { uz as getUz, en as getEn } from '../core/i18n.js';
 
 /**
  * Play audio for an exercise item (accessed from window)
@@ -78,19 +68,19 @@ export function renderUnitErrorDetectionTile(unitId) {
   // Create title element
   const title = document.createElement("div");
   title.className = "tile-title";
-  title.textContent = "Birlik \u200D\u201C Xatolarni Aniqlash";
+  title.textContent = getUz('unitError.tileTitle');
   title.classList.add("tl-uz");
-  title.dataset.translation = "Unit \u200D\u201C Error Detection";
+  title.dataset.translation = getEn('unitError.tileTitle');
 
   // Validate data availability
   if (!spec || !Array.isArray(spec.items) || !curriculum || !curriculum.audio) {
     const msg = document.createElement("div");
     msg.className = "tile-section";
-    msg.textContent = "Unit error detection ma'lumotlari topilmadi yoki noto'g'ri.";
+    msg.textContent = getUz('unitError.noData');
     msg.classList.add("tl-uz");
-    msg.dataset.translation = "Unit error detection data not found or invalid.";
+    msg.dataset.translation = getEn('unitError.dataInvalid');
     
-    const btnSkip = createButton("Skip to Grand Tile", () => transitionToTile(STATES.GRAND_TILE));
+    const btnSkip = createButton(getUz('unitError.skipGrand'), () => transitionToTile(STATES.GRAND_TILE));
     
     tileContainer.appendChild(title);
     tileContainer.appendChild(msg);
@@ -101,9 +91,9 @@ export function renderUnitErrorDetectionTile(unitId) {
   // Create instruction section
   const info = document.createElement("div");
   info.className = "tile-section";
-  info.textContent = spec.prompt_uz || "Har bir gapni tinglang yoki o'qing va to'g'ri yoki noto'g'ri ekanligini aniqlang.";
+  info.textContent = spec.prompt_uz || getUz('unitError.defaultInstruction');
   info.classList.add("tl-uz");
-  info.dataset.translation = spec.prompt_en || "Listen to or read each sentence and determine if it is correct or incorrect.";
+  info.dataset.translation = spec.prompt_en || getEn('unitError.defaultInstruction');
 
   // Build form with sentence items
   const form = document.createElement("div");
@@ -119,30 +109,30 @@ export function renderUnitErrorDetectionTile(unitId) {
     // Sentence label
     const label = document.createElement("div");
     const displayText = audioEntry.wrong || audioEntry.transcript_correct || "(no text)";
-    label.textContent = "Gap " + (idx + 1) + ": " + displayText;
+    label.textContent = getUz('unitError.gapLabel').replace('{index}', idx + 1).replace('{text}', displayText);
     label.classList.add("tl-uz");
-    label.dataset.translation = "Sentence " + (idx + 1) + ": " + displayText;
+    label.dataset.translation = getEn('unitError.sentenceLabel').replace('{index}', idx + 1).replace('{text}', displayText);
 
     // Create selection dropdown
     const select = document.createElement("select");
 
     const optBlank = document.createElement("option");
     optBlank.value = "";
-    optBlank.textContent = "Tanlang\u200D\u00A6";
+    optBlank.textContent = getUz('unitError.selectPlaceholder');
     optBlank.classList.add("tl-uz");
-    optBlank.dataset.translation = "Select\u200D\u00A6";
+    optBlank.dataset.translation = getEn('unitError.selectPlaceholder');
 
     const optCorrect = document.createElement("option");
     optCorrect.value = "correct";
-    optCorrect.textContent = "To'g'ri";
+    optCorrect.textContent = getUz('unitError.optionCorrect');
     optCorrect.classList.add("tl-uz");
-    optCorrect.dataset.translation = "Correct";
+    optCorrect.dataset.translation = getEn('unitError.optionCorrect');
 
     const optIncorrect = document.createElement("option");
     optIncorrect.value = "incorrect";
-    optIncorrect.textContent = "Noto'g'ri";
+    optIncorrect.textContent = getUz('unitError.optionIncorrect');
     optIncorrect.classList.add("tl-uz");
-    optIncorrect.dataset.translation = "Incorrect";
+    optIncorrect.dataset.translation = getEn('unitError.optionIncorrect');
 
     select.appendChild(optBlank);
     select.appendChild(optCorrect);
@@ -160,9 +150,9 @@ export function renderUnitErrorDetectionTile(unitId) {
 
     // Add play button if audio is available
     if (audioEntry.transcript_correct || audioEntry.file) {
-      const btnPlay = createButton("Tinglash", () => playExerciseAudio(audioEntry));
+      const btnPlay = createButton(getUz("buttons.play"), () => playExerciseAudio(audioEntry));
       btnPlay.classList.add("tl-uz");
-      btnPlay.dataset.translation = "Listen";
+      btnPlay.dataset.translation = getEn("buttons.play");
       wrapper.appendChild(btnPlay);
     }
 
@@ -201,7 +191,7 @@ export function renderUnitErrorDetectionTile(unitId) {
     const threshold = spec.pass_threshold || 0.8;
 
     if (score >= threshold) {
-      feedback.textContent = "Yaxshi! Grand Tile ochildi.";
+      feedback.textContent = getUz('unitError.success');
       feedback.className = "feedback ok";
     } else {
       let msg = getUz("errorDetectionTile.feedback.someWrong") + " ";
@@ -235,7 +225,7 @@ export function renderUnitErrorDetectionTile(unitId) {
     if (lastScore >= threshold) {
       transitionToTile(STATES.GRAND_TILE);
     } else {
-      feedback.textContent = "Oldin xatolarni aniqlash topshirig'idan o'ting (≥" + Math.round(threshold * 100) + "%).";
+      feedback.textContent = getUz('unitError.gate');
       feedback.className = "feedback err";
     }
   });

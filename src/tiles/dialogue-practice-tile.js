@@ -125,9 +125,9 @@ export function renderDialogueTile(dialogueContent, lesson) {
 
   // Title
   const title = document.createElement("h2");
-  title.textContent = uz('tiles.dialogue') + ' \u2014 \"Nima uchun bu shakl?\"';
+  title.textContent = uz('tiles.dialogue') + ' \u2014 ' + uz('dialoguePractice.subtitle');
   title.classList.add('tl-uz');
-  title.dataset.translation = en('tiles.dialogue') + ' \u2014 \"Why This Form?\"';
+  title.dataset.translation = en('tiles.dialogue') + ' \u2014 ' + en('dialoguePractice.subtitle');
   title.style.cssText = "color: #2c3e50; margin-bottom: 20px; text-align: center;";
   wrapper.appendChild(title);
 
@@ -191,7 +191,7 @@ export function renderDialogueTile(dialogueContent, lesson) {
         if (turn.audio_id) {
           const audioBtn = document.createElement("button");
           audioBtn.className = "dlg-audio-btn dlg-audio-btn--light";
-          audioBtn.title = "Listen";
+          audioBtn.title = en('dialogue.audioTitle');
           audioBtn.innerHTML = `<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8.5v7a4.49 4.49 0 0 0 2.5-3.5zM14 3.23v2.06a7.007 7.007 0 0 1 0 13.42v2.06A9.013 9.013 0 0 0 14 3.23z"/></svg><span class="dlg-audio-waves"><span></span><span></span><span></span><span></span><span></span></span>`;
           
           audioBtn.addEventListener("click", () => {
@@ -241,7 +241,7 @@ export function renderDialogueTile(dialogueContent, lesson) {
 
   // Proceed button to go to next stage (Uzbek translation view)
   const proceedBtn = document.createElement("button");
-  proceedBtn.textContent = uz('buttons.continue') + ' \u2192 ' + "O'zbek tarjimasi";
+  proceedBtn.textContent = uz('buttons.continue') + ' \u2192 ' + uz('dialoguePractice.uzTranslation');
   proceedBtn.classList.add('tl-uz');
   proceedBtn.dataset.translation = en('buttons.continue') + ' \u2192 Uzbek translation';
   proceedBtn.className = "btn-primary";
@@ -272,14 +272,14 @@ export function renderDialogueUzbekTile(dialogueContent, lesson) {
   wrapper.className = "integration-dialogue-uzbek-tile tl-uz";
 
   const title = document.createElement("h2");
-  title.textContent = uz('tiles.dialogue') + ' \u2014 ' + "O'zbek tilida";
+  title.textContent = uz('tiles.dialogue') + ' \u2014 ' + uz('dialoguePractice.inUzbek');
   title.classList.add('tl-uz');
   title.dataset.translation = en('tiles.dialogue') + ' \u2014 In Uzbek';
   title.style.cssText = "color: #2c3e50; margin-bottom: 20px; text-align: center;";
   wrapper.appendChild(title);
 
   const instruction = document.createElement("div");
-  instruction.textContent = "💬 Xuddi shu suhbatni o'zbek tilida o'qing:";
+  instruction.textContent = uz('dialoguePractice.readInUzbek');
   instruction.style.cssText = "background: #e8f8f5; padding: 15px; border-radius: 8px; margin-bottom: 20px; color: #1e8449; font-weight: bold;";
   wrapper.appendChild(instruction);
 

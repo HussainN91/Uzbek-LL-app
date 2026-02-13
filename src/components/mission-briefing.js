@@ -12,6 +12,7 @@
  */
 
 import { shouldShowActivityCards, getLanguageDisplay, awardXP } from '../state/app-state.js';
+import { uz, en } from '../core/i18n.js';
 
 // ============================================================================
 // CSS STYLES (injected once)
@@ -416,12 +417,12 @@ export async function showMissionBriefing(lesson) {
     overlay.className = 'mission-briefing-overlay';
     overlay.innerHTML = `
       <div class="mission-briefing-card" style="position: relative;">
-        <button class="mission-skip-btn">O'tkazib yuborish →</button>
+        <button class="mission-skip-btn">${uz('missionBriefing.skip')}</button>
         
         <div class="mission-briefing-header">
           <div class="mission-briefing-icon">🎯</div>
-          <h2 class="mission-briefing-title">Dialogga tayyorgarlik</h2>
-          <p class="mission-briefing-subtitle">So'zlarni to'g'ri tartibga qo'ying</p>
+          <h2 class="mission-briefing-title">${uz('missionBriefing.title')}</h2>
+          <p class="mission-briefing-subtitle">${uz('missionBriefing.subtitle')}</p>
         </div>
         
         <div class="mission-progress-bar">
@@ -436,7 +437,7 @@ export async function showMissionBriefing(lesson) {
         
         <div class="mission-actions">
           <button class="mission-btn mission-btn-secondary" id="mission-hint-btn">💡 Yordam</button>
-          <button class="mission-btn mission-btn-primary" id="mission-check-btn" disabled>Tekshirish ✓</button>
+          <button class="mission-btn mission-btn-primary" id="mission-check-btn" disabled>${uz('missionBriefing.checkBtn')}</button>
         </div>
       </div>
     `;
@@ -475,7 +476,7 @@ export async function showMissionBriefing(lesson) {
       
       exerciseArea.innerHTML = `
         <div class="mission-instruction">
-          ${showUzbek ? 'O\'zbek tilidagi gapni ingliz tiliga tarjima qiling:' : 'Arrange the words in correct order:'}
+          ${showUzbek ? uz('missionBriefing.translateInstruction') : 'Arrange the words in correct order:'}
         </div>
         
         <div class="mission-phrase">
@@ -484,7 +485,7 @@ export async function showMissionBriefing(lesson) {
         </div>
         
         <div class="mission-drop-zone" id="mission-drop-zone">
-          <span class="mission-drop-placeholder">So'zlarni shu yerga torting...</span>
+          <span class="mission-drop-placeholder">${uz('missionBriefing.dropZone')}</span>
         </div>
         
         <div class="mission-chunk-pool" id="mission-chunk-pool">
@@ -577,7 +578,7 @@ export async function showMissionBriefing(lesson) {
           updateCheckButton();
           
           if (placedChunks.length === 0) {
-            dropZone.innerHTML = '<span class="mission-drop-placeholder">So\'zlarni shu yerga torting...</span>';
+            dropZone.innerHTML = '<span class="mission-drop-placeholder">' + uz('missionBriefing.dropZone') + '</span>';
           }
           dropZone.classList.remove('correct', 'incorrect');
         }
@@ -606,7 +607,7 @@ export async function showMissionBriefing(lesson) {
         dropZone.classList.remove('incorrect');
         placedChunks.forEach(c => c.classList.add('correct-placed'));
         
-        feedback.textContent = "🎉 To'g'ri! Zo'r!";
+        feedback.textContent = uz('missionBriefing.correct');
         feedback.className = 'mission-feedback visible success';
         
         // Award XP
@@ -625,7 +626,7 @@ export async function showMissionBriefing(lesson) {
           if (currentExerciseIndex >= exercises.length) {
             // All complete!
             progressFill.style.width = '100%';
-            feedback.textContent = "🏆 Tayyorgarlik tugadi! Dialogga o'taylik!";
+            feedback.textContent = uz('missionBriefing.complete');
             
             setTimeout(() => {
               cleanup();
@@ -641,7 +642,7 @@ export async function showMissionBriefing(lesson) {
         dropZone.classList.add('incorrect');
         dropZone.classList.remove('correct');
         
-        feedback.textContent = "❌ Qaytadan urinib ko'ring";
+        feedback.textContent = uz('missionBriefing.incorrect');
         feedback.className = 'mission-feedback visible error';
         
         // Allow retry
@@ -657,7 +658,7 @@ export async function showMissionBriefing(lesson) {
       const exercise = exercises[currentExerciseIndex];
       const firstCorrect = exercise.chunks[0];
       
-      feedback.textContent = `💡 Birinchi so'z: "${firstCorrect.en}"`;
+      feedback.textContent = uz('missionBriefing.hint').replace('{word}', firstCorrect.en);
       feedback.className = 'mission-feedback visible hint';
       
       setTimeout(() => {

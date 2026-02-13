@@ -10,6 +10,7 @@
  */
 
 import { STATES } from '../utils/constants.js';
+import { uz, en } from './i18n.js';
 import { getCurrentLesson, getUnitDisplayName, getCurrentUnitId, getMissingKeys, mergeMissingKeys } from './curriculum-loader.js';
 import { mountTile, unmountActive, hasTile } from '../tiles/tile-registry.js';
 import { showActivityContextCard } from '../components/activity-context-card.js';
@@ -183,7 +184,7 @@ function doRender() {
     const unitName = getUnitDisplayName(getCurrentUnitId());
     const lessonMatch = (lesson.lesson_id || currentLessonId || "").match(/_L(\d+)$/);
     const lessonNumber = lessonMatch ? parseInt(lessonMatch[1]) : "?";
-    lessonMetaEl.textContent = `${unitName} · Lesson ${lessonNumber}`;
+    lessonMetaEl.textContent = uz('nav.breadcrumb').replace('{unit}', unitName).replace('{lesson}', lessonNumber);
   }
   
   // Only run slide-in when state or lesson actually changed (avoids micro-refresh on every paint)
@@ -357,7 +358,7 @@ function createProgressBar() {
   
   const label = document.createElement("div");
   label.style.cssText = "text-align:center;font-size:0.85rem;color:#666;margin-top:8px;";
-  label.textContent = `Step ${currentIndex + 1} of ${stateOrder.length}`;
+  label.textContent = uz('nav.stepOf').replace('{current}', currentIndex + 1).replace('{total}', stateOrder.length);
   
   container.appendChild(track);
   container.appendChild(label);
@@ -375,7 +376,7 @@ function createBackButton() {
   if (idx <= 0 || getCurrentStateInternal() === STATES.DONE) return null;
   
   const btn = document.createElement("button");
-  btn.textContent = "← Back";
+  btn.textContent = uz('nav.backButton');
   btn.className = "back-btn";
   btn.style.cssText = "margin:10px 0;padding:10px 20px;background:#666;color:white;border:none;border-radius:8px;cursor:pointer;font-size:16px;";
   btn.onclick = () => setState(stateOrder[idx - 1]);

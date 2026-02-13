@@ -1,0 +1,4227 @@
+{
+  "meta": {
+    "unit": "04",
+    "source_file": "vocab_cards_u04_4act.js",
+    "total_strings": 341,
+    "categories": {
+      "line_uz": 15,
+      "item_uz": 117,
+      "uz_context": 30,
+      "uz_mirror_answer": 29,
+      "uz_gloss": 30,
+      "explanation_uz": 30,
+      "why_prompt": 30,
+      "prompt_uz": 60
+    },
+    "version": "1.0.0"
+  },
+  "strings": [
+    {
+      "id": "dialogues.U04_L01_D01.line_116",
+      "field": "line_uz",
+      "value": "Siz kecha charchagan edingizmi?",
+      "context": {
+        "line_number": 116,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U04_L01_D01",
+        "en_line": "Were you tired yesterday?"
+      }
+    },
+    {
+      "id": "dialogues.U04_L01_D01.line_117",
+      "field": "line_uz",
+      "value": "Yo'q, men xursand edim. Men hayajonlangan edim!",
+      "context": {
+        "line_number": 117,
+        "field": "line_uz",
+        "speaker": "Vali",
+        "dialogue_id": "U04_L01_D01",
+        "en_line": "No, I was happy. I was excited!"
+      }
+    },
+    {
+      "id": "dialogues.U04_L01_D01.line_118",
+      "field": "line_uz",
+      "value": "Nega? Sara xafa yoki asabiy edimi?",
+      "context": {
+        "line_number": 118,
+        "field": "line_uz",
+        "speaker": "Ali",
+        "dialogue_id": "U04_L01_D01",
+        "en_line": "Why? Was Sara sad or nervous?"
+      }
+    },
+    {
+      "id": "dialogues.U04_L01_D01.line_119",
+      "field": "line_uz",
+      "value": "Yo'q, biz bazmda edik.",
+      "context": {
+        "line_number": 119,
+        "field": "line_uz",
+        "speaker": "Vali",
+        "dialogue_id": "U04_L01_D01",
+        "en_line": "No, we were at a party."
+      }
+    },
+    {
+      "id": "dialogues.U04_L02_D02.line_126",
+      "field": "line_uz",
+      "value": "Siz o'tgan hafta qayerda edingiz?",
+      "context": {
+        "line_number": 126,
+        "field": "line_uz",
+        "speaker": "Laylo",
+        "dialogue_id": "U04_L02_D02",
+        "en_line": "Where were you last week?"
+      }
+    },
+    {
+      "id": "dialogues.U04_L02_D02.line_127",
+      "field": "line_uz",
+      "value": "Men plyajda va parkda edim.",
+      "context": {
+        "line_number": 127,
+        "field": "line_uz",
+        "speaker": "Zara",
+        "dialogue_id": "U04_L02_D02",
+        "en_line": "I was at the beach and the park."
+      }
+    },
+    {
+      "id": "dialogues.U04_L02_D02.line_128",
+      "field": "line_uz",
+      "value": "Siz kecha kechqurun uyda edingizmi?",
+      "context": {
+        "line_number": 128,
+        "field": "line_uz",
+        "speaker": "Laylo",
+        "dialogue_id": "U04_L02_D02",
+        "en_line": "Were you at home yesterday evening?"
+      }
+    },
+    {
+      "id": "dialogues.U04_L02_D02.line_129",
+      "field": "line_uz",
+      "value": "Yo'q, men muzeydagi bazmda edim... yoki kutubxonada!",
+      "context": {
+        "line_number": 129,
+        "field": "line_uz",
+        "speaker": "Zara",
+        "dialogue_id": "U04_L02_D02",
+        "en_line": "No, I was at a party at the museum... or the library!"
+      }
+    },
+    {
+      "id": "dialogues.U04_L03_D03.line_136",
+      "field": "line_uz",
+      "value": "Ali qayerda edi? U ishda edimi?",
+      "context": {
+        "line_number": 136,
+        "field": "line_uz",
+        "speaker": "Tom",
+        "dialogue_id": "U04_L03_D03",
+        "en_line": "Where was Ali? Was he at work?"
+      }
+    },
+    {
+      "id": "dialogues.U04_L03_D03.line_137",
+      "field": "line_uz",
+      "value": "Yo'q, u (u yerda) emas edi. U u yerda yo'q edi.",
+      "context": {
+        "line_number": 137,
+        "field": "line_uz",
+        "speaker": "Ben",
+        "dialogue_id": "U04_L03_D03",
+        "en_line": "No, he wasn't. He wasn't there."
+      }
+    },
+    {
+      "id": "dialogues.U04_L03_D03.line_138",
+      "field": "line_uz",
+      "value": "Uchrashuv qachon edi? Ular nega kechikishdi?",
+      "context": {
+        "line_number": 138,
+        "field": "line_uz",
+        "speaker": "Tom",
+        "dialogue_id": "U04_L03_D03",
+        "en_line": "When was the meeting? Why were they late?"
+      }
+    },
+    {
+      "id": "dialogues.U04_L03_D03.line_139",
+      "field": "line_uz",
+      "value": "Ular kechikishmadi. Kuningiz qanday o'tdi?",
+      "context": {
+        "line_number": 139,
+        "field": "line_uz",
+        "speaker": "Ben",
+        "dialogue_id": "U04_L03_D03",
+        "en_line": "They weren't late. How was your day?"
+      }
+    },
+    {
+      "id": "dialogues.U04_L04_D04.line_146",
+      "field": "line_uz",
+      "value": "Men qo'rqib ketdim va xavotir oldim.",
+      "context": {
+        "line_number": 146,
+        "field": "line_uz",
+        "speaker": "Mina",
+        "dialogue_id": "U04_L04_D04",
+        "en_line": "I was afraid and worried."
+      }
+    },
+    {
+      "id": "dialogues.U04_L04_D04.line_147",
+      "field": "line_uz",
+      "value": "Nega jahlingiz chiqdi? Tinchlaning.",
+      "context": {
+        "line_number": 147,
+        "field": "line_uz",
+        "speaker": "Lola",
+        "dialogue_id": "U04_L04_D04",
+        "en_line": "Why were you angry? Be calm."
+      }
+    },
+    {
+      "id": "dialogues.U04_L04_D04.line_148",
+      "field": "line_uz",
+      "value": "Mehmonxona tinch va qulay edi.",
+      "context": {
+        "line_number": 148,
+        "field": "line_uz",
+        "speaker": "Mina",
+        "dialogue_id": "U04_L04_D04",
+        "en_line": "The hotel was peaceful and comfortable."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_was.item_uz",
+      "field": "item_uz",
+      "value": "bo'lgan / edi (I/he/she/it)",
+      "context": {
+        "line_number": 163,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_was",
+        "dialogue_id": "U04_L04_D04"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_was.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Kecha u qayerda edi?",
+      "context": {
+        "line_number": 172,
+        "field": "uz_context",
+        "item_id": "V_U04_L01_was",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "He was at home."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_was.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "U uyda edi.",
+      "context": {
+        "line_number": 172,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L01_was",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "He was at home."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_was.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men xursand edim.",
+      "context": {
+        "line_number": 172,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L01_was",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "He was at home."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_was.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Was' = I/he/she/it bilan (birlik). 'Were' = you/we/they bilan (ko'plik). 'Was' — o'tmish zamondagi 'am/is'.",
+      "context": {
+        "line_number": 174,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L01_was",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_was.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Was' qachon ishlatiladi?",
+      "context": {
+        "line_number": 174,
+        "field": "why_prompt",
+        "item_id": "V_U04_L01_was",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_was.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men xursand edim.",
+      "context": {
+        "line_number": 177,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U04_L01_was",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_was.practice.item_uz",
+      "field": "item_uz",
+      "value": "U charchagan edi.",
+      "context": {
+        "line_number": 178,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_was",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_was.practice.item_uz",
+      "field": "item_uz",
+      "value": "U ishda edi.",
+      "context": {
+        "line_number": 179,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_was",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_was.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'was' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 181,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_was",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_was.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kecha siz qanday edingiz?",
+      "context": {
+        "line_number": 182,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_was",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_were.personalization.item_uz",
+      "field": "item_uz",
+      "value": "bo'lgan / edilar (You/we/they)",
+      "context": {
+        "line_number": 189,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_were",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_were.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz kecha qayerda edingiz?",
+      "context": {
+        "line_number": 198,
+        "field": "uz_context",
+        "item_id": "V_U04_L01_were",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "We were at school."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_were.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Biz maktabda edik.",
+      "context": {
+        "line_number": 198,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L01_were",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "We were at school."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_were.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Biz maktabda edik.",
+      "context": {
+        "line_number": 198,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L01_were",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "We were at school."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_were.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Were' = you/we/they (ko'plik + you). 'You were' — birlik 'you' ham 'were' oladi (hech qachon 'you was' emas!).",
+      "context": {
+        "line_number": 200,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L01_were",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_were.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Were' kimlar bilan ishlatiladi?",
+      "context": {
+        "line_number": 200,
+        "field": "why_prompt",
+        "item_id": "V_U04_L01_were",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_were.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz charchagan edingizmi?",
+      "context": {
+        "line_number": 203,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U04_L01_were",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_were.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ular xursand edilar.",
+      "context": {
+        "line_number": 204,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_were",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_were.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz xafa edik.",
+      "context": {
+        "line_number": 205,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_were",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_were.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'were' ishlatib gap tuzing.",
+      "context": {
+        "line_number": 207,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_were",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_were.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz va do'stlaringiz kecha qayerda edingiz?",
+      "context": {
+        "line_number": 208,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_were",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_happy.personalization.item_uz",
+      "field": "item_uz",
+      "value": "xursand / baxtli",
+      "context": {
+        "line_number": 215,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_happy",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_happy.presentation.uz_context",
+      "field": "uz_context",
+      "value": "U qanday holatda edi?",
+      "context": {
+        "line_number": 224,
+        "field": "uz_context",
+        "item_id": "V_U04_L01_happy",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "She was happy."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_happy.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "U xursand edi.",
+      "context": {
+        "line_number": 224,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L01_happy",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "She was happy."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_happy.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "U xursand edi.",
+      "context": {
+        "line_number": 224,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L01_happy",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "She was happy."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_happy.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Ingliz tilida 'be + adjective' = his/holat. 'I was happy' = men xursand edim. 'Feel' — ixtiyoriy: 'I felt happy' ham to'g'ri.",
+      "context": {
+        "line_number": 226,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L01_happy",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_happy.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega 'I was happy' — 'feel' yo'q?",
+      "context": {
+        "line_number": 226,
+        "field": "why_prompt",
+        "item_id": "V_U04_L01_happy",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_happy.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz xursandmisiz?",
+      "context": {
+        "line_number": 230,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_happy",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_happy.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ular xursand.",
+      "context": {
+        "line_number": 231,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_happy",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_happy.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'happy' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 233,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_happy",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_happy.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Qachon siz xursand bo'lgansiz?",
+      "context": {
+        "line_number": 234,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_happy",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_sad.personalization.item_uz",
+      "field": "item_uz",
+      "value": "xafa / g'amgin",
+      "context": {
+        "line_number": 241,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_sad",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_sad.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Nega u yig'layapti?",
+      "context": {
+        "line_number": 250,
+        "field": "uz_context",
+        "item_id": "V_U04_L01_sad",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "He was sad."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_sad.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "U xafa edi.",
+      "context": {
+        "line_number": 250,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L01_sad",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "He was sad."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_sad.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "U xafa edi.",
+      "context": {
+        "line_number": 250,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L01_sad",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "He was sad."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_sad.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Hislar juftlikda keladi: happy ↔ sad, excited ↔ nervous, calm ↔ angry. Qarama-qarshi ma'nolar.",
+      "context": {
+        "line_number": 252,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L01_sad",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_sad.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Sad' ning aksi nima?",
+      "context": {
+        "line_number": 252,
+        "field": "why_prompt",
+        "item_id": "V_U04_L01_sad",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_sad.practice.item_uz",
+      "field": "item_uz",
+      "value": "Sara xafa edimi?",
+      "context": {
+        "line_number": 255,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U04_L01_sad",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_sad.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men xafaman.",
+      "context": {
+        "line_number": 256,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_sad",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_sad.practice.item_uz",
+      "field": "item_uz",
+      "value": "Nega xafasiz?",
+      "context": {
+        "line_number": 257,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_sad",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_sad.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'sad' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 259,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_sad",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_sad.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kim xafa edi?",
+      "context": {
+        "line_number": 260,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_sad",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_tired.personalization.item_uz",
+      "field": "item_uz",
+      "value": "charchagan",
+      "context": {
+        "line_number": 267,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_tired",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_tired.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Ishdan keyin ahvoli qanday edi?",
+      "context": {
+        "line_number": 276,
+        "field": "uz_context",
+        "item_id": "V_U04_L01_tired",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "I was tired."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_tired.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Men charchagan edim.",
+      "context": {
+        "line_number": 276,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L01_tired",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "I was tired."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_tired.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men charchagan edim.",
+      "context": {
+        "line_number": 276,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L01_tired",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "I was tired."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_tired.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Ba'zi sifatlar fe'ldan: tire → tired, excite → excited, worry → worried. '-ed' = '...gan' holatda.",
+      "context": {
+        "line_number": 278,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L01_tired",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_tired.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Tired' nima uchun '-ed' bilan?",
+      "context": {
+        "line_number": 278,
+        "field": "why_prompt",
+        "item_id": "V_U04_L01_tired",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_tired.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kecha charchagan edingizmi?",
+      "context": {
+        "line_number": 281,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U04_L01_tired",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_tired.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men charchadim.",
+      "context": {
+        "line_number": 282,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_tired",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_tired.practice.item_uz",
+      "field": "item_uz",
+      "value": "U charchagan.",
+      "context": {
+        "line_number": 283,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_tired",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_tired.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'tired' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 285,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_tired",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_tired.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kecha charchagan edingizmi?",
+      "context": {
+        "line_number": 286,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_tired",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_nervous.personalization.item_uz",
+      "field": "item_uz",
+      "value": "asabiy / xavotirda",
+      "context": {
+        "line_number": 293,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_nervous",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_nervous.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Imtihondan oldin u qanday edi?",
+      "context": {
+        "line_number": 301,
+        "field": "uz_context",
+        "item_id": "V_U04_L01_nervous",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "He was nervous."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_nervous.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "U asabiy edi.",
+      "context": {
+        "line_number": 301,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L01_nervous",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "He was nervous."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_nervous.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "U asabiy edi.",
+      "context": {
+        "line_number": 301,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L01_nervous",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "He was nervous."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_nervous.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Nervous' = bezovta/asabiy (kichik xavotir). 'Anxious' = jiddiy xavotir. A1 darajada 'nervous' yetarli.",
+      "context": {
+        "line_number": 303,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L01_nervous",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_nervous.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Nervous' va 'anxious' farqi?",
+      "context": {
+        "line_number": 303,
+        "field": "why_prompt",
+        "item_id": "V_U04_L01_nervous",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_nervous.practice.item_uz",
+      "field": "item_uz",
+      "value": "Sara asabiy edimi?",
+      "context": {
+        "line_number": 306,
+        "field": "item_uz",
+        "speaker": "Ali",
+        "item_id": "V_U04_L01_nervous",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_nervous.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men asabiyman.",
+      "context": {
+        "line_number": 307,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_nervous",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_nervous.practice.item_uz",
+      "field": "item_uz",
+      "value": "Asabiylashmang.",
+      "context": {
+        "line_number": 308,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_nervous",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_nervous.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'nervous' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 310,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_nervous",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_nervous.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Qachon asabiy bo'lgansiz?",
+      "context": {
+        "line_number": 311,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_nervous",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_excited.personalization.item_uz",
+      "field": "item_uz",
+      "value": "hayajonlangan / xursand",
+      "context": {
+        "line_number": 317,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_excited",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_excited.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Ular safar haqida nima deb o'ylashdi?",
+      "context": {
+        "line_number": 325,
+        "field": "uz_context",
+        "item_id": "V_U04_L01_excited",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "We were excited."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_excited.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Biz hayajonlangan edik.",
+      "context": {
+        "line_number": 325,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L01_excited",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "We were excited."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_excited.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Biz hayajonlangan edik.",
+      "context": {
+        "line_number": 325,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L01_excited",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "We were excited."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_excited.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Excited' = inson hissi (I was excited). 'Exciting' = narsa/voqea sifati (The trip was exciting). '-ed' = his, '-ing' = sabab.",
+      "context": {
+        "line_number": 327,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L01_excited",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_excited.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Excited' va 'exciting' farqi?",
+      "context": {
+        "line_number": 327,
+        "field": "why_prompt",
+        "item_id": "V_U04_L01_excited",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_excited.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men hayajonlangan edim!",
+      "context": {
+        "line_number": 330,
+        "field": "item_uz",
+        "speaker": "Vali",
+        "item_id": "V_U04_L01_excited",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_excited.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz hayajonlanyapsizmi?",
+      "context": {
+        "line_number": 331,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_excited",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_excited.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ular hayajonlangan.",
+      "context": {
+        "line_number": 332,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_excited",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_excited.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'excited' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 334,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_excited",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_excited.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Qachon hayajonlangan edingiz?",
+      "context": {
+        "line_number": 335,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_excited",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_yesterday.personalization.item_uz",
+      "field": "item_uz",
+      "value": "kecha",
+      "context": {
+        "line_number": 341,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_yesterday",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_yesterday.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Bugun dushanba. .. yakshanba edi.",
+      "context": {
+        "line_number": 349,
+        "field": "uz_context",
+        "item_id": "V_U04_L01_yesterday",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "Yesterday was Sunday."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_yesterday.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Kecha yakshanba edi.",
+      "context": {
+        "line_number": 349,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L01_yesterday",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "Yesterday was Sunday."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_yesterday.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Kecha yakshanba edi.",
+      "context": {
+        "line_number": 349,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L01_yesterday",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "presentation",
+        "en_canonical": "Yesterday was Sunday."
+      }
+    },
+    {
+      "id": "items.V_U04_L01_yesterday.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Yesterday' gap boshida yoki oxirida kelishi mumkin: 'Yesterday I was tired' yoki 'I was tired yesterday'. Ikkalasi ham to'g'ri.",
+      "context": {
+        "line_number": 351,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L01_yesterday",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_yesterday.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Yesterday' gapda qayerga qo'yiladi?",
+      "context": {
+        "line_number": 351,
+        "field": "why_prompt",
+        "item_id": "V_U04_L01_yesterday",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_yesterday.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men uni kecha ko'rdim.",
+      "context": {
+        "line_number": 355,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_yesterday",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_yesterday.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kecha qiziqarli edi.",
+      "context": {
+        "line_number": 356,
+        "field": "item_uz",
+        "item_id": "V_U04_L01_yesterday",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_yesterday.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'yesterday' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 358,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_yesterday",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L01_yesterday.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kecha nima qildingiz?",
+      "context": {
+        "line_number": 359,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L01_yesterday",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_museum.personalization.item_uz",
+      "field": "item_uz",
+      "value": "muzey",
+      "context": {
+        "line_number": 373,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_museum",
+        "dialogue_id": "U04_L01_D01",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_museum.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Eski narsalarni qayerda ko'ramiz?",
+      "context": {
+        "line_number": 381,
+        "field": "uz_context",
+        "item_id": "V_U04_L02_museum",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "In the museum."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_museum.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Muzeyda.",
+      "context": {
+        "line_number": 381,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L02_museum",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "In the museum."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_museum.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men muzeyda edim.",
+      "context": {
+        "line_number": 381,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L02_museum",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "In the museum."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_museum.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'At' = umumiy joy (at the museum, at school). 'In' = ichida (in the room, in the building). 'At' kengroq tushuncha.",
+      "context": {
+        "line_number": 383,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L02_museum",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_museum.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega 'AT the museum' — 'in' emas?",
+      "context": {
+        "line_number": 383,
+        "field": "why_prompt",
+        "item_id": "V_U04_L02_museum",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_museum.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men muzeyda edim.",
+      "context": {
+        "line_number": 386,
+        "field": "item_uz",
+        "speaker": "Zara",
+        "item_id": "V_U04_L02_museum",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_museum.practice.item_uz",
+      "field": "item_uz",
+      "value": "Muzey eski.",
+      "context": {
+        "line_number": 387,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_museum",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_museum.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz muzeyni yaxshi ko'ramiz.",
+      "context": {
+        "line_number": 388,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_museum",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_museum.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'museum' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 390,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_museum",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_museum.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz muzeyga borganmisiz?",
+      "context": {
+        "line_number": 391,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_museum",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_park.personalization.item_uz",
+      "field": "item_uz",
+      "value": "bog' / park",
+      "context": {
+        "line_number": 397,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_park",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_park.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Bolalar qayerda o'ynaydi?",
+      "context": {
+        "line_number": 405,
+        "field": "uz_context",
+        "item_id": "V_U04_L02_park",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "In the park."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_park.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Parkda.",
+      "context": {
+        "line_number": 405,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L02_park",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "In the park."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_park.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men parkda edim.",
+      "context": {
+        "line_number": 405,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L02_park",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "In the park."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_park.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Ma'lum joylar uchun 'the' ishlatiladi: 'the park' (bizning park). 'A park' = har qanday park. Kontekstda ma'lum bo'lsa — 'the'.",
+      "context": {
+        "line_number": 407,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L02_park",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_park.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega 'THE park'?",
+      "context": {
+        "line_number": 407,
+        "field": "why_prompt",
+        "item_id": "V_U04_L02_park",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_park.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men parkda edim.",
+      "context": {
+        "line_number": 410,
+        "field": "item_uz",
+        "speaker": "Zara",
+        "item_id": "V_U04_L02_park",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_park.practice.item_uz",
+      "field": "item_uz",
+      "value": "Park katta.",
+      "context": {
+        "line_number": 411,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_park",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_park.practice.item_uz",
+      "field": "item_uz",
+      "value": "Keling, parkga boramiz.",
+      "context": {
+        "line_number": 412,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_park",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_park.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'park' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 414,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_park",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_park.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz qaysi parkda bo'lgansiz?",
+      "context": {
+        "line_number": 415,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_park",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_beach.personalization.item_uz",
+      "field": "item_uz",
+      "value": "plyaj / sohil",
+      "context": {
+        "line_number": 421,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_beach",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_beach.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Yozda qayerga borasiz?",
+      "context": {
+        "line_number": 429,
+        "field": "uz_context",
+        "item_id": "V_U04_L02_beach",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "To the beach."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_beach.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Plyajga.",
+      "context": {
+        "line_number": 429,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L02_beach",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "To the beach."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_beach.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men plyajda edim.",
+      "context": {
+        "line_number": 429,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L02_beach",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "To the beach."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_beach.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'At the beach' = plyajda (umumiy). 'On the beach' = plyaj ustida (aniqroq). Ikkalasi ham to'g'ri, 'at' — kengroq.",
+      "context": {
+        "line_number": 431,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L02_beach",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_beach.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'At the beach' yoki 'on the beach'?",
+      "context": {
+        "line_number": 431,
+        "field": "why_prompt",
+        "item_id": "V_U04_L02_beach",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_beach.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men plyajda edim.",
+      "context": {
+        "line_number": 434,
+        "field": "item_uz",
+        "speaker": "Zara",
+        "item_id": "V_U04_L02_beach",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_beach.practice.item_uz",
+      "field": "item_uz",
+      "value": "Plyaj qumli.",
+      "context": {
+        "line_number": 435,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_beach",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_beach.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men plyajni yaxshi ko'raman.",
+      "context": {
+        "line_number": 436,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_beach",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_beach.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'beach' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 438,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_beach",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_beach.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz plyajda bo'lganmisiz?",
+      "context": {
+        "line_number": 439,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_beach",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_library.personalization.item_uz",
+      "field": "item_uz",
+      "value": "kutubxona",
+      "context": {
+        "line_number": 445,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_library",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_library.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Kitoblarni qayerdan olasiz?",
+      "context": {
+        "line_number": 453,
+        "field": "uz_context",
+        "item_id": "V_U04_L02_library",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "From the library."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_library.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Kutubxonadan.",
+      "context": {
+        "line_number": 453,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L02_library",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "From the library."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_library.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men kutubxonada edim.",
+      "context": {
+        "line_number": 453,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L02_library",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "From the library."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_library.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Library' = /ˈlaɪbrəri/ (LAI-bre-ri). Ko'p o'quvchilar 'libary' deyishadi — noto'g'ri. Ikkita 'r' harfi bor.",
+      "context": {
+        "line_number": 455,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L02_library",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_library.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Library' qanday talaffuz qilinadi?",
+      "context": {
+        "line_number": 455,
+        "field": "why_prompt",
+        "item_id": "V_U04_L02_library",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_library.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men kutubxonada edim.",
+      "context": {
+        "line_number": 458,
+        "field": "item_uz",
+        "speaker": "Zara",
+        "item_id": "V_U04_L02_library",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_library.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kutubxona jim.",
+      "context": {
+        "line_number": 459,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_library",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_library.practice.item_uz",
+      "field": "item_uz",
+      "value": "U kutubxonada.",
+      "context": {
+        "line_number": 460,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_library",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_library.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'library' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 462,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_library",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_library.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz kutubxonaga boraszimi?",
+      "context": {
+        "line_number": 463,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_library",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_party.personalization.item_uz",
+      "field": "item_uz",
+      "value": "bazm / kecha",
+      "context": {
+        "line_number": 469,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_party",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_party.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Tug'ilgan kunda nima bo'ladi?",
+      "context": {
+        "line_number": 477,
+        "field": "uz_context",
+        "item_id": "V_U04_L02_party",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "A party."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_party.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Bazm.",
+      "context": {
+        "line_number": 477,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L02_party",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "A party."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_party.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men bazmda edim.",
+      "context": {
+        "line_number": 477,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L02_party",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "A party."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_party.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'A party' = har qanday bazm (birinchi marta aytilmoqda). 'The party' = ma'lum bazm (ikkinchi marta yoki qaysi ekani aniq). Birinchi safar — 'a'.",
+      "context": {
+        "line_number": 479,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L02_party",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_party.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega 'A party' — 'the' emas?",
+      "context": {
+        "line_number": 479,
+        "field": "why_prompt",
+        "item_id": "V_U04_L02_party",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_party.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men bazmda edim.",
+      "context": {
+        "line_number": 482,
+        "field": "item_uz",
+        "speaker": "Zara",
+        "item_id": "V_U04_L02_party",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_party.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bazm qiziqarli edi.",
+      "context": {
+        "line_number": 483,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_party",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_party.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz bazmda.",
+      "context": {
+        "line_number": 484,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_party",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_party.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'party' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 486,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_party",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_party.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Oxirgi marta qachon bazmda bo'lgansiz?",
+      "context": {
+        "line_number": 487,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_party",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_at_home.personalization.item_uz",
+      "field": "item_uz",
+      "value": "uyda",
+      "context": {
+        "line_number": 493,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_at_home",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_at_home.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Dam olish kuni qayerda edingiz?",
+      "context": {
+        "line_number": 501,
+        "field": "uz_context",
+        "item_id": "V_U04_L02_at_home",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "I was at home."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_at_home.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Men uyda edim.",
+      "context": {
+        "line_number": 501,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L02_at_home",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "I was at home."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_at_home.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men uyda edim.",
+      "context": {
+        "line_number": 501,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L02_at_home",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "I was at home."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_at_home.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Home' maxsus so'z — artiklsiz ishlatiladi: 'at home' (uyda), 'go home' (uyga borish). 'At THE home' = keksalar uyi.",
+      "context": {
+        "line_number": 503,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L02_at_home",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_at_home.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega 'at home' — 'the' yo'q?",
+      "context": {
+        "line_number": 503,
+        "field": "why_prompt",
+        "item_id": "V_U04_L02_at_home",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_at_home.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bugun uyda edingizmi?",
+      "context": {
+        "line_number": 506,
+        "field": "item_uz",
+        "speaker": "Laylo",
+        "item_id": "V_U04_L02_at_home",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_at_home.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men uydaman.",
+      "context": {
+        "line_number": 507,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_at_home",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_at_home.practice.item_uz",
+      "field": "item_uz",
+      "value": "U uyda qoladi.",
+      "context": {
+        "line_number": 508,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_at_home",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_at_home.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'at home' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 510,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_at_home",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_at_home.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kecha kechqurun uyda edingizmi?",
+      "context": {
+        "line_number": 511,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_at_home",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_yesterday_evening.personalization.item_uz",
+      "field": "item_uz",
+      "value": "kecha kechqurun",
+      "context": {
+        "line_number": 517,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_yesterday_evening",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_yesterday_evening.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Qachon televizor ko'rdingiz?",
+      "context": {
+        "line_number": 525,
+        "field": "uz_context",
+        "item_id": "V_U04_L02_yesterday_evening",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "Yesterday evening."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_yesterday_evening.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Kecha kechqurun.",
+      "context": {
+        "line_number": 525,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L02_yesterday_evening",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "Yesterday evening."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_yesterday_evening.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Kecha kechqurun uyda edim.",
+      "context": {
+        "line_number": 525,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L02_yesterday_evening",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "Yesterday evening."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_yesterday_evening.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Yesterday evening' = kechqi soatlar (6-9). 'Last night' = kechasi (9+). Ikkalasi ham o'tmish vaqt ko'rsatkichi.",
+      "context": {
+        "line_number": 527,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L02_yesterday_evening",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_yesterday_evening.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Yesterday evening' va 'last night' farqi?",
+      "context": {
+        "line_number": 527,
+        "field": "why_prompt",
+        "item_id": "V_U04_L02_yesterday_evening",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_yesterday_evening.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kecha kechqurun uyda edingizmi?",
+      "context": {
+        "line_number": 530,
+        "field": "item_uz",
+        "speaker": "Laylo",
+        "item_id": "V_U04_L02_yesterday_evening",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_yesterday_evening.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men kecha kechqurun uxladim.",
+      "context": {
+        "line_number": 531,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_yesterday_evening",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_yesterday_evening.practice.item_uz",
+      "field": "item_uz",
+      "value": "U kecha kechqurun ishladi.",
+      "context": {
+        "line_number": 532,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_yesterday_evening",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_yesterday_evening.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'yesterday evening' bilan gap tuzing.",
+      "context": {
+        "line_number": 534,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_yesterday_evening",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_yesterday_evening.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kecha kechqurun nima qildingiz?",
+      "context": {
+        "line_number": 535,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_yesterday_evening",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_last_week.personalization.item_uz",
+      "field": "item_uz",
+      "value": "o'tgan hafta",
+      "context": {
+        "line_number": 541,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_last_week",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_last_week.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Qachon ta'tilda edingiz?",
+      "context": {
+        "line_number": 549,
+        "field": "uz_context",
+        "item_id": "V_U04_L02_last_week",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "Last week."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_last_week.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "O'tgan hafta.",
+      "context": {
+        "line_number": 549,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L02_last_week",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "Last week."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_last_week.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men u yerda o'tgan hafta edim.",
+      "context": {
+        "line_number": 549,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L02_last_week",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "presentation",
+        "en_canonical": "Last week."
+      }
+    },
+    {
+      "id": "items.V_U04_L02_last_week.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Last' + vaqt = o'tgan: last week, last month, last year, last night. Hammasi o'tmish zamon bilan ishlatiladi.",
+      "context": {
+        "line_number": 551,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L02_last_week",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_last_week.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Last' bilan boshqa iboralar bormi?",
+      "context": {
+        "line_number": 551,
+        "field": "why_prompt",
+        "item_id": "V_U04_L02_last_week",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_last_week.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz o'tgan hafta qayerda edingiz?",
+      "context": {
+        "line_number": 554,
+        "field": "item_uz",
+        "speaker": "Laylo",
+        "item_id": "V_U04_L02_last_week",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_last_week.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men u yerga o'tgan hafta bordim.",
+      "context": {
+        "line_number": 555,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_last_week",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_last_week.practice.item_uz",
+      "field": "item_uz",
+      "value": "U o'tgan hafta keldi.",
+      "context": {
+        "line_number": 556,
+        "field": "item_uz",
+        "item_id": "V_U04_L02_last_week",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_last_week.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'last week' bilan gap tuzing.",
+      "context": {
+        "line_number": 558,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_last_week",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L02_last_week.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "O'tgan hafta qayerda edingiz?",
+      "context": {
+        "line_number": 559,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L02_last_week",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_wasnt.personalization.item_uz",
+      "field": "item_uz",
+      "value": "emas edi (was not)",
+      "context": {
+        "line_number": 573,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_wasnt",
+        "dialogue_id": "U04_L02_D02",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_wasnt.presentation.uz_context",
+      "field": "uz_context",
+      "value": "U ishda edimi?",
+      "context": {
+        "line_number": 581,
+        "field": "uz_context",
+        "item_id": "V_U04_L03_wasnt",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "No, he wasn't."
+      }
+    },
+    {
+      "id": "items.V_U04_L03_wasnt.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, u emas edi.",
+      "context": {
+        "line_number": 581,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L03_wasnt",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "No, he wasn't."
+      }
+    },
+    {
+      "id": "items.V_U04_L03_wasnt.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Yo'q, u emas edi.",
+      "context": {
+        "line_number": 581,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L03_wasnt",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "No, he wasn't."
+      }
+    },
+    {
+      "id": "items.V_U04_L03_wasnt.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Was' + 'not' = 'wasn't' (qisqartma). Rasmiy: 'was not'. Og'zaki nutqda 'wasn't' ko'proq.",
+      "context": {
+        "line_number": 583,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L03_wasnt",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_wasnt.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Wasn't' qanday hosil bo'ladi?",
+      "context": {
+        "line_number": 583,
+        "field": "why_prompt",
+        "item_id": "V_U04_L03_wasnt",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_wasnt.practice.item_uz",
+      "field": "item_uz",
+      "value": "Yo'q, u emas edi.",
+      "context": {
+        "line_number": 586,
+        "field": "item_uz",
+        "speaker": "Ben",
+        "item_id": "V_U04_L03_wasnt",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_wasnt.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men xursand emas edim.",
+      "context": {
+        "line_number": 587,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_wasnt",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_wasnt.practice.item_uz",
+      "field": "item_uz",
+      "value": "U uyda emas edi.",
+      "context": {
+        "line_number": 588,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_wasnt",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_wasnt.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'wasn't' bilan inkor gap tuzing.",
+      "context": {
+        "line_number": 590,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_wasnt",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_wasnt.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kecha qayerda emas edingiz?",
+      "context": {
+        "line_number": 591,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_wasnt",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_werent.personalization.item_uz",
+      "field": "item_uz",
+      "value": "emas edilar (were not)",
+      "context": {
+        "line_number": 597,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_werent",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_werent.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Ular xursand edimi?",
+      "context": {
+        "line_number": 605,
+        "field": "uz_context",
+        "item_id": "V_U04_L03_werent",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "No, they weren't."
+      }
+    },
+    {
+      "id": "items.V_U04_L03_werent.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Yo'q, ular emas edi.",
+      "context": {
+        "line_number": 605,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L03_werent",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "No, they weren't."
+      }
+    },
+    {
+      "id": "items.V_U04_L03_werent.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Ular kechikishmadi.",
+      "context": {
+        "line_number": 605,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L03_werent",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "No, they weren't."
+      }
+    },
+    {
+      "id": "items.V_U04_L03_werent.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Weren't' = 'were not' (ko'plik inkor). You/we/they bilan: 'We weren't tired'. I/he/she uchun — 'wasn't'.",
+      "context": {
+        "line_number": 607,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L03_werent",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_werent.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Weren't' kimlar bilan?",
+      "context": {
+        "line_number": 607,
+        "field": "why_prompt",
+        "item_id": "V_U04_L03_werent",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_werent.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ular kechikishmadi.",
+      "context": {
+        "line_number": 610,
+        "field": "item_uz",
+        "speaker": "Ben",
+        "item_id": "V_U04_L03_werent",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_werent.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz charchamadik.",
+      "context": {
+        "line_number": 611,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_werent",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_werent.practice.item_uz",
+      "field": "item_uz",
+      "value": "Siz u yerda yo'q edingiz.",
+      "context": {
+        "line_number": 612,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_werent",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_werent.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'weren't' bilan inkor gap tuzing.",
+      "context": {
+        "line_number": 614,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_werent",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_werent.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Do'stlaringiz kecha qayerda emas edi?",
+      "context": {
+        "line_number": 615,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_werent",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_where_was.personalization.item_uz",
+      "field": "item_uz",
+      "value": "Qayerda edi (Singular)",
+      "context": {
+        "line_number": 621,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_where_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_where_was.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Ali qayerda edi?",
+      "context": {
+        "line_number": 629,
+        "field": "uz_context",
+        "item_id": "V_U04_L03_where_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "Where was he?"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_where_was.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Ali qayerda edi?",
+      "context": {
+        "line_number": 629,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L03_where_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "Where was he?"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_where_was.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Savol so'z + was/were + subject: 'Where WAS Ali?'. Savolda fe'l subject oldiga o'tadi (inversion). 'Where Ali was' — NOTO'G'RI.",
+      "context": {
+        "line_number": 631,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L03_where_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_where_was.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega 'Where Ali was?' emas?",
+      "context": {
+        "line_number": 631,
+        "field": "why_prompt",
+        "item_id": "V_U04_L03_where_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_where_was.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ali qayerda edi?",
+      "context": {
+        "line_number": 634,
+        "field": "item_uz",
+        "speaker": "Tom",
+        "item_id": "V_U04_L03_where_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_where_was.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mushuk qayerda edi?",
+      "context": {
+        "line_number": 635,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_where_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_where_was.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kitob qayerda edi?",
+      "context": {
+        "line_number": 636,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_where_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_where_was.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'Where was' bilan savol tuzing.",
+      "context": {
+        "line_number": 638,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_where_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_where_was.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Kimnidir qayerda ekanini so'rang.",
+      "context": {
+        "line_number": 639,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_where_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_was_he.personalization.item_uz",
+      "field": "item_uz",
+      "value": "U ... edimi?",
+      "context": {
+        "line_number": 645,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_was_he",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_was_he.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Kasali bormi?",
+      "context": {
+        "line_number": 653,
+        "field": "uz_context",
+        "item_id": "V_U04_L03_was_he",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "Was he sick?"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_was_he.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "U kasal edimi?",
+      "context": {
+        "line_number": 653,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L03_was_he",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "Was he sick?"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_was_he.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "U kasal edimi?",
+      "context": {
+        "line_number": 653,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L03_was_he",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "Was he sick?"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_was_he.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Yes/No savollarda 'was/were' gap boshiga o'tadi: 'Was he sick?' (U kasal edimi?). 'He was sick' → 'Was he sick?'.",
+      "context": {
+        "line_number": 655,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L03_was_he",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_was_he.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Yes/No savolda 'was' qayerda?",
+      "context": {
+        "line_number": 655,
+        "field": "why_prompt",
+        "item_id": "V_U04_L03_was_he",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_was_he.practice.item_uz",
+      "field": "item_uz",
+      "value": "U ishda edimi?",
+      "context": {
+        "line_number": 658,
+        "field": "item_uz",
+        "speaker": "Tom",
+        "item_id": "V_U04_L03_was_he",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_was_he.practice.item_uz",
+      "field": "item_uz",
+      "value": "U xursand edimi?",
+      "context": {
+        "line_number": 659,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_was_he",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_was_he.practice.item_uz",
+      "field": "item_uz",
+      "value": "U charchagan edimi?",
+      "context": {
+        "line_number": 660,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_was_he",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_was_he.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'Was he' bilan savol tuzing.",
+      "context": {
+        "line_number": 662,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_was_he",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_was_he.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Biror kishini so'rang.",
+      "context": {
+        "line_number": 663,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_was_he",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_yes_no_was.personalization.item_uz",
+      "field": "item_uz",
+      "value": "Ha (edim) / Yo'q (emas edim)",
+      "context": {
+        "line_number": 669,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_yes_no_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_yes_no_was.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Siz uyda edingizmi?",
+      "context": {
+        "line_number": 677,
+        "field": "uz_context",
+        "item_id": "V_U04_L03_yes_no_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "Yes I was."
+      }
+    },
+    {
+      "id": "items.V_U04_L03_yes_no_was.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Ha / Yo'q.",
+      "context": {
+        "line_number": 677,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L03_yes_no_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "Yes I was."
+      }
+    },
+    {
+      "id": "items.V_U04_L03_yes_no_was.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Ha, edim. / Yo'q, emas edim.",
+      "context": {
+        "line_number": 677,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L03_yes_no_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "Yes I was."
+      }
+    },
+    {
+      "id": "items.V_U04_L03_yes_no_was.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "Qisqa javobda faqat: 'Yes, I was' yoki 'No, I wasn't'. To'liq gapni takrorlamang. Qisqa javob = subject + was/were.",
+      "context": {
+        "line_number": 679,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L03_yes_no_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_yes_no_was.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega 'Yes, I was happy' emas?",
+      "context": {
+        "line_number": 679,
+        "field": "why_prompt",
+        "item_id": "V_U04_L03_yes_no_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_yes_no_was.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ha, men edim.",
+      "context": {
+        "line_number": 683,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_yes_no_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_yes_no_was.practice.item_uz",
+      "field": "item_uz",
+      "value": "Yo'q, men emas edim.",
+      "context": {
+        "line_number": 684,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_yes_no_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_yes_no_was.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Savolga qisqa javob bering.",
+      "context": {
+        "line_number": 686,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_yes_no_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_yes_no_was.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Savolga javob bering: Were you happy yesterday?",
+      "context": {
+        "line_number": 687,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_yes_no_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_how_was.personalization.item_uz",
+      "field": "item_uz",
+      "value": "Qanday edi",
+      "context": {
+        "line_number": 693,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_how_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_how_was.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Kuningiz qanday o'tdi?",
+      "context": {
+        "line_number": 701,
+        "field": "uz_context",
+        "item_id": "V_U04_L03_how_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "How was your day?"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_how_was.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Kuningiz qanday edi?",
+      "context": {
+        "line_number": 701,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L03_how_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "How was your day?"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_how_was.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Kuningiz qanday edi?",
+      "context": {
+        "line_number": 701,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L03_how_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "How was your day?"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_how_was.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'How was' = sifat/holat haqida so'raydi: 'How was the food?' (Ovqat qanday edi?). Javob: 'It was good/bad/great'.",
+      "context": {
+        "line_number": 703,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L03_how_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_how_was.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'How was' nima so'raydi?",
+      "context": {
+        "line_number": 703,
+        "field": "why_prompt",
+        "item_id": "V_U04_L03_how_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_how_was.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kuningiz qanday edi?",
+      "context": {
+        "line_number": 706,
+        "field": "item_uz",
+        "speaker": "Ben",
+        "item_id": "V_U04_L03_how_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_how_was.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ovqat qanday edi?",
+      "context": {
+        "line_number": 707,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_how_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_how_was.practice.item_uz",
+      "field": "item_uz",
+      "value": "Kino qanday edi?",
+      "context": {
+        "line_number": 708,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_how_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_how_was.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'How was' bilan savol tuzing.",
+      "context": {
+        "line_number": 710,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_how_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_how_was.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Bugungi kuningiz qanday edi?",
+      "context": {
+        "line_number": 711,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_how_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_why_were.personalization.item_uz",
+      "field": "item_uz",
+      "value": "Nega ... edilar?",
+      "context": {
+        "line_number": 717,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_why_were",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_why_were.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Sababini so'rash (ko'plik)",
+      "context": {
+        "line_number": 725,
+        "field": "uz_context",
+        "item_id": "V_U04_L03_why_were",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "Why were they late?"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_why_were.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Nega ular kechikishdi?",
+      "context": {
+        "line_number": 725,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L03_why_were",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "Why were they late?"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_why_were.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Ular nega kechikishdi?",
+      "context": {
+        "line_number": 725,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L03_why_were",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "Why were they late?"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_why_were.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Why' = nega/sabab. Javob 'Because' bilan boshlanadi: 'Why were they late?' → 'Because they were in traffic'.",
+      "context": {
+        "line_number": 727,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L03_why_were",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_why_were.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Why' ga qanday javob berish kerak?",
+      "context": {
+        "line_number": 727,
+        "field": "why_prompt",
+        "item_id": "V_U04_L03_why_were",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_why_were.practice.item_uz",
+      "field": "item_uz",
+      "value": "Nega ular kechikishdi?",
+      "context": {
+        "line_number": 730,
+        "field": "item_uz",
+        "speaker": "Tom",
+        "item_id": "V_U04_L03_why_were",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_why_were.practice.item_uz",
+      "field": "item_uz",
+      "value": "Nega xafa edingiz?",
+      "context": {
+        "line_number": 731,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_why_were",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_why_were.practice.item_uz",
+      "field": "item_uz",
+      "value": "Biz u yerda nega edik?",
+      "context": {
+        "line_number": 732,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_why_were",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_why_were.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'Why were' bilan savol tuzing.",
+      "context": {
+        "line_number": 734,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_why_were",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_why_were.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Do'stingizdan sababini so'rang.",
+      "context": {
+        "line_number": 735,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_why_were",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_when_was.personalization.item_uz",
+      "field": "item_uz",
+      "value": "Qachon edi",
+      "context": {
+        "line_number": 741,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_when_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_when_was.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Vaqtni so'rash",
+      "context": {
+        "line_number": 749,
+        "field": "uz_context",
+        "item_id": "V_U04_L03_when_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "When was the meeting?"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_when_was.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Uchrashuv qachon edi?",
+      "context": {
+        "line_number": 749,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L03_when_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "When was the meeting?"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_when_was.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Uchrashuv qachon edi?",
+      "context": {
+        "line_number": 749,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L03_when_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "presentation",
+        "en_canonical": "When was the meeting?"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_when_was.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'When' = umumiy vaqt (When was the party? → Last Friday). 'What time' = aniq soat (What time was the meeting? → At 3 o'clock).",
+      "context": {
+        "line_number": 751,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L03_when_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_when_was.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'When' va 'What time' farqi?",
+      "context": {
+        "line_number": 751,
+        "field": "why_prompt",
+        "item_id": "V_U04_L03_when_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_when_was.practice.item_uz",
+      "field": "item_uz",
+      "value": "Uchrashuv qachon edi?",
+      "context": {
+        "line_number": 754,
+        "field": "item_uz",
+        "speaker": "Tom",
+        "item_id": "V_U04_L03_when_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_when_was.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bazm qachon edi?",
+      "context": {
+        "line_number": 755,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_when_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_when_was.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bu qachon edi?",
+      "context": {
+        "line_number": 756,
+        "field": "item_uz",
+        "item_id": "V_U04_L03_when_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_when_was.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'When was' bilan savol tuzing.",
+      "context": {
+        "line_number": 758,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_when_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L03_when_was.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Voqea qachon bo'lganini so'rang.",
+      "context": {
+        "line_number": 759,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L03_when_was",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_comfortable.personalization.item_uz",
+      "field": "item_uz",
+      "value": "qulay",
+      "context": {
+        "line_number": 773,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_comfortable",
+        "dialogue_id": "U04_L03_D03",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_comfortable.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Bu stul qanday?",
+      "context": {
+        "line_number": 781,
+        "field": "uz_context",
+        "item_id": "V_U04_L04_comfortable",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "It is comfortable."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_comfortable.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "U juda qulay.",
+      "context": {
+        "line_number": 781,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L04_comfortable",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "It is comfortable."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_comfortable.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Bu qulay.",
+      "context": {
+        "line_number": 781,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L04_comfortable",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "It is comfortable."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_comfortable.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Un-' qo'shimchasi = aks: comfortable → uncomfortable, happy → unhappy, friendly → unfriendly. Ko'p sifatlarga 'un-' qo'shiladi.",
+      "context": {
+        "line_number": 783,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L04_comfortable",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_comfortable.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Comfortable' ning aksini qanday qilish?",
+      "context": {
+        "line_number": 783,
+        "field": "why_prompt",
+        "item_id": "V_U04_L04_comfortable",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_comfortable.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mehmonxona qulay edi.",
+      "context": {
+        "line_number": 786,
+        "field": "item_uz",
+        "speaker": "Mina",
+        "item_id": "V_U04_L04_comfortable",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_comfortable.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bu stul qulay.",
+      "context": {
+        "line_number": 787,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_comfortable",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_comfortable.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mening karahvotim qulay.",
+      "context": {
+        "line_number": 788,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_comfortable",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_comfortable.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'comfortable' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 790,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L04_comfortable",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_comfortable.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Sizga nima qulay?",
+      "context": {
+        "line_number": 791,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L04_comfortable",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_worried.personalization.item_uz",
+      "field": "item_uz",
+      "value": "xavotir olgan / tashvishli",
+      "context": {
+        "line_number": 797,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_worried",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_worried.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Muammo bo'lganda nima his qilasiz?",
+      "context": {
+        "line_number": 805,
+        "field": "uz_context",
+        "item_id": "V_U04_L04_worried",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "I am worried."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_worried.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Men xavotirdaman.",
+      "context": {
+        "line_number": 805,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L04_worried",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "I am worried."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_worried.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men xavotirdaman.",
+      "context": {
+        "line_number": 805,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L04_worried",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "I am worried."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_worried.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Worried' + 'about': 'I was worried about the exam'. 'About' = haqida. 'Worried' yolg'iz ham ishlatiladi: 'I was worried'.",
+      "context": {
+        "line_number": 807,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L04_worried",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_worried.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Worried' dan keyin nima keladi?",
+      "context": {
+        "line_number": 807,
+        "field": "why_prompt",
+        "item_id": "V_U04_L04_worried",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_worried.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men xavotirda edim.",
+      "context": {
+        "line_number": 810,
+        "field": "item_uz",
+        "speaker": "Mina",
+        "item_id": "V_U04_L04_worried",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_worried.practice.item_uz",
+      "field": "item_uz",
+      "value": "Xavotir olmang.",
+      "context": {
+        "line_number": 811,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_worried",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_worried.practice.item_uz",
+      "field": "item_uz",
+      "value": "U xavotir olganga o'xshaydi.",
+      "context": {
+        "line_number": 812,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_worried",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_worried.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'worried' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 814,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L04_worried",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_worried.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Nima haqida xavotirdayapsiz?",
+      "context": {
+        "line_number": 815,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L04_worried",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_angry.personalization.item_uz",
+      "field": "item_uz",
+      "value": "jahli chiqqan / g'azablangan",
+      "context": {
+        "line_number": 821,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_angry",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_angry.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Kimdir yomon ish qilsa...",
+      "context": {
+        "line_number": 829,
+        "field": "uz_context",
+        "item_id": "V_U04_L04_angry",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "You are angry."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_angry.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Jahlingiz chiqadi.",
+      "context": {
+        "line_number": 829,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L04_angry",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "You are angry."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_angry.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Siz g'azablanasiz.",
+      "context": {
+        "line_number": 829,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L04_angry",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "You are angry."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_angry.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Angry WITH' = kishiga (angry with him). 'Angry ABOUT' = voqeaga (angry about the decision). Ikki xil.",
+      "context": {
+        "line_number": 831,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L04_angry",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_angry.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Angry' dan keyin qaysi predlog?",
+      "context": {
+        "line_number": 831,
+        "field": "why_prompt",
+        "item_id": "V_U04_L04_angry",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_angry.practice.item_uz",
+      "field": "item_uz",
+      "value": "Nega jahlingiz chiqdi?",
+      "context": {
+        "line_number": 834,
+        "field": "item_uz",
+        "speaker": "Lola",
+        "item_id": "V_U04_L04_angry",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_angry.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men g'azabdaman.",
+      "context": {
+        "line_number": 835,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_angry",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_angry.practice.item_uz",
+      "field": "item_uz",
+      "value": "U qahrli qiladi.",
+      "context": {
+        "line_number": 836,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_angry",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_angry.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'angry' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 838,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L04_angry",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_angry.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Qachon jahlingiz chiqqan?",
+      "context": {
+        "line_number": 839,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L04_angry",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_afraid.personalization.item_uz",
+      "field": "item_uz",
+      "value": "qo'rqib ketgan",
+      "context": {
+        "line_number": 845,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_afraid",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_afraid.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Qorong'uda nima his qilasiz?",
+      "context": {
+        "line_number": 853,
+        "field": "uz_context",
+        "item_id": "V_U04_L04_afraid",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "I am afraid."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_afraid.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Men qo'rqaman.",
+      "context": {
+        "line_number": 853,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L04_afraid",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "I am afraid."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_afraid.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Men qo'rqaman.",
+      "context": {
+        "line_number": 853,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L04_afraid",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "I am afraid."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_afraid.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Afraid OF' + ot/gerund: 'afraid of dogs', 'afraid of flying'. 'Afraid' faqat predicative ('be afraid'), HECH QACHON otdan oldin kelmaydi.",
+      "context": {
+        "line_number": 855,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L04_afraid",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_afraid.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Afraid' dan keyin nima keladi?",
+      "context": {
+        "line_number": 855,
+        "field": "why_prompt",
+        "item_id": "V_U04_L04_afraid",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_afraid.practice.item_uz",
+      "field": "item_uz",
+      "value": "Men qo'rqdim.",
+      "context": {
+        "line_number": 858,
+        "field": "item_uz",
+        "speaker": "Mina",
+        "item_id": "V_U04_L04_afraid",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_afraid.practice.item_uz",
+      "field": "item_uz",
+      "value": "Qo'rqyapsizmi?",
+      "context": {
+        "line_number": 859,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_afraid",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_afraid.practice.item_uz",
+      "field": "item_uz",
+      "value": "Qo'rqmang.",
+      "context": {
+        "line_number": 860,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_afraid",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_afraid.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'afraid' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 862,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L04_afraid",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_afraid.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Siz nimadan qo'rqasiz?",
+      "context": {
+        "line_number": 863,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L04_afraid",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_calm.personalization.item_uz",
+      "field": "item_uz",
+      "value": "tinch / xotirjam",
+      "context": {
+        "line_number": 869,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_calm",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_calm.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Dengiz shovqinsiz bo'lsa...",
+      "context": {
+        "line_number": 877,
+        "field": "uz_context",
+        "item_id": "V_U04_L04_calm",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "It is calm."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_calm.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "U tinch.",
+      "context": {
+        "line_number": 877,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L04_calm",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "It is calm."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_calm.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Tinchlan(ing).",
+      "context": {
+        "line_number": 877,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L04_calm",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "It is calm."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_calm.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Be' = buyruq (imperative): 'Be calm!', 'Be quiet!', 'Be careful!'. Bu to'g'ridan-to'g'ri buyruq/maslahat. Subject yo'q.",
+      "context": {
+        "line_number": 879,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L04_calm",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_calm.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "Nega 'Be calm' — 'Are calm' emas?",
+      "context": {
+        "line_number": 879,
+        "field": "why_prompt",
+        "item_id": "V_U04_L04_calm",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_calm.practice.item_uz",
+      "field": "item_uz",
+      "value": "Tinchlaning.",
+      "context": {
+        "line_number": 882,
+        "field": "item_uz",
+        "speaker": "Lola",
+        "item_id": "V_U04_L04_calm",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_calm.practice.item_uz",
+      "field": "item_uz",
+      "value": "Ko'l tinch.",
+      "context": {
+        "line_number": 883,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_calm",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_calm.practice.item_uz",
+      "field": "item_uz",
+      "value": "Xotirjam bo'ling.",
+      "context": {
+        "line_number": 884,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_calm",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_calm.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'calm' bilan gap tuzing.",
+      "context": {
+        "line_number": 886,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L04_calm",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_calm.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Qachon tinch bo'lish kerak?",
+      "context": {
+        "line_number": 887,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L04_calm",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_peaceful.personalization.item_uz",
+      "field": "item_uz",
+      "value": "osoyishta / tinch",
+      "context": {
+        "line_number": 893,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_peaceful",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "personalization"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_peaceful.presentation.uz_context",
+      "field": "uz_context",
+      "value": "Shovqin yo'q joy.",
+      "context": {
+        "line_number": 901,
+        "field": "uz_context",
+        "item_id": "V_U04_L04_peaceful",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "Very peaceful."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_peaceful.presentation.uz_mirror_answer",
+      "field": "uz_mirror_answer",
+      "value": "Juda osoyishta.",
+      "context": {
+        "line_number": 901,
+        "field": "uz_mirror_answer",
+        "item_id": "V_U04_L04_peaceful",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "Very peaceful."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_peaceful.presentation.uz_gloss",
+      "field": "uz_gloss",
+      "value": "Bu osoyishta.",
+      "context": {
+        "line_number": 901,
+        "field": "uz_gloss",
+        "item_id": "V_U04_L04_peaceful",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "presentation",
+        "en_canonical": "Very peaceful."
+      }
+    },
+    {
+      "id": "items.V_U04_L04_peaceful.discovery.explanation_uz",
+      "field": "explanation_uz",
+      "value": "'Peace' (tinchlik) + '-ful' = 'peaceful' (tinch). '-ful' = ...ga to'la: peace → peaceful, hope → hopeful, pain → painful.",
+      "context": {
+        "line_number": 903,
+        "field": "explanation_uz",
+        "item_id": "V_U04_L04_peaceful",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_peaceful.discovery.why_prompt",
+      "field": "why_prompt",
+      "value": "'Peace' → 'peaceful' qanday?",
+      "context": {
+        "line_number": 903,
+        "field": "why_prompt",
+        "item_id": "V_U04_L04_peaceful",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "discovery"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_peaceful.practice.item_uz",
+      "field": "item_uz",
+      "value": "Mehmonxona tinch edi.",
+      "context": {
+        "line_number": 906,
+        "field": "item_uz",
+        "speaker": "Mina",
+        "item_id": "V_U04_L04_peaceful",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_peaceful.practice.item_uz",
+      "field": "item_uz",
+      "value": "Bu yer tinch.",
+      "context": {
+        "line_number": 907,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_peaceful",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_peaceful.practice.item_uz",
+      "field": "item_uz",
+      "value": "Tinch tong.",
+      "context": {
+        "line_number": 908,
+        "field": "item_uz",
+        "item_id": "V_U04_L04_peaceful",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "practice"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_peaceful.production.prompt_uz",
+      "field": "prompt_uz",
+      "value": "'peaceful' bilan o'tmish gap tuzing.",
+      "context": {
+        "line_number": 910,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L04_peaceful",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "production"
+      }
+    },
+    {
+      "id": "items.V_U04_L04_peaceful.personalization.prompt_uz",
+      "field": "prompt_uz",
+      "value": "Qaysi joy osoyishta?",
+      "context": {
+        "line_number": 911,
+        "field": "prompt_uz",
+        "item_id": "V_U04_L04_peaceful",
+        "dialogue_id": "U04_L04_D04",
+        "phase": "personalization"
+      }
+    }
+  ]
+}

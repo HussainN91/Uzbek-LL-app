@@ -15,6 +15,8 @@
  * @version 2.0.0 (Phase 2 Refactor)
  */
 
+import { uz, en } from '../core/i18n.js';
+
 // ============================
 // HELPER FUNCTIONS
 // ============================
@@ -431,18 +433,18 @@ class GrammarPPPModal {
           <div class="grammar-phase-nav">
             <button class="phase-btn" data-phase="present">
               <span class="phase-icon">🎯</span>
-              <span class="phase-text">Present</span>
-              <span class="phase-text-uz">Taqdim</span>
+              <span class="phase-text">${en('grammarPpp.presentPhase')}</span>
+              <span class="phase-text-uz">${uz('grammarPpp.presentPhaseUz')}</span>
             </button>
             <button class="phase-btn" data-phase="practice">
               <span class="phase-icon">🎮</span>
-              <span class="phase-text">Practice</span>
-              <span class="phase-text-uz">Mashq</span>
+              <span class="phase-text">${en('grammarPpp.practicePhase')}</span>
+              <span class="phase-text-uz">${uz('grammarPpp.practicePhaseUz')}</span>
             </button>
             <button class="phase-btn" data-phase="produce">
               <span class="phase-icon">🚀</span>
-              <span class="phase-text">Produce</span>
-              <span class="phase-text-uz">Ishlab chiqarish</span>
+              <span class="phase-text">${en('grammarPpp.producePhase')}</span>
+              <span class="phase-text-uz">${uz('grammarPpp.producePhaseUz')}</span>
             </button>
           </div>
 
@@ -451,9 +453,9 @@ class GrammarPPPModal {
           </div>
 
           <div class="grammar-actions">
-            <button class="grammar-btn-prev" disabled>⬅ Previous</button>
-            <div class="grammar-score">Score: <span class="score-value">0</span> ⭐</div>
-            <button class="grammar-btn-next">Next ➡</button>
+            <button class="grammar-btn-prev" disabled>${uz('grammarPpp.previousBtn')}</button>
+            <div class="grammar-score">${uz('grammarPpp.scoreLabel')} <span class="score-value">0</span> ⭐</div>
+            <button class="grammar-btn-next">${uz('grammarPpp.nextStepBtn')}</button>
           </div>
         </div>
       </div>
@@ -593,7 +595,7 @@ class GrammarPPPModal {
                      phaseData.activities.length;
 
     this.prevBtn.disabled = this.currentStep === 0;
-    this.nextBtn.textContent = this.currentStep === maxSteps - 1 ? 'Complete ✅' : 'Next ➡';
+    this.nextBtn.textContent = this.currentStep === maxSteps - 1 ? uz('grammarPpp.completeBtn') : uz('grammarPpp.nextBtn');
 
     // Update phase button active states
     this.phaseBtns.forEach(btn => {
@@ -663,7 +665,7 @@ class GrammarPPPModal {
         <div class="hunting-instructions">
           <div class="instruction-card main-instruction">
             <span class="instruction-icon">🎯</span>
-            <p class="instruction-text tl-uz" data-translation="Click the word that shows the action!">Harakatni ko'rsatadigan so'zni bosing!</p>
+            <p class="instruction-text tl-uz" data-translation="${en('grammarPpp.clickWordAction')}">${uz('grammarPpp.clickWordAction')}</p>
           </div>
         </div>
         
@@ -698,13 +700,13 @@ class GrammarPPPModal {
           <div class="hunting-progress-bar">
             <div class="hunting-progress-fill" style="width: 0%"></div>
           </div>
-          <span class="hunting-progress-text">0 / ${stepData.examples.length} topildi</span>
+          <span class="hunting-progress-text">${uz('grammarPpp.foundProgress').replace('{found}', '0').replace('{total}', stepData.examples.length)}</span>
         </div>
         
         <div class="pattern-reveal" style="display: none;">
           <div class="pattern-reveal-header">
             <span class="reveal-icon">✨</span>
-            <h4 class="tl-uz" data-translation="You found the pattern!">Siz namunani topdingiz!</h4>
+            <h4 class="tl-uz" data-translation="${en('grammarPpp.foundPattern')}">${uz('grammarPpp.foundPattern')}</h4>
           </div>
           <div class="pattern-summary">
             ${this.visualComponent}
@@ -730,7 +732,7 @@ class GrammarPPPModal {
             <p class="ccq-example">"${firstExample}"</p>
           </div>
           <div class="ccq-question">
-            <p class="ccq-text tl-uz" data-translation="Is this happening NOW or EVERY DAY?">Bu HOZIR sodir bo'lyaptimi yoki HAR KUNI?</p>
+            <p class="ccq-text tl-uz" data-translation="${en('grammarPpp.nowOrEveryDay')}">${uz('grammarPpp.nowOrEveryDay')}</p>
           </div>
           <div class="ccq-options">
             <button class="ccq-option" data-answer="now" data-correct="true">
@@ -749,8 +751,8 @@ class GrammarPPPModal {
       <!-- Timeline Section -->
       <div class="timeline-section" id="timeline-container" style="display: none;">
         <div class="timeline-header">
-          <h4 class="tl-uz" data-translation="When does this happen?">Bu qachon sodir bo'ladi?</h4>
-          <p class="timeline-instruction tl-uz" data-translation="Drag the marker to show when the action happens">Harakatning qachon sodir bo'lishini ko'rsatish uchun belgini suring</p>
+          <h4 class="tl-uz" data-translation="${en('grammarPpp.whenDoesHappen')}">${uz('grammarPpp.whenDoesHappen')}</h4>
+          <p class="timeline-instruction tl-uz" data-translation="${en('grammarPpp.dragMarker')}">${uz('grammarPpp.dragMarker')}</p>
         </div>
         <div class="timeline-visual">
           <div class="timeline-track">
@@ -776,7 +778,7 @@ class GrammarPPPModal {
           <p class="timeline-example">"${firstExample}"</p>
         </div>
         <div class="timeline-feedback" id="timeline-feedback" style="display: none;">
-          <span class="timeline-success">🎉 To'g'ri! Bu hozir sodir bo'lyapti!</span>
+          <span class="timeline-success">${uz('grammarPpp.timelineSuccess')}</span>
         </div>
       </div>
       
@@ -804,7 +806,7 @@ class GrammarPPPModal {
         </div>
         
         <div class="quick-check">
-          <h4 class="tl-uz" data-translation="Quick Understanding Check">Tezkor tushunish tekshiruvi</h4>
+          <h4 class="tl-uz" data-translation="${en('grammarPpp.quickCheck')}">${uz('grammarPpp.quickCheck')}</h4>
           <div class="quick-check-questions">
             ${buildQuickCheckQuestions(grammarType, grammarData)}
           </div>
@@ -864,7 +866,7 @@ class GrammarPPPModal {
             progressFill.style.width = ((foundCount / totalExamples) * 100) + '%';
           }
           if (progressText instanceof HTMLElement) {
-            progressText.textContent = `${foundCount} / ${totalExamples} topildi`;
+            progressText.textContent = uz('grammarPpp.foundProgress').replace('{found}', foundCount).replace('{total}', totalExamples);
           }
           
           if (foundCount >= totalExamples) {
@@ -940,7 +942,7 @@ class GrammarPPPModal {
         
         if (isCorrect) {
           optionButton.classList.add('ccq-correct');
-          feedbackEl.innerHTML = '<span class="ccq-success">🎉 To\'g\'ri! Keling, vaqt chizig\'ida ko\'ring...</span>';
+          feedbackEl.innerHTML = '<span class="ccq-success">' + uz('grammarPpp.timelineCorrect') + '</span>';
           feedbackEl.style.display = 'block';
           self.updateScore(15);
           if (typeof window.playSound === 'function') window.playSound('correct');
@@ -958,7 +960,7 @@ class GrammarPPPModal {
           }, 1200);
         } else {
           optionButton.classList.add('ccq-wrong');
-          feedbackEl.innerHTML = '<span class="ccq-hint">🤔 Yana o\'ylab ko\'ring... "-ing" qo\'shimchasi nimani bildiradi?</span>';
+          feedbackEl.innerHTML = '<span class="ccq-hint">' + uz('grammarPpp.ccqHint') + '</span>';
           feedbackEl.style.display = 'block';
           if (typeof window.playSound === 'function') window.playSound('wrong');
           
@@ -1006,13 +1008,13 @@ class GrammarPPPModal {
         
         if (isCorrect) {
           optionBtn.classList.add('selected-correct');
-          feedbackEl.innerHTML = '<span class="feedback-correct">✅ To\'g\'ri!</span>';
+          feedbackEl.innerHTML = '<span class="feedback-correct">' + uz('grammarPpp.correct') + '</span>';
           self.updateScore(15);
           self.interactiveState.streakCount++;
           if (typeof window.playSound === 'function') window.playSound('correct');
         } else {
           optionBtn.classList.add('selected-wrong');
-          feedbackEl.innerHTML = '<span class="feedback-wrong">❌ Qaytadan o\'ylab ko\'ring</span>';
+          feedbackEl.innerHTML = '<span class="feedback-wrong">' + uz('grammarPpp.tryAgain') + '</span>';
           self.interactiveState.streakCount = 0;
         }
       });
@@ -1178,7 +1180,7 @@ class GrammarPPPModal {
           <div class="sentence-item">
             <div class="sentence-text-en">${(sentence.text || '').replace('___', '<input type="text" class="blank-input" data-correct="' + (sentence.correct || '') + '" data-idx="' + idx + '">')}</div>
             ${sentence.uz ? `<div class="sentence-hint">${sentence.uz}</div>` : (sentence.hint ? `<div class="sentence-hint">💡 ${sentence.hint}</div>` : '')}
-            <button class="check-sentence-btn" data-idx="${idx}">Check</button>
+            <button class="check-sentence-btn" data-idx="${idx}">${uz('grammarPpp.checkSentence')}</button>
           </div>
         `).join('')}
       </div>
@@ -1193,11 +1195,11 @@ class GrammarPPPModal {
       <div class="drag-drop-exercise enhanced-drag-drop">
         <div class="drag-instructions">
           <span class="drag-icon">🧩</span>
-          <p>So'zlarni to'g'ri joyga suring yoki bosing!</p>
+          <p>${uz('grammarPpp.dragInstruction')}</p>
         </div>
         
         <div class="word-bank" id="word-bank">
-          <div class="word-bank-label">So'zlar:</div>
+          <div class="word-bank-label">${uz('grammarPpp.wordBankLabel')}</div>
           <div class="word-bank-items">
             ${['am', 'is', 'are'].map(word => `
               <div class="draggable-word" draggable="true" data-word="${word}" id="word-${word}">
@@ -1221,7 +1223,7 @@ class GrammarPPPModal {
         </div>
         
         <div class="practice-check-all">
-          <button class="check-all-btn">🔍 Barchasini tekshiring</button>
+          <button class="check-all-btn">${uz('grammarPpp.checkAllBtn')}</button>
         </div>
       </div>
     `;
@@ -1258,17 +1260,17 @@ class GrammarPPPModal {
           input.style.backgroundColor = '#d4edda';
           input.style.borderColor = '#28a745';
           self.updateScore(10);
-          button.textContent = '✅ Correct!';
+          button.textContent = uz('grammarPpp.correct');
           button.disabled = true;
         } else {
           input.style.backgroundColor = '#f8d7da';
           input.style.borderColor = '#dc3545';
           self.attempts++;
-          button.textContent = `❌ Try again (${correct})`;
+          button.textContent = uz('grammarPpp.tryAgainFormat').replace('{answer}', correct);
           setTimeout(() => {
             input.style.backgroundColor = '';
             input.style.borderColor = '';
-            button.textContent = 'Check';
+            button.textContent = uz('buttons.check');
           }, 2000);
         }
       });
@@ -1400,7 +1402,7 @@ class GrammarPPPModal {
       
       if (allCorrect) {
         if (typeof window.playSound === 'function') window.playSound('levelup');
-          checkAllBtn.innerHTML = '🎉 Hammasi to\'g\'ri!';
+          checkAllBtn.innerHTML = uz('grammarPpp.allCorrectDrag');
           checkAllBtn.disabled = true;
       } else {
         if (typeof window.playSound === 'function') window.playSound('wrong');
@@ -1450,7 +1452,7 @@ class GrammarPPPModal {
                 <div class="task-prompt">${promptText}</div>
                 <div class="task-input">
                   <input type="text" class="production-input" data-idx="${idx}" 
-                         placeholder="Type your sentence here...">
+                         placeholder="${uz('grammarPpp.sentencePlaceholder')}">
                   <button class="check-production-btn" data-idx="${idx}">✓</button>
                 </div>
                 <div class="task-feedback" data-idx="${idx}"></div>
@@ -1460,7 +1462,7 @@ class GrammarPPPModal {
           
           <div class="production-summary" style="display: none;">
             <div class="summary-icon">🎉</div>
-            <div class="summary-text">Well done! You practiced the grammar pattern!</div>
+            <div class="summary-text">${uz('grammarPpp.wellDoneSummary')}</div>
             <div class="summary-text-uz">Yaxshi! Siz grammatika namunasini mashq qildingiz!</div>
           </div>
         </div>
@@ -1491,7 +1493,7 @@ class GrammarPPPModal {
           <div class="sentence-builder">
             <div class="builder-tools">
               <div class="word-bank">
-                <div class="word-bank-title">Word Bank / So'z banki</div>
+                <div class="word-bank-title">${uz('grammarPpp.wordBankTitle')}</div>
                 <div class="word-tokens">
                   ${['I', 'am', 'You', 'are', 'He', 'is', 'She', 'We', 'They', 'student', 'teacher', 'happy', 'tall'].map(word => `
                     <span class="word-token" data-word="${word}">${word}</span>
@@ -1499,12 +1501,12 @@ class GrammarPPPModal {
                 </div>
               </div>
               <div class="sentence-area">
-                <div class="sentence-display" contenteditable="true" placeholder="Build your sentence here..."></div>
-                <button class="submit-sentence-btn">Submit Sentence</button>
+                <div class="sentence-display" contenteditable="true" placeholder="${uz('grammarPpp.buildPlaceholder')}"></div>
+                <button class="submit-sentence-btn">${uz('grammarPpp.submitSentence')}</button>
               </div>
             </div>
             <div class="built-sentences">
-              <h4>Your Sentences / Sizning jumlalaringiz:</h4>
+              <h4>${uz('grammarPpp.yourSentences')}</h4>
               <div class="sentences-list"></div>
             </div>
           </div>
@@ -1546,8 +1548,8 @@ class GrammarPPPModal {
               </div>
             </div>
             <div class="conversation-input">
-              <textarea placeholder="Write your conversation here... (Use the grammar we learned!)" rows="4"></textarea>
-              <button class="submit-conversation-btn">Practice Conversation</button>
+              <textarea placeholder="${uz('grammarPpp.conversationPlaceholder')}" rows="4"></textarea>
+              <button class="submit-conversation-btn">${uz('grammarPpp.practiceConversation')}</button>
             </div>
             <div class="conversation-feedback"></div>
           </div>
@@ -1587,7 +1589,7 @@ class GrammarPPPModal {
         }
         
         if (input.value.trim().length > 3) {
-          feedback.innerHTML = '<span class="feedback-success">✓ Good sentence!</span>';
+          feedback.innerHTML = '<span class="feedback-success">' + uz('grammarPpp.goodSentence') + '</span>';
           task.classList.add('completed');
           input.disabled = true;
           button.disabled = true;
@@ -1603,7 +1605,7 @@ class GrammarPPPModal {
             }, 500);
           }
         } else {
-          feedback.innerHTML = '<span class="feedback-hint">Write a longer sentence</span>';
+          feedback.innerHTML = '<span class="feedback-hint">' + uz('grammarPpp.writeLonger') + '</span>';
         }
       });
     });
@@ -1677,7 +1679,7 @@ class GrammarPPPModal {
 
         const builtCount = sentencesList.children.length;
         if (builtCount >= 3) {
-          submitBtn.textContent = '🎉 Great job!';
+          submitBtn.textContent = uz('grammarPpp.greatJob');
           submitBtn.disabled = true;
         }
       }
@@ -1711,8 +1713,8 @@ class GrammarPPPModal {
         feedback.innerHTML = `
           <div class="feedback-card success">
             <div class="feedback-icon">🎉</div>
-            <div class="feedback-text-en">Excellent conversation! You used the grammar correctly.</div>
-            <div class="feedback-text-uz">Ajoyib suhbat! Siz grammatikani to'g'ri ishlatdingiz.</div>
+            <div class="feedback-text-en">${uz('grammarPpp.excellentConv')}</div>
+            <div class="feedback-text-uz">${uz('grammarPpp.excellentConv')}</div>
           </div>
         `;
         self.updateScore(20);
@@ -1729,12 +1731,12 @@ class GrammarPPPModal {
     this.contentArea.innerHTML = `
       <div class="completion-celebration">
         <div class="celebration-icon">🎊</div>
-        <h2 class="celebration-title-en">Congratulations!</h2>
-        <h3 class="celebration-title-uz">Tabriklaymiz!</h3>
-        <p class="celebration-text-en">You have successfully completed the PPP Grammar Lesson!</p>
-        <p class="celebration-text-uz">Siz PPP Grammatika darsini muvaffaqiyatli yakunladingiz!</p>
-        <div class="final-score">Final Score: ${this.score} ⭐</div>
-        <button class="celebration-close-btn">Close & Continue</button>
+        <h2 class="celebration-title-en">${uz('grammarPpp.congratulations')}</h2>
+        <h3 class="celebration-title-uz">${uz('grammarPpp.congratulations')}</h3>
+        <p class="celebration-text-en">${uz('grammarPpp.completedLesson')}</p>
+        <p class="celebration-text-uz">${uz('grammarPpp.completedLesson')}</p>
+        <div class="final-score">${uz('grammarPpp.finalScore').replace('{score}', this.score)}</div>
+        <button class="celebration-close-btn">${uz('grammarPpp.closeContinue')}</button>
       </div>
     `;
 

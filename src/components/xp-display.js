@@ -11,6 +11,7 @@
  */
 
 import { AppState, getXPProgress, updateStreak, XP_LEVELS } from '../state/app-state.js';
+import { uz, en } from '../core/i18n.js';
 
 // ============================================================================
 // CSS STYLES
@@ -435,7 +436,7 @@ function getPanelHTML() {
       <button class="xp-panel-close">&times;</button>
     </div>
     <div class="xp-panel-stat">
-      <span class="xp-panel-stat-label">Daraja</span>
+      <span class="xp-panel-stat-label">${uz('xpDisplay.level')}</span>
       <span class="xp-panel-stat-value gold">${level}</span>
     </div>
     <div class="xp-panel-stat">
@@ -527,10 +528,10 @@ function handleLevelUp(e) {
   overlay.innerHTML = `
     <div class="level-up-card">
       <div class="level-up-icon">🎉</div>
-      <h2 class="level-up-title">DARAJA KO'TARILDI!</h2>
-      <p class="level-up-subtitle">Siz yangi darajaga yetdingiz!</p>
+      <h2 class="level-up-title">${uz('xpDisplay.levelUp')}</h2>
+      <p class="level-up-subtitle">${uz('xpDisplay.levelUpSubtitle')}</p>
       <div class="level-up-level">${newLevel}</div>
-      <button class="level-up-btn">Zo'r! Davom etamiz</button>
+      <button class="level-up-btn">${uz('xpDisplay.levelUpBtn')}</button>
     </div>
   `;
   

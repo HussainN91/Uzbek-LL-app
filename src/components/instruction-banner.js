@@ -13,6 +13,7 @@
  */
 
 import { getInstructionForTile } from '../core/uz-instructions.js';
+import { uz, en } from '../core/i18n.js';
 
 // ============================
 // CSS INJECTION (once)
@@ -187,7 +188,7 @@ export function createInstructionBanner(tileState, options = {}) {
   header.className = 'instruction-header';
   header.innerHTML = `
     <span class="instruction-icon">${instruction.icon}</span>
-    <span class="instruction-label">Ko'rsatma</span>
+    <span class="instruction-label">${uz('instructionBanner.label')}</span>
     <span class="instruction-toggle">▼</span>
   `;
   header.addEventListener('click', () => {
@@ -213,11 +214,12 @@ export function createInstructionBanner(tileState, options = {}) {
   body.appendChild(enText);
 
   // Audio read-aloud button (for non-readers)
-  if (showAudio && window.speechSynthesis) {
+  // NOTE: Uzbek TTS disabled — most browsers lack Uzbek voices
+  if (false && showAudio && window.speechSynthesis) {
     const audioBtn = document.createElement('button');
     audioBtn.className = 'instruction-audio-btn';
-    audioBtn.innerHTML = '🔊 Tinglash';
-    audioBtn.title = 'Listen to the instruction';
+    audioBtn.innerHTML = uz('instructionBanner.audioBtn');
+    audioBtn.title = en('instructionBanner.audioTitle');
     audioBtn.addEventListener('click', (e) => {
       e.stopPropagation();
       readAloud(instruction.uz, 'uz');
